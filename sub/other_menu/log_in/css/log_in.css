@@ -57,7 +57,6 @@ p {
 .container {
   padding: 0 20px;
   width: 100%;
-  background-color: #000;
 }
 @media screen and (min-width: 1024px) {
   .container {
@@ -70,7 +69,7 @@ p {
   position: relative;
   width: 100%;
   height: 100%;
-  background-image: url(../../../images/background/detail_page_main_background.png);
+  background-image: url(../../../../images/background/detail_page_main_background.png);
 }
 @media screen and (min-width: 1024px) {
   .wrapper .flexWrapper {
@@ -86,7 +85,7 @@ p {
   .wrapper .flexWrapper header {
     height: auto;
     width: 370px;
-    background-image: url(../../../images/background/detail_page_header_background.png);
+    background-image: url(../../../../images/background/detail_page_header_background.png);
   }
 }
 .wrapper .flexWrapper header .header .logoMenu {
@@ -216,6 +215,104 @@ p {
     font-size: 14px;
   }
 }
+.wrapper .flexWrapper main .main section.login {
+  width: 100%;
+  margin: 30px 0 100px;
+  text-align: center;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .main section.login {
+    margin-top: 130px;
+  }
+}
+.wrapper .flexWrapper main .main section.login .logo img {
+  width: 100px;
+}
+.wrapper .flexWrapper main .main section.login h3 {
+  margin: 10px 0 80px;
+  font-size: 1.5em;
+  font-family: "NotoSerifKR-Regular";
+  font-weight: normal;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .main section.login h3 {
+    margin-bottom: 100px;
+    font-size: 2.5em;
+  }
+}
+.wrapper .flexWrapper main .main section.login form {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .main section.login form {
+    width: 40%;
+  }
+}
+.wrapper .flexWrapper main .main section.login form input {
+  display: block;
+  width: 100%;
+  height: 50px;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+  padding: 0 20px;
+  cursor: pointer;
+}
+.wrapper .flexWrapper main .main section.login form input:nth-child(3) {
+  background-color: #000;
+  color: white;
+}
+.wrapper .flexWrapper main .main section.login form input:nth-child(4) {
+  background: white;
+  color: black;
+}
+.wrapper .flexWrapper main .main section.login form hr {
+  margin-bottom: 20px;
+  width: 100%;
+}
+.wrapper .flexWrapper main .main section.login form .search_box {
+  display: flex;
+  justify-content: space-between;
+}
+.wrapper .flexWrapper main .main section.login form .search_box input {
+  width: 48%;
+  height: 50px;
+}
+.wrapper .flexWrapper main .main section.login form .search_box input:first-child {
+  background-color: #3a3a3a;
+  color: #fff;
+}
+.wrapper .flexWrapper main .main section.login form .search_box input:last-child {
+  background-color: #ccc;
+  color: #000;
+}
+.wrapper .flexWrapper main .main section.login form .sns_login button {
+  width: 100%;
+  height: 50px;
+  margin-bottom: 20px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+.wrapper .flexWrapper main .main section.login form .sns_login button:first-of-type {
+  background-color: #2db400;
+  color: white;
+}
+.wrapper .flexWrapper main .main section.login form .sns_login button:nth-child(2) {
+  background-color: #f9e000;
+}
+.wrapper .flexWrapper main .main section.login form .sns_login button img {
+  width: 30px;
+  margin: 0 15px;
+  padding-right: 10px;
+  border-right: 1px solid #fff;
+}
+.wrapper .flexWrapper main .main section.login form .sns_login button p {
+  margin: auto;
+  transform: translate(-30%);
+}
 @media screen and (min-width: 1024px) {
   .wrapper footer .container {
     margin: 0;
@@ -248,6 +345,7 @@ p {
 }
 .wrapper footer .footer .footInfo address {
   font-style: normal;
+  font-family: "NotoSerifKR-Regular";
 }
 .wrapper footer .footer .footInfo p {
   margin: 20px 0;

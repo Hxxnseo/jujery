@@ -309,6 +309,7 @@ p {
 }
 .wrapper footer .footer .footInfo address {
   font-style: normal;
+  font-family: "NotoSerifKR-Regular";
 }
 .wrapper footer .footer .footInfo p {
   margin: 20px 0;
