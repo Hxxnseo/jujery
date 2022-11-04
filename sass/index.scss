@@ -1,0 +1,84 @@
+@import "./style.scss";
+@import "./common.scss";
+@import "./mixin.scss";
+
+body {
+  background: url(../images/background/main_page_background.png) repeat;
+  background-size: cover;
+}
+header {
+  width: 100%;
+  // background-color: transparent;
+
+  .mobile {
+    height: 80px;
+
+    @include responsive(pc-screens) {
+      display: none;
+    }
+
+    .mobileLogoMenu {
+      display: flex;
+
+      .mobileLogo {
+        position: fixed;
+        top: 22px;
+        left: 20px;
+
+        a {
+          img {
+            width: 32px;
+          }
+        }
+      }
+
+      .mobileMenu {
+        position: fixed;
+        top: 38px;
+        right: 20px;
+        cursor: pointer;
+
+        span {
+          display: block;
+          width: 30px;
+          height: 4px;
+          background-color: white;
+          &:nth-child(2) {
+            margin: 5px 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+main {
+  width: 100%;
+  height: 100%;
+
+  section.vid {
+    height: 100%;
+    // background-color: aqua;
+
+    .video {
+      video {
+        width: 100%;
+      }
+    }
+  }
+
+  section.asd {
+    height: 180px;
+    // background-color: aquamarine;
+    line-height: 50px;
+
+    .text {
+      text-align: center;
+      color: white;
+
+      h3 {
+        color: white;
+      }
+    }
+  }
+}

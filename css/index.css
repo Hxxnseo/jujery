@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  font-family: "SANGJU Gyeongcheon Island";
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 3.125em;
+}
+
+h2 {
+  font-size: 0;
+}
+
+h3 {
+  color: black;
+  font-size: 3.125em;
+}
+
+h4 {
+  color: black;
+  font-size: 1.5em;
+  font-weight: 600;
+}
+
+p {
+  font-size: 1em;
+  font-family: "NotoSerifKR-Regular";
+}
+
+body {
+  background: url(../images/background/main_page_background.png) repeat;
+  background-size: cover;
+}
+
+header {
+  width: 100%;
+}
+header .mobile {
+  height: 80px;
+}
+@media screen and (min-width: 1024px) {
+  header .mobile {
+    display: none;
+  }
+}
+header .mobile .mobileLogoMenu {
+  display: flex;
+}
+header .mobile .mobileLogoMenu .mobileLogo {
+  position: fixed;
+  top: 22px;
+  left: 20px;
+}
+header .mobile .mobileLogoMenu .mobileLogo a img {
+  width: 32px;
+}
+header .mobile .mobileLogoMenu .mobileMenu {
+  position: fixed;
+  top: 38px;
+  right: 20px;
+  cursor: pointer;
+}
+header .mobile .mobileLogoMenu .mobileMenu span {
+  display: block;
+  width: 30px;
+  height: 4px;
+  background-color: white;
+}
+header .mobile .mobileLogoMenu .mobileMenu span:nth-child(2) {
+  margin: 5px 0;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+}
+main section.vid {
+  height: 100%;
+}
+main section.vid .video video {
+  width: 100%;
+}
+main section.asd {
+  height: 180px;
+  line-height: 50px;
+}
+main section.asd .text {
+  text-align: center;
+  color: white;
+}
+main section.asd .text h3 {
+  color: white;
+}/*# sourceMappingURL=index.css.map */

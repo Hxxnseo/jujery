@@ -1,0 +1,373 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  font-family: "SANGJU Gyeongcheon Island";
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 3.125em;
+}
+
+h2 {
+  font-size: 0;
+}
+
+h3 {
+  color: black;
+  font-size: 3.125em;
+}
+
+h4 {
+  color: black;
+  font-size: 1.5em;
+  font-weight: 600;
+}
+
+p {
+  font-size: 1em;
+  font-family: "NotoSerifKR-Regular";
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    width: 100%;
+    height: 100%;
+    max-width: 2560px;
+  }
+}
+.container {
+  padding: 0 20px;
+  width: 100%;
+  background-color: #000;
+}
+@media screen and (min-width: 1024px) {
+  .container {
+    padding: 0;
+    margin: 0 235px 0 135px;
+  }
+}
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-image: url(../../../images/background/detail_page_main_background.png);
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+}
+.wrapper .flexWrapper header {
+  height: 80px;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper header {
+    height: auto;
+    width: 370px;
+    background-image: url(../../../images/background/detail_page_header_background.png);
+  }
+}
+.wrapper .flexWrapper header .header .logoMenu {
+  display: none;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper header .header .logoMenu {
+    display: block;
+    padding-top: 70px;
+    padding-left: 100px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper header .header .logoMenu .logo a {
+    width: 190px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper header .header .logoMenu .menu {
+    margin-top: 130px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper header .header .logoMenu .menu .gnb {
+    font-size: 30px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper header .header .logoMenu .menu .gnb li {
+    padding-bottom: 60px;
+  }
+  .wrapper .flexWrapper header .header .logoMenu .menu .gnb li:hover ul {
+    height: 100px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper header .header .logoMenu .menu .gnb li:first-child {
+    padding-bottom: 80px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper header .header .logoMenu .menu .gnb li .subMenu {
+    height: 0px;
+    overflow: hidden;
+    padding-top: 40px;
+    transition: all 0.5s;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper header .header .logoMenu .menu .gnb li .subMenu li {
+    display: flex;
+    padding-bottom: 0px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper header .header .logoMenu .menu .gnb li .subMenu li a {
+    padding-left: 5px;
+    padding-bottom: 10px;
+    font-size: 18px;
+    font-family: "NotoSerifKR-Regular";
+  }
+}
+.wrapper .flexWrapper header .header .mobileLogoMenu {
+  display: flex;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper header .header .mobileLogoMenu {
+    display: none;
+  }
+}
+.wrapper .flexWrapper header .header .mobileLogoMenu .mobileLogo {
+  position: fixed;
+  top: 22px;
+  left: 20px;
+}
+.wrapper .flexWrapper header .header .mobileLogoMenu .mobileMenu {
+  position: fixed;
+  top: 38px;
+  right: 20px;
+  cursor: pointer;
+}
+.wrapper .flexWrapper header .header .mobileLogoMenu .mobileMenu span {
+  display: block;
+  width: 30px;
+  height: 4px;
+  background-color: #000;
+}
+.wrapper .flexWrapper header .header .mobileLogoMenu .mobileMenu span:nth-child(2) {
+  margin: 5px 0;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main {
+    width: 80%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .main {
+    width: 1180px;
+  }
+}
+.wrapper .flexWrapper main .main .mainSubMenu {
+  display: none;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .main .mainSubMenu {
+    display: block;
+    width: 100%;
+    height: 70px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .main .mainSubMenu ul {
+    display: flex;
+    position: absolute;
+    right: 100px;
+    top: 50px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .main .mainSubMenu ul li {
+    padding-left: 25px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .main .mainSubMenu ul li a {
+    font-family: "NotoSerifKR-Regular";
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .wrapper footer .container {
+    margin: 0;
+  }
+}
+.wrapper footer .footer {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  color: white;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper footer .footer {
+    width: 100%;
+    padding: 120px 235px 80px 495px;
+  }
+}
+.wrapper footer .footer .footInfo {
+  padding-top: 60px;
+  padding-bottom: 30px;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper footer .footer .footInfo {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+}
+.wrapper footer .footer .footInfo address {
+  font-style: normal;
+}
+.wrapper footer .footer .footInfo p {
+  margin: 20px 0;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper footer .footer .footInfo p {
+    margin: 0;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .wrapper footer .footer .footBox {
+    display: flex;
+    width: 100%;
+    height: 250px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+  }
+}
+.wrapper footer .footer .footBox .footLogoCopy {
+  padding: 30px;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  text-align: center;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper footer .footer .footBox .footLogoCopy {
+    width: 25%;
+    padding: 0;
+    border: 0;
+  }
+}
+.wrapper footer .footer .footBox .footLogoCopy a {
+  color: white;
+  font-size: 60px;
+}
+.wrapper footer .footer .footBox .footLogoCopy p {
+  font-size: 10px;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper footer .footer .footBox .footLogoCopy .copyright {
+    font-size: 12px;
+    font-family: "NotoSerifKR-Regular";
+  }
+}
+.wrapper footer .footer .footBox .footSns {
+  padding: 30px;
+  border-bottom: 1px solid #ccc;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper footer .footer .footBox .footSns {
+    position: relative;
+    width: 50%;
+    height: 250px;
+    border-bottom: 0;
+    border-right: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+  }
+}
+.wrapper footer .footer .footBox .footSns .footSnsCont {
+  display: flex;
+  justify-content: center;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper footer .footer .footBox .footSns .footSnsCont {
+    padding: 60px 80px;
+  }
+}
+.wrapper footer .footer .footBox .footSns .footSnsCont li {
+  padding: 10px;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper footer .footer .footBox .footSns .footSnsCont li {
+    padding-right: 30px;
+  }
+  .wrapper footer .footer .footBox .footSns .footSnsCont li:last-child {
+    padding-right: 0;
+  }
+}
+.wrapper footer .footer .footBox .footSns .footSnsCont li img {
+  width: 50px;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper footer .footer .footBox .footSns .footSnsCont li img {
+    width: 60px;
+    opacity: 0.5;
+    transition: all 0.5s;
+  }
+  .wrapper footer .footer .footBox .footSns .footSnsCont li img:hover {
+    opacity: 1;
+  }
+}
+.wrapper footer .footer .footBox .footMenu {
+  padding: 40px;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper footer .footer .footBox .footMenu {
+    width: 25%;
+    padding: 0;
+    font-size: 13px;
+  }
+}
+.wrapper footer .footer .footBox .footMenu ul {
+  display: flex;
+  width: 100%;
+  padding: 10px;
+  margin-left: 5px;
+}
+.wrapper footer .footer .footBox .footMenu ul:last-child {
+  text-align: left;
+}
+.wrapper footer .footer .footBox .footMenu ul li {
+  width: 33%;
+  padding: 0 5px;
+  text-align: center;
+}
+.wrapper footer .footer .footBox .footMenu ul li a {
+  width: 100%;
+  color: white;
+}/*# sourceMappingURL=region.css.map */

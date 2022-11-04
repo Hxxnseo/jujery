@@ -1,0 +1,382 @@
+@import "./style1.scss";
+@import "./common1.scss";
+@import "./mixin1.scss";
+
+@include responsive(pc-screens) {
+  body {
+    width: 100%;
+    height: 100%;
+    max-width: 2560px;
+  }
+}
+
+.container {
+  padding: 0 20px;
+  // margin-right: 20px;
+  // position: relative;
+  width: 100%; // 모바일, 태블릿
+  // background-color: #000;
+  // max-width: 1200px; // pc
+
+  background-color: #000;
+  @include responsive(pc-screens) {
+    padding: 0;
+    margin: 0 235px 0 135px;
+  }
+}
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-image: url(../../../images/background/detail_page_main_background.png);
+  // margin: 0 20px;
+
+  .flexWrapper {
+    @include responsive(pc-screens) {
+      height: 100%;
+      display: flex;
+      flex-direction: row;
+    }
+    header {
+      height: 80px;
+
+      @include responsive(pc-screens) {
+        height: auto;
+        // background-color: #ccc;
+        width: 370px;
+        background-image: url(../../../images/background/detail_page_header_background.png);
+      }
+
+      .header {
+        .logoMenu {
+          display: none;
+
+          @include responsive(pc-screens) {
+            display: block;
+            padding-top: 70px;
+            padding-left: 100px;
+          }
+
+          .logo {
+            a {
+              @include responsive(pc-screens) {
+                width: 190px;
+              }
+            }
+          }
+
+          .menu {
+            @include responsive(pc-screens) {
+              margin-top: 130px;
+            }
+
+            .gnb {
+              @include responsive(pc-screens) {
+                font-size: 30px;
+              }
+
+              li {
+                @include responsive(pc-screens) {
+                  padding-bottom: 60px;
+
+                  &:hover {
+                    ul {
+                      height: 100px;
+                    }
+                  }
+                }
+
+                &:first-child {
+                  @include responsive(pc-screens) {
+                    padding-bottom: 80px;
+                  }
+                }
+
+                .subMenu {
+                  @include responsive(pc-screens) {
+                    height: 0px;
+                    overflow: hidden;
+                    padding-top: 40px;
+
+                    transition: all 0.5s;
+                  }
+
+                  li {
+                    @include responsive(pc-screens) {
+                      display: flex;
+                      padding-bottom: 0px;
+                    }
+
+                    a {
+                      @include responsive(pc-screens) {
+                        padding-left: 5px;
+                        padding-bottom: 10px;
+                        font : {
+                          size: 18px;
+                          family: $font-sub;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        .mobileLogoMenu {
+          display: flex;
+          @include responsive(pc-screens) {
+            display: none;
+          }
+
+          .mobileLogo {
+            position: fixed;
+            top: 22px;
+            left: 20px;
+          }
+
+          .mobileMenu {
+            position: fixed;
+            top: 38px;
+            right: 20px;
+            cursor: pointer;
+
+            span {
+              display: block;
+              width: 30px;
+              height: 4px;
+              background-color: #000;
+              &:nth-child(2) {
+                margin: 5px 0;
+              }
+            }
+          }
+        }
+      }
+    }
+    // header
+
+    main {
+      // width: 100%;
+
+      @include responsive(pc-screens) {
+        width: 80%;
+      }
+
+      .main {
+        // position: relative;
+        @include responsive(pc-screens) {
+          width: 1180px;
+        }
+
+        .mainSubMenu {
+          display: none;
+          @include responsive(pc-screens) {
+            display: block;
+            width: 100%;
+            height: 70px;
+          }
+
+          ul {
+            @include responsive(pc-screens) {
+              display: flex;
+              position: absolute;
+              right: 100px;
+              top: 50px;
+            }
+
+            li {
+              @include responsive(pc-screens) {
+                padding-left: 25px;
+              }
+
+              a {
+                @include responsive(pc-screens) {
+                  font : {
+                    family: $font-sub;
+                    size: 14px;
+                  }
+                }
+              }
+            }
+          }
+        } // mainSubMenu
+
+        // 여기부터 작성하세요오오
+      }
+    }
+    // main
+  }
+
+  footer {
+    .container {
+      @include responsive(pc-screens) {
+        margin: 0;
+      }
+    }
+    .footer {
+      width: 100%;
+      height: 100%;
+      background-color: black;
+      color: white;
+
+      @include responsive(pc-screens) {
+        width: 100%;
+        padding: 120px 235px 80px 495px;
+      }
+
+      .footInfo {
+        padding-top: 60px;
+        padding-bottom: 30px;
+
+        @include responsive(pc-screens) {
+          // padding: 0;
+          display: flex;
+          width: 100%;
+          justify-content: space-between;
+
+          font-size: 20px;
+          margin-bottom: 30px;
+        }
+
+        address {
+          font-style: normal;
+        }
+
+        p {
+          margin: 20px 0;
+
+          @include responsive(pc-screens) {
+            margin: 0;
+          }
+        }
+      }
+
+      .footBox {
+        @include responsive(pc-screens) {
+          display: flex;
+          width: 100%;
+          height: 250px;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+
+          text-align: center;
+
+          border-top: 1px solid #ccc;
+          border-bottom: 1px solid #ccc;
+        }
+
+        .footLogoCopy {
+          padding: 30px;
+          border-top: 1px solid #ccc;
+          border-bottom: 1px solid #ccc;
+          text-align: center;
+
+          @include responsive(pc-screens) {
+            width: 25%;
+            padding: 0;
+            border: 0;
+          }
+
+          a {
+            color: white;
+            font-size: 60px;
+          }
+
+          p {
+            font-size: 10px;
+          }
+
+          .copyright {
+            @include responsive(pc-screens) {
+              font-size: 12px;
+              font-family: $font-sub;
+            }
+          }
+        }
+
+        .footSns {
+          padding: 30px;
+          border-bottom: 1px solid #ccc;
+
+          @include responsive(pc-screens) {
+            position: relative;
+            width: 50%;
+            height: 250px;
+            border-bottom: 0;
+            border-right: 1px solid #ccc;
+            border-left: 1px solid #ccc;
+          }
+          .footSnsCont {
+            display: flex;
+            justify-content: center;
+
+            @include responsive(pc-screens) {
+              padding: 60px 80px;
+            }
+
+            li {
+              padding: 10px;
+
+              @include responsive(pc-screens) {
+                padding-right: 30px;
+
+                &:last-child {
+                  padding-right: 0;
+                }
+              }
+              img {
+                width: 50px;
+
+                @include responsive(pc-screens) {
+                  width: 60px;
+                  opacity: 0.5;
+
+                  transition: all 0.5s;
+
+                  &:hover {
+                    opacity: 1;
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        .footMenu {
+          padding: 40px;
+
+          @include responsive(pc-screens) {
+            width: 25%;
+            padding: 0;
+            font-size: 13px;
+          }
+          ul {
+            display: flex;
+            width: 100%;
+            padding: 10px;
+            margin-left: 5px;
+
+            &:last-child {
+              text-align: left;
+            }
+
+            li {
+              width: 33%;
+              padding: 0 5px;
+              text-align: center;
+
+              a {
+                width: 100%;
+                color: white;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
