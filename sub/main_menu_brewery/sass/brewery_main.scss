@@ -1,3 +1,7 @@
+@import "./style1.scss";
+@import "./common1.scss";
+@import "./mixin1.scss";
+
 @include responsive(pc-screens) {
   body {
     width: 100%;
@@ -14,7 +18,7 @@
   // background-color: #000;
   // max-width: 1200px; // pc
 
-  background-color: #000;
+  // background-color: #000;
   @include responsive(pc-screens) {
     padding: 0;
     margin: 0 235px 0 135px;
@@ -200,7 +204,131 @@
           }
         } // mainSubMenu
 
-        //  여기부터 작성하세요오오
+        section.breweryStart {
+          width: 100%;
+          margin-top: 30px;
+          text-align: center;
+          margin-bottom: 50px;
+
+          @include responsive(pc-screens) {
+            margin-top: 130px;
+            text-align: left;
+          }
+
+          h4 {
+            font-family: $font-sub;
+            font-weight: normal;
+            display: none;
+
+            @include responsive(pc-screens) {
+              display: block;
+              margin-top: 50px;
+            }
+          }
+        }
+
+        section.brewerySect1 {
+          width: 100%;
+
+          .imgP1 {
+            @include responsive(pc-screens) {
+              display: flex;
+              width: 100%;
+            }
+            .images {
+              @include responsive(pc-screens) {
+                width: 50%;
+              }
+              img{
+                width: 100%;
+                height: 100%;
+              }
+            }
+          }
+
+          .p {
+            height: 100%;
+            @include responsive(pc-screens) {
+              width: 50%;
+            }
+            p {
+              padding: 50px 20px;
+              line-height: 36px;
+              @include responsive(pc-screens) {
+                padding: 100px 40px;
+              }
+            }
+          }
+        }
+
+        section.brewerySect2 {
+          width: 100%;
+          margin-top: 100px;
+
+          .imgP2 {
+            @include responsive(pc-screens) {
+              display: flex;
+              width: 100%;
+            }
+            .p {
+              order: 1;
+              height: 100%;
+              @include responsive(pc-screens) {
+                width: 50%;
+              }
+              p {
+                padding: 50px 20px;
+                line-height: 36px;
+                @include responsive(pc-screens) {
+                  padding: 70px 40px;
+                }
+              }
+            }
+            .images {
+              order: 2;
+              @include responsive(pc-screens) {
+                width: 50%;
+              }
+              img{
+                width: 100%;
+                height: 100%;
+              }
+            }
+          }
+        }
+
+        section.brewerySect3 {
+          width: 100%;
+          margin: 100px 0;
+
+          .imgP3 {
+            @include responsive(pc-screens) {
+              display: flex;
+              width: 100%;
+            }
+            .images {
+              @include responsive(pc-screens) {
+                width: 40%;
+              }
+              img{
+                width: 100%;
+              }
+            }
+          }
+          .p {
+            height: 100%;
+            @include responsive(pc-screens) {
+              width: 60%;
+            }
+            p {
+              padding: 50px 20px;
+              line-height: 36px;
+              @include responsive(pc-screens) {
+                padding: 163px 10px 163px 80px;
+              }
+            }
+          }
+        }
       }
     }
     // main
