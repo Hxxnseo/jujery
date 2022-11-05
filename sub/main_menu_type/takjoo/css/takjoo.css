@@ -1,3 +1,19 @@
+@font-face {
+  font-family: "SANGJU Gyeongcheon Island";
+  src: url(../../../font/SANGJU\ Gyeongcheon\ Island.woff);
+}
+@font-face {
+  font-family: "NotoSerifKR-Regular";
+  src: url(../../../font/NotoSerifKR-Regular.woff);
+}
+@font-face {
+  font-family: "SANGJU Gyeongcheon Island";
+  src: url(../../../font/SANGJU\ Gyeongcheon\ Island.woff);
+}
+@font-face {
+  font-family: "NotoSerifKR-Regular";
+  src: url(../../../font/NotoSerifKR-Regular.woff);
+}
 * {
   margin: 0;
   padding: 0;
@@ -57,7 +73,6 @@ p {
 .container {
   padding: 0 20px;
   width: 100%;
-  background-color: #000;
 }
 @media screen and (min-width: 1024px) {
   .container {
@@ -70,7 +85,7 @@ p {
   position: relative;
   width: 100%;
   height: 100%;
-  background-image: url(../../../images/background/detail_page_main_background.png);
+  background-image: url(../../../../images/background/detail_page_main_background.png);
 }
 @media screen and (min-width: 1024px) {
   .wrapper .flexWrapper {
@@ -86,7 +101,7 @@ p {
   .wrapper .flexWrapper header {
     height: auto;
     width: 370px;
-    background-image: url(../../../images/background/detail_page_header_background.png);
+    background-image: url(../../../../images/background/detail_page_header_background.png);
   }
 }
 .wrapper .flexWrapper header .header .logoMenu {
@@ -248,6 +263,7 @@ p {
 }
 .wrapper footer .footer .footInfo address {
   font-style: normal;
+  font-family: "NotoSerifKR-Regular";
 }
 .wrapper footer .footer .footInfo p {
   margin: 20px 0;
