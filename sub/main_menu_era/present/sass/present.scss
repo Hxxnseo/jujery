@@ -205,24 +205,38 @@
         } // mainSubMenu
 
         // 여기부터 작성하세요오오
-        h3 {
+        .start {
           text-align: center;
-          margin-top: 30px;
-          background-color: #fff;
-          font-family: $font-main;
-        }
-
-        p.title {
-          font-family: $font-sub;
-          text-align: center;
-          width: 30%;
-          display: flex;
-          margin: 50px 44%;
-    
-          .past {
-            color: #ccc;
+          h3 {
+            margin-top: 30px;
+            background-color: #fff;
+            font-family: $font-main;
           }
-        } // p.title
+  
+          p.title {
+            font-family: $font-sub;
+            width: 30%;
+            display: flex;
+            margin: 50px 44%;
+      
+            .past {
+              color: #ccc;
+              &:hover {
+                text-decoration: underline;
+              }
+            }
+
+            .present {
+              &:hover {
+                text-decoration: underline;
+              }
+            }
+  
+            @include responsive(pc-screens) {
+              width: 100%;
+            }
+          } // p.title
+        }
 
         .pageintro{
           position: relative;
@@ -290,10 +304,26 @@
             @include responsive(pc-screens) {
               display: block;
               width: 96%;
+              margin-top: 25px;
+              &:hover {
+                filter: brightness(40%);
+              }
             }
           }
         } // div
 
+
+        .titlenew {
+          @include responsive(pc-screens) {
+            display: flex;
+          }
+        }
+
+        .recommands {
+          @include responsive(pc-screens) {
+            margin-top: 80px;
+          }
+        }
         .recommand1 {
           position: relative;
           .red {
@@ -301,6 +331,17 @@
             padding: 20px 5% 40px 5%;
             position: absolute;
             top: 10%; left: 45%;
+            @include responsive(pc-screens) {
+              color: #000;
+              top: -40%; left: 10%;
+              span {
+                // display: none;
+                color: #fff;
+              }
+              p {
+                line-height: 200px;
+              } // p
+            } // pc버전
           }
         } // recommand1
 
@@ -309,7 +350,18 @@
           .tokki {
             padding: 20px 5% 40px 5%;
             position: absolute;
-            top: 5%; left: 45%;
+            top: 10%; left: 45%;
+            @include responsive(pc-screens) {
+              color: #000;
+              top: -40%; left: 10%;
+              span {
+                // display: none;
+                color: #fff;
+              }
+              p {
+                line-height: 200px;
+              } // p
+            } // pc버전
           }
         } // recommand2
 
@@ -319,7 +371,18 @@
             color: #fff;
             padding: 20px 2% 40px 5%;
             position: absolute;
-            top:5%; left: 45%;
+            top: 10%; left: 45%;
+            @include responsive(pc-screens) {
+              color: #000;
+              top: -40%; left: 10%;
+              span {
+                // display: none;
+                color: #fff;
+              }
+              p {
+                line-height: 200px;
+              } // p
+            } // pc버전
           }
         } // recommand3
 
@@ -329,7 +392,18 @@
             // background-color: rgba(255, 255, 255, 0.2);
             padding: 20px 5% 40px 5%;
             position: absolute;
-            top: 5%; left: 45%;
+            top: 10%; left: 45%;
+            @include responsive(pc-screens) {
+              color: #000;
+              top: -40%; left: 10%;
+              span {
+                // display: none;
+                color: #fff;
+              }
+              p {
+                line-height: 200px;
+              } // p
+            } // pc버전
           }
         } // recommand4
 
@@ -338,8 +412,14 @@
           .containerjj {
             h4 {
               text-align: center;
+              @include responsive(pc-screens) {
+                text-align: left;
+              }
               span {
                 display: none;
+              @include responsive(pc-screens) {
+                display: inline;
+              }
               }
             }
   
@@ -347,8 +427,22 @@
               display: none;
               @include responsive(pc-screens) {
                 display: grid;
-                
+                .div1 {grid-area: div1; margin: 0; width: 100%; margin-left: -4px; img {width: 99%; height: 100%;}}
+                .div2 {grid-area: div2; margin: 0; width: 100%; margin-left: 4px; img {width: 99%; height: 100%;}}
+                .div3 {grid-area: div3; margin:0; width: 100%; margin-top: 5px; margin-left: -4px; img {width: 95%; height: 100%;}}
+                .div4 {grid-area: div4; margin: 0; width: 100%; margin-top: 2px; margin-left: 1px; img {width: 105%; height: 90%;}}
+                .div5 {grid-area: div5; margin: 0; width: 100%; margin-top: 11px; margin-left: 7px; img{width: 97%;}}
+                .div6 {grid-area: div6; margin: 0; width: 100%; margin-top: -8px; margin-left: -4px; img{width: 97%; height: 95%;}}
+                .div7 {grid-area: div7; margin: 0; width: 80%; margin-top: -23px; margin-left: 8px; img{width: 110%; height: 89%;}}
+                .div8 {grid-area: div8; margin: 0; width: 80%; margin-top: -23px; margin-left: -18px; img{width: 139%; height: 89%;}}
+                .div9 {grid-area: div9; margin: 0; width: 100%; margin-top: -11px; margin-left: 7px; img{width: 97%; height: 95%;}}
+                grid-template-areas: 
+                  "div1 div1 div2 div2"
+                  "div3 div4 div4 div5"
+                  "div6 div7 div8 div9";
               }
+              margin-top: 50px;
+              margin-bottom: 100px;
             }
   
             .mobile {  
