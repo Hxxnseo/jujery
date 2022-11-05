@@ -1,6 +1,6 @@
-@import "./style1.scss";
-@import "./common1.scss";
-@import "./mixin1.scss";
+@import "style1.scss";
+@import "common1.scss";
+@import "mixin1.scss";
 
 @include responsive(pc-screens) {
   body {
@@ -205,9 +205,169 @@
         } // mainSubMenu
 
         // 여기부터 작성하세요오오
-      }
-    }
-    // main
+        h3 {
+          text-align: center;
+          margin-top: 30px;
+          background-color: #fff;
+          font-family: $font-main;
+        }
+
+        p.title {
+          font-family: $font-sub;
+          text-align: center;
+          width: 30%;
+          display: flex;
+          margin: 50px 44%;
+    
+          .past {
+            color: #ccc;
+          }
+        } // p.title
+
+        .pageintro{
+          position: relative;
+          font-size: 2.833em;
+          height: 177px;
+          text-align: center;
+          margin-bottom: 100px;
+  
+          img {
+            width: 100%;
+            @include responsive(pc-screens) {
+              width: 100%;
+              margin-bottom: 100px;
+              height: 376.3px;
+            }
+          }
+  
+          .text {
+            width: 100%;
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -40%);
+            span {
+              margin: 20%;
+            }
+            p {
+              display: none;
+              @include responsive(pc-screens) {
+                display: block;
+                margin-left: 21%;
+                margin-top: 100px;
+                width: 100%;
+              }
+            }
+            @include responsive(pc-screens) {
+              top: 90%; left: 20%;
+            }
+          }
+        } // .pageintro
+
+        div{
+          margin-bottom: 10px;
+          font-family: $font-sub;
+          line-height: 30px;
+          @include responsive(pc-screens) {
+            display: inline-block;
+            text-align: center;
+          }
+          h4 {
+            font-family: $font-main;
+          }
+          p {
+            font-weight: bolder;
+            font-size: 1.1em;
+          }
+          img.mobilenew {
+            width: 100%;
+            @include responsive(pc-screens) {
+              display: none;
+            }
+          }
+          img.pcnew {
+            display: none;
+            @include responsive(pc-screens) {
+              display: block;
+              width: 96%;
+            }
+          }
+        } // div
+
+        .recommand1 {
+          position: relative;
+          .red {
+            color: #fff;
+            padding: 20px 5% 40px 5%;
+            position: absolute;
+            top: 10%; left: 45%;
+          }
+        } // recommand1
+
+        .recommand2 {
+          position: relative;
+          .tokki {
+            padding: 20px 5% 40px 5%;
+            position: absolute;
+            top: 5%; left: 45%;
+          }
+        } // recommand2
+
+        .recommand3 {
+          position: relative;
+          .one {
+            color: #fff;
+            padding: 20px 2% 40px 5%;
+            position: absolute;
+            top:5%; left: 45%;
+          }
+        } // recommand3
+
+        .recommand4 {
+          position: relative;
+          .jin {
+            // background-color: rgba(255, 255, 255, 0.2);
+            padding: 20px 5% 40px 5%;
+            position: absolute;
+            top: 5%; left: 45%;
+          }
+        } // recommand4
+
+        .sort {
+          margin-top: 100px;
+          .containerjj {
+            h4 {
+              text-align: center;
+              span {
+                display: none;
+              }
+            }
+  
+            div.pc {
+              display: none;
+              @include responsive(pc-screens) {
+                display: grid;
+                
+              }
+            }
+  
+            .mobile {  
+              display: flex;
+              flex-wrap: wrap;
+              width: 92%;
+              margin: 50px 4% 100px 4%;
+              img {
+                width: 50%; 
+              }
+
+              @include responsive(pc-screens) {
+                display: none;
+              }
+            } // .mobile
+          } // containerjj
+        } // .sort
+      } // .main
+    } // main
   }
 
   footer {

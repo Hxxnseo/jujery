@@ -216,6 +216,170 @@ p {
     font-size: 14px;
   }
 }
+.wrapper .flexWrapper main .main h3 {
+  text-align: center;
+  margin-top: 30px;
+  background-color: #fff;
+  font-family: "SANGJU Gyeongcheon Island";
+}
+.wrapper .flexWrapper main .main p.title {
+  font-family: "NotoSerifKR-Regular";
+  text-align: center;
+  width: 30%;
+  display: flex;
+  margin: 50px 44%;
+}
+.wrapper .flexWrapper main .main p.title .past {
+  color: #ccc;
+}
+.wrapper .flexWrapper main .main .pageintro {
+  position: relative;
+  font-size: 2.833em;
+  height: 177px;
+  text-align: center;
+  margin-bottom: 100px;
+}
+.wrapper .flexWrapper main .main .pageintro img {
+  width: 100%;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .main .pageintro img {
+    width: 100%;
+    margin-bottom: 100px;
+    height: 376.3px;
+  }
+}
+.wrapper .flexWrapper main .main .pageintro .text {
+  width: 100%;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -40%);
+}
+.wrapper .flexWrapper main .main .pageintro .text span {
+  margin: 20%;
+}
+.wrapper .flexWrapper main .main .pageintro .text p {
+  display: none;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .main .pageintro .text p {
+    display: block;
+    margin-left: 21%;
+    margin-top: 100px;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .main .pageintro .text {
+    top: 90%;
+    left: 20%;
+  }
+}
+.wrapper .flexWrapper main .main div {
+  margin-bottom: 10px;
+  font-family: "NotoSerifKR-Regular";
+  line-height: 30px;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .main div {
+    display: inline-block;
+    text-align: center;
+  }
+}
+.wrapper .flexWrapper main .main div h4 {
+  font-family: "SANGJU Gyeongcheon Island";
+}
+.wrapper .flexWrapper main .main div p {
+  font-weight: bolder;
+  font-size: 1.1em;
+}
+.wrapper .flexWrapper main .main div img.mobilenew {
+  width: 100%;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .main div img.mobilenew {
+    display: none;
+  }
+}
+.wrapper .flexWrapper main .main div img.pcnew {
+  display: none;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .main div img.pcnew {
+    display: block;
+    width: 96%;
+  }
+}
+.wrapper .flexWrapper main .main .recommand1 {
+  position: relative;
+}
+.wrapper .flexWrapper main .main .recommand1 .red {
+  color: #fff;
+  padding: 20px 5% 40px 5%;
+  position: absolute;
+  top: 10%;
+  left: 45%;
+}
+.wrapper .flexWrapper main .main .recommand2 {
+  position: relative;
+}
+.wrapper .flexWrapper main .main .recommand2 .tokki {
+  padding: 20px 5% 40px 5%;
+  position: absolute;
+  top: 5%;
+  left: 45%;
+}
+.wrapper .flexWrapper main .main .recommand3 {
+  position: relative;
+}
+.wrapper .flexWrapper main .main .recommand3 .one {
+  color: #fff;
+  padding: 20px 2% 40px 5%;
+  position: absolute;
+  top: 5%;
+  left: 45%;
+}
+.wrapper .flexWrapper main .main .recommand4 {
+  position: relative;
+}
+.wrapper .flexWrapper main .main .recommand4 .jin {
+  padding: 20px 5% 40px 5%;
+  position: absolute;
+  top: 5%;
+  left: 45%;
+}
+.wrapper .flexWrapper main .main .sort {
+  margin-top: 100px;
+}
+.wrapper .flexWrapper main .main .sort .containerjj h4 {
+  text-align: center;
+}
+.wrapper .flexWrapper main .main .sort .containerjj h4 span {
+  display: none;
+}
+.wrapper .flexWrapper main .main .sort .containerjj div.pc {
+  display: none;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .main .sort .containerjj div.pc {
+    display: grid;
+  }
+}
+.wrapper .flexWrapper main .main .sort .containerjj .mobile {
+  display: flex;
+  flex-wrap: wrap;
+  width: 92%;
+  margin: 50px 4% 100px 4%;
+}
+.wrapper .flexWrapper main .main .sort .containerjj .mobile img {
+  width: 50%;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .main .sort .containerjj .mobile {
+    display: none;
+  }
+}
 @media screen and (min-width: 1024px) {
   .wrapper footer .container {
     margin: 0;
