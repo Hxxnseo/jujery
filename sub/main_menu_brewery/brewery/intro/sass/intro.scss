@@ -243,6 +243,7 @@
 
         address {
           font-style: normal;
+          font-family: $font-sub;
         }
 
         p {
@@ -276,7 +277,7 @@
           text-align: center;
 
           @include responsive(pc-screens) {
-            width: 25%;
+            width: 30%;
             padding: 0;
             border: 0;
           }
@@ -304,7 +305,7 @@
 
           @include responsive(pc-screens) {
             position: relative;
-            width: 50%;
+            width: 40%;
             height: 250px;
             border-bottom: 0;
             border-right: 1px solid #ccc;
@@ -322,7 +323,7 @@
               padding: 10px;
 
               @include responsive(pc-screens) {
-                padding-right: 30px;
+                padding-right: 15px;
 
                 &:last-child {
                   padding-right: 0;
@@ -348,11 +349,12 @@
 
         .footMenu {
           padding: 40px;
+          font-size: 14px;
 
           @include responsive(pc-screens) {
-            width: 25%;
+            width: 30%;
+            font-size: 12px;
             padding: 0;
-            font-size: 13px;
           }
           ul {
             display: flex;

@@ -263,6 +263,7 @@ p {
 }
 .wrapper footer .footer .footInfo address {
   font-style: normal;
+  font-family: "NotoSerifKR-Regular";
 }
 .wrapper footer .footer .footInfo p {
   margin: 20px 0;
@@ -293,7 +294,7 @@ p {
 }
 @media screen and (min-width: 1024px) {
   .wrapper footer .footer .footBox .footLogoCopy {
-    width: 25%;
+    width: 30%;
     padding: 0;
     border: 0;
   }
@@ -318,7 +319,7 @@ p {
 @media screen and (min-width: 1024px) {
   .wrapper footer .footer .footBox .footSns {
     position: relative;
-    width: 50%;
+    width: 40%;
     height: 250px;
     border-bottom: 0;
     border-right: 1px solid #ccc;
@@ -339,7 +340,7 @@ p {
 }
 @media screen and (min-width: 1024px) {
   .wrapper footer .footer .footBox .footSns .footSnsCont li {
-    padding-right: 30px;
+    padding-right: 15px;
   }
   .wrapper footer .footer .footBox .footSns .footSnsCont li:last-child {
     padding-right: 0;
@@ -360,12 +361,13 @@ p {
 }
 .wrapper footer .footer .footBox .footMenu {
   padding: 40px;
+  font-size: 14px;
 }
 @media screen and (min-width: 1024px) {
   .wrapper footer .footer .footBox .footMenu {
-    width: 25%;
+    width: 30%;
+    font-size: 12px;
     padding: 0;
-    font-size: 13px;
   }
 }
 .wrapper footer .footer .footBox .footMenu ul {
