@@ -231,21 +231,33 @@ p {
     font-size: 14px;
   }
 }
-.wrapper .flexWrapper main .main h3 {
+.wrapper .flexWrapper main .main .start {
   text-align: center;
+}
+.wrapper .flexWrapper main .main .start h3 {
   margin-top: 30px;
   background-color: #fff;
   font-family: "SANGJU Gyeongcheon Island";
 }
-.wrapper .flexWrapper main .main p.title {
+.wrapper .flexWrapper main .main .start p.title {
   font-family: "NotoSerifKR-Regular";
-  text-align: center;
   width: 30%;
   display: flex;
   margin: 50px 44%;
 }
-.wrapper .flexWrapper main .main p.title .past {
+.wrapper .flexWrapper main .main .start p.title .past {
   color: #ccc;
+}
+.wrapper .flexWrapper main .main .start p.title .past:hover {
+  text-decoration: underline;
+}
+.wrapper .flexWrapper main .main .start p.title .present:hover {
+  text-decoration: underline;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .main .start p.title {
+    width: 100%;
+  }
 }
 .wrapper .flexWrapper main .main .pageintro {
   position: relative;
@@ -324,6 +336,20 @@ p {
   .wrapper .flexWrapper main .main div img.pcnew {
     display: block;
     width: 96%;
+    margin-top: 25px;
+  }
+  .wrapper .flexWrapper main .main div img.pcnew:hover {
+    filter: brightness(40%);
+  }
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .main .titlenew {
+    display: flex;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .main .recommands {
+    margin-top: 80px;
   }
 }
 .wrapper .flexWrapper main .main .recommand1 {
@@ -336,14 +362,40 @@ p {
   top: 10%;
   left: 45%;
 }
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .main .recommand1 .red {
+    color: #000;
+    top: -40%;
+    left: 10%;
+  }
+  .wrapper .flexWrapper main .main .recommand1 .red span {
+    color: #fff;
+  }
+  .wrapper .flexWrapper main .main .recommand1 .red p {
+    line-height: 200px;
+  }
+}
 .wrapper .flexWrapper main .main .recommand2 {
   position: relative;
 }
 .wrapper .flexWrapper main .main .recommand2 .tokki {
   padding: 20px 5% 40px 5%;
   position: absolute;
-  top: 5%;
+  top: 10%;
   left: 45%;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .main .recommand2 .tokki {
+    color: #000;
+    top: -40%;
+    left: 10%;
+  }
+  .wrapper .flexWrapper main .main .recommand2 .tokki span {
+    color: #fff;
+  }
+  .wrapper .flexWrapper main .main .recommand2 .tokki p {
+    line-height: 200px;
+  }
 }
 .wrapper .flexWrapper main .main .recommand3 {
   position: relative;
@@ -352,8 +404,21 @@ p {
   color: #fff;
   padding: 20px 2% 40px 5%;
   position: absolute;
-  top: 5%;
+  top: 10%;
   left: 45%;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .main .recommand3 .one {
+    color: #000;
+    top: -40%;
+    left: 10%;
+  }
+  .wrapper .flexWrapper main .main .recommand3 .one span {
+    color: #fff;
+  }
+  .wrapper .flexWrapper main .main .recommand3 .one p {
+    line-height: 200px;
+  }
 }
 .wrapper .flexWrapper main .main .recommand4 {
   position: relative;
@@ -361,8 +426,21 @@ p {
 .wrapper .flexWrapper main .main .recommand4 .jin {
   padding: 20px 5% 40px 5%;
   position: absolute;
-  top: 5%;
+  top: 10%;
   left: 45%;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .main .recommand4 .jin {
+    color: #000;
+    top: -40%;
+    left: 10%;
+  }
+  .wrapper .flexWrapper main .main .recommand4 .jin span {
+    color: #fff;
+  }
+  .wrapper .flexWrapper main .main .recommand4 .jin p {
+    line-height: 200px;
+  }
 }
 .wrapper .flexWrapper main .main .sort {
   margin-top: 100px;
@@ -370,15 +448,124 @@ p {
 .wrapper .flexWrapper main .main .sort .containerjj h4 {
   text-align: center;
 }
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .main .sort .containerjj h4 {
+    text-align: left;
+  }
+}
 .wrapper .flexWrapper main .main .sort .containerjj h4 span {
   display: none;
 }
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .main .sort .containerjj h4 span {
+    display: inline;
+  }
+}
 .wrapper .flexWrapper main .main .sort .containerjj div.pc {
   display: none;
+  margin-top: 50px;
+  margin-bottom: 100px;
 }
 @media screen and (min-width: 1024px) {
   .wrapper .flexWrapper main .main .sort .containerjj div.pc {
     display: grid;
+    grid-template-areas: "div1 div1 div2 div2" "div3 div4 div4 div5" "div6 div7 div8 div9";
+  }
+  .wrapper .flexWrapper main .main .sort .containerjj div.pc .div1 {
+    grid-area: div1;
+    margin: 0;
+    width: 100%;
+    margin-left: -4px;
+  }
+  .wrapper .flexWrapper main .main .sort .containerjj div.pc .div1 img {
+    width: 99%;
+    height: 100%;
+  }
+  .wrapper .flexWrapper main .main .sort .containerjj div.pc .div2 {
+    grid-area: div2;
+    margin: 0;
+    width: 100%;
+    margin-left: 4px;
+  }
+  .wrapper .flexWrapper main .main .sort .containerjj div.pc .div2 img {
+    width: 99%;
+    height: 100%;
+  }
+  .wrapper .flexWrapper main .main .sort .containerjj div.pc .div3 {
+    grid-area: div3;
+    margin: 0;
+    width: 100%;
+    margin-top: 5px;
+    margin-left: -4px;
+  }
+  .wrapper .flexWrapper main .main .sort .containerjj div.pc .div3 img {
+    width: 95%;
+    height: 100%;
+  }
+  .wrapper .flexWrapper main .main .sort .containerjj div.pc .div4 {
+    grid-area: div4;
+    margin: 0;
+    width: 100%;
+    margin-top: 2px;
+    margin-left: 1px;
+  }
+  .wrapper .flexWrapper main .main .sort .containerjj div.pc .div4 img {
+    width: 105%;
+    height: 90%;
+  }
+  .wrapper .flexWrapper main .main .sort .containerjj div.pc .div5 {
+    grid-area: div5;
+    margin: 0;
+    width: 100%;
+    margin-top: 11px;
+    margin-left: 7px;
+  }
+  .wrapper .flexWrapper main .main .sort .containerjj div.pc .div5 img {
+    width: 97%;
+  }
+  .wrapper .flexWrapper main .main .sort .containerjj div.pc .div6 {
+    grid-area: div6;
+    margin: 0;
+    width: 100%;
+    margin-top: -8px;
+    margin-left: -4px;
+  }
+  .wrapper .flexWrapper main .main .sort .containerjj div.pc .div6 img {
+    width: 97%;
+    height: 95%;
+  }
+  .wrapper .flexWrapper main .main .sort .containerjj div.pc .div7 {
+    grid-area: div7;
+    margin: 0;
+    width: 80%;
+    margin-top: -23px;
+    margin-left: 8px;
+  }
+  .wrapper .flexWrapper main .main .sort .containerjj div.pc .div7 img {
+    width: 110%;
+    height: 89%;
+  }
+  .wrapper .flexWrapper main .main .sort .containerjj div.pc .div8 {
+    grid-area: div8;
+    margin: 0;
+    width: 80%;
+    margin-top: -23px;
+    margin-left: -18px;
+  }
+  .wrapper .flexWrapper main .main .sort .containerjj div.pc .div8 img {
+    width: 139%;
+    height: 89%;
+  }
+  .wrapper .flexWrapper main .main .sort .containerjj div.pc .div9 {
+    grid-area: div9;
+    margin: 0;
+    width: 100%;
+    margin-top: -11px;
+    margin-left: 7px;
+  }
+  .wrapper .flexWrapper main .main .sort .containerjj div.pc .div9 img {
+    width: 97%;
+    height: 95%;
   }
 }
 .wrapper .flexWrapper main .main .sort .containerjj .mobile {
