@@ -231,6 +231,55 @@ p {
     font-size: 14px;
   }
 }
+.wrapper .flexWrapper main .main .start {
+  text-align: center;
+}
+.wrapper .flexWrapper main .main .start h3 {
+  margin-top: 30px;
+  background-color: #fff;
+  font-family: "SANGJU Gyeongcheon Island";
+}
+.wrapper .flexWrapper main .main .start p.title {
+  font-family: "NotoSerifKR-Regular";
+  width: 30%;
+  display: flex;
+  margin: 50px 44%;
+}
+.wrapper .flexWrapper main .main .start p.title .past:hover {
+  text-decoration: underline;
+}
+.wrapper .flexWrapper main .main .start p.title .present {
+  color: #ccc;
+}
+.wrapper .flexWrapper main .main .start p.title .present:hover {
+  text-decoration: underline;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .main .start p.title {
+    width: 100%;
+  }
+}
+.wrapper .flexWrapper main .main .label {
+  display: none;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .main .label {
+    display: flex;
+  }
+}
+.wrapper .flexWrapper main .main .story {
+  background-image: url(../../img/past_pic.png);
+  text-align: center;
+  font-size: 3.125em;
+  height: 300px;
+  padding-top: 20%;
+}
+.wrapper .flexWrapper main .main .story span {
+  color: #fff;
+}
+.wrapper .flexWrapper main .main .story p {
+  display: none;
+}
 @media screen and (min-width: 1024px) {
   .wrapper footer .container {
     margin: 0;

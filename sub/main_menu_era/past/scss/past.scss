@@ -205,8 +205,60 @@
         } // mainSubMenu
 
         // 여기부터 작성하세요오오
-      }
-    }
+        .start {
+          text-align: center;
+          h3 {
+            margin-top: 30px;
+            background-color: #fff;
+            font-family: $font-main;
+          }
+  
+          p.title {
+            font-family: $font-sub;
+            width: 30%;
+            display: flex;
+            margin: 50px 44%;
+      
+            .past {
+              &:hover {
+                text-decoration: underline;
+              }
+            }
+            
+            .present {
+              color: #ccc;
+              &:hover {
+                text-decoration: underline;
+              }
+            }
+  
+            @include responsive(pc-screens) {
+              width: 100%;
+            }
+          } // p.title
+        } // .start
+
+        .label {
+          display: none;
+          @include responsive(pc-screens) {
+            display: flex;
+          }
+        } // label
+        .story {
+          background-image: url(../../img/past_pic.png);
+          text-align: center;
+          font-size: 3.125em;
+          height: 300px;
+          padding-top: 20%;
+          span {
+            color: #fff;
+          }
+          p {
+            display: none;
+          }
+        }
+      } //.main
+    } // main
     // main
   }
 
