@@ -1,6 +1,6 @@
-@import "./style1.scss";
-@import "./common1.scss";
-@import "./mixin1.scss";
+@import "../sass/style1.scss";
+@import "../sass/common1.scss";
+@import "../sass/mixin1.scss";
 
 @include responsive(pc-screens) {
   body {
@@ -204,11 +204,183 @@
           }
         } // mainSubMenu
 
-        // 여기부터 작성하세요오오
+
+       // ==============sec1==========전국6도 전통주 //
+       .sec1 {
+        margin-top: 30px;
+        text-align: center;
+        @include responsive(pc-screens) {
+          margin-top: 130px;
+        }
+
+        h3 {
+          font-size: 40px;
+        }
+        .region_six {
+          margin: 100px 0;
+          display: flex;
+          position: relative;
+          div {
+            width: 100%;
+
+            h4 {
+              width: 105px;
+              margin: 100px 20px 0 20px;
+              @include responsive(pc-screens) {
+                margin-top: 240px;
+              }
+            }
+            img {
+              width: 195px;
+              height: 237px;
+              @include responsive(pc-screens) {
+                width: 433px;
+                height: 529px;
+              }
+            }
+          }
+        } // region_six
+      } // main
+    } // container
+    img {
+      // width: 100%;
+      height: 197px;
+      @include responsive(pc-screens) {
+        width: 100%;
+        height: 507px;
       }
     }
+  } // sec1
+
+  // ============== sec2 =============
+  .sec2 {
+    margin: 100px 0 50px 0;
+    @include responsive(pc-screens) {
+
+      
+    }
+
+    .container {
+      .p-gap {
+        @include responsive(pc-screens) {
+          padding: 0 60px;
+        }
+      
+      .region_con {
+        margin: 20px 0;
+         
+        h3 {
+          text-align: center;
+          margin: 0 35px;
+          font-size: 34px;
+          line-height: 35px;
+          padding: 0 20px;
+          @include responsive(pc-screens) {
+            text-align: left;
+            margin: 0 0 50px 0;
+            padding: 0 0;
+            
+            
+          }
+        }
+        span {
+          margin: 25px 0;
+          display: block;
+          width: 100%;
+          height: 2px;
+          background-color: #dbdbdb;
+          @include responsive(pc-screens) {
+            display: none;
+          }
+        }
+        p {
+          font-family: $font-sub;
+          color: #606060;
+          line-height: 20px;
+        }
+        .pc-line {
+          display: none;
+          @include responsive(pc-screens) {
+            display: block;
+          }
+        }
+      } // region_con
+
+      .mobile-menu {
+        padding: 5px 5px;
+        display: flex;
+        justify-content: space-between;
+        @include responsive(pc-screens) {
+          display: none;
+        }
+        div {
+          font-family: $font-sub;
+          font-size: 18px;
+        }
+
+
+      } // mobile-menu
+      .line {
+        margin: 10px 0 15px 0;
+        display: block;
+        width: 100%;
+        height: 8px;
+        background-color: #dbdbdb;
+        @include responsive(pc-screens) {
+          display: none;
+        }
+      } // line
+      .region_box_twelve {
+        display: flex;
+        justify-content: space-between;
+        div {
+          
+          font-family: $font-sub;
+          margin-right: 20px;
+          
+          img {
+            width:166px;
+            height: 229px;
+            @include responsive(pc-screens) {
+              width : 270px;
+              height : 372px;
+            }
+          }
+          .box-even {
+            height: 151px;
+            @include responsive(pc-screens) {
+              width:270px;
+              height:259px;
+            }
+          }
+
+          h4 {
+            font-size: 14px;
+            padding: 20px 0;
+          }
+          p {
+            font-size: 12px;
+            line-height: 20px;
+          }
+
+        } 
+      } // region_box_twelve
+      span {
+        @include responsive(pc-screens) {
+        display: block;
+        background-color: #dbdbdb;
+        height: 5px;
+        width: 100%;
+        }
+      }
+    } // p-gap
+  } // sec2
+
+      } // .main
+      } // container
+    }
     // main
-  }
+
 
   footer {
     .container {
@@ -379,4 +551,4 @@
       }
     }
   }
-}
+
