@@ -236,15 +236,27 @@ p {
   margin: 30px 0 100px;
   text-align: center;
 }
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .main section.signup {
+    margin-top: 130px;
+  }
+}
 .wrapper .flexWrapper main .main section.signup h3 {
   font-family: "NotoSerifKR-Regular";
   font-weight: normal;
 }
 .wrapper .flexWrapper main .main section.signup .flex_box {
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
+  width: 100%;
   margin-top: 50px;
   margin-bottom: 20px;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .main section.signup .flex_box {
+    width: 40%;
+  }
 }
 .wrapper .flexWrapper main .main section.signup .flex_box span {
   font-family: "NotoSerifKR-Regular";
@@ -254,6 +266,11 @@ p {
   width: 100%;
   display: inline-block;
   text-align: center;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .main section.signup form {
+    width: 40%;
+  }
 }
 .wrapper .flexWrapper main .main section.signup form input {
   display: flex;
@@ -279,11 +296,13 @@ p {
   cursor: pointer;
 }
 .wrapper .flexWrapper main .main section.signup form select {
+  padding: 0 20px;
   height: 50px;
   border: 1px solid #ccc;
 }
 .wrapper .flexWrapper main .main section.signup form .phone_box,
-.wrapper .flexWrapper main .main section.signup form .mobile_box {
+.wrapper .flexWrapper main .main section.signup form .mobile_box,
+.wrapper .flexWrapper main .main section.signup form .email_box {
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -291,15 +310,17 @@ p {
 .wrapper .flexWrapper main .main section.signup form .phone_box input,
 .wrapper .flexWrapper main .main section.signup form .phone_box select,
 .wrapper .flexWrapper main .main section.signup form .mobile_box input,
-.wrapper .flexWrapper main .main section.signup form .mobile_box select {
+.wrapper .flexWrapper main .main section.signup form .mobile_box select,
+.wrapper .flexWrapper main .main section.signup form .email_box input,
+.wrapper .flexWrapper main .main section.signup form .email_box select {
   width: 30%;
 }
 .wrapper .flexWrapper main .main section.signup form .phone_box span,
-.wrapper .flexWrapper main .main section.signup form .mobile_box span {
+.wrapper .flexWrapper main .main section.signup form .mobile_box span,
+.wrapper .flexWrapper main .main section.signup form .email_box span {
+  display: inline-block;
   width: 5%;
-}
-.wrapper .flexWrapper main .main section.signup form .email_box {
-  display: flex;
+  line-height: 50px;
 }
 .wrapper .flexWrapper main .main section.signup form .signup_btn {
   display: flex;
