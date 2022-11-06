@@ -74,7 +74,6 @@ p {
 .container {
   padding: 0 20px;
   width: 100%;
-  background-color: #000;
 }
 @media screen and (min-width: 1024px) {
   .container {
@@ -421,6 +420,26 @@ p {
     height: 5px;
     width: 100%;
   }
+}
+.wrapper .flexWrapper .sec2 .sec3 {
+  position: relative;
+}
+.wrapper .flexWrapper .sec2 .sec3 img {
+  width: 370px;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper .sec2 .sec3 img {
+    width: 1180px;
+  }
+}
+.wrapper .flexWrapper .sec2 .sec3 .ricewine_title {
+  padding: 100px;
+}
+.wrapper .flexWrapper .sec2 .sec3 .ricewine_title h1 {
+  font-size: 30px;
+}
+.wrapper .flexWrapper .sec2 .sec3 .ricewine_title h5 {
+  color: #dbdbdb;
 }
 
 @media screen and (min-width: 1024px) {
