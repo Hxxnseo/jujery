@@ -1,3 +1,19 @@
+@font-face {
+  font-family: "SANGJU Gyeongcheon Island";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2112@1.0/SANGJUGyeongcheonIsland.woff") format("woff");
+}
+@font-face {
+  src: url("https://fonts.googleapis.com/css2?family=Noto+Serif+KR&display=swap");
+  font-family: "NotoSerifKR-Regular";
+}
+@font-face {
+  font-family: "SANGJU Gyeongcheon Island";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2112@1.0/SANGJUGyeongcheonIsland.woff") format("woff");
+}
+@font-face {
+  src: url("https://fonts.googleapis.com/css2?family=Noto+Serif+KR&display=swap");
+  font-family: "NotoSerifKR-Regular";
+}
 * {
   margin: 0;
   padding: 0;
@@ -57,7 +73,6 @@ p {
 .container {
   padding: 0 20px;
   width: 100%;
-  background-color: #000;
 }
 @media screen and (min-width: 1024px) {
   .container {
@@ -70,7 +85,7 @@ p {
   position: relative;
   width: 100%;
   height: 100%;
-  background-image: url(../../../images/background/detail_page_main_background.png);
+  background-image: url(../../../../images/background/detail_page_main_background.png);
 }
 @media screen and (min-width: 1024px) {
   .wrapper .flexWrapper {
@@ -86,7 +101,7 @@ p {
   .wrapper .flexWrapper header {
     height: auto;
     width: 370px;
-    background-image: url(../../../images/background/detail_page_header_background.png);
+    background-image: url(../../../../images/background/detail_page_header_background.png);
   }
 }
 .wrapper .flexWrapper header .header .logoMenu {
@@ -214,6 +229,357 @@ p {
   .wrapper .flexWrapper main .main .mainSubMenu ul li a {
     font-family: "NotoSerifKR-Regular";
     font-size: 14px;
+  }
+}
+.wrapper .flexWrapper main .main .start {
+  text-align: center;
+}
+.wrapper .flexWrapper main .main .start h3 {
+  margin-top: 30px;
+  background-color: #fff;
+  font-family: "SANGJU Gyeongcheon Island";
+}
+.wrapper .flexWrapper main .main .start p.title {
+  font-family: "NotoSerifKR-Regular";
+  width: 30%;
+  display: flex;
+  margin: 50px 44%;
+}
+.wrapper .flexWrapper main .main .start p.title .past {
+  color: #ccc;
+}
+.wrapper .flexWrapper main .main .start p.title .past:hover {
+  text-decoration: underline;
+}
+.wrapper .flexWrapper main .main .start p.title .present:hover {
+  text-decoration: underline;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .main .start p.title {
+    width: 100%;
+  }
+}
+.wrapper .flexWrapper main .main .pageintro {
+  position: relative;
+  font-size: 2.833em;
+  height: 177px;
+  text-align: center;
+  margin-bottom: 100px;
+}
+.wrapper .flexWrapper main .main .pageintro img {
+  width: 100%;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .main .pageintro img {
+    width: 100%;
+    margin-bottom: 100px;
+    height: 376.3px;
+  }
+}
+.wrapper .flexWrapper main .main .pageintro .text {
+  width: 100%;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -40%);
+}
+.wrapper .flexWrapper main .main .pageintro .text span {
+  margin: 20%;
+}
+.wrapper .flexWrapper main .main .pageintro .text p {
+  display: none;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .main .pageintro .text p {
+    display: block;
+    margin-left: 21%;
+    margin-top: 100px;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .main .pageintro .text {
+    top: 90%;
+    left: 20%;
+  }
+}
+.wrapper .flexWrapper main .main div {
+  margin-bottom: 10px;
+  font-family: "NotoSerifKR-Regular";
+  line-height: 30px;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .main div {
+    display: inline-block;
+    text-align: center;
+  }
+}
+.wrapper .flexWrapper main .main div h4 {
+  font-family: "SANGJU Gyeongcheon Island";
+}
+.wrapper .flexWrapper main .main div p {
+  font-weight: bolder;
+  font-size: 1.1em;
+}
+.wrapper .flexWrapper main .main div img.mobilenew {
+  width: 100%;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .main div img.mobilenew {
+    display: none;
+  }
+}
+.wrapper .flexWrapper main .main div img.pcnew {
+  display: none;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .main div img.pcnew {
+    display: block;
+    width: 96%;
+    margin-top: 25px;
+  }
+  .wrapper .flexWrapper main .main div img.pcnew:hover {
+    filter: brightness(40%);
+  }
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .main .titlenew {
+    display: flex;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .main .recommands {
+    margin-top: 80px;
+  }
+}
+.wrapper .flexWrapper main .main .recommand1 {
+  position: relative;
+}
+.wrapper .flexWrapper main .main .recommand1 .red {
+  color: #fff;
+  padding: 20px 5% 40px 5%;
+  position: absolute;
+  top: 10%;
+  left: 45%;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .main .recommand1 .red {
+    color: #000;
+    top: -40%;
+    left: 10%;
+  }
+  .wrapper .flexWrapper main .main .recommand1 .red span {
+    color: #fff;
+  }
+  .wrapper .flexWrapper main .main .recommand1 .red p {
+    line-height: 200px;
+  }
+}
+.wrapper .flexWrapper main .main .recommand2 {
+  position: relative;
+}
+.wrapper .flexWrapper main .main .recommand2 .tokki {
+  padding: 20px 5% 40px 5%;
+  position: absolute;
+  top: 10%;
+  left: 45%;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .main .recommand2 .tokki {
+    color: #000;
+    top: -40%;
+    left: 10%;
+  }
+  .wrapper .flexWrapper main .main .recommand2 .tokki span {
+    color: #fff;
+  }
+  .wrapper .flexWrapper main .main .recommand2 .tokki p {
+    line-height: 200px;
+  }
+}
+.wrapper .flexWrapper main .main .recommand3 {
+  position: relative;
+}
+.wrapper .flexWrapper main .main .recommand3 .one {
+  color: #fff;
+  padding: 20px 2% 40px 5%;
+  position: absolute;
+  top: 10%;
+  left: 45%;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .main .recommand3 .one {
+    color: #000;
+    top: -40%;
+    left: 10%;
+  }
+  .wrapper .flexWrapper main .main .recommand3 .one span {
+    color: #fff;
+  }
+  .wrapper .flexWrapper main .main .recommand3 .one p {
+    line-height: 200px;
+  }
+}
+.wrapper .flexWrapper main .main .recommand4 {
+  position: relative;
+}
+.wrapper .flexWrapper main .main .recommand4 .jin {
+  padding: 20px 5% 40px 5%;
+  position: absolute;
+  top: 10%;
+  left: 45%;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .main .recommand4 .jin {
+    color: #000;
+    top: -40%;
+    left: 10%;
+  }
+  .wrapper .flexWrapper main .main .recommand4 .jin span {
+    color: #fff;
+  }
+  .wrapper .flexWrapper main .main .recommand4 .jin p {
+    line-height: 200px;
+  }
+}
+.wrapper .flexWrapper main .main .sort {
+  margin-top: 100px;
+}
+.wrapper .flexWrapper main .main .sort .containerjj h4 {
+  text-align: center;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .main .sort .containerjj h4 {
+    text-align: left;
+  }
+}
+.wrapper .flexWrapper main .main .sort .containerjj h4 span {
+  display: none;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .main .sort .containerjj h4 span {
+    display: inline;
+  }
+}
+.wrapper .flexWrapper main .main .sort .containerjj div.pc {
+  display: none;
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .main .sort .containerjj div.pc {
+    display: grid;
+    grid-template-areas: "div1 div1 div2 div2" "div3 div4 div4 div5" "div6 div7 div8 div9";
+  }
+  .wrapper .flexWrapper main .main .sort .containerjj div.pc .div1 {
+    grid-area: div1;
+    margin: 0;
+    width: 100%;
+    margin-left: -4px;
+  }
+  .wrapper .flexWrapper main .main .sort .containerjj div.pc .div1 img {
+    width: 99%;
+    height: 100%;
+  }
+  .wrapper .flexWrapper main .main .sort .containerjj div.pc .div2 {
+    grid-area: div2;
+    margin: 0;
+    width: 100%;
+    margin-left: 4px;
+  }
+  .wrapper .flexWrapper main .main .sort .containerjj div.pc .div2 img {
+    width: 99%;
+    height: 100%;
+  }
+  .wrapper .flexWrapper main .main .sort .containerjj div.pc .div3 {
+    grid-area: div3;
+    margin: 0;
+    width: 100%;
+    margin-top: 5px;
+    margin-left: -4px;
+  }
+  .wrapper .flexWrapper main .main .sort .containerjj div.pc .div3 img {
+    width: 95%;
+    height: 100%;
+  }
+  .wrapper .flexWrapper main .main .sort .containerjj div.pc .div4 {
+    grid-area: div4;
+    margin: 0;
+    width: 100%;
+    margin-top: 2px;
+    margin-left: 1px;
+  }
+  .wrapper .flexWrapper main .main .sort .containerjj div.pc .div4 img {
+    width: 105%;
+    height: 90%;
+  }
+  .wrapper .flexWrapper main .main .sort .containerjj div.pc .div5 {
+    grid-area: div5;
+    margin: 0;
+    width: 100%;
+    margin-top: 11px;
+    margin-left: 7px;
+  }
+  .wrapper .flexWrapper main .main .sort .containerjj div.pc .div5 img {
+    width: 97%;
+  }
+  .wrapper .flexWrapper main .main .sort .containerjj div.pc .div6 {
+    grid-area: div6;
+    margin: 0;
+    width: 100%;
+    margin-top: -8px;
+    margin-left: -4px;
+  }
+  .wrapper .flexWrapper main .main .sort .containerjj div.pc .div6 img {
+    width: 97%;
+    height: 95%;
+  }
+  .wrapper .flexWrapper main .main .sort .containerjj div.pc .div7 {
+    grid-area: div7;
+    margin: 0;
+    width: 80%;
+    margin-top: -23px;
+    margin-left: 8px;
+  }
+  .wrapper .flexWrapper main .main .sort .containerjj div.pc .div7 img {
+    width: 110%;
+    height: 89%;
+  }
+  .wrapper .flexWrapper main .main .sort .containerjj div.pc .div8 {
+    grid-area: div8;
+    margin: 0;
+    width: 80%;
+    margin-top: -23px;
+    margin-left: -18px;
+  }
+  .wrapper .flexWrapper main .main .sort .containerjj div.pc .div8 img {
+    width: 139%;
+    height: 89%;
+  }
+  .wrapper .flexWrapper main .main .sort .containerjj div.pc .div9 {
+    grid-area: div9;
+    margin: 0;
+    width: 100%;
+    margin-top: -11px;
+    margin-left: 7px;
+  }
+  .wrapper .flexWrapper main .main .sort .containerjj div.pc .div9 img {
+    width: 97%;
+    height: 95%;
+  }
+}
+.wrapper .flexWrapper main .main .sort .containerjj .mobile {
+  display: flex;
+  flex-wrap: wrap;
+  width: 92%;
+  margin: 50px 4% 100px 4%;
+}
+.wrapper .flexWrapper main .main .sort .containerjj .mobile img {
+  width: 50%;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .main .sort .containerjj .mobile {
+    display: none;
   }
 }
 @media screen and (min-width: 1024px) {

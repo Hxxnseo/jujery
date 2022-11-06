@@ -1,1 +1,5 @@
-{"version":3,"sourceRoot":"","sources":[],"names":[],"mappings":"","file":"style1.css"}
+<<<<<<< HEAD
+{"version":3,"sources":["../sass/style1.scss","style1.css"],"names":[],"mappings":"AAAA;EACI,wCAAA;EACA,oHAAA;ACCJ;ADEA;EACI,+EAAA;EACA,kCAAA;ACAJ","file":"style1.css"}
+=======
+{"version":3,"sources":[],"names":[],"mappings":"","file":"style1.css"}
+>>>>>>> e92b534cb2ed969fad8c368f306ccc56ffb2ee37

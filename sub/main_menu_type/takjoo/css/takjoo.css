@@ -1,3 +1,19 @@
+@font-face {
+  font-family: "SANGJU Gyeongcheon Island";
+  src: url(../../../font/SANGJU\ Gyeongcheon\ Island.woff);
+}
+@font-face {
+  font-family: "NotoSerifKR-Regular";
+  src: url(../../../font/NotoSerifKR-Regular.woff);
+}
+@font-face {
+  font-family: "SANGJU Gyeongcheon Island";
+  src: url(../../../font/SANGJU\ Gyeongcheon\ Island.woff);
+}
+@font-face {
+  font-family: "NotoSerifKR-Regular";
+  src: url(../../../font/NotoSerifKR-Regular.woff);
+}
 * {
   margin: 0;
   padding: 0;
@@ -57,7 +73,6 @@ p {
 .container {
   padding: 0 20px;
   width: 100%;
-  background-color: #000;
 }
 @media screen and (min-width: 1024px) {
   .container {
@@ -70,7 +85,7 @@ p {
   position: relative;
   width: 100%;
   height: 100%;
-  background-image: url(../../../images/background/detail_page_main_background.png);
+  background-image: url(../../../../images/background/detail_page_main_background.png);
 }
 @media screen and (min-width: 1024px) {
   .wrapper .flexWrapper {
@@ -86,7 +101,7 @@ p {
   .wrapper .flexWrapper header {
     height: auto;
     width: 370px;
-    background-image: url(../../../images/background/detail_page_header_background.png);
+    background-image: url(../../../../images/background/detail_page_header_background.png);
   }
 }
 .wrapper .flexWrapper header .header .logoMenu {
@@ -216,6 +231,74 @@ p {
     font-size: 14px;
   }
 }
+.wrapper .flexWrapper main .main aside.slide {
+  width: 100%;
+  overflow: hidden;
+  margin: 30px 0 20px;
+}
+.wrapper .flexWrapper main .main aside.slide ul {
+  position: relative;
+  width: 300%;
+  display: flex;
+}
+.wrapper .flexWrapper main .main aside.slide ul li {
+  width: 100%;
+  position: relative;
+}
+.wrapper .flexWrapper main .main aside.slide ul li:last-child a button {
+  position: absolute;
+  top: 56.5%;
+  left: 25%;
+  width: 100px;
+  height: 35px;
+  border-radius: 5px;
+}
+.wrapper .flexWrapper main .main aside.slide ul li a {
+  width: 100%;
+}
+.wrapper .flexWrapper main .main aside.slide ul li a img {
+  width: 100%;
+  height: 450px;
+}
+.wrapper .flexWrapper main .main nav {
+  margin-bottom: 100px;
+}
+.wrapper .flexWrapper main .main nav .gnb {
+  display: flex;
+  justify-content: space-around;
+}
+.wrapper .flexWrapper main .main nav .gnb li a {
+  font-family: "NotoSerifKR-Regular";
+  font-size: 1.25em;
+}
+.wrapper .flexWrapper main .main nav .gnb li a:hover {
+  text-decoration: underline;
+}
+.wrapper .flexWrapper main .main section.rec-box {
+  width: 100%;
+}
+.wrapper .flexWrapper main .main section.rec-box h3 {
+  text-align: center;
+}
+.wrapper .flexWrapper main .main section.rec-box .rec-des {
+  display: flex;
+  margin-top: 40px;
+}
+.wrapper .flexWrapper main .main section.rec-box .rec-des div {
+  position: relative;
+  width: 75%;
+  margin-right: 25px;
+}
+.wrapper .flexWrapper main .main section.rec-box .rec-des .heart,
+.wrapper .flexWrapper main .main section.rec-box .rec-des .heart_full {
+  position: absolute;
+  top: 4px;
+  left: 220px;
+  width: 20px;
+}
+.wrapper .flexWrapper main .main section.rec-box .rec-des .heart_full {
+  display: none;
+}
 @media screen and (min-width: 1024px) {
   .wrapper footer .container {
     margin: 0;
@@ -248,6 +331,7 @@ p {
 }
 .wrapper footer .footer .footInfo address {
   font-style: normal;
+  font-family: "NotoSerifKR-Regular";
 }
 .wrapper footer .footer .footInfo p {
   margin: 20px 0;
