@@ -204,7 +204,40 @@
           }
         } // mainSubMenu
 
-        // 여기부터 작성하세요오오
+        aside.slide {
+          width: 100%;
+          overflow: visible;
+
+          ul {
+            position: relative;
+            width: 300%;
+            display: flex;
+
+            li {
+              width: 100%;
+              position: relative;
+              &:last-child {
+                a {
+                  button {
+                    position: absolute;
+                    top: 56.5%; left:25%;
+                    width: 100px;
+                    height: 35px;
+                    border-radius: 5px;
+                  }
+                }
+              }
+
+              a {
+                width: 100%;
+
+                img {
+                  width: 100%;
+                }
+              }
+            }
+          }
+        }
       }
     }
     // main
