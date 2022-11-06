@@ -215,6 +215,14 @@
             text-align: left;
           }
 
+          h3 {
+            font-size: 40px;
+
+            @include responsive(pc-screens) {
+              font-size: 50px;
+            }
+          }
+
           h4 {
             font-family: $font-sub;
             font-weight: normal;

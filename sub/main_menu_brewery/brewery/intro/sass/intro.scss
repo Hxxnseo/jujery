@@ -204,7 +204,15 @@
           }
         } // mainSubMenu
 
-        //  여기부터 작성하세요오오
+        .introStart {
+          margin-top: 30px;
+          text-align: center;
+
+          h3 {
+            margin-bottom: 50px;
+            font-size: 40px;
+          }
+        }
       }
     }
     // main

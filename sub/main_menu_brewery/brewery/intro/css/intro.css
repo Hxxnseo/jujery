@@ -231,6 +231,14 @@ p {
     font-size: 14px;
   }
 }
+.wrapper .flexWrapper main .main .introStart {
+  margin-top: 30px;
+  text-align: center;
+}
+.wrapper .flexWrapper main .main .introStart h3 {
+  margin-bottom: 50px;
+  font-size: 40px;
+}
 @media screen and (min-width: 1024px) {
   .wrapper footer .container {
     margin: 0;

@@ -1,3 +1,19 @@
+@font-face {
+  font-family: "SANGJU Gyeongcheon Island";
+  src: url(../../../font/SANGJU\ Gyeongcheon\ Island.woff);
+}
+@font-face {
+  font-family: "NotoSerifKR-Regular";
+  src: url(../../../font/NotoSerifKR-Regular.woff);
+}
+@font-face {
+  font-family: "SANGJU Gyeongcheon Island";
+  src: url(../../../font/SANGJU\ Gyeongcheon\ Island.woff);
+}
+@font-face {
+  font-family: "NotoSerifKR-Regular";
+  src: url(../../../font/NotoSerifKR-Regular.woff);
+}
 * {
   margin: 0;
   padding: 0;
@@ -227,6 +243,14 @@ p {
     text-align: left;
   }
 }
+.wrapper .flexWrapper main .main section.breweryStart h3 {
+  font-size: 40px;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .main section.breweryStart h3 {
+    font-size: 50px;
+  }
+}
 .wrapper .flexWrapper main .main section.breweryStart h4 {
   font-family: "NotoSerifKR-Regular";
   font-weight: normal;
@@ -411,7 +435,7 @@ p {
 }
 @media screen and (min-width: 1024px) {
   .wrapper footer .footer .footBox .footLogoCopy {
-    width: 25%;
+    width: 30%;
     padding: 0;
     border: 0;
   }
@@ -436,7 +460,7 @@ p {
 @media screen and (min-width: 1024px) {
   .wrapper footer .footer .footBox .footSns {
     position: relative;
-    width: 50%;
+    width: 40%;
     height: 250px;
     border-bottom: 0;
     border-right: 1px solid #ccc;
@@ -457,7 +481,7 @@ p {
 }
 @media screen and (min-width: 1024px) {
   .wrapper footer .footer .footBox .footSns .footSnsCont li {
-    padding-right: 30px;
+    padding-right: 15px;
   }
   .wrapper footer .footer .footBox .footSns .footSnsCont li:last-child {
     padding-right: 0;
@@ -478,12 +502,13 @@ p {
 }
 .wrapper footer .footer .footBox .footMenu {
   padding: 40px;
+  font-size: 14px;
 }
 @media screen and (min-width: 1024px) {
   .wrapper footer .footer .footBox .footMenu {
-    width: 25%;
+    width: 30%;
+    font-size: 12px;
     padding: 0;
-    font-size: 13px;
   }
 }
 .wrapper footer .footer .footBox .footMenu ul {
