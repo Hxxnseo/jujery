@@ -20,6 +20,7 @@
 
   // background-color: #000;
   @include responsive(pc-screens) {
+    margin: 0 auto;
     padding: 0;
   }
 }
@@ -126,8 +127,8 @@
 
         .mobileLogoMenu {
           display: flex;
-          z-index: 10;
           position: relative;
+          z-index: 10;
           @include responsive(pc-screens) {
             display: none;
           }

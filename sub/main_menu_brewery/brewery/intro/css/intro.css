@@ -76,6 +76,7 @@ p {
 }
 @media screen and (min-width: 1024px) {
   .container {
+    margin: 0 auto;
     padding: 0;
   }
 }
@@ -165,8 +166,8 @@ p {
 }
 .wrapper .flexWrapper header .header .mobileLogoMenu {
   display: flex;
-  z-index: 10;
   position: relative;
+  z-index: 10;
 }
 @media screen and (min-width: 1024px) {
   .wrapper .flexWrapper header .header .mobileLogoMenu {
