@@ -205,37 +205,41 @@
         } // mainSubMenu
 
         // 여기부터 작성하세요오오
-        .start {
-          text-align: center;
-          h3 {
-            margin-top: 30px;
-            font-family: $font-main;
+        section.introStart {
+          margin-top: 30px;
+          margin-bottom: 50px;
+          @include responsive(pc-screens) {
+            margin-top: 130px;
           }
-  
-          p.title {
-            font-family: $font-sub;
-            width: 30%;
-            display: flex;
-            margin: 50px 44%;
-      
-            .past {
-              &:hover {
-                text-decoration: underline;
-              }
-            }
-            
-            .present {
-              color: #ccc;
-              &:hover {
-                text-decoration: underline;
-              }
-            }
-  
+          h3 {
+            text-align: center;
+            font-size: 40px;
+            font-family: $font-main;
             @include responsive(pc-screens) {
-              width: 100%;
+              text-align: left;
             }
-          } // p.title
-        } // .start
+          }
+          ul {
+            display: flex;
+            text-align: left;
+            margin: 0 20%;
+            @include responsive(pc-screens) {
+              margin: 0 39%;
+            }
+            li {
+              font-family: $font-sub;
+              margin-top: 50px;
+              font-size: 34px;
+              padding: 0 30px;
+              &:first-child {
+                border-right: 1px solid #000;
+                a {
+                  color: #ccc;
+                }
+              }
+            }
+          }
+        }
 
         .label {
           display: none;
@@ -249,7 +253,6 @@
           font-size: 3.125em;
           height: 234px;
           padding-top: 20%;
-          margin-bottom: 100px;
           span {
             color: #fff;
           }
@@ -259,6 +262,7 @@
         } // .story
 
         .title {
+          margin-top: 100px;
           margin-bottom: 50px;
           h4 {
             display: flex;
@@ -272,23 +276,15 @@
         } // title
         .dis {
           display: flex;
+          margin-bottom: 50px;
           img {
             position: absolute;
             margin-top: -38px; margin-left: 65%;
           }
-          img.do {
-            margin-top: 13px;
-          }
-          img.dae {
-            margin-top: 83px; margin-left: -2%;
-          }
-          img.ja {
-            margin-top: 110px; margin-left: 67%;
-          }
-          img.back {
-            width: 90px;
-            margin-top: 20px; margin-left: 6%;
-          }
+          img.do { margin-top: 13px; }
+          img.dae { margin-top: 83px; margin-left: -2%; }
+          img.ja { width: 88px; margin-top: 30px; margin-left: 67%; }
+          img.back { width: 90px; margin-top: 20px; margin-left: 6%; }
           .title {
             display: none;
           } // title
@@ -301,7 +297,7 @@
           }
           .desc {
             color: #fff;
-            height: 324px; width: 70%;
+            height: 324px; width: 300px;
             padding: 0 15px;
             margin-bottom: 50px;
             // margin-top: 50px;
@@ -324,9 +320,51 @@
             p {
               line-height: 2.2em;
             }
-          }
-        }
+          } // desc
+        } // dis
 
+        .pro {
+          display: flex;
+          margin-bottom: 50px;
+          .title {
+            display: none;
+          } // title
+          img {
+            position: absolute;
+            width: 140px;
+          }
+          img.lee{margin-top: 80px; margin-left: 310px;}
+          img.gam{margin-top: 65px; margin-left: -15px;}
+          img.juck{width: 18%;}
+          img.sol{}
+          img.moon{}
+
+          .desc {
+            color: #fff;
+            height: 324px; width: 300px;
+            padding: 0 15px;
+            margin-bottom: 50px;
+            &:nth-child(2n) {
+              background-image: url(../../img/black_object.png);
+            }
+            &:nth-child(odd) {
+              margin-left: 30%;
+              background-image: url(../../img/black_object_2.png);
+              h4 {
+                text-align: right;
+              }
+            }
+            background-repeat: no-repeat;
+            h4 {
+              font-family: $font-sub;
+              color: #fff;
+              line-height: 2.6em;
+            }
+            p {
+              line-height: 2.2em;
+            }
+          } // desc
+        }
       } //.main
     } // main
     // main

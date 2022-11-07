@@ -231,33 +231,44 @@ p {
     font-size: 14px;
   }
 }
-.wrapper .flexWrapper main .main .start {
-  text-align: center;
-}
-.wrapper .flexWrapper main .main .start h3 {
+.wrapper .flexWrapper main .main section.introStart {
   margin-top: 30px;
-  background-color: #fff;
-  font-family: "SANGJU Gyeongcheon Island";
-}
-.wrapper .flexWrapper main .main .start p.title {
-  font-family: "NotoSerifKR-Regular";
-  width: 30%;
-  display: flex;
-  margin: 50px 44%;
-}
-.wrapper .flexWrapper main .main .start p.title .past {
-  color: #ccc;
-}
-.wrapper .flexWrapper main .main .start p.title .past:hover {
-  text-decoration: underline;
-}
-.wrapper .flexWrapper main .main .start p.title .present:hover {
-  text-decoration: underline;
+  margin-bottom: 50px;
 }
 @media screen and (min-width: 1024px) {
-  .wrapper .flexWrapper main .main .start p.title {
-    width: 100%;
+  .wrapper .flexWrapper main .main section.introStart {
+    margin-top: 130px;
   }
+}
+.wrapper .flexWrapper main .main section.introStart h3 {
+  text-align: center;
+  font-size: 40px;
+  font-family: "SANGJU Gyeongcheon Island";
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .main section.introStart h3 {
+    text-align: left;
+  }
+}
+.wrapper .flexWrapper main .main section.introStart ul {
+  display: flex;
+  margin: 0 21%;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .main section.introStart ul {
+    margin: 0 39%;
+  }
+}
+.wrapper .flexWrapper main .main section.introStart ul li {
+  margin-top: 50px;
+  font-size: 34px;
+  padding: 0 30px;
+}
+.wrapper .flexWrapper main .main section.introStart ul li:first-child {
+  border-right: 1px solid #000;
+}
+.wrapper .flexWrapper main .main section.introStart ul li:first-child a {
+  color: #ccc;
 }
 .wrapper .flexWrapper main .main .pageintro {
   position: relative;
