@@ -200,6 +200,7 @@ p {
 @media screen and (min-width: 1024px) {
   .wrapper .flexWrapper main .main {
     width: 1180px;
+    margin: 0 auto;
   }
 }
 .wrapper .flexWrapper main .main .mainSubMenu {
@@ -266,18 +267,65 @@ p {
   font-size: 34px;
   padding: 0 30px;
 }
-.wrapper .flexWrapper main .main section.introStart ul li:first-child {
-  border-right: 1px solid #000;
+.wrapper .flexWrapper main .main section.introStart ul li:last-child {
+  border-left: 1px solid #000;
 }
-.wrapper .flexWrapper main .main section.introStart ul li:first-child a {
+.wrapper .flexWrapper main .main section.introStart ul li:last-child a {
   color: #ccc;
 }
-.wrapper .flexWrapper main .main .label {
+.wrapper .flexWrapper main .main .label1 {
   display: none;
+  margin-bottom: 50px;
 }
 @media screen and (min-width: 1024px) {
-  .wrapper .flexWrapper main .main .label {
+  .wrapper .flexWrapper main .main .label1 {
     display: flex;
+    font-size: 32px;
+  }
+  .wrapper .flexWrapper main .main .label1 li {
+    padding: 24px 15px;
+  }
+  .wrapper .flexWrapper main .main .label1 li:first-child {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  .wrapper .flexWrapper main .main .label1 li:first-child a {
+    color: #fff;
+  }
+}
+.wrapper .flexWrapper main .main .label2 {
+  display: none;
+  margin-bottom: 50px;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .main .label2 {
+    display: flex;
+    margin-top: 100px;
+    font-size: 32px;
+  }
+  .wrapper .flexWrapper main .main .label2 li {
+    padding: 24px 15px;
+  }
+  .wrapper .flexWrapper main .main .label2 li:nth-child(2) {
+    border: 1px solid #000;
+    border-bottom: none;
+  }
+}
+.wrapper .flexWrapper main .main .label3 {
+  display: none;
+  margin-bottom: 50px;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .main .label3 {
+    display: flex;
+    margin-top: 100px;
+    font-size: 32px;
+  }
+  .wrapper .flexWrapper main .main .label3 li {
+    padding: 24px 15px;
+  }
+  .wrapper .flexWrapper main .main .label3 li:nth-child(3) {
+    border: 1px solid #000;
+    border-bottom: none;
   }
 }
 .wrapper .flexWrapper main .main .story {
@@ -297,6 +345,11 @@ p {
   margin-top: 100px;
   margin-bottom: 50px;
 }
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .main .title {
+    display: none;
+  }
+}
 .wrapper .flexWrapper main .main .title h4 {
   display: flex;
   flex-direction: row;
@@ -305,6 +358,22 @@ p {
 .wrapper .flexWrapper main .main .title h4 .next {
   color: #ccc;
 }
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .main .everydis {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .main .everypro {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0;
+  }
+}
 .wrapper .flexWrapper main .main .dis {
   display: flex;
   margin-bottom: 50px;
@@ -312,14 +381,14 @@ p {
 .wrapper .flexWrapper main .main .dis img {
   position: absolute;
   margin-top: -38px;
-  margin-left: 65%;
 }
 .wrapper .flexWrapper main .main .dis img.do {
   margin-top: 13px;
+  margin-left: 320px;
 }
 .wrapper .flexWrapper main .main .dis img.dae {
   margin-top: 83px;
-  margin-left: -2%;
+  margin-left: -10px;
 }
 .wrapper .flexWrapper main .main .dis img.ja {
   width: 88px;
@@ -349,15 +418,37 @@ p {
   margin-bottom: 50px;
   background-repeat: no-repeat;
 }
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .main .dis .desc {
+    width: 400px;
+    height: 322px;
+  }
+}
 .wrapper .flexWrapper main .main .dis .desc:nth-child(2n) {
   background-image: url(../../img/black_object.png);
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .main .dis .desc:nth-child(2n) {
+    background-image: url(../../img/black_pc.png);
+  }
 }
 .wrapper .flexWrapper main .main .dis .desc:nth-child(odd) {
   margin-left: 30%;
   background-image: url(../../img/black_object_2.png);
 }
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .main .dis .desc:nth-child(odd) {
+    background-image: url(../../img/black_pc.png);
+    margin: 0;
+  }
+}
 .wrapper .flexWrapper main .main .dis .desc:nth-child(odd) h4 {
   text-align: right;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .main .dis .desc:nth-child(odd) h4 {
+    text-align: left;
+  }
 }
 .wrapper .flexWrapper main .main .dis .desc h4 {
   font-family: "NotoSerifKR-Regular";
@@ -387,7 +478,19 @@ p {
   margin-left: -15px;
 }
 .wrapper .flexWrapper main .main .pro img.juck {
-  width: 18%;
+  width: 87px;
+  margin-top: -6px;
+  margin-left: 310px;
+}
+.wrapper .flexWrapper main .main .pro img.sol {
+  width: 175px;
+  margin-top: 130px;
+  margin-left: -10px;
+}
+.wrapper .flexWrapper main .main .pro img.moon {
+  width: 100px;
+  margin-top: -295px;
+  margin-left: 310px;
 }
 .wrapper .flexWrapper main .main .pro .desc {
   color: #fff;
@@ -397,8 +500,19 @@ p {
   margin-bottom: 50px;
   background-repeat: no-repeat;
 }
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .main .pro .desc {
+    width: 400px;
+    height: 400px;
+  }
+}
 .wrapper .flexWrapper main .main .pro .desc:nth-child(2n) {
   background-image: url(../../img/black_object.png);
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .main .pro .desc:nth-child(2n) {
+    background-image: url(../../img/black_pc.png);
+  }
 }
 .wrapper .flexWrapper main .main .pro .desc:nth-child(odd) {
   margin-left: 30%;
@@ -406,6 +520,17 @@ p {
 }
 .wrapper .flexWrapper main .main .pro .desc:nth-child(odd) h4 {
   text-align: right;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .main .pro .desc:nth-child(odd) h4 {
+    text-align: left;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .main .pro .desc:nth-child(odd) {
+    background-image: url(../../img/black_pc.png);
+    margin: 0;
+  }
 }
 .wrapper .flexWrapper main .main .pro .desc h4 {
   font-family: "NotoSerifKR-Regular";
@@ -429,7 +554,7 @@ p {
 @media screen and (min-width: 1024px) {
   .wrapper footer .footer {
     width: 100%;
-    padding: 120px 235px 80px 495px;
+    padding: 120px 185px 80px 545px;
   }
 }
 .wrapper footer .footer .footInfo {
