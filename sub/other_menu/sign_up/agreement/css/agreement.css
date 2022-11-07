@@ -77,7 +77,7 @@ p {
 @media screen and (min-width: 1024px) {
   .container {
     padding: 0;
-    margin: 0 235px 0 135px;
+    margin: 0 auto;
   }
 }
 
@@ -200,6 +200,7 @@ p {
 @media screen and (min-width: 1024px) {
   .wrapper .flexWrapper main .main {
     width: 1180px;
+    margin: 0 auto;
   }
 }
 .wrapper .flexWrapper main .main .mainSubMenu {
@@ -267,6 +268,7 @@ p {
 }
 .wrapper .flexWrapper main .main section.agreement .join_certify {
   margin-top: 20px;
+  margin-bottom: 50px;
 }
 .wrapper .flexWrapper main .main section.agreement .join_certify h4 {
   font-weight: normal;
@@ -289,6 +291,19 @@ p {
     margin-top: 0;
   }
 }
+.wrapper .flexWrapper main .main section.agreement .pre_next_btn {
+  display: flex;
+  justify-content: center;
+}
+.wrapper .flexWrapper main .main section.agreement .pre_next_btn button {
+  width: 20%;
+  margin-right: 5%;
+  height: 50px;
+  cursor: pointer;
+}
+.wrapper .flexWrapper main .main section.agreement .pre_next_btn button:last-child {
+  margin-right: 0;
+}
 
 @media screen and (min-width: 1024px) {
   footer .container {
@@ -304,7 +319,7 @@ footer .footer {
 @media screen and (min-width: 1024px) {
   footer .footer {
     width: 100%;
-    padding: 120px 235px 80px 495px;
+    padding: 120px 185px 80px 545px;
   }
 }
 footer .footer .footInfo {

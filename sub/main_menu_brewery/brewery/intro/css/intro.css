@@ -76,7 +76,6 @@ p {
 }
 @media screen and (min-width: 1024px) {
   .container {
-    margin: 0 235px 0 135px;
     padding: 0;
   }
 }
@@ -202,6 +201,7 @@ p {
 @media screen and (min-width: 1024px) {
   .wrapper .flexWrapper main .main {
     width: 1180px;
+    margin: 0 auto;
   }
 }
 .wrapper .flexWrapper main .main .mainSubMenu {
@@ -377,12 +377,13 @@ p {
 }
 @media screen and (min-width: 1024px) {
   .wrapper .flexWrapper main .main .sect4 .backImgDownload .imgParaDown img {
+    width: 490px;
     height: 600px;
   }
 }
 @media screen and (min-width: 1024px) {
   .wrapper .flexWrapper main .main .sect4 .backImgDownload .imgParaDown .paraDownload {
-    width: 380px;
+    width: 100%;
     margin-left: 100px;
     margin-top: 200px;
   }
@@ -410,14 +411,10 @@ p {
 }
 @media screen and (min-width: 1024px) {
   .wrapper .flexWrapper main .main .sect4 .backImgDownload .imgParaDown .paraDownload a {
+    width: 100%;
     background-color: white;
     color: black;
     font-size: 24px;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .wrapper footer .container {
-    margin: 0;
   }
 }
 .wrapper footer .footer {
@@ -429,7 +426,7 @@ p {
 @media screen and (min-width: 1024px) {
   .wrapper footer .footer {
     width: 100%;
-    padding: 120px 235px 80px 495px;
+    padding: 120px 185px 80px 545px;
   }
 }
 .wrapper footer .footer .footInfo {

@@ -62,6 +62,7 @@ p {
   .container {
     padding: 0;
     margin: 0 235px 0 135px;
+    background-color: antiquewhite;
   }
 }
 
@@ -219,15 +220,32 @@ p {
   position: relative;
   margin-top: 30px;
 }
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .main .sec1 {
+    padding: 130px 120px;
+  }
+}
 .wrapper .flexWrapper main .main .sec1 h1 {
   position: absolute;
   font-size: 40px;
   left: 190px;
   top: 10px;
 }
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .main .sec1 h1 {
+    top: 145px;
+    left: 320px;
+    font-size: 90px;
+  }
+}
 .wrapper .flexWrapper main .main .sec1 h4 {
   font-size: 30px;
   color: #dbdbdb;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .main .sec1 h4 {
+    text-align: left;
+  }
 }
 .wrapper .flexWrapper main .main .sec1 span {
   display: block;
@@ -236,19 +254,65 @@ p {
   margin: 10px 0;
   background-color: #dbdbdb;
 }
-.wrapper .flexWrapper main .main .sec1 .flex-box {
-  position: absolute;
-  margin-top: 50px;
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .main .sec1 span {
+    margin: 20px 0;
+  }
 }
-.wrapper .flexWrapper main .main .sec1 .flex-box div {
+.wrapper .flexWrapper main .main .sec1 .mobile-box {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 40px 0;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .main .sec1 .mobile-box {
+    display: none;
+  }
+}
+.wrapper .flexWrapper main .main .sec1 .grid-box {
+  display: none;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .main .sec1 .grid-box {
+    display: grid;
+    margin-top: 100px;
+    grid-template-areas: "div1 div2" "div1 div3";
+  }
+  .wrapper .flexWrapper main .main .sec1 .grid-box .div1 {
+    grid-area: div1;
+  }
+  .wrapper .flexWrapper main .main .sec1 .grid-box .div2 {
+    grid-area: div2;
+    margin-left: 10px;
+  }
+  .wrapper .flexWrapper main .main .sec1 .grid-box .div3 {
+    grid-area: div3;
+    margin-left: 10px;
+  }
+}
+.wrapper .flexWrapper main .main .sec1 .grid-box .item {
   margin: 10px 0;
 }
-.wrapper .flexWrapper main .main .sec1 .flex-box .box1 .p-box1 {
+.wrapper .flexWrapper main .main .sec1 .grid-box .item img {
   width: 100%;
-  height: 360px;
+  height: 100%;
 }
-.wrapper .flexWrapper main .main .sec1 .flex-box .box2 .p-box2 {
-  height: 260px;
+.wrapper .flexWrapper main .main .sec2 {
+  position: relative;
+}
+.wrapper .flexWrapper main .main .sec2 .sec2-main {
+  margin: 100px 0;
+}
+.wrapper .flexWrapper main .main .sec2 .sec2-main h1 {
+  font-size: 40px;
+}
+.wrapper .flexWrapper main .main .sec2 .sec2-main img .sec2-pic {
+  position: absolute;
+  width: 250px;
+  height: 300px;
+}
+.wrapper .flexWrapper main .main .sec2 .sec2-con-pc {
+  display: none;
 }
 
 @media screen and (min-width: 1024px) {

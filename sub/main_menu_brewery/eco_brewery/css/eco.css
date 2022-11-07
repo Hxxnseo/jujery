@@ -57,12 +57,11 @@ p {
 .container {
   padding: 0 20px;
   width: 100%;
-  background-color: #000;
 }
 @media screen and (min-width: 1024px) {
   .container {
     padding: 0;
-    margin: 0 235px 0 135px;
+    margin: 0 auto;
   }
 }
 
@@ -70,7 +69,7 @@ p {
   position: relative;
   width: 100%;
   height: 100%;
-  background-image: url(../../../images/background/detail_page_main_background.png);
+  background-image: url(../../../../images/background/main_menu_background.png);
 }
 @media screen and (min-width: 1024px) {
   .wrapper .flexWrapper {
@@ -86,7 +85,7 @@ p {
   .wrapper .flexWrapper header {
     height: auto;
     width: 370px;
-    background-image: url(../../../images/background/detail_page_header_background.png);
+    background-image: url(../../../../images/background/detail_page_header_background.png);
   }
 }
 .wrapper .flexWrapper header .header .logoMenu {
@@ -185,6 +184,7 @@ p {
 @media screen and (min-width: 1024px) {
   .wrapper .flexWrapper main .main {
     width: 1180px;
+    margin: 0 auto;
   }
 }
 .wrapper .flexWrapper main .main .mainSubMenu {
@@ -216,6 +216,41 @@ p {
     font-size: 14px;
   }
 }
+.wrapper .flexWrapper main .main .introStart {
+  margin-top: 30px;
+  text-align: center;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .main .introStart {
+    text-align: left;
+  }
+}
+.wrapper .flexWrapper main .main .introStart h3 {
+  margin-bottom: 50px;
+  font-size: 40px;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .main .introStart h3 {
+    font-size: 50px;
+  }
+}
+.wrapper .flexWrapper main .main .introStart .subTitle ul {
+  display: flex;
+  justify-content: center;
+}
+.wrapper .flexWrapper main .main .introStart .subTitle ul li {
+  padding: 0 30px;
+  font-family: "NotoSerifKR-Regular";
+  font-size: 18px;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .main .introStart .subTitle ul li {
+    font-size: 24px;
+  }
+}
+.wrapper .flexWrapper main .main .sect1 {
+  margin: 50px 0 100px;
+}
 @media screen and (min-width: 1024px) {
   .wrapper footer .container {
     margin: 0;
@@ -230,7 +265,7 @@ p {
 @media screen and (min-width: 1024px) {
   .wrapper footer .footer {
     width: 100%;
-    padding: 120px 235px 80px 495px;
+    padding: 120px 185px 80px 545px;
   }
 }
 .wrapper footer .footer .footInfo {
