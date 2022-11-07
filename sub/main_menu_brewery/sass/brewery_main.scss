@@ -483,6 +483,7 @@
         .footMenu {
           padding: 40px;
           font-size: 14px;
+          width: 100%;
 
           @include responsive(pc-screens) {
             width: 30%;

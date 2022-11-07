@@ -504,6 +504,7 @@ p {
 .wrapper footer .footer .footBox .footMenu {
   padding: 40px;
   font-size: 14px;
+  width: 100%;
 }
 @media screen and (min-width: 1024px) {
   .wrapper footer .footer .footBox .footMenu {
