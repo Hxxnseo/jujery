@@ -277,7 +277,8 @@ p {
   }
 }
 .wrapper .flexWrapper main .main .pageintro .text {
-  width: 100%;
+  font-family: "SANGJU Gyeongcheon Island";
+  width: 110%;
   position: absolute;
   top: 40%;
   left: 50%;
@@ -316,6 +317,22 @@ p {
 }
 .wrapper .flexWrapper main .main div h4 {
   font-family: "SANGJU Gyeongcheon Island";
+  text-align: center;
+  margin-bottom: 50px;
+}
+.wrapper .flexWrapper main .main div h4 span {
+  display: none;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .main div h4 span {
+    display: inline;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .main div h4 {
+    text-align: left;
+    margin-bottom: 0;
+  }
 }
 .wrapper .flexWrapper main .main div p {
   font-weight: bolder;

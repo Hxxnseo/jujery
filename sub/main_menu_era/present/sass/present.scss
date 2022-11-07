@@ -255,7 +255,8 @@
           }
   
           .text {
-            width: 100%;
+            font-family: $font-main;
+            width: 110%;
             position: absolute;
             top: 40%;
             left: 50%;
@@ -288,6 +289,18 @@
           }
           h4 {
             font-family: $font-main;
+            text-align: center;
+            margin-bottom: 50px;
+            span {
+              display: none;
+            @include responsive(pc-screens) {
+              display: inline;
+            }
+            }
+          @include responsive(pc-screens) {
+            text-align: left;
+            margin-bottom: 0;
+          }
           }
           p {
             font-weight: bolder;
