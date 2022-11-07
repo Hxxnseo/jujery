@@ -11,17 +11,17 @@
 }
 
 .container {
-  padding: 0 20px;
   // margin-right: 20px;
   // position: relative;
   width: 100%; // 모바일, 태블릿
+  padding: 0 20px;
   // background-color: #000;
   // max-width: 1200px; // pc
 
   // background-color: #000;
   @include responsive(pc-screens) {
-    padding: 0;
     margin: 0 235px 0 135px;
+    padding: 0;
   }
 }
 
@@ -34,17 +34,17 @@
 
   .flexWrapper {
     @include responsive(pc-screens) {
-      height: 100%;
       display: flex;
+      height: 100%;
       flex-direction: row;
     }
     header {
       height: 80px;
 
       @include responsive(pc-screens) {
-        height: auto;
         // background-color: #ccc;
         width: 370px;
+        height: auto;
         background-image: url(../../../../../images/background/detail_page_header_background.png);
       }
 
@@ -127,6 +127,8 @@
 
         .mobileLogoMenu {
           display: flex;
+          z-index: 10;
+          position: relative;
           @include responsive(pc-screens) {
             display: none;
           }
@@ -183,8 +185,8 @@
             @include responsive(pc-screens) {
               display: flex;
               position: absolute;
-              right: 100px;
               top: 50px;
+              right: 100px;
             }
 
             li {
@@ -208,9 +210,204 @@
           margin-top: 30px;
           text-align: center;
 
+          @include responsive(pc-screens) {
+            text-align: left;
+          }
+
           h3 {
             margin-bottom: 50px;
             font-size: 40px;
+
+            @include responsive(pc-screens) {
+              font-size: 50px;
+            }
+          }
+
+          .introMenu {
+            ul {
+              display: flex;
+              justify-content: center;
+
+              li {
+                padding: 0 30px;
+
+                @include responsive(pc-screens) {
+                  font-size: 24px;
+                }
+                font: {
+                  family: $font-sub;
+                  size: 18px;
+                }
+                &:first-child {
+                  border-right: 1px double black;
+                }
+              }
+            }
+          }
+        }
+        // introStart
+
+        .sect1 {
+          margin-top: 50px;
+
+          .imgP {
+            position: relative;
+            width: 100%;
+
+            img {
+              width: 100%;
+
+              &:first-child {
+                display: none;
+
+                @include responsive(pc-screens) {
+                  display: block;
+                }
+              }
+
+              &:last-child {
+                @include responsive(pc-screens) {
+                  display: none;
+                }
+              }
+            }
+
+            .para {
+              padding: 0 20px;
+              margin-top: 100px;
+              line-height: 30px;
+
+              @include responsive(pc-screens) {
+                position: absolute;
+                top: 115px;
+                left: 70px;
+                width: 50%;
+                margin: 0;
+                padding: 0;
+                line-height: 36px;
+                color: white;
+              }
+
+              .title {
+                font-size: 30px;
+                font-weight: 600;
+              }
+            }
+          }
+        }
+        // sect1
+
+        .sect2 {
+          display: none;
+          margin-top: 100px;
+
+          @include responsive(pc-screens) {
+            display: block;
+
+            padding: 0 19%;
+            text-align: center;
+
+            .text {
+              line-height: 36px;
+              .title {
+                font-size: 30px;
+                font-weight: 600;
+              }
+            }
+          }
+        }
+        // sect2
+
+        .sect3 {
+          width: 100%;
+          margin-top: 100px;
+
+          .imgSlides {
+            width: 100%;
+
+            img {
+              width: 100%;
+            }
+          }
+        }
+        // sect3
+
+        .sect4 {
+          margin: 100px 0;
+
+          .backImgDownload {
+            position: relative;
+            height: auto;
+            // background-color: aqua;
+
+            .back {
+              display: none;
+
+              @include responsive(pc-screens) {
+                display: block;
+                position: absolute;
+                bottom: 0;
+                z-index: 0;
+                width: 1180px;
+                height: 400px;
+                background-color: #8d7a71;
+              }
+            }
+
+            .imgParaDown {
+              @include responsive(pc-screens) {
+                display: flex;
+                position: relative;
+                z-index: 1;
+                width: 980px;
+                margin-left: 100px;
+                justify-content: center;
+                align-items: center;
+              }
+
+              img {
+                width: 100%;
+
+                @include responsive(pc-screens) {
+                  // width: auto;
+                  height: 600px;
+                }
+              }
+
+              .paraDownload {
+                @include responsive(pc-screens) {
+                  width: 380px;
+                  margin-left: 100px;
+                  margin-top: 200px;
+                }
+
+                h3,
+                h4 {
+                  display: none;
+                  @include responsive(pc-screens) {
+                    display: block;
+                    margin-top: 10px;
+                    line-height: 60px;
+                  }
+                }
+
+                a {
+                  width: 49%;
+                  padding: 20px 0;
+                  margin-top: 30px;
+                  border-radius: 60px;
+                  text-align: center;
+                  background-color: #000;
+                  color: white;
+
+                  @include responsive(pc-screens) {
+                    background-color: white;
+                    color: black;
+                    font-size: 24px;
+                  }
+                }
+              }
+            }
           }
         }
       }
@@ -361,8 +558,8 @@
 
           @include responsive(pc-screens) {
             width: 30%;
-            font-size: 12px;
             padding: 0;
+            font-size: 12px;
           }
           ul {
             display: flex;
