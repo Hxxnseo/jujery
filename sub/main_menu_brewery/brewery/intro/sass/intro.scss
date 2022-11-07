@@ -20,7 +20,6 @@
 
   // background-color: #000;
   @include responsive(pc-screens) {
-    margin: 0 235px 0 135px;
     padding: 0;
   }
 }
@@ -171,6 +170,7 @@
         // position: relative;
         @include responsive(pc-screens) {
           width: 1180px;
+          margin: 0 auto;
         }
 
         .mainSubMenu {
@@ -369,14 +369,14 @@
                 width: 100%;
 
                 @include responsive(pc-screens) {
-                  // width: auto;
+                  width: 490px;
                   height: 600px;
                 }
               }
 
               .paraDownload {
                 @include responsive(pc-screens) {
-                  width: 380px;
+                  width: 100%;
                   margin-left: 100px;
                   margin-top: 200px;
                 }
@@ -401,6 +401,7 @@
                   color: white;
 
                   @include responsive(pc-screens) {
+                    width: 100%;
                     background-color: white;
                     color: black;
                     font-size: 24px;
@@ -416,11 +417,6 @@
   }
 
   footer {
-    .container {
-      @include responsive(pc-screens) {
-        margin: 0;
-      }
-    }
     .footer {
       width: 100%;
       height: 100%;
@@ -429,7 +425,7 @@
 
       @include responsive(pc-screens) {
         width: 100%;
-        padding: 120px 235px 80px 495px;
+        padding: 120px 185px 80px 545px;
       }
 
       .footInfo {
