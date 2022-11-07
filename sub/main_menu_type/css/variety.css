@@ -285,84 +285,98 @@ p {
     height: 530px;
   }
 }
-.wrapper .flexWrapper main .main section.variety_alcohol .alcohol-box .takjoo,
-.wrapper .flexWrapper main .main section.variety_alcohol .alcohol-box .gwasiljoo,
-.wrapper .flexWrapper main .main section.variety_alcohol .alcohol-box .otherjoo {
+.wrapper .flexWrapper main .main section.variety_alcohol .alcohol-box section:nth-child(odd) {
+  position: relative;
   width: 100%;
   display: flex;
   flex-direction: column;
   margin-bottom: 50px;
 }
 @media screen and (min-width: 1024px) {
-  .wrapper .flexWrapper main .main section.variety_alcohol .alcohol-box .takjoo,
-.wrapper .flexWrapper main .main section.variety_alcohol .alcohol-box .gwasiljoo,
-.wrapper .flexWrapper main .main section.variety_alcohol .alcohol-box .otherjoo {
+  .wrapper .flexWrapper main .main section.variety_alcohol .alcohol-box section:nth-child(odd) {
     flex-direction: row;
-    justify-content: space-between;
+    height: 630px;
   }
 }
-.wrapper .flexWrapper main .main section.variety_alcohol .alcohol-box .takjoo .text_box,
-.wrapper .flexWrapper main .main section.variety_alcohol .alcohol-box .gwasiljoo .text_box,
-.wrapper .flexWrapper main .main section.variety_alcohol .alcohol-box .otherjoo .text_box {
+.wrapper .flexWrapper main .main section.variety_alcohol .alcohol-box section:nth-child(odd) .text_box {
   width: 100%;
   order: 2;
 }
 @media screen and (min-width: 1024px) {
-  .wrapper .flexWrapper main .main section.variety_alcohol .alcohol-box .takjoo .text_box,
-.wrapper .flexWrapper main .main section.variety_alcohol .alcohol-box .gwasiljoo .text_box,
-.wrapper .flexWrapper main .main section.variety_alcohol .alcohol-box .otherjoo .text_box {
+  .wrapper .flexWrapper main .main section.variety_alcohol .alcohol-box section:nth-child(odd) .text_box {
     width: 33%;
     order: 1;
+    position: absolute;
+    top: 190px;
+    left: 45px;
   }
 }
-.wrapper .flexWrapper main .main section.variety_alcohol .alcohol-box .takjoo .img_box,
-.wrapper .flexWrapper main .main section.variety_alcohol .alcohol-box .gwasiljoo .img_box,
-.wrapper .flexWrapper main .main section.variety_alcohol .alcohol-box .otherjoo .img_box {
-  position: relative;
+.wrapper .flexWrapper main .main section.variety_alcohol .alcohol-box section:nth-child(odd) .img_box {
   order: 1;
 }
 @media screen and (min-width: 1024px) {
-  .wrapper .flexWrapper main .main section.variety_alcohol .alcohol-box .takjoo .img_box,
-.wrapper .flexWrapper main .main section.variety_alcohol .alcohol-box .gwasiljoo .img_box,
-.wrapper .flexWrapper main .main section.variety_alcohol .alcohol-box .otherjoo .img_box {
+  .wrapper .flexWrapper main .main section.variety_alcohol .alcohol-box section:nth-child(odd) .img_box {
     display: flex;
   }
 }
 @media screen and (min-width: 1024px) {
-  .wrapper .flexWrapper main .main section.variety_alcohol .alcohol-box .takjoo .img_box a img,
-.wrapper .flexWrapper main .main section.variety_alcohol .alcohol-box .gwasiljoo .img_box a img,
-.wrapper .flexWrapper main .main section.variety_alcohol .alcohol-box .otherjoo .img_box a img {
+  .wrapper .flexWrapper main .main section.variety_alcohol .alcohol-box section:nth-child(odd) .img_box a img {
     position: absolute;
     top: 65px;
-    left: 100px;
+    left: 480px;
     z-index: 2;
   }
 }
-.wrapper .flexWrapper main .main section.variety_alcohol .alcohol-box .takjoo .img_box .bg,
-.wrapper .flexWrapper main .main section.variety_alcohol .alcohol-box .gwasiljoo .img_box .bg,
-.wrapper .flexWrapper main .main section.variety_alcohol .alcohol-box .otherjoo .img_box .bg {
-  position: absolute;
-}
 @media screen and (min-width: 1024px) {
-  .wrapper .flexWrapper main .main section.variety_alcohol .alcohol-box .takjoo .img_box .bg,
-.wrapper .flexWrapper main .main section.variety_alcohol .alcohol-box .gwasiljoo .img_box .bg,
-.wrapper .flexWrapper main .main section.variety_alcohol .alcohol-box .otherjoo .img_box .bg {
+  .wrapper .flexWrapper main .main section.variety_alcohol .alcohol-box section:nth-child(odd) .img_box .bg {
     position: absolute;
-    z-index: 1;
+    top: 0;
+    left: 700px;
   }
 }
-.wrapper .flexWrapper main .main section.variety_alcohol .alcohol-box .chungjoo,
-.wrapper .flexWrapper main .main section.variety_alcohol .alcohol-box .jeungryusoo {
+.wrapper .flexWrapper main .main section.variety_alcohol .alcohol-box section:nth-child(even) {
+  position: relative;
   margin-bottom: 50px;
 }
-.wrapper .flexWrapper main .main section.variety_alcohol .alcohol-box .chungjoo .text_box,
-.wrapper .flexWrapper main .main section.variety_alcohol .alcohol-box .jeungryusoo .text_box {
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .main section.variety_alcohol .alcohol-box section:nth-child(even) {
+    height: 630px;
+  }
+}
+.wrapper .flexWrapper main .main section.variety_alcohol .alcohol-box section:nth-child(even) .text_box {
   width: 100%;
 }
 @media screen and (min-width: 1024px) {
-  .wrapper .flexWrapper main .main section.variety_alcohol .alcohol-box .chungjoo .text_box,
-.wrapper .flexWrapper main .main section.variety_alcohol .alcohol-box .jeungryusoo .text_box {
+  .wrapper .flexWrapper main .main section.variety_alcohol .alcohol-box section:nth-child(even) .text_box {
     width: 33%;
+    position: absolute;
+    top: 190px;
+    left: 750px;
+  }
+}
+.wrapper .flexWrapper main .main section.variety_alcohol .alcohol-box section:nth-child(even) .img_box {
+  position: relative;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .main section.variety_alcohol .alcohol-box section:nth-child(even) .img_box {
+    display: flex;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .main section.variety_alcohol .alcohol-box section:nth-child(even) .img_box a img {
+    position: absolute;
+    top: 65px;
+    left: 300px;
+    z-index: 2;
+    order: 2;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .main section.variety_alcohol .alcohol-box section:nth-child(even) .img_box .bg {
+    position: absolute;
+    top: 0;
+    left: 0px;
+    order: 1;
   }
 }
 
