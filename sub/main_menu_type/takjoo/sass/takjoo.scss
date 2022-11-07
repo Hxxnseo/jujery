@@ -275,13 +275,11 @@
             display: flex;
             margin-top: 40px;
 
-              section.rec-des {
+              .rec-des {
                 position: relative;
                 width: 75%;
-                // background-color: yellow;
 
                 .rec-item {
-
                   width: 100%;
                   button { // 정보나오게 하는 btn
                     position: absolute;
