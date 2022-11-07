@@ -237,10 +237,12 @@ p {
 .wrapper .flexWrapper main .main h3 {
   margin-top: 30px;
   margin-bottom: 50px;
+  text-align: center;
 }
 @media screen and (min-width: 1024px) {
   .wrapper .flexWrapper main .main h3 {
     margin-top: 130px;
+    text-align: left;
   }
 }
 .wrapper .flexWrapper main .main .notice-board {

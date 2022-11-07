@@ -231,32 +231,46 @@ p {
     font-size: 14px;
   }
 }
-.wrapper .flexWrapper main .main .start {
-  text-align: center;
-}
-.wrapper .flexWrapper main .main .start h3 {
+.wrapper .flexWrapper main .main section.introStart {
   margin-top: 30px;
-  font-family: "SANGJU Gyeongcheon Island";
-}
-.wrapper .flexWrapper main .main .start p.title {
-  font-family: "NotoSerifKR-Regular";
-  width: 30%;
-  display: flex;
-  margin: 50px 44%;
-}
-.wrapper .flexWrapper main .main .start p.title .past:hover {
-  text-decoration: underline;
-}
-.wrapper .flexWrapper main .main .start p.title .present {
-  color: #ccc;
-}
-.wrapper .flexWrapper main .main .start p.title .present:hover {
-  text-decoration: underline;
+  margin-bottom: 50px;
 }
 @media screen and (min-width: 1024px) {
-  .wrapper .flexWrapper main .main .start p.title {
-    width: 100%;
+  .wrapper .flexWrapper main .main section.introStart {
+    margin-top: 130px;
   }
+}
+.wrapper .flexWrapper main .main section.introStart h3 {
+  text-align: center;
+  font-size: 40px;
+  font-family: "SANGJU Gyeongcheon Island";
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .main section.introStart h3 {
+    text-align: left;
+  }
+}
+.wrapper .flexWrapper main .main section.introStart ul {
+  display: flex;
+  text-align: left;
+  margin: 0 20%;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .main section.introStart ul {
+    margin: 0 39%;
+  }
+}
+.wrapper .flexWrapper main .main section.introStart ul li {
+  font-family: "NotoSerifKR-Regular";
+  margin-top: 50px;
+  font-size: 34px;
+  padding: 0 30px;
+}
+.wrapper .flexWrapper main .main section.introStart ul li:first-child {
+  border-right: 1px solid #000;
+}
+.wrapper .flexWrapper main .main section.introStart ul li:first-child a {
+  color: #ccc;
 }
 .wrapper .flexWrapper main .main .label {
   display: none;
@@ -272,7 +286,6 @@ p {
   font-size: 3.125em;
   height: 234px;
   padding-top: 20%;
-  margin-bottom: 100px;
 }
 .wrapper .flexWrapper main .main .story span {
   color: #fff;
@@ -281,6 +294,7 @@ p {
   display: none;
 }
 .wrapper .flexWrapper main .main .title {
+  margin-top: 100px;
   margin-bottom: 50px;
 }
 .wrapper .flexWrapper main .main .title h4 {
@@ -293,6 +307,7 @@ p {
 }
 .wrapper .flexWrapper main .main .dis {
   display: flex;
+  margin-bottom: 50px;
 }
 .wrapper .flexWrapper main .main .dis img {
   position: absolute;
@@ -307,7 +322,8 @@ p {
   margin-left: -2%;
 }
 .wrapper .flexWrapper main .main .dis img.ja {
-  margin-top: 110px;
+  width: 88px;
+  margin-top: 30px;
   margin-left: 67%;
 }
 .wrapper .flexWrapper main .main .dis img.back {
@@ -328,7 +344,7 @@ p {
 .wrapper .flexWrapper main .main .dis .desc {
   color: #fff;
   height: 324px;
-  width: 70%;
+  width: 300px;
   padding: 0 15px;
   margin-bottom: 50px;
   background-repeat: no-repeat;
@@ -349,6 +365,54 @@ p {
   line-height: 2.6em;
 }
 .wrapper .flexWrapper main .main .dis .desc p {
+  line-height: 2.2em;
+}
+.wrapper .flexWrapper main .main .pro {
+  display: flex;
+  margin-bottom: 50px;
+}
+.wrapper .flexWrapper main .main .pro .title {
+  display: none;
+}
+.wrapper .flexWrapper main .main .pro img {
+  position: absolute;
+  width: 140px;
+}
+.wrapper .flexWrapper main .main .pro img.lee {
+  margin-top: 80px;
+  margin-left: 310px;
+}
+.wrapper .flexWrapper main .main .pro img.gam {
+  margin-top: 65px;
+  margin-left: -15px;
+}
+.wrapper .flexWrapper main .main .pro img.juck {
+  width: 18%;
+}
+.wrapper .flexWrapper main .main .pro .desc {
+  color: #fff;
+  height: 324px;
+  width: 300px;
+  padding: 0 15px;
+  margin-bottom: 50px;
+  background-repeat: no-repeat;
+}
+.wrapper .flexWrapper main .main .pro .desc:nth-child(2n) {
+  background-image: url(../../img/black_object.png);
+}
+.wrapper .flexWrapper main .main .pro .desc:nth-child(odd) {
+  margin-left: 30%;
+  background-image: url(../../img/black_object_2.png);
+}
+.wrapper .flexWrapper main .main .pro .desc:nth-child(odd) h4 {
+  text-align: right;
+}
+.wrapper .flexWrapper main .main .pro .desc h4 {
+  font-family: "NotoSerifKR-Regular";
+  color: #fff;
+  line-height: 2.6em;
+}
+.wrapper .flexWrapper main .main .pro .desc p {
   line-height: 2.2em;
 }
 @media screen and (min-width: 1024px) {
