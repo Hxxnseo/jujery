@@ -61,7 +61,7 @@ p {
 @media screen and (min-width: 1024px) {
   .container {
     padding: 0;
-    margin: 0 235px 0 135px;
+    margin: 0 auto;
     background-color: antiquewhite;
   }
 }
@@ -185,6 +185,7 @@ p {
 @media screen and (min-width: 1024px) {
   .wrapper .flexWrapper main .main {
     width: 1180px;
+    margin: 0 auto;
   }
 }
 .wrapper .flexWrapper main .main .mainSubMenu {
@@ -329,7 +330,7 @@ footer .footer {
 @media screen and (min-width: 1024px) {
   footer .footer {
     width: 100%;
-    padding: 120px 235px 80px 495px;
+    padding: 120px 185px 80px 545px;
   }
 }
 footer .footer .footInfo {
