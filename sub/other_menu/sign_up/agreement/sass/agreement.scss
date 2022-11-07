@@ -21,7 +21,7 @@
   // background-color: #000;
   @include responsive(pc-screens) {
     padding: 0;
-    margin: 0 235px 0 135px;
+    margin: 0 auto;
   }
 }
 
@@ -169,6 +169,7 @@
         // position: relative;
         @include responsive(pc-screens) {
           width: 1180px;
+          margin: 0 auto;
         }
 
         .mainSubMenu {
@@ -248,6 +249,7 @@
 
           .join_certify {
             margin-top: 20px;
+            margin-bottom: 50px;
             h4 {
               font-weight: normal;
             }
@@ -272,12 +274,26 @@
                 }
               }
             }
+          } // join_certify
+
+          .pre_next_btn {
+            display: flex;
+            justify-content: center;
+            button {
+              width: 20%;
+              margin-right: 5%;
+              height: 50px;
+              cursor: pointer;
+              &:last-child {
+                margin-right: 0;
+              }
+            }
           }
-          }
-        }
+        } //section.agreement
       }
-    } // main
-  }
+    }
+  } // main
+}
 
   footer {
     .container {
@@ -293,7 +309,7 @@
 
       @include responsive(pc-screens) {
         width: 100%;
-        padding: 120px 235px 80px 495px;
+        padding: 120px 185px 80px 545px;
       }
 
       .footInfo {

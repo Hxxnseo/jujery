@@ -21,7 +21,7 @@
   // background-color: #ccc;
   @include responsive(pc-screens) {
     padding: 0;
-    margin: 0 235px 0 135px;
+    margin: 0 auto;
   }
 }
 
@@ -169,6 +169,7 @@
         // position: relative;
         @include responsive(pc-screens) {
           width: 1180px;
+          margin: 0 auto;
         }
 
         .mainSubMenu {
@@ -369,7 +370,7 @@ footer {
 
     @include responsive(pc-screens) {
       width: 100%;
-      padding: 120px 235px 80px 495px;
+      padding: 120px 185px 80px 545px;
     }
 
     .footInfo {
