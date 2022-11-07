@@ -282,17 +282,43 @@
           position: relative;
           .sec2-main {
             margin: 100px 0;
+            .sec2-pic {
+              position: absolute;
+              top: 20px; left:50px;
+              width: 250px;
+              height: 300px;
+              z-index:0;
+            }
+            
             h1 {
+              position: absolute;
               font-size: 40px;
+              z-index:1;
+              
             }
-            img {
-              .sec2-pic {
-                position: absolute;
-                width: 250px;
-                height: 300px;
-              }
+            h4 {
+              position: absolute;
+              top: 55px;
+              font-size: 34px;
+              color: #dbdbdb;
+              z-index:2;
             }
-          }
+            h5 {
+              position: absolute;
+              top:0; left:260px;
+            }
+            .arrow-left {
+              position: absolute;
+              top: 150px;
+            }
+            .arrow-right {
+              position: absolute;
+              top: 150px; left: 350px;
+            }
+
+          } // sec2-main
+      
+
           .sec2-con-pc {
             display: none;
           }
