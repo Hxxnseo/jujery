@@ -71,13 +71,13 @@ p {
   }
 }
 .container {
-  padding: 0 20px;
   width: 100%;
+  padding: 0 20px;
 }
 @media screen and (min-width: 1024px) {
   .container {
-    padding: 0;
     margin: 0 235px 0 135px;
+    padding: 0;
   }
 }
 
@@ -89,8 +89,8 @@ p {
 }
 @media screen and (min-width: 1024px) {
   .wrapper .flexWrapper {
-    height: 100%;
     display: flex;
+    height: 100%;
     flex-direction: row;
   }
 }
@@ -99,8 +99,8 @@ p {
 }
 @media screen and (min-width: 1024px) {
   .wrapper .flexWrapper header {
-    height: auto;
     width: 370px;
+    height: auto;
     background-image: url(../../../../../images/background/detail_page_header_background.png);
   }
 }
@@ -166,6 +166,8 @@ p {
 }
 .wrapper .flexWrapper header .header .mobileLogoMenu {
   display: flex;
+  z-index: 10;
+  position: relative;
 }
 @media screen and (min-width: 1024px) {
   .wrapper .flexWrapper header .header .mobileLogoMenu {
@@ -216,8 +218,8 @@ p {
   .wrapper .flexWrapper main .main .mainSubMenu ul {
     display: flex;
     position: absolute;
-    right: 100px;
     top: 50px;
+    right: 100px;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -235,9 +237,183 @@ p {
   margin-top: 30px;
   text-align: center;
 }
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .main .introStart {
+    text-align: left;
+  }
+}
 .wrapper .flexWrapper main .main .introStart h3 {
   margin-bottom: 50px;
   font-size: 40px;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .main .introStart h3 {
+    font-size: 50px;
+  }
+}
+.wrapper .flexWrapper main .main .introStart .introMenu ul {
+  display: flex;
+  justify-content: center;
+}
+.wrapper .flexWrapper main .main .introStart .introMenu ul li {
+  padding: 0 30px;
+  font-family: "NotoSerifKR-Regular";
+  font-size: 18px;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .main .introStart .introMenu ul li {
+    font-size: 24px;
+  }
+}
+.wrapper .flexWrapper main .main .introStart .introMenu ul li:first-child {
+  border-right: 1px double black;
+}
+.wrapper .flexWrapper main .main .sect1 {
+  margin-top: 50px;
+}
+.wrapper .flexWrapper main .main .sect1 .imgP {
+  position: relative;
+  width: 100%;
+}
+.wrapper .flexWrapper main .main .sect1 .imgP img {
+  width: 100%;
+}
+.wrapper .flexWrapper main .main .sect1 .imgP img:first-child {
+  display: none;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .main .sect1 .imgP img:first-child {
+    display: block;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .main .sect1 .imgP img:last-child {
+    display: none;
+  }
+}
+.wrapper .flexWrapper main .main .sect1 .imgP .para {
+  padding: 0 20px;
+  margin-top: 100px;
+  line-height: 30px;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .main .sect1 .imgP .para {
+    position: absolute;
+    top: 115px;
+    left: 70px;
+    width: 50%;
+    margin: 0;
+    padding: 0;
+    line-height: 36px;
+    color: white;
+  }
+}
+.wrapper .flexWrapper main .main .sect1 .imgP .para .title {
+  font-size: 30px;
+  font-weight: 600;
+}
+.wrapper .flexWrapper main .main .sect2 {
+  display: none;
+  margin-top: 100px;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .main .sect2 {
+    display: block;
+    padding: 0 19%;
+    text-align: center;
+  }
+  .wrapper .flexWrapper main .main .sect2 .text {
+    line-height: 36px;
+  }
+  .wrapper .flexWrapper main .main .sect2 .text .title {
+    font-size: 30px;
+    font-weight: 600;
+  }
+}
+.wrapper .flexWrapper main .main .sect3 {
+  width: 100%;
+  margin-top: 100px;
+}
+.wrapper .flexWrapper main .main .sect3 .imgSlides {
+  width: 100%;
+}
+.wrapper .flexWrapper main .main .sect3 .imgSlides img {
+  width: 100%;
+}
+.wrapper .flexWrapper main .main .sect4 {
+  margin: 100px 0;
+}
+.wrapper .flexWrapper main .main .sect4 .backImgDownload {
+  position: relative;
+  height: auto;
+}
+.wrapper .flexWrapper main .main .sect4 .backImgDownload .back {
+  display: none;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .main .sect4 .backImgDownload .back {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    z-index: 0;
+    width: 1180px;
+    height: 400px;
+    background-color: #8d7a71;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .main .sect4 .backImgDownload .imgParaDown {
+    display: flex;
+    position: relative;
+    z-index: 1;
+    width: 980px;
+    margin-left: 100px;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.wrapper .flexWrapper main .main .sect4 .backImgDownload .imgParaDown img {
+  width: 100%;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .main .sect4 .backImgDownload .imgParaDown img {
+    height: 600px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .main .sect4 .backImgDownload .imgParaDown .paraDownload {
+    width: 380px;
+    margin-left: 100px;
+    margin-top: 200px;
+  }
+}
+.wrapper .flexWrapper main .main .sect4 .backImgDownload .imgParaDown .paraDownload h3,
+.wrapper .flexWrapper main .main .sect4 .backImgDownload .imgParaDown .paraDownload h4 {
+  display: none;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .main .sect4 .backImgDownload .imgParaDown .paraDownload h3,
+.wrapper .flexWrapper main .main .sect4 .backImgDownload .imgParaDown .paraDownload h4 {
+    display: block;
+    margin-top: 10px;
+    line-height: 60px;
+  }
+}
+.wrapper .flexWrapper main .main .sect4 .backImgDownload .imgParaDown .paraDownload a {
+  width: 49%;
+  padding: 20px 0;
+  margin-top: 30px;
+  border-radius: 60px;
+  text-align: center;
+  background-color: #000;
+  color: white;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .main .sect4 .backImgDownload .imgParaDown .paraDownload a {
+    background-color: white;
+    color: black;
+    font-size: 24px;
+  }
 }
 @media screen and (min-width: 1024px) {
   .wrapper footer .container {
@@ -374,8 +550,8 @@ p {
 @media screen and (min-width: 1024px) {
   .wrapper footer .footer .footBox .footMenu {
     width: 30%;
-    font-size: 12px;
     padding: 0;
+    font-size: 12px;
   }
 }
 .wrapper footer .footer .footBox .footMenu ul {

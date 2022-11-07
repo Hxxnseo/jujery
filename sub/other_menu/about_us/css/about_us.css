@@ -57,7 +57,6 @@ p {
 .container {
   padding: 0 20px;
   width: 100%;
-  background-color: #000;
 }
 @media screen and (min-width: 1024px) {
   .container {
@@ -70,7 +69,7 @@ p {
   position: relative;
   width: 100%;
   height: 100%;
-  background-image: url(../../../images/background/detail_page_main_background.png);
+  background: black;
 }
 @media screen and (min-width: 1024px) {
   .wrapper .flexWrapper {
@@ -117,6 +116,7 @@ p {
 @media screen and (min-width: 1024px) {
   .wrapper .flexWrapper header .header .logoMenu .menu .gnb li {
     padding-bottom: 60px;
+    color: white;
   }
   .wrapper .flexWrapper header .header .logoMenu .menu .gnb li:hover ul {
     height: 100px;
@@ -182,16 +182,45 @@ p {
     width: 80%;
   }
 }
+.wrapper .flexWrapper main .main {
+  position: relative;
+}
 @media screen and (min-width: 1024px) {
   .wrapper .flexWrapper main .main {
     width: 1180px;
   }
+}
+.wrapper .flexWrapper main .main .gallery {
+  width: 390px;
+  height: 400px;
+  overflow: hidden;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .main .gallery {
+    width: 1550px;
+    height: auto;
+  }
+}
+.wrapper .flexWrapper main .main .gallery #slide {
+  position: relative;
+  display: flex;
+  width: 1170px;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .main .gallery #slide {
+    width: 4650px;
+  }
+}
+.wrapper .flexWrapper main .main .gallery #slide img {
+  width: 100%;
 }
 .wrapper .flexWrapper main .main .mainSubMenu {
   display: none;
 }
 @media screen and (min-width: 1024px) {
   .wrapper .flexWrapper main .main .mainSubMenu {
+    position: absolute;
+    right: 0;
     display: block;
     width: 100%;
     height: 70px;
@@ -218,6 +247,7 @@ p {
 }
 @media screen and (min-width: 1024px) {
   .wrapper footer .container {
+    position: absolute;
     margin: 0;
   }
 }

@@ -1,6 +1,6 @@
-@import "../sass/style1.scss";
-@import "../sass/common1.scss";
-@import "../sass/mixin1.scss";
+@import "./style1.scss";
+@import "./common1.scss";
+@import "./mixin1.scss";
 
 @include responsive(pc-screens) {
   body {
@@ -17,7 +17,6 @@
   width: 100%; // 모바일, 태블릿
   // background-color: #000;
   // max-width: 1200px; // pc
-
 
   @include responsive(pc-screens) {
     padding: 0;
@@ -204,372 +203,346 @@
           }
         } // mainSubMenu
 
-
-       // ==============sec1==========전국6도 전통주 //
-       .sec1 {
-        margin-top: 30px;
-        text-align: center;
-        @include responsive(pc-screens) {
-          margin-top: 130px;
-        }
-
-        h3 {
-          font-size: 40px;
-        }
-        .region_six {
-          margin: 100px 0;
-          display: flex;
-          position: relative;
-          div {
-            width: 100%;
-
-            h4 {
-              width: 105px;
-              margin: 100px 20px 0 20px;
-              @include responsive(pc-screens) {
-                margin-top: 240px;
-              }
-            }
-            img {
-              width: 195px;
-              height: 237px;
-              @include responsive(pc-screens) {
-                width: 433px;
-                height: 529px;
-              }
-            }
-          }
-        } // region_six
-      } // main
-    } // container
-    img {
-      // width: 100%;
-      height: 197px;
-      @include responsive(pc-screens) {
-        width: 100%;
-        height: 507px;
-      }
-    }
-  } // sec1
-
-  // ============== sec2 =============
-  .sec2 {
-    margin: 100px 0 50px 0;
-    @include responsive(pc-screens) {
-
-      
-    }
-
-    .container {
-      .p-gap {
-        @include responsive(pc-screens) {
-          padding: 0 60px;
-        }
-      
-      .region_con {
-        margin: 20px 0;
-         
-        h3 {
+        // ==============sec1==========전국6도 전통주 //
+        .sec1 {
+          margin-top: 30px;
           text-align: center;
-          margin: 0 35px;
-          font-size: 34px;
-          line-height: 35px;
-          padding: 0 20px;
           @include responsive(pc-screens) {
-            text-align: left;
-            margin: 0 0 50px 0;
-            padding: 0 0;
-            
-            
-          }
-        }
-        span {
-          margin: 25px 0;
-          display: block;
-          width: 100%;
-          height: 2px;
-          background-color: #dbdbdb;
-          @include responsive(pc-screens) {
-            display: none;
-          }
-        }
-        p {
-          font-family: $font-sub;
-          color: #606060;
-          line-height: 20px;
-        }
-        .pc-line {
-          display: none;
-          @include responsive(pc-screens) {
-            display: block;
-          }
-        }
-      } // region_con
-
-      .mobile-menu {
-        padding: 5px 5px;
-        display: flex;
-        justify-content: space-between;
-        @include responsive(pc-screens) {
-          display: none;
-        }
-        div {
-          font-family: $font-sub;
-          font-size: 18px;
-        }
-
-
-      } // mobile-menu
-      .line {
-        margin: 10px 0 15px 0;
-        display: block;
-        width: 100%;
-        height: 8px;
-        background-color: #dbdbdb;
-        @include responsive(pc-screens) {
-          display: none;
-        }
-      } // line
-      .region_box_twelve {
-        display: flex;
-        justify-content: space-between;
-        div {
-          
-          font-family: $font-sub;
-          margin-right: 20px;
-          
-          img {
-            width:166px;
-            height: 229px;
-            @include responsive(pc-screens) {
-              width : 270px;
-              height : 372px;
-            }
-          }
-          .box-even {
-            height: 151px;
-            @include responsive(pc-screens) {
-              width:270px;
-              height:259px;
-            }
+            margin-top: 130px;
           }
 
-          h4 {
-            font-size: 14px;
-            padding: 20px 0;
+          h3 {
+            font-size: 40px;
           }
-          p {
-            font-size: 12px;
-            line-height: 20px;
-          }
-
-        } 
-      } // region_box_twelve
-      span {
-        @include responsive(pc-screens) {
-        display: block;
-        background-color: #dbdbdb;
-        height: 5px;
-        width: 100%;
-        }
-      }
-    } // p-gap
-  } // sec2
-
-  .sec3 {
-    position: relative;
-
-    img {
-      width: 370px;
-      @include responsive(pc-screens) {
-        width: 1180px;
-      }
-    }
-
-    .ricewine_title {
-      padding:100px;
-     h1 {
-      font-size: 30px;
-     }
-     h5 {
-      color: #dbdbdb;
-     }
-    }
-  } // sec3
-
-      } // .main
-      } // container
-    }
-    // main
-
-
-  footer {
-    .container {
-      @include responsive(pc-screens) {
-        margin: 0;
-      }
-    }
-    .footer {
-      width: 100%;
-      height: 100%;
-      background-color: black;
-      color: white;
-
-      @include responsive(pc-screens) {
-        width: 100%;
-        padding: 120px 235px 80px 495px;
-      }
-
-      .footInfo {
-        padding-top: 60px;
-        padding-bottom: 30px;
-
-        @include responsive(pc-screens) {
-          // padding: 0;
-          display: flex;
-          width: 100%;
-          justify-content: space-between;
-
-          font-size: 20px;
-          margin-bottom: 30px;
-        }
-
-        address {
-          font-style: normal;
-        }
-
-        p {
-          margin: 20px 0;
-
-          @include responsive(pc-screens) {
-            margin: 0;
-          }
-        }
-      }
-
-      .footBox {
-        @include responsive(pc-screens) {
-          display: flex;
-          width: 100%;
-          height: 250px;
-          flex-direction: row;
-          justify-content: space-between;
-          align-items: center;
-
-          text-align: center;
-
-          border-top: 1px solid #ccc;
-          border-bottom: 1px solid #ccc;
-        }
-
-        .footLogoCopy {
-          padding: 30px;
-          border-top: 1px solid #ccc;
-          border-bottom: 1px solid #ccc;
-          text-align: center;
-
-          @include responsive(pc-screens) {
-            width: 25%;
-            padding: 0;
-            border: 0;
-          }
-
-          a {
-            color: white;
-            font-size: 60px;
-          }
-
-          p {
-            font-size: 10px;
-          }
-
-          .copyright {
-            @include responsive(pc-screens) {
-              font-size: 12px;
-              font-family: $font-sub;
-            }
-          }
-        }
-
-        .footSns {
-          padding: 30px;
-          border-bottom: 1px solid #ccc;
-
-          @include responsive(pc-screens) {
-            position: relative;
-            width: 50%;
-            height: 250px;
-            border-bottom: 0;
-            border-right: 1px solid #ccc;
-            border-left: 1px solid #ccc;
-          }
-          .footSnsCont {
+          .region_six {
+            margin: 100px 0;
             display: flex;
-            justify-content: center;
+            position: relative;
+            div {
+              width: 100%;
 
-            @include responsive(pc-screens) {
-              padding: 60px 80px;
-            }
-
-            li {
-              padding: 10px;
-
-              @include responsive(pc-screens) {
-                padding-right: 30px;
-
-                &:last-child {
-                  padding-right: 0;
+              h4 {
+                width: 105px;
+                margin: 100px 20px 0 20px;
+                @include responsive(pc-screens) {
+                  margin-top: 240px;
                 }
               }
               img {
-                width: 50px;
-
+                width: 195px;
+                height: 237px;
                 @include responsive(pc-screens) {
-                  width: 60px;
-                  opacity: 0.5;
+                  width: 433px;
+                  height: 529px;
+                }
+              }
+            }
+          } // region_six
+        } // main
+      } // container
+      img {
+        // width: 100%;
+        height: 197px;
+        @include responsive(pc-screens) {
+          width: 100%;
+          height: 507px;
+        }
+      }
+    } // sec1
 
-                  transition: all 0.5s;
+    // ============== sec2 =============
+    .sec2 {
+      margin: 100px 0 50px 0;
+      @include responsive(pc-screens) {
+      }
 
-                  &:hover {
-                    opacity: 1;
-                  }
+      .container {
+        .p-gap {
+          @include responsive(pc-screens) {
+            padding: 0 60px;
+          }
+
+          .region_con {
+            margin: 20px 0;
+            h3 {
+              text-align: center;
+              margin: 0 35px;
+              font-size: 34px;
+              line-height: 35px;
+              padding: 0 20px;
+              @include responsive(pc-screens) {
+                text-align: left;
+                margin: 0 0 50px 0;
+                padding: 0 0;
+              }
+            }
+            span {
+              margin: 25px 0;
+              display: block;
+              width: 100%;
+              height: 2px;
+              background-color: #dbdbdb;
+              @include responsive(pc-screens) {
+                display: none;
+              }
+            }
+            p {
+              font-family: $font-sub;
+              color: #606060;
+              line-height: 20px;
+            }
+            .pc-line {
+              display: none;
+              @include responsive(pc-screens) {
+                display: block;
+              }
+            }
+          } // region_con
+
+          .mobile-menu {
+            padding: 5px 5px;
+            display: flex;
+            justify-content: space-between;
+            @include responsive(pc-screens) {
+              display: none;
+            }
+            div {
+              font-family: $font-sub;
+              font-size: 18px;
+            }
+          } // mobile-menu
+          .line {
+            margin: 10px 0 15px 0;
+            display: block;
+            width: 100%;
+            height: 8px;
+            background-color: #dbdbdb;
+            @include responsive(pc-screens) {
+              display: none;
+            }
+          } // line
+          .region_box_twelve {
+            display: flex;
+            justify-content: space-between;
+            div {
+              font-family: $font-sub;
+              margin-right: 20px;
+
+              img {
+                width: 166px;
+                height: 229px;
+                @include responsive(pc-screens) {
+                  width: 270px;
+                  height: 372px;
+                }
+              }
+              .box-even {
+                height: 151px;
+                @include responsive(pc-screens) {
+                  width: 270px;
+                  height: 259px;
+                }
+              }
+
+              h4 {
+                font-size: 14px;
+                padding: 20px 0;
+              }
+              p {
+                font-size: 12px;
+                line-height: 20px;
+              }
+            }
+          } // region_box_twelve
+          span {
+            @include responsive(pc-screens) {
+              display: block;
+              background-color: #dbdbdb;
+              height: 5px;
+              width: 100%;
+            }
+          }
+        } // p-gap
+      } // sec2
+
+      .sec3 {
+        .ricewine_title {
+          h5 {
+            color: #dbdbdb;
+          }
+        }
+      } // sec3
+    } // .main
+  } // container
+}
+// main
+
+footer {
+  .container {
+    @include responsive(pc-screens) {
+      margin: 0;
+    }
+  }
+  .footer {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    color: white;
+
+    @include responsive(pc-screens) {
+      width: 100%;
+      padding: 120px 235px 80px 495px;
+    }
+
+    .footInfo {
+      padding-top: 60px;
+      padding-bottom: 30px;
+
+      @include responsive(pc-screens) {
+        // padding: 0;
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+
+        font-size: 20px;
+        margin-bottom: 30px;
+      }
+
+      address {
+        font-style: normal;
+      }
+
+      p {
+        margin: 20px 0;
+
+        @include responsive(pc-screens) {
+          margin: 0;
+        }
+      }
+    }
+
+    .footBox {
+      @include responsive(pc-screens) {
+        display: flex;
+        width: 100%;
+        height: 250px;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        text-align: center;
+
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+      }
+
+      .footLogoCopy {
+        padding: 30px;
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        text-align: center;
+
+        @include responsive(pc-screens) {
+          width: 25%;
+          padding: 0;
+          border: 0;
+        }
+
+        a {
+          color: white;
+          font-size: 60px;
+        }
+
+        p {
+          font-size: 10px;
+        }
+
+        .copyright {
+          @include responsive(pc-screens) {
+            font-size: 12px;
+            font-family: $font-sub;
+          }
+        }
+      }
+
+      .footSns {
+        padding: 30px;
+        border-bottom: 1px solid #ccc;
+
+        @include responsive(pc-screens) {
+          position: relative;
+          width: 50%;
+          height: 250px;
+          border-bottom: 0;
+          border-right: 1px solid #ccc;
+          border-left: 1px solid #ccc;
+        }
+        .footSnsCont {
+          display: flex;
+          justify-content: center;
+
+          @include responsive(pc-screens) {
+            padding: 60px 80px;
+          }
+
+          li {
+            padding: 10px;
+
+            @include responsive(pc-screens) {
+              padding-right: 30px;
+
+              &:last-child {
+                padding-right: 0;
+              }
+            }
+            img {
+              width: 50px;
+
+              @include responsive(pc-screens) {
+                width: 60px;
+                opacity: 0.5;
+
+                transition: all 0.5s;
+
+                &:hover {
+                  opacity: 1;
                 }
               }
             }
           }
         }
+      }
 
-        .footMenu {
-          padding: 40px;
+      .footMenu {
+        padding: 40px;
 
-          @include responsive(pc-screens) {
-            width: 25%;
-            padding: 0;
-            font-size: 13px;
+        @include responsive(pc-screens) {
+          width: 25%;
+          padding: 0;
+          font-size: 13px;
+        }
+        ul {
+          display: flex;
+          width: 100%;
+          padding: 10px;
+          margin-left: 5px;
+
+          &:last-child {
+            text-align: left;
           }
-          ul {
-            display: flex;
-            width: 100%;
-            padding: 10px;
-            margin-left: 5px;
 
-            &:last-child {
-              text-align: left;
-            }
+          li {
+            width: 33%;
+            padding: 0 5px;
+            text-align: center;
 
-            li {
-              width: 33%;
-              padding: 0 5px;
-              text-align: center;
-
-              a {
-                width: 100%;
-                color: white;
-              }
+            a {
+              width: 100%;
+              color: white;
             }
           }
         }
       }
     }
   }
-
+}
