@@ -260,9 +260,8 @@
               }
             }
 
-            .takjoo,
-            .gwasiljoo,
-            .otherjoo {
+            section:nth-child(odd) {
+              position: relative;
               width: 100%;
               display: flex;
               flex-direction: column;
@@ -271,7 +270,7 @@
 
               @include responsive(pc-screens) {
                 flex-direction: row;
-                justify-content: space-between;
+                height: 630px;
               }
 
               .text_box {
@@ -280,10 +279,12 @@
                 @include responsive(pc-screens) {
                   width: 33%;
                   order: 1;
+                  position: absolute;
+                  top: 190px; left: 45px;
+                  
                 }
               }
               .img_box {
-                position: relative;
                 order: 1;
                 @include responsive(pc-screens) {
                   display: flex;
@@ -293,37 +294,66 @@
                     @include responsive(pc-screens) {
                       position: absolute;
                       top: 65px;
-                      left: 100px;
+                      left: 480px;
                       z-index: 2;
                     }
                   }
                 }
                 .bg {
-                  position: absolute;
                   @include responsive(pc-screens) {
                     position: absolute;
-                    z-index: 1;
+                    top: 0; left: 700px;
                   }
                 }
               }
             }
-            .chungjoo,
-            .jeungryusoo {
+            section:nth-child(even) {
+              position: relative;
               margin-bottom: 50px;
               // background-color: pink;
+              @include responsive(pc-screens) {
+                height: 630px;
+              }
               .text_box {
                 width: 100%;
                 @include responsive(pc-screens) {
                   width: 33%;
+                  position: absolute;
+                  top: 190px; left: 750px;
                 }
               }
+              .img_box {
+                position: relative;
+                @include responsive(pc-screens) {
+                  display: flex;
+                }
+                a {
+                  img {
+                    @include responsive(pc-screens) {
+                      position: absolute;
+                      top: 65px;
+                      left: 300px;
+                      z-index: 2;
+                      order: 2;
+                    }
+                  }
+                }
+                .bg {
+                  @include responsive(pc-screens) {
+                    position: absolute;
+                    top: 0; left: 0px;
+                    order: 1;
+                  }
+                }
+              }
+            }
             }
           }
         }
       }
     }
   } // main
-}
+
 
 footer {
   .container {
