@@ -9,8 +9,7 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -54,4 +53,4 @@ h4 {
 p {
   font-size: 1em;
   font-family: "NotoSerifKR-Regular";
-}
+}/*# sourceMappingURL=common1.css.map */
