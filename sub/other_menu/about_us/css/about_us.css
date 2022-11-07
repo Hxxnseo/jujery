@@ -116,7 +116,6 @@ p {
 @media screen and (min-width: 1024px) {
   .wrapper .flexWrapper header .header .logoMenu .menu .gnb li {
     padding-bottom: 60px;
-    color: white;
   }
   .wrapper .flexWrapper header .header .logoMenu .menu .gnb li:hover ul {
     height: 100px;
@@ -182,43 +181,16 @@ p {
     width: 80%;
   }
 }
-.wrapper .flexWrapper main .main {
-  position: relative;
-}
 @media screen and (min-width: 1024px) {
   .wrapper .flexWrapper main .main {
     width: 1180px;
   }
 }
-.wrapper .flexWrapper main .main .gallery {
-  width: 390px;
-  height: 400px;
-  overflow: hidden;
-}
-@media screen and (min-width: 1024px) {
-  .wrapper .flexWrapper main .main .gallery {
-    width: 1550px;
-    height: auto;
-  }
-}
-.wrapper .flexWrapper main .main .gallery #slide {
-  position: relative;
-  display: flex;
-  width: 1170px;
-}
-@media screen and (min-width: 1024px) {
-  .wrapper .flexWrapper main .main .gallery #slide {
-    width: 4650px;
-  }
-}
-.wrapper .flexWrapper main .main .gallery #slide img {
-  width: 100%;
-}
-.wrapper .flexWrapper main .main .mainSubMenu {
+.wrapper .flexWrapper main .main .container .mainSubMenu {
   display: none;
 }
 @media screen and (min-width: 1024px) {
-  .wrapper .flexWrapper main .main .mainSubMenu {
+  .wrapper .flexWrapper main .main .container .mainSubMenu {
     position: absolute;
     right: 0;
     display: block;
@@ -227,7 +199,7 @@ p {
   }
 }
 @media screen and (min-width: 1024px) {
-  .wrapper .flexWrapper main .main .mainSubMenu ul {
+  .wrapper .flexWrapper main .main .container .mainSubMenu ul {
     display: flex;
     position: absolute;
     right: 100px;
@@ -235,19 +207,42 @@ p {
   }
 }
 @media screen and (min-width: 1024px) {
-  .wrapper .flexWrapper main .main .mainSubMenu ul li {
+  .wrapper .flexWrapper main .main .container .mainSubMenu ul li {
     padding-left: 25px;
   }
 }
 @media screen and (min-width: 1024px) {
-  .wrapper .flexWrapper main .main .mainSubMenu ul li a {
+  .wrapper .flexWrapper main .main .container .mainSubMenu ul li a {
     font-family: "NotoSerifKR-Regular";
     font-size: 14px;
   }
 }
+.wrapper .flexWrapper main .main .container .gallery {
+  width: 390px;
+  height: 400px;
+  overflow: hidden;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .main .container .gallery {
+    width: 1550px;
+    height: auto;
+  }
+}
+.wrapper .flexWrapper main .main .container .gallery #slide {
+  position: relative;
+  display: flex;
+  width: 1170px;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .main .container .gallery #slide {
+    width: 4650px;
+  }
+}
+.wrapper .flexWrapper main .main .container .gallery #slide img {
+  width: 100%;
+}
 @media screen and (min-width: 1024px) {
   .wrapper footer .container {
-    position: absolute;
     margin: 0;
   }
 }

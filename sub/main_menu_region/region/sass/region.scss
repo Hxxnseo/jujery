@@ -366,16 +366,42 @@
       } // sec2
 
       .sec3 {
-        .ricewine_title {
-          h5 {
-            color: #dbdbdb;
+        img {
+          width: 100%;
+
+          @include responsive(pc-screens) {
+            width: 100%;
           }
         }
-      } // sec3
-    } // .main
-  } // container
+
+        .ricewine_title {
+          padding: 100px;
+          background-color: red;
+          h1 {
+            padding: 100px;
+          }
+          h5 {
+            color: yellow;
+          }
+          span {
+            display: block;
+            width: 50px;
+            height: 2px;
+            background-color: #dbdbdb;
+          }
+
+          .ricewine-con {
+            img {
+              width: 300px;
+              height: 400px;
+            }
+          }
+        } // ricewine
+      } // .main
+    } // sec3
+  } // main
 }
-// main
+// flexwrapper
 
 footer {
   .container {
