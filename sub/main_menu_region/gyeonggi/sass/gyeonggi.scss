@@ -22,6 +22,7 @@
   @include responsive(pc-screens) {
     padding: 0;
     margin: 0 235px 0 135px;
+    background-color: antiquewhite;
   }
 }
 
@@ -207,15 +208,26 @@
         .sec1 {
           position: relative;
           margin-top: 30px;
+          @include responsive(pc-screens) {
+            padding: 130px 120px;
+          }
           h1 {
             position: absolute;
             font-size: 40px;
             left: 190px;
             top: 10px;
+            @include responsive(pc-screens) {
+              top: 145px;
+              left: 320px;
+              font-size: 90px;
+            }
           }
           h4 {
             font-size: 30px;
             color: #dbdbdb;
+            @include responsive(pc-screens) {
+              text-align: left;
+            }
           }
           span {
             display: block;
@@ -223,27 +235,67 @@
             width: 180px;
             margin: 10px 0;
             background-color: #dbdbdb;
+            @include responsive(pc-screens) {
+              margin: 20px 0;
+            }
+          }
+          .mobile-box {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 40px 0;
+            @include responsive(pc-screens) {
+              display: none;
+            }
           }
 
-          .flex-box {
-            position: absolute;
-            margin-top: 50px;
-            div {
-              margin: 10px 0;
-            }
-            .box1 {
-              .p-box1 {
-                width: 100%;
-                height: 360px;
+          .grid-box {
+            display: none;
+            @include responsive(pc-screens) {
+              display: grid;
+              margin-top: 100px;
+              .div1 {
+                grid-area: div1;
               }
+              .div2 {
+                grid-area: div2;
+                margin-left: 10px;
+              }
+              .div3 {
+                grid-area: div3;
+                margin-left: 10px;
+              }
+              grid-template-areas:
+                "div1 div2"
+                "div1 div3";
             }
-            .box2 {
-              .p-box2 {
-                height: 260px;
+            .item {
+              margin: 10px 0;
+              img {
+                width: 100%;
+                height: 100%;
               }
             }
           }
-        }
+        } // sec1
+        .sec2 {
+          position: relative;
+          .sec2-main {
+            margin: 100px 0;
+            h1 {
+              font-size: 40px;
+            }
+            img {
+              .sec2-pic {
+                position: absolute;
+                width: 250px;
+                height: 300px;
+              }
+            }
+          }
+          .sec2-con-pc {
+            display: none;
+          }
+        } // .sec2
       }
     }
   }
