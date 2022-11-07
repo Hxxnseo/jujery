@@ -169,6 +169,7 @@
         // position: relative;
         @include responsive(pc-screens) {
           width: 1180px;
+          margin: 0 auto;
         }
 
         .mainSubMenu {
@@ -231,8 +232,8 @@
               margin-top: 50px;
               font-size: 34px;
               padding: 0 30px;
-              &:first-child {
-                border-right: 1px solid #000;
+              &:last-child {
+                border-left: 1px solid #000;
                 a {
                   color: #ccc;
                 }
@@ -241,12 +242,58 @@
           }
         }
 
-        .label {
+        .label1 {
           display: none;
+          margin-bottom: 50px;
           @include responsive(pc-screens) {
             display: flex;
+            font-size: 32px;
+            li {
+              padding: 24px 15px;
+              &:first-child {
+                a{
+                  color: #fff;
+                }
+                background-color: rgba(0, 0, 0, 0.8);
+              }
+            }
           }
-        } // label
+        } // label1 
+
+        .label2 {
+          display: none;
+          margin-bottom: 50px;
+          @include responsive(pc-screens) {
+            display: flex;
+            margin-top: 100px;
+            font-size: 32px;
+            li {
+              padding: 24px 15px;
+              &:nth-child(2) {
+                border: 1px solid #000;
+                border-bottom: none;
+              }
+            }
+          }
+        } // label2
+
+        .label3 {
+          display: none;
+          margin-bottom: 50px;
+          @include responsive(pc-screens) {
+            display: flex;
+            margin-top: 100px;
+            font-size: 32px;
+            li {
+              padding: 24px 15px;
+              &:nth-child(3) {
+                border: 1px solid #000;
+                border-bottom: none;
+              }
+            }
+          }
+        } // label2
+
         .story {
           background-image: url(../../img/past_pic.png);
           text-align: center;
@@ -264,6 +311,9 @@
         .title {
           margin-top: 100px;
           margin-bottom: 50px;
+          @include responsive(pc-screens) {
+            display: none;
+          }
           h4 {
             display: flex;
             flex-direction: row;
@@ -274,15 +324,33 @@
           } // h4
 
         } // title
+
+        .everydis {
+          @include responsive(pc-screens) {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            margin: 0; 
+          }
+        }
+
+        .everypro {
+          @include responsive(pc-screens) {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            margin: 0; 
+          }
+        }
         .dis {
           display: flex;
           margin-bottom: 50px;
           img {
             position: absolute;
-            margin-top: -38px; margin-left: 65%;
+            margin-top: -38px;
           }
-          img.do { margin-top: 13px; }
-          img.dae { margin-top: 83px; margin-left: -2%; }
+          img.do { margin-top: 13px; margin-left: 320px;}
+          img.dae { margin-top: 83px; margin-left: -10px; }
           img.ja { width: 88px; margin-top: 30px; margin-left: 67%; }
           img.back { width: 90px; margin-top: 20px; margin-left: 6%; }
           .title {
@@ -300,15 +368,28 @@
             height: 324px; width: 300px;
             padding: 0 15px;
             margin-bottom: 50px;
-            // margin-top: 50px;
+            @include responsive(pc-screens) {
+              width: 400px; height: 322px;
+            }
             &:nth-child(2n) {
               background-image: url(../../img/black_object.png);
+              @include responsive(pc-screens) {
+                background-image: url(../../img/black_pc.png);
+              }
             }
             &:nth-child(odd) {
               margin-left: 30%;
               background-image: url(../../img/black_object_2.png);
+              @include responsive(pc-screens) {
+                background-image: url(../../img/black_pc.png);
+                margin: 0;
+              }
+              
               h4 {
                 text-align: right;
+                @include responsive(pc-screens) {
+                  text-align: left;
+                }
               }
             }
             background-repeat: no-repeat;
@@ -335,25 +416,39 @@
           }
           img.lee{margin-top: 80px; margin-left: 310px;}
           img.gam{margin-top: 65px; margin-left: -15px;}
-          img.juck{width: 18%;}
-          img.sol{}
-          img.moon{}
+          img.juck{width: 87px;margin-top: -6px; margin-left: 310px;}
+          img.sol{width: 175px; margin-top: 130px; margin-left: -10px;}
+          img.moon{width: 100px; margin-top: -295px; margin-left: 310px;}
 
           .desc {
             color: #fff;
             height: 324px; width: 300px;
             padding: 0 15px;
             margin-bottom: 50px;
+            @include responsive(pc-screens) {
+              width: 400px; height: 400px;
+            }
             &:nth-child(2n) {
               background-image: url(../../img/black_object.png);
+              @include responsive(pc-screens) {
+                background-image: url(../../img/black_pc.png);
+              }
             }
             &:nth-child(odd) {
               margin-left: 30%;
               background-image: url(../../img/black_object_2.png);
               h4 {
                 text-align: right;
+                @include responsive(pc-screens) {
+                  text-align: left;
+                }
+              }
+              @include responsive(pc-screens) {
+                background-image: url(../../img/black_pc.png);
+                margin: 0;
               }
             }
+            
             background-repeat: no-repeat;
             h4 {
               font-family: $font-sub;
@@ -384,7 +479,7 @@
 
       @include responsive(pc-screens) {
         width: 100%;
-        padding: 120px 235px 80px 495px;
+        padding: 120px 185px 80px 545px;
       }
 
       .footInfo {
