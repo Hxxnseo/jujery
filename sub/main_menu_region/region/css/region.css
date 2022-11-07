@@ -398,8 +398,33 @@ p {
     width: 100%;
   }
 }
+.wrapper .flexWrapper .sec2 .sec3 img {
+  width: 100%;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper .sec2 .sec3 img {
+    width: 100%;
+  }
+}
+.wrapper .flexWrapper .sec2 .sec3 .ricewine_title {
+  padding: 100px;
+  background-color: red;
+}
+.wrapper .flexWrapper .sec2 .sec3 .ricewine_title h1 {
+  padding: 100px;
+}
 .wrapper .flexWrapper .sec2 .sec3 .ricewine_title h5 {
-  color: #dbdbdb;
+  color: yellow;
+}
+.wrapper .flexWrapper .sec2 .sec3 .ricewine_title span {
+  display: block;
+  width: 50px;
+  height: 2px;
+  background-color: #dbdbdb;
+}
+.wrapper .flexWrapper .sec2 .sec3 .ricewine_title .ricewine-con img {
+  width: 300px;
+  height: 400px;
 }
 
 @media screen and (min-width: 1024px) {

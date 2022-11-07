@@ -79,7 +79,6 @@
               li {
                 @include responsive(pc-screens) {
                   padding-bottom: 60px;
-                  color: white;
 
                   &:hover {
                     ul {
@@ -165,75 +164,77 @@
         width: 80%;
       }
 
+      // position: relative;
       .main {
-        position: relative;
         @include responsive(pc-screens) {
           width: 1180px;
         }
-        .gallery {
-          width: 390px;
-          height: 400px;
-          overflow: hidden;
-          @include responsive(pc-screens) {
-            width: 1550px;
-            height: auto;
-          }
-          #slide {
-            position: relative;
-            display: flex;
-            width: 1170px;
+        .container {
+          .mainSubMenu {
+            display: none;
             @include responsive(pc-screens) {
-              width: 4650px;
-            }
-            img {
-              width: 100%;
-            }
-          }
-        }
-
-        .mainSubMenu {
-          display: none;
-          @include responsive(pc-screens) {
-            position: absolute;
-            right: 0;
-            display: block;
-            width: 100%;
-            height: 70px;
-          }
-
-          ul {
-            @include responsive(pc-screens) {
-              display: flex;
               position: absolute;
-              right: 100px;
-              top: 50px;
+              right: 0;
+              display: block;
+              width: 100%;
+              height: 70px;
             }
 
-            li {
+            ul {
               @include responsive(pc-screens) {
-                padding-left: 25px;
+                display: flex;
+                position: absolute;
+                right: 100px;
+                top: 50px;
               }
 
-              a {
+              li {
                 @include responsive(pc-screens) {
-                  font : {
-                    family: $font-sub;
-                    size: 14px;
+                  padding-left: 25px;
+                }
+
+                a {
+                  @include responsive(pc-screens) {
+                    font : {
+                      family: $font-sub;
+                      size: 14px;
+                    }
                   }
                 }
               }
             }
+          } // mainSubMenu
+
+          .gallery {
+            width: 390px;
+            height: 400px;
+            overflow: hidden;
+            @include responsive(pc-screens) {
+              width: 1550px;
+              height: auto;
+            }
+            #slide {
+              position: relative;
+              display: flex;
+              width: 1170px;
+              @include responsive(pc-screens) {
+                width: 4650px;
+              }
+              img {
+                width: 100%;
+              }
+            }
           }
-        } // mainSubMenu
-      } // .main
+        } // .main
+      } // main
     } // container
   }
-  // main
+  // flexwrapper
 
   footer {
     .container {
       @include responsive(pc-screens) {
-        position: absolute;
+        // position: absolute;
         margin: 0;
       }
     }
