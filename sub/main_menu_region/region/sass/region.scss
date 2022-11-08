@@ -242,15 +242,15 @@
           } // region_six
         } // main
       } // container
-      img {
-        // width: 100%;
-        height: 197px;
-        @include responsive(pc-screens) {
-          width: 100%;
-          height: 507px;
-        }
-      }
     } // sec1
+    .banner1 {
+      // width: 100%;
+      height: 197px;
+      @include responsive(pc-screens) {
+        width: 100%;
+        height: 507px;
+      }
+    }
 
     // ============== sec2 =============
     .sec2 {
@@ -258,8 +258,9 @@
       @include responsive(pc-screens) {
       }
 
-      .container {
-        .p-gap {
+      .main {
+        .container {
+          .p-gap {
           @include responsive(pc-screens) {
             padding: 0 60px;
           }
@@ -357,6 +358,7 @@
             }
           } // region_box_twelve
           span {
+            display: none;
             @include responsive(pc-screens) {
               display: block;
               background-color: #dbdbdb;
@@ -365,19 +367,92 @@
             }
           }
         } // p-gap
-      } // sec2
-      .main {
-        .container {
-          .sec3 {
-            .banner-2 {
-              width: 100%;
+      } // container
+    } //.main
+  } // sec2
+      .sec3 {
+        .main {
+          .banner-2 {
+            width: 100%;
+            padding-bottom: 100px;
+            @include responsive(pc-screens) {
+            width: 100%;
+            height: 537px;
             }
+          }
+          .container {
             .ricewine_title {
-              margin-top: 50px;
+              position: relative;
+              
+              h1 {
+                position: absolute;
+                top:20px;
+                right:8px;
+                font-size: 40px;
+              }
+              h6 {
+                margin-left: 10px;
+                color: #dbdbdb;
+                font-size: 24px;
+              }
+              span {
+                display: none;
+                @include responsive(pc-screens) {
+                  display: block;
+                  width: 360px;
+                  height: 2px;
+                  background-color: #dbdbdb;
+                }
+              }
             }
-          } // sec3
-        } // container
-      } // .main
+            .ricewine-con {
+              position: relative;
+              height: 1342px;
+              top:60px;
+              font-family: $font-sub;
+              .ricewine-con1 {
+                .ricewine-p1 {
+                  width: 300px;
+                  height: 420px;
+                }
+                h6 {
+                  font-size: 24px;
+                  padding: 10px;
+                }
+                p {
+                  font-size: 16px;
+                  padding: 10px 10px 60px 10px;
+                  line-height: 30px;
+                  
+                }
+              }
+              .ricewine-con2 {
+                text-align: right;
+                .ricewine-p2 {
+                  width: 300px;
+                  height: 290px;
+                  margin-left: 50px;
+                }
+                h6 {
+                  font-size: 24px;
+                  padding: 10px;
+                }
+                p {
+                  font-size: 16px;
+                  padding: 10px 10px 60px 10px;
+                  line-height: 30px;
+                  
+                }
+              }
+              
+             
+            }
+          } // container
+        } // .main
+
+
+      } // sec3
+        
     } // main
   }
   // flexwrapper
@@ -554,4 +629,4 @@
       }
     }
   }
-}
+
