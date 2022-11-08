@@ -361,10 +361,12 @@ p {
     margin: 0;
   }
 }
+.wrapper footer .footer .footBox {
+  width: 100%;
+}
 @media screen and (min-width: 1024px) {
   .wrapper footer .footer .footBox {
     display: flex;
-    width: 100%;
     height: 250px;
     flex-direction: row;
     justify-content: space-between;
@@ -448,13 +450,15 @@ p {
   }
 }
 .wrapper footer .footer .footBox .footMenu {
-  padding: 40px;
+  padding: 40px 0;
+  width: 100%;
+  font-size: 14px;
 }
 @media screen and (min-width: 1024px) {
   .wrapper footer .footer .footBox .footMenu {
     width: 25%;
     padding: 0;
-    font-size: 13px;
+    font-size: 12px;
   }
 }
 .wrapper footer .footer .footBox .footMenu ul {
@@ -474,4 +478,5 @@ p {
 .wrapper footer .footer .footBox .footMenu ul li a {
   width: 100%;
   color: white;
+  font-size: 12px;
 }/*# sourceMappingURL=eco.css.map */
