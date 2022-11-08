@@ -7,9 +7,9 @@ body {
   background-size: cover;
 }
 header {
-  width: 100%;
-  z-index: 100;
   position: relative;
+  z-index: 100;
+  width: 100%;
   // background-color: transparent;
 
   .pc {
@@ -35,12 +35,12 @@ header {
     }
     .mobileLogoMenu {
       display: flex;
-      
+
       .mobileLogo {
         position: fixed;
         top: 22px;
         left: 20px;
-        
+
         @include responsive(pc-screens) {
           display: none;
         }
@@ -68,9 +68,6 @@ header {
           width: 30px;
           height: 4px;
           background-color: white;
-          &:nth-child(2) {
-            margin: 5px 0;
-          }
 
           @include responsive(pc-screens) {
             width: 40px;
@@ -79,6 +76,9 @@ header {
             &:nth-child(2) {
               margin: 7px 0;
             }
+          }
+          &:nth-child(2) {
+            margin: 5px 0;
           }
         }
       }
@@ -92,28 +92,31 @@ main {
 
   section {
     width: 100%;
-    height: 100vh;
+    height: auto;
+
+    @include responsive(pc-screens) {
+      height: 100vh;
+    }
   }
 
   .pcSec1 {
-    // width: 100%;
+    position: relative;
+    width: 100%;
     // height: 100vh;
     text-align: center;
-    position: relative;
 
     .video {
       width: 100%;
-      height: 100vh;
 
-      video, img {
+      video,
+      img {
         width: 100%;
 
         @include responsive(pc-screens) {
           height: 100vh;
         }
-
       }
-    }    
+    }
 
     .para {
       display: none;
@@ -125,8 +128,9 @@ main {
         left: 50%;
         transform: translate(-50%, -50%);
       }
-      
-      h3, h4 {
+
+      h3,
+      h4 {
         color: white;
         line-height: 150%;
       }
@@ -141,6 +145,27 @@ main {
     }
   }
   // pcSec1
+
+  .mobileSec {
+    text-align: center;
+
+    @include responsive(pc-screens) {
+      display: none;
+    }
+
+    .mobilePara {
+      padding: 100px 0;
+      h3,
+      h4 {
+        line-height: 150%;
+        color: white;
+      }
+
+      h4 {
+        font-size: 20px;
+      }
+    }
+  }
   .pcSec2 {
     display: none;
     position: relative;
@@ -152,18 +177,18 @@ main {
       width: 100%;
 
       ul {
-        width: 100%;
-        margin: 0 auto;
         display: flex;
-        justify-content: space-between;
         position: absolute;
         top: 50%;
         left: 50%;
+        width: 100%;
+        margin: 0 auto;
+        justify-content: space-between;
         transform: translate(-50%, -50%);
-        
+
         li {
           padding: 0 10px;
-          
+
           a {
             width: 100%;
             color: white;
@@ -177,46 +202,125 @@ main {
 
   .pcSec3 {
     position: relative;
+    margin-bottom: 100px;
     .category {
       width: 100%;
       ul {
-        // width: 100%;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
         text-align: center;
+        @include responsive(pc-screens) {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
         li {
-          padding-bottom: 40px;
+          padding-bottom: 30px;
+          @include responsive(pc-screens) {
+            padding-bottom: 40px;
+          }
 
           &:last-child {
             padding: 0;
           }
+
           a {
             width: 100%;
+            font-size: 40px;
             color: white;
-            font-size: 90px;
 
-            &:hover {
-              opacity: .1;
+            @include responsive(pc-screens) {
+              font-size: 90px;
+
+              &:hover {
+                opacity: 0.1;
+              }
             }
           }
         }
       }
     }
   }
+  // pcSec3
 
+  .pcSec4 {
+    display: none;
+    position: relative;
 
-  
+    @include responsive(pc-screens) {
+      display: block;
+    }
+
+    .fallingConts {
+      color: white;
+
+      div {
+        position: absolute;
+        p {
+          font-family: $font-main;
+        }
+      }
+
+      .cont1 {
+        top: 30%;
+        right: 30%;
+        p {
+          font-size: 26px;
+        }
+      }
+
+      .cont2 {
+        top: 40%;
+        left: 30%;
+        p {
+          color: #ccc;
+          font-size: 30px;
+        }
+      }
+
+      .cont3 {
+        bottom: 30%;
+        left: 40%;
+
+        p {
+          font-size: 40px;
+        }
+      }
+
+      .cont4 {
+        bottom: 50%;
+        right: 50%;
+
+        opacity: 0.4;
+      }
+
+      .cont5 {
+        bottom: 40%;
+        left: 55%;
+      }
+
+      .cont6 {
+        bottom: 40%;
+        right: 50%;
+        font-size: 180px;
+      }
+
+      .cont7 {
+        bottom: 50%;
+        right: 53%;
+
+        font-size: 150px;
+      }
+    }
+  }
 }
 
 footer {
   .container {
     padding: 0 20px;
     @include responsive(pc-screens) {
+      width: 1200px;
       margin: 0 auto;
       padding: 0;
-      width: 1200px;
     }
   }
   .footer {
