@@ -403,6 +403,9 @@ p {
 .wrapper .flexWrapper .sec2 .main .container .sec3 .banner-2 {
   width: 100%;
 }
+.wrapper .flexWrapper .sec2 .main .container .sec3 .ricewine_title {
+  margin-top: 50px;
+}
 @media screen and (min-width: 1024px) {
   .wrapper footer .container {
     margin: 0;
