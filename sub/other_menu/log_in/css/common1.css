@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "SANGJU Gyeongcheon Island";
   src: url(../../../../font/SANGJU\ Gyeongcheon\ Island.woff);
@@ -53,4 +54,11 @@ h4 {
 p {
   font-size: 1em;
   font-family: "NotoSerifKR-Regular";
+}
+
+/* input 기본 스타일 초기화 */
+input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }/*# sourceMappingURL=common1.css.map */

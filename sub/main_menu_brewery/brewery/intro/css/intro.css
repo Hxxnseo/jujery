@@ -241,6 +241,7 @@ p {
 @media screen and (min-width: 1024px) {
   .wrapper .flexWrapper main .main .introStart {
     text-align: left;
+    margin-top: 130px;
   }
 }
 .wrapper .flexWrapper main .main .introStart h3 {
@@ -267,7 +268,7 @@ p {
   }
 }
 .wrapper .flexWrapper main .main .introStart .introMenu ul li:first-child {
-  border-right: 1px double black;
+  border-right: 1px solid black;
 }
 .wrapper .flexWrapper main .main .sect1 {
   margin-top: 50px;
@@ -418,6 +419,11 @@ p {
     font-size: 24px;
   }
 }
+@media screen and (min-width: 1024px) {
+  .wrapper footer .container {
+    margin: 0;
+  }
+}
 .wrapper footer .footer {
   width: 100%;
   height: 100%;
@@ -455,10 +461,12 @@ p {
     margin: 0;
   }
 }
+.wrapper footer .footer .footBox {
+  width: 100%;
+}
 @media screen and (min-width: 1024px) {
   .wrapper footer .footer .footBox {
     display: flex;
-    width: 100%;
     height: 250px;
     flex-direction: row;
     justify-content: space-between;
@@ -542,21 +550,21 @@ p {
   }
 }
 .wrapper footer .footer .footBox .footMenu {
-  padding: 40px;
+  padding: 40px 0;
   font-size: 14px;
+  width: 100%;
 }
 @media screen and (min-width: 1024px) {
   .wrapper footer .footer .footBox .footMenu {
     width: 30%;
     padding: 0;
-    font-size: 12px;
+    font-size: 14px;
   }
 }
 .wrapper footer .footer .footBox .footMenu ul {
   display: flex;
   width: 100%;
   padding: 10px;
-  margin-left: 5px;
 }
 .wrapper footer .footer .footBox .footMenu ul:last-child {
   text-align: left;
