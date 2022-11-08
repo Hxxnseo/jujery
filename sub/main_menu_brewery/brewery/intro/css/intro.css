@@ -241,6 +241,7 @@ p {
 @media screen and (min-width: 1024px) {
   .wrapper .flexWrapper main .main .introStart {
     text-align: left;
+    margin-top: 130px;
   }
 }
 .wrapper .flexWrapper main .main .introStart h3 {
@@ -267,7 +268,7 @@ p {
   }
 }
 .wrapper .flexWrapper main .main .introStart .introMenu ul li:first-child {
-  border-right: 1px double black;
+  border-right: 1px solid black;
 }
 .wrapper .flexWrapper main .main .sect1 {
   margin-top: 50px;

@@ -213,6 +213,7 @@
 
           @include responsive(pc-screens) {
             text-align: left;
+            margin-top: 130px;
           }
 
           h3 {
@@ -240,7 +241,7 @@
                   size: 18px;
                 }
                 &:first-child {
-                  border-right: 1px double black;
+                  border-right: 1px solid black;
                 }
               }
             }

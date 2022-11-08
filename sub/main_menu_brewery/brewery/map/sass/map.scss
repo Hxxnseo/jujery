@@ -211,6 +211,7 @@
 
           @include responsive(pc-screens) {
             text-align: left;
+            margin-top: 130px;
           }
 
           h3 {
@@ -250,12 +251,20 @@
           margin-top: 50px;
           width: 100%;
           height: 100%;
+          text-align: center;
+
+          
+          h4 {
+            font-size: 30px;
+            margin-bottom: 50px;
+          }
+            
 
           img {
             width: 100%;
 
             @include responsive(pc-screens) {
-              width: 720px;
+              width: 70%;
             }
           }
         }
@@ -295,7 +304,7 @@
                   height: 100%;
 
                   @include responsive(pc-screens) {
-                    // display: block;
+                    display: block;
                   }
 
                   img {
@@ -308,7 +317,7 @@
 
                 .afterClick {
                   @include responsive(pc-screens) {
-                    // display: none;
+                    display: none;
                   }
 
                   .background {
