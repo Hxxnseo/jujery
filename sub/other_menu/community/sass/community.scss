@@ -11,17 +11,17 @@
 }
 
 .container {
-  padding: 0 20px;
   // margin-right: 20px;
   // position: relative;
   width: 100%; // 모바일, 태블릿
+  padding: 0 20px;
   // background-color: #000;
   // max-width: 1200px; // pc
 
   // background-color: #000;
   @include responsive(pc-screens) {
+    margin: 0 auto;
     padding: 0;
-    margin: 0 235px 0 135px;
   }
 }
 
@@ -29,22 +29,22 @@
   position: relative;
   width: 100%;
   height: 100%;
-  background-image: url(../../../../images/background/detail_page_main_background.png);
+  background-image: url(../../../../images/background/main_menu_background.png);
   // margin: 0 20px;
 
   .flexWrapper {
     @include responsive(pc-screens) {
-      height: 100%;
       display: flex;
+      height: 100%;
       flex-direction: row;
     }
     header {
       height: 80px;
 
       @include responsive(pc-screens) {
-        height: auto;
         // background-color: #ccc;
         width: 370px;
+        height: auto;
         background-image: url(../../../../images/background/detail_page_header_background.png);
       }
 
@@ -165,10 +165,11 @@
         width: 80%;
       }
 
+      // position: relative;
       .main {
-        // position: relative;
         @include responsive(pc-screens) {
           width: 1180px;
+          margin: 0 auto;
         }
 
         .mainSubMenu {
@@ -183,8 +184,8 @@
             @include responsive(pc-screens) {
               display: flex;
               position: absolute;
-              right: 100px;
               top: 50px;
+              right: 100px;
             }
 
             li {
@@ -238,18 +239,28 @@
             text-align: center;
             font-size: 14px;
             &:nth-child(1) {
-              width: 15%;
+              display: none;
+              @include responsive(pc-screens) {
+                display: inline-table;
+                width: 100%;
+              }
             }
             &:nth-child(2) {
               text-align: left;
               width: 30%;
             }
-            &:nth-child(4),
+            
             &:nth-child(5),
             &:nth-child(6) {
-              width: 15%;
+              display: none;
+              @include responsive(pc-screens) {
+                display: inline-table;
+                width: 50%;
+              }
             }
+            
           }
+
         } // notice-board
 
         .board-number {
@@ -330,7 +341,7 @@
 
       @include responsive(pc-screens) {
         width: 100%;
-        padding: 120px 235px 80px 495px;
+        padding: 120px 185px 80px 545px;
       }
 
       .footInfo {
@@ -349,6 +360,7 @@
 
         address {
           font-style: normal;
+          font-family: $font-sub;
         }
 
         p {
@@ -361,9 +373,9 @@
       }
 
       .footBox {
+        width: 100%;
         @include responsive(pc-screens) {
           display: flex;
-          width: 100%;
           height: 250px;
           flex-direction: row;
           justify-content: space-between;
@@ -382,7 +394,7 @@
           text-align: center;
 
           @include responsive(pc-screens) {
-            width: 25%;
+            width: 30%;
             padding: 0;
             border: 0;
           }
@@ -410,7 +422,7 @@
 
           @include responsive(pc-screens) {
             position: relative;
-            width: 50%;
+            width: 40%;
             height: 250px;
             border-bottom: 0;
             border-right: 1px solid #ccc;
@@ -428,7 +440,7 @@
               padding: 10px;
 
               @include responsive(pc-screens) {
-                padding-right: 30px;
+                padding-right: 15px;
 
                 &:last-child {
                   padding-right: 0;
@@ -453,18 +465,20 @@
         }
 
         .footMenu {
-          padding: 40px;
+          padding: 40px 0;
+          font-size: 14px;
+          width: 100%;
 
           @include responsive(pc-screens) {
-            width: 25%;
+            width: 30%;
             padding: 0;
-            font-size: 13px;
+            font-size: 14px;
           }
           ul {
             display: flex;
             width: 100%;
-            padding: 10px;
-            margin-left: 5px;
+            padding: 10px ;
+            // margin-left: 5px;
 
             &:last-child {
               text-align: left;

@@ -71,13 +71,13 @@ p {
   }
 }
 .container {
-  padding: 0 20px;
   width: 100%;
+  padding: 0 20px;
 }
 @media screen and (min-width: 1024px) {
   .container {
+    margin: 0 auto;
     padding: 0;
-    margin: 0 235px 0 135px;
   }
 }
 
@@ -85,12 +85,12 @@ p {
   position: relative;
   width: 100%;
   height: 100%;
-  background-image: url(../../../../images/background/detail_page_main_background.png);
+  background-image: url(../../../../images/background/main_menu_background.png);
 }
 @media screen and (min-width: 1024px) {
   .wrapper .flexWrapper {
-    height: 100%;
     display: flex;
+    height: 100%;
     flex-direction: row;
   }
 }
@@ -99,8 +99,8 @@ p {
 }
 @media screen and (min-width: 1024px) {
   .wrapper .flexWrapper header {
-    height: auto;
     width: 370px;
+    height: auto;
     background-image: url(../../../../images/background/detail_page_header_background.png);
   }
 }
@@ -203,6 +203,7 @@ p {
 @media screen and (min-width: 1024px) {
   .wrapper .flexWrapper main .main {
     width: 1180px;
+    margin: 0 auto;
   }
 }
 .wrapper .flexWrapper main .main .mainSubMenu {
@@ -219,8 +220,8 @@ p {
   .wrapper .flexWrapper main .main .mainSubMenu ul {
     display: flex;
     position: absolute;
-    right: 100px;
     top: 50px;
+    right: 100px;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -271,18 +272,32 @@ p {
 }
 .wrapper .flexWrapper main .main .notice-board th:nth-child(1),
 .wrapper .flexWrapper main .main .notice-board td:nth-child(1) {
-  width: 15%;
+  display: none;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .main .notice-board th:nth-child(1),
+.wrapper .flexWrapper main .main .notice-board td:nth-child(1) {
+    display: inline-table;
+    width: 100%;
+  }
 }
 .wrapper .flexWrapper main .main .notice-board th:nth-child(2),
 .wrapper .flexWrapper main .main .notice-board td:nth-child(2) {
   text-align: left;
   width: 30%;
 }
-.wrapper .flexWrapper main .main .notice-board th:nth-child(4), .wrapper .flexWrapper main .main .notice-board th:nth-child(5), .wrapper .flexWrapper main .main .notice-board th:nth-child(6),
-.wrapper .flexWrapper main .main .notice-board td:nth-child(4),
+.wrapper .flexWrapper main .main .notice-board th:nth-child(5), .wrapper .flexWrapper main .main .notice-board th:nth-child(6),
 .wrapper .flexWrapper main .main .notice-board td:nth-child(5),
 .wrapper .flexWrapper main .main .notice-board td:nth-child(6) {
-  width: 15%;
+  display: none;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .main .notice-board th:nth-child(5), .wrapper .flexWrapper main .main .notice-board th:nth-child(6),
+.wrapper .flexWrapper main .main .notice-board td:nth-child(5),
+.wrapper .flexWrapper main .main .notice-board td:nth-child(6) {
+    display: inline-table;
+    width: 50%;
+  }
 }
 .wrapper .flexWrapper main .main .board-number {
   display: flex;
@@ -347,7 +362,7 @@ p {
 @media screen and (min-width: 1024px) {
   .wrapper footer .footer {
     width: 100%;
-    padding: 120px 235px 80px 495px;
+    padding: 120px 185px 80px 545px;
   }
 }
 .wrapper footer .footer .footInfo {
@@ -365,6 +380,7 @@ p {
 }
 .wrapper footer .footer .footInfo address {
   font-style: normal;
+  font-family: "NotoSerifKR-Regular";
 }
 .wrapper footer .footer .footInfo p {
   margin: 20px 0;
@@ -374,10 +390,12 @@ p {
     margin: 0;
   }
 }
+.wrapper footer .footer .footBox {
+  width: 100%;
+}
 @media screen and (min-width: 1024px) {
   .wrapper footer .footer .footBox {
     display: flex;
-    width: 100%;
     height: 250px;
     flex-direction: row;
     justify-content: space-between;
@@ -395,7 +413,7 @@ p {
 }
 @media screen and (min-width: 1024px) {
   .wrapper footer .footer .footBox .footLogoCopy {
-    width: 25%;
+    width: 30%;
     padding: 0;
     border: 0;
   }
@@ -420,7 +438,7 @@ p {
 @media screen and (min-width: 1024px) {
   .wrapper footer .footer .footBox .footSns {
     position: relative;
-    width: 50%;
+    width: 40%;
     height: 250px;
     border-bottom: 0;
     border-right: 1px solid #ccc;
@@ -441,7 +459,7 @@ p {
 }
 @media screen and (min-width: 1024px) {
   .wrapper footer .footer .footBox .footSns .footSnsCont li {
-    padding-right: 30px;
+    padding-right: 15px;
   }
   .wrapper footer .footer .footBox .footSns .footSnsCont li:last-child {
     padding-right: 0;
@@ -461,20 +479,21 @@ p {
   }
 }
 .wrapper footer .footer .footBox .footMenu {
-  padding: 40px;
+  padding: 40px 0;
+  font-size: 14px;
+  width: 100%;
 }
 @media screen and (min-width: 1024px) {
   .wrapper footer .footer .footBox .footMenu {
-    width: 25%;
+    width: 30%;
     padding: 0;
-    font-size: 13px;
+    font-size: 14px;
   }
 }
 .wrapper footer .footer .footBox .footMenu ul {
   display: flex;
   width: 100%;
   padding: 10px;
-  margin-left: 5px;
 }
 .wrapper footer .footer .footBox .footMenu ul:last-child {
   text-align: left;

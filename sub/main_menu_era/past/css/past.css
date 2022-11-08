@@ -71,13 +71,13 @@ p {
   }
 }
 .container {
-  padding: 0 20px;
   width: 100%;
+  padding: 0 20px;
 }
 @media screen and (min-width: 1024px) {
   .container {
+    margin: 0 auto;
     padding: 0;
-    margin: 0 235px 0 135px;
   }
 }
 
@@ -85,12 +85,12 @@ p {
   position: relative;
   width: 100%;
   height: 100%;
-  background-image: url(../../../../images/background/detail_page_main_background.png);
+  background-image: url(../../../../images/background/main_menu_background.png);
 }
 @media screen and (min-width: 1024px) {
   .wrapper .flexWrapper {
-    height: 100%;
     display: flex;
+    height: 100%;
     flex-direction: row;
   }
 }
@@ -99,8 +99,8 @@ p {
 }
 @media screen and (min-width: 1024px) {
   .wrapper .flexWrapper header {
-    height: auto;
     width: 370px;
+    height: auto;
     background-image: url(../../../../images/background/detail_page_header_background.png);
   }
 }
@@ -217,8 +217,8 @@ p {
   .wrapper .flexWrapper main .main .mainSubMenu ul {
     display: flex;
     position: absolute;
-    right: 100px;
     top: 50px;
+    right: 100px;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -248,6 +248,7 @@ p {
 }
 @media screen and (min-width: 1024px) {
   .wrapper .flexWrapper main .main section.introStart h3 {
+    font-size: 50px;
     text-align: left;
   }
 }
@@ -273,73 +274,79 @@ p {
 .wrapper .flexWrapper main .main section.introStart ul li:last-child a {
   color: #ccc;
 }
-.wrapper .flexWrapper main .main .label1 {
-  display: none;
-  margin-bottom: 50px;
-}
-@media screen and (min-width: 1024px) {
-  .wrapper .flexWrapper main .main .label1 {
-    display: flex;
-    font-size: 32px;
-  }
-  .wrapper .flexWrapper main .main .label1 li {
-    padding: 24px 15px;
-  }
-  .wrapper .flexWrapper main .main .label1 li:first-child {
-    background-color: rgba(0, 0, 0, 0.8);
-  }
-  .wrapper .flexWrapper main .main .label1 li:first-child a {
-    color: #fff;
-  }
-}
-.wrapper .flexWrapper main .main .label2 {
-  display: none;
-  margin-bottom: 50px;
-}
-@media screen and (min-width: 1024px) {
-  .wrapper .flexWrapper main .main .label2 {
-    display: flex;
-    margin-top: 100px;
-    font-size: 32px;
-  }
-  .wrapper .flexWrapper main .main .label2 li {
-    padding: 24px 15px;
-  }
-  .wrapper .flexWrapper main .main .label2 li:nth-child(2) {
-    border: 1px solid #000;
-    border-bottom: none;
-  }
-}
+.wrapper .flexWrapper main .main .label1,
+.wrapper .flexWrapper main .main .label2,
 .wrapper .flexWrapper main .main .label3 {
   display: none;
-  margin-bottom: 50px;
 }
 @media screen and (min-width: 1024px) {
-  .wrapper .flexWrapper main .main .label3 {
+  .wrapper .flexWrapper main .main .label1,
+.wrapper .flexWrapper main .main .label2,
+.wrapper .flexWrapper main .main .label3 {
     display: flex;
     margin-top: 100px;
     font-size: 32px;
   }
-  .wrapper .flexWrapper main .main .label3 li {
+  .wrapper .flexWrapper main .main .label1 li,
+.wrapper .flexWrapper main .main .label2 li,
+.wrapper .flexWrapper main .main .label3 li {
     padding: 24px 15px;
   }
-  .wrapper .flexWrapper main .main .label3 li:nth-child(3) {
-    border: 1px solid #000;
-    border-bottom: none;
-  }
+}
+.wrapper .flexWrapper main .main .label1 li {
+  padding: 24px 15px;
+}
+.wrapper .flexWrapper main .main .label1 li:first-child {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.wrapper .flexWrapper main .main .label1 li:first-child a {
+  color: #fff;
+}
+.wrapper .flexWrapper main .main .label2 li {
+  padding: 24px 15px;
+}
+.wrapper .flexWrapper main .main .label2 li:nth-child(2) {
+  border: 1px solid #000;
+  border-bottom: none;
+}
+.wrapper .flexWrapper main .main .label3 li:last-child {
+  border: 1px solid #000;
+  border-bottom: none;
 }
 .wrapper .flexWrapper main .main .story {
   background-image: url(../../img/past_pic.png);
   text-align: center;
   font-size: 3.125em;
   height: 234px;
+  width: 100%;
   padding-top: 20%;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .main .story {
+    width: 100%;
+    height: 600px;
+    padding: 5%;
+    background-image: url(../../img/past_pic_pc.png);
+  }
 }
 .wrapper .flexWrapper main .main .story span {
   color: #fff;
 }
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .main .story span {
+    line-height: 2.5em;
+  }
+}
 .wrapper .flexWrapper main .main .story p {
   display: none;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .main .story p {
+    display: flex;
+    color: #fff;
+    font-size: 0.7em;
+    font-family: "SANGJU Gyeongcheon Island";
+  }
 }
 .wrapper .flexWrapper main .main .title {
   margin-top: 100px;
@@ -359,58 +366,54 @@ p {
   color: #ccc;
 }
 @media screen and (min-width: 1024px) {
-  .wrapper .flexWrapper main .main .everydis {
+  .wrapper .flexWrapper main .main .everypro,
+.wrapper .flexWrapper main .main .everydis {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin: 0;
+    margin-top: 180px;
+    width: 100%;
   }
 }
-@media screen and (min-width: 1024px) {
-  .wrapper .flexWrapper main .main .everypro {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin: 0;
-  }
+.wrapper .flexWrapper main .main .everypro {
+  margin-bottom: 100px;
 }
-.wrapper .flexWrapper main .main .dis {
+.wrapper .flexWrapper main .main .dis,
+.wrapper .flexWrapper main .main .pro {
   display: flex;
   margin-bottom: 50px;
 }
-.wrapper .flexWrapper main .main .dis img {
-  position: absolute;
-  margin-top: -38px;
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .main .dis img,
+.wrapper .flexWrapper main .main .pro img {
+    z-index: 0;
+  }
 }
-.wrapper .flexWrapper main .main .dis img.do {
-  margin-top: 13px;
-  margin-left: 320px;
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .main .dis,
+.wrapper .flexWrapper main .main .pro {
+    display: block;
+    width: 30%;
+    margin-left: 10px;
+  }
+  .wrapper .flexWrapper main .main .dis:first-child,
+.wrapper .flexWrapper main .main .pro:first-child {
+    margin-left: 0;
+  }
 }
-.wrapper .flexWrapper main .main .dis img.dae {
-  margin-top: 83px;
-  margin-left: -10px;
-}
-.wrapper .flexWrapper main .main .dis img.ja {
-  width: 88px;
-  margin-top: 30px;
-  margin-left: 67%;
-}
-.wrapper .flexWrapper main .main .dis img.back {
-  width: 90px;
-  margin-top: 20px;
-  margin-left: 6%;
-}
-.wrapper .flexWrapper main .main .dis .title {
+.wrapper .flexWrapper main .main .dis .title,
+.wrapper .flexWrapper main .main .pro .title {
   display: none;
 }
-.wrapper .flexWrapper main .main .dis .ja {
-  margin-top: 100px;
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .main .dis .title,
+.wrapper .flexWrapper main .main .pro .title {
+    position: absolute;
+    display: block;
+  }
 }
-.wrapper .flexWrapper main .main .dis .ba {
-  margin-top: 110px;
-  line-height: 0.8em;
-}
-.wrapper .flexWrapper main .main .dis .desc {
+.wrapper .flexWrapper main .main .dis .desc,
+.wrapper .flexWrapper main .main .pro .desc {
   color: #fff;
   height: 324px;
   width: 300px;
@@ -419,51 +422,109 @@ p {
   background-repeat: no-repeat;
 }
 @media screen and (min-width: 1024px) {
-  .wrapper .flexWrapper main .main .dis .desc {
-    width: 400px;
-    height: 322px;
+  .wrapper .flexWrapper main .main .dis .desc,
+.wrapper .flexWrapper main .main .pro .desc {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    z-index: 3;
   }
 }
-.wrapper .flexWrapper main .main .dis .desc:nth-child(2n) {
+.wrapper .flexWrapper main .main .dis .desc:nth-child(odd),
+.wrapper .flexWrapper main .main .pro .desc:nth-child(odd) {
   background-image: url(../../img/black_object.png);
 }
 @media screen and (min-width: 1024px) {
-  .wrapper .flexWrapper main .main .dis .desc:nth-child(2n) {
+  .wrapper .flexWrapper main .main .dis .desc:nth-child(odd),
+.wrapper .flexWrapper main .main .pro .desc:nth-child(odd) {
     background-image: url(../../img/black_pc.png);
   }
 }
-.wrapper .flexWrapper main .main .dis .desc:nth-child(odd) {
+.wrapper .flexWrapper main .main .dis .desc:nth-child(2n),
+.wrapper .flexWrapper main .main .pro .desc:nth-child(2n) {
   margin-left: 30%;
   background-image: url(../../img/black_object_2.png);
 }
 @media screen and (min-width: 1024px) {
-  .wrapper .flexWrapper main .main .dis .desc:nth-child(odd) {
+  .wrapper .flexWrapper main .main .dis .desc:nth-child(2n),
+.wrapper .flexWrapper main .main .pro .desc:nth-child(2n) {
     background-image: url(../../img/black_pc.png);
     margin: 0;
   }
 }
-.wrapper .flexWrapper main .main .dis .desc:nth-child(odd) h4 {
+.wrapper .flexWrapper main .main .dis .desc:nth-child(2n) h4,
+.wrapper .flexWrapper main .main .pro .desc:nth-child(2n) h4 {
   text-align: right;
 }
 @media screen and (min-width: 1024px) {
-  .wrapper .flexWrapper main .main .dis .desc:nth-child(odd) h4 {
+  .wrapper .flexWrapper main .main .dis .desc:nth-child(2n) h4,
+.wrapper .flexWrapper main .main .pro .desc:nth-child(2n) h4 {
     text-align: left;
   }
 }
-.wrapper .flexWrapper main .main .dis .desc h4 {
+.wrapper .flexWrapper main .main .dis .desc h4,
+.wrapper .flexWrapper main .main .pro .desc h4 {
   font-family: "NotoSerifKR-Regular";
   color: #fff;
   line-height: 2.6em;
 }
-.wrapper .flexWrapper main .main .dis .desc p {
+.wrapper .flexWrapper main .main .dis .desc p,
+.wrapper .flexWrapper main .main .pro .desc p {
   line-height: 2.2em;
 }
-.wrapper .flexWrapper main .main .pro {
-  display: flex;
-  margin-bottom: 50px;
+.wrapper .flexWrapper main .main .dis img {
+  position: absolute;
+  margin-top: -38px;
 }
-.wrapper .flexWrapper main .main .pro .title {
-  display: none;
+.wrapper .flexWrapper main .main .dis img {
+  margin-top: 13px;
+  margin-left: 320px;
+}
+.wrapper .flexWrapper main .main .dis img.dae {
+  margin-top: 70px;
+}
+.wrapper .flexWrapper main .main .dis img.ja {
+  width: 88px;
+  margin-top: 30px;
+}
+.wrapper .flexWrapper main .main .dis img.back {
+  width: 90px;
+  margin-top: 20px;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .main .dis img.do {
+    margin-top: -380px;
+    margin-left: 120px;
+  }
+  .wrapper .flexWrapper main .main .dis img.dae {
+    margin-top: -380px;
+    margin-left: 120px;
+  }
+  .wrapper .flexWrapper main .main .dis img.ja {
+    margin-top: -450px;
+    margin-left: 120px;
+  }
+  .wrapper .flexWrapper main .main .dis img.back {
+    margin-top: -470px;
+    margin-left: 150px;
+  }
+}
+.wrapper .flexWrapper main .main .dis .ja {
+  margin-top: 100px;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .main .dis .ja {
+    margin-top: 0;
+  }
+}
+.wrapper .flexWrapper main .main .dis .ba {
+  margin-top: 110px;
+  line-height: 0.8em;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .main .dis:first-child {
+    margin-bottom: 120px;
+  }
 }
 .wrapper .flexWrapper main .main .pro img {
   position: absolute;
@@ -490,55 +551,32 @@ p {
 .wrapper .flexWrapper main .main .pro img.moon {
   width: 100px;
   margin-top: -295px;
-  margin-left: 310px;
-}
-.wrapper .flexWrapper main .main .pro .desc {
-  color: #fff;
-  height: 324px;
-  width: 300px;
-  padding: 0 15px;
-  margin-bottom: 50px;
-  background-repeat: no-repeat;
+  margin-left: -100px;
 }
 @media screen and (min-width: 1024px) {
-  .wrapper .flexWrapper main .main .pro .desc {
-    width: 400px;
-    height: 400px;
+  .wrapper .flexWrapper main .main .pro img.lee {
+    margin-top: -360px;
+    margin-left: 120px;
+  }
+  .wrapper .flexWrapper main .main .pro img.gam {
+    margin-top: -360px;
+    margin-left: 120px;
+  }
+  .wrapper .flexWrapper main .main .pro img.juck {
+    margin-top: -390px;
+    margin-left: 120px;
+  }
+  .wrapper .flexWrapper main .main .pro img.sol {
+    margin-top: -360px;
+    margin-left: 120px;
+  }
+  .wrapper .flexWrapper main .main .pro img.moon {
+    margin-top: -360px;
+    margin-left: 120px;
   }
 }
-.wrapper .flexWrapper main .main .pro .desc:nth-child(2n) {
-  background-image: url(../../img/black_object.png);
-}
-@media screen and (min-width: 1024px) {
-  .wrapper .flexWrapper main .main .pro .desc:nth-child(2n) {
-    background-image: url(../../img/black_pc.png);
-  }
-}
-.wrapper .flexWrapper main .main .pro .desc:nth-child(odd) {
-  margin-left: 30%;
-  background-image: url(../../img/black_object_2.png);
-}
-.wrapper .flexWrapper main .main .pro .desc:nth-child(odd) h4 {
-  text-align: right;
-}
-@media screen and (min-width: 1024px) {
-  .wrapper .flexWrapper main .main .pro .desc:nth-child(odd) h4 {
-    text-align: left;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .wrapper .flexWrapper main .main .pro .desc:nth-child(odd) {
-    background-image: url(../../img/black_pc.png);
-    margin: 0;
-  }
-}
-.wrapper .flexWrapper main .main .pro .desc h4 {
-  font-family: "NotoSerifKR-Regular";
-  color: #fff;
-  line-height: 2.6em;
-}
-.wrapper .flexWrapper main .main .pro .desc p {
-  line-height: 2.2em;
+.wrapper .flexWrapper main .main .pro:nth-child(1), .wrapper .flexWrapper main .main .pro:nth-child(1) {
+  margin-bottom: 200px;
 }
 @media screen and (min-width: 1024px) {
   .wrapper footer .container {
@@ -572,6 +610,7 @@ p {
 }
 .wrapper footer .footer .footInfo address {
   font-style: normal;
+  font-family: "NotoSerifKR-Regular";
 }
 .wrapper footer .footer .footInfo p {
   margin: 20px 0;
@@ -581,10 +620,12 @@ p {
     margin: 0;
   }
 }
+.wrapper footer .footer .footBox {
+  width: 100%;
+}
 @media screen and (min-width: 1024px) {
   .wrapper footer .footer .footBox {
     display: flex;
-    width: 100%;
     height: 250px;
     flex-direction: row;
     justify-content: space-between;
@@ -602,7 +643,7 @@ p {
 }
 @media screen and (min-width: 1024px) {
   .wrapper footer .footer .footBox .footLogoCopy {
-    width: 25%;
+    width: 30%;
     padding: 0;
     border: 0;
   }
@@ -627,7 +668,7 @@ p {
 @media screen and (min-width: 1024px) {
   .wrapper footer .footer .footBox .footSns {
     position: relative;
-    width: 50%;
+    width: 40%;
     height: 250px;
     border-bottom: 0;
     border-right: 1px solid #ccc;
@@ -648,7 +689,7 @@ p {
 }
 @media screen and (min-width: 1024px) {
   .wrapper footer .footer .footBox .footSns .footSnsCont li {
-    padding-right: 30px;
+    padding-right: 15px;
   }
   .wrapper footer .footer .footBox .footSns .footSnsCont li:last-child {
     padding-right: 0;
@@ -668,20 +709,21 @@ p {
   }
 }
 .wrapper footer .footer .footBox .footMenu {
-  padding: 40px;
+  padding: 40px 0;
+  font-size: 14px;
+  width: 100%;
 }
 @media screen and (min-width: 1024px) {
   .wrapper footer .footer .footBox .footMenu {
-    width: 25%;
+    width: 30%;
     padding: 0;
-    font-size: 13px;
+    font-size: 14px;
   }
 }
 .wrapper footer .footer .footBox .footMenu ul {
   display: flex;
   width: 100%;
   padding: 10px;
-  margin-left: 5px;
 }
 .wrapper footer .footer .footBox .footMenu ul:last-child {
   text-align: left;

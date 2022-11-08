@@ -11,17 +11,17 @@
 }
 
 .container {
-  padding: 0 20px;
   // margin-right: 20px;
   // position: relative;
   width: 100%; // 모바일, 태블릿
+  padding: 0 20px;
   // background-color: #000;
   // max-width: 1200px; // pc
 
   // background-color: #000;
   @include responsive(pc-screens) {
+    margin: 0 auto;
     padding: 0;
-    margin: 0 235px 0 135px;
   }
 }
 
@@ -29,22 +29,22 @@
   position: relative;
   width: 100%;
   height: 100%;
-  background-image: url(../../../../images/background/detail_page_main_background.png);
+  background-image: url(../../../../images/background/main_menu_background.png);
   // margin: 0 20px;
 
   .flexWrapper {
     @include responsive(pc-screens) {
-      height: 100%;
       display: flex;
+      height: 100%;
       flex-direction: row;
     }
     header {
       height: 80px;
 
       @include responsive(pc-screens) {
-        height: auto;
         // background-color: #ccc;
         width: 370px;
+        height: auto;
         background-image: url(../../../../images/background/detail_page_header_background.png);
       }
 
@@ -165,8 +165,8 @@
         width: 80%;
       }
 
+      // position: relative;
       .main {
-        // position: relative;
         @include responsive(pc-screens) {
           width: 1180px;
           margin: 0 auto;
@@ -184,8 +184,8 @@
             @include responsive(pc-screens) {
               display: flex;
               position: absolute;
-              right: 100px;
               top: 50px;
+              right: 100px;
             }
 
             li {
@@ -217,6 +217,7 @@
             font-size: 40px;
             font-family: $font-main;
             @include responsive(pc-screens) {
+              font-size: 50px;
               text-align: left;
             }
           }
@@ -242,31 +243,32 @@
           }
         }
 
-        .label1 {
+        .label1,
+        .label2,
+        .label3 {
           display: none;
-          margin-bottom: 50px;
-          @include responsive(pc-screens) {
-            display: flex;
-            font-size: 32px;
-            li {
-              padding: 24px 15px;
-              &:first-child {
-                a{
-                  color: #fff;
-                }
-                background-color: rgba(0, 0, 0, 0.8);
-              }
-            }
-          }
-        } // label1 
-
-        .label2 {
-          display: none;
-          margin-bottom: 50px;
           @include responsive(pc-screens) {
             display: flex;
             margin-top: 100px;
             font-size: 32px;
+            li {
+              padding: 24px 15px;
+            }
+          }
+        } // label1 
+
+        .label1{
+          li {
+            padding: 24px 15px;
+            &:first-child {
+              a{
+                color: #fff;
+              }
+              background-color: rgba(0, 0, 0, 0.8);
+            }
+          }
+        } 
+        .label2 {
             li {
               padding: 24px 15px;
               &:nth-child(2) {
@@ -274,37 +276,39 @@
                 border-bottom: none;
               }
             }
-          }
         } // label2
 
         .label3 {
-          display: none;
-          margin-bottom: 50px;
-          @include responsive(pc-screens) {
-            display: flex;
-            margin-top: 100px;
-            font-size: 32px;
-            li {
-              padding: 24px 15px;
-              &:nth-child(3) {
+              & li:last-child {
                 border: 1px solid #000;
                 border-bottom: none;
               }
-            }
-          }
         } // label2
 
         .story {
           background-image: url(../../img/past_pic.png);
           text-align: center;
           font-size: 3.125em;
-          height: 234px;
+          height: 234px; width: 100%;
           padding-top: 20%;
+          @include responsive(pc-screens) {
+            width: 100%; height: 600px;
+            padding: 5%;
+            background-image: url(../../img/past_pic_pc.png);
+          }
           span {
             color: #fff;
+            @include responsive(pc-screens) {
+              line-height: 2.5em;
+            }
           }
           p {
             display: none;
+            @include responsive(pc-screens) {
+              display: flex;
+              color: #fff;
+              font-size: 0.7em; font-family: $font-main;
+            }
           }
         } // .story
 
@@ -325,59 +329,62 @@
 
         } // title
 
+        .everypro,
         .everydis {
           @include responsive(pc-screens) {
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
-            margin: 0; 
+            margin-top: 180px; 
+            width: 100%;
           }
+        }
+        .everypro {
+          margin-bottom: 100px;
         }
 
-        .everypro {
-          @include responsive(pc-screens) {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            margin: 0; 
-          }
-        }
-        .dis {
+        .dis,
+        .pro {
           display: flex;
           margin-bottom: 50px;
           img {
-            position: absolute;
-            margin-top: -38px;
+            @include responsive(pc-screens) {
+              z-index: 0;
+            }
           }
-          img.do { margin-top: 13px; margin-left: 320px;}
-          img.dae { margin-top: 83px; margin-left: -10px; }
-          img.ja { width: 88px; margin-top: 30px; margin-left: 67%; }
-          img.back { width: 90px; margin-top: 20px; margin-left: 6%; }
+          @include responsive(pc-screens) {
+            display: block;
+            width: 30%;
+            margin-left: 10px;
+            &:first-child {
+              margin-left: 0;
+            }
+          }
           .title {
             display: none;
+            @include responsive(pc-screens) {
+              position: absolute;
+              display: block;
+            }
           } // title
-          .ja {
-            margin-top: 100px;
-          }
-          .ba {
-            margin-top: 110px;
-            line-height: 0.8em;
-          }
+          
           .desc {
             color: #fff;
             height: 324px; width: 300px;
             padding: 0 15px;
             margin-bottom: 50px;
             @include responsive(pc-screens) {
-              width: 400px; height: 322px;
+              position: relative;
+              width: 100%; height: 300px;
+              z-index: 3;
             }
-            &:nth-child(2n) {
+            &:nth-child(odd) {
               background-image: url(../../img/black_object.png);
               @include responsive(pc-screens) {
                 background-image: url(../../img/black_pc.png);
               }
             }
-            &:nth-child(odd) {
+            &:nth-child(2n) {
               margin-left: 30%;
               background-image: url(../../img/black_object_2.png);
               @include responsive(pc-screens) {
@@ -402,14 +409,41 @@
               line-height: 2.2em;
             }
           } // desc
-        } // dis
+        } // dis, pro
+
+        .dis {
+          img {
+            position: absolute;
+            margin-top: -38px;
+          }
+          img { margin-top: 13px; margin-left: 320px;}
+          img.dae { margin-top: 70px;}
+          img.ja { width: 88px; margin-top: 30px; }
+          img.back { width: 90px; margin-top: 20px;}
+          @include responsive(pc-screens) {
+            img.do { margin-top: -380px; margin-left: 120px;}
+            img.dae { margin-top: -380px; margin-left: 120px; }
+            img.ja { margin-top: -450px; margin-left: 120px; }
+            img.back { margin-top: -470px; margin-left: 150px; }
+          }
+          .ja {
+            margin-top: 100px;
+            @include responsive(pc-screens) {
+              margin-top: 0;
+            }
+          }
+          .ba {
+            margin-top: 110px;
+            line-height: 0.8em;
+          }
+          @include responsive(pc-screens) {
+            &:first-child {
+              margin-bottom: 120px;
+            }
+          }
+        }
 
         .pro {
-          display: flex;
-          margin-bottom: 50px;
-          .title {
-            display: none;
-          } // title
           img {
             position: absolute;
             width: 140px;
@@ -418,47 +452,18 @@
           img.gam{margin-top: 65px; margin-left: -15px;}
           img.juck{width: 87px;margin-top: -6px; margin-left: 310px;}
           img.sol{width: 175px; margin-top: 130px; margin-left: -10px;}
-          img.moon{width: 100px; margin-top: -295px; margin-left: 310px;}
-
-          .desc {
-            color: #fff;
-            height: 324px; width: 300px;
-            padding: 0 15px;
-            margin-bottom: 50px;
-            @include responsive(pc-screens) {
-              width: 400px; height: 400px;
-            }
-            &:nth-child(2n) {
-              background-image: url(../../img/black_object.png);
-              @include responsive(pc-screens) {
-                background-image: url(../../img/black_pc.png);
-              }
-            }
-            &:nth-child(odd) {
-              margin-left: 30%;
-              background-image: url(../../img/black_object_2.png);
-              h4 {
-                text-align: right;
-                @include responsive(pc-screens) {
-                  text-align: left;
-                }
-              }
-              @include responsive(pc-screens) {
-                background-image: url(../../img/black_pc.png);
-                margin: 0;
-              }
-            }
-            
-            background-repeat: no-repeat;
-            h4 {
-              font-family: $font-sub;
-              color: #fff;
-              line-height: 2.6em;
-            }
-            p {
-              line-height: 2.2em;
-            }
-          } // desc
+          img.moon{width: 100px; margin-top: -295px; margin-left: -100px;}
+          @include responsive(pc-screens) {
+            img.lee{margin-top: -360px; margin-left: 120px;}
+            img.gam{margin-top: -360px; margin-left: 120px;}
+            img.juck{margin-top: -390px; margin-left: 120px;}
+            img.sol{margin-top: -360px; margin-left: 120px;}
+            img.moon{margin-top: -360px; margin-left: 120px;}
+          }
+          &:nth-child(1),
+          &:nth-child(1) {
+            margin-bottom: 200px;
+          }
         }
       } //.main
     } // main
@@ -498,6 +503,7 @@
 
         address {
           font-style: normal;
+          font-family: $font-sub;
         }
 
         p {
@@ -510,9 +516,9 @@
       }
 
       .footBox {
+        width: 100%;
         @include responsive(pc-screens) {
           display: flex;
-          width: 100%;
           height: 250px;
           flex-direction: row;
           justify-content: space-between;
@@ -531,7 +537,7 @@
           text-align: center;
 
           @include responsive(pc-screens) {
-            width: 25%;
+            width: 30%;
             padding: 0;
             border: 0;
           }
@@ -559,7 +565,7 @@
 
           @include responsive(pc-screens) {
             position: relative;
-            width: 50%;
+            width: 40%;
             height: 250px;
             border-bottom: 0;
             border-right: 1px solid #ccc;
@@ -577,7 +583,7 @@
               padding: 10px;
 
               @include responsive(pc-screens) {
-                padding-right: 30px;
+                padding-right: 15px;
 
                 &:last-child {
                   padding-right: 0;
@@ -602,18 +608,20 @@
         }
 
         .footMenu {
-          padding: 40px;
+          padding: 40px 0;
+          font-size: 14px;
+          width: 100%;
 
           @include responsive(pc-screens) {
-            width: 25%;
+            width: 30%;
             padding: 0;
-            font-size: 13px;
+            font-size: 14px;
           }
           ul {
             display: flex;
             width: 100%;
-            padding: 10px;
-            margin-left: 5px;
+            padding: 10px ;
+            // margin-left: 5px;
 
             &:last-child {
               text-align: left;
