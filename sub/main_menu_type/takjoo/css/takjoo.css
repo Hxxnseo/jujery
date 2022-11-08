@@ -344,6 +344,98 @@ p {
   text-align: center;
   font-size: 1.875em;
 }
+.wrapper .flexWrapper main .main section.brewery .category_wrap {
+  margin-top: 40px;
+}
+.wrapper .flexWrapper main .main section.brewery .category_wrap a .slider {
+  display: none;
+}
+.wrapper .flexWrapper main .main section.brewery .category_wrap ul {
+  width: 100%;
+  display: flex;
+  margin-bottom: 50px;
+}
+.wrapper .flexWrapper main .main section.brewery .category_wrap ul:last-of-type {
+  margin-bottom: 20px;
+}
+.wrapper .flexWrapper main .main section.brewery .category_wrap ul li {
+  width: 30%;
+  margin-right: 5%;
+}
+.wrapper .flexWrapper main .main section.brewery .category_wrap ul li:last-child {
+  margin-right: 0;
+}
+.wrapper .flexWrapper main .main section.brewery .category_wrap ul li a img {
+  width: 100%;
+  border-radius: 50%;
+}
+.wrapper .flexWrapper main .main section.brewery .brewery_content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.wrapper .flexWrapper main .main section.brewery .brewery_content .brewery2 .brewery_box div:first-child {
+  order: 2;
+}
+.wrapper .flexWrapper main .main section.brewery .brewery_content .brewery2 .brewery_box div:nth-child(2) {
+  order: 3;
+}
+.wrapper .flexWrapper main .main section.brewery .brewery_content .brewery2 .brewery_box div:last-child {
+  order: 1;
+}
+.wrapper .flexWrapper main .main section.brewery .brewery_content .location_box {
+  position: relative;
+  display: flex;
+  margin-bottom: 100px;
+}
+.wrapper .flexWrapper main .main section.brewery .brewery_content .location_box img {
+  position: absolute;
+  top: -5px;
+  left: 70px;
+  width: 35px;
+}
+.wrapper .flexWrapper main .main section.brewery .brewery_content .location_box p {
+  position: absolute;
+  top: 0;
+  left: 110px;
+}
+.wrapper .flexWrapper main .main section.brewery .brewery_content .qr_box {
+  display: none;
+}
+.wrapper .flexWrapper main .main section.brewery .brewery_content .brewery_box {
+  width: 100%;
+}
+.wrapper .flexWrapper main .main section.brewery .brewery_content .brewery_box .alcohol {
+  margin-bottom: 50px;
+}
+.wrapper .flexWrapper main .main section.brewery .brewery_content .brewery_box .alcohol .alcohol_icon img {
+  display: none;
+}
+.wrapper .flexWrapper main .main section.brewery .brewery_content .brewery_box .alcohol .alcohol_icon strong {
+  font-weight: normal;
+  font-size: 1.5em;
+}
+.wrapper .flexWrapper main .main section.brewery .brewery_content .brewery_box .alcohol img {
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+  width: 20%;
+}
+.wrapper .flexWrapper main .main section.brewery .brewery_content .brewery_box .alcohol p {
+  text-align: center;
+}
+.wrapper .flexWrapper main .main section.brewery .brewery_content .brewery_box .brewery_pic {
+  display: flex;
+  width: 200%;
+  margin-bottom: 50px;
+}
+.wrapper .flexWrapper main .main section.brewery .brewery_content .brewery_box .brewery_pic img {
+  width: 100%;
+  height: 300px;
+}
+.wrapper .flexWrapper main .main section.brewery .brewery_content .brewery_box .text {
+  margin-bottom: 100px;
+}
 @media screen and (min-width: 1024px) {
   .wrapper footer .container {
     margin: 0;
@@ -386,10 +478,12 @@ p {
     margin: 0;
   }
 }
+.wrapper footer .footer .footBox {
+  width: 100%;
+}
 @media screen and (min-width: 1024px) {
   .wrapper footer .footer .footBox {
     display: flex;
-    width: 100%;
     height: 250px;
     flex-direction: row;
     justify-content: space-between;
@@ -407,7 +501,7 @@ p {
 }
 @media screen and (min-width: 1024px) {
   .wrapper footer .footer .footBox .footLogoCopy {
-    width: 25%;
+    width: 30%;
     padding: 0;
     border: 0;
   }
@@ -432,7 +526,7 @@ p {
 @media screen and (min-width: 1024px) {
   .wrapper footer .footer .footBox .footSns {
     position: relative;
-    width: 50%;
+    width: 40%;
     height: 250px;
     border-bottom: 0;
     border-right: 1px solid #ccc;
@@ -453,7 +547,7 @@ p {
 }
 @media screen and (min-width: 1024px) {
   .wrapper footer .footer .footBox .footSns .footSnsCont li {
-    padding-right: 30px;
+    padding-right: 15px;
   }
   .wrapper footer .footer .footBox .footSns .footSnsCont li:last-child {
     padding-right: 0;
@@ -473,20 +567,21 @@ p {
   }
 }
 .wrapper footer .footer .footBox .footMenu {
-  padding: 40px;
+  padding: 40px 0;
+  font-size: 14px;
+  width: 100%;
 }
 @media screen and (min-width: 1024px) {
   .wrapper footer .footer .footBox .footMenu {
-    width: 25%;
+    width: 30%;
     padding: 0;
-    font-size: 13px;
+    font-size: 14px;
   }
 }
 .wrapper footer .footer .footBox .footMenu ul {
   display: flex;
   width: 100%;
   padding: 10px;
-  margin-left: 5px;
 }
 .wrapper footer .footer .footBox .footMenu ul:last-child {
   text-align: left;

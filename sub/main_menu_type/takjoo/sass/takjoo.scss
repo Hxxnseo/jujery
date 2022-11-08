@@ -340,174 +340,285 @@
               text-align: center;
               font-size: 1.875em;
             }
+
+            .category_wrap {
+              margin-top: 40px;
+              
+              a {
+                .slider {
+                  display: none;
+                }
+              }
+              
+              ul{
+                width: 100%;
+                display: flex;
+                margin-bottom: 50px;
+                &:last-of-type {
+                margin-bottom: 20px;
+                }
+                li {
+                  width: 30%;
+                  margin-right: 5%;
+                  &:last-child {
+                  margin-right: 0;
+                  }
+                  a {
+                    img {
+                      width: 100%;
+                      border-radius: 50%;
+                    }
+                  }
+                }
+              }
+            } // category_wrap
+
+            .brewery_content {
+              width: 100%;
+              display: flex;
+              flex-direction: column;
+
+              .brewery2 {
+                .brewery_box {
+                  div:first-child {
+                    order: 2;
+                  }
+                  div:nth-child(2) {
+                    order: 3;
+                  }
+                  div:last-child {
+                    order: 1;
+                  }
+                }
+              }
+
+              .location_box {
+                position: relative;
+                display: flex;
+                margin-bottom: 100px;
+                img {
+                  position: absolute;
+                  top: -5px; left: 70px;
+                  width: 35px;
+                }
+                p {
+                  position: absolute;
+                  top: 0; left: 110px;
+                }
+              }
+              .qr_box {
+                display: none;
+              }
+              .brewery_box {
+                width: 100%;
+                .alcohol {
+                  margin-bottom: 50px;
+                  .alcohol_icon {
+                    img {
+                      display: none;
+                    }
+                    strong {
+                      font : {
+                        weight: normal;
+                        size: 1.5em;
+                      }
+                    }
+                  }
+                  img {
+                    display: block;
+                    margin: 0 auto;
+                    margin-top: 20px;
+                    width: 20%;
+                  }
+                  p {
+                    text-align: center;
+                  }
+                } // alcohol
+                .brewery_pic {
+                  display: flex;
+                  width: 200%;
+                  margin-bottom: 50px;
+                  img {
+                    width: 100%;
+                    height: 300px;
+                  }
+                }
+                .text {
+                  margin-bottom: 100px;
+                }
+              }
+            } // brewery_content
           }
         }
       } // main
     }
 
-  footer {
-    .container {
-      @include responsive(pc-screens) {
-        margin: 0;
+    footer {
+      .container {
+        @include responsive(pc-screens) {
+          margin: 0;
+        }
       }
-    }
-    .footer {
-      width: 100%;
-      height: 100%;
-      background-color: black;
-      color: white;
-
-      @include responsive(pc-screens) {
+      .footer {
         width: 100%;
-        padding: 120px 185px 80px 545px;
-      }
-
-      .footInfo {
-        padding-top: 60px;
-        padding-bottom: 30px;
-
+        height: 100%;
+        background-color: black;
+        color: white;
+  
         @include responsive(pc-screens) {
-          // padding: 0;
-          display: flex;
           width: 100%;
-          justify-content: space-between;
-
-          font-size: 20px;
-          margin-bottom: 30px;
+          padding: 120px 185px 80px 545px;
         }
-
-        address {
-          font-style: normal;
-          font-family: $font-sub;
-        }
-
-        p {
-          margin: 20px 0;
-
+  
+        .footInfo {
+          padding-top: 60px;
+          padding-bottom: 30px;
+  
           @include responsive(pc-screens) {
-            margin: 0;
-          }
-        }
-      }
-
-      .footBox {
-        @include responsive(pc-screens) {
-          display: flex;
-          width: 100%;
-          height: 250px;
-          flex-direction: row;
-          justify-content: space-between;
-          align-items: center;
-
-          text-align: center;
-
-          border-top: 1px solid #ccc;
-          border-bottom: 1px solid #ccc;
-        }
-
-        .footLogoCopy {
-          padding: 30px;
-          border-top: 1px solid #ccc;
-          border-bottom: 1px solid #ccc;
-          text-align: center;
-
-          @include responsive(pc-screens) {
-            width: 25%;
-            padding: 0;
-            border: 0;
-          }
-
-          a {
-            color: white;
-            font-size: 60px;
-          }
-
-          p {
-            font-size: 10px;
-          }
-
-          .copyright {
-            @include responsive(pc-screens) {
-              font-size: 12px;
-              font-family: $font-sub;
-            }
-          }
-        }
-
-        .footSns {
-          padding: 30px;
-          border-bottom: 1px solid #ccc;
-
-          @include responsive(pc-screens) {
-            position: relative;
-            width: 50%;
-            height: 250px;
-            border-bottom: 0;
-            border-right: 1px solid #ccc;
-            border-left: 1px solid #ccc;
-          }
-          .footSnsCont {
+            // padding: 0;
             display: flex;
-            justify-content: center;
-
+            width: 100%;
+            justify-content: space-between;
+  
+            font-size: 20px;
+            margin-bottom: 30px;
+          }
+  
+          address {
+            font-style: normal;
+            font-family: $font-sub;
+          }
+  
+          p {
+            margin: 20px 0;
+  
             @include responsive(pc-screens) {
-              padding: 60px 80px;
+              margin: 0;
             }
-
-            li {
-              padding: 10px;
-
+          }
+        }
+  
+        .footBox {
+          width: 100%;
+          @include responsive(pc-screens) {
+            display: flex;
+            height: 250px;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+  
+            text-align: center;
+  
+            border-top: 1px solid #ccc;
+            border-bottom: 1px solid #ccc;
+          }
+  
+          .footLogoCopy {
+            padding: 30px;
+            border-top: 1px solid #ccc;
+            border-bottom: 1px solid #ccc;
+            text-align: center;
+  
+            @include responsive(pc-screens) {
+              width: 30%;
+              padding: 0;
+              border: 0;
+            }
+  
+            a {
+              color: white;
+              font-size: 60px;
+            }
+  
+            p {
+              font-size: 10px;
+            }
+  
+            .copyright {
               @include responsive(pc-screens) {
-                padding-right: 30px;
-
-                &:last-child {
-                  padding-right: 0;
-                }
+                font-size: 12px;
+                font-family: $font-sub;
               }
-              img {
-                width: 50px;
-
+            }
+          }
+  
+          .footSns {
+            padding: 30px;
+            border-bottom: 1px solid #ccc;
+  
+            @include responsive(pc-screens) {
+              position: relative;
+              width: 40%;
+              height: 250px;
+              border-bottom: 0;
+              border-right: 1px solid #ccc;
+              border-left: 1px solid #ccc;
+            }
+            .footSnsCont {
+              display: flex;
+              justify-content: center;
+  
+              @include responsive(pc-screens) {
+                padding: 60px 80px;
+              }
+  
+              li {
+                padding: 10px;
+  
                 @include responsive(pc-screens) {
-                  width: 60px;
-                  opacity: 0.5;
-
-                  transition: all 0.5s;
-
-                  &:hover {
-                    opacity: 1;
+                  padding-right: 15px;
+  
+                  &:last-child {
+                    padding-right: 0;
+                  }
+                }
+                img {
+                  width: 50px;
+  
+                  @include responsive(pc-screens) {
+                    width: 60px;
+                    opacity: 0.5;
+  
+                    transition: all 0.5s;
+  
+                    &:hover {
+                      opacity: 1;
+                    }
                   }
                 }
               }
             }
           }
-        }
-
-        .footMenu {
-          padding: 40px;
-
-          @include responsive(pc-screens) {
-            width: 25%;
-            padding: 0;
-            font-size: 13px;
-          }
-          ul {
-            display: flex;
+  
+          .footMenu {
+            padding: 40px 0;
+            font-size: 14px;
             width: 100%;
-            padding: 10px;
-            margin-left: 5px;
-
-            &:last-child {
-              text-align: left;
+  
+            @include responsive(pc-screens) {
+              width: 30%;
+              padding: 0;
+              font-size: 14px;
             }
-
-            li {
-              width: 33%;
-              padding: 0 5px;
-              text-align: center;
-
-              a {
-                width: 100%;
-                color: white;
+            ul {
+              display: flex;
+              width: 100%;
+              padding: 10px ;
+              // margin-left: 5px;
+  
+              &:last-child {
+                text-align: left;
+              }
+  
+              li {
+                width: 33%;
+                padding: 0 5px;
+                text-align: center;
+  
+                a {
+                  width: 100%;
+                  color: white;
+                }
               }
             }
           }
@@ -515,4 +626,3 @@
       }
     }
   }
-}
