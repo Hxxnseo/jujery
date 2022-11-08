@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/gyeonggi.css" />
-    <title>Document</title>
+    <link rel="shortcut icon" type="image" href="../img/region/logo_mini.png" />
+    <title>Gyeonggi</title>
   </head>
   <body>
     <div class="wrapper">
@@ -146,47 +147,60 @@
                   <h5>01~04</h5>
 
                   <img class="arrow-left" src="../img/geonggi/arrow_left.png" />
-                  <img class="arrow-right" src="../img/geonggi/arrow_right.png" />
+                  <img
+                    class="arrow-right"
+                    src="../img/geonggi/arrow_right.png"
+                  />
                 </div>
-
+                <!--sec2-main-->
+                <script src="./js/jquery.js"></script>
+                <script src="./js/a_tab.js"></script>
                 <div class="sec2-con-mo">
                   <!--mobile-->
-                  <ul>
-                    <li class="on">
-                      <button class="button">
-                        술 종류 : 약주<img
+                  <ul class="acordian-menu">
+                    <li>
+                      <a href="#" data-bg="gray"
+                        >술 종류 : 약주<img
                           src="../img/geonggi/plus1 (1).png"
-                          style="width: 50px"
-                        />
-                      </button>
-                      <p id="menu1" class="content">
+                          style="width: 15px"
+                      /></a>
+                      <p>
                         전통 청주 중 하나로 서울특별시 무형 문 화재 제8호이다.
                       </p>
                     </li>
-                  </ul>
-                  <ul>
-                    <li class="on">
-                      <button class="button">삼해주</button>
-                      <p id="menu1" class="content">
+
+                    <li>
+                      <a href="#" data-bg="gray"
+                        >삼해주<img
+                          src="../img/geonggi/plus1 (1).png"
+                          style="width: 15px"
+                      /></a>
+                      <p>
                         삼해주는 고려시대부터 전해 내려온 궁중 술로, 조선시대에
                         이르러 순조의 딸인 복 온 공주가 안동 김씨댁에 시집오면서
                         그 가문에 대대로 이어져 내려오게 되었다고 한다.
                       </p>
                     </li>
-                  </ul>
-                  <ul>
-                    <li class="on">
-                      <button class="button">술 원료</button>
-                      <p id="menu1" class="content">
+
+                    <li>
+                      <a href="#" data-bg="gray"
+                        >술 원료<img
+                          src="../img/geonggi/plus1 (1).png"
+                          style="width: 15px"
+                      /></a>
+                      <p>
                         쌀과 누룩을 원료로 하여 술을 세번 발효 시켜 걸러내는
                         삼양주로 쌀이 많이 드는 대신 맛과 향이 뛰어나다.
                       </p>
                     </li>
-                  </ul>
-                  <ul>
-                    <li class="on">
-                      <button class="button">삼해소주</button>
-                      <p id="menu1" class="content">
+
+                    <li>
+                      <a href="#" data-bg="gray"
+                        >삼해소주<img
+                          src="../img/geonggi/plus1 (1).png"
+                          style="width: 15px"
+                      /></a>
+                      <p class="last-p">
                         삼해주 또한 소주로도 즐겼다. 대개 청주 로 마시는
                         술이지만, 증보산림경제에 기록 된 주조법은 삼양증류주인
                         것이 특이하다. 증류하여 소주를 만드는데 술맛이 매우
@@ -195,10 +209,10 @@
                     </li>
                   </ul>
                 </div>
+                <!-- sec-mo-->
                 <div class="sec2-con-pc">
                   <!--pc-->
                   <div>
-                    <span></span>
                     <img src="../img/geonggi/one/box_one.png" />
                     <h6>술 종류 : 약주</h6>
                     <p>
@@ -206,7 +220,6 @@
                     </p>
                   </div>
                   <div>
-                    <span></span>
                     <img src="../img/geonggi/one/box_two.png" />
                     <h6>삼해주</h6>
                     <p>
@@ -216,16 +229,15 @@
                     </p>
                   </div>
                   <div>
-                    <span></span>
                     <img src="../img/geonggi/one/box_three.png" />
                     <h6>술 원료</h6>
                     <p>
                       쌀과 누룩을 원료로 하여 술을 세번 발효 시켜 걸러내는
                       삼양주로 쌀이 많이 드는 대신 맛과 향이 뛰어나다.
                     </p>
+                    <span></span>
                   </div>
                   <div>
-                    <span></span>
                     <img src="../img/geonggi/one/box_four.png" />
                     <h6>삼해소주</h6>
                     <p>
@@ -234,14 +246,15 @@
                       특이하다. 증류하여 소주를 만드는데 술맛이 매우 독하다고
                       하였다.
                     </p>
+                    <span></span>
                   </div>
                 </div>
-                <span></span>
 
                 <div class="map">
-                  <h2>삼해주 찾아가는 길</h2>
+                  <h3>삼해주 찾아가는 길</h3>
                   <p>03051 서울 종로구 창덕궁길 142 (원서동), 101호</p>
                   <iframe
+                    class="map-box"
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3161.803471231258!2d126.9858075155205!3d37.5832452309282!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca2d04951e349%3A0x34cf85c595051814!2z7ISc7Jq47Yq567OE7IucIOyiheuhnOq1rCDssL3rjZXqtoHquLggMTQyIDEwMe2YuA!5e0!3m2!1sko!2skr!4v1667814967752!5m2!1sko!2skr"
                     style="border: 0"
                     allowfullscreen=""
@@ -249,12 +262,15 @@
                     referrerpolicy="no-referrer-when-downgrade"
                   ></iframe>
                 </div>
-                <!--sec2-main-->
+                <!--map-->
               </section>
             </div>
             <!-- main -->
           </div>
           <!-- container -->
+          <div class="footer-geonggi">
+            <img src="../img/geonggi/footer.png" />
+          </div>
         </main>
       </div>
 
