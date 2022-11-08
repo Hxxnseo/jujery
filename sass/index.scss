@@ -10,25 +10,42 @@ header {
   width: 100%;
   // background-color: transparent;
 
-  .mobile {
-    height: 80px;
-    background-color: aqua;
+  .pc {
+    display: none;
 
     @include responsive(pc-screens) {
-      height: 0px;
+      display: block;
     }
 
+    .logo {
+      position: fixed;
+      top: 70px;
+      left: 100px;
+    }
+  }
+
+  .mobile {
+    height: 80px;
+    // background-color: aqua;
+
+    @include responsive(pc-screens) {
+      height: 0;
+    }
     .mobileLogoMenu {
       display: flex;
-
+      
       .mobileLogo {
         position: fixed;
         top: 22px;
         left: 20px;
-
+        
+        @include responsive(pc-screens) {
+          display: none;
+        }
         a {
+          width: 32px;
           img {
-            width: 32px;
+            width: 100%;
           }
         }
       }
@@ -39,6 +56,11 @@ header {
         right: 20px;
         cursor: pointer;
 
+        @include responsive(pc-screens) {
+          top: 95px;
+          right: 100px;
+        }
+
         span {
           display: block;
           width: 30px;
@@ -46,6 +68,15 @@ header {
           background-color: white;
           &:nth-child(2) {
             margin: 5px 0;
+          }
+
+          @include responsive(pc-screens) {
+            width: 40px;
+            height: 5px;
+
+            &:nth-child(2) {
+              margin: 7px 0;
+            }
           }
         }
       }
@@ -59,15 +90,48 @@ main {
 
   .pcSec1 {
     width: 100%;
-    height: 100%;
-    // background-color: aqua;
+    height: 100vh;
+    text-align: center;
+    position: relative;
 
     .video {
       width: 100%;
+      height: 100vh;
+
       video, img {
         width: 100%;
+
+        @include responsive(pc-screens) {
+          height: 100vh;
+        }
+
       }
     }    
+
+    .para {
+      display: none;
+
+      @include responsive(pc-screens) {
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      
+      h3, h4 {
+        color: white;
+        line-height: 150%;
+      }
+
+      h3 {
+        font-size: 100px;
+      }
+
+      h4 {
+        font-size: 40px;
+      }
+    }
   }
 
   

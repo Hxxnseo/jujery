@@ -346,7 +346,7 @@ p {
 .wrapper .flexWrapper main .main .sect2 .newBrewery .brewConts .cont .afterClick .background .info {
   width: 40%;
   height: auto;
-  padding-top: 13%;
+  padding-top: 30px;
   font-size: 14px;
 }
 @media screen and (min-width: 1024px) {
@@ -382,6 +382,76 @@ p {
   }
 }
 .wrapper .flexWrapper main .main .sect2 .newBrewery .brewConts .cont .afterClick .background .circle img {
+  width: 100%;
+  height: 100%;
+}
+.wrapper .flexWrapper main .main .sect2 .newBrewery .brewConts .cont .afterClick .reverseBackground {
+  background-image: url(../map_imgs/map_img_background.png);
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .main .sect2 .newBrewery .brewConts .cont .afterClick .reverseBackground {
+    width: 100%;
+  }
+}
+.wrapper .flexWrapper main .main .sect2 .newBrewery .brewConts .cont .afterClick .reverseBackground .title {
+  height: 100%;
+  width: 10%;
+  font-size: 24px;
+  font-weight: 600;
+  writing-mode: vertical-lr;
+  padding: 0 10px;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .main .sect2 .newBrewery .brewConts .cont .afterClick .reverseBackground .title {
+    font-size: 30px;
+    padding: 0 20px;
+    width: 10%;
+  }
+}
+.wrapper .flexWrapper main .main .sect2 .newBrewery .brewConts .cont .afterClick .reverseBackground .info {
+  width: 40%;
+  height: auto;
+  padding-top: 30px;
+  font-size: 14px;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .main .sect2 .newBrewery .brewConts .cont .afterClick .reverseBackground .info {
+    display: none;
+  }
+}
+.wrapper .flexWrapper main .main .sect2 .newBrewery .brewConts .cont .afterClick .reverseBackground .info address {
+  font-style: normal;
+  font-family: "NotoSerifKR-Regular";
+}
+.wrapper .flexWrapper main .main .sect2 .newBrewery .brewConts .cont .afterClick .reverseBackground .info a {
+  font-family: "NotoSerifKR-Regular";
+}
+.wrapper .flexWrapper main .main .sect2 .newBrewery .brewConts .cont .afterClick .reverseBackground .pcInfo {
+  display: none;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .main .sect2 .newBrewery .brewConts .cont .afterClick .reverseBackground .pcInfo {
+    display: block;
+    width: 66%;
+    background-color: #000;
+  }
+}
+.wrapper .flexWrapper main .main .sect2 .newBrewery .brewConts .cont .afterClick .reverseBackground .circle {
+  width: 40%;
+  height: 100%;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .main .sect2 .newBrewery .brewConts .cont .afterClick .reverseBackground .circle {
+    width: 24%;
+    height: auto;
+  }
+}
+.wrapper .flexWrapper main .main .sect2 .newBrewery .brewConts .cont .afterClick .reverseBackground .circle img {
   width: 100%;
   height: 100%;
 }

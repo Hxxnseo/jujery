@@ -320,14 +320,14 @@
                     display: none;
                   }
 
+                  
                   .background {
                     background-image: url(../map_imgs/map_img_background.png);
                     width: 100%;
                     height: 200px;
                     display: flex;
                     justify-content: space-between;
-                    // align-items: center;
-
+                    
                     @include responsive(pc-screens) {
                       width: 100%;
                     }
@@ -350,7 +350,81 @@
                     .info {
                       width: 40%;
                       height: auto;
-                      padding-top: 13%;
+                      padding-top: 30px;
+                      font-size: 14px;
+                      // background-color: #000;
+
+                      @include responsive(pc-screens) {
+                        display: none;
+                      }
+
+                      address {
+                        font : {
+                          style: normal;
+                          family: $font-sub;
+                        }
+                      }
+
+                      a {
+                        font-family: $font-sub;
+                      }
+                    }
+
+                    .pcInfo {
+                      display: none;
+
+                      @include responsive(pc-screens) {
+                        display: block;
+                        width: 66%;
+                        background-color: #000;
+                      }
+                    }
+
+                    .circle {
+                      width: 40%;
+                      height: 100%;
+                      @include responsive(pc-screens) {
+                        width: 24%;
+                        height: auto;
+                      }
+                      img {
+                        width: 100%;
+                        height: 100%;
+                      }
+                    }
+                  }
+
+                  .reverseBackground {
+                    background-image: url(../map_imgs/map_img_background.png);
+                    width: 100%;
+                    height: 200px;
+                    display: flex;
+                    justify-content: space-between;
+                    flex-direction: row-reverse;
+                    
+                    @include responsive(pc-screens) {
+                      width: 100%;
+                    }
+
+                    .title {
+                      height: 100%;
+                      width: 10%;
+                      font-size: 24px;
+                      font-weight: 600;
+                      writing-mode: vertical-lr;
+                      padding: 0 10px;
+
+                      @include responsive(pc-screens) {
+                        font-size: 30px;
+                        padding: 0 20px;
+                        width: 10%;
+                      }
+                    }
+
+                    .info {
+                      width: 40%;
+                      height: auto;
+                      padding-top: 30px;
                       font-size: 14px;
                       // background-color: #000;
 

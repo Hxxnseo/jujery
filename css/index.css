@@ -71,13 +71,25 @@ body {
 header {
   width: 100%;
 }
+header .pc {
+  display: none;
+}
+@media screen and (min-width: 1024px) {
+  header .pc {
+    display: block;
+  }
+}
+header .pc .logo {
+  position: fixed;
+  top: 70px;
+  left: 100px;
+}
 header .mobile {
   height: 80px;
-  background-color: aqua;
 }
 @media screen and (min-width: 1024px) {
   header .mobile {
-    height: 0px;
+    height: 0;
   }
 }
 header .mobile .mobileLogoMenu {
@@ -88,14 +100,28 @@ header .mobile .mobileLogoMenu .mobileLogo {
   top: 22px;
   left: 20px;
 }
-header .mobile .mobileLogoMenu .mobileLogo a img {
+@media screen and (min-width: 1024px) {
+  header .mobile .mobileLogoMenu .mobileLogo {
+    display: none;
+  }
+}
+header .mobile .mobileLogoMenu .mobileLogo a {
   width: 32px;
+}
+header .mobile .mobileLogoMenu .mobileLogo a img {
+  width: 100%;
 }
 header .mobile .mobileLogoMenu .mobileMenu {
   position: fixed;
   top: 38px;
   right: 20px;
   cursor: pointer;
+}
+@media screen and (min-width: 1024px) {
+  header .mobile .mobileLogoMenu .mobileMenu {
+    top: 95px;
+    right: 100px;
+  }
 }
 header .mobile .mobileLogoMenu .mobileMenu span {
   display: block;
@@ -106,6 +132,15 @@ header .mobile .mobileLogoMenu .mobileMenu span {
 header .mobile .mobileLogoMenu .mobileMenu span:nth-child(2) {
   margin: 5px 0;
 }
+@media screen and (min-width: 1024px) {
+  header .mobile .mobileLogoMenu .mobileMenu span {
+    width: 40px;
+    height: 5px;
+  }
+  header .mobile .mobileLogoMenu .mobileMenu span:nth-child(2) {
+    margin: 7px 0;
+  }
+}
 
 main {
   width: 100%;
@@ -113,13 +148,43 @@ main {
 }
 main .pcSec1 {
   width: 100%;
-  height: 100%;
+  height: 100vh;
+  text-align: center;
+  position: relative;
 }
 main .pcSec1 .video {
   width: 100%;
+  height: 100vh;
 }
 main .pcSec1 .video video, main .pcSec1 .video img {
   width: 100%;
+}
+@media screen and (min-width: 1024px) {
+  main .pcSec1 .video video, main .pcSec1 .video img {
+    height: 100vh;
+  }
+}
+main .pcSec1 .para {
+  display: none;
+}
+@media screen and (min-width: 1024px) {
+  main .pcSec1 .para {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+main .pcSec1 .para h3, main .pcSec1 .para h4 {
+  color: white;
+  line-height: 150%;
+}
+main .pcSec1 .para h3 {
+  font-size: 100px;
+}
+main .pcSec1 .para h4 {
+  font-size: 40px;
 }
 
 footer .container {
