@@ -1,3 +1,19 @@
+@font-face {
+  font-family: "SANGJU Gyeongcheon Island";
+  src: url(../font/SANGJU\ Gyeongcheon\ Island.woff);
+}
+@font-face {
+  font-family: "NotoSerifKR-Regular";
+  src: url(../font/NotoSerifKR-Regular.woff);
+}
+@font-face {
+  font-family: "SANGJU Gyeongcheon Island";
+  src: url(../font/SANGJU\ Gyeongcheon\ Island.woff);
+}
+@font-face {
+  font-family: "NotoSerifKR-Regular";
+  src: url(../font/NotoSerifKR-Regular.woff);
+}
 * {
   margin: 0;
   padding: 0;
@@ -55,12 +71,25 @@ body {
 header {
   width: 100%;
 }
+header .pc {
+  display: none;
+}
+@media screen and (min-width: 1024px) {
+  header .pc {
+    display: block;
+  }
+}
+header .pc .logo {
+  position: fixed;
+  top: 70px;
+  left: 100px;
+}
 header .mobile {
   height: 80px;
 }
 @media screen and (min-width: 1024px) {
   header .mobile {
-    display: none;
+    height: 0;
   }
 }
 header .mobile .mobileLogoMenu {
@@ -71,14 +100,28 @@ header .mobile .mobileLogoMenu .mobileLogo {
   top: 22px;
   left: 20px;
 }
-header .mobile .mobileLogoMenu .mobileLogo a img {
+@media screen and (min-width: 1024px) {
+  header .mobile .mobileLogoMenu .mobileLogo {
+    display: none;
+  }
+}
+header .mobile .mobileLogoMenu .mobileLogo a {
   width: 32px;
+}
+header .mobile .mobileLogoMenu .mobileLogo a img {
+  width: 100%;
 }
 header .mobile .mobileLogoMenu .mobileMenu {
   position: fixed;
   top: 38px;
   right: 20px;
   cursor: pointer;
+}
+@media screen and (min-width: 1024px) {
+  header .mobile .mobileLogoMenu .mobileMenu {
+    top: 95px;
+    right: 100px;
+  }
 }
 header .mobile .mobileLogoMenu .mobileMenu span {
   display: block;
@@ -89,25 +132,218 @@ header .mobile .mobileLogoMenu .mobileMenu span {
 header .mobile .mobileLogoMenu .mobileMenu span:nth-child(2) {
   margin: 5px 0;
 }
+@media screen and (min-width: 1024px) {
+  header .mobile .mobileLogoMenu .mobileMenu span {
+    width: 40px;
+    height: 5px;
+  }
+  header .mobile .mobileLogoMenu .mobileMenu span:nth-child(2) {
+    margin: 7px 0;
+  }
+}
 
 main {
   width: 100%;
   height: 100%;
 }
-main section.vid {
-  height: 100%;
+main .pcSec1 {
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  position: relative;
 }
-main section.vid .video video {
+main .pcSec1 .video {
+  width: 100%;
+  height: 100vh;
+}
+main .pcSec1 .video video, main .pcSec1 .video img {
   width: 100%;
 }
-main section.asd {
-  height: 180px;
-  line-height: 50px;
+@media screen and (min-width: 1024px) {
+  main .pcSec1 .video video, main .pcSec1 .video img {
+    height: 100vh;
+  }
 }
-main section.asd .text {
-  text-align: center;
+main .pcSec1 .para {
+  display: none;
+}
+@media screen and (min-width: 1024px) {
+  main .pcSec1 .para {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+main .pcSec1 .para h3, main .pcSec1 .para h4 {
+  color: white;
+  line-height: 150%;
+}
+main .pcSec1 .para h3 {
+  font-size: 100px;
+}
+main .pcSec1 .para h4 {
+  font-size: 40px;
+}
+
+footer .container {
+  padding: 0 20px;
+}
+@media screen and (min-width: 1024px) {
+  footer .container {
+    margin: 0 auto;
+    padding: 0;
+    width: 1200px;
+  }
+}
+footer .footer {
+  width: 100%;
+  height: 100%;
+  background-color: black;
   color: white;
 }
-main section.asd .text h3 {
+@media screen and (min-width: 1024px) {
+  footer .footer {
+    width: 100%;
+    padding: 120px 0 80px;
+  }
+}
+footer .footer .footInfo {
+  padding-top: 60px;
+  padding-bottom: 30px;
+}
+@media screen and (min-width: 1024px) {
+  footer .footer .footInfo {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+}
+footer .footer .footInfo address {
+  font-style: normal;
+}
+footer .footer .footInfo p {
+  margin: 20px 0;
+}
+@media screen and (min-width: 1024px) {
+  footer .footer .footInfo p {
+    margin: 0;
+  }
+}
+@media screen and (min-width: 1024px) {
+  footer .footer .footBox {
+    display: flex;
+    width: 100%;
+    height: 250px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+  }
+}
+footer .footer .footBox .footLogoCopy {
+  padding: 30px;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  text-align: center;
+}
+@media screen and (min-width: 1024px) {
+  footer .footer .footBox .footLogoCopy {
+    width: 25%;
+    padding: 0;
+    border: 0;
+  }
+}
+footer .footer .footBox .footLogoCopy a {
+  color: white;
+  font-size: 60px;
+}
+footer .footer .footBox .footLogoCopy p {
+  font-size: 10px;
+}
+@media screen and (min-width: 1024px) {
+  footer .footer .footBox .footLogoCopy .copyright {
+    font-size: 12px;
+    font-family: "NotoSerifKR-Regular";
+  }
+}
+footer .footer .footBox .footSns {
+  padding: 30px;
+  border-bottom: 1px solid #ccc;
+}
+@media screen and (min-width: 1024px) {
+  footer .footer .footBox .footSns {
+    position: relative;
+    width: 50%;
+    height: 250px;
+    border-bottom: 0;
+    border-right: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+  }
+}
+footer .footer .footBox .footSns .footSnsCont {
+  display: flex;
+  justify-content: center;
+}
+@media screen and (min-width: 1024px) {
+  footer .footer .footBox .footSns .footSnsCont {
+    padding: 60px 80px;
+  }
+}
+footer .footer .footBox .footSns .footSnsCont li {
+  padding: 10px;
+}
+@media screen and (min-width: 1024px) {
+  footer .footer .footBox .footSns .footSnsCont li {
+    padding-right: 30px;
+  }
+  footer .footer .footBox .footSns .footSnsCont li:last-child {
+    padding-right: 0;
+  }
+}
+footer .footer .footBox .footSns .footSnsCont li img {
+  width: 50px;
+}
+@media screen and (min-width: 1024px) {
+  footer .footer .footBox .footSns .footSnsCont li img {
+    width: 60px;
+    opacity: 0.5;
+    transition: all 0.5s;
+  }
+  footer .footer .footBox .footSns .footSnsCont li img:hover {
+    opacity: 1;
+  }
+}
+footer .footer .footBox .footMenu {
+  padding: 40px;
+}
+@media screen and (min-width: 1024px) {
+  footer .footer .footBox .footMenu {
+    width: 25%;
+    padding: 0;
+    font-size: 13px;
+  }
+}
+footer .footer .footBox .footMenu ul {
+  display: flex;
+  width: 100%;
+  padding: 10px;
+  margin-left: 5px;
+}
+footer .footer .footBox .footMenu ul:last-child {
+  text-align: left;
+}
+footer .footer .footBox .footMenu ul li {
+  width: 33%;
+  padding: 0 5px;
+  text-align: center;
+}
+footer .footer .footBox .footMenu ul li a {
+  width: 100%;
   color: white;
 }/*# sourceMappingURL=index.css.map */

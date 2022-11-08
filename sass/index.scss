@@ -10,24 +10,42 @@ header {
   width: 100%;
   // background-color: transparent;
 
-  .mobile {
-    height: 80px;
+  .pc {
+    display: none;
 
     @include responsive(pc-screens) {
-      display: none;
+      display: block;
     }
 
+    .logo {
+      position: fixed;
+      top: 70px;
+      left: 100px;
+    }
+  }
+
+  .mobile {
+    height: 80px;
+    // background-color: aqua;
+
+    @include responsive(pc-screens) {
+      height: 0;
+    }
     .mobileLogoMenu {
       display: flex;
-
+      
       .mobileLogo {
         position: fixed;
         top: 22px;
         left: 20px;
-
+        
+        @include responsive(pc-screens) {
+          display: none;
+        }
         a {
+          width: 32px;
           img {
-            width: 32px;
+            width: 100%;
           }
         }
       }
@@ -38,6 +56,11 @@ header {
         right: 20px;
         cursor: pointer;
 
+        @include responsive(pc-screens) {
+          top: 95px;
+          right: 100px;
+        }
+
         span {
           display: block;
           width: 30px;
@@ -45,6 +68,15 @@ header {
           background-color: white;
           &:nth-child(2) {
             margin: 5px 0;
+          }
+
+          @include responsive(pc-screens) {
+            width: 40px;
+            height: 5px;
+
+            &:nth-child(2) {
+              margin: 7px 0;
+            }
           }
         }
       }
@@ -56,28 +88,223 @@ main {
   width: 100%;
   height: 100%;
 
-  section.vid {
-    height: 100%;
-    // background-color: aqua;
+  .pcSec1 {
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    position: relative;
 
     .video {
-      video {
+      width: 100%;
+      height: 100vh;
+
+      video, img {
         width: 100%;
+
+        @include responsive(pc-screens) {
+          height: 100vh;
+        }
+
+      }
+    }    
+
+    .para {
+      display: none;
+
+      @include responsive(pc-screens) {
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      
+      h3, h4 {
+        color: white;
+        line-height: 150%;
+      }
+
+      h3 {
+        font-size: 100px;
+      }
+
+      h4 {
+        font-size: 40px;
       }
     }
   }
 
-  section.asd {
-    height: 180px;
-    // background-color: aquamarine;
-    line-height: 50px;
+  
+}
 
-    .text {
-      text-align: center;
-      color: white;
+footer {
+  .container {
+    padding: 0 20px;
+    @include responsive(pc-screens) {
+      margin: 0 auto;
+      padding: 0;
+      width: 1200px;
+    }
+  }
+  .footer {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    color: white;
 
-      h3 {
-        color: white;
+    @include responsive(pc-screens) {
+      width: 100%;
+      padding: 120px 0 80px;
+    }
+
+    .footInfo {
+      padding-top: 60px;
+      padding-bottom: 30px;
+
+      @include responsive(pc-screens) {
+        // padding: 0;
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+
+        font-size: 20px;
+        margin-bottom: 30px;
+      }
+
+      address {
+        font-style: normal;
+      }
+
+      p {
+        margin: 20px 0;
+
+        @include responsive(pc-screens) {
+          margin: 0;
+        }
+      }
+    }
+
+    .footBox {
+      @include responsive(pc-screens) {
+        display: flex;
+        width: 100%;
+        height: 250px;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        text-align: center;
+
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+      }
+
+      .footLogoCopy {
+        padding: 30px;
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        text-align: center;
+
+        @include responsive(pc-screens) {
+          width: 25%;
+          padding: 0;
+          border: 0;
+        }
+
+        a {
+          color: white;
+          font-size: 60px;
+        }
+
+        p {
+          font-size: 10px;
+        }
+
+        .copyright {
+          @include responsive(pc-screens) {
+            font-size: 12px;
+            font-family: $font-sub;
+          }
+        }
+      }
+
+      .footSns {
+        padding: 30px;
+        border-bottom: 1px solid #ccc;
+
+        @include responsive(pc-screens) {
+          position: relative;
+          width: 50%;
+          height: 250px;
+          border-bottom: 0;
+          border-right: 1px solid #ccc;
+          border-left: 1px solid #ccc;
+        }
+        .footSnsCont {
+          display: flex;
+          justify-content: center;
+
+          @include responsive(pc-screens) {
+            padding: 60px 80px;
+          }
+
+          li {
+            padding: 10px;
+
+            @include responsive(pc-screens) {
+              padding-right: 30px;
+
+              &:last-child {
+                padding-right: 0;
+              }
+            }
+            img {
+              width: 50px;
+
+              @include responsive(pc-screens) {
+                width: 60px;
+                opacity: 0.5;
+
+                transition: all 0.5s;
+
+                &:hover {
+                  opacity: 1;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .footMenu {
+        padding: 40px;
+
+        @include responsive(pc-screens) {
+          width: 25%;
+          padding: 0;
+          font-size: 13px;
+        }
+        ul {
+          display: flex;
+          width: 100%;
+          padding: 10px;
+          margin-left: 5px;
+
+          &:last-child {
+            text-align: left;
+          }
+
+          li {
+            width: 33%;
+            padding: 0 5px;
+            text-align: center;
+
+            a {
+              width: 100%;
+              color: white;
+            }
+          }
+        }
       }
     }
   }

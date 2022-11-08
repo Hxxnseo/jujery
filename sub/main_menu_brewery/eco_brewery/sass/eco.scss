@@ -211,6 +211,7 @@
 
           @include responsive(pc-screens) {
             text-align: left;
+            margin-top: 130px;
           }
 
           h3 {
@@ -244,7 +245,84 @@
         // introStart
 
         .sect1 {
-          margin: 50px 0 100px;
+          width: 100%;
+          margin-top: 50px;
+
+          .flexCont1 {
+            width: 100%;
+            height: 100%;
+
+            @include responsive(pc-screens) {
+              display: flex;
+              justify-content: space-between;
+              margin-bottom: 10px;
+            }
+
+            div {
+              width: 100%;
+
+              @include responsive(pc-screens) {
+              width: 49.5%;
+            }
+
+              img {
+                width: 100%;
+                height: 100%;
+
+                cursor: pointer;
+              }
+            }
+          }
+
+          .flexCont2 {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            
+            div {
+              width: 49.5%;
+              margin-bottom: 10px;
+
+              @include responsive(pc-screens) {
+                width: 33%;
+              }
+
+              img {
+                width: 100%;
+                height: 100%;
+                cursor: pointer;
+              }
+            }
+
+            .img1 {
+              width: 100%;
+
+              @include responsive(pc-screens) {
+                width: 32.5%;
+              }
+
+              a {
+                height: 100%;
+              }
+            }
+          }
+        }
+        // sect1
+
+        .sect2 {
+          width: 100%;
+          margin-bottom: 100px;
+
+          .map {
+            width: 100%;
+
+            iframe {
+              width: 100%;
+              height: 300px;
+            }
+          }
         }
       }
     }
@@ -284,6 +362,7 @@
 
         address {
           font-style: normal;
+          font-family: $font-sub;
         }
 
         p {
@@ -296,9 +375,9 @@
       }
 
       .footBox {
+        width: 100%;
         @include responsive(pc-screens) {
           display: flex;
-          width: 100%;
           height: 250px;
           flex-direction: row;
           justify-content: space-between;
@@ -317,7 +396,7 @@
           text-align: center;
 
           @include responsive(pc-screens) {
-            width: 25%;
+            width: 30%;
             padding: 0;
             border: 0;
           }
@@ -345,7 +424,7 @@
 
           @include responsive(pc-screens) {
             position: relative;
-            width: 50%;
+            width: 40%;
             height: 250px;
             border-bottom: 0;
             border-right: 1px solid #ccc;
@@ -363,7 +442,7 @@
               padding: 10px;
 
               @include responsive(pc-screens) {
-                padding-right: 30px;
+                padding-right: 15px;
 
                 &:last-child {
                   padding-right: 0;
@@ -388,18 +467,20 @@
         }
 
         .footMenu {
-          padding: 40px;
+          padding: 40px 0;
+          font-size: 14px;
+          width: 100%;
 
           @include responsive(pc-screens) {
-            width: 25%;
+            width: 30%;
             padding: 0;
-            font-size: 13px;
+            font-size: 14px;
           }
           ul {
             display: flex;
             width: 100%;
-            padding: 10px;
-            margin-left: 5px;
+            padding: 10px ;
+            // margin-left: 5px;
 
             &:last-child {
               text-align: left;

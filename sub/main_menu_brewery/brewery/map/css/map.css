@@ -223,6 +223,7 @@ p {
 @media screen and (min-width: 1024px) {
   .wrapper .flexWrapper main .main .introStart {
     text-align: left;
+    margin-top: 130px;
   }
 }
 .wrapper .flexWrapper main .main .introStart h3 {
@@ -255,13 +256,18 @@ p {
   margin-top: 50px;
   width: 100%;
   height: 100%;
+  text-align: center;
+}
+.wrapper .flexWrapper main .main .sect1 h4 {
+  font-size: 30px;
+  margin-bottom: 50px;
 }
 .wrapper .flexWrapper main .main .sect1 img {
   width: 100%;
 }
 @media screen and (min-width: 1024px) {
   .wrapper .flexWrapper main .main .sect1 img {
-    width: 720px;
+    width: 70%;
   }
 }
 .wrapper .flexWrapper main .main .sect2 {
@@ -295,9 +301,19 @@ p {
   height: 100%;
 }
 @media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .main .sect2 .newBrewery .brewConts .cont .beforeClick {
+    display: block;
+  }
+}
+@media screen and (min-width: 1024px) {
   .wrapper .flexWrapper main .main .sect2 .newBrewery .brewConts .cont .beforeClick img {
     width: 160px;
     cursor: pointer;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .main .sect2 .newBrewery .brewConts .cont .afterClick {
+    display: none;
   }
 }
 .wrapper .flexWrapper main .main .sect2 .newBrewery .brewConts .cont .afterClick .background {
@@ -330,7 +346,7 @@ p {
 .wrapper .flexWrapper main .main .sect2 .newBrewery .brewConts .cont .afterClick .background .info {
   width: 40%;
   height: auto;
-  padding: 12% 0;
+  padding-top: 30px;
   font-size: 14px;
 }
 @media screen and (min-width: 1024px) {
@@ -369,6 +385,76 @@ p {
   width: 100%;
   height: 100%;
 }
+.wrapper .flexWrapper main .main .sect2 .newBrewery .brewConts .cont .afterClick .reverseBackground {
+  background-image: url(../map_imgs/map_img_background.png);
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .main .sect2 .newBrewery .brewConts .cont .afterClick .reverseBackground {
+    width: 100%;
+  }
+}
+.wrapper .flexWrapper main .main .sect2 .newBrewery .brewConts .cont .afterClick .reverseBackground .title {
+  height: 100%;
+  width: 10%;
+  font-size: 24px;
+  font-weight: 600;
+  writing-mode: vertical-lr;
+  padding: 0 10px;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .main .sect2 .newBrewery .brewConts .cont .afterClick .reverseBackground .title {
+    font-size: 30px;
+    padding: 0 20px;
+    width: 10%;
+  }
+}
+.wrapper .flexWrapper main .main .sect2 .newBrewery .brewConts .cont .afterClick .reverseBackground .info {
+  width: 40%;
+  height: auto;
+  padding-top: 30px;
+  font-size: 14px;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .main .sect2 .newBrewery .brewConts .cont .afterClick .reverseBackground .info {
+    display: none;
+  }
+}
+.wrapper .flexWrapper main .main .sect2 .newBrewery .brewConts .cont .afterClick .reverseBackground .info address {
+  font-style: normal;
+  font-family: "NotoSerifKR-Regular";
+}
+.wrapper .flexWrapper main .main .sect2 .newBrewery .brewConts .cont .afterClick .reverseBackground .info a {
+  font-family: "NotoSerifKR-Regular";
+}
+.wrapper .flexWrapper main .main .sect2 .newBrewery .brewConts .cont .afterClick .reverseBackground .pcInfo {
+  display: none;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .main .sect2 .newBrewery .brewConts .cont .afterClick .reverseBackground .pcInfo {
+    display: block;
+    width: 66%;
+    background-color: #000;
+  }
+}
+.wrapper .flexWrapper main .main .sect2 .newBrewery .brewConts .cont .afterClick .reverseBackground .circle {
+  width: 40%;
+  height: 100%;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .main .sect2 .newBrewery .brewConts .cont .afterClick .reverseBackground .circle {
+    width: 24%;
+    height: auto;
+  }
+}
+.wrapper .flexWrapper main .main .sect2 .newBrewery .brewConts .cont .afterClick .reverseBackground .circle img {
+  width: 100%;
+  height: 100%;
+}
 @media screen and (min-width: 1024px) {
   .wrapper footer .container {
     margin: 0;
@@ -401,6 +487,7 @@ p {
 }
 .wrapper footer .footer .footInfo address {
   font-style: normal;
+  font-family: "NotoSerifKR-Regular";
 }
 .wrapper footer .footer .footInfo p {
   margin: 20px 0;
@@ -410,10 +497,12 @@ p {
     margin: 0;
   }
 }
+.wrapper footer .footer .footBox {
+  width: 100%;
+}
 @media screen and (min-width: 1024px) {
   .wrapper footer .footer .footBox {
     display: flex;
-    width: 100%;
     height: 250px;
     flex-direction: row;
     justify-content: space-between;
@@ -431,7 +520,7 @@ p {
 }
 @media screen and (min-width: 1024px) {
   .wrapper footer .footer .footBox .footLogoCopy {
-    width: 25%;
+    width: 30%;
     padding: 0;
     border: 0;
   }
@@ -456,7 +545,7 @@ p {
 @media screen and (min-width: 1024px) {
   .wrapper footer .footer .footBox .footSns {
     position: relative;
-    width: 50%;
+    width: 40%;
     height: 250px;
     border-bottom: 0;
     border-right: 1px solid #ccc;
@@ -477,7 +566,7 @@ p {
 }
 @media screen and (min-width: 1024px) {
   .wrapper footer .footer .footBox .footSns .footSnsCont li {
-    padding-right: 30px;
+    padding-right: 15px;
   }
   .wrapper footer .footer .footBox .footSns .footSnsCont li:last-child {
     padding-right: 0;
@@ -497,20 +586,21 @@ p {
   }
 }
 .wrapper footer .footer .footBox .footMenu {
-  padding: 40px;
+  padding: 40px 0;
+  font-size: 14px;
+  width: 100%;
 }
 @media screen and (min-width: 1024px) {
   .wrapper footer .footer .footBox .footMenu {
-    width: 25%;
+    width: 30%;
     padding: 0;
-    font-size: 13px;
+    font-size: 14px;
   }
 }
 .wrapper footer .footer .footBox .footMenu ul {
   display: flex;
   width: 100%;
   padding: 10px;
-  margin-left: 5px;
 }
 .wrapper footer .footer .footBox .footMenu ul:last-child {
   text-align: left;
