@@ -291,7 +291,7 @@ p {
 }
 .wrapper .flexWrapper main .main section.brewerySect1 .p p {
   padding: 50px 20px;
-  line-height: 36px;
+  line-height: 30px;
 }
 @media screen and (min-width: 1024px) {
   .wrapper .flexWrapper main .main section.brewerySect1 .p p {

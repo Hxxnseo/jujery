@@ -70,6 +70,8 @@ body {
 
 header {
   width: 100%;
+  z-index: 100;
+  position: relative;
 }
 header .pc {
   display: none;
@@ -146,9 +148,11 @@ main {
   width: 100%;
   height: 100%;
 }
-main .pcSec1 {
+main section {
   width: 100%;
   height: 100vh;
+}
+main .pcSec1 {
   text-align: center;
   position: relative;
 }
@@ -185,6 +189,63 @@ main .pcSec1 .para h3 {
 }
 main .pcSec1 .para h4 {
   font-size: 40px;
+}
+main .pcSec2 {
+  display: none;
+  position: relative;
+}
+@media screen and (min-width: 1024px) {
+  main .pcSec2 {
+    display: block;
+  }
+}
+main .pcSec2 .h3ImgP {
+  width: 100%;
+}
+main .pcSec2 .h3ImgP ul {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+main .pcSec2 .h3ImgP ul li {
+  padding: 0 10px;
+}
+main .pcSec2 .h3ImgP ul li a {
+  width: 100%;
+  color: white;
+  font-size: 100px;
+}
+main .pcSec3 {
+  position: relative;
+}
+main .pcSec3 .category {
+  width: 100%;
+}
+main .pcSec3 .category ul {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+main .pcSec3 .category ul li {
+  padding-bottom: 40px;
+}
+main .pcSec3 .category ul li:last-child {
+  padding: 0;
+}
+main .pcSec3 .category ul li a {
+  width: 100%;
+  color: white;
+  font-size: 90px;
+}
+main .pcSec3 .category ul li a:hover {
+  opacity: 0.1;
 }
 
 footer .container {
