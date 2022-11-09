@@ -375,76 +375,69 @@
 
             .brewery_content {
               width: 100%;
-              display: flex;
-              flex-direction: column;
 
-              .brewery2 {
-                .brewery_box {
-                  div:first-child {
-                    order: 2;
-                  }
-                  div:nth-child(2) {
-                    order: 3;
-                  }
-                  div:last-child {
-                    order: 1;
-                  }
-                }
-              }
-
-              .location_box {
-                position: relative;
-                display: flex;
-                margin-bottom: 100px;
-                img {
-                  position: absolute;
-                  top: -5px; left: 70px;
-                  width: 35px;
-                }
-                p {
-                  position: absolute;
-                  top: 0; left: 110px;
-                }
-              }
-              .qr_box {
-                display: none;
-              }
-              .brewery_box {
-                width: 100%;
-                .alcohol {
-                  margin-bottom: 50px;
-                  .alcohol_icon {
-                    img {
-                      display: none;
-                    }
-                    strong {
-                      font : {
-                        weight: normal;
-                        size: 1.5em;
-                      }
-                    }
-                  }
+              .brewery {
+                .location_box {
+                  position: relative;
+                  display: flex;
+                  margin-bottom: 100px;
                   img {
-                    display: block;
-                    margin: 0 auto;
-                    margin-top: 20px;
-                    width: 20%;
+                    position: absolute;
+                    top: -5px; left: 70px;
+                    width: 35px;
                   }
                   p {
-                    text-align: center;
-                  }
-                } // alcohol
-                .brewery_pic {
-                  display: flex;
-                  width: 200%;
-                  margin-bottom: 50px;
-                  img {
-                    width: 100%;
-                    height: 300px;
+                    position: absolute;
+                    top: 0; left: 110px;
                   }
                 }
-                .text {
-                  margin-bottom: 100px;
+                .qr_box {
+                  display: none;
+                }
+                .brewery_box {
+                  width: 100%;
+                  display: flex;
+                  flex-direction: column;
+
+                  .alcohol {
+                    margin-bottom: 50px;
+                    width: 100%;
+                    order: 1;
+                    .alcohol_icon {
+                      img {
+                        display: none;
+                      }
+                      strong {
+                        font : {
+                          weight: normal;
+                          size: 1.5em;
+                        }
+                      }
+                    }
+                    img {
+                      display: block;
+                      margin: 0 auto;
+                      margin-top: 20px;
+                      width: 20%;
+                    }
+                    p {
+                      text-align: center;
+                    }
+                  } // alcohol
+                  .brewery_pic {
+                    display: flex;
+                    width: 200%;
+                    margin-bottom: 50px;
+                    order: 2;
+                    img {
+                      width: 100%;
+                      height: 300px;
+                    }
+                  }
+                  .text {
+                    margin-bottom: 100px;
+                    order: 3;
+                  }
                 }
               }
             } // brewery_content

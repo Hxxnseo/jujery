@@ -222,8 +222,12 @@
             margin-bottom: 20px;
           }
 
-          input {
+          input[type=checkbox] {
             margin-top: 20px;
+          }
+
+          #all_agreement {
+            transform: scale(1.5);
           }
 
           strong {
