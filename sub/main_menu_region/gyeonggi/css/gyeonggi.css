@@ -17,8 +17,7 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -91,13 +90,8 @@ p {
 @media screen and (min-width: 1024px) {
   .wrapper .flexWrapper {
     height: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    flex-direction: row;
   }
 }
 .wrapper .flexWrapper header {
@@ -153,14 +147,11 @@ p {
     height: 0px;
     overflow: hidden;
     padding-top: 40px;
-    -webkit-transition: all 0.5s;
     transition: all 0.5s;
   }
 }
 @media screen and (min-width: 1024px) {
   .wrapper .flexWrapper header .header .logoMenu .menu .gnb li .subMenu li {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     padding-bottom: 0px;
   }
@@ -174,8 +165,6 @@ p {
   }
 }
 .wrapper .flexWrapper header .header .mobileLogoMenu {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 @media screen and (min-width: 1024px) {
@@ -226,8 +215,6 @@ p {
 }
 @media screen and (min-width: 1024px) {
   .wrapper .flexWrapper main .main .mainSubMenu ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     position: absolute;
     right: 100px;
@@ -289,11 +276,8 @@ p {
   }
 }
 .wrapper .flexWrapper main .main .sec1 .mobile-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   margin: 40px 0;
 }
 @media screen and (min-width: 1024px) {
@@ -429,8 +413,7 @@ p {
 .wrapper .flexWrapper main .main .sec2 .sec2-con-mo .acordian-menu li a {
   display: block;
   font-size: 18px;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   padding: 20px;
   border-top: 2px solid #dbdbdb;
 }
@@ -454,12 +437,9 @@ p {
     display: block;
     position: absolute;
     top: 780px;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     width: 100%;
-    -ms-flex-flow: wrap;
-        flex-flow: wrap;
+    flex-flow: wrap;
     padding: 0 30px;
     font-family: "NotoSerifKR-Regular";
   }
@@ -558,13 +538,9 @@ footer .footer .footInfo {
 }
 @media screen and (min-width: 1024px) {
   footer .footer .footInfo {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     width: 100%;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    justify-content: space-between;
     font-size: 20px;
     margin-bottom: 30px;
   }
@@ -586,20 +562,11 @@ footer .footer .footBox {
 }
 @media screen and (min-width: 1024px) {
   footer .footer .footBox {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     height: 250px;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     text-align: center;
     border-top: 1px solid #ccc;
     border-bottom: 1px solid #ccc;
@@ -646,12 +613,8 @@ footer .footer .footBox .footSns {
   }
 }
 footer .footer .footBox .footSns .footSnsCont {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 @media screen and (min-width: 1024px) {
   footer .footer .footBox .footSns .footSnsCont {
@@ -676,7 +639,6 @@ footer .footer .footBox .footSns .footSnsCont li img {
   footer .footer .footBox .footSns .footSnsCont li img {
     width: 60px;
     opacity: 0.5;
-    -webkit-transition: all 0.5s;
     transition: all 0.5s;
   }
   footer .footer .footBox .footSns .footSnsCont li img:hover {
@@ -696,8 +658,6 @@ footer .footer .footBox .footMenu {
   }
 }
 footer .footer .footBox .footMenu ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 100%;
   padding: 10px;
@@ -713,4 +673,4 @@ footer .footer .footBox .footMenu ul li {
 footer .footer .footBox .footMenu ul li a {
   width: 100%;
   color: white;
-}
+}/*# sourceMappingURL=gyeonggi.css.map */
