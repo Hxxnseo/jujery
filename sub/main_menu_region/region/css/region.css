@@ -17,7 +17,8 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
@@ -91,8 +92,13 @@ p {
 @media screen and (min-width: 1024px) {
   .wrapper .flexWrapper {
     height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
 }
 .wrapper .flexWrapper header {
@@ -148,11 +154,14 @@ p {
     height: 0px;
     overflow: hidden;
     padding-top: 40px;
+    -webkit-transition: all 0.5s;
     transition: all 0.5s;
   }
 }
 @media screen and (min-width: 1024px) {
   .wrapper .flexWrapper header .header .logoMenu .menu .gnb li .subMenu li {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     padding-bottom: 0px;
   }
@@ -166,6 +175,8 @@ p {
   }
 }
 .wrapper .flexWrapper header .header .mobileLogoMenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 @media screen and (min-width: 1024px) {
@@ -216,6 +227,8 @@ p {
 }
 @media screen and (min-width: 1024px) {
   .wrapper .flexWrapper main .main .mainSubMenu ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     position: absolute;
     right: 100px;
@@ -252,6 +265,8 @@ p {
 }
 .wrapper .flexWrapper main .main .sec1 .region_six {
   margin: 100px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   position: relative;
 }
@@ -352,8 +367,12 @@ p {
 }
 .wrapper .flexWrapper .sec2 .main .container .p-gap .mobile-menu {
   padding: 5px 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 @media screen and (min-width: 1024px) {
   .wrapper .flexWrapper .sec2 .main .container .p-gap .mobile-menu {
@@ -377,8 +396,12 @@ p {
   }
 }
 .wrapper .flexWrapper .sec2 .main .container .p-gap .region_box_twelve {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .wrapper .flexWrapper .sec2 .main .container .p-gap .region_box_twelve div {
   font-family: "NotoSerifKR-Regular";
@@ -459,7 +482,7 @@ p {
 .wrapper .flexWrapper .sec3 .main .container .ricewine_title h1 {
   position: absolute;
   top: 20px;
-  right: 8px;
+  left: 210px;
   font-size: 40px;
 }
 @media screen and (min-width: 1024px) {
@@ -527,14 +550,11 @@ p {
   font-size: 16px;
   padding: 10px 10px 60px 10px;
   line-height: 30px;
-}
-@media screen and (min-width: 1024px) {
-  .wrapper .flexWrapper .sec3 .main .container .ricewine-con .ricewine-con1 p {
-    width: 300px;
-  }
+  width: 300px;
 }
 .wrapper .flexWrapper .sec3 .main .container .ricewine-con .ricewine-con2 {
   text-align: right;
+  width: 330px;
 }
 @media screen and (min-width: 1024px) {
   .wrapper .flexWrapper .sec3 .main .container .ricewine-con .ricewine-con2 {
@@ -547,11 +567,9 @@ p {
 .wrapper .flexWrapper .sec3 .main .container .ricewine-con .ricewine-con2 .ricewine-p2 {
   width: 300px;
   height: 290px;
-  margin-left: 50px;
 }
 @media screen and (min-width: 1024px) {
   .wrapper .flexWrapper .sec3 .main .container .ricewine-con .ricewine-con2 .ricewine-p2 {
-    margin-left: 0;
     width: 350px;
     height: 330px;
   }
@@ -594,9 +612,13 @@ footer .footer .footInfo {
 }
 @media screen and (min-width: 1024px) {
   footer .footer .footInfo {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 100%;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     font-size: 20px;
     margin-bottom: 30px;
   }
@@ -618,11 +640,20 @@ footer .footer .footBox {
 }
 @media screen and (min-width: 1024px) {
   footer .footer .footBox {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     height: 250px;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     text-align: center;
     border-top: 1px solid #ccc;
     border-bottom: 1px solid #ccc;
@@ -669,8 +700,12 @@ footer .footer .footBox .footSns {
   }
 }
 footer .footer .footBox .footSns .footSnsCont {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 @media screen and (min-width: 1024px) {
   footer .footer .footBox .footSns .footSnsCont {
@@ -695,6 +730,7 @@ footer .footer .footBox .footSns .footSnsCont li img {
   footer .footer .footBox .footSns .footSnsCont li img {
     width: 60px;
     opacity: 0.5;
+    -webkit-transition: all 0.5s;
     transition: all 0.5s;
   }
   footer .footer .footBox .footSns .footSnsCont li img:hover {
@@ -714,6 +750,8 @@ footer .footer .footBox .footMenu {
   }
 }
 footer .footer .footBox .footMenu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 100%;
   padding: 10px;
@@ -729,4 +767,4 @@ footer .footer .footBox .footMenu ul li {
 footer .footer .footBox .footMenu ul li a {
   width: 100%;
   color: white;
-}/*# sourceMappingURL=region.css.map */
+}
