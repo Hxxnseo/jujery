@@ -533,6 +533,9 @@ p {
     display: block;
     width: 100%;
   }
+  .wrapper .flexWrapper .footer-geonggi img {
+    vertical-align: top;
+  }
 }
 
 @media screen and (min-width: 1024px) {

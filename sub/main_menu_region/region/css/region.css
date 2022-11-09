@@ -258,6 +258,11 @@ p {
 .wrapper .flexWrapper main .main .sec1 h3 {
   font-size: 40px;
 }
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .main .sec1 h3 {
+    font-size: 50px;
+  }
+}
 .wrapper .flexWrapper main .main .sec1 .region_six {
   margin: 100px 0;
   display: -webkit-box;
@@ -274,7 +279,9 @@ p {
 }
 @media screen and (min-width: 1024px) {
   .wrapper .flexWrapper main .main .sec1 .region_six div h4 {
-    margin-top: 240px;
+    margin: 240px 60px 0 110px;
+    font-size: 48px;
+    width: 150px;
   }
 }
 .wrapper .flexWrapper main .main .sec1 .region_six div img {
@@ -300,6 +307,11 @@ p {
   margin: 100px 0 50px 0;
 }
 @media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper .sec2 {
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 1024px) {
   .wrapper .flexWrapper .sec2 .main .container .p-gap {
     padding: 0 60px;
   }
@@ -317,8 +329,9 @@ p {
 @media screen and (min-width: 1024px) {
   .wrapper .flexWrapper .sec2 .main .container .p-gap .region_con h3 {
     text-align: left;
-    margin: 0 0 50px 0;
+    margin: 10px 0 50px 0;
     padding: 0 0;
+    font-size: 50px;
   }
 }
 .wrapper .flexWrapper .sec2 .main .container .p-gap .region_con span {
@@ -337,6 +350,12 @@ p {
   font-family: "NotoSerifKR-Regular";
   color: #606060;
   line-height: 20px;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper .sec2 .main .container .p-gap .region_con p {
+    font-size: 24px;
+    line-height: 30px;
+  }
 }
 .wrapper .flexWrapper .sec2 .main .container .p-gap .region_con .pc-line {
   display: none;
@@ -388,6 +407,11 @@ p {
   font-family: "NotoSerifKR-Regular";
   margin-right: 20px;
 }
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper .sec2 .main .container .p-gap .region_box_twelve div {
+    margin-bottom: 60px;
+  }
+}
 .wrapper .flexWrapper .sec2 .main .container .p-gap .region_box_twelve div img {
   width: 166px;
   height: 229px;
@@ -411,9 +435,19 @@ p {
   font-size: 14px;
   padding: 20px 0;
 }
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper .sec2 .main .container .p-gap .region_box_twelve div h4 {
+    font-size: 24px;
+  }
+}
 .wrapper .flexWrapper .sec2 .main .container .p-gap .region_box_twelve div p {
   font-size: 12px;
   line-height: 20px;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper .sec2 .main .container .p-gap .region_box_twelve div p {
+    font-size: 20px;
+  }
 }
 .wrapper .flexWrapper .sec2 .main .container .p-gap span {
   display: none;
@@ -428,27 +462,48 @@ p {
 }
 .wrapper .flexWrapper .sec3 .main .banner-2 {
   width: 100%;
-  padding-bottom: 100px;
+  margin-bottom: 100px;
 }
 @media screen and (min-width: 1024px) {
   .wrapper .flexWrapper .sec3 .main .banner-2 {
     width: 100%;
-    height: 537px;
+    height: 540px;
+    margin-top: 100px;
   }
 }
 .wrapper .flexWrapper .sec3 .main .container .ricewine_title {
   position: relative;
 }
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper .sec3 .main .container .ricewine_title {
+    position: relative;
+  }
+}
 .wrapper .flexWrapper .sec3 .main .container .ricewine_title h1 {
   position: absolute;
   top: 20px;
-  right: 8px;
+  left: 210px;
   font-size: 40px;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper .sec3 .main .container .ricewine_title h1 {
+    top: 49px;
+    left: 770px;
+    font-size: 50px;
+  }
 }
 .wrapper .flexWrapper .sec3 .main .container .ricewine_title h6 {
   margin-left: 10px;
   color: #dbdbdb;
   font-size: 24px;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper .sec3 .main .container .ricewine_title h6 {
+    position: absolute;
+    top: 60px;
+    left: 460px;
+    font-size: 32px;
+  }
 }
 .wrapper .flexWrapper .sec3 .main .container .ricewine_title span {
   display: none;
@@ -456,16 +511,32 @@ p {
 @media screen and (min-width: 1024px) {
   .wrapper .flexWrapper .sec3 .main .container .ricewine_title span {
     display: block;
-    width: 360px;
+    width: 300px;
     height: 2px;
     background-color: #dbdbdb;
+    position: absolute;
+    top: 50px;
+    left: 460px;
   }
 }
 .wrapper .flexWrapper .sec3 .main .container .ricewine-con {
   position: relative;
-  height: 1342px;
+  height: 1350px;
   top: 60px;
   font-family: "NotoSerifKR-Regular";
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper .sec3 .main .container .ricewine-con {
+    position: relative;
+    top: 0;
+    height: 1100px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper .sec3 .main .container .ricewine-con .ricewine-con1 {
+    position: absolute;
+    left: 160px;
+  }
 }
 .wrapper .flexWrapper .sec3 .main .container .ricewine-con .ricewine-con1 .ricewine-p1 {
   width: 300px;
@@ -479,14 +550,29 @@ p {
   font-size: 16px;
   padding: 10px 10px 60px 10px;
   line-height: 30px;
+  width: 300px;
 }
 .wrapper .flexWrapper .sec3 .main .container .ricewine-con .ricewine-con2 {
   text-align: right;
+  width: 330px;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper .sec3 .main .container .ricewine-con .ricewine-con2 {
+    position: absolute;
+    right: 150px;
+    top: 350px;
+    text-align: left;
+  }
 }
 .wrapper .flexWrapper .sec3 .main .container .ricewine-con .ricewine-con2 .ricewine-p2 {
   width: 300px;
   height: 290px;
-  margin-left: 50px;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper .sec3 .main .container .ricewine-con .ricewine-con2 .ricewine-p2 {
+    width: 350px;
+    height: 330px;
+  }
 }
 .wrapper .flexWrapper .sec3 .main .container .ricewine-con .ricewine-con2 h6 {
   font-size: 24px;
@@ -496,6 +582,11 @@ p {
   font-size: 16px;
   padding: 10px 10px 60px 10px;
   line-height: 30px;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper .sec3 .main .container .ricewine-con .ricewine-con2 p {
+    width: 350px;
+  }
 }
 
 @media screen and (min-width: 1024px) {

@@ -377,27 +377,7 @@
               position: relative;
               width: 100%; height: 300px;
               z-index: 3;
-            }
-            &:nth-child(odd) {
-              background-image: url(../../img/black_object.png);
-              @include responsive(pc-screens) {
-                background-image: url(../../img/black_pc.png);
-              }
-            }
-            &:nth-child(2n) {
-              margin-left: 30%;
-              background-image: url(../../img/black_object_2.png);
-              @include responsive(pc-screens) {
-                background-image: url(../../img/black_pc.png);
-                margin: 0;
-              }
-              
-              h4 {
-                text-align: right;
-                @include responsive(pc-screens) {
-                  text-align: left;
-                }
-              }
+
             }
             background-repeat: no-repeat;
             h4 {
@@ -409,6 +389,27 @@
               line-height: 2.2em;
             }
           } // desc
+          .odd {
+            background-image: url(../../img/black_object.png);
+            @include responsive(pc-screens) {
+              background-image: url(../../img/black_pc.png);
+            }
+          }
+
+          .even {
+            margin-left: 160px;
+            background-image: url(../../img/black_object_2.png);
+            @include responsive(pc-screens) {
+              background-image: url(../../img/black_pc.png);
+              margin: 0;
+            }
+            h4 {
+              text-align: right;
+              @include responsive(pc-screens) {
+                text-align: left;
+              }
+            }
+          }
         } // dis, pro
 
         .dis {
@@ -417,9 +418,9 @@
             margin-top: -38px;
           }
           img { margin-top: 13px; margin-left: 320px;}
-          img.dae { margin-top: 70px;}
+          img.dae { margin-top: 70px; margin-left: 10px;}
           img.ja { width: 88px; margin-top: 30px; }
-          img.back { width: 90px; margin-top: 20px;}
+          img.back { width: 90px; margin-top: 20px; margin-left: 40px;}
           @include responsive(pc-screens) {
             img.do { margin-top: -380px; margin-left: 120px;}
             img.dae { margin-top: -380px; margin-left: 120px; }
@@ -446,23 +447,23 @@
         .pro {
           img {
             position: absolute;
-            width: 140px;
+            width: 140px; margin-left: 310px;
           }
-          img.lee{margin-top: 80px; margin-left: 310px;}
-          img.gam{margin-top: 65px; margin-left: -15px;}
-          img.juck{width: 87px;margin-top: -6px; margin-left: 310px;}
-          img.sol{width: 175px; margin-top: 130px; margin-left: -10px;}
-          img.moon{width: 100px; margin-top: -295px; margin-left: -100px;}
+          img.lee{margin-top: 80px;}
+          img.gam{margin-top: 65px; margin-left: 10px;}
+          img.juck{width: 87px;margin-top: -6px;}
+          img.sol{width: 175px; margin-top: 130px; margin-left: 7px;}
+          img.moon{width: 100px; margin-top: 10px;}
           @include responsive(pc-screens) {
             img.lee{margin-top: -360px; margin-left: 120px;}
             img.gam{margin-top: -360px; margin-left: 120px;}
             img.juck{margin-top: -390px; margin-left: 120px;}
             img.sol{margin-top: -360px; margin-left: 120px;}
-            img.moon{margin-top: -360px; margin-left: 120px;}
-          }
-          &:nth-child(1),
-          &:nth-child(1) {
-            margin-bottom: 200px;
+            img.moon{margin-top: -380px; margin-left: 120px;}
+            &:nth-child(1),
+            &:nth-child(1) {
+              margin-bottom: 200px;
+            }
           }
         }
       } //.main

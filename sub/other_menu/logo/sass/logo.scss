@@ -206,6 +206,17 @@
         } // mainSubMenu
 
         // 여기부터 작성하세요오오
+        section {
+          h4{
+            text-align: center;
+            margin-bottom: 50px;
+            font-size: 34px;
+            @include responsive(pc-screens) {
+              font-size: 40px;
+            }
+          }
+          margin-bottom: 100px;
+        }
         .downloadpage {
           h3 {
             margin-top: 30px;
@@ -222,29 +233,41 @@
             text-align: center;
           }
 
-          section {
-            margin-bottom: 100px;
-            h4{
-              text-align: center;
-              margin-bottom: 50px;
-              @include responsive(pc-screens) {
-                font-size: 40px;
-              }
-            }
-          }
+          margin-bottom: 100px;
 
           section.logoguide {
             margin-top: 100px;
             img {
               width: 100%;
+              border: 1px solid #000;
             }
             .containerj {
+              .guide {
+                margin-bottom: 50px;
+                .logos {
+                  margin-top: 20px;
+                  img {
+                    &:first-child {
+                      margin-bottom: 10px;
+                    }
+                  }
+                }
+              }
               @include responsive(pc-screens) {
                 display: flex;
                 text-align: left;
                 .guide {
+                  margin-left: 1.041666666666667%;
                   .logos {
                     display: flex;
+                    width: 50%;
+                    img {
+                      margin-top: 10px;
+                      height: 200px;
+                      &:first-child {
+                        margin-right: 3px;
+                      }
+                    }
                   }
                 }
               }
@@ -252,6 +275,15 @@
           } // logoguide
 
           .button {
+            .btn-box {
+              @include responsive(pc-screens) {
+                display: flex;
+                a {
+                  width: 100%;
+                }
+              }
+            }
+
             .black {
               font-family: $font-main;
               text-align: center;
@@ -272,14 +304,22 @@
           }
 
           .snsImg {
+            img {
+              width: 100%;
+              margin-bottom: 20px;
+              border: 1px solid #000;
+            }
             div {
+              font-size: 1.4em;
               text-align: center;
               font-family: $font-main;
-              background-color: #fff;
-              border: 1px solid #000;
-              width: 50%;
-              margin: 10px 25%;
-              padding: 3% 5%;
+              background-color: #000; color: #fff;
+              width: 100%;
+              padding: 25px ;
+              @include responsive(pc-screens) {
+                margin: 10px 25%;
+                width: 50%;
+              }
             }
           }
 
