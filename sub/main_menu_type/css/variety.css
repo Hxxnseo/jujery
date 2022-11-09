@@ -259,34 +259,34 @@ p {
 .wrapper .flexWrapper main .main section.variety_alcohol .alcohol-box {
   width: 100%;
 }
-.wrapper .flexWrapper main .main section.variety_alcohol .alcohol-box h3 {
+.wrapper .flexWrapper main .main section.variety_alcohol .alcohol-box .alcohol h3 {
   text-align: center;
   margin-bottom: 20px;
 }
-.wrapper .flexWrapper main .main section.variety_alcohol .alcohol-box p {
+.wrapper .flexWrapper main .main section.variety_alcohol .alcohol-box .alcohol p {
   line-height: 30px;
   font-size: 1.25em;
 }
-.wrapper .flexWrapper main .main section.variety_alcohol .alcohol-box img {
+.wrapper .flexWrapper main .main section.variety_alcohol .alcohol-box .alcohol img {
   width: 100%;
   margin-bottom: 50px;
 }
 @media screen and (min-width: 1024px) {
-  .wrapper .flexWrapper main .main section.variety_alcohol .alcohol-box img {
+  .wrapper .flexWrapper main .main section.variety_alcohol .alcohol-box .alcohol img {
     width: 405px;
   }
 }
-.wrapper .flexWrapper main .main section.variety_alcohol .alcohol-box .bg {
+.wrapper .flexWrapper main .main section.variety_alcohol .alcohol-box .alcohol .bg {
   display: none;
 }
 @media screen and (min-width: 1024px) {
-  .wrapper .flexWrapper main .main section.variety_alcohol .alcohol-box .bg {
+  .wrapper .flexWrapper main .main section.variety_alcohol .alcohol-box .alcohol .bg {
     display: block;
     width: 480px;
     height: 530px;
   }
 }
-.wrapper .flexWrapper main .main section.variety_alcohol .alcohol-box section:nth-child(odd) {
+.wrapper .flexWrapper main .main section.variety_alcohol .alcohol-box .odd {
   position: relative;
   width: 100%;
   display: flex;
@@ -294,17 +294,17 @@ p {
   margin-bottom: 50px;
 }
 @media screen and (min-width: 1024px) {
-  .wrapper .flexWrapper main .main section.variety_alcohol .alcohol-box section:nth-child(odd) {
+  .wrapper .flexWrapper main .main section.variety_alcohol .alcohol-box .odd {
     flex-direction: row;
     height: 630px;
   }
 }
-.wrapper .flexWrapper main .main section.variety_alcohol .alcohol-box section:nth-child(odd) .text_box {
+.wrapper .flexWrapper main .main section.variety_alcohol .alcohol-box .odd .text_box {
   width: 100%;
   order: 2;
 }
 @media screen and (min-width: 1024px) {
-  .wrapper .flexWrapper main .main section.variety_alcohol .alcohol-box section:nth-child(odd) .text_box {
+  .wrapper .flexWrapper main .main section.variety_alcohol .alcohol-box .odd .text_box {
     width: 33%;
     order: 1;
     position: absolute;
@@ -312,16 +312,16 @@ p {
     left: 45px;
   }
 }
-.wrapper .flexWrapper main .main section.variety_alcohol .alcohol-box section:nth-child(odd) .img_box {
+.wrapper .flexWrapper main .main section.variety_alcohol .alcohol-box .odd .img_box {
   order: 1;
 }
 @media screen and (min-width: 1024px) {
-  .wrapper .flexWrapper main .main section.variety_alcohol .alcohol-box section:nth-child(odd) .img_box {
+  .wrapper .flexWrapper main .main section.variety_alcohol .alcohol-box .odd .img_box {
     display: flex;
   }
 }
 @media screen and (min-width: 1024px) {
-  .wrapper .flexWrapper main .main section.variety_alcohol .alcohol-box section:nth-child(odd) .img_box a img {
+  .wrapper .flexWrapper main .main section.variety_alcohol .alcohol-box .odd .img_box a img {
     position: absolute;
     top: 65px;
     left: 480px;
@@ -329,42 +329,42 @@ p {
   }
 }
 @media screen and (min-width: 1024px) {
-  .wrapper .flexWrapper main .main section.variety_alcohol .alcohol-box section:nth-child(odd) .img_box .bg {
+  .wrapper .flexWrapper main .main section.variety_alcohol .alcohol-box .odd .img_box .bg {
     position: absolute;
     top: 0;
     left: 700px;
   }
 }
-.wrapper .flexWrapper main .main section.variety_alcohol .alcohol-box section:nth-child(even) {
+.wrapper .flexWrapper main .main section.variety_alcohol .alcohol-box .even {
   position: relative;
   margin-bottom: 50px;
 }
 @media screen and (min-width: 1024px) {
-  .wrapper .flexWrapper main .main section.variety_alcohol .alcohol-box section:nth-child(even) {
+  .wrapper .flexWrapper main .main section.variety_alcohol .alcohol-box .even {
     height: 630px;
   }
 }
-.wrapper .flexWrapper main .main section.variety_alcohol .alcohol-box section:nth-child(even) .text_box {
+.wrapper .flexWrapper main .main section.variety_alcohol .alcohol-box .even .text_box {
   width: 100%;
 }
 @media screen and (min-width: 1024px) {
-  .wrapper .flexWrapper main .main section.variety_alcohol .alcohol-box section:nth-child(even) .text_box {
+  .wrapper .flexWrapper main .main section.variety_alcohol .alcohol-box .even .text_box {
     width: 33%;
     position: absolute;
     top: 190px;
     left: 750px;
   }
 }
-.wrapper .flexWrapper main .main section.variety_alcohol .alcohol-box section:nth-child(even) .img_box {
+.wrapper .flexWrapper main .main section.variety_alcohol .alcohol-box .even .img_box {
   position: relative;
 }
 @media screen and (min-width: 1024px) {
-  .wrapper .flexWrapper main .main section.variety_alcohol .alcohol-box section:nth-child(even) .img_box {
+  .wrapper .flexWrapper main .main section.variety_alcohol .alcohol-box .even .img_box {
     display: flex;
   }
 }
 @media screen and (min-width: 1024px) {
-  .wrapper .flexWrapper main .main section.variety_alcohol .alcohol-box section:nth-child(even) .img_box a img {
+  .wrapper .flexWrapper main .main section.variety_alcohol .alcohol-box .even .img_box a img {
     position: absolute;
     top: 65px;
     left: 300px;
@@ -373,7 +373,7 @@ p {
   }
 }
 @media screen and (min-width: 1024px) {
-  .wrapper .flexWrapper main .main section.variety_alcohol .alcohol-box section:nth-child(even) .img_box .bg {
+  .wrapper .flexWrapper main .main section.variety_alcohol .alcohol-box .even .img_box .bg {
     position: absolute;
     top: 0;
     left: 0px;

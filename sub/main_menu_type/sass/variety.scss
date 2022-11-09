@@ -234,34 +234,36 @@
             width: 100%;
 
             // 공통부분
-            h3 {
-              text-align: center;
-              margin-bottom: 20px;
-            }
-
-            p {
-              line-height: 30px;
-              font-size: 1.25em;
-            }
-
-            img {
-              width: 100%;
-              margin-bottom: 50px;
-              @include responsive(pc-screens) {
-                width: 405px;
+            .alcohol {
+              h3 {
+                text-align: center;
+                margin-bottom: 20px;
+              }
+  
+              p {
+                line-height: 30px;
+                font-size: 1.25em;
+              }
+  
+              img {
+                width: 100%;
+                margin-bottom: 50px;
+                @include responsive(pc-screens) {
+                  width: 405px;
+                }
+              }
+  
+              .bg {
+                display: none;
+                @include responsive(pc-screens) {
+                  display: block;
+                  width: 480px;
+                  height: 530px;
+                }
               }
             }
 
-            .bg {
-              display: none;
-              @include responsive(pc-screens) {
-                display: block;
-                width: 480px;
-                height: 530px;
-              }
-            }
-
-            section:nth-child(odd) {
+            .odd {
               position: relative;
               width: 100%;
               display: flex;
@@ -308,7 +310,7 @@
                 }
               }
             }
-            section:nth-child(even) {
+            .even {
               position: relative;
               margin-bottom: 50px;
               // background-color: pink;
