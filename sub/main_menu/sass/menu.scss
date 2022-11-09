@@ -11,27 +11,61 @@
 }
 
 .wrapper {
-  background-image: url(../../../images/background/main_page_background.png);
+  @include responsive(pc-screens) {
+    width: 100%;
+    height: 935px;
+    position: relative;
+    background-image: url(../../../images/background/main_page_background.png);
+    z-index: 1;
+  }
+  .wrap-inner {
+    height: 100vh;
+    background-image: url(../../../images/background/main_menu_background.png);
+    @include responsive(pc-screens) {
+    position: absolute;
+    right:0;
+    top:0;
+    width: 70%;
+    height: 930px;
+    z-index: 2;
+    }
+
+    header {
+      .mobileLogoMenu {
+        display: flex;
+        @include responsive(pc-screens) {
+          display: none;
+        }
+
+        .mobileLogo {
+          position: fixed;
+          top: 22px;
+          left: 20px;
+        }
+        .close {
+          position: fixed;
+          right:20px;
+          top: 30px;
+          img {
+            width: 26px;
+            height: 26px;
+          }
+        }
+      } // mobileLogoMenu
+    } // header
+
+    .menu {
+      .gnb {
+
+        display: flex;
+      }
+    }
+
+
+
+  } // wrap-inner
 } // wrapper
 
-.close {
-  width: 50px;
-  height: 50px;
-  opacity: 0.8;
-}
 
-.close:before,
-.close:after {
-  position: absolute;
-  left: 15px;
-  content: " ";
-  height: 40px;
-  width: 2px;
-  background-color: #000;
-}
-.close:before {
-  transform: rotate(45deg);
-}
-.close:after {
-  transform: rotate(-45deg);
-}
+
+
