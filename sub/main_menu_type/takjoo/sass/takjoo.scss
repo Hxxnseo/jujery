@@ -18,7 +18,7 @@
   // background-color: #000;
   // max-width: 1200px; // pc
 
-  // background-color: #000;
+  background-color: #ccc;
   @include responsive(pc-screens) {
     padding: 0;
     margin: 0 auto;
@@ -207,8 +207,12 @@
 
         aside.slide {
           width: 100%;
-          overflow: hidden;
-          margin: 30px 0 20px;
+          // overflow: hidden;
+          margin-top: 30px;
+
+          @include responsive(pc-screens) {
+            margin-top: 130px;
+          }
 
           ul {
             position: relative;
@@ -222,10 +226,17 @@
                 a {
                   button {
                     position: absolute;
-                    top: 56.5%; left:25%;
+                    top: 58%; left:26%;
                     width: 100px;
                     height: 35px;
                     border-radius: 5px;
+                    cursor: pointer;
+
+                    @include responsive(pc-screens) {
+                      top: 58.7%; left:26%;
+                      width: 150px;
+                      height: 50px;
+                    }
                   }
                 }
               }
@@ -235,25 +246,55 @@
 
                 img {
                   width: 100%;
-                  height: 300px;
+                  height: 400px;
+                  vertical-align: top;
+                  margin-bottom: 20px;
+
+                  @include responsive(pc-screens) {
+                    height: 680px;
+                    margin-bottom: 0;
+                  }
                 }
               }
             }
           }
         }
+
         nav {
           margin-bottom: 100px;
+          width: 100%;
 
           .gnb {
             display: flex;
             justify-content: space-around;
+            @include responsive(pc-screens) {
+              border: 1px solid #000;
+            }
 
             li {
+              @include responsive(pc-screens) {
+                border-right: 1px solid #000;
+
+                &:last-child {
+                  border-right: 0;
+                }
+              }
               a {
                 font-family: $font-sub;
+                @include responsive(pc-screens) {
+                  padding: 20px 95px;
+                  &:hover {
+                    background-color: #000;
+                    color: #fff;
+                  }
+                }
 
                 &:hover {
                   text-decoration: underline;
+
+                  @include responsive(pc-screens) {
+                    text-decoration: none;
+                  }
                 }
               }
             }
@@ -268,6 +309,10 @@
           h3 {
             text-align: center;
             font-size: 1.875em;
+
+            @include responsive(pc-screens) {
+              font-size: 2.5em;
+            }
           }
           
           .recommend {
@@ -275,15 +320,26 @@
             display: flex;
             margin-top: 40px;
 
+            @include responsive(pc-screens) {
+              width: 150%;
+            }
+
               .rec-des {
                 position: relative;
                 width: 75%;
 
+                @include responsive(pc-screens) {
+                  width: 30%;
+                }
+
                 .rec-item {
                   width: 100%;
+                  p {
+                    line-height: 30px;
+                  }
                   button { // 정보나오게 하는 btn
                     position: absolute;
-                    top: 60px; left: 15px;
+                    top: 72px; left: 12px;
                     width: 25px;
                     height: 25px;
                     border-radius: 50%;
@@ -339,35 +395,81 @@
             h3 {
               text-align: center;
               font-size: 1.875em;
+
+              @include responsive(pc-screens) {
+                font-size: 2.5em;
+              }
             }
 
             .category_wrap {
+              width: 100%;
+              position: relative;
               margin-top: 40px;
+              overflow: hidden;
               
               a {
                 .slider {
                   display: none;
+                  @include responsive(pc-screens) {
+                    display: block;
+                    width: 2%;
+                  }
+                }
+                .before {
+                  @include responsive(pc-screens) {
+                    position: absolute;
+                    top: 60px;
+                    left: 0;
+                  }
+                }
+                .next {
+                  @include responsive(pc-screens) {
+                    position: absolute;
+                    top: 60px;
+                    right: 0;
+                  }
                 }
               }
               
-              ul{
+              .brewery_item{
                 width: 100%;
                 display: flex;
+                flex-wrap: wrap;
                 margin-bottom: 50px;
-                &:last-of-type {
-                margin-bottom: 20px;
+
+                @include responsive(pc-screens) {
+                  margin: 0 auto;
+                  width: 90%;
+                  flex-wrap: nowrap;
                 }
+
                 li {
                   width: 30%;
                   margin-right: 5%;
-                  &:last-child {
-                  margin-right: 0;
+                  margin-bottom: 5%;
+                  @include responsive(pc-screens) {
+                    justify-content: space-between;
+                    width:18%;
+                    &:hover {
+                      border: 2px solid #000;
+                      border-radius: 50%;
+                    }
                   }
+
                   a {
                     img {
                       width: 100%;
                       border-radius: 50%;
                     }
+                  }
+                }
+                .pic_end {
+                  margin-right: 0;
+                }
+                
+                .first {
+                  @include responsive(pc-screens) {
+                    margin-right: 5%;
                   }
                 }
               }
@@ -376,19 +478,14 @@
             .brewery_content {
               width: 100%;
 
-              .brewery {
                 .location_box {
-                  position: relative;
+                  align-items: center;
                   display: flex;
+                  justify-content: center;
                   margin-bottom: 100px;
+
                   img {
-                    position: absolute;
-                    top: -5px; left: 70px;
                     width: 35px;
-                  }
-                  p {
-                    position: absolute;
-                    top: 0; left: 110px;
                   }
                 }
                 .qr_box {
@@ -403,25 +500,24 @@
                     margin-bottom: 50px;
                     width: 100%;
                     order: 1;
-                    .alcohol_icon {
-                      img {
-                        display: none;
-                      }
                       strong {
                         font : {
                           weight: normal;
                           size: 1.5em;
                         }
                       }
-                    }
-                    img {
-                      display: block;
-                      margin: 0 auto;
-                      margin-top: 20px;
-                      width: 20%;
-                    }
-                    p {
-                      text-align: center;
+                      .alcohol_box {
+                        img {
+                          display: block;
+                          margin: 0 auto;
+                          margin-top: 20px;
+                          width: 20%;
+                        }
+
+                        p {
+                          text-align: center;
+                        }
+                      }
                     }
                   } // alcohol
                   .brewery_pic {
@@ -437,14 +533,121 @@
                   .text {
                     margin-bottom: 100px;
                     order: 3;
+                    p {
+                      line-height: 30px;
+                    }
                   }
-                }
-              }
-            } // brewery_content
+
+                  // 대표술 이미지크기
+                  .b2 {
+                    .brewery_box {
+                        .alcohol{
+                          img {
+                            width: 33%;
+                          }
+                        }
+                      }
+                    }
+                  .b3 {
+                    .brewery_box {
+                      .alcohol_box {
+                        img {
+                          width: 26%;
+                        }
+                      }
+                    }
+                  }
+                  .b4 {
+                    .brewery_box {
+                      .alcohol_box {
+                        img {
+                          width: 18%;
+                        }
+                      }
+                    }
+                  }
+                  .b5,
+                  .b6 {
+                    .brewery_box {
+                      .alcohol_box {
+                        img {
+                          width: 27%;
+                        }
+                      }
+                    }
+                  }
+
+                  // about 복순도가
+                  .b1,
+                  .b5 {
+                    @include responsive(pc-screens) {
+                      width: 100%;
+                    }
+
+                    .location {
+                      @include responsive(pc-screens) {
+                        width: 100%; height: 50px;
+                        display: flex;
+                        justify-content:center;
+                      }
+                      .location_box {
+                        @include responsive(pc-screens) {
+                          margin-right: 20px;
+                        }
+                      }
+                      .qr_box {
+                        @include responsive(pc-screens) {
+                          width: 50%;
+                          display: block;
+                          display: flex;
+                          background-color: yellow;
+                        }
+                      }
+                    }
+
+                    .brewery_box {
+                      @include responsive(pc-screens) {
+                        width: 100%; height: 400px;
+                        display: flex;
+                        flex-direction: row;
+                      }
+                      .b {
+                        @include responsive(pc-screens) {
+                          width: 30%;
+                          margin-right: 5%;
+                          &:last-child {
+                            margin-right: 0;
+                          }
+                        }
+                      }
+                      .brewery_box {
+                        img {
+                          @include responsive(pc-screens) {
+                             // 수직 가운데 정렬 시키기
+                          }
+                        }
+                      }
+                      
+                      .brewery_pic {
+                        @include responsive(pc-screens) {
+                          display: flex;
+                          flex-direction: column;
+                        }
+                        img {
+                          @include responsive(pc-screens) {
+                            margin-bottom: 15px;
+                          }
+                        }
+                      }
+                    }
+                  } // b1
+                }// brewery_content
+              } //section.brewery
+            }
           }
         }
       } // main
-    }
+
 
     footer {
       .container {
@@ -618,4 +821,3 @@
         }
       }
     }
-  }
