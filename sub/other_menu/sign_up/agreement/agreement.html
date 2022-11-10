@@ -7,6 +7,11 @@
     <link rel="stylesheet" href="./css/agreement.css" />
     <link rel="shortcut icon" type="image" href="../../../main_menu_type/images/icon/jujerytitlelogo.png">
     <title>주저리</title>
+    <script>
+      function nextBtn() {
+        window.location.pathname = "/path/to/another/signUp.html/";
+      }
+    </script>
   </head>
   <body>
     <div class="wrapper">
@@ -137,7 +142,7 @@
                   </div> <!-- join_certify -->
                   <div class="pre_next_btn">
                     <button>이전단계</button>
-                    <button>다음단계</button>
+                    <button onclick="nextBtn()">다음단계</button>
                   </div>
             </section>
             </div> <!-- main -->

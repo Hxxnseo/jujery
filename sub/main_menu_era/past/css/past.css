@@ -365,13 +365,16 @@ p {
 .wrapper .flexWrapper main .main .title h4 .next {
   color: #ccc;
 }
+.wrapper .flexWrapper main .main .title h4 div.gray a {
+  color: #ccc;
+}
 @media screen and (min-width: 1024px) {
   .wrapper .flexWrapper main .main .everypro,
 .wrapper .flexWrapper main .main .everydis {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin-top: 180px;
+    margin-top: 310px;
     width: 100%;
   }
 }
@@ -429,6 +432,16 @@ p {
     height: 300px;
     z-index: 3;
   }
+  .wrapper .flexWrapper main .main .dis .desc .title,
+.wrapper .flexWrapper main .main .pro .desc .title {
+    font-size: 2.5em;
+    margin-top: 40%;
+    margin-left: 25%;
+  }
+  .wrapper .flexWrapper main .main .dis .desc .show,
+.wrapper .flexWrapper main .main .pro .desc .show {
+    display: none;
+  }
 }
 .wrapper .flexWrapper main .main .dis .desc h4,
 .wrapper .flexWrapper main .main .pro .desc h4 {
@@ -485,11 +498,11 @@ p {
   margin-left: 10px;
 }
 .wrapper .flexWrapper main .main .dis img.ja {
-  width: 88px;
+  width: 75px;
   margin-top: 30px;
 }
 .wrapper .flexWrapper main .main .dis img.back {
-  width: 90px;
+  width: 85px;
   margin-top: 20px;
   margin-left: 40px;
 }
@@ -525,7 +538,7 @@ p {
 }
 @media screen and (min-width: 1024px) {
   .wrapper .flexWrapper main .main .dis:first-child {
-    margin-bottom: 120px;
+    margin-bottom: 280px;
   }
 }
 .wrapper .flexWrapper main .main .pro img {
@@ -574,8 +587,8 @@ p {
     margin-top: -380px;
     margin-left: 120px;
   }
-  .wrapper .flexWrapper main .main .pro:nth-child(1), .wrapper .flexWrapper main .main .pro:nth-child(1) {
-    margin-bottom: 200px;
+  .wrapper .flexWrapper main .main .pro:nth-child(1), .wrapper .flexWrapper main .main .pro:nth-child(2) {
+    margin-bottom: 280px;
   }
 }
 @media screen and (min-width: 1024px) {

@@ -476,50 +476,75 @@
             } // category_wrap
 
             .brewery_content {
-              width: 100%;
-
-                .location_box {
-                  align-items: center;
-                  display: flex;
-                  justify-content: center;
-                  margin-bottom: 100px;
-
-                  img {
-                    width: 35px;
+              width: 100%; height: 100%;
+              .brewery {
+                width: 100%; height: 30%;
+                .location {
+                  width: 100%;
+                  @include responsive(pc-screens) {
+                    height: 50px;
+                    display: flex;
+                    justify-content:center;
+                    background-color: yellow;
                   }
-                }
-                .qr_box {
-                  display: none;
+                  .location_box {
+                    display: flex;
+                    justify-content: center;
+                    vertical-align: middle;
+                    margin-bottom: 100px;
+                    @include responsive(pc-screens) {
+                      align-items: center;
+                      margin-right: 20px;
+                      margin-bottom: 0;
+                    }
+                    img {
+                      width: 35px;
+                    }
+                  }
+                  .qr_box {
+                    display: none;
+                    @include responsive(pc-screens) {
+                      width: 50%;
+                      align-items: center;
+                      display: block;
+                      display: flex;
+                    }
+                  }
+                  img {
+                    @include responsive(pc-screens) {
+                      margin-right: 10px;
+                    }
+                  }
                 }
                 .brewery_box {
                   width: 100%;
                   display: flex;
                   flex-direction: column;
+                  @include responsive(pc-screens) {
+                    height: 70%;
+                  }
 
                   .alcohol {
                     margin-bottom: 50px;
                     width: 100%;
                     order: 1;
-                      strong {
-                        font : {
-                          weight: normal;
-                          size: 1.5em;
-                        }
-                      }
-                      .alcohol_box {
-                        img {
-                          display: block;
-                          margin: 0 auto;
-                          margin-top: 20px;
-                          width: 20%;
-                        }
-
-                        p {
-                          text-align: center;
-                        }
+                    strong {
+                      display: block;
+                      font : {
+                        weight: normal;
+                        size: 1.5em;
                       }
                     }
+                    img {
+                      display: block;
+                      margin-top: 20px;
+                      margin: 0 auto;
+                    }
+                    p {
+                      text-align: center;
+                    }
                   } // alcohol
+                    
                   .brewery_pic {
                     display: flex;
                     width: 200%;
@@ -530,6 +555,7 @@
                       height: 300px;
                     }
                   }
+
                   .text {
                     margin-bottom: 100px;
                     order: 3;
@@ -537,116 +563,198 @@
                       line-height: 30px;
                     }
                   }
+                } // brewery_box
+              } //brewery
 
-                  // 대표술 이미지크기
-                  .b2 {
-                    .brewery_box {
-                        .alcohol{
-                          img {
-                            width: 33%;
-                          }
-                        }
-                      }
-                    }
-                  .b3 {
-                    .brewery_box {
-                      .alcohol_box {
-                        img {
-                          width: 26%;
-                        }
-                      }
-                    }
+              // 대표술 이미지크기
+              #b1 {
+                .alcohol{
+                  img {
+                    width: 20%;
                   }
-                  .b4 {
-                    .brewery_box {
-                      .alcohol_box {
-                        img {
-                          width: 18%;
-                        }
-                      }
-                    }
+                }
+              }
+              #b2 {
+                .alcohol{
+                  img {
+                    width: 33%;
                   }
-                  .b5,
-                  .b6 {
-                    .brewery_box {
-                      .alcohol_box {
-                        img {
-                          width: 27%;
-                        }
-                      }
-                    }
+                }
+              }
+              #b3 {
+                .alcohol{
+                  img {
+                    width: 26%;
                   }
+                }
+              }
+              #b4 {
+                .alcohol {
+                  img {
+                    width: 18%;
+                  }
+                }
+              }
+              #b5,
+              #b6 {
+                .alcohol {
+                  img {
+                    width: 27%;
+                  }
+                }
+              }
 
-                  // about 복순도가
-                  .b1,
-                  .b5 {
+              // section.brewery PC ver.
+              // about 복순도가, 이원양조장
+              .b1,
+              .b5 {
+                .brewery_box {
+                  @include responsive(pc-screens) {
+                    height: 500px;
+                    display: flex;
+                    flex-direction: row;
+                    background-color: aquamarine;
+                  }
+                  .b {
                     @include responsive(pc-screens) {
-                      width: 100%;
+                      width: 30%;
+                      margin-right: 5%;
+                      &:last-child {
+                        margin-right: 0;
+                      }
                     }
-
-                    .location {
+                  }
+                  .alcohol {
+                    img {
                       @include responsive(pc-screens) {
-                        width: 100%; height: 50px;
-                        display: flex;
-                        justify-content:center;
-                      }
-                      .location_box {
-                        @include responsive(pc-screens) {
-                          margin-right: 20px;
-                        }
-                      }
-                      .qr_box {
-                        @include responsive(pc-screens) {
-                          width: 50%;
                           display: block;
-                          display: flex;
-                          background-color: yellow;
-                        }
                       }
                     }
-
-                    .brewery_box {
+                  }
+                  .brewery_pic {
+                    @include responsive(pc-screens) {
+                      display: flex;
+                      flex-direction: column;
+                      height: 100%;
+                    }
+                    img {
                       @include responsive(pc-screens) {
-                        width: 100%; height: 400px;
+                        margin-bottom: 15px;
+                        height: 50%;
+                      }
+                    }
+                  }
+                }
+              } // b1, b5
+
+              // about 청산녹수, 문경주조
+              .b2,
+              .b4 {
+                .brewery_box {
+                  @include responsive(pc-screens) {
+                    height: 100%;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+                    background-color: blue;
+                  }
+
+                  .brewery_semi {
+                    @include responsive(pc-screens) {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    width: 65%;
+                    background-color: green;
+                  }
+
+                    .brewery_pic {
+                      @include responsive(pc-screens) {
+                        width: 100%; height: 100%;
                         display: flex;
-                        flex-direction: row;
+                        justify-content: space-between;
+                        background-color: crimson;
                       }
-                      .b {
+
+                      .img_box {
                         @include responsive(pc-screens) {
-                          width: 30%;
-                          margin-right: 5%;
-                          &:last-child {
-                            margin-right: 0;
-                          }
-                        }
-                      }
-                      .brewery_box {
-                        img {
-                          @include responsive(pc-screens) {
-                             // 수직 가운데 정렬 시키기
-                          }
-                        }
-                      }
-                      
-                      .brewery_pic {
-                        @include responsive(pc-screens) {
-                          display: flex;
-                          flex-direction: column;
+                          width: 100%;
+                          background-color: rosybrown;
                         }
                         img {
                           @include responsive(pc-screens) {
-                            margin-bottom: 15px;
+                            width: 98%;
                           }
                         }
                       }
                     }
-                  } // b1
-                }// brewery_content
-              } //section.brewery
-            }
-          }
+                    .text {
+                      @include responsive(pc-screens) {
+                        width: 100%; height: 100%;
+                        background-color: khaki;
+                      }
+                    }
+                  }
+                  .alcohol {
+                    @include responsive(pc-screens) {
+                      width: 30%;
+                      order: 3;
+                      background-color: deeppink;
+                    }
+                  }
+                }
+              } // b2, b4
+
+              // about 해창주조장, 배혜정도가
+              .b3,
+              .b6 {
+                .brewery_box {
+                  @include responsive(pc-screens) {
+                    height: 100%;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+                    background-color: blue;
+                  }
+
+                    .alcohol {
+                      @include responsive(pc-screens) {
+                        width: 30%;
+                        order: 1;
+                        background-color: crimson;
+                      }
+                    }
+                    .text {
+                      @include responsive(pc-screens) {
+                        width: 30%; height: 100%;
+                        order: 2;
+                        background-color: khaki;
+                      }
+                    }
+                    .brewery_pic {
+                      @include responsive(pc-screens) {
+                        width: 30%; height: 100%;
+                        order: 3;
+                        flex-direction: column;
+                        background-color: deeppink;
+                      }
+                      img {
+                        @include responsive(pc-screens) {
+                          height: 48%;
+                        }
+                      }
+                    }
+                  }
+                }
+              } // b3, b6
+
+            }// brewery_content
+          } //section.brewery
         }
-      } // main
+      }
+    } // main
 
 
     footer {

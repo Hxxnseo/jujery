@@ -345,17 +345,21 @@
             margin-top: 80px;
           }
         }
-        .recommand1 {
+        .recommand {
           position: relative;
-          .red {
+          .recommand-text {
+            position: absolute;
             color: #fff;
             padding: 20px 5% 40px 5%;
-            position: absolute;
-            top: 10%; left: 45%;
+            margin-top: -43%; margin-left: 35%;
+            .black{
+              color: #000;
+            }
             @include responsive(pc-screens) {
               color: #000;
-              top: -40%; left: 10%;
-              span {
+              top: 0%; left: -23%;
+              span,
+              span.black {
                 // display: none;
                 color: #fff;
               }
@@ -364,69 +368,7 @@
               } // p
             } // pc버전
           }
-        } // recommand1
-
-        .recommand2 {
-          position: relative;
-          .tokki {
-            padding: 20px 5% 40px 5%;
-            position: absolute;
-            top: 10%; left: 45%;
-            @include responsive(pc-screens) {
-              color: #000;
-              top: -40%; left: 10%;
-              span {
-                // display: none;
-                color: #fff;
-              }
-              p {
-                line-height: 200px;
-              } // p
-            } // pc버전
-          }
-        } // recommand2
-
-        .recommand3 {
-          position: relative;
-          .one {
-            color: #fff;
-            padding: 20px 2% 40px 5%;
-            position: absolute;
-            top: 10%; left: 45%;
-            @include responsive(pc-screens) {
-              color: #000;
-              top: -40%; left: 10%;
-              span {
-                // display: none;
-                color: #fff;
-              }
-              p {
-                line-height: 200px;
-              } // p
-            } // pc버전
-          }
-        } // recommand3
-
-        .recommand4 {
-          position: relative;
-          .jin {
-            // background-color: rgba(255, 255, 255, 0.2);
-            padding: 20px 5% 40px 5%;
-            position: absolute;
-            top: 10%; left: 45%;
-            @include responsive(pc-screens) {
-              color: #000;
-              top: -40%; left: 10%;
-              span {
-                // display: none;
-                color: #fff;
-              }
-              p {
-                line-height: 200px;
-              } // p
-            } // pc버전
-          }
-        } // recommand4
+        } // recommand
 
         .sort {
           margin-top: 100px;
