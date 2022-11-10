@@ -386,93 +386,30 @@ p {
     margin-top: 80px;
   }
 }
-.wrapper .flexWrapper main .main .recommand1 {
+.wrapper .flexWrapper main .main .recommand {
   position: relative;
 }
-.wrapper .flexWrapper main .main .recommand1 .red {
+.wrapper .flexWrapper main .main .recommand .recommand-text {
+  position: absolute;
   color: #fff;
   padding: 20px 5% 40px 5%;
-  position: absolute;
-  top: 10%;
-  left: 45%;
+  margin-top: -43%;
+  margin-left: 35%;
+}
+.wrapper .flexWrapper main .main .recommand .recommand-text .black {
+  color: #000;
 }
 @media screen and (min-width: 1024px) {
-  .wrapper .flexWrapper main .main .recommand1 .red {
+  .wrapper .flexWrapper main .main .recommand .recommand-text {
     color: #000;
-    top: -40%;
-    left: 10%;
+    top: 0%;
+    left: -23%;
   }
-  .wrapper .flexWrapper main .main .recommand1 .red span {
+  .wrapper .flexWrapper main .main .recommand .recommand-text span,
+.wrapper .flexWrapper main .main .recommand .recommand-text span.black {
     color: #fff;
   }
-  .wrapper .flexWrapper main .main .recommand1 .red p {
-    line-height: 200px;
-  }
-}
-.wrapper .flexWrapper main .main .recommand2 {
-  position: relative;
-}
-.wrapper .flexWrapper main .main .recommand2 .tokki {
-  padding: 20px 5% 40px 5%;
-  position: absolute;
-  top: 10%;
-  left: 45%;
-}
-@media screen and (min-width: 1024px) {
-  .wrapper .flexWrapper main .main .recommand2 .tokki {
-    color: #000;
-    top: -40%;
-    left: 10%;
-  }
-  .wrapper .flexWrapper main .main .recommand2 .tokki span {
-    color: #fff;
-  }
-  .wrapper .flexWrapper main .main .recommand2 .tokki p {
-    line-height: 200px;
-  }
-}
-.wrapper .flexWrapper main .main .recommand3 {
-  position: relative;
-}
-.wrapper .flexWrapper main .main .recommand3 .one {
-  color: #fff;
-  padding: 20px 2% 40px 5%;
-  position: absolute;
-  top: 10%;
-  left: 45%;
-}
-@media screen and (min-width: 1024px) {
-  .wrapper .flexWrapper main .main .recommand3 .one {
-    color: #000;
-    top: -40%;
-    left: 10%;
-  }
-  .wrapper .flexWrapper main .main .recommand3 .one span {
-    color: #fff;
-  }
-  .wrapper .flexWrapper main .main .recommand3 .one p {
-    line-height: 200px;
-  }
-}
-.wrapper .flexWrapper main .main .recommand4 {
-  position: relative;
-}
-.wrapper .flexWrapper main .main .recommand4 .jin {
-  padding: 20px 5% 40px 5%;
-  position: absolute;
-  top: 10%;
-  left: 45%;
-}
-@media screen and (min-width: 1024px) {
-  .wrapper .flexWrapper main .main .recommand4 .jin {
-    color: #000;
-    top: -40%;
-    left: 10%;
-  }
-  .wrapper .flexWrapper main .main .recommand4 .jin span {
-    color: #fff;
-  }
-  .wrapper .flexWrapper main .main .recommand4 .jin p {
+  .wrapper .flexWrapper main .main .recommand .recommand-text p {
     line-height: 200px;
   }
 }
