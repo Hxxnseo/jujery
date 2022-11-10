@@ -58,7 +58,7 @@ p {
 @media screen and (min-width: 1024px) {
   .wrapper {
     width: 100%;
-    height: 935px;
+    height: 940px;
     position: relative;
     background-image: url(../../../images/background/main_page_background.png);
     z-index: 1;
@@ -74,7 +74,7 @@ p {
     right: 0;
     top: 0;
     width: 70%;
-    height: 930px;
+    height: 935px;
     z-index: 2;
   }
 }
@@ -102,8 +102,242 @@ p {
   width: 26px;
   height: 26px;
 }
-.wrapper .wrap-inner .menu .gnb {
+.wrapper .wrap-inner .container {
+  padding: 0 20px;
+  width: 100%;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .wrap-inner .container {
+    padding: 0 130px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+.wrapper .wrap-inner .container .menu {
+  position: relative;
+  height: 550px;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .wrap-inner .container .menu {
+    position: relative;
+    width: 77%;
+    height: 820px;
+  }
+}
+.wrapper .wrap-inner .container .menu .gnb {
+  position: absolute;
+  top: 100px;
+  right: 0;
+  left: 0;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .wrap-inner .container .menu .gnb {
+    position: absolute;
+    top: 60px;
+  }
+}
+.wrapper .wrap-inner .container .menu .gnb li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 40px;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .wrap-inner .container .menu .gnb li {
+    display: initial;
+  }
+}
+.wrapper .wrap-inner .container .menu .gnb li a {
+  font-size: 34px;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .wrap-inner .container .menu .gnb li a {
+    font-size: 50px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .wrap-inner .container .menu .gnb li .gnb-title {
+    margin: 50px 0 20px 0;
+  }
+}
+.wrapper .wrap-inner .container .menu .gnb li .sub-gnb li {
+  margin-bottom: 0;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .wrap-inner .container .menu .gnb li .sub-gnb li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+  }
+}
+.wrapper .wrap-inner .container .menu .gnb li .sub-gnb li a {
+  color: #a3a3a3;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .wrap-inner .container .menu .gnb li .sub-gnb li a {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+}
+.wrapper .wrap-inner .container .menu .gnb li .sub-gnb .sub-gnb-li {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .wrap-inner .container .menu .gnb li .sub-gnb .sub-gnb-li {
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+  }
+}
+.wrapper .wrap-inner .container .menu .gnb li .sub-gnb .sub-gnb-li2 {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: right;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .wrap-inner .container .menu .gnb li .sub-gnb .sub-gnb-li2 {
+    text-align: left;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+.wrapper .wrap-inner .container .menu2 {
+  font-family: "NotoSerifKR-Regular";
+  font-size: 12px;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .wrap-inner .container .menu2 {
+    width: 23%;
+  }
+}
+.wrapper .wrap-inner .container .menu2 .close-btn-pc {
+  display: none;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .wrap-inner .container .menu2 .close-btn-pc {
+    display: block;
+    position: absolute;
+    top: 60px;
+    right: 150px;
+  }
+}
+.wrapper .wrap-inner .container .menu2 ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 25px;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .wrap-inner .container .menu2 ul {
+    display: initial;
+    font-family: "SANGJU Gyeongcheon Island";
+    font-size: 25px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .wrap-inner .container .menu2 ul li {
+    margin-top: 130px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .wrap-inner .container .menu2 ul li a {
+    color: #a3a3a3;
+  }
+}
+.wrapper .wrap-inner .container span {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #a3a3a3;
+  margin-top: 20px;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .wrap-inner .container footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+  }
+}
+.wrapper .wrap-inner .container footer .sns {
+  padding: 40px;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .wrap-inner .container footer .sns {
+    padding: 20px 0;
+    width: 65%;
+  }
+}
+.wrapper .wrap-inner .container footer .sns .footSns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .wrap-inner .container footer .sns .footSns {
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+  }
+}
+.wrapper .wrap-inner .container footer .sns .footSns li {
+  padding: 10px;
+}
+.wrapper .wrap-inner .container footer .sns .footSns li img {
+  width: 40px;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .wrap-inner .container footer .sns .footSns li img {
+    width: 40px;
+  }
+}
+.wrapper .wrap-inner .container footer .footerInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 11.5px;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .wrap-inner .container footer .footerInfo {
+    padding: 0;
+    font-size: 16px;
+    width: 35%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .wrap-inner .container footer .footerInfo p:last-child {
+    margin-left: 100px;
+  }
 }
