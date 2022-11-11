@@ -134,10 +134,10 @@ header .mobile .mobileLogoMenu .mobileMenu span {
 @media screen and (min-width: 1024px) {
   header .mobile .mobileLogoMenu .mobileMenu span {
     width: 40px;
-    height: 5px;
+    height: 6px;
   }
   header .mobile .mobileLogoMenu .mobileMenu span:nth-child(2) {
-    margin: 7px 0;
+    margin: 0;
   }
 }
 header .mobile .mobileLogoMenu .mobileMenu span:nth-child(2) {
@@ -215,7 +215,7 @@ main .mobileSec .mobilePara h4 {
   color: white;
 }
 main .mobileSec .mobilePara h4 {
-  font-size: 20px;
+  font-size: 16px;
 }
 main .pcSec2 {
   display: none;
@@ -225,9 +225,6 @@ main .pcSec2 {
   main .pcSec2 {
     display: block;
   }
-}
-main .pcSec2 .h3ImgP {
-  width: 100%;
 }
 main .pcSec2 .h3ImgP ul {
   display: flex;
@@ -278,7 +275,7 @@ main .pcSec3 .category ul li:last-child {
 }
 main .pcSec3 .category ul li a {
   width: 100%;
-  font-size: 40px;
+  font-size: 30px;
   color: white;
 }
 @media screen and (min-width: 1024px) {
@@ -308,44 +305,58 @@ main .pcSec4 .fallingConts div p {
   font-family: "SANGJU Gyeongcheon Island";
 }
 main .pcSec4 .fallingConts .cont1 {
-  top: 30%;
+  top: 50%;
   right: 30%;
+  transform: rotate(-20deg);
 }
 main .pcSec4 .fallingConts .cont1 p {
   font-size: 26px;
+  color: #ccc;
+  text-align: right;
 }
 main .pcSec4 .fallingConts .cont2 {
-  top: 40%;
+  top: 55%;
   left: 30%;
+  transform: rotate(20deg);
 }
 main .pcSec4 .fallingConts .cont2 p {
   color: #ccc;
-  font-size: 30px;
+  font-size: 80px;
 }
 main .pcSec4 .fallingConts .cont3 {
-  bottom: 30%;
-  left: 40%;
+  bottom: 70%;
+  left: 60%;
+  transform: rotate(20deg);
 }
 main .pcSec4 .fallingConts .cont3 p {
   font-size: 40px;
+  color: #ccc;
 }
 main .pcSec4 .fallingConts .cont4 {
+  right: 60%;
   bottom: 50%;
-  right: 50%;
+  transform: rotate(-20deg);
   opacity: 0.4;
 }
 main .pcSec4 .fallingConts .cont5 {
-  bottom: 40%;
-  left: 55%;
+  bottom: 45%;
+  left: 45%;
+  transform: rotate(20deg);
+  opacity: 0.4;
+}
+main .pcSec4 .fallingConts .cont5 img {
+  width: 50%;
 }
 main .pcSec4 .fallingConts .cont6 {
-  bottom: 40%;
   right: 50%;
+  bottom: 70%;
   font-size: 180px;
+  transform: rotate(-20deg);
+  color: #ccc;
 }
 main .pcSec4 .fallingConts .cont7 {
+  right: 40%;
   bottom: 50%;
-  right: 53%;
   font-size: 150px;
 }
 
