@@ -71,10 +71,10 @@ header {
 
           @include responsive(pc-screens) {
             width: 40px;
-            height: 5px;
+            height: 6px;
 
             &:nth-child(2) {
-              margin: 7px 0;
+              margin: 0;
             }
           }
           &:nth-child(2) {
@@ -96,6 +96,7 @@ main {
 
     @include responsive(pc-screens) {
       height: 100vh;
+      border: 1px solid white;
     }
   }
 
@@ -174,7 +175,7 @@ main {
       display: block;
     }
     .h3ImgP {
-      width: 100%;
+      // width: 100%;
 
       ul {
         display: flex;
@@ -261,52 +262,69 @@ main {
       }
 
       .cont1 {
-        top: 30%;
+        top: 60%;
         right: 30%;
+        transform: rotate(-20deg);
         p {
           font-size: 26px;
+          color: #ccc;
+          text-align: right;
         }
       }
 
       .cont2 {
-        top: 40%;
+        top: 65%;
         left: 30%;
+        transform: rotate(20deg);
+
         p {
           color: #ccc;
-          font-size: 30px;
+          font-size: 80px;
         }
       }
 
       .cont3 {
-        bottom: 30%;
-        left: 40%;
+        bottom: 60%;
+        left: 60%;
+        transform: rotate(20deg);
 
         p {
           font-size: 40px;
+          color: #ccc;
         }
       }
 
       .cont4 {
-        bottom: 50%;
-        right: 50%;
+        right: 60%;
+        bottom: 40%;
+        transform: rotate(-20deg);
 
         opacity: 0.4;
       }
 
       .cont5 {
-        bottom: 40%;
-        left: 55%;
+        bottom: 35%;
+        left: 45%;
+        transform: rotate(20deg);
+        opacity: 0.4;
+
+        img {
+          width: 50%;
+        }
       }
 
       .cont6 {
-        bottom: 40%;
         right: 50%;
+        bottom: 60%;
         font-size: 180px;
+        transform: rotate(-20deg);
+
+        color: #ccc;
       }
 
       .cont7 {
-        bottom: 50%;
-        right: 53%;
+        right: 40%;
+        bottom: 40%;
 
         font-size: 150px;
       }
