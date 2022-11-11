@@ -103,17 +103,18 @@ main {
   .pcSec1 {
     position: relative;
     width: 100%;
-    // height: 100vh;
+    height: 100%;
     text-align: center;
 
     .video {
       width: 100%;
 
-      video,
-      img {
+      video {
         width: 100%;
 
         @include responsive(pc-screens) {
+          width: 100vw;
+
           height: 100vh;
         }
       }
