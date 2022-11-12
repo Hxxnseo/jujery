@@ -168,7 +168,7 @@ main .pcSec1 .video {
 }
 main .pcSec1 .video video,
 main .pcSec1 .video img {
-  width: 100%;
+  width: 1000px;
 }
 @media screen and (min-width: 1024px) {
   main .pcSec1 .video video,

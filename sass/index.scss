@@ -111,7 +111,7 @@ main {
 
       video,
       img {
-        width: 100%;
+        width: 1000px;
 
         @include responsive(pc-screens) {
           width: 100vw;
