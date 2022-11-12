@@ -5,8 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/about_us.css" />
-    <link rel="shortcut icon" type="image" href="../img/region/logo_mini.png" />
-    <title>About Us</title>
+    <link
+      rel="shortcut icon"
+      type="image"
+      href="../../../images/logo/jujery_page_shortcut_icon.png">
+    <title>About us</title>
   </head>
   <body>
     <div class="wrapper">
@@ -17,10 +20,7 @@
               <div class="logo">
                 <h1>
                   <a href="#">
-                    <img
-                      src="../../../images/logo/detail_black_logo.png"
-                      alt="logo"
-                    />
+                    <img src="../../../images/logo/main_white_logo.png" alt="logo" />
                   </a>
                 </h1>
               </div>
@@ -83,12 +83,7 @@
             <div class="mobileLogoMenu">
               <div class="mobileLogo">
                 <h1>
-                  <a href="#">
-                    <img
-                      src="../../../images/logo/mobile_detail_white_logo.png"
-                      alt="mobilelogo"
-                    />
-                  </a>
+                  <a href="#"><img src="../../../images/logo/mobile_detail_white_logo2.png" alt="mobilelogo" /> </a>
                 </h1>
               </div>
               <div class="mobileMenu">
@@ -99,50 +94,58 @@
             </div>
           </div>
         </header>
+        
+   
 
         <main>
-          <div class="main">
-            <div class="container">
-              <div class="mainSubMenu">
-                <ul>
-                  <li><a href="#">우리의 이야기</a></li>
-                  <li><a href="#">들어가기</a></li>
-                  <li><a href="#">회원가입</a></li>
-                  <li><a href="#">소통하기</a></li>
-                  <li><a href="#">상징</a></li>
-                </ul>
-              </div>
-              <!-- mainSubMenu -->
-
-            
-            <div class="gallery">
-                <ul id="slide">
-                  <li><img src="./img/aboutus1.png" alt="img1" /></li>
-                  <li><img src="./img/aboutus2.png" alt="img2" /></li>
-                  <li><img src="./img/aboutus3.png" alt="img3" /></li>
-                </ul>
-              </div>
-              <ul id="btn">
-                <div><a href="#b1" id="btn1"></a></div>
-                <div><a href="#b2" id="btn2"></a></div>
-                <div><a href="#b4" id="btn3"></a></div>
-              </ul>
+          <div style="overflow:hidden">
+            <div class="slidebox">
+                  <div class="inner">
+                    <a><img src="./img/aboutus1.png" alt="aboutus1" style="width: 100%;"><h1 class="main-title">우리의 이야기</h1></a>
+                  </div>
+                  <div class="inner">
+                    <a><img src="./img/aboutus2.png" alt="aboutus2" style="width: 100%;"></a>
+                  </div>
+                  <div class="inner">
+                    <a><img src="./img/aboutus3.png" alt="aboutus3" style="width: 100%;"></a>
+                  </div>
             </div>
+        </div>
 
-            </div>
-            <!-- main -->
+        <div class="button">
+          <button class="button1"></button>
+          <button class="button2"></button>
+          <button class="button3"></button>
+        </div>
+
+        <script>
+
+          document.querySelector('.button2').addEventListener('click', function(){
+            document.querySelector('.slidebox').style.transform = 'translate(-390px)';
+          });
+          document.querySelector('.button3').addEventListener('click', function(){
+            document.querySelector('.slidebox').style.transform = 'translate(-780px)';
+          });
+        </script>
+          
+          <div class="mainSubMenu">
+            <ul>
+              <li><a href="#">우리의 이야기</a></li>
+              <li><a href="#">들어가기</a></li>
+              <li><a href="#">회원가입</a></li>
+              <li><a href="#">소통하기</a></li>
+              <li><a href="#">상징</a></li>
+            </ul>
           </div>
-          <!-- container -->
+          
         </main>
-      </div>
+      </div> <!-- flex wrapper -->
 
       <footer>
         <div class="footer">
           <div class="container">
             <div class="footInfo">
-              <address>
-                <small>주소</small> 서울 영등포구 당산로49길 4 | 대한민국
-              </address>
+              <address><small>주소</small> 서울 영등포구 당산로49길 4 | 대한민국</address>
               <p><small>메일</small> soollove@jujery.com</p>
               <p><small>전화</small> 070-123-4567</p>
             </div>
@@ -154,24 +157,16 @@
               <div class="footSns">
                 <ul class="footSnsCont">
                   <li>
-                    <a href="#"
-                      ><img src="../../../images/sns/sns_insta.png" alt="s"
-                    /></a>
+                    <a href="#"><img src="../../../images/sns/sns_insta.png" alt="s" /></a>
                   </li>
                   <li>
-                    <a href="#"
-                      ><img src="../../../images/sns/sns_twitter.png" alt=""
-                    /></a>
+                    <a href="#"><img src="../../../images/sns/sns_twitter.png" alt="" /></a>
                   </li>
                   <li>
-                    <a href="#"
-                      ><img src="../../../images/sns/sns_facebook.png" alt=""
-                    /></a>
+                    <a href="#"><img src="../../../images/sns/sns_facebook.png" alt="" /></a>
                   </li>
                   <li>
-                    <a href="#"
-                      ><img src="../../../images/sns/sns_tiktok.png" alt=""
-                    /></a>
+                    <a href="#"><img src="../../../images/sns/sns_tiktok.png" alt="" /></a>
                   </li>
                 </ul>
               </div>
