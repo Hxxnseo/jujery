@@ -24,9 +24,26 @@ $(function() {
                 });
             });
         } else if(WinW < 1024) {
+            $(window).on("scroll", function() {
+                var sc_top = $(this).scrollTop();
+                console.log(sc_top);
+                if($(this).scrollTop() > 600){
+                    $('.dis').animate({
+                        opacity: 1
+                    },700);
+                }
+
+                if($(this).scrollTop() > 2700){
+                    $('.pro').animate({
+                        opacity: 1
+                    },700);
+                }
+            });
             $('.desc').off('mouseover');
             $('.desc').off('mouseout');
             $('.desc').children(".dis-text").css({'display':'block'});
+            $('.dis').css('opacity', 0);
+            $('.pro').css('opacity', 0);
             $('.dis').children('img').css('margin-top');
         }
     });

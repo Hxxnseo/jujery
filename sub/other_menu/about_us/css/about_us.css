@@ -1,7 +1,8 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
@@ -17,7 +18,7 @@ ol {
 a {
   display: block;
   text-decoration: none;
-  color: black;
+  color: white;
 }
 a:hover {
   font-weight: 600;
@@ -32,12 +33,12 @@ h2 {
 }
 
 h3 {
-  color: black;
+  color: white;
   font-size: 3.125em;
 }
 
 h4 {
-  color: black;
+  color: white;
   font-size: 1.5em;
   font-weight: 600;
 }
@@ -61,7 +62,7 @@ p {
 @media screen and (min-width: 1024px) {
   .container {
     padding: 0;
-    margin: 0 235px 0 135px;
+    margin: 0 auto;
   }
 }
 
@@ -69,23 +70,25 @@ p {
   position: relative;
   width: 100%;
   height: 100%;
-  background: black;
 }
 @media screen and (min-width: 1024px) {
   .wrapper .flexWrapper {
-    height: 100%;
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 2738px;
   }
-}
-.wrapper .flexWrapper header {
-  height: 80px;
 }
 @media screen and (min-width: 1024px) {
   .wrapper .flexWrapper header {
     height: auto;
     width: 370px;
-    background-image: url(../../../images/background/detail_page_header_background.png);
+    background-color: black;
   }
 }
 .wrapper .flexWrapper header .header .logoMenu {
@@ -101,6 +104,7 @@ p {
 @media screen and (min-width: 1024px) {
   .wrapper .flexWrapper header .header .logoMenu .logo a {
     width: 190px;
+    color: white;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -131,11 +135,14 @@ p {
     height: 0px;
     overflow: hidden;
     padding-top: 40px;
+    -webkit-transition: all 0.5s;
     transition: all 0.5s;
   }
 }
 @media screen and (min-width: 1024px) {
   .wrapper .flexWrapper header .header .logoMenu .menu .gnb li .subMenu li {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     padding-bottom: 0px;
   }
@@ -149,6 +156,8 @@ p {
   }
 }
 .wrapper .flexWrapper header .header .mobileLogoMenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 @media screen and (min-width: 1024px) {
@@ -160,86 +169,137 @@ p {
   position: fixed;
   top: 22px;
   left: 20px;
+  z-index: 999;
 }
 .wrapper .flexWrapper header .header .mobileLogoMenu .mobileMenu {
   position: fixed;
   top: 38px;
   right: 20px;
   cursor: pointer;
+  z-index: 999;
 }
 .wrapper .flexWrapper header .header .mobileLogoMenu .mobileMenu span {
   display: block;
   width: 30px;
   height: 4px;
-  background-color: #000;
+  background-color: white;
 }
 .wrapper .flexWrapper header .header .mobileLogoMenu .mobileMenu span:nth-child(2) {
   margin: 5px 0;
+}
+.wrapper .flexWrapper main {
+  position: relative;
 }
 @media screen and (min-width: 1024px) {
   .wrapper .flexWrapper main {
     width: 80%;
   }
 }
+.wrapper .flexWrapper main .slidebox {
+  width: 1560px;
+  height: 400px;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+}
 @media screen and (min-width: 1024px) {
-  .wrapper .flexWrapper main .main {
-    width: 1180px;
+  .wrapper .flexWrapper main .slidebox {
+    width: 6573px;
   }
 }
-.wrapper .flexWrapper main .main .container .mainSubMenu {
+.wrapper .flexWrapper main .slidebox .inner {
+  width: 390px;
+  float: left;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .slidebox .inner {
+    width: 2191px;
+  }
+}
+.wrapper .flexWrapper main .slidebox .inner img {
+  height: 400px;
+  width: 100%;
+  vertical-align: top;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .slidebox .inner img {
+    height: 1130px;
+    vertical-align: top;
+  }
+}
+.wrapper .flexWrapper main .slidebox .inner .main-title {
+  position: absolute;
+  color: white;
+  font-size: 16px;
+  top: 50%;
+  left: 50%;
+  margin: -50px 0 0 -50px;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .slidebox .inner .main-title {
+    font-size: 40px;
+    left: 996px;
+    top: 480px;
+  }
+}
+.wrapper .flexWrapper main .button {
+  position: absolute;
+  top: 370px;
+  left: 130px;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .button {
+    top: 1050px;
+    left: 940px;
+  }
+}
+.wrapper .flexWrapper main .button .button1 {
+  width: 38px;
+  height: 8px;
+  background-color: white;
+  border: 2px solid brown;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .button .button1 {
+    width: 81px;
+    height: 13px;
+  }
+}
+.wrapper .flexWrapper main .button .button2,
+.wrapper .flexWrapper main .button .button3 {
+  width: 38px;
+  height: 8px;
+  background-color: brown;
+  border: 2px solid white;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .button .button2,
+.wrapper .flexWrapper main .button .button3 {
+    margin-left: 30px;
+    width: 81px;
+    height: 13px;
+  }
+}
+.wrapper .flexWrapper main .mainSubMenu {
   display: none;
 }
 @media screen and (min-width: 1024px) {
-  .wrapper .flexWrapper main .main .container .mainSubMenu {
-    position: absolute;
-    right: 0;
+  .wrapper .flexWrapper main .mainSubMenu {
     display: block;
-    width: 100%;
-    height: 70px;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .wrapper .flexWrapper main .main .container .mainSubMenu ul {
-    display: flex;
-    position: absolute;
-    right: 100px;
-    top: 50px;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .wrapper .flexWrapper main .main .container .mainSubMenu ul li {
-    padding-left: 25px;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .wrapper .flexWrapper main .main .container .mainSubMenu ul li a {
     font-family: "NotoSerifKR-Regular";
-    font-size: 14px;
   }
 }
-.wrapper .flexWrapper main .main .container .gallery {
-  width: 390px;
-  height: 400px;
-  overflow: hidden;
-}
-@media screen and (min-width: 1024px) {
-  .wrapper .flexWrapper main .main .container .gallery {
-    width: 1550px;
-    height: auto;
-  }
-}
-.wrapper .flexWrapper main .main .container .gallery #slide {
-  position: relative;
+.wrapper .flexWrapper main .mainSubMenu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  width: 1170px;
+  position: absolute;
+  right: 150px;
+  top: 50px;
 }
-@media screen and (min-width: 1024px) {
-  .wrapper .flexWrapper main .main .container .gallery #slide {
-    width: 4650px;
-  }
-}
-.wrapper .flexWrapper main .main .container .gallery #slide img {
-  width: 100%;
+.wrapper .flexWrapper main .mainSubMenu ul li {
+  padding-left: 25px;
 }
 @media screen and (min-width: 1024px) {
   .wrapper footer .container {
@@ -255,7 +315,7 @@ p {
 @media screen and (min-width: 1024px) {
   .wrapper footer .footer {
     width: 100%;
-    padding: 120px 235px 80px 495px;
+    padding: 120px 185px 80px 545px;
   }
 }
 .wrapper footer .footer .footInfo {
@@ -264,15 +324,20 @@ p {
 }
 @media screen and (min-width: 1024px) {
   .wrapper footer .footer .footInfo {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 100%;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     font-size: 20px;
     margin-bottom: 30px;
   }
 }
 .wrapper footer .footer .footInfo address {
   font-style: normal;
+  font-family: "NotoSerifKR-Regular";
 }
 .wrapper footer .footer .footInfo p {
   margin: 20px 0;
@@ -282,14 +347,25 @@ p {
     margin: 0;
   }
 }
+.wrapper footer .footer .footBox {
+  width: 100%;
+}
 @media screen and (min-width: 1024px) {
   .wrapper footer .footer .footBox {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    width: 100%;
     height: 250px;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     text-align: center;
     border-top: 1px solid #ccc;
     border-bottom: 1px solid #ccc;
@@ -303,7 +379,7 @@ p {
 }
 @media screen and (min-width: 1024px) {
   .wrapper footer .footer .footBox .footLogoCopy {
-    width: 25%;
+    width: 30%;
     padding: 0;
     border: 0;
   }
@@ -328,7 +404,7 @@ p {
 @media screen and (min-width: 1024px) {
   .wrapper footer .footer .footBox .footSns {
     position: relative;
-    width: 50%;
+    width: 40%;
     height: 250px;
     border-bottom: 0;
     border-right: 1px solid #ccc;
@@ -336,8 +412,12 @@ p {
   }
 }
 .wrapper footer .footer .footBox .footSns .footSnsCont {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 @media screen and (min-width: 1024px) {
   .wrapper footer .footer .footBox .footSns .footSnsCont {
@@ -349,7 +429,7 @@ p {
 }
 @media screen and (min-width: 1024px) {
   .wrapper footer .footer .footBox .footSns .footSnsCont li {
-    padding-right: 30px;
+    padding-right: 15px;
   }
   .wrapper footer .footer .footBox .footSns .footSnsCont li:last-child {
     padding-right: 0;
@@ -362,27 +442,31 @@ p {
   .wrapper footer .footer .footBox .footSns .footSnsCont li img {
     width: 60px;
     opacity: 0.5;
-    transition: all 0.4s;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
   }
   .wrapper footer .footer .footBox .footSns .footSnsCont li img:hover {
     opacity: 1;
   }
 }
 .wrapper footer .footer .footBox .footMenu {
-  padding: 40px;
+  padding: 40px 0;
+  font-size: 14px;
+  width: 100%;
 }
 @media screen and (min-width: 1024px) {
   .wrapper footer .footer .footBox .footMenu {
-    width: 25%;
+    width: 30%;
     padding: 0;
-    font-size: 13px;
+    font-size: 14px;
   }
 }
 .wrapper footer .footer .footBox .footMenu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 100%;
   padding: 10px;
-  margin-left: 5px;
 }
 .wrapper footer .footer .footBox .footMenu ul:last-child {
   text-align: left;
@@ -395,4 +479,4 @@ p {
 .wrapper footer .footer .footBox .footMenu ul li a {
   width: 100%;
   color: white;
-}/*# sourceMappingURL=about_us.css.map */
+}

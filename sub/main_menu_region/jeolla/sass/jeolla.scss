@@ -18,10 +18,11 @@
   // background-color: #000;
   // max-width: 1200px; // pc
 
-  background-color: #000;
+  // background-color: yellow;
   @include responsive(pc-screens) {
     padding: 0;
-    margin: 0 235px 0 135px;
+    margin: 0 auto;
+    // background-color: antiquewhite;
   }
 }
 
@@ -29,7 +30,7 @@
   position: relative;
   width: 100%;
   height: 100%;
-  background-image: url(../../../images/background/detail_page_main_background.png);
+  background-image: url(../../../../images/background/detail_page_main_background.png);
   // margin: 0 20px;
 
   .flexWrapper {
@@ -45,7 +46,7 @@
         height: auto;
         // background-color: #ccc;
         width: 370px;
-        background-image: url(../../../images/background/detail_page_header_background.png);
+        background-image: url(../../../../images/background/detail_page_header_background.png);
       }
 
       .header {
@@ -169,6 +170,7 @@
         // position: relative;
         @include responsive(pc-screens) {
           width: 1180px;
+          margin: 0 auto;
         }
 
         .mainSubMenu {
@@ -204,175 +206,439 @@
           }
         } // mainSubMenu
 
-        // 여기부터 작성하세요오오
+        .sec1 {
+          position: relative;
+          margin-top: 30px;
+          @include responsive(pc-screens) {
+            padding: 150px 120px;
+          }
+          h1 {
+            position: absolute;
+            font-size: 40px;
+            left: 190px;
+            top: 10px;
+            @include responsive(pc-screens) {
+              top: 160px;
+              left: 320px;
+              font-size: 90px;
+            }
+          }
+          h4 {
+            font-size: 30px;
+            color: #dbdbdb;
+            @include responsive(pc-screens) {
+              text-align: left;
+            }
+          }
+          span {
+            display: block;
+            height: 5px;
+            width: 180px;
+            margin: 10px 0;
+            background-color: #dbdbdb;
+            @include responsive(pc-screens) {
+              margin: 20px 0;
+            }
+          }
+          .mobile-box {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 40px 0;
+            @include responsive(pc-screens) {
+              display: none;
+            }
+          }
+
+          .grid-box {
+            display: none;
+            @include responsive(pc-screens) {
+              display: grid;
+              margin-top: 100px;
+              .div1 {
+                grid-area: div1;
+              }
+              .div2 {
+                grid-area: div2;
+                margin-left: 10px;
+              }
+              .div3 {
+                grid-area: div3;
+                margin-left: 10px;
+              }
+              grid-template-areas:
+                "div1 div2"
+                "div1 div3";
+            }
+            .item {
+              margin: 10px 0;
+              img {
+                width: 100%;
+                height: 100%;
+              }
+            }
+          }
+        } // sec1
+        .sec2 {
+          @include responsive(pc-screens) {
+            position: relative;
+            height: 2200px;
+          }
+          .sec2-main {
+            position: relative;
+            margin: 70px 0;
+            height: 300px;
+
+            .sec2-pic {
+              position: absolute;
+              top: 20px;
+              left: 50px;
+              width: 250px;
+              height: 300px;
+              z-index: 0;
+              @include responsive(pc-screens) {
+                margin-top: 10px;
+                width: 470px;
+                height: 560px;
+                position: absolute;
+                left: 350px;
+              }
+            }
+
+            h1 {
+              position: absolute;
+              font-size: 40px;
+              z-index: 1;
+              @include responsive(pc-screens) {
+                font-size: 50px;
+                position: absolute;
+                left: 250px;
+              }
+            }
+            h4 {
+              position: absolute;
+              top: 55px;
+              font-size: 34px;
+              color: #dbdbdb;
+              z-index: 2;
+              @include responsive(pc-screens) {
+                top: 70px;
+                font-size: 40px;
+                position: absolute;
+                left: 250px;
+              }
+            }
+            h5 {
+              position: absolute;
+              top: 0;
+              left: 260px;
+              @include responsive(pc-screens) {
+                left: 430px;
+                font-size: 30px;
+                position: absolute;
+                left: 720px;
+              }
+            }
+            .arrow-left {
+              position: absolute;
+              top: 150px;
+              @include responsive(pc-screens) {
+                top: 300px;
+                left: 70px;
+              }
+            }
+            .arrow-right {
+              position: absolute;
+              top: 150px;
+              left: 350px;
+              @include responsive(pc-screens) {
+                top: 300px;
+                left: 1090px;
+              }
+            }
+          } // sec2-main
+          .sec2-con-mo {
+            @include responsive(pc-screens) {
+              display: none;
+            }
+            .acordian-menu {
+              li {
+                font-family: $font-sub;
+
+                a {
+                  display: block;
+                  font-size: 18px;
+                  justify-content: space-around;
+                  padding: 20px;
+                  border-top: 2px solid #dbdbdb;
+
+                  img {
+                    position: absolute;
+                    right: 40px;
+                  }
+                }
+
+                p {
+                  border-top: 2px solid #dbdbdb;
+                  font-size: 14px;
+                  padding: 20px;
+                }
+                .last-p {
+                  border-bottom: 2px solid #dbdbdb;
+                }
+              }
+            }
+          } // sec2-con-mo
+          .sec2-con-pc {
+            display: none;
+            @include responsive(pc-screens) {
+              display: block;
+              position: absolute;
+              top: 780px;
+              display: flex;
+              width: 100%;
+              flex-flow: wrap;
+              padding: 0 30px;
+              font-family: $font-sub;
+            }
+            div {
+              @include responsive(pc-screens) {
+                width: 50%;
+                padding: 25px;
+                border-top: 2px solid #dbdbdb;
+              }
+
+              img {
+                float: left;
+                margin-right: 15px;
+              }
+              h6 {
+                font-size: 18px;
+                padding: 25px 0;
+              }
+              p {
+                font-size: 14px;
+              }
+            }
+          }
+
+          .map {
+            padding: 100px 0;
+            font-family: $font-sub;
+            text-align: center;
+            @include responsive(pc-screens) {
+              position: relative;
+              top: 970px;
+              text-align: center;
+              padding: 80px 0;
+              border-top: 2px solid #dbdbdb;
+            }
+            h3 {
+              font-size: 34px;
+              @include responsive(pc-screens) {
+                font-size: 36px;
+              }
+            }
+            p {
+              font-size: 24px;
+              padding: 40px 10px;
+              color: #929292;
+              @include responsive(pc-screens) {
+                font-size: 30px;
+                padding: 30px 0 80px 0;
+              }
+            }
+            .map-box {
+              width: 360px;
+              height: 160px;
+              @include responsive(pc-screens) {
+                width: 1110px;
+                height: 500px;
+              }
+            }
+          }
+        } // .sec2
       }
     }
-    // main
-  }
-
-  footer {
-    .container {
+    .footer-geonggi {
+      display: none;
       @include responsive(pc-screens) {
-        margin: 0;
-      }
-    }
-    .footer {
-      width: 100%;
-      height: 100%;
-      background-color: black;
-      color: white;
-
-      @include responsive(pc-screens) {
+        display: block;
         width: 100%;
-        padding: 120px 235px 80px 495px;
+        img {
+          vertical-align: top;
+        }
+      }
+      
+    }
+  }
+  // main
+}
+
+footer {
+  .container {
+    @include responsive(pc-screens) {
+      margin: 0;
+    }
+  }
+  .footer {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    color: white;
+
+    @include responsive(pc-screens) {
+      width: 100%;
+      padding: 120px 185px 80px 545px;
+    }
+
+    .footInfo {
+      padding-top: 60px;
+      padding-bottom: 30px;
+
+      @include responsive(pc-screens) {
+        // padding: 0;
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+
+        font-size: 20px;
+        margin-bottom: 30px;
       }
 
-      .footInfo {
-        padding-top: 60px;
-        padding-bottom: 30px;
+      address {
+        font-style: normal;
+        font-family: $font-sub;
+      }
+
+      p {
+        margin: 20px 0;
 
         @include responsive(pc-screens) {
-          // padding: 0;
-          display: flex;
-          width: 100%;
-          justify-content: space-between;
+          margin: 0;
+        }
+      }
+    }
 
-          font-size: 20px;
-          margin-bottom: 30px;
+    .footBox {
+      width: 100%;
+      @include responsive(pc-screens) {
+        display: flex;
+        height: 250px;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        text-align: center;
+
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+      }
+
+      .footLogoCopy {
+        padding: 30px;
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        text-align: center;
+
+        @include responsive(pc-screens) {
+          width: 30%;
+          padding: 0;
+          border: 0;
         }
 
-        address {
-          font-style: normal;
+        a {
+          color: white;
+          font-size: 60px;
         }
 
         p {
-          margin: 20px 0;
+          font-size: 10px;
+        }
 
+        .copyright {
           @include responsive(pc-screens) {
-            margin: 0;
+            font-size: 12px;
+            font-family: $font-sub;
           }
         }
       }
 
-      .footBox {
+      .footSns {
+        padding: 30px;
+        border-bottom: 1px solid #ccc;
+
         @include responsive(pc-screens) {
-          display: flex;
-          width: 100%;
+          position: relative;
+          width: 40%;
           height: 250px;
-          flex-direction: row;
-          justify-content: space-between;
-          align-items: center;
-
-          text-align: center;
-
-          border-top: 1px solid #ccc;
-          border-bottom: 1px solid #ccc;
+          border-bottom: 0;
+          border-right: 1px solid #ccc;
+          border-left: 1px solid #ccc;
         }
-
-        .footLogoCopy {
-          padding: 30px;
-          border-top: 1px solid #ccc;
-          border-bottom: 1px solid #ccc;
-          text-align: center;
+        .footSnsCont {
+          display: flex;
+          justify-content: center;
 
           @include responsive(pc-screens) {
-            width: 25%;
-            padding: 0;
-            border: 0;
+            padding: 60px 80px;
           }
 
-          a {
-            color: white;
-            font-size: 60px;
-          }
-
-          p {
-            font-size: 10px;
-          }
-
-          .copyright {
-            @include responsive(pc-screens) {
-              font-size: 12px;
-              font-family: $font-sub;
-            }
-          }
-        }
-
-        .footSns {
-          padding: 30px;
-          border-bottom: 1px solid #ccc;
-
-          @include responsive(pc-screens) {
-            position: relative;
-            width: 50%;
-            height: 250px;
-            border-bottom: 0;
-            border-right: 1px solid #ccc;
-            border-left: 1px solid #ccc;
-          }
-          .footSnsCont {
-            display: flex;
-            justify-content: center;
+          li {
+            padding: 10px;
 
             @include responsive(pc-screens) {
-              padding: 60px 80px;
-            }
+              padding-right: 15px;
 
-            li {
-              padding: 10px;
+              &:last-child {
+                padding-right: 0;
+              }
+            }
+            img {
+              width: 50px;
 
               @include responsive(pc-screens) {
-                padding-right: 30px;
+                width: 60px;
+                opacity: 0.5;
 
-                &:last-child {
-                  padding-right: 0;
-                }
-              }
-              img {
-                width: 50px;
+                transition: all 0.5s;
 
-                @include responsive(pc-screens) {
-                  width: 60px;
-                  opacity: 0.5;
-
-                  transition: all 0.5s;
-
-                  &:hover {
-                    opacity: 1;
-                  }
+                &:hover {
+                  opacity: 1;
                 }
               }
             }
           }
         }
+      }
 
-        .footMenu {
-          padding: 40px;
+      .footMenu {
+        padding: 40px 0;
+        font-size: 14px;
+        width: 100%;
 
-          @include responsive(pc-screens) {
-            width: 25%;
-            padding: 0;
-            font-size: 13px;
+        @include responsive(pc-screens) {
+          width: 30%;
+          padding: 0;
+          font-size: 14px;
+        }
+        ul {
+          display: flex;
+          width: 100%;
+          padding: 10px;
+          // margin-left: 5px;
+
+          &:last-child {
+            text-align: left;
           }
-          ul {
-            display: flex;
-            width: 100%;
-            padding: 10px;
-            margin-left: 5px;
 
-            &:last-child {
-              text-align: left;
-            }
+          li {
+            width: 33%;
+            padding: 0 5px;
+            text-align: center;
 
-            li {
-              width: 33%;
-              padding: 0 5px;
-              text-align: center;
-
-              a {
-                width: 100%;
-                color: white;
-              }
+            a {
+              width: 100%;
+              color: white;
             }
           }
         }
