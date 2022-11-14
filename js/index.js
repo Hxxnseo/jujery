@@ -123,3 +123,26 @@ $(window).on("wheel", function (e) {
 });
 
 $html.animate({ scrollTop: 0 }, 10);
+
+$(function () {
+  const list = [$("#gyeonggi"), $("#gangwon"), $("#gyeongsang"), $("#chungcheong"), $("#jeolla"), $("#jeju")];
+  const bg = ["url(../images/main_section_2/gyeonggi.png)", "url(../images/main_section_2/gangwon.png)", "url(../images/main_section_2/gyeongsang.png)", "url(../images/main_section_2/chungcheong.png)", "url(../images/main_section_2/Jeonlla.png)", "url(../images/main_section_2/jeju.png)"];
+
+  $(".section2 li").on({
+    mouseenter: function (e) {
+      for (let i = 0; i < list.length; i++) {
+        list[i].hide();
+      }
+      console.log($(this).index());
+      $(e.target).show();
+      $(".pcSec2").css("background-image", bg[$(this).index()]);
+      // $(".pcSec2").animate({ background: bg[$(this).index()] }, 1000, "linear");
+    },
+    mouseleave: e => {
+      for (let i = 0; i < list.length; i++) {
+        list[i].show();
+      }
+      $(".pcSec2").css("background-image", "none");
+    },
+  });
+});
