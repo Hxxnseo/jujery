@@ -254,20 +254,19 @@
             @include responsive(pc-screens) {
               display: grid;
               margin-top: 100px;
+              row-gap: 15px;
               .div1 {
                 grid-area: div1;
               }
               .div2 {
                 grid-area: div2;
-                margin-left: 10px;
               }
               .div3 {
                 grid-area: div3;
-                margin-left: 10px;
               }
               grid-template-areas:
                 "div1 div2"
-                "div1 div3";
+                "div3 div3";
             }
             .item {
               margin: 10px 0;
@@ -290,7 +289,7 @@
 
             .sec2-pic {
               position: absolute;
-              top: 20px;
+              top: 35px;
               left: 50px;
               width: 250px;
               height: 300px;
@@ -468,7 +467,6 @@
           vertical-align: top;
         }
       }
-      
     }
   }
   // main
