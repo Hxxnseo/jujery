@@ -262,7 +262,7 @@
             }
             p {
               padding: 50px 20px;
-              line-height: 30px;
+              line-height: 36px;
               @include responsive(pc-screens) {
                 padding: 100px 40px;
               }
@@ -277,7 +277,10 @@
           .imgP2 {
             @include responsive(pc-screens) {
               display: flex;
-              width: 100%;
+              // width: 100%;
+              opacity: 0;
+              margin-left: -300px;
+              max-width: 100%;
             }
             .p {
               height: 100%;
@@ -314,6 +317,9 @@
             @include responsive(pc-screens) {
               display: flex;
               width: 100%;
+              opacity: 0;
+              margin-left: 300px;
+              max-width: 100%;
             }
             .images {
               @include responsive(pc-screens) {
@@ -493,7 +499,7 @@
           ul {
             display: flex;
             width: 100%;
-            padding: 10px ;
+            padding: 10px;
             // margin-left: 5px;
 
             &:last-child {
