@@ -323,8 +323,10 @@
         .sect3 {
           width: 100%;
           margin-top: 100px;
+          display: flex;
+          flex-direction: column;
 
-          .imgSlides {
+          .imgSlide {
             width: 100%;
 
             img {
@@ -568,7 +570,7 @@
           ul {
             display: flex;
             width: 100%;
-            padding: 10px ;
+            padding: 10px;
             // margin-left: 5px;
 
             &:last-child {

@@ -254,16 +254,15 @@
             @include responsive(pc-screens) {
               display: grid;
               margin-top: 100px;
+              gap: 20px;
               .div1 {
                 grid-area: div1;
               }
               .div2 {
                 grid-area: div2;
-                margin-left: 10px;
               }
               .div3 {
                 grid-area: div3;
-                margin-left: 10px;
               }
               grid-template-areas:
                 "div1 div2"
@@ -278,6 +277,7 @@
             }
           }
         } // sec1
+
         .sec2 {
           @include responsive(pc-screens) {
             position: relative;
@@ -370,6 +370,7 @@
                   justify-content: space-around;
                   padding: 20px;
                   border-top: 2px solid #dbdbdb;
+                  cursor: pointer;
 
                   img {
                     position: absolute;
@@ -377,12 +378,17 @@
                   }
                 }
 
-                p {
+                .contents {
+                  display: none;
                   border-top: 2px solid #dbdbdb;
                   font-size: 14px;
                   padding: 20px;
                 }
                 .last-p {
+                  display: none;
+                  border-top: 2px solid #dbdbdb;
+                  font-size: 14px;
+                  padding: 20px;
                   border-bottom: 2px solid #dbdbdb;
                 }
               }
@@ -447,7 +453,7 @@
                 padding: 30px 0 80px 0;
               }
             }
-            .map-box {
+            iframe {
               width: 360px;
               height: 160px;
               @include responsive(pc-screens) {
@@ -468,7 +474,6 @@
           vertical-align: top;
         }
       }
-      
     }
   }
   // main

@@ -232,45 +232,42 @@ p {
     font-size: 14px;
   }
 }
-.wrapper .flexWrapper main .main section.introStart {
+.wrapper .flexWrapper main .main .introStart {
   margin-top: 30px;
-  margin-bottom: 50px;
+  text-align: center;
 }
 @media screen and (min-width: 1024px) {
-  .wrapper .flexWrapper main .main section.introStart {
+  .wrapper .flexWrapper main .main .introStart {
+    text-align: left;
     margin-top: 130px;
   }
 }
-.wrapper .flexWrapper main .main section.introStart h3 {
-  text-align: center;
+.wrapper .flexWrapper main .main .introStart h3 {
+  margin-bottom: 50px;
   font-size: 40px;
   font-family: "SANGJU Gyeongcheon Island";
 }
 @media screen and (min-width: 1024px) {
-  .wrapper .flexWrapper main .main section.introStart h3 {
+  .wrapper .flexWrapper main .main .introStart h3 {
     font-size: 50px;
-    text-align: left;
   }
 }
-.wrapper .flexWrapper main .main section.introStart ul {
+.wrapper .flexWrapper main .main .introStart .introMenu ul {
   display: flex;
-  margin: 0 21%;
+  justify-content: center;
+}
+.wrapper .flexWrapper main .main .introStart .introMenu ul li {
+  padding: 0 30px;
+  font-family: "NotoSerifKR-Regular";
+  font-size: 18px;
 }
 @media screen and (min-width: 1024px) {
-  .wrapper .flexWrapper main .main section.introStart ul {
-    margin: 0 39%;
+  .wrapper .flexWrapper main .main .introStart .introMenu ul li {
+    font-size: 24px;
   }
 }
-.wrapper .flexWrapper main .main section.introStart ul li {
-  margin-top: 50px;
-  font-size: 34px;
-  padding: 0 30px;
-}
-.wrapper .flexWrapper main .main section.introStart ul li:first-child {
-  border-right: 1px solid #000;
-}
-.wrapper .flexWrapper main .main section.introStart ul li:first-child a {
-  color: #ccc;
+.wrapper .flexWrapper main .main .introStart .introMenu ul li:first-child {
+  border-right: 1px solid black;
 }
 .wrapper .flexWrapper main .main .pageintro {
   position: relative;
@@ -371,9 +368,6 @@ p {
     display: block;
     width: 96%;
     margin-top: 25px;
-  }
-  .wrapper .flexWrapper main .main div img.pcnew:hover {
-    filter: brightness(40%);
   }
 }
 @media screen and (min-width: 1024px) {
@@ -552,6 +546,38 @@ p {
   .wrapper .flexWrapper main .main .sort .containerjj .mobile {
     display: none;
   }
+}
+.wrapper .flexWrapper main .main .sort .containerjj .mobile .modal {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: none;
+}
+.wrapper .flexWrapper main .main .sort .containerjj .mobile .modal .modal_content {
+  width: 70%;
+  height: 300px;
+  position: absolute;
+  top: 60%;
+  left: 15%;
+  background: rgba(0, 0, 0, 0.7);
+}
+.wrapper .flexWrapper main .main .sort .containerjj .mobile .modal .modal_content .modal-text {
+  padding: 8% 10%;
+  color: #fff;
+}
+.wrapper .flexWrapper main .main .sort .containerjj .mobile .modal .modal_content .modal-text h5 {
+  font-size: 2em;
+  font-weight: normal;
+  font-family: "SANGJU Gyeongcheon Island";
+  text-align: center;
+}
+.wrapper .flexWrapper main .main .sort .containerjj .mobile .modal .modal_content .click {
+  color: #fff;
+  font-size: 0.8em;
+  padding-left: 8%;
+  line-height: 3em;
 }
 @media screen and (min-width: 1024px) {
   .wrapper footer .container {
