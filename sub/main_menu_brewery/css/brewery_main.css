@@ -291,7 +291,7 @@ p {
 }
 .wrapper .flexWrapper main .main section.brewerySect1 .p p {
   padding: 50px 20px;
-  line-height: 30px;
+  line-height: 36px;
 }
 @media screen and (min-width: 1024px) {
   .wrapper .flexWrapper main .main section.brewerySect1 .p p {
@@ -305,7 +305,9 @@ p {
 @media screen and (min-width: 1024px) {
   .wrapper .flexWrapper main .main section.brewerySect2 .imgP2 {
     display: flex;
-    width: 100%;
+    opacity: 0;
+    margin-left: -300px;
+    max-width: 100%;
   }
 }
 .wrapper .flexWrapper main .main section.brewerySect2 .imgP2 .p {
@@ -346,6 +348,9 @@ p {
   .wrapper .flexWrapper main .main section.brewerySect3 .imgP3 {
     display: flex;
     width: 100%;
+    opacity: 0;
+    margin-left: 300px;
+    max-width: 100%;
   }
 }
 @media screen and (min-width: 1024px) {

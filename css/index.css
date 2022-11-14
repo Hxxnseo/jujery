@@ -274,15 +274,19 @@ main .pcSec3 .category ul li {
 }
 main .pcSec3 .category ul li #second:hover {
   background-image: url(https://media1.giphy.com/media/xT5LMyaDUZlsLVVxNS/giphy.gif?cid=ecf05e47mry7qvnp5415uo99tw4kpy7z36tpgp6muvgt1hru&rid=giphy.gif&ct=g);
+  background-size: cover;
 }
 main .pcSec3 .category ul li #third:hover {
   background-image: url(https://media1.giphy.com/media/KKBPAzaiAzh7y/giphy.gif?cid=ecf05e47iondb2sbqnscph4fy3ra8kvyw87dkiws2wh7tjhl&rid=giphy.gif&ct=g);
+  background-size: cover;
 }
 main .pcSec3 .category ul li #fourth:hover {
   background-image: url(https://media4.giphy.com/media/l4FB53kezY6TlL1PG/giphy.gif?cid=ecf05e476m4bc2h5dw24vss7gz8929vt9g2n55yhwde34pa0&rid=giphy.gif&ct=g);
+  background-size: cover;
 }
 main .pcSec3 .category ul li #fifth:hover {
   background-image: url(https://media1.giphy.com/media/lr1PGJlmI7YMbG7Iwq/giphy.gif?cid=ecf05e47057afaa947mgpln17jk76wex5ghui9lyuww7vd1u&rid=giphy.gif&ct=g);
+  background-size: cover;
 }
 main .pcSec3 .category ul li a {
   width: 100%;
@@ -301,6 +305,7 @@ main .pcSec3 .category ul li a {
   main .pcSec3 .category ul li a:hover {
     -webkit-text-stroke: 0px;
     background-image: url(https://media0.giphy.com/media/xT3i138nBvO5kZ0YiA/giphy.gif?cid=ecf05e47unaip28r6q2acg2tn4qxh36uxa910r13dbcaothf&rid=giphy.gif&ct=g);
+    background-size: cover;
   }
 }
 main .pcSec4 {

@@ -253,12 +253,10 @@
           height: 100%;
           text-align: center;
 
-          
           h4 {
             font-size: 30px;
             margin-bottom: 50px;
           }
-            
 
           img {
             width: 100%;
@@ -320,14 +318,13 @@
                     display: none;
                   }
 
-                  
                   .background {
                     background-image: url(../map_imgs/map_img_background.png);
                     width: 100%;
                     height: 200px;
                     display: flex;
                     justify-content: space-between;
-                    
+
                     @include responsive(pc-screens) {
                       width: 100%;
                     }
@@ -401,7 +398,7 @@
                     display: flex;
                     justify-content: space-between;
                     flex-direction: row-reverse;
-                    
+
                     @include responsive(pc-screens) {
                       width: 100%;
                     }
@@ -627,7 +624,7 @@
           ul {
             display: flex;
             width: 100%;
-            padding: 10px ;
+            padding: 10px;
             // margin-left: 5px;
 
             &:last-child {
