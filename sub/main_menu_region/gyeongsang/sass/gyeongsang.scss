@@ -376,12 +376,17 @@
                   }
                 }
 
-                p {
+                .contents {
+                  display: none;
                   border-top: 2px solid #dbdbdb;
                   font-size: 14px;
                   padding: 20px;
                 }
                 .last-p {
+                  display: none;
+                  border-top: 2px solid #dbdbdb;
+                  font-size: 14px;
+                  padding: 20px;
                   border-bottom: 2px solid #dbdbdb;
                 }
               }
@@ -446,7 +451,7 @@
                 padding: 30px 0 80px 0;
               }
             }
-            .map-box {
+            iframe {
               width: 360px;
               height: 160px;
               @include responsive(pc-screens) {

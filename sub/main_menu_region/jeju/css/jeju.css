@@ -420,12 +420,17 @@ p {
   position: absolute;
   right: 40px;
 }
-.wrapper .flexWrapper main .main .sec2 .sec2-con-mo .acordian-menu li p {
+.wrapper .flexWrapper main .main .sec2 .sec2-con-mo .acordian-menu li .contents {
+  display: none;
   border-top: 2px solid #dbdbdb;
   font-size: 14px;
   padding: 20px;
 }
 .wrapper .flexWrapper main .main .sec2 .sec2-con-mo .acordian-menu li .last-p {
+  display: none;
+  border-top: 2px solid #dbdbdb;
+  font-size: 14px;
+  padding: 20px;
   border-bottom: 2px solid #dbdbdb;
 }
 .wrapper .flexWrapper main .main .sec2 .sec2-con-pc {
@@ -494,12 +499,12 @@ p {
     padding: 30px 0 80px 0;
   }
 }
-.wrapper .flexWrapper main .main .sec2 .map .map-box {
+.wrapper .flexWrapper main .main .sec2 .map iframe {
   width: 360px;
   height: 160px;
 }
 @media screen and (min-width: 1024px) {
-  .wrapper .flexWrapper main .main .sec2 .map .map-box {
+  .wrapper .flexWrapper main .main .sec2 .map iframe {
     width: 1110px;
     height: 500px;
   }
