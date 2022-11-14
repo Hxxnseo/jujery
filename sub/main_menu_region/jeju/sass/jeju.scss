@@ -241,11 +241,30 @@
             }
           }
           .mobile-box {
-            display: flex;
-            flex-wrap: wrap;
+            display: grid;
+            grid-template-columns: 165px 165px;
+            grid-template-rows: 127px 1fr 1fr;
             margin: 40px 0;
+            grid-template-areas:
+              "div1 div2"
+              "div1 div3"
+              "div4 div4";
             @include responsive(pc-screens) {
               display: none;
+            }
+            .m1 {
+              grid-area: div1;
+            }
+            .m2 {
+              grid-area: div2;
+              margin-left: 10px;
+            }
+            .m3 {
+              grid-area: div3;
+              margin: 10px 0 0 10px;
+            }
+            .m4 {
+              grid-area: div4;
             }
           }
 
@@ -254,20 +273,20 @@
             @include responsive(pc-screens) {
               display: grid;
               margin-top: 100px;
+              gap: 20px;
+
               .div1 {
                 grid-area: div1;
               }
               .div2 {
                 grid-area: div2;
-                margin-left: 10px;
               }
               .div3 {
                 grid-area: div3;
-                margin-left: 10px;
               }
               grid-template-areas:
-                "div1 div2"
-                "div1 div3";
+                "div1 div2 div2"
+                "div1 div3 div4";
             }
             .item {
               margin: 10px 0;
@@ -468,7 +487,6 @@
           vertical-align: top;
         }
       }
-      
     }
   }
   // main
