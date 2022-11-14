@@ -92,9 +92,8 @@ var $html = $("html");
 var page = 1;
 var lastPage = $("#box").length;
 
-console.log(lastPage);
-
 $(window).on("wheel", function (e) {
+  // $(function () {
   if ($html.is(":animated")) return;
 
   if (e.originalEvent.deltaY > 0) {
@@ -109,6 +108,18 @@ $(window).on("wheel", function (e) {
   var posTop = (page - 1) * $(window).height();
 
   $html.animate({ scrollTop: posTop });
+
+  if (page === 4) {
+    console.log(123123);
+    $(".cont1").show(2000);
+    $(".cont2").show(3000);
+    $(".cont3").show(5000);
+    $(".cont4").show(4000);
+    $(".cont5").show(1000);
+    $(".cont6").show(4000);
+    $(".cont7").delay(2000).show(5000);
+  }
+  // });
 });
 
 $html.animate({ scrollTop: 0 }, 10);
