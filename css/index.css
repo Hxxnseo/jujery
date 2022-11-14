@@ -160,20 +160,19 @@ main section {
 main .pcSec1 {
   position: relative;
   width: 100%;
-  height: 100%;
   text-align: center;
 }
 main .pcSec1 .video {
   width: 100%;
+  height: 100%;
 }
-main .pcSec1 .video video,
-main .pcSec1 .video img {
-  width: 1000px;
+main .pcSec1 .video video {
+  width: 100%;
+  width: 100%;
 }
 @media screen and (min-width: 1024px) {
-  main .pcSec1 .video video,
-main .pcSec1 .video img {
-    width: 100vw;
+  main .pcSec1 .video video {
+    width: 100%;
     height: 100vh;
   }
 }
@@ -307,6 +306,7 @@ main .pcSec4 .fallingConts div p {
   font-family: "SANGJU Gyeongcheon Island";
 }
 main .pcSec4 .fallingConts .cont1 {
+  display: none;
   top: 50%;
   right: 30%;
   transform: rotate(-20deg);
@@ -317,6 +317,7 @@ main .pcSec4 .fallingConts .cont1 p {
   text-align: right;
 }
 main .pcSec4 .fallingConts .cont2 {
+  display: none;
   top: 55%;
   left: 30%;
   transform: rotate(20deg);
@@ -326,6 +327,7 @@ main .pcSec4 .fallingConts .cont2 p {
   font-size: 80px;
 }
 main .pcSec4 .fallingConts .cont3 {
+  display: none;
   bottom: 70%;
   left: 60%;
   transform: rotate(20deg);
@@ -335,12 +337,14 @@ main .pcSec4 .fallingConts .cont3 p {
   color: #ccc;
 }
 main .pcSec4 .fallingConts .cont4 {
+  display: none;
   right: 60%;
   bottom: 50%;
   transform: rotate(-20deg);
   opacity: 0.4;
 }
 main .pcSec4 .fallingConts .cont5 {
+  display: none;
   bottom: 45%;
   left: 45%;
   transform: rotate(20deg);
@@ -350,6 +354,7 @@ main .pcSec4 .fallingConts .cont5 img {
   width: 50%;
 }
 main .pcSec4 .fallingConts .cont6 {
+  display: none;
   right: 50%;
   bottom: 70%;
   font-size: 180px;
@@ -357,6 +362,7 @@ main .pcSec4 .fallingConts .cont6 {
   color: #ccc;
 }
 main .pcSec4 .fallingConts .cont7 {
+  display: none;
   right: 40%;
   bottom: 50%;
   font-size: 150px;
@@ -497,9 +503,9 @@ footer .footer .footBox .footSns .footSnsCont li img {
   }
 }
 footer .footer .footBox .footMenu {
+  width: 100%;
   padding: 40px 0;
   font-size: 14px;
-  width: 100%;
 }
 @media screen and (min-width: 1024px) {
   footer .footer .footBox .footMenu {
