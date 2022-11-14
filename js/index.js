@@ -126,7 +126,7 @@ $html.animate({ scrollTop: 0 }, 10);
 
 $(function () {
   const list = [$("#gyeonggi"), $("#gangwon"), $("#gyeongsang"), $("#chungcheong"), $("#jeolla"), $("#jeju")];
-  const bg = ["url(../images/main_section_2/gyeonggi.png)", "url(../images/main_section_2/gangwon.png)", "url(../images/main_section_2/gyeongsang.png)", "url(../images/main_section_2/chungcheong.png)", "url(../images/main_section_2/Jeonlla.png)", "url(../images/main_section_2/jeju.png)"];
+  const bg = ["url(../images/main_section_2/seoulgoong.png)", "url(../images/main_section_2/gangwonsan.png)", "url(../images/main_section_2/gyeongsang.png)", "url(../images/main_section_2/dodam.png)", "url(../images/main_section_2/junjoo.png)", "url(../images/main_section_2/jejunight.png)"];
 
   $(".section2 li").on({
     mouseenter: function (e) {
