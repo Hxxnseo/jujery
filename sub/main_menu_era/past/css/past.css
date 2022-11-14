@@ -232,52 +232,48 @@ p {
     font-size: 14px;
   }
 }
-.wrapper .flexWrapper main .main section.introStart {
+.wrapper .flexWrapper main .main .introStart {
   margin-top: 30px;
-  margin-bottom: 50px;
+  text-align: center;
 }
 @media screen and (min-width: 1024px) {
-  .wrapper .flexWrapper main .main section.introStart {
+  .wrapper .flexWrapper main .main .introStart {
+    text-align: left;
     margin-top: 130px;
   }
 }
-.wrapper .flexWrapper main .main section.introStart h3 {
-  text-align: center;
+.wrapper .flexWrapper main .main .introStart h3 {
+  margin-bottom: 50px;
   font-size: 40px;
   font-family: "SANGJU Gyeongcheon Island";
 }
 @media screen and (min-width: 1024px) {
-  .wrapper .flexWrapper main .main section.introStart h3 {
+  .wrapper .flexWrapper main .main .introStart h3 {
     font-size: 50px;
-    text-align: left;
   }
 }
-.wrapper .flexWrapper main .main section.introStart ul {
+.wrapper .flexWrapper main .main .introStart .introMenu ul {
   display: flex;
-  text-align: left;
-  margin: 0 20%;
+  justify-content: center;
+}
+.wrapper .flexWrapper main .main .introStart .introMenu ul li {
+  padding: 0 30px;
+  font-family: "NotoSerifKR-Regular";
+  font-size: 18px;
 }
 @media screen and (min-width: 1024px) {
-  .wrapper .flexWrapper main .main section.introStart ul {
-    margin: 0 39%;
+  .wrapper .flexWrapper main .main .introStart .introMenu ul li {
+    font-size: 24px;
   }
 }
-.wrapper .flexWrapper main .main section.introStart ul li {
-  font-family: "NotoSerifKR-Regular";
-  margin-top: 50px;
-  font-size: 34px;
-  padding: 0 30px;
-}
-.wrapper .flexWrapper main .main section.introStart ul li:last-child {
-  border-left: 1px solid #000;
-}
-.wrapper .flexWrapper main .main section.introStart ul li:last-child a {
-  color: #ccc;
+.wrapper .flexWrapper main .main .introStart .introMenu ul li:first-child {
+  border-right: 1px solid black;
 }
 .wrapper .flexWrapper main .main .label1,
 .wrapper .flexWrapper main .main .label2,
 .wrapper .flexWrapper main .main .label3 {
   display: none;
+  clear: both;
 }
 @media screen and (min-width: 1024px) {
   .wrapper .flexWrapper main .main .label1,
@@ -314,6 +310,7 @@ p {
   border-bottom: none;
 }
 .wrapper .flexWrapper main .main .story {
+  display: none;
   background-image: url(../../img/past_pic.png);
   text-align: center;
   font-size: 3.125em;
@@ -323,6 +320,7 @@ p {
 }
 @media screen and (min-width: 1024px) {
   .wrapper .flexWrapper main .main .story {
+    display: block;
     width: 100%;
     height: 600px;
     padding: 5%;
@@ -331,10 +329,12 @@ p {
 }
 .wrapper .flexWrapper main .main .story span {
   color: #fff;
+  display: none;
 }
 @media screen and (min-width: 1024px) {
   .wrapper .flexWrapper main .main .story span {
     line-height: 2.5em;
+    display: block;
   }
 }
 .wrapper .flexWrapper main .main .story p {
@@ -348,9 +348,38 @@ p {
     font-family: "SANGJU Gyeongcheon Island";
   }
 }
+.wrapper .flexWrapper main .main .inner div {
+  height: 300px;
+}
+.wrapper .flexWrapper main .main .mobile-story {
+  background-image: url(../../img/past_pic.png);
+  text-align: center;
+}
+.wrapper .flexWrapper main .main .mobile-story .bx-pager {
+  margin-left: 40%;
+}
+.wrapper .flexWrapper main .main .mobile-story .bx-pager-item {
+  float: left;
+  margin-top: 20px;
+  margin-left: 16px;
+}
+.wrapper .flexWrapper main .main .mobile-story .bx-prev {
+  float: left;
+  margin-left: 0px;
+}
+.wrapper .flexWrapper main .main .mobile-story .bx-next {
+  float: right;
+  margin-right: 0px;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .main .mobile-story {
+    display: none;
+  }
+}
 .wrapper .flexWrapper main .main .title {
   margin-top: 100px;
   margin-bottom: 50px;
+  clear: both;
 }
 @media screen and (min-width: 1024px) {
   .wrapper .flexWrapper main .main .title {
@@ -498,7 +527,7 @@ p {
   margin-left: 10px;
 }
 .wrapper .flexWrapper main .main .dis img.ja {
-  width: 75px;
+  width: 70px;
   margin-top: 30px;
 }
 .wrapper .flexWrapper main .main .dis img.back {
@@ -516,7 +545,7 @@ p {
     margin-left: 120px;
   }
   .wrapper .flexWrapper main .main .dis img.ja {
-    margin-top: -450px;
+    margin-top: -430px;
     margin-left: 120px;
   }
   .wrapper .flexWrapper main .main .dis img.back {
@@ -554,7 +583,7 @@ p {
   margin-left: 10px;
 }
 .wrapper .flexWrapper main .main .pro img.juck {
-  width: 87px;
+  width: 73px;
   margin-top: -6px;
 }
 .wrapper .flexWrapper main .main .pro img.sol {
@@ -563,7 +592,7 @@ p {
   margin-left: 7px;
 }
 .wrapper .flexWrapper main .main .pro img.moon {
-  width: 100px;
+  width: 88px;
   margin-top: 10px;
 }
 @media screen and (min-width: 1024px) {

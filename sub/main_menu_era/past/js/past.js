@@ -3,7 +3,11 @@ $(function() {
         var WinW = $(window).width();
         if (WinW > 1024) {
             $('.desc').children(".dis-text").css({'display':'none'});
-            
+            $('.dis').children('img').css('margin-top','-400px');
+            $('.dis').children('img.ja').css({'margin-top': '-420px'});
+            $('.dis').children('img.back').css({'margin-top': '-420px'});
+            $('.pro').children('img').css('margin-top','-400px');
+
             $('.desc')
             .mouseover(function() {
             $(this).children(".dis-text").css({'display':'block'});
@@ -44,7 +48,8 @@ $(function() {
             $('.desc').children(".dis-text").css({'display':'block'});
             $('.dis').css('opacity', 0);
             $('.pro').css('opacity', 0);
-            $('.dis').children('img').css('margin-top');
+            $('.dis').children('img').css('margin-top','20px');
+            $('.pro').children('img').css('margin-top','50px');
         }
     });
 

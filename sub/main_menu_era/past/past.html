@@ -7,8 +7,16 @@
     <link rel="stylesheet" href="./css/past.css" />
     <link rel="shortcut icon" type="image" href="../img/icon.png">
     <title>주저리</title>
-    <!-- <script src="js/jquery.js"></script> -->
+    <script src="js/jquery.js"></script>
     <script src="js/jquery-3.6.1.min.js"></script>
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css"> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('.slider').bxSlider();
+    });
+  </script>
     <script src="js/past.js"></script>
   </head>
   <body>
@@ -104,7 +112,7 @@
                   <li><a href="#">들어가기</a></li>
                   <li><a href="#">회원가입</a></li>
                   <li><a href="#">소통하기</a></li>
-                  <li><a href="#">상징</a></li>
+                  <li><a href="../../other_menu/logo/logo.html">상징</a></li>
                 </ul>
               </div>
               <!-- mainSubMenu -->
@@ -115,8 +123,8 @@
                 <h3>시대별</h3>
                 <nav class="introMenu">
                   <ul>
-                    <li><a href="#">과거</a></li>
-                    <li><a href="#">현재</a></li>
+                    <li><a href="past.html">과거</a></li>
+                    <li><a href="../present/present.html">현재</a></li>
                   </ul>
                 </nav>
               </section>
@@ -140,6 +148,28 @@
                         전통주의 맥이 잠시 끊기게된것입니다.         
                     </p>
                 </div> <!--story-->
+                <div class="mobile-story">
+                  <div class="slider">
+                    <div class="inner">
+                      <div style ="color: #fff;font-size: 2em; line-height: 6em;">전통주 이야기</div>
+                    </div>
+                    <div class="inner">
+                      <div style = "line-height: 30px;color: #fff; background-color: rgba(0,0,0,0.5); padding: 20% 10%;">
+                        우리 전통술은 주로 집에서 양조한다 하여 가양주라 불렸습니다. 
+                        공식 문헌 등에 기록된 것만 400여종, 그 외 기록되지 않은 것까지 더하면 
+                        전통주는 약 천여가지에 달했던 것으로 전해집니다.
+                      </div>
+                    </div>
+                    <div class="inner">
+                      <div style = "line-height: 30px;color: #fff; background-color: rgba(0,0,0,0.5); padding: 20% 10%;">
+                        그러나 1905년 “을사늑약”이후 우리 민족문화를말살하려던 일제가
+                        우리 전통주를비롯한 모든술에 막대한 세금을 매겨 
+                        전통주의 맥이 잠시 끊기게된것입니다. 
+                        <br>
+                      </div>
+                    </div> <!--inner-->
+                  </div><!--slider-->
+                </div>
               </section> <!--history-->
               <section class="discontinued">
                 <h2>단종된 전통주</h2>
