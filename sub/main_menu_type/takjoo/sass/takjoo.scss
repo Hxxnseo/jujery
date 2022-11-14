@@ -303,7 +303,7 @@
 
         section.rec-box {
           width: 100%;
-          overflow: hidden;
+          // overflow: hidden;
           margin-bottom: 100px;
 
           h3 {
@@ -388,6 +388,15 @@
 
                 .flip-info {
                   display: none;
+                  background-color: #fff;
+                  padding-left: 30px;
+                  padding-top: 130px;
+                  position: absolute;
+                  top: 0;
+                  transform: translateY(60px);
+                  p {
+                    line-height: 40px;
+                  }
                   button {
                     position: absolute;
                     top: 72px; left: 12px;
@@ -398,6 +407,21 @@
                     background-color: #000;
                     color: white;
                   }
+                  &.f1 {
+                    width: 100%; height: 600px;
+                    }
+                  &.f2 {
+                    width: 100%; height: 450px;
+                    }
+                  &.f3 {
+                    width: 100%; height: 550px;
+                    }
+                  &.f4 {
+                    width: 100%; height: 500px;
+                    }
+                  &.f5 {
+                    width: 100%; height: 600px;
+                    }
                 }
               } // rec-des
             }
@@ -550,114 +574,285 @@
                     }
                   }
                 }
-              } // brewery 공통
 
-              .b1,
-              .b5 {
-                .brewery_box {
-                  width: 100%;
-                  display: flex;
-                  flex-direction: column;
-                  @include responsive(pc-screens) {
-                    height: 500px;
-                    display: flex;
-                    flex-direction: row;
-                  }
-
-                  .alcohol {
-                    margin-bottom: 50px;
+                &.b1,
+                &.b5 {
+                  .brewery_box {
                     width: 100%;
-                    @include responsive(pc-screens) {
-                      width: 30%;
-                      margin-right: 5%;
-                    }
-                    strong {
-                      display: block;
-                      font : {
-                        weight: normal;
-                        size: 1.5em;
-                      }
-                    }
-                    img {
-                      display: block;
-                      margin-top: 20px;
-                      margin: 0 auto;
-                      width: 25%;
-                      @include responsive(pc-screens) {
-                        height: 70%;
-                        // background-color: yellow;
-                      }
-                    }
-                    p {
-                      text-align: center;
-                    }
-                  } // alcohol
-
-                  .brewery_pic {
                     display: flex;
-                    overflow: hidden;
-                    width: 200%;
-                    margin-bottom: 50px;
+                    flex-direction: column;
                     @include responsive(pc-screens) {
+                      height: 500px;
                       display: flex;
-                      flex-direction: column;
-                      justify-content: space-between;
-                      width:30%; height: 100%;
-                      margin-right: 5%;
+                      flex-direction: row;
                     }
-                    .img_box {
+  
+                    .alcohol {
+                      margin-bottom: 50px;
                       width: 100%;
-                      position: relative;
-                      display: flex;
-                      height: 300px;
                       @include responsive(pc-screens) {
-                        height: 48%;
+                        width: 30%;
+                        margin-right: 5%;
+                      }
+                      strong {
+                        display: block;
+                        font : {
+                          weight: normal;
+                          size: 1.5em;
+                        }
                       }
                       img {
-                        width: 100%;
+                        display: block;
+                        margin-top: 20px;
+                        margin: 0 auto;
+                        width: 25%;
+                        @include responsive(pc-screens) {
+                          height: 70%;
+                          // background-color: yellow;
+                        }
                       }
-                    }
-                  }
-                  .text {
-                    margin-bottom: 100px;
-                    @include responsive(pc-screens) {
-                      width: 30%;
-                    }
-                    p {
-                      line-height: 30px;
-                    }
-                  }
-                }
-              } // b1
-
-              .b2,
-              .b4 {
-                .brewery_box {
-                  width: 100%;
-                  display: flex;
-                  flex-direction: column;
-                  @include responsive(pc-screens) {
-                    height: 500px;
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: space-between;
-                  }
-                  .brewery_semi {
-                    order: 2;
-                    @include responsive(pc-screens) {
-                      display: flex;
-                      flex-direction: column;
-                      justify-content: space-between;
-                      width: 65%; height: 100%;
-                    }
+                      p {
+                        text-align: center;
+                      }
+                    } // alcohol
+  
                     .brewery_pic {
                       display: flex;
                       overflow: hidden;
                       width: 200%;
                       margin-bottom: 50px;
                       @include responsive(pc-screens) {
-                        width: 100%; height: 50%;
                         display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        width:30%; height: 100%;
+                        margin-right: 5%;
+                      }
+                      .img_box {
+                        width: 100%;
+                        position: relative;
+                        display: flex;
+                        height: 300px;
+                        @include responsive(pc-screens) {
+                          height: 48%;
+                        }
+                        img {
+                          width: 100%;
+                        }
+                      }
+                    }
+                    .text {
+                      margin-bottom: 100px;
+                      @include responsive(pc-screens) {
+                        width: 30%;
+                      }
+                      a {
+                        font: {
+                          family: $font-sub;
+                          size: 1.25em;
+                        };
+                        margin: 30px 0;
+                        text-align:center;
+                        text-decoration: underline;
+                        @include responsive(pc-screens) {
+                          display: none;
+                        }
+                      }
+                      p {
+                        line-height: 30px;
+                        display: none;
+                        @include responsive(pc-screens) {
+                          display: block;
+                        }
+                      }
+                    }
+                  }
+                } // b1
+  
+                &.b2,
+                &.b4 {
+                  .brewery_box {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    @include responsive(pc-screens) {
+                      height: 500px;
+                      display: flex;
+                      flex-direction: row;
+                      justify-content: space-between;
+                    }
+                    .brewery_semi {
+                      order: 2;
+                      @include responsive(pc-screens) {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        width: 65%; height: 100%;
+                      }
+                      .brewery_pic {
+                        display: flex;
+                        overflow: hidden;
+                        width: 200%;
+                        margin-bottom: 50px;
+                        @include responsive(pc-screens) {
+                          width: 100%; height: 50%;
+                          display: flex;
+                          justify-content: space-between;
+                        }
+                        .img_box {
+                          width: 100%;
+                          position: relative;
+                          display: flex;
+                          height: 300px;
+                          @include responsive(pc-screens) {
+                            width: 48%;
+                          }
+                          img {
+                            width: 100%;
+                            @include responsive(pc-screens) {
+                              width: 100%;
+                              object-fit: cover;
+                            }
+                          }
+                        }
+                      }
+                      .text {
+                        margin-bottom: 100px;
+                        @include responsive(pc-screens) {
+                          width: 100%; height: 50%;
+                          margin: 0;
+                        }
+                        a {
+                          font: {
+                            family: $font-sub;
+                            size: 1.25em;
+                          };
+                          margin: 30px 0;
+                          text-align:center;
+                          text-decoration: underline;
+                          @include responsive(pc-screens) {
+                            display: none;
+                          }
+                        }
+                        p {
+                          line-height: 30px;
+                          display: none;
+                          @include responsive(pc-screens) {
+                            display: block;
+                          }
+                        }
+                      }
+                    }
+  
+                    .alcohol {
+                      margin-bottom: 50px;
+                      width: 100%;
+                      order: 1;
+                      @include responsive(pc-screens) {
+                        width: 30%; height: 100%;
+                        order: 3;
+                      }
+                      strong {
+                        display: block;
+                        font : {
+                          weight: normal;
+                          size: 1.5em;
+                        }
+                      }
+                      img {
+                        display: block;
+                        margin-top: 20px;
+                        margin: 0 auto;
+                        @include responsive(pc-screens) {
+                          height: 90%;
+                        }
+                      }
+                      p {
+                        text-align: center;
+                      }
+                    } // alcohol
+                  }
+                } // b2
+  
+                &.b3,
+                &.b6 {
+                  .brewery_box {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    @include responsive(pc-screens) {
+                      height: 500px;
+                      display: flex;
+                      flex-direction: row;
+                      justify-content: space-between;
+                    }
+                    
+                    .alcohol {
+                      margin-bottom: 50px;
+                      width: 100%;
+                      @include responsive(pc-screens) {
+                        width: 30%; height: 100%;
+                        order: 1;
+                      }
+                      strong {
+                        display: block;
+                        font : {
+                          weight: normal;
+                          size: 1.5em;
+                        }
+                      }
+                      img {
+                        display: block;
+                        margin-top: 20px;
+                        margin: 0 auto;
+                        width: 25%;
+                        @include responsive(pc-screens) {
+                          height: 70%;
+                        }
+                      }
+                      p {
+                        text-align: center;
+                      }
+                    } // alcohol
+  
+                    .text {
+                      order: 3;
+                      margin-bottom: 100px;
+                      @include responsive(pc-screens) {
+                        width: 30%; height: 100%;
+                        order: 2;
+                      }
+                      a {
+                        font: {
+                          family: $font-sub;
+                          size: 1.25em;
+                        };
+                        margin: 30px 0;
+                        text-align:center;
+                        text-decoration: underline;
+                        @include responsive(pc-screens) {
+                          display: none;
+                        }
+                      }
+                      p {
+                        line-height: 30px;
+                        display: none;
+                        @include responsive(pc-screens) {
+                          display: block;
+                        }
+                      }
+                    }
+  
+                    .brewery_pic {
+                      display: flex;
+                      overflow: hidden;
+                      width: 200%;
+                      margin-bottom: 50px;
+                      order:2;
+                      @include responsive(pc-screens) {
+                        width: 30%; height: 100%;
+                        order: 3;
+                        flex-direction: column;
                         justify-content: space-between;
                       }
                       .img_box {
@@ -666,142 +861,28 @@
                         display: flex;
                         height: 300px;
                         @include responsive(pc-screens) {
-                          width: 48%;
+                          height: 48%;
                         }
                         img {
                           width: 100%;
                           @include responsive(pc-screens) {
-                            width: 100%;
-                            object-fit: cover;
+                            height: 100%;
                           }
                         }
                       }
                     }
-                    .text {
-                      margin-bottom: 100px;
-                      @include responsive(pc-screens) {
-                        width: 100%; height: 50%;
-                        margin: 0;
-                      }
-                      p {
-                        line-height: 30px;
-                      }
-                    }
                   }
-
-                  .alcohol {
-                    margin-bottom: 50px;
-                    width: 100%;
-                    order: 1;
-                    @include responsive(pc-screens) {
-                      width: 30%; height: 100%;
-                      order: 3;
-                    }
-                    strong {
-                      display: block;
-                      font : {
-                        weight: normal;
-                        size: 1.5em;
-                      }
-                    }
-                    img {
-                      display: block;
-                      margin-top: 20px;
-                      margin: 0 auto;
-                      @include responsive(pc-screens) {
-                        height: 90%;
-                      }
-                    }
-                    p {
-                      text-align: center;
-                    }
-                  } // alcohol
+                } // b3
+                &.b2,
+                &.b3,
+                &.b4,
+                &.b5,
+                &.b6 {
+                  display: none;
                 }
-              } // b2
+              } // brewery 공통
 
-              .b3,
-              .b6 {
-                .brewery_box {
-                  width: 100%;
-                  display: flex;
-                  flex-direction: column;
-                  @include responsive(pc-screens) {
-                    height: 500px;
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: space-between;
-                  }
-                  
-                  .alcohol {
-                    margin-bottom: 50px;
-                    width: 100%;
-                    @include responsive(pc-screens) {
-                      width: 30%; height: 100%;
-                      order: 1;
-                    }
-                    strong {
-                      display: block;
-                      font : {
-                        weight: normal;
-                        size: 1.5em;
-                      }
-                    }
-                    img {
-                      display: block;
-                      margin-top: 20px;
-                      margin: 0 auto;
-                      width: 25%;
-                      @include responsive(pc-screens) {
-                        height: 70%;
-                      }
-                    }
-                    p {
-                      text-align: center;
-                    }
-                  } // alcohol
 
-                  .text {
-                    order: 3;
-                    margin-bottom: 100px;
-                    @include responsive(pc-screens) {
-                      width: 30%; height: 100%;
-                      order: 2;
-                    }
-                    p {
-                      line-height: 30px;
-                    }
-                  }
-
-                  .brewery_pic {
-                    display: flex;
-                    overflow: hidden;
-                    width: 200%;
-                    margin-bottom: 50px;
-                    order:2;
-                    @include responsive(pc-screens) {
-                      width: 30%; height: 100%;
-                      order: 3;
-                      flex-direction: column;
-                      justify-content: space-between;
-                    }
-                    .img_box {
-                      width: 100%;
-                      position: relative;
-                      display: flex;
-                      height: 300px;
-                      @include responsive(pc-screens) {
-                        height: 48%;
-                      }
-                      img {
-                        width: 100%;
-                        @include responsive(pc-screens) {
-                          height: 100%;
-                        }
-                      }
-                    }
-                  }
-                }
-              } // b3
             } //brewery_content
           } //section.brewery
         }
