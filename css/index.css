@@ -163,17 +163,15 @@ main .pcSec1 {
   text-align: center;
 }
 main .pcSec1 .video {
-  width: 100%;
-  height: 100%;
+  width: auto;
 }
 main .pcSec1 .video video {
-  width: 100%;
   width: 100%;
 }
 @media screen and (min-width: 1024px) {
   main .pcSec1 .video video {
-    width: 100%;
     height: 100vh;
+    object-fit: cover;
   }
 }
 main .pcSec1 .para {
@@ -221,6 +219,7 @@ main .mobileSec .mobilePara h4 {
 main .pcSec2 {
   display: none;
   position: relative;
+  background-size: cover;
 }
 @media screen and (min-width: 1024px) {
   main .pcSec2 {
@@ -234,11 +233,13 @@ main .pcSec2 .h3ImgP ul {
   left: 50%;
   width: 100%;
   margin: 0 auto;
-  justify-content: space-between;
+  text-align: center;
+  justify-content: space-around;
+  align-items: center;
   transform: translate(-50%, -50%);
 }
 main .pcSec2 .h3ImgP ul li {
-  padding: 0 10px;
+  width: 15%;
 }
 main .pcSec2 .h3ImgP ul li a {
   width: 100%;
@@ -246,6 +247,7 @@ main .pcSec2 .h3ImgP ul li a {
   font-size: 100px;
 }
 main .pcSec3 {
+  display: flex;
   position: relative;
   margin-bottom: 100px;
 }
@@ -253,7 +255,10 @@ main .pcSec3 .category {
   width: 100%;
 }
 main .pcSec3 .category ul {
+  display: flex;
   text-align: center;
+  flex-direction: column;
+  gap: 30px;
 }
 @media screen and (min-width: 1024px) {
   main .pcSec3 .category ul {
@@ -261,18 +266,23 @@ main .pcSec3 .category ul {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    gap: 60px;
   }
 }
 main .pcSec3 .category ul li {
-  padding-bottom: 30px;
+  position: relative;
 }
-@media screen and (min-width: 1024px) {
-  main .pcSec3 .category ul li {
-    padding-bottom: 40px;
-  }
+main .pcSec3 .category ul li #second:hover {
+  background-image: url(https://media1.giphy.com/media/xT5LMyaDUZlsLVVxNS/giphy.gif?cid=ecf05e47mry7qvnp5415uo99tw4kpy7z36tpgp6muvgt1hru&rid=giphy.gif&ct=g);
 }
-main .pcSec3 .category ul li:last-child {
-  padding: 0;
+main .pcSec3 .category ul li #third:hover {
+  background-image: url(https://media1.giphy.com/media/KKBPAzaiAzh7y/giphy.gif?cid=ecf05e47iondb2sbqnscph4fy3ra8kvyw87dkiws2wh7tjhl&rid=giphy.gif&ct=g);
+}
+main .pcSec3 .category ul li #fourth:hover {
+  background-image: url(https://media4.giphy.com/media/l4FB53kezY6TlL1PG/giphy.gif?cid=ecf05e476m4bc2h5dw24vss7gz8929vt9g2n55yhwde34pa0&rid=giphy.gif&ct=g);
+}
+main .pcSec3 .category ul li #fifth:hover {
+  background-image: url(https://media1.giphy.com/media/lr1PGJlmI7YMbG7Iwq/giphy.gif?cid=ecf05e47057afaa947mgpln17jk76wex5ghui9lyuww7vd1u&rid=giphy.gif&ct=g);
 }
 main .pcSec3 .category ul li a {
   width: 100%;
@@ -281,10 +291,16 @@ main .pcSec3 .category ul li a {
 }
 @media screen and (min-width: 1024px) {
   main .pcSec3 .category ul li a {
-    font-size: 90px;
+    position: relative;
+    font-size: 100px;
+    color: transparent;
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.5);
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
   }
   main .pcSec3 .category ul li a:hover {
-    opacity: 0.1;
+    -webkit-text-stroke: 0px;
+    background-image: url(https://media0.giphy.com/media/xT3i138nBvO5kZ0YiA/giphy.gif?cid=ecf05e47unaip28r6q2acg2tn4qxh36uxa910r13dbcaothf&rid=giphy.gif&ct=g);
   }
 }
 main .pcSec4 {
