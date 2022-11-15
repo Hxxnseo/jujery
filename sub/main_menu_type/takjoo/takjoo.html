@@ -9,6 +9,9 @@
     <title>주저리</title>
     <script src="../js/jquery.js"></script>
     <script src="./js/takjoo.js"></script>
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css"> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
   </head>
   <body>
     <div class="wrapper">
@@ -109,20 +112,19 @@
 
               <aside class="slide">
                 <h2>슬라이드</h2>
-                  <ul>
-                    <li class="inner">
+                  <ul class="slider">
+                    <li>
                       <a href="#">
                         <img src="../images/Slide/slide1.png" alt="slide1" />
                       </a>
                     </li>
-                    <li class="inner">
+                    <li>
                       <a href="#">
                         <img src="../images/Slide/slide2.png" alt="slide2" />
                       </a>
                     </li>
-                    <li class="inner">
+                    <li>
                       <a href="#">
-                        <button>자세히보기</button>
                         <img src="../images/Slide/slide3.png" alt="slide3" />
                       </a>
                     </li>
@@ -290,28 +292,28 @@
                   <h3>양조장별 제품소개</h3>
                   <span></span> <!-- bar -->
                   <div class="category_wrap">
-                    <a href="#"><img src="../images/icon/before.png" alt="before" class="slider before"></a>
+                    <a href="#"><img src="../images/icon/before.png" alt="before" class="slide prev"></a>
                     <ul class="brewery_item">
                       <li>
-                        <a href="#b1"><img src="../images/Takjoo/brewery/boksoon/boksoon_logo.jpeg" alt="복순도가"></a>
+                        <a href="#b1" class="btn"><img src="../images/Takjoo/brewery/boksoon/boksoon_logo.jpeg" alt="복순도가"></a>
                       </li>
                       <li>
-                        <a href="#b2"><img src="../images/Takjoo/brewery/chungsan/chungsan_logo.jpeg" alt="청산녹수"></a>
+                        <a href="#b2" class="btn"><img src="../images/Takjoo/brewery/chungsan/chungsan_logo.jpeg" alt="청산녹수"></a>
                       </li>
                       <li class="pic_end first">
-                        <a href="#b3"><img src="../images/Takjoo/brewery/haechang/haechang_logo.png" alt="해창주조장"></a>
+                        <a href="#b3" class="btn"><img src="../images/Takjoo/brewery/haechang/haechang_logo.png" alt="해창주조장"></a>
                       </li>
                       <li>
-                        <a href="#b4"><img src="../images/Takjoo/brewery/moonkyung/moonkyung_logo.png" alt="문경주조"></a>
+                        <a href="#b4" class="btn"><img src="../images/Takjoo/brewery/moonkyung/moonkyung_logo.png" alt="문경주조"></a>
                       </li>
                       <li>
-                        <a href="#b5"><img src="../images/Takjoo/brewery/E_one/E_one_logo.png" alt="이원양조장"></a>
+                        <a href="#b5" class="btn"><img src="../images/Takjoo/brewery/E_one/E_one_logo.png" alt="이원양조장"></a>
                       </li>
                       <li class="pic_end">
-                        <a href="#b6"><img src="../images/Takjoo/brewery/baehae/baehae_logo.png" alt="배혜정도가"></a>
+                        <a href="#b6" class="btn"><img src="../images/Takjoo/brewery/baehae/baehae_logo.png" alt="배혜정도가"></a>
                       </li>
                     </ul>
-                      <a href="#"><img src="../images/icon/next.png" alt="next" class="slider next"></a>
+                      <a href="#"><img src="../images/icon/next.png" alt="next" class="slide after"></a>
                   </div> <!-- category_wrap -->
 
                   <div class="brewery_content">

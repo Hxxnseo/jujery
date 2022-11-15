@@ -236,6 +236,143 @@ p {
   width: 100%;
   overflow: hidden;
   margin-top: 30px;
+  /* slider */
+}
+.wrapper .flexWrapper main .main aside.slide .bx-wrapper {
+  position: relative;
+  padding: 0;
+  *zoom: 1;
+  touch-action: pan-y;
+}
+.wrapper .flexWrapper main .main aside.slide .bx-wrapper img {
+  max-width: 100%;
+  display: block;
+}
+.wrapper .flexWrapper main .main aside.slide .bx-wrapper .bx-loading {
+  min-height: 50px;
+  background: url("images/bx_loader.gif") center center no-repeat #ffffff;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2000;
+}
+.wrapper .flexWrapper main .main aside.slide .bx-wrapper .bx-pager {
+  text-align: center;
+  font-size: 0.85em;
+  font-family: Arial;
+  font-weight: bold;
+  color: #fff;
+  padding-top: 20px;
+  position: absolute;
+  bottom: 40px;
+  width: 100%;
+}
+.wrapper .flexWrapper main .main aside.slide .bx-wrapper .bx-pager.bx-default-pager a {
+  background: transparent;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  text-indent: -9999px;
+  display: block;
+  width: 16px;
+  height: 16px;
+  margin: 0 7px;
+  outline: 0;
+  border-radius: 50%;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .main aside.slide .bx-wrapper .bx-pager.bx-default-pager a {
+    width: 13px;
+    height: 13px;
+  }
+}
+.wrapper .flexWrapper main .main aside.slide .bx-wrapper .bx-pager.bx-default-pager a:hover, .wrapper .flexWrapper main .main aside.slide .bx-wrapper .bx-pager.bx-default-pager a:active, .wrapper .flexWrapper main .main aside.slide .bx-wrapper .bx-pager.bx-default-pager a:focus {
+  background: #fff;
+}
+.wrapper .flexWrapper main .main aside.slide .bx-wrapper .bx-pager-item {
+  display: inline-block;
+  vertical-align: bottom;
+  *zoom: 1;
+  *display: inline;
+  font-size: 0;
+  line-height: 0;
+}
+.wrapper .flexWrapper main .main aside.slide .bx-wrapper .bx-controls-auto {
+  text-align: center;
+  position: absolute;
+  bottom: -30px;
+  width: 100%;
+}
+.wrapper .flexWrapper main .main aside.slide .bx-wrapper .bx-controls-auto .bx-controls-auto-item {
+  display: inline-block;
+  vertical-align: bottom;
+  *zoom: 1;
+  *display: inline;
+}
+.wrapper .flexWrapper main .main aside.slide .bx-wrapper .bx-controls-auto .bx-start {
+  display: block;
+  text-indent: -9999px;
+  width: 10px;
+  height: 11px;
+  outline: 0;
+  background: url("images/controls.png") -86px -11px no-repeat;
+  margin: 0 3px;
+}
+.wrapper .flexWrapper main .main aside.slide .bx-wrapper .bx-controls-auto .bx-start:hover, .wrapper .flexWrapper main .main aside.slide .bx-wrapper .bx-controls-auto .bx-start:active, .wrapper .flexWrapper main .main aside.slide .bx-wrapper .bx-controls-auto .bx-start:focus {
+  background-position: -86px -33px;
+}
+.wrapper .flexWrapper main .main aside.slide .bx-wrapper .bx-prev {
+  left: 10px;
+  background: url("images/controls.png") no-repeat 0 -32px;
+  display: none;
+}
+.wrapper .flexWrapper main .main aside.slide .bx-wrapper .bx-prev:hover, .wrapper .flexWrapper main .main aside.slide .bx-wrapper .bx-prev:focus {
+  background-position: 0 0;
+}
+.wrapper .flexWrapper main .main aside.slide .bx-wrapper .bx-next {
+  right: 10px;
+  background: url("images/controls.png") no-repeat -43px -32px;
+  display: none;
+}
+.wrapper .flexWrapper main .main aside.slide .bx-wrapper .bx-next:hover, .wrapper .flexWrapper main .main aside.slide .bx-wrapper .bx-next:focus {
+  background-position: -43px 0;
+}
+.wrapper .flexWrapper main .main aside.slide .bx-wrapper .bx-controls-direction a.disabled {
+  display: none;
+}
+.wrapper .flexWrapper main .main aside.slide .bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-pager {
+  text-align: left;
+  width: 80%;
+}
+.wrapper .flexWrapper main .main aside.slide .bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-controls-auto {
+  right: 0;
+  width: 35px;
+}
+.wrapper .flexWrapper main .main aside.slide .bx-wrapper .bx-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: #666;
+  background: rgba(80, 80, 80, 0.75);
+  width: 100%;
+}
+.wrapper .flexWrapper main .main aside.slide .bx-wrapper .bx-caption span {
+  color: #fff;
+  font-family: Arial;
+  display: block;
+  font-size: 0.85em;
+  padding: 10px;
+}
+.wrapper .flexWrapper main .main aside.slide .bxslider {
+  margin: 0;
+  padding: 0;
+}
+.wrapper .flexWrapper main .main aside.slide ul.bxslider {
+  list-style: none;
+}
+.wrapper .flexWrapper main .main aside.slide .bx-viewport {
+  -webkit-transform: translatez(0);
 }
 @media screen and (min-width: 1024px) {
   .wrapper .flexWrapper main .main aside.slide {
@@ -249,24 +386,6 @@ p {
 }
 .wrapper .flexWrapper main .main aside.slide ul li {
   width: 100%;
-  position: relative;
-}
-.wrapper .flexWrapper main .main aside.slide ul li:last-child a button {
-  position: absolute;
-  top: 58%;
-  left: 26%;
-  width: 100px;
-  height: 35px;
-  border-radius: 5px;
-  cursor: pointer;
-}
-@media screen and (min-width: 1024px) {
-  .wrapper .flexWrapper main .main aside.slide ul li:last-child a button {
-    top: 58.7%;
-    left: 26%;
-    width: 150px;
-    height: 50px;
-  }
 }
 .wrapper .flexWrapper main .main aside.slide ul li a {
   width: 100%;
@@ -467,6 +586,16 @@ p {
   background-size: 0 100%;
   transition: background-size 0.4s ease-in-out;
 }
+.wrapper .flexWrapper main .main .swiper_scrollbar .sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
 .wrapper .flexWrapper main section.brewery h3 {
   text-align: center;
   font-size: 1.875em;
@@ -482,24 +611,24 @@ p {
   margin-top: 40px;
   overflow: hidden;
 }
-.wrapper .flexWrapper main section.brewery .category_wrap a .slider {
+.wrapper .flexWrapper main section.brewery .category_wrap a .slide {
   display: none;
 }
 @media screen and (min-width: 1024px) {
-  .wrapper .flexWrapper main section.brewery .category_wrap a .slider {
+  .wrapper .flexWrapper main section.brewery .category_wrap a .slide {
     display: block;
     width: 2%;
   }
 }
 @media screen and (min-width: 1024px) {
-  .wrapper .flexWrapper main section.brewery .category_wrap a .before {
+  .wrapper .flexWrapper main section.brewery .category_wrap a .prev {
     position: absolute;
     top: 60px;
     left: 0;
   }
 }
 @media screen and (min-width: 1024px) {
-  .wrapper .flexWrapper main section.brewery .category_wrap a .next {
+  .wrapper .flexWrapper main section.brewery .category_wrap a .after {
     position: absolute;
     top: 60px;
     right: 0;
@@ -633,7 +762,8 @@ p {
 }
 @media screen and (min-width: 1024px) {
   .wrapper .flexWrapper main section.brewery .brewery_content .brewery.b1 .brewery_box .alcohol img, .wrapper .flexWrapper main section.brewery .brewery_content .brewery.b5 .brewery_box .alcohol img {
-    height: 70%;
+    width: 35%;
+    height: 90%;
   }
 }
 .wrapper .flexWrapper main section.brewery .brewery_content .brewery.b1 .brewery_box .alcohol p, .wrapper .flexWrapper main section.brewery .brewery_content .brewery.b5 .brewery_box .alcohol p {
@@ -856,7 +986,8 @@ p {
 }
 @media screen and (min-width: 1024px) {
   .wrapper .flexWrapper main section.brewery .brewery_content .brewery.b3 .brewery_box .alcohol img, .wrapper .flexWrapper main section.brewery .brewery_content .brewery.b6 .brewery_box .alcohol img {
-    height: 70%;
+    width: 40%;
+    height: 80%;
   }
 }
 .wrapper .flexWrapper main section.brewery .brewery_content .brewery.b3 .brewery_box .alcohol p, .wrapper .flexWrapper main section.brewery .brewery_content .brewery.b6 .brewery_box .alcohol p {
@@ -931,6 +1062,9 @@ p {
 }
 .wrapper .flexWrapper main section.brewery .brewery_content .brewery.b2, .wrapper .flexWrapper main section.brewery .brewery_content .brewery.b3, .wrapper .flexWrapper main section.brewery .brewery_content .brewery.b4, .wrapper .flexWrapper main section.brewery .brewery_content .brewery.b5, .wrapper .flexWrapper main section.brewery .brewery_content .brewery.b6 {
   display: none;
+}
+.wrapper .flexWrapper main section.brewery .brewery_content .brewery.b4 .alcohol img {
+  width: 100px;
 }
 
 @media screen and (min-width: 1024px) {
