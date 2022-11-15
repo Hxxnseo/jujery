@@ -436,101 +436,121 @@ p {
     display: grid;
     grid-template-areas: "div1 div1 div2 div2" "div3 div4 div4 div5" "div6 div7 div8 div9";
   }
+  .wrapper .flexWrapper main .main .sort .containerjj div.pc .box {
+    position: relative;
+    overflow: hidden;
+    width: 98%;
+  }
+  .wrapper .flexWrapper main .main .sort .containerjj div.pc .box img {
+    width: 100%;
+    height: 100%;
+  }
+  .wrapper .flexWrapper main .main .sort .containerjj div.pc .box .arrow-black {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 80%;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+  }
   .wrapper .flexWrapper main .main .sort .containerjj div.pc .div1 {
     grid-area: div1;
-    margin: 0;
-    width: 100%;
-    margin-left: -4px;
-  }
-  .wrapper .flexWrapper main .main .sort .containerjj div.pc .div1 img {
-    width: 99%;
-    height: 100%;
   }
   .wrapper .flexWrapper main .main .sort .containerjj div.pc .div2 {
     grid-area: div2;
-    margin: 0;
-    width: 100%;
-    margin-left: 4px;
   }
   .wrapper .flexWrapper main .main .sort .containerjj div.pc .div2 img {
-    width: 99%;
-    height: 100%;
+    width: 100%;
   }
   .wrapper .flexWrapper main .main .sort .containerjj div.pc .div3 {
     grid-area: div3;
-    margin: 0;
-    width: 100%;
-    margin-top: 5px;
-    margin-left: -4px;
-  }
-  .wrapper .flexWrapper main .main .sort .containerjj div.pc .div3 img {
-    width: 95%;
-    height: 100%;
   }
   .wrapper .flexWrapper main .main .sort .containerjj div.pc .div4 {
     grid-area: div4;
-    margin: 0;
-    width: 100%;
-    margin-top: 2px;
-    margin-left: 1px;
-  }
-  .wrapper .flexWrapper main .main .sort .containerjj div.pc .div4 img {
-    width: 105%;
     height: 90%;
   }
   .wrapper .flexWrapper main .main .sort .containerjj div.pc .div5 {
     grid-area: div5;
-    margin: 0;
-    width: 100%;
-    margin-top: 11px;
-    margin-left: 7px;
-  }
-  .wrapper .flexWrapper main .main .sort .containerjj div.pc .div5 img {
-    width: 97%;
   }
   .wrapper .flexWrapper main .main .sort .containerjj div.pc .div6 {
     grid-area: div6;
-    margin: 0;
-    width: 100%;
-    margin-top: -8px;
-    margin-left: -4px;
-  }
-  .wrapper .flexWrapper main .main .sort .containerjj div.pc .div6 img {
-    width: 97%;
-    height: 95%;
+    height: 75.5%;
   }
   .wrapper .flexWrapper main .main .sort .containerjj div.pc .div7 {
     grid-area: div7;
-    margin: 0;
-    width: 80%;
-    margin-top: -23px;
-    margin-left: 8px;
-  }
-  .wrapper .flexWrapper main .main .sort .containerjj div.pc .div7 img {
-    width: 110%;
-    height: 89%;
+    margin-top: -35px;
+    height: 84%;
   }
   .wrapper .flexWrapper main .main .sort .containerjj div.pc .div8 {
     grid-area: div8;
-    margin: 0;
-    width: 80%;
-    margin-top: -23px;
-    margin-left: -18px;
-  }
-  .wrapper .flexWrapper main .main .sort .containerjj div.pc .div8 img {
-    width: 139%;
-    height: 89%;
+    margin-top: -35px;
+    width: 96%;
+    height: 84%;
   }
   .wrapper .flexWrapper main .main .sort .containerjj div.pc .div9 {
     grid-area: div9;
-    margin: 0;
-    width: 100%;
-    margin-top: -11px;
-    margin-left: 7px;
+    height: 75.5%;
   }
-  .wrapper .flexWrapper main .main .sort .containerjj div.pc .div9 img {
-    width: 97%;
-    height: 95%;
+  .wrapper .flexWrapper main .main .sort .containerjj div.pc .d {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 20px 60px;
+  }
+  .wrapper .flexWrapper main .main .sort .containerjj div.pc .d .arrow-white {
+    position: absolute;
+    top: 50%;
+    left: 3%;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+  }
+  .wrapper .flexWrapper main .main .sort .containerjj div.pc .d h5 {
+    font-size: 2em;
+    font-weight: normal;
+    font-family: "SANGJU Gyeongcheon Island";
+    text-align: center;
+  }
+  .wrapper .flexWrapper main .main .sort .containerjj div.pc .d1 {
+    height: 393px;
+    width: 586px;
+  }
+  .wrapper .flexWrapper main .main .sort .containerjj div.pc .d2 {
+    margin-left: 7px;
+    height: 393px;
+    width: 586px;
+  }
+  .wrapper .flexWrapper main .main .sort .containerjj div.pc .d3 {
+    height: 399px;
+    width: 326px;
+  }
+  .wrapper .flexWrapper main .main .sort .containerjj div.pc .d4 {
+    height: 368px;
+    width: 504px;
+  }
+  .wrapper .flexWrapper main .main .sort .containerjj div.pc .d5 {
+    height: 398px;
+    width: 326px;
+  }
+  .wrapper .flexWrapper main .main .sort .containerjj div.pc .d6 {
+    height: 319px;
+    width: 326px;
+  }
+  .wrapper .flexWrapper main .main .sort .containerjj div.pc .d7 {
+    padding-right: 95px;
+    margin-top: 0px;
+    height: 353px;
+    width: 320px;
+  }
+  .wrapper .flexWrapper main .main .sort .containerjj div.pc .d8 {
+    padding-right: 93px;
+    height: 353px;
+    width: 320px;
+  }
+  .wrapper .flexWrapper main .main .sort .containerjj div.pc .d9 {
+    height: 319px;
+    width: 326px;
   }
 }
 .wrapper .flexWrapper main .main .sort .containerjj .mobile {
