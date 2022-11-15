@@ -10,6 +10,74 @@
   }
 }
 
+.modal {
+  color: white;
+  h3 {
+    margin: 20px 0;
+    color: white;
+  }
+
+  p {
+    line-height: 30px;
+    margin-bottom: 20px;
+  }
+
+  a {
+    color: white;
+    font-family: $font-sub;
+    font-weight: 600;
+    text-align: center;
+  }
+}
+
+#modal1 {
+  background-image: url(../../../../images/background/main_page_background.png);
+  color: white;
+  h3 {
+    margin: 20px 0;
+    color: white;
+  }
+
+  .strong {
+    margin-bottom: 30px;
+    font-weight: 600;
+    font-size: 22px;
+    // color: #ccc;
+
+    span {
+      font-size: 26px;
+      color: cadetblue;
+    }
+  }
+}
+
+#modal2 {
+  background-image: url(../../../../images/background/main_page_background.png);
+
+  h3 {
+    font-size: 36px;
+    text-align: left;
+  }
+
+  .quote {
+    font-size: 30px;
+    text-align: center;
+  }
+}
+
+#modal3 {
+  background-image: url(../../../../images/background/main_page_background.png);
+
+  h3 {
+    font-size: 36px;
+    text-align: left;
+  }
+
+  .quote {
+    font-size: 30px;
+    text-align: center;
+  }
+}
 .container {
   // margin-right: 20px;
   // position: relative;
@@ -265,7 +333,8 @@
                 width: 49.5%;
               }
 
-              img {
+              img,
+              iframe {
                 width: 100%;
                 height: 100%;
 
@@ -275,11 +344,16 @@
           }
 
           .flexCont2 {
+            display: flex;
             width: 100%;
             height: 100%;
-            display: flex;
             justify-content: space-between;
             flex-wrap: wrap;
+
+            img {
+              width: 100%;
+              height: 100%;
+            }
 
             div {
               width: 49.5%;
@@ -287,18 +361,32 @@
 
               @include responsive(pc-screens) {
                 width: 33%;
+                object-fit: cover;
               }
 
               img {
                 width: 100%;
-                height: 100%;
+                height: auto;
                 cursor: pointer;
+              }
+
+              p {
+                width: 100%;
+                height: 100%;
+
+                a {
+                  height: 100%;
+
+                  img {
+                    height: 100%;
+                  }
+                }
               }
             }
 
             .img1 {
-              width: 100%;
               position: relative;
+              width: 100%;
 
               @include responsive(pc-screens) {
                 width: 32.5%;
@@ -306,16 +394,19 @@
 
               a {
                 height: 100%;
+
+                img {
+                  height: 100%;
+                }
               }
 
               h3 {
-                width: 100%;
                 position: absolute;
                 top: 50%;
                 left: 50%;
-                transform: translate(-50%, -50%);
+                width: 100%;
                 text-align: center;
-                align-items: center;
+                transform: translate(-50%, -50%);
               }
             }
           }
@@ -478,9 +569,9 @@
         }
 
         .footMenu {
+          width: 100%;
           padding: 40px 0;
           font-size: 14px;
-          width: 100%;
 
           @include responsive(pc-screens) {
             width: 30%;

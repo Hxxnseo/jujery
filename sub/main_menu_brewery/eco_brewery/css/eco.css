@@ -54,6 +54,66 @@ p {
     max-width: 2560px;
   }
 }
+.modal {
+  color: white;
+}
+.modal h3 {
+  margin: 20px 0;
+  color: white;
+}
+.modal p {
+  line-height: 30px;
+  margin-bottom: 20px;
+}
+.modal a {
+  color: white;
+  font-family: "NotoSerifKR-Regular";
+  font-weight: 600;
+  text-align: center;
+}
+
+#modal1 {
+  background-image: url(../../../../images/background/main_page_background.png);
+  color: white;
+}
+#modal1 h3 {
+  margin: 20px 0;
+  color: white;
+}
+#modal1 .strong {
+  margin-bottom: 30px;
+  font-weight: 600;
+  font-size: 22px;
+}
+#modal1 .strong span {
+  font-size: 26px;
+  color: cadetblue;
+}
+
+#modal2 {
+  background-image: url(../../../../images/background/main_page_background.png);
+}
+#modal2 h3 {
+  font-size: 36px;
+  text-align: left;
+}
+#modal2 .quote {
+  font-size: 30px;
+  text-align: center;
+}
+
+#modal3 {
+  background-image: url(../../../../images/background/main_page_background.png);
+}
+#modal3 h3 {
+  font-size: 36px;
+  text-align: left;
+}
+#modal3 .quote {
+  font-size: 30px;
+  text-align: center;
+}
+
 .container {
   width: 100%;
   padding: 0 20px;
@@ -272,17 +332,22 @@ p {
     width: 49.5%;
   }
 }
-.wrapper .flexWrapper main .main .sect1 .flexCont1 div img {
+.wrapper .flexWrapper main .main .sect1 .flexCont1 div img,
+.wrapper .flexWrapper main .main .sect1 .flexCont1 div iframe {
   width: 100%;
   height: 100%;
   cursor: pointer;
 }
 .wrapper .flexWrapper main .main .sect1 .flexCont2 {
+  display: flex;
   width: 100%;
   height: 100%;
-  display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+}
+.wrapper .flexWrapper main .main .sect1 .flexCont2 img {
+  width: 100%;
+  height: 100%;
 }
 .wrapper .flexWrapper main .main .sect1 .flexCont2 div {
   width: 49.5%;
@@ -291,16 +356,27 @@ p {
 @media screen and (min-width: 1024px) {
   .wrapper .flexWrapper main .main .sect1 .flexCont2 div {
     width: 33%;
+    object-fit: cover;
   }
 }
 .wrapper .flexWrapper main .main .sect1 .flexCont2 div img {
   width: 100%;
-  height: 100%;
+  height: auto;
   cursor: pointer;
 }
-.wrapper .flexWrapper main .main .sect1 .flexCont2 .img1 {
+.wrapper .flexWrapper main .main .sect1 .flexCont2 div p {
   width: 100%;
+  height: 100%;
+}
+.wrapper .flexWrapper main .main .sect1 .flexCont2 div p a {
+  height: 100%;
+}
+.wrapper .flexWrapper main .main .sect1 .flexCont2 div p a img {
+  height: 100%;
+}
+.wrapper .flexWrapper main .main .sect1 .flexCont2 .img1 {
   position: relative;
+  width: 100%;
 }
 @media screen and (min-width: 1024px) {
   .wrapper .flexWrapper main .main .sect1 .flexCont2 .img1 {
@@ -310,14 +386,16 @@ p {
 .wrapper .flexWrapper main .main .sect1 .flexCont2 .img1 a {
   height: 100%;
 }
+.wrapper .flexWrapper main .main .sect1 .flexCont2 .img1 a img {
+  height: 100%;
+}
 .wrapper .flexWrapper main .main .sect1 .flexCont2 .img1 h3 {
-  width: 100%;
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  width: 100%;
   text-align: center;
-  align-items: center;
+  transform: translate(-50%, -50%);
 }
 .wrapper .flexWrapper main .main .sect2 {
   width: 100%;
@@ -461,9 +539,9 @@ p {
   }
 }
 .wrapper footer .footer .footBox .footMenu {
+  width: 100%;
   padding: 40px 0;
   font-size: 14px;
-  width: 100%;
 }
 @media screen and (min-width: 1024px) {
   .wrapper footer .footer .footBox .footMenu {
