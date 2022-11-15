@@ -401,14 +401,23 @@
                 .box { 
                   position:relative ;
                   overflow: hidden; 
-                  width: 98%; img {width: 100%; height: 100%;}}
+                  width: 98%; 
+                  img {width: 100%; height: 100%;}
+                  .arrow-black {
+                    display: none;
+                    position: absolute;
+                    top: 50%; left: 80%;
+                    cursor: pointer;
+                    width: 50px; height: 50px;
+                  }
+                }
                 .div1 {grid-area: div1;}
-                .div2 {grid-area: div2;}
+                .div2 {grid-area: div2; img {width: 100%;}}
                 .div3 {grid-area: div3;}
                 .div4 {grid-area: div4; height: 90%;}
                 .div5 {grid-area: div5;}
-                .div6 {grid-area: div6; height: 75%;}
-                .div7 {grid-area: div7;margin-top: -40px; height: 86%;}
+                .div6 {grid-area: div6; height: 75.5%;}
+                .div7 {grid-area: div7;margin-top: -35px; height: 84%;}
                 .div8 {grid-area: div8;margin-top: -35px; width: 96%; height: 84%;}
                 .div9 {grid-area: div9; height: 75.5%;}
                 grid-template-areas: 
@@ -420,17 +429,31 @@
                   position: absolute;
                   background-color: rgba(0,0,0,0.7);
                   color: #fff;
+                  padding: 20px 60px;
+                  .arrow-white {
+                    position: absolute;
+                    // z-index: 2;
+                    top: 50%; left: 3%;
+                    cursor: pointer;
+                    width: 50px; height: 50px;
+                  }
+                  h5 {
+                    font-size: 2em;
+                    font-weight: normal;
+                    font-family: $font-main;
+                    text-align: center;
+                  }
                 }
 
-                .d1 { margin-top: -1px; height: 395px; width: 580px;}
-                .d2 { margin-top: -1px; height: 395px; width: 580px;}
-                .d3 { height: 399px; width: 320px;}
-                .d4 { height: 368px; width: 475px;}
-                .d5 { height: 398px; width: 320px;}
-                .d6 { height: 319px; width: 320px;}
-                .d7 { margin-top: 5px; height: 345px; width: 320px;}
-                .d8 { height: 353px; width: 320px;}
-                .d9 { height: 319px; width: 320px;}
+                .d1 { height: 393px; width: 586px;}
+                .d2 { margin-left: 7px;height: 393px; width: 586px;}
+                .d3 { height: 399px; width: 326px;}
+                .d4 { height: 368px; width: 504px;}
+                .d5 { height: 398px; width: 326px;}
+                .d6 { height: 319px; width: 326px;}
+                .d7 { padding-right: 95px; margin-top: 0px; height: 353px; width: 320px;}
+                .d8 { padding-right: 93px; height: 353px; width: 320px;}
+                .d9 { height: 319px; width: 326px;}
               }
               margin-top: 50px;
               margin-bottom: 100px;

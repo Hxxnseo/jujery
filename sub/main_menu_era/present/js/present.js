@@ -25,6 +25,62 @@ $(function() {
                     })
                 }
             });
+
+
+            $('.box').children('.arrow-black').css({'display':'none'});
+            $('.box')
+            .on ({
+                'mouseover' : function() {
+                    $(this).children('.arrow-black').css({'display':'block'});
+                },
+                'mouseout' : function() {
+                    $(this).children('.arrow-black').css({'display':'none'})
+                }
+                });
+
+            $('.black1')
+            .on( 'click' , function() {
+                $(this)
+                .next().next().animate ({
+                    'margin-left':'-586px'
+                }, 2000, function() {$('.black1').stop();})
+            });
+
+            $('.black2')
+            .on( 'click' , function() {
+                $(this).next().next().animate ({
+                    'margin-left':'-326px'
+                }, 2000, function() {$('.black2').stop();})
+            });
+
+            $('.black3')
+            .on( 'click' , function() {
+                $(this).next().next().animate ({
+                    'margin-left':'-505px'
+                }, 2000, function() {$('.black3').stop();})
+            });
+
+            $('.black4')
+            .on( 'click' , function() {
+                $(this).next().next().animate ({
+                    'margin-left':'-326px'
+                }, 2000, function() {$('.black4').stop();})
+            });
+
+            $('.black5')
+            .on( 'click' , function() {
+                $(this).next().next().animate ({
+                    'margin-left':'-260px'
+                }, 2000, function() {$('.black5').stop();})
+            });
+
+            $('.arrow-white').on( 'click' , function() {
+                $(this).parent().animate ({
+                    'margin-left':'0px'
+                }, 2000)
+                .stop();
+            });
+
             
         } else if(WinW < 1024) { // mobile
             $('.mobile').children().css({'cursor':'pointer'});
