@@ -18,7 +18,7 @@
   // background-color: #000;
   // max-width: 1200px; // pc
 
-  background-color: #ccc;
+  // background-color: #ccc;
   @include responsive(pc-screens) {
     padding: 0;
     margin: 0 auto;
@@ -49,8 +49,9 @@
       }
 
       .header {
-        
-
+        @include responsive(pc-screens) {
+          position: fixed;
+        }
         .logoMenu {
           display: none;
 

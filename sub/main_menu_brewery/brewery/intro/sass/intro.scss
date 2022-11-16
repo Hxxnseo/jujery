@@ -49,6 +49,9 @@
       }
 
       .header {
+        @include responsive(pc-screens) {
+          position: fixed;
+        }
         .logoMenu {
           display: none;
 
@@ -79,6 +82,10 @@
               li {
                 @include responsive(pc-screens) {
                   padding-bottom: 60px;
+
+                  // a {
+                  //   color: white;
+                  // }
 
                   &:hover {
                     ul {

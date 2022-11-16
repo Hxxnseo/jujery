@@ -73,7 +73,6 @@ p {
 .container {
   padding: 0 20px;
   width: 100%;
-  background-color: #ccc;
 }
 @media screen and (min-width: 1024px) {
   .container {
@@ -103,6 +102,11 @@ p {
     height: auto;
     width: 370px;
     background-image: url(../../../images/background/detail_page_header_background.png);
+  }
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper header .header {
+    position: fixed;
   }
 }
 .wrapper .flexWrapper header .header .logoMenu {

@@ -357,6 +357,7 @@ p {
   height: 300px;
 }
 .wrapper .flexWrapper main .main .mobile-story {
+  margin-top: 50px;
   background-image: url(../../img/past_pic.png);
   text-align: center;
 }

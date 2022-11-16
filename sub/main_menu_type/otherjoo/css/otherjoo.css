@@ -104,6 +104,11 @@ p {
     background-image: url(../../../../images/background/detail_page_header_background.png);
   }
 }
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper header .header {
+    position: fixed;
+  }
+}
 .wrapper .flexWrapper header .header .logoMenu {
   display: none;
 }
@@ -234,6 +239,7 @@ p {
 }
 .wrapper .flexWrapper main .main aside.slide {
   width: 100%;
+  overflow: hidden;
   margin-top: 30px;
 }
 @media screen and (min-width: 1024px) {
@@ -400,6 +406,15 @@ p {
 }
 .wrapper .flexWrapper main .main section.rec-box .recommend .rec-des .flip-info {
   display: none;
+  background-color: #fff;
+  padding-left: 30px;
+  padding-top: 130px;
+  position: absolute;
+  top: 0;
+  transform: translateY(60px);
+}
+.wrapper .flexWrapper main .main section.rec-box .recommend .rec-des .flip-info p {
+  line-height: 40px;
 }
 .wrapper .flexWrapper main .main section.rec-box .recommend .rec-des .flip-info button {
   position: absolute;
@@ -411,6 +426,14 @@ p {
   border-radius: 50%;
   background-color: #000;
   color: white;
+}
+.wrapper .flexWrapper main .main section.rec-box .recommend .rec-des .flip-info.f1 {
+  width: 100%;
+  height: 600px;
+}
+.wrapper .flexWrapper main .main section.rec-box .recommend .rec-des .flip-info.f2 {
+  width: 100%;
+  height: 450px;
 }
 .wrapper .flexWrapper main .main .swiper_scrollbar {
   margin-top: 65px;
@@ -457,9 +480,9 @@ p {
 }
 @media screen and (min-width: 1024px) {
   .wrapper .flexWrapper main section.brewery .category_wrap .brewery_item {
-    margin: 0 auto;
-    width: 90%;
-    flex-wrap: nowrap;
+    margin-bottom: 0;
+    width: 120%;
+    overflow: hidden;
   }
 }
 .wrapper .flexWrapper main section.brewery .category_wrap .brewery_item li {
@@ -468,7 +491,7 @@ p {
 @media screen and (min-width: 1024px) {
   .wrapper .flexWrapper main section.brewery .category_wrap .brewery_item li {
     justify-content: space-between;
-    width: 18%;
+    width: 180px;
   }
 }
 .wrapper .flexWrapper main section.brewery .category_wrap .brewery_item li a img {
@@ -478,8 +501,7 @@ p {
 }
 @media screen and (min-width: 1024px) {
   .wrapper .flexWrapper main section.brewery .category_wrap .brewery_item li a img:hover {
-    border: 2px solid #000;
-    border-radius: 50%;
+    transform: scale(1.5);
   }
 }
 .wrapper .flexWrapper main section.brewery .brewery_content {

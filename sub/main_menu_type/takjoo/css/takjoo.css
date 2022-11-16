@@ -6,6 +6,93 @@
   font-family: "NotoSerifKR-Regular";
   src: url(../../../../font/NotoSerifKR-Regular.woff);
 }
+/* Slider */
+.slick-slider {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+.slick-list:focus {
+  outline: none;
+}
+.slick-list.dragging {
+  cursor: pointer;
+  cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+  transform: translate3d(0, 0, 0);
+}
+
+.slick-track {
+  position: relative;
+  left: 0;
+  top: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.slick-track:before, .slick-track:after {
+  content: "";
+  display: table;
+}
+.slick-track:after {
+  clear: both;
+}
+.slick-loading .slick-track {
+  visibility: hidden;
+}
+
+.slick-slide {
+  float: left;
+  height: 100%;
+  min-height: 1px;
+  display: none;
+}
+[dir=rtl] .slick-slide {
+  float: right;
+}
+.slick-slide img {
+  display: block;
+}
+.slick-slide.slick-loading img {
+  display: none;
+}
+.slick-slide.dragging img {
+  pointer-events: none;
+}
+.slick-initialized .slick-slide {
+  display: block;
+}
+.slick-loading .slick-slide {
+  visibility: hidden;
+}
+.slick-vertical .slick-slide {
+  display: block;
+  height: auto;
+  border: 1px solid transparent;
+}
+
+.slick-arrow.slick-hidden {
+  display: none;
+}
+
 @font-face {
   font-family: "SANGJU Gyeongcheon Island";
   src: url(../../../../font/SANGJU\ Gyeongcheon\ Island.woff);
@@ -104,6 +191,11 @@ p {
     background-image: url(../../../../images/background/detail_page_header_background.png);
   }
 }
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper header .header {
+    position: fixed;
+  }
+}
 .wrapper .flexWrapper header .header .logoMenu {
   display: none;
 }
@@ -165,6 +257,8 @@ p {
   }
 }
 .wrapper .flexWrapper header .header .mobileLogoMenu {
+  z-index: 50;
+  position: relative;
   display: flex;
 }
 @media screen and (min-width: 1024px) {
@@ -250,7 +344,7 @@ p {
 }
 .wrapper .flexWrapper main .main aside.slide .bx-wrapper .bx-loading {
   min-height: 50px;
-  background: url("images/bx_loader.gif") center center no-repeat #ffffff;
+  background: url("../../images/icon/bx_loader.gif") center center no-repeat #ffffff;
   height: 100%;
   width: 100%;
   position: absolute;
@@ -316,7 +410,7 @@ p {
   width: 10px;
   height: 11px;
   outline: 0;
-  background: url("images/controls.png") -86px -11px no-repeat;
+  background: url("../../images/icon/controls.png") -86px -11px no-repeat;
   margin: 0 3px;
 }
 .wrapper .flexWrapper main .main aside.slide .bx-wrapper .bx-controls-auto .bx-start:hover, .wrapper .flexWrapper main .main aside.slide .bx-wrapper .bx-controls-auto .bx-start:active, .wrapper .flexWrapper main .main aside.slide .bx-wrapper .bx-controls-auto .bx-start:focus {
@@ -324,7 +418,7 @@ p {
 }
 .wrapper .flexWrapper main .main aside.slide .bx-wrapper .bx-prev {
   left: 10px;
-  background: url("images/controls.png") no-repeat 0 -32px;
+  background: url("../../images/icon/controls.png") no-repeat 0 -32px;
   display: none;
 }
 .wrapper .flexWrapper main .main aside.slide .bx-wrapper .bx-prev:hover, .wrapper .flexWrapper main .main aside.slide .bx-wrapper .bx-prev:focus {
@@ -332,7 +426,7 @@ p {
 }
 .wrapper .flexWrapper main .main aside.slide .bx-wrapper .bx-next {
   right: 10px;
-  background: url("images/controls.png") no-repeat -43px -32px;
+  background: url("../../images/icon/controls.png") no-repeat -43px -32px;
   display: none;
 }
 .wrapper .flexWrapper main .main aside.slide .bx-wrapper .bx-next:hover, .wrapper .flexWrapper main .main aside.slide .bx-wrapper .bx-next:focus {
@@ -370,9 +464,6 @@ p {
 }
 .wrapper .flexWrapper main .main aside.slide ul.bxslider {
   list-style: none;
-}
-.wrapper .flexWrapper main .main aside.slide .bx-viewport {
-  -webkit-transform: translatez(0);
 }
 @media screen and (min-width: 1024px) {
   .wrapper .flexWrapper main .main aside.slide {
@@ -445,6 +536,7 @@ p {
 }
 .wrapper .flexWrapper main .main section.rec-box {
   width: 100%;
+  overflow: hidden;
   margin-bottom: 100px;
 }
 .wrapper .flexWrapper main .main section.rec-box h3 {
@@ -573,29 +665,6 @@ p {
   width: 100%;
   height: 600px;
 }
-.wrapper .flexWrapper main .main .swiper_scrollbar {
-  margin-top: 65px;
-  display: block;
-  width: 100%;
-  height: 10px;
-  border-radius: 10px;
-  overflow: hidden;
-  background-color: #dbdbdb;
-  background-image: linear-gradient(to right, black, black);
-  background-repeat: no-repeat;
-  background-size: 0 100%;
-  transition: background-size 0.4s ease-in-out;
-}
-.wrapper .flexWrapper main .main .swiper_scrollbar .sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  border: 0;
-}
 .wrapper .flexWrapper main section.brewery h3 {
   text-align: center;
   font-size: 1.875em;
@@ -611,29 +680,6 @@ p {
   margin-top: 40px;
   overflow: hidden;
 }
-.wrapper .flexWrapper main section.brewery .category_wrap a .slide {
-  display: none;
-}
-@media screen and (min-width: 1024px) {
-  .wrapper .flexWrapper main section.brewery .category_wrap a .slide {
-    display: block;
-    width: 2%;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .wrapper .flexWrapper main section.brewery .category_wrap a .prev {
-    position: absolute;
-    top: 60px;
-    left: 0;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .wrapper .flexWrapper main section.brewery .category_wrap a .after {
-    position: absolute;
-    top: 60px;
-    right: 0;
-  }
-}
 .wrapper .flexWrapper main section.brewery .category_wrap .brewery_item {
   width: 100%;
   display: flex;
@@ -642,8 +688,9 @@ p {
 }
 @media screen and (min-width: 1024px) {
   .wrapper .flexWrapper main section.brewery .category_wrap .brewery_item {
-    margin: 0 auto;
-    width: 90%;
+    margin-bottom: 0;
+    width: 120%;
+    overflow: hidden;
     flex-wrap: nowrap;
   }
 }
@@ -655,17 +702,17 @@ p {
 @media screen and (min-width: 1024px) {
   .wrapper .flexWrapper main section.brewery .category_wrap .brewery_item li {
     justify-content: space-between;
-    width: 18%;
+    width: 180px;
   }
 }
 .wrapper .flexWrapper main section.brewery .category_wrap .brewery_item li a img {
   width: 100%;
   border-radius: 50%;
+  background-color: #fff;
 }
 @media screen and (min-width: 1024px) {
   .wrapper .flexWrapper main section.brewery .category_wrap .brewery_item li a img:hover {
-    border: 2px solid #000;
-    border-radius: 50%;
+    transform: scale(1.5);
   }
 }
 .wrapper .flexWrapper main section.brewery .category_wrap .brewery_item .pic_end {
