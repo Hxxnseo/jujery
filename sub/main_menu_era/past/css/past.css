@@ -104,6 +104,11 @@ p {
     background-image: url(../../../../images/background/detail_page_header_background.png);
   }
 }
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper header .header {
+    position: fixed;
+  }
+}
 .wrapper .flexWrapper header .header .logoMenu {
   display: none;
 }
@@ -352,6 +357,7 @@ p {
   height: 300px;
 }
 .wrapper .flexWrapper main .main .mobile-story {
+  margin-top: 50px;
   background-image: url(../../img/past_pic.png);
   text-align: center;
 }

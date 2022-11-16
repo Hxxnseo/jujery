@@ -1,4 +1,20 @@
 $(function() {
+    const logoMenu = $(".footer").offset().top;
+
+    console.log(2100);
+
+    $(window).on("wheel", function (e) {
+    console.log($(document).scrollTop());
+
+    if ($(document).scrollTop() > 2100) {
+        $(".menu .gnb li a").css("color", "white");
+        $(".logo h1 img").attr("src", "../../../images/logo/main_white_logo.png");
+    } else {
+        $(".menu .gnb li a").css("color", "black");
+        $(".logo h1 img").attr("src", "../../../images/logo/detail_black_logo.png");
+    }
+    });
+
     $(window).on('resize',function() {
         var WinW = $(window).width();
         if (WinW > 1024) { // pc
@@ -41,44 +57,43 @@ $(function() {
             $('.black1')
             .on( 'click' , function() {
                 $(this)
-                .next().next().animate ({
+                .next().next().stop().animate ({
                     'margin-left':'-586px'
                 }, 2000, function() {$('.black1').stop();})
             });
 
             $('.black2')
             .on( 'click' , function() {
-                $(this).next().next().animate ({
+                $(this).next().next().stop().animate ({
                     'margin-left':'-326px'
                 }, 2000, function() {$('.black2').stop();})
             });
 
             $('.black3')
             .on( 'click' , function() {
-                $(this).next().next().animate ({
+                $(this).next().next().stop().animate ({
                     'margin-left':'-505px'
                 }, 2000, function() {$('.black3').stop();})
             });
 
             $('.black4')
             .on( 'click' , function() {
-                $(this).next().next().animate ({
+                $(this).next().next().stop().animate ({
                     'margin-left':'-326px'
                 }, 2000, function() {$('.black4').stop();})
             });
 
             $('.black5')
             .on( 'click' , function() {
-                $(this).next().next().animate ({
+                $(this).next().next().stop().animate ({
                     'margin-left':'-260px'
                 }, 2000, function() {$('.black5').stop();})
             });
 
             $('.arrow-white').on( 'click' , function() {
-                $(this).parent().animate ({
+                $(this).parent().stop().animate ({
                     'margin-left':'0px'
                 }, 2000)
-                .stop();
             });
 
             
@@ -116,14 +131,14 @@ $(function() {
             $('.m1').on({ 
                 'click' : function() {
                 $(".modal").fadeIn();
-                $('.modal-text').html('<h5>천비향</h5><br>총 다섯번의 담금 과정을 거치는 오양주인 천비향은 쌀 본연의 단맛이 묵직하게 느껴지는 술이에요. 시원하게 드시는 걸 추천드려요!');
+                $('.modal-text').html('<h5>천비향</h5><br>총 다섯번의 담금 과정을 거치는 오양주인 천비향은 쌀 본연의 단맛이 묵직하게 느껴지는 술이에요. 진한 풍미지만 부드러워요. 시원하게 드시는 걸 추천드려요!');
             }
             });
 
             $('.m2').on({ 
                 'click' : function() {
                 $(".modal").fadeIn();
-                $('.modal-text').html('<h5>도원결의</h5><br>천연 발효기법으로 만든 도원결의는 은은한 복숭아의 맛과 향이 특징이에요. 차가운 상태로 스트레이트로 드셔보세요!');
+                $('.modal-text').html('<h5>도원결의</h5><br>영덕의 해풍 맞은 복숭아를 첨가하여 천연 발효기법으로 만든 도원결의는 자연스럽고 은은한 복숭아의 맛과 향이 매력적인 술이에요. 시원하게 보관하여 스트레이트로 드셔보세요!');
             }
             });
 

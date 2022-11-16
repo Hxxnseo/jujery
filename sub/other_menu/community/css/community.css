@@ -104,6 +104,11 @@ p {
     background-image: url(../../../../images/background/detail_page_header_background.png);
   }
 }
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper header .header {
+    position: fixed;
+  }
+}
 .wrapper .flexWrapper header .header .logoMenu {
   display: none;
 }
@@ -253,6 +258,7 @@ p {
 @media screen and (min-width: 1024px) {
   .wrapper .flexWrapper main .main .notice-board {
     margin-top: 30px;
+    margin-bottom: 200px;
   }
 }
 .wrapper .flexWrapper main .main .notice-board table {

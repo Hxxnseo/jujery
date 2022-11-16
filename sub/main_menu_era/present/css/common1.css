@@ -1,3 +1,11 @@
+@font-face {
+  font-family: "SANGJU Gyeongcheon Island";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2112@1.0/SANGJUGyeongcheonIsland.woff") format("woff");
+}
+@font-face {
+  src: url("https://fonts.googleapis.com/css2?family=Noto+Serif+KR&display=swap");
+  font-family: "NotoSerifKR-Regular";
+}
 * {
   margin: 0;
   padding: 0;

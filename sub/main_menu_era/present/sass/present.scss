@@ -49,6 +49,9 @@
       }
 
       .header {
+        @include responsive(pc-screens) {
+          position: fixed;
+        }
         .logoMenu {
           display: none;
 
@@ -170,6 +173,7 @@
         @include responsive(pc-screens) {
           width: 1180px;
           margin: 0 auto;
+          margin-top: -20px; // 추가함
         }
 
         .mainSubMenu {
@@ -255,6 +259,9 @@
           height: 177px;
           text-align: center;
           margin-bottom: 100px;
+          @include responsive(pc-screens) {
+            margin-top: 100px;
+          }
   
           img {
             width: 100%;
@@ -404,11 +411,14 @@
                   width: 98%; 
                   img {width: 100%; height: 100%;}
                   .arrow-black {
-                    display: none;
                     position: absolute;
                     top: 50%; left: 80%;
                     cursor: pointer;
                     width: 50px; height: 50px;
+                  }
+                  .b{
+                    
+                    // display: none;
                   }
                 }
                 .div1 {grid-area: div1;}
@@ -479,7 +489,7 @@
                 display: none;
                 .modal_content {
                   width: 70%;
-                  height: 300px;
+                  height: 320px;
                   position: absolute;
                   top: 60%; left: 15%;
                   background: rgba(0,0,0,0.7);

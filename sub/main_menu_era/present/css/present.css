@@ -104,6 +104,11 @@ p {
     background-image: url(../../../../images/background/detail_page_header_background.png);
   }
 }
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper header .header {
+    position: fixed;
+  }
+}
 .wrapper .flexWrapper header .header .logoMenu {
   display: none;
 }
@@ -201,6 +206,7 @@ p {
   .wrapper .flexWrapper main .main {
     width: 1180px;
     margin: 0 auto;
+    margin-top: -20px;
   }
 }
 .wrapper .flexWrapper main .main .mainSubMenu {
@@ -275,6 +281,11 @@ p {
   height: 177px;
   text-align: center;
   margin-bottom: 100px;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .main .pageintro {
+    margin-top: 100px;
+  }
 }
 .wrapper .flexWrapper main .main .pageintro img {
   width: 100%;
@@ -446,7 +457,6 @@ p {
     height: 100%;
   }
   .wrapper .flexWrapper main .main .sort .containerjj div.pc .box .arrow-black {
-    display: none;
     position: absolute;
     top: 50%;
     left: 80%;
@@ -577,7 +587,7 @@ p {
 }
 .wrapper .flexWrapper main .main .sort .containerjj .mobile .modal .modal_content {
   width: 70%;
-  height: 300px;
+  height: 320px;
   position: absolute;
   top: 60%;
   left: 15%;
