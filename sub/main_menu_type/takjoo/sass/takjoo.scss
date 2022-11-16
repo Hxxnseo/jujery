@@ -49,6 +49,9 @@
       }
 
       .header {
+        @include responsive(pc-screens) {
+          position: fixed;
+        }
         .logoMenu {
           display: none;
 
@@ -225,7 +228,7 @@
 
             .bx-loading {
               min-height: 50px;
-              background: url('images/bx_loader.gif') center center no-repeat #ffffff;
+              background: url('../../images/icon/bx_loader.gif') center center no-repeat #ffffff;
               height: 100%;
               width: 100%;
               position: absolute;
@@ -303,7 +306,7 @@
                 width: 10px;
                 height: 11px;
                 outline: 0;
-                background: url('images/controls.png') -86px -11px no-repeat;
+                background: url('../../images/icon/controls.png') -86px -11px no-repeat;
                 margin: 0 3px;
                 &:hover,
                 &:active,
@@ -315,7 +318,7 @@
 
             .bx-prev {
               left: 10px;
-              background: url('images/controls.png') no-repeat 0 -32px;
+              background: url('../../images/icon/controls.png') no-repeat 0 -32px;
               display: none;
               &:hover,
               &:focus {
@@ -325,7 +328,7 @@
 
             .bx-next {
               right: 10px;
-              background: url('images/controls.png') no-repeat -43px -32px;
+              background: url('../../images/icon/controls.png') no-repeat -43px -32px;
               display: none;
               &:hover,
               &:focus {
@@ -373,10 +376,6 @@
 
           ul.bxslider {
             list-style: none;
-          }
-
-          .bx-viewport {
-            -webkit-transform: translatez(0);
           }
           
           @include responsive(pc-screens) {
@@ -453,7 +452,7 @@
 
         section.rec-box {
           width: 100%;
-          // overflow: hidden;
+          overflow: hidden;
           margin-bottom: 100px;
 
           h3 {
@@ -478,6 +477,7 @@
                 position: relative;
                 width: 70%;
                 margin-right: 5%;
+
                 &:last-child {
                   margin-right: 0;
                 }
@@ -576,32 +576,6 @@
               } // rec-des
             }
           }
-            
-            .swiper_scrollbar {
-              margin-top: 65px;
-              display: block;
-              width: 100%;
-              height: 10px;
-              border-radius: 10px;
-              overflow: hidden;
-
-              background-color: #dbdbdb;
-              background-image: linear-gradient(to right, black, black);
-              background-repeat: no-repeat;
-              background-size: 0 100%;
-
-              transition: background-size .4s ease-in-out;
-              .sr-only {
-                position: absolute;
-                width: 1px;
-                height: 1px;
-                padding: 0;
-                margin: -1px;
-                overflow: hidden;
-                clip: rect(0,0,0,0);
-                border: 0;
-              }
-            }
         } // section.rec-box
 
           section.brewery {
