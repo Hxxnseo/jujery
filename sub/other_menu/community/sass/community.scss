@@ -49,6 +49,9 @@
       }
 
       .header {
+        @include responsive(pc-screens) {
+          position: fixed;
+        }
         .logoMenu {
           display: none;
 
@@ -220,6 +223,7 @@
           margin-bottom: 100px;
           @include responsive(pc-screens) {
             margin-top: 30px;
+            margin-bottom: 200px;
           }
           table {
             width: 100%;

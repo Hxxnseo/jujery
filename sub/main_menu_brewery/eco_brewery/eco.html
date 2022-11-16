@@ -5,7 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/eco.css" />
-    <link rel="shortcut icon" type="image" href="../../../../images/logo/jujery_page_shortcut_icon.png">
+    <link rel="shortcut icon" type="image" href="../../../../images/logo/jujery_page_shortcut_icon.png" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+    <script src="./js/jquery.js"></script>
+    <script src="./js/eco.js"></script>
     <title>친환경 양조장</title>
   </head>
   <body>
@@ -120,24 +125,75 @@
                 <h2>sect1</h2>
                 <div class="flexCont1">
                   <div>
-                    <img src="./eco_imgs/geumpoong/vid_capture.png" class="a"alt="" />
+                    <iframe src="https://www.youtube.com/embed/uvSUHNawKzE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                   </div>
                   <div>
-                    <img src="./eco_imgs/geumpoong/main.jpg" alt="" />
-                    <!-- <p>100년간 술향기를 피우는 인천시 강화도 랜드마크 양조장</p> -->
+                    <div id="modal1" class="modal">
+                      <h3>금풍양조장</h3>
+                      <p>인천시 강화군 길상면 온수리, 92년 세월을 고스란히 머금은 목조건물에서 3대째 막걸리를 만들고 있는 금풍양조장.</p>
+
+                      <p>양조장 곳곳에는 술을 담아 온 흔적이 남아있고, 맑은 우물이 잘 보존되어 있어 깊이를 더한다. 전통 방식으로 빚은 금풍막걸리는 제품 이상의 가치를 지니고 있다.</p>
+
+                      <p>최근 현대적 감각이 더해져 색다른 문화 공간으로 변신하고 있는 금풍양조장은 업계 최초 비건 인증을 획득하고, 친환경을 위한 삼무(三無)원칙을 지키는 소기업이다.</p>
+
+                      <p>제품 생산과 유통의 전과정에서 환경을 생각하고 청년과 장애인들의 일자리 창출에 기여하고 싶은 마음을 담아 회사를 꾸려나가고 있다.</p>
+
+                      <p class="strong">금풍양조장의 <span class="color">3無</span> 원칙</p>
+
+                      <p>1無 : 무농약, 친환경 쌀, 최고급 원료</p>
+                      <p>2無 : 무감미료 막걸리, 수제 프리미엄 막걸리</p>
+                      <p>3無 : Zero Waste 쓰레기 줄이기, 재활용(업사이클링)</p>
+
+                      <a href="#" rel="modal:close">닫기</a>
+                    </div>
+
+                    <p>
+                      <a href="#modal1" rel="modal:open"><img src="./eco_imgs/geumpoong/main.jpg" alt="" /></a>
+                    </p>
                   </div>
                 </div>
                 <div class="flexCont2">
                   <div>
-                    <img src="./eco_imgs/geumpoong/eco_4.jpg" alt="" />
+                    <div id="modal2" class="modal">
+                      <h3>
+                        쌀 포대 업사이클링은 <br />
+                        어떻게 시작되었나요?
+                      </h3>
+                      <p class="quote">&ldquo;</p>
+                      <p>막걸리 제품 포장에 관심이 많았습니다. 술은 개인 취향에 따라 맛과 느낌이 다르기 때문에 포장에 금풍양조의 스토리를 담고 싶었습니다. 쌓여진 쌀 포대로 무엇인가 만들고 싶었는데 업사이클링 업체 '작당주의' 송훈화 대표를 만나면서 본격화 되었습니다.</p>
+                      <p>예전 쌀 포대는 비닐 재질로 되어 있고 튼튼하지 않아서 업사이클링에 적합하지 않았습니다. 밀가루 포대와 외국 로고가 있는 소재가 있었지만 업사이클링을 위해 새로운 소재를 도입하는 것은 크게 의미가 없었습니다.</p>
+                      <p>강화도 친환경 쌀을 생산하시는 강화드림 한성희 대표님이 쌀과 함께 업사이클링 가능한 쌀 포대를 만들어 주시면서 쌀 포대 냉온백이 만들어질 수 있었습니다.</p>
+                      <p class="quote">&rdquo;</p>
+                      <a href="#" rel="modal:close">닫기</a>
+                    </div>
+
+                    <p>
+                      <a href="#modal2" rel="modal:open"><img src="./eco_imgs/geumpoong/eco_1.png" alt="" /></a>
+                    </p>
                   </div>
                   <div>
-                    <img src="./eco_imgs/geumpoong/eco_1.png" alt="" />
+                    <div id="modal3" class="modal">
+                      <h3>
+                        커피 원두백 리사이클링은 <br />
+                        어떻게 시작되었나요?
+                      </h3>
+                      <p class="quote">&ldquo;</p>
+                      <p>금풍양조장에서는 봉투 대신 커피 원두백을 사용합니다. 1kg 원두백에 금풍양조장 막걸리 두 병이 딱 맞게 들어갑니다. 원두백 디자인이 달라 고객 분들도 좋아하시고, 지역 카페를 홍보하는 효과도 있습니다.</p>
+                      <p>쌀 포대처럼 카페에서 버려지는 커피 원두백을 발견했습니다. 처음에는 원두백으로 파우치를 만들고 싶었지만 개당 1만원의 제작비가 들어서 손잡이 구멍만 뚫는 것으로 결정했습니다. 원두백 재사용에 대해 카페 사장님들께 제안했을 때 모두 좋아하셨습니다. 어차피 버려지는 것이기도 했고, 재활용하는 것에 관심을 가져 주셨습니다.</p>
+                      <p>강화도에 수백개의 카페가 있다고 들었습니다. 그 중 온수리에 있는 13개 카페에서 커피 원두백을 받아서 사용하고 있습니다. 직접 돌아다니면서 원두백을 수거하고 깨끗하게 세척하여 손잡이 구멍을 뚫어 마무리합니다. 모두 수작업으로 진행합니다.</p>
+                      <p class="quote">&rdquo;</p>
+                      <a href="#" rel="modal:close">닫기</a>
+                    </div>
+
+                    <p>
+                      <a href="#modal3" rel="modal:open"><img src="./eco_imgs/geumpoong/eco_4.jpg" alt="" /></a>
+                    </p>
                   </div>
                   <div class="img1">
                     <a href="https://smartstore.naver.com/gold1931">
                       <img src="./eco_imgs/geumpoong/sool.jpg" alt="" />
                     </a>
+                    <h3>사러가기</h3>
                   </div>
                 </div>
               </section>

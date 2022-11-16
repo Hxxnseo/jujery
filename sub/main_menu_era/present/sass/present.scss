@@ -49,6 +49,9 @@
       }
 
       .header {
+        @include responsive(pc-screens) {
+          position: fixed;
+        }
         .logoMenu {
           display: none;
 
@@ -170,6 +173,7 @@
         @include responsive(pc-screens) {
           width: 1180px;
           margin: 0 auto;
+          margin-top: -20px; // 추가함
         }
 
         .mainSubMenu {
@@ -255,6 +259,9 @@
           height: 177px;
           text-align: center;
           margin-bottom: 100px;
+          @include responsive(pc-screens) {
+            margin-top: 100px;
+          }
   
           img {
             width: 100%;
@@ -398,19 +405,65 @@
               display: none;
               @include responsive(pc-screens) {
                 display: grid;
-                .div1 {grid-area: div1; margin: 0; width: 100%; margin-left: -4px; img {width: 99%; height: 100%;}}
-                .div2 {grid-area: div2; margin: 0; width: 100%; margin-left: 4px; img {width: 99%; height: 100%;}}
-                .div3 {grid-area: div3; margin:0; width: 100%; margin-top: 5px; margin-left: -4px; img {width: 95%; height: 100%;}}
-                .div4 {grid-area: div4; margin: 0; width: 100%; margin-top: 2px; margin-left: 1px; img {width: 105%; height: 90%;}}
-                .div5 {grid-area: div5; margin: 0; width: 100%; margin-top: 11px; margin-left: 7px; img{width: 97%;}}
-                .div6 {grid-area: div6; margin: 0; width: 100%; margin-top: -8px; margin-left: -4px; img{width: 97%; height: 95%;}}
-                .div7 {grid-area: div7; margin: 0; width: 80%; margin-top: -23px; margin-left: 8px; img{width: 110%; height: 89%;}}
-                .div8 {grid-area: div8; margin: 0; width: 80%; margin-top: -23px; margin-left: -18px; img{width: 139%; height: 89%;}}
-                .div9 {grid-area: div9; margin: 0; width: 100%; margin-top: -11px; margin-left: 7px; img{width: 97%; height: 95%;}}
+                .box { 
+                  position:relative ;
+                  overflow: hidden; 
+                  width: 98%; 
+                  img {width: 100%; height: 100%;}
+                  .arrow-black {
+                    position: absolute;
+                    top: 50%; left: 80%;
+                    cursor: pointer;
+                    width: 50px; height: 50px;
+                  }
+                  .b{
+                    
+                    // display: none;
+                  }
+                }
+                .div1 {grid-area: div1;}
+                .div2 {grid-area: div2; img {width: 100%;}}
+                .div3 {grid-area: div3;}
+                .div4 {grid-area: div4; height: 90%;}
+                .div5 {grid-area: div5;}
+                .div6 {grid-area: div6; height: 75.5%;}
+                .div7 {grid-area: div7;margin-top: -35px; height: 84%;}
+                .div8 {grid-area: div8;margin-top: -35px; width: 96%; height: 84%;}
+                .div9 {grid-area: div9; height: 75.5%;}
                 grid-template-areas: 
                   "div1 div1 div2 div2"
                   "div3 div4 div4 div5"
                   "div6 div7 div8 div9";
+                
+                .d {
+                  position: absolute;
+                  background-color: rgba(0,0,0,0.7);
+                  color: #fff;
+                  padding: 20px 60px;
+                  .arrow-white {
+                    position: absolute;
+                    // z-index: 2;
+                    top: 50%; left: 3%;
+                    cursor: pointer;
+                    width: 50px; height: 50px;
+                  }
+                  h5 {
+                    font-size: 2em;
+                    font-weight: normal;
+                    font-family: $font-main;
+                    text-align: center;
+                  }
+                }
+
+                .d1 { height: 393px; width: 586px;}
+                .d2 { margin-left: 7px;height: 393px; width: 586px;}
+                .d3 { height: 399px; width: 326px;}
+                .d4 { height: 368px; width: 504px;}
+                .d5 { height: 398px; width: 326px;}
+                .d6 { height: 319px; width: 326px;}
+                .d7 { padding-right: 95px; margin-top: 0px; height: 353px; width: 320px;}
+                .d8 { padding-right: 93px; height: 353px; width: 320px;}
+                .d9 { height: 319px; width: 326px;}
               }
               margin-top: 50px;
               margin-bottom: 100px;

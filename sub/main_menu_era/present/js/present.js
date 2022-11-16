@@ -1,4 +1,20 @@
 $(function() {
+    const logoMenu = $(".footer").offset().top;
+
+    console.log(2100);
+
+    $(window).on("wheel", function (e) {
+    console.log($(document).scrollTop());
+
+    if ($(document).scrollTop() > 2100) {
+        $(".menu .gnb li a").css("color", "white");
+        $(".logo h1 img").attr("src", "../../../images/logo/main_white_logo.png");
+    } else {
+        $(".menu .gnb li a").css("color", "black");
+        $(".logo h1 img").attr("src", "../../../images/logo/detail_black_logo.png");
+    }
+    });
+
     $(window).on('resize',function() {
         var WinW = $(window).width();
         if (WinW > 1024) { // pc
@@ -25,6 +41,61 @@ $(function() {
                     })
                 }
             });
+
+
+            $('.box').children('.arrow-black').css({'display':'none'});
+            $('.box')
+            .on ({
+                'mouseover' : function() {
+                    $(this).children('.arrow-black').css({'display':'block'});
+                },
+                'mouseout' : function() {
+                    $(this).children('.arrow-black').css({'display':'none'})
+                }
+                });
+
+            $('.black1')
+            .on( 'click' , function() {
+                $(this)
+                .next().next().stop().animate ({
+                    'margin-left':'-586px'
+                }, 2000, function() {$('.black1').stop();})
+            });
+
+            $('.black2')
+            .on( 'click' , function() {
+                $(this).next().next().stop().animate ({
+                    'margin-left':'-326px'
+                }, 2000, function() {$('.black2').stop();})
+            });
+
+            $('.black3')
+            .on( 'click' , function() {
+                $(this).next().next().stop().animate ({
+                    'margin-left':'-505px'
+                }, 2000, function() {$('.black3').stop();})
+            });
+
+            $('.black4')
+            .on( 'click' , function() {
+                $(this).next().next().stop().animate ({
+                    'margin-left':'-326px'
+                }, 2000, function() {$('.black4').stop();})
+            });
+
+            $('.black5')
+            .on( 'click' , function() {
+                $(this).next().next().stop().animate ({
+                    'margin-left':'-260px'
+                }, 2000, function() {$('.black5').stop();})
+            });
+
+            $('.arrow-white').on( 'click' , function() {
+                $(this).parent().stop().animate ({
+                    'margin-left':'0px'
+                }, 2000)
+            });
+
             
         } else if(WinW < 1024) { // mobile
             $('.mobile').children().css({'cursor':'pointer'});
