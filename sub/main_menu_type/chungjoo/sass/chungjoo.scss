@@ -49,6 +49,9 @@
       }
 
       .header {
+        @include responsive(pc-screens) {
+          position: fixed;
+        }
         .logoMenu {
           display: none;
 
@@ -302,7 +305,7 @@
 
         section.rec-box {
           width: 100%;
-          overflow: hidden;
+          // overflow: hidden;
           margin-bottom: 100px;
 
           h3 {

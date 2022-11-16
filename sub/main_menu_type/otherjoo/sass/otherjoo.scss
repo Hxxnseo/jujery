@@ -49,6 +49,9 @@
       }
 
       .header {
+        @include responsive(pc-screens) {
+          position: fixed;
+        }
         .logoMenu {
           display: none;
 
@@ -206,7 +209,7 @@
 
         aside.slide {
           width: 100%;
-          // overflow: hidden;
+          overflow: hidden;
           margin-top: 30px;
 
           @include responsive(pc-screens) {

@@ -15,10 +15,9 @@ $(function() {
         parent()
         .css("display","none");
     });
-});
+
 
 // 좋아요 버튼
-$(function() {
     $('.heart').on("click", function() {
         $(this).next()
         .css("display","block");
@@ -27,33 +26,11 @@ $(function() {
         $(this)
         .css("display","none");
     });
-});
+
 
 // slick slider
-$(document).ready(function() {
-    var $slider = $('.recommend');
-    var $progressBar = $('.swiper_scrollbar');
-    var $progressBarLable = $('.slider_label')
-
-    $slider.on('beforeChange', function(event, slick, currentSlide, nextSlide) {
-        var calc = ( (nextSlide) / (slick.slideCount-1)) * 100;
-
-        $progressBar
-        .css('background-size', calc + '% 100%')
-        .attr('aria-valuenow', calc);
-
-        $progressBarLable.text(calc + '% completed');
-    });
-
-    $slider.slick({
-        slidesToShow:3,
-        slidesToScroll:1,
-        speed:400
-    });
-});
 
 // section3 아코디언탭 on mobile
-$(function() {
     $('.brewery_content .brewery_box .text a').click(function(e) {
         e.preventDefault();
         $(this).next().slideUp(300);
@@ -64,10 +41,8 @@ $(function() {
             $(this).next().slideDown(300);
         }
     });
-});
 
 // section3 brewery-contents 연결
-$(function() {
     $('.brewery_item li').click(function(e) {
         e.preventDefault();
         var index = $(this).index();
@@ -75,4 +50,24 @@ $(function() {
         $('.brewery_content > div').css("display", "none");
         $('.brewery_content > div').eq(index).css("display", "block");
     });
+
+});
+
+// sider bar
+$(function () {
+    const logoMenu = $(".footer").offset().top;
+
+    console.log(logoMenu);
+
+    $(window).on("scroll", function (e) {
+    	console.log($(document).scrollTop());
+
+    	if ($(document).scrollTop() > 1800) {
+        	$(".menu .gnb li a").css("color", "white");
+        	$(".logo h1 img").attr("src", "../../../images/logo/main_white_logo.png");
+      	} else {
+        	$(".menu .gnb li a").css("color", "black");
+        	$(".logo h1 img").attr("src", "../../../images/logo/detail_black_logo.png");
+      	}
+    	});
 });
