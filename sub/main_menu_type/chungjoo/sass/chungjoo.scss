@@ -18,7 +18,6 @@
   // background-color: #000;
   // max-width: 1200px; // pc
 
-  // background-color: #ccc;
   @include responsive(pc-screens) {
     padding: 0;
     margin: 0 auto;
@@ -385,6 +384,15 @@
 
                 .flip-info {
                   display: none;
+                  background-color: #fff;
+                  padding-left: 30px;
+                  padding-top: 130px;
+                  position: absolute;
+                  top: 0;
+                  transform: translateY(60px);
+                  p {
+                    line-height: 40px;
+                  }
                   button {
                     position: absolute;
                     top: 72px; left: 12px;
@@ -395,6 +403,18 @@
                     background-color: #000;
                     color: white;
                   }
+                  &.f1 {
+                    width: 100%; height: 600px;
+                    }
+                  &.f2 {
+                    width: 100%; height: 450px;
+                    }
+                  &.f3 {
+                    width: 100%; height: 550px;
+                    }
+                  &.f4 {
+                    width: 100%; height: 500px;
+                    }
                 }
               }
             }
@@ -438,7 +458,9 @@
                 margin-bottom: 50px;
                 
                 @include responsive(pc-screens) {
-                  // margin: 0 auto;
+                  margin-bottom: 0;
+                  width: 120%;
+                  overflow: hidden;
                 }
 
                 li {
@@ -446,7 +468,7 @@
                   margin-bottom: 5%;
                   @include responsive(pc-screens) {
                     justify-content: space-between;
-                    width:18%;
+                    width: 180px;
                   }
 
                   a {
@@ -456,8 +478,7 @@
                       background-color: #fff;
                       &:hover {
                         @include responsive(pc-screens) {
-                          border: 2px solid #000;
-                          border-radius: 50%;
+                          transform: scale(1.5);
                         }
                       }
                     }

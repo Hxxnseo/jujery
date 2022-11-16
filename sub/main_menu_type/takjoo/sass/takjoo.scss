@@ -1,4 +1,5 @@
 @import "./style1.scss";
+@import "./slick.scss";
 @import "./common1.scss";
 @import "./mixin1.scss";
 
@@ -18,7 +19,6 @@
   // background-color: #000;
   // max-width: 1200px; // pc
 
-  // background-color: #ccc;
   @include responsive(pc-screens) {
     padding: 0;
     margin: 0 auto;
@@ -129,6 +129,8 @@
         }
 
         .mobileLogoMenu {
+          z-index: 50;
+          position: relative;
           display: flex;
           @include responsive(pc-screens) {
             display: none;
@@ -594,30 +596,6 @@
               margin-top: 40px;
               overflow: hidden;
               
-              a {
-                .slide {
-                  display: none;
-                  @include responsive(pc-screens) {
-                    display: block;
-                    width: 2%;
-                  }
-                }
-                .prev {
-                  @include responsive(pc-screens) {
-                    position: absolute;
-                    top: 60px;
-                    left: 0;
-                  }
-                }
-                .after {
-                  @include responsive(pc-screens) {
-                    position: absolute;
-                    top: 60px;
-                    right: 0;
-                  }
-                }
-              }
-              
               .brewery_item{
                 width: 100%;
                 display: flex;
@@ -625,8 +603,9 @@
                 margin-bottom: 50px;
 
                 @include responsive(pc-screens) {
-                  margin: 0 auto;
-                  width: 90%;
+                  margin-bottom: 0;
+                  width: 120%;
+                  overflow: hidden;
                   flex-wrap: nowrap;
                 }
 
@@ -636,17 +615,17 @@
                   margin-bottom: 5%;
                   @include responsive(pc-screens) {
                     justify-content: space-between;
-                    width:18%;
+                    width: 180px;
                   }
 
                   a {
                     img {
                       width: 100%;
                       border-radius: 50%;
+                      background-color: #fff;
                       &:hover {
                         @include responsive(pc-screens) {
-                          border: 2px solid #000;
-                          border-radius: 50%;
+                          transform: scale(1.5);
                         }
                       }
                     }

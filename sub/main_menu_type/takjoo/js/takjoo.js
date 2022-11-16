@@ -29,6 +29,11 @@ $(function() {
 
 
 // slick slider
+$('.multiple-items').slick({
+    lazyLoad: 'ondemand',
+    slidesToShow: 3,
+    slidesToScroll: 1
+});
 
 // section3 아코디언탭 on mobile
     $('.brewery_content .brewery_box .text a').click(function(e) {
