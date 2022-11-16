@@ -3,7 +3,7 @@ $(function () {
 
   console.log(logoMenu);
 
-  $(window).on("wheel", function (e) {
+  $(window).on("scroll", function (e) {
     console.log($(document).scrollTop());
 
     if ($(document).scrollTop() > 600) {
