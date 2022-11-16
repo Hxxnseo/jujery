@@ -50,6 +50,10 @@
       }
 
       .header {
+        @include responsive(pc-screens) {
+          position: fixed;
+        }
+      
         .logoMenu {
           display: none;
 
@@ -278,6 +282,35 @@
           }
         } // sec1
 
+
+        .bx-wrapper {
+          position:relative;
+          .bx-controls-direction {
+              font-size: 60px;
+              a {
+                  position: absolute;
+                  top: 400px;
+                  display: block; width: 60px; overflow: hidden;
+              }
+              .bx-prev {
+                  left:20px;
+                  &:before {
+                  content:"\e93d"; font-family: 'xeicon';
+              }
+              
+          }
+          .bx-next {
+              right:20px;
+              &:before {
+                  content:"\e940"; font-family: 'xeicon';
+              }
+            }   
+          }
+        } //bx-wrapper
+
+
+      .slider {
+
         .sec2 {
           @include responsive(pc-screens) {
             position: relative;
@@ -463,6 +496,10 @@
             }
           }
         } // .sec2
+
+        
+      } // slider
+
       }
     }
     .footer-geonggi {
