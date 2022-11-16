@@ -1,7 +1,8 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
@@ -78,6 +79,8 @@ p {
   }
 }
 .wrapper .wrap-inner header .mobileLogoMenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 @media screen and (min-width: 1024px) {
@@ -106,8 +109,11 @@ p {
 @media screen and (min-width: 1024px) {
   .wrapper .wrap-inner .container {
     padding: 0 130px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }
 .wrapper .wrap-inner .container .menu {
@@ -134,8 +140,12 @@ p {
   }
 }
 .wrapper .wrap-inner .container .menu .gnb li {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin-bottom: 40px;
 }
 @media screen and (min-width: 1024px) {
@@ -161,8 +171,12 @@ p {
 }
 @media screen and (min-width: 1024px) {
   .wrapper .wrap-inner .container .menu .gnb li .sub-gnb li {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: left;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
   }
 }
 .wrapper .wrap-inner .container .menu .gnb li .sub-gnb li a {
@@ -177,21 +191,31 @@ p {
   }
 }
 .wrapper .wrap-inner .container .menu .gnb li .sub-gnb .sub-gnb-li {
-  justify-content: end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
 }
 @media screen and (min-width: 1024px) {
   .wrapper .wrap-inner .container .menu .gnb li .sub-gnb .sub-gnb-li {
-    justify-content: left;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
   }
 }
 .wrapper .wrap-inner .container .menu .gnb li .sub-gnb .sub-gnb-li2 {
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   text-align: right;
 }
 @media screen and (min-width: 1024px) {
   .wrapper .wrap-inner .container .menu .gnb li .sub-gnb .sub-gnb-li2 {
     text-align: left;
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
 }
 .wrapper .wrap-inner .container .menu2 {
@@ -215,8 +239,12 @@ p {
   }
 }
 .wrapper .wrap-inner .container .menu2 ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding-top: 25px;
 }
 @media screen and (min-width: 1024px) {
@@ -248,6 +276,8 @@ p {
 }
 @media screen and (min-width: 1024px) {
   .wrapper .wrap-inner .container footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 100%;
   }
@@ -262,12 +292,18 @@ p {
   }
 }
 .wrapper .wrap-inner .container footer .sns .footSns {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 @media screen and (min-width: 1024px) {
   .wrapper .wrap-inner .container footer .sns .footSns {
-    justify-content: left;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
   }
 }
 .wrapper .wrap-inner .container footer .sns .footSns li {
@@ -282,8 +318,12 @@ p {
   }
 }
 .wrapper .wrap-inner .container footer .footerInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   font-size: 11.5px;
 }
 @media screen and (min-width: 1024px) {
@@ -291,12 +331,16 @@ p {
     padding: 0;
     font-size: 16px;
     width: 35%;
-    align-items: center;
-    justify-content: end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
   }
 }
 @media screen and (min-width: 1024px) {
   .wrapper .wrap-inner .container footer .footerInfo p:last-child {
     margin-left: 100px;
   }
-}/*# sourceMappingURL=menu.css.map */
+}
