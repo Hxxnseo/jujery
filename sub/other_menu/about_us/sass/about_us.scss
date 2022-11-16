@@ -173,15 +173,16 @@
       @include responsive(pc-screens) {
         width: 80%;
       }
-      .slidebox {
-        width:1560px;
-        height: 400px;
-        transition: transform 0.5s;
-        @include responsive(pc-screens) {
-          width: 6573px;
+      .slider {
+        // width:1560px;
+        // height: 400px;
+        // transition: transform 0.5s;
+        // @include responsive(pc-screens) {
+        //   width: 6573px;
 
           
-        }
+        // }
+        position:relative;
         .inner {
           width: 390px;
           float:left;
@@ -209,7 +210,31 @@
             }
           }
         } // inner
-      } // slidebox
+      } // slider
+      .bx-controls-direction {
+        font-size: 0;
+      }
+      .bx-pager {
+        // font-size: 0;
+        position: absolute;
+        bottom: 20px;
+        display: flex;
+        flex-direction: row;
+        left: 50%;
+        transform: translate(-50%, -50%);
+          .bx-pager-item {
+            
+            a {
+              font-size: 0;
+              width:38px;
+              height: 9px;
+              margin: 0 10px;
+              background: white;
+              border: 2px solid brown;
+            }  
+        }
+      }
+      
     
 
       

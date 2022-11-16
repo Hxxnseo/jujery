@@ -195,40 +195,30 @@ p {
     width: 80%;
   }
 }
-.wrapper .flexWrapper main .slidebox {
-  width: 1560px;
-  height: 400px;
-  -webkit-transition: -webkit-transform 0.5s;
-  transition: -webkit-transform 0.5s;
-  transition: transform 0.5s;
-  transition: transform 0.5s, -webkit-transform 0.5s;
+.wrapper .flexWrapper main .slider {
+  position: relative;
 }
-@media screen and (min-width: 1024px) {
-  .wrapper .flexWrapper main .slidebox {
-    width: 6573px;
-  }
-}
-.wrapper .flexWrapper main .slidebox .inner {
+.wrapper .flexWrapper main .slider .inner {
   width: 390px;
   float: left;
 }
 @media screen and (min-width: 1024px) {
-  .wrapper .flexWrapper main .slidebox .inner {
+  .wrapper .flexWrapper main .slider .inner {
     width: 2191px;
   }
 }
-.wrapper .flexWrapper main .slidebox .inner img {
+.wrapper .flexWrapper main .slider .inner img {
   height: 400px;
   width: 100%;
   vertical-align: top;
 }
 @media screen and (min-width: 1024px) {
-  .wrapper .flexWrapper main .slidebox .inner img {
+  .wrapper .flexWrapper main .slider .inner img {
     height: 1130px;
     vertical-align: top;
   }
 }
-.wrapper .flexWrapper main .slidebox .inner .main-title {
+.wrapper .flexWrapper main .slider .inner .main-title {
   position: absolute;
   color: white;
   font-size: 16px;
@@ -237,11 +227,36 @@ p {
   margin: -50px 0 0 -50px;
 }
 @media screen and (min-width: 1024px) {
-  .wrapper .flexWrapper main .slidebox .inner .main-title {
+  .wrapper .flexWrapper main .slider .inner .main-title {
     font-size: 40px;
     left: 996px;
     top: 480px;
   }
+}
+.wrapper .flexWrapper main .bx-controls-direction {
+  font-size: 0;
+}
+.wrapper .flexWrapper main .bx-pager {
+  position: absolute;
+  bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.wrapper .flexWrapper main .bx-pager .bx-pager-item a {
+  font-size: 0;
+  width: 38px;
+  height: 9px;
+  margin: 0 10px;
+  background: white;
+  border: 2px solid brown;
 }
 .wrapper .flexWrapper main .button {
   position: absolute;
