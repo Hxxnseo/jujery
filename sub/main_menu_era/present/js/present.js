@@ -3,7 +3,7 @@ $(function() {
 
     console.log(2100);
 
-    $(window).on("wheel", function (e) {
+    $(window).on("scroll", function (e) {
     console.log($(document).scrollTop());
 
     if ($(document).scrollTop() > 2100) {
@@ -15,7 +15,8 @@ $(function() {
     }
     });
 
-    $(window).on('resize',function() {
+
+    $(window).resize(function() {
         var WinW = $(window).width();
         if (WinW > 1024) { // pc
             $('.recommands').children('.recommand').css({'opacity':1, 'cursor':'pointer'});
