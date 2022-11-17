@@ -233,6 +233,37 @@ p {
     top: 480px;
   }
 }
+.wrapper .flexWrapper main .slider .inner .main-title1 {
+  position: absolute;
+  color: white;
+  font-size: 16px;
+  top: 50%;
+  left: 50%;
+  margin: -50px 0 0 -100px;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .slider .inner .main-title1 {
+    margin: -100px 0 0 -300px;
+    font-size: 50px;
+    text-align: center;
+  }
+}
+.wrapper .flexWrapper main .slider .inner .main-title1 h4 {
+  margin-top: 10px;
+  font-size: 16px;
+  margin: 10px 0 0 -60px;
+  text-align: center;
+  width: 310px;
+  line-height: 20px;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .slider .inner .main-title1 h4 {
+    margin-top: 30px;
+    font-size: 26px;
+    width: 780px;
+    line-height: 50px;
+  }
+}
 .wrapper .flexWrapper main .bx-controls-direction {
   font-size: 0;
 }
