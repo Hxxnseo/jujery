@@ -4,6 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <script src="../js/jquery.js"></script>
+    <script src="../js/bxSlider.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script src="../js/a_tab.js"></script>
+    <script src="../js/logomenu.js"></script>
     <link rel="stylesheet" href="./css/gyeonggi.css" />
     <link rel="shortcut icon" type="image" href="../img/region/logo_mini.png" />
     <title>Gyeonggi</title>
@@ -139,22 +146,17 @@
                 </div>
               </section>
 
+
+            <div class="slider">
+              <div class="inner">
               <section class="sec2">
                 <div class="sec2-main">
                   <img class="sec2-pic" src="../img/geonggi/main_image.png" />
                   <h1>삼해주</h1>
                   <h4>경기도</h4>
-                  <h5>01~04</h5>
-
-                  <img class="arrow-left" src="../img/geonggi/arrow_left.png" />
-                  <img
-                    class="arrow-right"
-                    src="../img/geonggi/arrow_right.png"
-                  />
+                  <h5>01<span>~04</span></h5>
                 </div>
                 <!--sec2-main-->
-                <script src="../js/jquery.js"></script>
-                <script src="../js/a_tab.js"></script>
                 <div class="sec2-con-mo">
                   <!--mobile-->
                   <ul class="acordian-menu">
@@ -264,6 +266,330 @@
                 </div>
                 <!--map-->
               </section>
+            </div><!--inner-->
+
+
+            <div class="inner">
+              <section class="sec2">
+                <div class="sec2-main">
+                  <img class="sec2-pic" src="../img/geonggi/two/main_image.png" />
+                  <h1>부의주</h1>
+                  <h4>경기도</h4>
+                  <h5>02<span>~04</span></h5>
+                </div>
+                <!--sec2-main-->
+
+                <div class="sec2-con-mo">
+                  <!--mobile-->
+                  <ul class="acordian-menu">
+                    <li>
+                      <a href="#a" data-bg="gray"
+                        >술 종류 : 청주<img
+                          src="../img/geonggi/plus1 (1).png"
+                          style="width: 15px"
+                      /></a>
+                      <p class="contents">
+                        주세법 상 약주이다.
+                      </p>
+                    </li>
+
+                    <li>
+                      <a href="#a" data-bg="gray"
+                        >부의주 : 화성<img
+                          src="../img/geonggi/plus1 (1).png"
+                          style="width: 15px"
+                      /></a>
+                      <p class="contents">
+                        고려시대때부터 빚었으며 맑은 술에 밥알이 동동 떠 있는 모습이 마치 개미가 물에 떠 있는 것과 같다 하여 부의주(浮蟻酒)란 이름이 붙었다.
+                      </p>
+                    </li>
+
+                    <li>
+                      <a href="#a" data-bg="gray"
+                        >술 원료 : 찹쌀 누룩
+                        <img
+                          src="../img/geonggi/plus1 (1).png"
+                          style="width: 15px"
+                      /></a>
+                      <p class="contents">
+                        찹쌀과 누룩이며 알콜도수는 13도이다. 보존기간은 겨울철 상온에서는 15일 정도 가고, 냉장보관하면 1년도 가능하다. 화학첨가제를 넣지 않기 때문에 많이 마셔도 뒤끝이 깨끗한 장점이 있다.
+                      </p>
+                    </li>
+
+                    <li>
+                      <a href="#a" data-bg="gray"
+                        >국가무형문화재<img
+                          src="../img/geonggi/plus1 (1).png"
+                          style="width: 15px"
+                      /></a>
+                      <p class="last-p">
+                        경기무형문화재 2호로 지정된 적이 있으며 전승자는 권기훈 명인이다. 
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+                <!-- sec-mo-->
+                <div class="sec2-con-pc">
+                  <!--pc-->
+                  <div>
+                    <img src="../img/geonggi/two/box_one.png" />
+                    <h6>술 종류 : 청주</h6>
+                    <p>
+                      주세법 상 약주이다.
+                    </p>
+                  </div>
+                  <div>
+                    <img src="../img/geonggi/two/box_two.png" />
+                    <h6>부의주 : 화성</h6>
+                    <p>
+                      고려시대때부터 빚었으며 맑은 술에 밥알이 동동 떠 있는 모습이 마치 개미가 물에 떠 있는 것과 같다 하여 부의주(浮蟻酒)란 이름이 붙었다.
+                    </p>
+                  </div>
+                  <div>
+                    <img src="../img/geonggi/two/box_three.png" />
+                    <h6>술 원료 : 찹쌀 누룩</h6>
+                    <p>
+                      찹쌀과 누룩이며 알콜도수는 13도이다. 보존기간은 겨울철 상온에서는 15일 정도 가고, 냉장보관하면 1년도 가능하다. 화학첨가제를 넣지 않기 때문에 많이 마셔도 뒤끝이 깨끗한 장점이 있다.
+                    </p>
+                    <span></span>
+                  </div>
+                  <div>
+                    <img src="../img/geonggi/two/box_four.png" />
+                    <h6>국가무형문화재</h6>
+                    <p>
+                      경기무형문화재 2호로 지정된 적이 있으며 전승자는 권기훈 명인이다. 
+                    </p>
+                    <span></span>
+                  </div>
+                </div>
+
+                <div class="map">
+                  <h3>부의주 찾아가는 길</h3>
+                  <p>서울특별시 송파구 가락본동(국순당 양조장)</p>
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d405169.46437475126!2d126.46530795564374!3d37.49880283415645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca588a05d1f09%3A0x7b0c9305d4ff58ba!2zKOyjvCnqta3siJzri7k!5e0!3m2!1sko!2skr!4v1666942061742!5m2!1sko!2skr" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <!--map-->
+              </section>
+            </div>
+
+
+
+
+
+            <div class="inner">
+              <section class="sec2">
+                <div class="sec2-main">
+                  <img class="sec2-pic" src="../img/geonggi/three/main_image.png" />
+                  <h1>송절주</h1>
+                  <h4>서울</h4>
+                  <h5>03<span>~04</span></h5>
+                </div>
+                <!--sec2-main-->
+
+                <div class="sec2-con-mo">
+                  <!--mobile-->
+                  <ul class="acordian-menu">
+                    <li>
+                      <a href="#a" data-bg="gray"
+                        >술 종류 : 약주<img
+                          src="../img/geonggi/plus1 (1).png"
+                          style="width: 15px"
+                      /></a>
+                      <p class="contents">
+                        주세법 상 약주이다.
+                      </p>
+                    </li>
+
+                    <li>
+                      <a href="#a" data-bg="gray"
+                        >송절주 : 서울<img
+                          src="../img/geonggi/plus1 (1).png"
+                          style="width: 15px"
+                      /></a>
+                      <p class="contents">
+                        16세기 정도부터 시작된 것으로 추정되고 있으며 서울 부근의 중산층과 양반가에서 약용으로 빚어진 술이다.
+                      </p>
+                    </li>
+
+                    <li>
+                      <a href="#a" data-bg="gray"
+                        >술 원료 : 쌀 찹쌀
+                        <img
+                          src="../img/geonggi/plus1 (1).png"
+                          style="width: 15px"
+                      /></a>
+                      <p class="contents">
+                        쌀, 찹쌀, 누룩, 송절을 원료로, 최초의 가정백과사전이라 할 수 있는 규합총서에 의거하여 송절주를 복원하였습니다. 
+                      </p>
+                    </li>
+
+                    <li>
+                      <a href="#a" data-bg="gray"
+                        >국가무형문화재<img
+                          src="../img/geonggi/plus1 (1).png"
+                          style="width: 15px"
+                      /></a>
+                      <p class="last-p">
+                        서울무형문화재 제2호로 지정되어 있으며 전승자는 이성자 명인이다.
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+                <!-- sec-mo-->
+                <div class="sec2-con-pc">
+                  <!--pc-->
+                  <div>
+                    <img src="../img/geonggi/three/box1.png" />
+                    <h6>술 종류 : 약주</h6>
+                    <p>
+                      주세법 상 약주이다.
+                    </p>
+                  </div>
+                  <div>
+                    <img src="../img/geonggi/three/box2.png" />
+                    <h6>송절주 : 서울</h6>
+                    <p>
+                      16세기 정도부터 시작된 것으로 추정되고 있으며 서울 부근의 중산층과 양반가에서 약용으로 빚어진 술이다.
+                    </p>
+                  </div>
+                  <div>
+                    <img src="../img/geonggi/three/box3.png" />
+                    <h6>술 원료 : 오메기떡</h6>
+                    <p>
+                      쌀, 찹쌀, 누룩, 송절을 원료로, 최초의 가정백과사전이라 할 수 있는 규합총서에 의거하여 송절주를 복원하였습니다. 
+                    </p>
+                    <span></span>
+                  </div>
+                  <div>
+                    <img src="../img/geonggi/three/box4.png" />
+                    <h6>국가무형문화재</h6>
+                    <p>
+                      서울무형문화재 제2호로 지정되어 있으며 전승자는 이성자 명인이다.
+                    </p>
+                    <span></span>
+                  </div>
+                </div>
+
+                <div class="map">
+                  <h3>송절주 찾아가는 길</h3>
+                  <p>서울특별시 종로구 권농동 127-4</p>
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3162.0723481539326!2d126.98890121558486!3d37.576914031290976!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca32c72b479bb%3A0xbbe9eda4cbdc4c39!2z7ZWc6rWt66y07ZiV66y47ZmU7J6sIOuPiO2ZlOusuCDqtZDsnKHsoITsi5zsnqU!5e0!3m2!1sko!2skr!4v1666932920627!5m2!1sko!2skr"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <!--map-->
+              </section>
+            </div>
+
+
+
+
+
+            <div class="inner">
+              <section class="sec2">
+                <div class="sec2-main">
+                  <img class="sec2-pic" src="../img/geonggi/four/main_image.png" />
+                  <h1>향온주</h1>
+                  <h4>서울</h4>
+                  <h5>04<span>~04</span></h5>
+                </div>
+                <!--sec2-main-->
+
+                <div class="sec2-con-mo">
+                  <!--mobile-->
+                  <ul class="acordian-menu">
+                    <li>
+                      <a href="#a" data-bg="gray"
+                        >술 종류 : 증류식 소주<img
+                          src="../img/geonggi/plus1 (1).png"
+                          style="width: 15px"
+                      /></a>
+                      <p class="contents">
+                        주세법 상 증류식소주이다.
+                      </p>
+                    </li>
+
+                    <li>
+                      <a href="#a" data-bg="gray"
+                        >향온주 : 서울<img
+                          src="../img/geonggi/plus1 (1).png"
+                          style="width: 15px"
+                      /></a>
+                      <p class="contents">
+                        조선시대 내의원(지금의 국립 의료기관)의 양온서에서 제조한 술이다. 이후 인현왕후를 통해 하동정씨 집안에 전해져 가양주가 되었다.
+                      </p>
+                    </li>
+
+                    <li>
+                      <a href="#a" data-bg="gray"
+                        >술 원료 :  녹두 누룩 
+                        <img
+                          src="../img/geonggi/plus1 (1).png"
+                          style="width: 15px"
+                      /></a>
+                      <p class="contents">
+                        녹두누룩으로 빚는게 특징으로 본래 왕이 마시던 어주였다. 
+                      </p>
+                    </li>
+
+                    <li>
+                      <a href="#a" data-bg="gray"
+                        >국가무형문화재<img
+                          src="../img/geonggi/plus1 (1).png"
+                          style="width: 15px"
+                      /></a>
+                      <p class="last-p">
+                        서울무형문화재 제9호이며 전승자는 박현숙 명인이다. 
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+                <!-- sec-mo-->
+                <div class="sec2-con-pc">
+                  <!--pc-->
+                  <div>
+                    <img src="../img/geonggi/four/box1.png" />
+                    <h6>술 종류 : 증류식 소주</h6>
+                    <p>
+                      주세법 상 증류식소주이다.
+                    </p>
+                  </div>
+                  <div>
+                    <img src="../img/geonggi/four/box2.png" />
+                    <h6>향온주 : 서울</h6>
+                    <p>
+                      조선시대 내의원(지금의 국립 의료기관)의 양온서에서 제조한 술이다. 이후 인현왕후를 통해 하동정씨 집안에 전해져 가양주가 되었다.
+                    </p>
+                  </div>
+                  <div>
+                    <img src="../img/geonggi/four/box3.png" />
+                    <h6>술 원료 :  녹두 누룩 </h6>
+                    <p>
+                      녹두누룩으로 빚는게 특징으로 본래 왕이 마시던 어주였다. 
+                    </p>
+                    <span></span>
+                  </div>
+                  <div>
+                    <img src="../img/geonggi/four/box4.png" />
+                    <h6>국가무형문화재</h6>
+                    <p>
+                      서울무형문화재 제9호이며 전승자는 박현숙 명인이다. 
+                    </p>
+                    <span></span>
+                  </div>
+                </div>
+
+                <div class="map">
+                  <h3>향온주 찾아가는 길</h3>
+                  <p>서울특별시 강남구 삼성동 봉은사로 406</p>
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3164.9041872294165!2d127.04243381559013!3d37.51017787980857!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca40be499be8d%3A0xbeb4372c54313f9f!2z7ZWc6rWt66y47ZmU7J6s7J6s64uo!5e0!3m2!1sko!2skr!4v1666934442000!5m2!1sko!2skr"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <!--map-->
+              </section>
+            </div>
+
+
+
+
+
             </div>
             <!-- main -->
           </div>
