@@ -30,7 +30,6 @@ $(function() {
                 }),
                 $(this).children('.pcnew').css({
                     'filter': 'brightness(50%)',
-                    'background-color' : 'aqua'
                 })
                 },
                 'mouseout' : function() {
