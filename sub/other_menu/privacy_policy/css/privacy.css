@@ -259,7 +259,7 @@ p {
 }
 .wrapper .flexWrapper main .main .privacy .contents {
   line-height: 40px;
-  margin-top: 30px;
+  margin-top: 0px;
 }
 @media screen and (min-width: 1024px) {
   .wrapper footer .container {
