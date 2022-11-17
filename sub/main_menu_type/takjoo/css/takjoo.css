@@ -342,16 +342,6 @@ p {
   max-width: 100%;
   display: block;
 }
-.wrapper .flexWrapper main .main aside.slide .bx-wrapper .bx-loading {
-  min-height: 50px;
-  background: url("../../images/icon/bx_loader.gif") center center no-repeat #ffffff;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 2000;
-}
 .wrapper .flexWrapper main .main aside.slide .bx-wrapper .bx-pager {
   text-align: center;
   font-size: 0.85em;
@@ -603,23 +593,23 @@ p {
   display: none;
 }
 .wrapper .flexWrapper main .main section.rec-box .recommend .rec-des .rec-item .rec_drink1 {
-  width: 100%;
+  width: 450px;
   height: 600px;
 }
 .wrapper .flexWrapper main .main section.rec-box .recommend .rec-des .rec-item .rec_drink2 {
-  width: 100%;
+  width: 450px;
   height: 450px;
 }
 .wrapper .flexWrapper main .main section.rec-box .recommend .rec-des .rec-item .rec_drink3 {
-  width: 100%;
+  width: 450px;
   height: 550px;
 }
 .wrapper .flexWrapper main .main section.rec-box .recommend .rec-des .rec-item .rec_drink4 {
-  width: 100%;
+  width: 450px;
   height: 500px;
 }
 .wrapper .flexWrapper main .main section.rec-box .recommend .rec-des .rec-item .rec_drink5 {
-  width: 100%;
+  width: 450px;
   height: 600px;
 }
 .wrapper .flexWrapper main .main section.rec-box .recommend .rec-des .flip-info {
@@ -646,24 +636,37 @@ p {
   color: white;
 }
 .wrapper .flexWrapper main .main section.rec-box .recommend .rec-des .flip-info.f1 {
-  width: 100%;
+  width: 450px;
   height: 600px;
 }
 .wrapper .flexWrapper main .main section.rec-box .recommend .rec-des .flip-info.f2 {
-  width: 100%;
+  width: 450px;
   height: 450px;
 }
 .wrapper .flexWrapper main .main section.rec-box .recommend .rec-des .flip-info.f3 {
-  width: 100%;
+  width: 450px;
   height: 550px;
 }
 .wrapper .flexWrapper main .main section.rec-box .recommend .rec-des .flip-info.f4 {
-  width: 100%;
+  width: 450px;
   height: 500px;
 }
 .wrapper .flexWrapper main .main section.rec-box .recommend .rec-des .flip-info.f5 {
-  width: 100%;
+  width: 450px;
   height: 600px;
+}
+.wrapper .flexWrapper main .main .swiper_scrollbar {
+  margin-top: 65px;
+  display: block;
+  width: 100%;
+  height: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #dbdbdb;
+  background-image: linear-gradient(to right, black, black);
+  background-repeat: no-repeat;
+  background-size: 0 100%;
+  transition: background-size 0.4s ease-in-out;
 }
 .wrapper .flexWrapper main section.brewery h3 {
   text-align: center;
@@ -684,47 +687,46 @@ p {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
   margin-bottom: 50px;
 }
 @media screen and (min-width: 1024px) {
   .wrapper .flexWrapper main section.brewery .category_wrap .brewery_item {
     margin-bottom: 0;
     width: 120%;
-    overflow: hidden;
     flex-wrap: nowrap;
   }
 }
 .wrapper .flexWrapper main section.brewery .category_wrap .brewery_item li {
   width: 30%;
-  margin-right: 5%;
-  margin-bottom: 5%;
+  margin-bottom: 20px;
 }
 @media screen and (min-width: 1024px) {
   .wrapper .flexWrapper main section.brewery .category_wrap .brewery_item li {
-    justify-content: space-between;
-    width: 180px;
+    width: 20%;
+    margin: 20px auto;
   }
 }
 .wrapper .flexWrapper main section.brewery .category_wrap .brewery_item li a img {
-  width: 100%;
+  width: 170px;
+  height: 170px;
   border-radius: 50%;
   background-color: #fff;
 }
 @media screen and (min-width: 1024px) {
-  .wrapper .flexWrapper main section.brewery .category_wrap .brewery_item li a img:hover {
-    transform: scale(1.5);
+  .wrapper .flexWrapper main section.brewery .category_wrap .brewery_item li a img {
+    width: 180px;
+    height: 180px;
   }
 }
-.wrapper .flexWrapper main section.brewery .category_wrap .brewery_item .pic_end {
-  margin-right: 0;
-}
 @media screen and (min-width: 1024px) {
-  .wrapper .flexWrapper main section.brewery .category_wrap .brewery_item .first {
-    margin-right: 5%;
+  .wrapper .flexWrapper main section.brewery .category_wrap .brewery_item li a img:hover {
+    transform: scale(1.2);
   }
 }
 .wrapper .flexWrapper main section.brewery .brewery_content {
   width: 100%;
+  margin-top: 50px;
   margin-bottom: 100px;
 }
 .wrapper .flexWrapper main section.brewery .brewery_content .brewery {
