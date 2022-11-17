@@ -48,6 +48,11 @@
       }
 
       .header {
+        @include responsive(pc-screens) {
+
+          position: fixed;
+        }
+          
         .logoMenu {
           display: none;
 
