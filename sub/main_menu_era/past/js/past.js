@@ -3,7 +3,7 @@ $(function() {
 
     console.log(3450);
 
-    $(window).on("wheel", function (e) {
+    $(window).on("scroll", function (e) {
         console.log($(document).scrollTop());
 
         if ($(document).scrollTop() > 3450) {
