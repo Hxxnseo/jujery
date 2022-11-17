@@ -208,7 +208,33 @@
             left: 996px;
             top: 480px;
             }
-          }
+          } //.main-title
+            .main-title1 {
+              position:absolute;
+              color:white;
+              font-size: 16px;
+              top:50%; left:50%; margin:-50px 0 0 -100px;
+              @include responsive(pc-screens) {
+                margin: -100px 0 0 -300px;
+                font-size: 50px;
+                text-align: center;
+                
+              }
+              h4 {
+                margin-top: 10px;
+                font-size: 16px;
+                margin: 10px 0 0 -60px;
+                text-align: center;
+                width: 310px;
+                line-height: 20px;
+                @include responsive(pc-screens) {
+                  margin-top: 30px;
+                  font-size: 26px;
+                  width: 780px;
+                  line-height: 50px;
+                }
+              }
+            }
         } // inner
       } // slider
       .bx-controls-direction {
