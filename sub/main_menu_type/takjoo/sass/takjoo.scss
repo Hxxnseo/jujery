@@ -228,17 +228,6 @@
               display: block;
             }
 
-            .bx-loading {
-              min-height: 50px;
-              background: url('../../images/icon/bx_loader.gif') center center no-repeat #ffffff;
-              height: 100%;
-              width: 100%;
-              position: absolute;
-              top: 0;
-              left: 0;
-              z-index: 2000;
-            }
-
             .bx-pager {
               text-align: center;
               font-size: .85em;
@@ -517,23 +506,23 @@
                   }
 
                   .rec_drink1 {
-                    width: 100%;
+                    width: 450px;
                     height: 600px;
                   }
                   .rec_drink2 {
-                    width: 100%;
+                    width: 450px;
                     height: 450px;
                   }
                   .rec_drink3 {
-                    width: 100%;
+                    width: 450px;
                     height: 550px;
                   }
                   .rec_drink4 {
-                    width: 100%;
+                    width: 450px;
                     height: 500px;
                   }
                   .rec_drink5 {
-                    width: 100%;
+                    width: 450px;
                     height: 600px;
                   }
                 }
@@ -560,23 +549,38 @@
                     color: white;
                   }
                   &.f1 {
-                    width: 100%; height: 600px;
+                    width: 450px; height: 600px;
                     }
                   &.f2 {
-                    width: 100%; height: 450px;
+                    width: 450px; height: 450px;
                     }
                   &.f3 {
-                    width: 100%; height: 550px;
+                    width: 450px; height: 550px;
                     }
                   &.f4 {
-                    width: 100%; height: 500px;
+                    width: 450px; height: 500px;
                     }
                   &.f5 {
-                    width: 100%; height: 600px;
+                    width: 450px; height: 600px;
                     }
                 }
               } // rec-des
             }
+          }
+          .swiper_scrollbar {
+            margin-top: 65px;
+            display: block;
+            width: 100%;
+            height: 10px;
+            border-radius: 10px;
+            overflow: hidden;
+
+            background-color: #dbdbdb;
+            background-image: linear-gradient(to right, black, black);
+            background-repeat: no-repeat;
+            background-size: 0 100%;
+
+            transition: background-size .4s ease-in-out;
           }
         } // section.rec-box
 
@@ -600,44 +604,38 @@
                 width: 100%;
                 display: flex;
                 flex-wrap: wrap;
+                justify-content: space-between;
                 margin-bottom: 50px;
 
                 @include responsive(pc-screens) {
                   margin-bottom: 0;
                   width: 120%;
-                  overflow: hidden;
+                  // overflow: hidden;
                   flex-wrap: nowrap;
                 }
 
                 li {
                   width: 30%;
-                  margin-right: 5%;
-                  margin-bottom: 5%;
+                  margin-bottom: 20px;
                   @include responsive(pc-screens) {
-                    justify-content: space-between;
-                    width: 180px;
+                    width: 20%;
+                    margin: 20px auto;
                   }
 
                   a {
                     img {
-                      width: 100%;
+                      width: 170px; height: 170px;
                       border-radius: 50%;
                       background-color: #fff;
+                      @include responsive(pc-screens) {
+                        width: 180px; height: 180px;
+                      }
                       &:hover {
                         @include responsive(pc-screens) {
-                          transform: scale(1.5);
+                          transform: scale(1.2);
                         }
                       }
                     }
-                  }
-                }
-                .pic_end {
-                  margin-right: 0;
-                }
-                
-                .first {
-                  @include responsive(pc-screens) {
-                    margin-right: 5%;
                   }
                 }
               }
@@ -645,6 +643,7 @@
 
             .brewery_content {
               width: 100%;
+              margin-top: 50px;
               margin-bottom: 100px;
               .brewery {
                 width: 100%;
@@ -722,7 +721,6 @@
                         @include responsive(pc-screens) {
                           width: 35%;
                           height: 90%;
-                          // background-color: yellow;
                         }
                       }
                       p {
