@@ -1,6 +1,6 @@
-@import "./style1.scss";
-@import "./common1.scss";
-@import "./mixin1.scss";
+@import "./style.scss";
+@import "./common.scss";
+@import "./mixin.scss";
 
 @include responsive(pc-screens) {
   body {
@@ -162,7 +162,7 @@
     // header
 
     main {
-      // width: 100%;
+      width: 100%;
 
       @include responsive(pc-screens) {
         width: 80%;
@@ -316,7 +316,7 @@
             border-bottom: 0;
             border-right: 1px solid #ccc;
             border-left: 1px solid #ccc;
-          }
+          } 
           .footSnsCont {
             display: flex;
             justify-content: center;
