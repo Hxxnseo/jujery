@@ -8,7 +8,10 @@
     <link rel="shortcut icon" type="image" href="../../../main_menu_type/images/icon/jujerytitlelogo.png">
     <title>주저리</title>
     <script src="./js/signUp.js"></script>
-    <script src="http://dmaps.daum.net/map_js_init/postcode.v2.js"></script>
+    <script src="../../../main_menu_type/js/jquery.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="//d1p7wdleee1q2z.cloudfront.net/post/search.min.js"></script>
+    <script> $(function() { $("#postcodify_search_button").postcodifyPopUp(); }); </script>
   </head>
   <body>
     <div class="wrapper">
@@ -122,10 +125,10 @@
                     <input type="password" name="user_pw" id="user_pw" placeholder="비밀번호*(영문소문자/숫자, 8~25자)" minlength="8" maxlength="25" required>
                     <input type="password" name="user_pw2" id="user_pw2" placeholder="비밀번호확인*" minlength="8" maxlength="25" required>
                     <div class="address_box">
-                      <input type="text" name="address1" id="address1" placeholder="주소" maxlength="14" readonly>
-                      <button type="button">우편번호</button>
+                      <input type="text" name="address1" id="address1" placeholder="주소" maxlength="14">
+                      <button type="button" id="postcodify_search_button">우편번호</button>
                     </div>
-                    <input type="text" name="address2" id="address2" placeholder="나머지주소(선택입력가능)" readonly>
+                    <input type="text" name="address2" id="address2" placeholder="나머지주소(선택입력가능)">
                     <div class="phone_box">
                       <select name="phone" id="phone">
                           <option value="02">02</option>
