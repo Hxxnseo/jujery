@@ -684,7 +684,8 @@ p {
   overflow: hidden;
 }
 .wrapper .flexWrapper main section.brewery .category_wrap .brewery_item {
-  width: 100%;
+  width: 1180px;
+  margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -694,6 +695,7 @@ p {
   .wrapper .flexWrapper main section.brewery .category_wrap .brewery_item {
     margin-bottom: 0;
     width: 120%;
+    overflow: hidden;
     flex-wrap: nowrap;
   }
 }
@@ -708,7 +710,7 @@ p {
   }
 }
 .wrapper .flexWrapper main section.brewery .category_wrap .brewery_item li a img {
-  width: 170px;
+  width: 100%;
   height: 170px;
   border-radius: 50%;
   background-color: #fff;
@@ -838,7 +840,7 @@ p {
   width: 100%;
   position: relative;
   display: flex;
-  height: 300px;
+  height: 400px;
 }
 @media screen and (min-width: 1024px) {
   .wrapper .flexWrapper main section.brewery .brewery_content .brewery.b1 .brewery_box .brewery_pic .img_box, .wrapper .flexWrapper main section.brewery .brewery_content .brewery.b5 .brewery_box .brewery_pic .img_box {
@@ -920,7 +922,7 @@ p {
   width: 100%;
   position: relative;
   display: flex;
-  height: 300px;
+  height: 400px;
 }
 @media screen and (min-width: 1024px) {
   .wrapper .flexWrapper main section.brewery .brewery_content .brewery.b2 .brewery_box .brewery_semi .brewery_pic .img_box, .wrapper .flexWrapper main section.brewery .brewery_content .brewery.b4 .brewery_box .brewery_semi .brewery_pic .img_box {
@@ -1094,7 +1096,7 @@ p {
   width: 100%;
   position: relative;
   display: flex;
-  height: 300px;
+  height: 400px;
 }
 @media screen and (min-width: 1024px) {
   .wrapper .flexWrapper main section.brewery .brewery_content .brewery.b3 .brewery_box .brewery_pic .img_box, .wrapper .flexWrapper main section.brewery .brewery_content .brewery.b6 .brewery_box .brewery_pic .img_box {

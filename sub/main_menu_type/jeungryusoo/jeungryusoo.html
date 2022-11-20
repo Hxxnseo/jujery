@@ -8,6 +8,10 @@
     <link rel="shortcut icon" type="image" href="../../main_menu_type/images/icon/jujerytitlelogo.png" />
     <title>주저리</title>
     <script src="../js/jquery.js"></script>
+    <script src="../js/main2,4_common.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script src="../js/slick.min.js"></script>
   </head>
   <body>
     <div class="wrapper">
@@ -108,7 +112,7 @@
 
               <aside class="slide">
                 <h2>슬라이드</h2>
-                  <ul>
+                  <ul class="slider">
                     <li>
                       <a href="#">
                         <img src="../images/Slide/slide1.png" alt="slide1" />
@@ -121,14 +125,13 @@
                     </li>
                     <li>
                       <a href="#">
-                        <button>자세히보기</button>
                         <img src="../images/Slide/slide3.png" alt="slide3" />
                       </a>
                     </li>
                   </ul>
     
-                  <div class="side_nav_left"></div>
-                  <div class="side_nav_right"></div>
+                  <div class="bx-prev"></div>
+                  <div class="bx-next"></div>
                 </aside>
       
               <nav class="main-menu">
@@ -143,8 +146,8 @@
 
               <section class="rec-box">
                 <h2>추천 메뉴</h2>
-                  <h3>주저리에서 추천하는 이달의 청주</h3>
-                  <div class="recommend">
+                  <h3>주저리에서 추천하는 이달의 증류주</h3>
+                  <div class="recommend multiple-items">
                     <div class="rec-des">
                       <div class="rec-item">
                         <p>★★★★</p>
@@ -156,7 +159,7 @@
                         <p>양촌양조 여유소주 40도 375ml</p>
                         <p>25,800원</p>
                       </div>
-                      <div class="flip-info">
+                      <div class="flip-info f1">
                         <button>x</button>
                         <p>
                           주종 | 증류주<br>
@@ -183,7 +186,7 @@
                         <p>럼PHAT 42% 32ml</p>
                         <p>9,000원</p>
                       </div>
-                      <div class="flip-info">
+                      <div class="flip-info f2">
                         <button>x</button>
                         <p>
                           주종 | 증류주<br>
@@ -210,7 +213,7 @@
                         <p>감홍로 40% 400ml</p>
                         <p>45,000원</p>
                       </div>
-                      <div class="flip-info">
+                      <div class="flip-info f3">
                         <button>x</button>
                         <p>
                           주종 | 증류주<br>
@@ -238,7 +241,7 @@
                         <p>추사白40 500ml</p>
                         <p>35,000원</p>
                       </div>
-                      <div class="flip-info">
+                      <div class="flip-info f4">
                         <button>x</button>
                         <p>
                           주종 | 증류주<br>
@@ -265,7 +268,7 @@
                         <p>병영보리소주 700ml</p>
                         <p>35,000원</p>
                       </div>
-                      <div class="flip-info">
+                      <div class="flip-info f5">
                         <button>x</button>
                         <p>
                           주종 | 증류주<br>
@@ -293,16 +296,16 @@
                   <div class="category_wrap">
                     <ul class="brewery_item">
                       <li>
-                        <a href="#b1"><img src="../images/Jeungrysoo/brewery/mowol/mowol_logo.png" alt="협동조합모월"></a>
+                        <a href="#b1" class="btn"><img src="../images/Jeungrysoo/brewery/mowol/mowol_logo.png" alt="협동조합모월"></a>
                       </li>
                       <li>
-                        <a href="#b2"><img src="../images/Jeungrysoo/brewery/andong/andong_logo.png" alt=명인안동소주 "></a>
+                        <a href="#b2" class="btn"><img src="../images/Jeungrysoo/brewery/andong/andong_logo.png" alt=명인안동소주 "></a>
                       </li>
                       <li class="pic_end first">
-                        <a href="#b3"><img src="../images/Jeungrysoo/brewery/jejusool/jejusool_logo.png" alt="제주술익는집 "></a>
+                        <a href="#b3" class="btn"><img src="../images/Jeungrysoo/brewery/jejusool/jejusool_logo.png" alt="제주술익는집 "></a>
                       </li>
                       <li>
-                        <a href="#b4"><img src="../images/Jeungrysoo/brewery/jejusamju/jejusamju_logo.png" alt="제주샘주"></a>
+                        <a href="#b4" class="btn><img src="../images/Jeungrysoo/brewery/jejusamju/jejusamju_logo.png" alt="제주샘주"></a>
                       </li>
                     </ul>
                   </div> <!-- category_wrap -->

@@ -8,9 +8,42 @@
     <link rel="shortcut icon" type="image" href="../../../main_menu_type/images/icon/jujerytitlelogo.png">
     <title>주저리</title>
     <script>
+      function check() {
+            var frm = document.frm;
+            if(!frm.term_agree1.checked) {
+                alert("이용약관에 동의하세요!");
+                frm.term_agree1.focus();
+                return false;
+            }
+
+            if(!frm.term_agree2.checked) {
+                alert("개인정보에 동의하세요!");
+                frm.term_agree2.focus();
+                return false;
+            }
+        }
+
+        function allcheck() {
+            with(document.frm) {
+                if(all_agreement.checked) { 
+                    for(let i = 0; i < frm.length; i++) { 
+                        if(elements[i].type == "checkbox") {
+                            elements[i].checked = true;
+                        }
+                    }
+                } else {
+                    for(let i = 0; i < frm.length; i++) {
+                        if(elements[i].type == "checkbox") {
+                            elements[i].checked = false;
+                        }
+                    }
+                }
+            }
+        };
+
       function nextBtn() {
-        window.location.replace("../signUp/signUp.html")
-      }
+        window.location.href("../signUp/signUp.html")
+      };
     </script>
   </head>
   <body>
@@ -114,7 +147,8 @@
                 <h2>agreement</h2>
                   <h3>약관동의</h3>
                     <hr>
-                    <input type="checkbox" id="all_agreement">
+                    <form action="#" name="frm" method="post">
+                    <input type="checkbox" id="all_agreement" onclick="allcheck()">
                     <strong>주저리의 모든 약관을 확인하고 전체 동의합니다.<span>(전체동의, 선택항목도 포함됩니다.)</span></strong>
                     <div class="term_agreement">
                       <input type="checkbox" id="term_agree1" >
@@ -144,6 +178,7 @@
                     <button>이전단계</button>
                     <button onclick="nextBtn()">다음단계</button>
                   </div>
+                </form>
             </section>
             </div> <!-- main -->
           </div> <!-- container -->

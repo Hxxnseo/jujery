@@ -8,6 +8,10 @@
     <link rel="shortcut icon" type="image" href="../../main_menu_type/images/icon/jujerytitlelogo.png" />
     <title>주저리</title>
     <script src="../js/jquery.js"></script>
+    <script src="../js/main1,3_common.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script src="../js/slick.min.js"></script>
   </head>
   <body>
     <div class="wrapper">
@@ -108,7 +112,7 @@
 
               <aside class="slide">
                 <h2>슬라이드</h2>
-                  <ul>
+                  <ul class="slider">
                     <li>
                       <a href="#">
                         <img src="../images/Slide/slide1.png" alt="slide1" />
@@ -121,7 +125,6 @@
                     </li>
                     <li>
                       <a href="#">
-                        <button>자세히보기</button>
                         <img src="../images/Slide/slide3.png" alt="slide3" />
                       </a>
                     </li>
@@ -144,7 +147,7 @@
               <section class="rec-box">
                 <h2>추천 메뉴</h2>
                   <h3>주저리에서 추천하는 이달의 과실주</h3>
-                  <div class="recommend">
+                  <div class="recommend multiple-items">
                     <div class="rec-des">
                       <div class="rec-item">
                         <p>★★★★★</p>
@@ -156,7 +159,7 @@
                         <p>고도리 뉴웨이 골든복숭아 6.5% </p>
                         <p>23,000원</p>
                       </div>
-                      <div class="flip-info">
+                      <div class="flip-info f1">
                         <button>x</button>
                         <p>
                           주종 | 과실주<br>
@@ -184,7 +187,7 @@
                         <p>그랑꼬또 청수 화이트와인</p>
                         <p>65,000원</p>
                       </div>
-                      <div class="flip-info">
+                      <div class="flip-info f2">
                         <button>x</button>
                         <p>
                           주종 | 과실주<br>
@@ -211,7 +214,7 @@
                         <p>멜론서리 5% </p>
                         <p>6,900원</p>
                       </div>
-                      <div class="flip-info">
+                      <div class="flip-info f3">
                         <button>x</button>
                         <p>
                           주종 | 과실주<br>
@@ -240,7 +243,7 @@
                         <p>영천와인 조흔 RED 11.5%</p>
                         <p>20,000원</p>
                       </div>
-                      <div class="flip-info">
+                      <div class="flip-info f4">
                         <button>x</button>
                         <p>
                           주종 | 과실주<br>
@@ -265,26 +268,25 @@
               <section class="brewery">
                 <h2>introduction of brewery</h2>
                   <h3>양조장별 제품소개</h3>
-                  <span></span> <!-- bar -->
                   <div class="category_wrap">
                     <ul class="brewery_item">
                       <li>
-                        <a href="#b1"><img src="../images/gwasiljoo/brewery/yesan/yesan_logo.png" alt="예산사과와인"></a>
+                        <a href="#b1" class="btn"><img src="../images/gwasiljoo/brewery/yesan/yesan_logo.png" alt="예산사과와인"></a>
                       </li>
                       <li>
-                        <a href="#b2"><img src="../images/gwasiljoo/brewery/sanmuru/sanmuru_logo.png" alt="산머루농원(영)"></a>
-                      </li>
-                      <li class="pic_end first">
-                        <a href="#b3"><img src="../images/gwasiljoo/brewery/green/green_logo.png" alt="그린영농조합(그랑꼬또와인)"></a>
+                        <a href="#b2" class="btn"><img src="../images/gwasiljoo/brewery/sanmuru/sanmuru_logo.png" alt="산머루농원(영)"></a>
                       </li>
                       <li>
-                        <a href="#b4"><img src="../images/gwasiljoo/brewery/doranwon/doranwon_logo.png" alt="도란원(샤토미소)"></a>
+                        <a href="#b3" class="btn"><img src="../images/gwasiljoo/brewery/green/green_logo.png" alt="그린영농조합(그랑꼬또와인)"></a>
                       </li>
                       <li>
-                        <a href="#b5"><img src="../images/gwasiljoo/brewery/godori/godori_logo.png" alt="고도리 와이너리"></a>
+                        <a href="#b4" class="btn"><img src="../images/gwasiljoo/brewery/doranwon/doranwon_logo.png" alt="도란원(샤토미소)"></a>
                       </li>
-                      <li class="pic_end">
-                        <a href="#b6"><img src="../images/gwasiljoo/brewery/sudosan/sudosan_logo.png" alt="수도산와이너리"></a>
+                      <li>
+                        <a href="#b5" class="btn"><img src="../images/gwasiljoo/brewery/godori/godori_logo.png" alt="고도리 와이너리"></a>
+                      </li>
+                      <li>
+                        <a href="#b6" class="btn"><img src="../images/gwasiljoo/brewery/sudosan/sudosan_logo.png" alt="수도산와이너리"></a>
                       </li>
                     </ul>
                   </div> <!-- category_wrap -->

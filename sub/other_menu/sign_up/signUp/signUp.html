@@ -8,6 +8,7 @@
     <link rel="shortcut icon" type="image" href="../../../main_menu_type/images/icon/jujerytitlelogo.png">
     <title>주저리</title>
     <script src="./js/signUp.js"></script>
+    <script src="http://dmaps.daum.net/map_js_init/postcode.v2.js"></script>
   </head>
   <body>
     <div class="wrapper">
@@ -118,11 +119,11 @@
                       <input type="text" name="user_id" id="user_id" placeholder="계정*(영문소문자/숫자,4~16자" minlength="4" maxlength="16" required>
                       <button>중복확인</button>
                     </div>
-                    <input type="password" name="user_pw" id="user_pw" placeholder="비밀번호*(영문소문자/숫자, 4~16자" minlength="4" maxlength="16" required>
-                    <input type="password" name="user_pw2" id="user_pw2" placeholder="비밀번호확인*" minlength="4" maxlength="16" required>
+                    <input type="password" name="user_pw" id="user_pw" placeholder="비밀번호*(영문소문자/숫자, 8~25자)" minlength="8" maxlength="25" required>
+                    <input type="password" name="user_pw2" id="user_pw2" placeholder="비밀번호확인*" minlength="8" maxlength="25" required>
                     <div class="address_box">
                       <input type="text" name="address1" id="address1" placeholder="주소" maxlength="14" readonly>
-                      <button>우편번호</button>
+                      <button type="button">우편번호</button>
                     </div>
                     <input type="text" name="address2" id="address2" placeholder="나머지주소(선택입력가능)" readonly>
                     <div class="phone_box">
@@ -184,8 +185,8 @@
                       </select>
                     </div>
                     <div class="signup_btn">
-                      <button>회원가입</button>
-                      <button>회원가입 취소</button>
+                      <button type="button">회원가입</button>
+                      <button type="reset">회원가입 취소</button>
                     </div>
                   </form>
               </section>

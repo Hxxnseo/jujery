@@ -8,6 +8,10 @@
     <link rel="shortcut icon" type="image" href="../../main_menu_type/images/icon/jujerytitlelogo.png" />
     <title>주저리</title>
     <script src="../js/jquery.js"></script>
+    <script src="../js/otherjoo.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script src="../js/slick.min.js"></script>
   </head>
   <body>
     <div class="wrapper">
@@ -108,7 +112,7 @@
 
               <aside class="slide">
                 <h2>슬라이드</h2>
-                  <ul>
+                  <ul class="slider">
                     <li>
                       <a href="#">
                         <img src="../images/Slide/slide1.png" alt="slide1" />
@@ -121,14 +125,13 @@
                     </li>
                     <li>
                       <a href="#">
-                        <button>자세히보기</button>
                         <img src="../images/Slide/slide3.png" alt="slide3" />
                       </a>
                     </li>
                   </ul>
     
-                  <div class="side_nav_left"></div>
-                  <div class="side_nav_right"></div>
+                  <div class="bx-prev"></div>
+                  <div class="bx-next"></div>
                 </aside>
       
               <nav class="main-menu">
@@ -144,7 +147,7 @@
               <section class="rec-box">
                 <h2>추천 메뉴</h2>
                   <h3>주저리에서 추천하는 청주</h3>
-                  <div class="recommend">
+                  <div class="recommend multiple-items">
                     <div class="rec-des">
                       <div class="rec-item">
                         <p>★★★★★</p>
@@ -156,7 +159,7 @@
                         <p>흑돈주 16% 375ml</p>
                         <p>12,000원</p>
                       </div>
-                      <div class="flip-info">
+                      <div class="flip-info f1">
                         <button>x</button>
                         <p>
                           주종 | 기타주류<br>
@@ -184,7 +187,7 @@
                         <p>술샘16 16% 375ml</p>
                         <p>12,000원</p>
                       </div>
-                      <div class="flip-info">
+                      <div class="flip-info f2">
                         <button>x</button>
                         <p>
                           주종 | 리큐르<br>
@@ -209,11 +212,10 @@
               <section class="brewery">
                 <h2>introduction of brewery</h2>
                   <h3>양조장별 제품소개</h3>
-                  <span></span> <!-- bar -->
                   <div class="category_wrap">
                     <ul class="brewery_item">
                       <li>
-                        <a href="#b1"><img src="../images/Otherjoo/brewery/koabest_logo.jpg" alt="코아베스트"></a>
+                        <a href="#b1" class="btn"><img src="../images/Otherjoo/brewery/koabest_logo.jpg" alt="코아베스트"></a>
                       </li>
                   </div> <!-- category_wrap -->
 
