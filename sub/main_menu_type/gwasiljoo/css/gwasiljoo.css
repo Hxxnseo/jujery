@@ -822,7 +822,7 @@ p {
 .wrapper .flexWrapper main section.brewery .brewery_content .b5 .brewery_box .brewery_pic {
   display: flex;
   overflow: hidden;
-  width: 200%;
+  width: 100%;
   margin-bottom: 50px;
 }
 @media screen and (min-width: 1024px) {
@@ -1124,7 +1124,7 @@ p {
 .wrapper .flexWrapper main section.brewery .brewery_content .b6 .brewery_box .brewery_pic {
   display: flex;
   overflow: hidden;
-  width: 200%;
+  width: 100%;
   margin-bottom: 50px;
   order: 2;
 }

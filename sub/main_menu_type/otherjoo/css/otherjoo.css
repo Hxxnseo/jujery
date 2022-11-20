@@ -786,7 +786,7 @@ p {
 .wrapper .flexWrapper main section.brewery .brewery_content .b1 .brewery_box .brewery_pic {
   display: flex;
   overflow: hidden;
-  width: 200%;
+  width: 100%;
   margin-bottom: 50px;
 }
 @media screen and (min-width: 1024px) {

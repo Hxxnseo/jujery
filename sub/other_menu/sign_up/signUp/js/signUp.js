@@ -1,14 +1,14 @@
 // 유효성검사
-function check() {
+function validate() {
     var frm = document.frm;
-    var userId = document.getElementById("user_id");
+    const userId = document.getElementById("user_id");
     var userPw = document.getElementById("user_pw");
     var userPw2 = document.getElementById("user_pw2");
     var phone = document.getElementById("phone");
     var mobile = document.getElementById("mobile");
     var email = document.getElementById("email");
 
-    if (userId.value == "") {
+    if(userId.value == "") {
         alert("아이디를 입력하세요.");
         userId.focus();
         return false;

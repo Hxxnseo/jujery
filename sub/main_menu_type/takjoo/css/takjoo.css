@@ -823,7 +823,7 @@ p {
 .wrapper .flexWrapper main section.brewery .brewery_content .brewery.b1 .brewery_box .brewery_pic, .wrapper .flexWrapper main section.brewery .brewery_content .brewery.b5 .brewery_box .brewery_pic {
   display: flex;
   overflow: hidden;
-  width: 200%;
+  width: 100%;
   margin-bottom: 50px;
 }
 @media screen and (min-width: 1024px) {
@@ -907,7 +907,7 @@ p {
 .wrapper .flexWrapper main section.brewery .brewery_content .brewery.b2 .brewery_box .brewery_semi .brewery_pic, .wrapper .flexWrapper main section.brewery .brewery_content .brewery.b4 .brewery_box .brewery_semi .brewery_pic {
   display: flex;
   overflow: hidden;
-  width: 200%;
+  width: 100%;
   margin-bottom: 50px;
 }
 @media screen and (min-width: 1024px) {
@@ -1079,7 +1079,7 @@ p {
 .wrapper .flexWrapper main section.brewery .brewery_content .brewery.b3 .brewery_box .brewery_pic, .wrapper .flexWrapper main section.brewery .brewery_content .brewery.b6 .brewery_box .brewery_pic {
   display: flex;
   overflow: hidden;
-  width: 200%;
+  width: 100%;
   margin-bottom: 50px;
   order: 2;
 }

@@ -591,7 +591,8 @@
               overflow: hidden;
 
               .brewery_item{
-                width: 100%;
+                width: 1180px;
+                margin: 0 auto;
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: space-between;
@@ -601,6 +602,7 @@
                   margin-bottom: 0;
                   width: 120%;
                   overflow: hidden;
+                  flex-wrap: nowrap;
                 }
 
                 li {
@@ -720,7 +722,7 @@
                   .brewery_pic {
                     display: flex;
                     overflow: hidden;
-                    width: 200%;
+                    width: 100%;
                     margin-bottom: 50px;
                     @include responsive(pc-screens) {
                       display: flex;
@@ -793,7 +795,7 @@
                     .brewery_pic {
                       display: flex;
                       overflow: hidden;
-                      width: 200%;
+                      width: 100%;
                       margin-bottom: 50px;
                       @include responsive(pc-screens) {
                         width: 100%; height: 50%;
@@ -821,6 +823,7 @@
                       margin-bottom: 100px;
                       @include responsive(pc-screens) {
                         width: 100%; height: 50%;
+                        margin: 0;
                       }
                       a {
                         font: {
@@ -946,7 +949,7 @@
                   .brewery_pic {
                     display: flex;
                     overflow: hidden;
-                    width: 200%;
+                    width: 100%;
                     margin-bottom: 50px;
                     order:2;
                     @include responsive(pc-screens) {

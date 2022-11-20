@@ -676,7 +676,8 @@ p {
   overflow: hidden;
 }
 .wrapper .flexWrapper main section.brewery .category_wrap .brewery_item {
-  width: 100%;
+  width: 1180px;
+  margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -687,6 +688,7 @@ p {
     margin-bottom: 0;
     width: 120%;
     overflow: hidden;
+    flex-wrap: nowrap;
   }
 }
 .wrapper .flexWrapper main section.brewery .category_wrap .brewery_item li {
@@ -812,7 +814,7 @@ p {
 .wrapper .flexWrapper main section.brewery .brewery_content .b1 .brewery_box .brewery_pic {
   display: flex;
   overflow: hidden;
-  width: 200%;
+  width: 100%;
   margin-bottom: 50px;
 }
 @media screen and (min-width: 1024px) {
@@ -901,7 +903,7 @@ p {
 .wrapper .flexWrapper main section.brewery .brewery_content .b4 .brewery_box .brewery_semi .brewery_pic {
   display: flex;
   overflow: hidden;
-  width: 200%;
+  width: 100%;
   margin-bottom: 50px;
 }
 @media screen and (min-width: 1024px) {
@@ -947,6 +949,7 @@ p {
 .wrapper .flexWrapper main section.brewery .brewery_content .b4 .brewery_box .brewery_semi .text {
     width: 100%;
     height: 50%;
+    margin: 0;
   }
 }
 .wrapper .flexWrapper main section.brewery .brewery_content .b2 .brewery_box .brewery_semi .text a,
@@ -1089,7 +1092,7 @@ p {
 .wrapper .flexWrapper main section.brewery .brewery_content .b3 .brewery_box .brewery_pic {
   display: flex;
   overflow: hidden;
-  width: 200%;
+  width: 100%;
   margin-bottom: 50px;
   order: 2;
 }
