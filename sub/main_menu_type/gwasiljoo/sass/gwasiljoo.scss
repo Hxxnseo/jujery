@@ -319,7 +319,7 @@
 
             .bx-next {
               right: 10px;
-              background: url('../../images/icon/controls.png') no-repeat -43px -32px;
+              background: url('../../../images/icon/controls.png') no-repeat -43px -32px;
               display: none;
               &:hover,
               &:focus {
@@ -817,7 +817,7 @@
                           width: 100%;
                           @include responsive(pc-screens) {
                             width: 100%;
-                            object-fit: cover;
+                            height: 225px;
                           }
                         }
                       }

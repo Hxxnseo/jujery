@@ -824,7 +824,7 @@
                             width: 100%;
                             @include responsive(pc-screens) {
                               width: 100%;
-                              object-fit: cover;
+                              height: 225px;
                             }
                           }
                         }
