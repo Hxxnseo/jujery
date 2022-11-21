@@ -209,7 +209,23 @@
         } // mainSubMenu
 
         // 여기부터 작성하세요오오
-        
+        .TOS {
+          h3 {
+            margin-top: 30px;
+            margin-bottom: 50px;
+            text-align: center;
+            @include responsive(pc-screens) {
+              margin-top: 130px;
+              text-align: left;
+            }
+          }
+
+          .use {
+            font-family: $font-sub;
+            font-size: small;
+            margin-bottom: 100px;
+          }
+        }
         
       } // .main
     }

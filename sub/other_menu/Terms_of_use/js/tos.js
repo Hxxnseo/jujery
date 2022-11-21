@@ -1,26 +1,19 @@
-window.addEventListener(
-  "wheel",
-  function (e) {
-    e.preventDefault();
-  },
-  { passive: false }
-);
+$(function() {
+    const logoMenu = $(".footer").offset().top;
 
-$html.animate({ scrollTop: 0 }, 10);
+    console.log(100);
 
-$(function () {
+    $(window).on("scroll", function (e) {
+    console.log($(document).scrollTop());
 
-  $(".beforeMenu").on("click", function () {
-    $(".wrapper1").slideDown();
-    $(".beforeMenu").hide();
-    $(".afterMenu").show();
-  });
+    if ($(document).scrollTop() > 4086) {
+        $(".menu .gnb li a").css("color", "white");
+        $(".logo h1 img").attr("src", "../../../images/logo/main_white_logo.png");
+    } else {
+        $(".menu .gnb li a").css("color", "black");
+        $(".logo h1 img").attr("src", "../../../images/logo/detail_black_logo.png");
+    }
+    });
 
-  $(".afterMenu").on("click", function () {
-    $(".wrapper1").slideUp();
-    $(".afterMenu").hide();
-    $(".beforeMenu").show();
-  });
-});
-
-// $(".wrapper1").slideUp();
+    
+})
