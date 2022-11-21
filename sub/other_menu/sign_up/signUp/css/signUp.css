@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @font-face {
   font-family: "SANGJU Gyeongcheon Island";
   src: url(../../../../../font/SANGJU\ Gyeongcheon\ Island.woff);
@@ -62,38 +61,6 @@ h4 {
 p {
   font-size: 1em;
   font-family: "NotoSerifKR-Regular";
-}
-
-/* input 기본 스타일 초기화 */
-input {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-}
-
-/* IE10 이상에서 input box에 추가된 지우기 버튼 제거*/
-input::-ms-clear {
-  display: none;
-}
-
-/* input type number에서 화살표 제거*/
-input[type=number]::-webkit-inner-spin-button,
-input[type=number]::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-}
-
-/* select box 스타일 초기화 */
-select {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-}
-
-/* IE에서 select box 화살표 제거*/
-select::-ms-expand {
-  displa: none;
 }
 
 @media screen and (min-width: 1024px) {
