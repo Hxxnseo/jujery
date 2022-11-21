@@ -49,10 +49,9 @@
 
       .header {
         @include responsive(pc-screens) {
-
           position: fixed;
         }
-          
+
         .logoMenu {
           display: none;
 
@@ -225,56 +224,53 @@
             }
           }
 
-      .swiper {
-        // width: 100%;
-        .swiper-wrapper {
+          .swiper {
+            // width: 100%;
+            .swiper-wrapper {
+              width: 600px;
 
-          width: 600px;
+              .swiper-slide {
+                margin: 100px 0;
+                display: flex;
+                position: relative;
+                background-position: center;
+                background-size: cover;
+                width: 400px;
 
-          
-          .swiper-slide {
-            margin: 100px 0;
-            display: flex;
-            position: relative;
-            background-position: center;
-            background-size: cover;
-            width: 400px;
-
-            @include responsive(pc-screens) {
-              width: 900px;
-            }
-            
-            
-            div {
-              width: 100%;
-              @include responsive(pc-screens) {
-                width: 100%;
-                height: 100%;
-              }
-              
-              h4 {
-                width: 105px;
-                margin: 100px 20px 0 20px;
                 @include responsive(pc-screens) {
-                  margin: 240px 60px 0 110px;
-                  font-size: 48px;
-                  width: 150px;
+                  width: 900px;
                 }
-              }
-              
-              img {
-                display: block;
-                width: 195px;
-                height: 237px;
-                @include responsive(pc-screens) {
-                  width: 433px;
-                  height: 529px;
+
+                div {
+                  width: 100%;
+                  @include responsive(pc-screens) {
+                    width: 100%;
+                    height: 100%;
+                  }
+
+                  h4 {
+                    width: 105px;
+                    margin: 100px 20px 0 20px;
+                    @include responsive(pc-screens) {
+                      margin: 240px 60px 0 110px;
+                      font-size: 48px;
+                      width: 150px;
+                    }
+                  }
+
+                  img {
+                    display: block;
+                    width: 195px;
+                    height: 237px;
+                    @include responsive(pc-screens) {
+                      width: 433px;
+                      height: 529px;
+                    }
+                  }
                 }
-              }
-            }
-          } // swiper-slide
-        } // swiper-wrapper
-      } // swiper
+              } // swiper-slide
+            } // swiper-wrapper
+          } // swiper
         } // main
       } // container
     } // sec1
@@ -365,7 +361,7 @@
                 display: none;
               }
             } // line
-            .region_box_twelve {
+            .card-list {
               display: flex;
               justify-content: space-between;
               div {
@@ -406,7 +402,7 @@
                   }
                 }
               }
-            } // region_box_twelve
+            } // slider
             span {
               display: none;
               @include responsive(pc-screens) {
