@@ -39,9 +39,12 @@ $(function() {
         row: 1,
         dots: false,
         infinite: false,
+        arrows: true,
         speed: 300,
-        slidesToShow: 3.5,
+        slidesToShow: 5,
         slidesToScroll: 1,
+        prevArrow:'<button class="PrevArrow"></button>',
+        nextArrow:'<button class="NextArrow"></button>', 
         responsive: [
             {
                 breakpoint: 480,

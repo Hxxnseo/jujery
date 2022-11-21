@@ -40,11 +40,11 @@ $(function() {
         dots: false,
         infinite: false,
         speed: 300,
-        slidesToShow: 3.5,
+        slidesToShow: 5,
         slidesToScroll: 1,
         responsive: [
             {
-                breakpoint: 480,
+                breakpoint: 768,
                 settings: {
                     slidesToShow: 2,
                 }
