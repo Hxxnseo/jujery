@@ -211,12 +211,14 @@
         // 여기부터 작성하세요오오
         .privacy {
           padding: 100px 0;
-          font-family: $font-sub;
-          @include responsive(pc-screens) {
-            padding: 200px 0;
-          }
-          h1 {
-            font-size: 50px;
+          h3 {
+            margin-top: 30px;
+            margin-bottom: 50px;
+            text-align: center;
+            @include responsive(pc-screens) {
+              margin-top: 130px;
+              text-align: left;
+            }
           }
           span {
             display: block;
@@ -226,18 +228,18 @@
             background-color: gray;
           }
           strong {
-            font-size: 20px;
+            font-size: 18px;
             padding: 30px 0;
+            font-family: $font-sub;
           }
           .contents {
-            line-height: 40px;
-            margin-top: 0px;
+            font-family: $font-sub;
+            font-size: small;
+            margin-bottom: 100px;
           }
-          
         } //.privacy
-
       } // .mains
-    }// main
+    } // main
   }
 
   footer {
@@ -390,7 +392,7 @@
           ul {
             display: flex;
             width: 100%;
-            padding: 10px ;
+            padding: 10px;
             // margin-left: 5px;
 
             &:last-child {
