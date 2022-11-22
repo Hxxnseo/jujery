@@ -590,11 +590,7 @@ footer {
   z-index: 1;
   width: 100%;
   height: 100vh;
-  @include responsive(pc-screens) {
-    // position: relative;
-    // background-image: url(../../../images/background/main_page_background.png);
-    // opacity: 0.5;
-  }
+
 
   .wrap-inner {
     height: 100vh;
@@ -696,7 +692,6 @@ footer {
       .menu2 {
         font-family: $font-sub;
         font-size: 12px;
-        // margin-top: 50px;
         @include responsive(pc-screens) {
           width: 23%;
           margin: 0;
@@ -764,11 +759,6 @@ footer {
                 width: 40px;
                 @include responsive(pc-screens) {
                   width: 40px;
-                  // opacity: 0.5;
-                  // transition: all 0.5s;
-                  // &:hover {
-                  //   opacity: 1;
-                  // }
                 }
               }
             }
