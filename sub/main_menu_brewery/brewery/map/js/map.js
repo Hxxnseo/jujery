@@ -1,4 +1,15 @@
 $(function () {
+  $(".beforeMenu").on("click", function () {
+    $(".wrapper1").slideDown();
+    $(".beforeMenu").hide();
+    $(".afterMenu").show();
+  });
+
+  $(".afterMenu").on("click", function () {
+    $(".wrapper1").slideUp();
+    $(".afterMenu").hide();
+    $(".beforeMenu").show();
+  });
   const windowWidth = window.matchMedia("screen and (min-width: 1024px)");
 
   if (windowWidth.matches) {
