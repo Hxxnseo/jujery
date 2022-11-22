@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/takjoo.css" />
     <link rel="shortcut icon" type="image" href="../../main_menu_type/images/icon/jujerytitlelogo.png" />
-    <title>주저리</title>
+    <title>탁주</title>
     <script src="../js/jquery.js" defer></script>
     <script src="./js/takjoo.js" defer></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" defer></script>
     <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js" defer></script>
     <script src="../js/slick.min.js" defer></script>
     <script src="../js/mobileSlick.js" defer></script>
+    <script src="./js/slick_slider.js" defer></script>
   </head>
   <body>
     <div class="wrapper">
@@ -40,7 +41,7 @@
                         <a href="../gwasiljoo/gwasiljoo.html">과실주 / </a>
                       </li>
                       <li>
-                        <a href="../jeungryusoo/jeungryusoo.html">증류수 / </a>
+                        <a href="../jeungryusoo/jeungryusoo.html">증류주 / </a>
                         <a href="../otherjoo/otherjoo.html">기타주류</a>
                       </li>
                     </ul>
@@ -116,7 +117,7 @@
                             <a href="../../main_menu_type/gwasiljoo/gwasiljoo.html"> 과실주</a>
                           </li>
                           <li class="sub-gnb-li">
-                            <a href="../../main_menu_type/jeungryusoo/jeungryusoo.html">증류수 /</a>
+                            <a href="../../main_menu_type/jeungryusoo/jeungryusoo.html">증류주 /</a>
                             <a href="../../main_menu_type/otherjoo/otherjoo.html"> 기타주류</a>
                           </li>
                         </ul>
@@ -391,6 +392,7 @@
                 <h2>introduction of brewery</h2>
                   <h3>양조장별 제품소개</h3>
                   <div class="category_wrap">
+                    <svg id="icon-swipe" xmlns="http://www.w3.org/2000/svg" width="30" height="25" viewBox="0 0 30 25"><title>icon-swipe</title><path id="right" d="M30,3.5,26.56,7l-.81-.82,2.06-2.1H22V2.92h5.81L25.74.82,26.55,0Z"/><path id="left" d="M8,4.08H2.19l2.06,2.1L3.44,7,0,3.5,3.45,0l.81.82L2.19,2.92H8Z"/><path id="hand" d="M25.41,11.18l-5.08-3A2.32,2.32,0,0,0,19,7.74a2.37,2.37,0,0,0-1.72.75v-5a2.46,2.46,0,0,0-.71-1.74A2.38,2.38,0,0,0,14.84,1h0a2.44,2.44,0,0,0-2.41,2.46V14.6l-.69-.7a4.7,4.7,0,0,0-3.36-1.42A4.75,4.75,0,0,0,6.32,13a1.26,1.26,0,0,0-.69.92A1.32,1.32,0,0,0,6,15l7.69,7.83A7.59,7.59,0,0,0,19,25a7.73,7.73,0,0,0,7.65-7.79V13.29A2.42,2.42,0,0,0,25.41,11.18Zm0,6A6.46,6.46,0,0,1,19,23.73h0a6.31,6.31,0,0,1-4.41-1.8L6.87,14.1a3.37,3.37,0,0,1,1.5-.35h0a3.42,3.42,0,0,1,2.47,1.05l1.53,1.55a.52.52,0,0,0,.36.16l.19,0a1.18,1.18,0,0,0,.75-1.1V3.46a1.17,1.17,0,0,1,1.16-1.19h0A1.18,1.18,0,0,1,16,3.46v6.91a.6.6,0,0,0,.39.56l.2,0a.58.58,0,0,0,.45-.22l1-1.3A1.16,1.16,0,0,1,19,9a1.12,1.12,0,0,1,.68.23l5.12,3a1.18,1.18,0,0,1,.59,1Z"/></svg>
                     <ul class="brewery_item">
                       <li>
                         <a href="#b1" class="btn"><img src="../images/Takjoo/brewery/boksoon/boksoon_logo.jpeg" alt="복순도가"></a>
@@ -440,7 +442,7 @@
                           </div>
                         </div>
                         <div class="text">
-                          <a href="#">자세히보기</a>
+                          <a href="#">복순도가</a>
                           <p>복순도가 손막걸리는 전통방식으로 가양주로써 언양과 울주에서 수확한 햅쌀과 직접 빚은 누룩을 이용해  빚어 만든 생막걸리입니다.<br>
                           복순도가 손막걸리의 특징인 천연 탄산은 전통누룩이 발효되는 과정에서 자연히 생성됩니다. 이 천연 탄산은 청량감과 풍미를 높여줍니다.<br>
                           - 2019년 전통주 전문점 협의회가 선정한 한 해동안 가장 많이 팔린 막걸리 부문 5위<br>
@@ -471,7 +473,7 @@
                             </div>
                           </div>
                           <div class="text">
-                            <a href="#">자세히보기</a>
+                            <a href="#">청산녹수</a>
                             <p>청산녹수는 폐교한 장성북초등학교를 양조장으로 조성했다. 운동장이 마당이고, 교실마다 양조 설비가 들어가 있다. 복도를 따라 걸으면 양조 설비와 작업하는 모습을 볼 수 있다.<br>
                             대표제품인 사미인주는 유기농 햅쌀로 1차 발효를 하고, 인공 감미료 대신 벌꿀을 넣어  2차 저온 숙성을 한다. 선조들의 지혜가 담긴 주조 기술을 현대 과학으로 계승한 우리 술의 미래가 더욱 기대된다.</p>
                           </div>
@@ -502,7 +504,7 @@
                           <p>해창막걸리 9도</p>
                         </div>
                         <div class="text">
-                          <a href="#">자세히보기</a>
+                          <a href="#">해창주조장</a>
                           <p>해창주조장 앞에는 바다로 이어지는 삼산천이 흐르고, 그 주변으로. 넓은 들이 펼쳐진다. 양조장은 술맛도 술맛이지만, 건축물과 정원이 아름다워 찾는 이가 많다. 1927년에 일본인이 들어와 일본식 가옥을 짓고 정원을 가꾸며 산 이곳에는 40여 종의 식물이 자라고 있고, 마당에는 수석과 이끼가 자리한다.<br>
                           대표 제품인 해창막걸리는 오병인 대표가 자신이 마시기 위해 감미료를 빼면서 더욱 주목받게 되었다. 찹쌀과 멥쌀의 적절한 조화로 단맛을 잡았는데 알코올 함량은 6%, 9%, 12%, 18%의 다양한 제품을 만날 수 있다.</p>
                         </div>
@@ -539,7 +541,7 @@
                             </div>
                           </div>
                           <div class="text">
-                            <a href="#">자세히보기</a>
+                            <a href="#">문경주조</a>
                             <p>문경시 동로면소재지 비단천가, 굽이굽이 깊은 곳에 문경주조가 자리한다. 2008년 출시한 오미자 막걸리는 과일이 들어간 국내 첫 막걸리다. 2013년에는 무감미료 수제 막걸리 ‘문희’를 선보였다. 전통. 누룩을 사용하고, 소량으로 빚어 100일 이상 숙성해 유리병에 담아낸다.<br>
                             2017년 개발한 스파클링 막걸리 ‘오희’는 이듬해 평창동계올림픽에서 건배주로 선정되어 축배의 술이 되었다. 2012년 고용노동부로부터 CLEAN 사업장 인증까지 받아 깨끗한 환경에서 깨끗하고 양심 있게 술을 빚어내고 있다.</p>
                           </div>
@@ -578,7 +580,7 @@
                           </div>
                         </div>
                         <div class="text">
-                          <a href="#">자세히보기</a>
+                          <a href="#">이원양조장</a>
                           <p>이원양조장에 들어서면 새로운 섬에 발을 들인 것처럼 좀 전까지 있던 세계와 단절되는 묘한 기분에 사로잡힌다. 건물만 992㎡(300평), 부지가 6612㎡(3000평)로 구석구석 살아있는 박물관에 놓인 것 같다.<br>
                           1930년 창업한 이원양조장은 증손자인 강현준 대표가 4대로서 명맥을 잇고 있다. 옥천 출신인 정지용 시인의 작품에서 가져온 ‘향수’는 아버지가 젊은 날 빚었던 밀 막걸리를 재현한 것이다. 아버지의 아버지가 그랬던 것처럼 지역 농산물과 직접 만든 누룩으로 우직하게 술을 빚는다.</p>
                         </div>
