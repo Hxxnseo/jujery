@@ -27,6 +27,35 @@ $(function() {
         .css("display","none");
     });
 
+    $(document).ready(function() {
+        var $slider = $('.multiple-items');
+        var $progressBar = $('.swiper_scrollbar');
+        var $progressBarLabel = $('.slider_label');
+        
+        $slider.on('beforeChange', function(event, slick, currentSlide, nextSlide) {   
+          var calc = ( (nextSlide) / (slick.slideCount-1) ) * 100;
+          
+          $progressBar
+            .css('background-size', calc + '% 100%')
+            .attr('aria-valuenow', calc );
+          
+          $progressBarLabel.text( calc + '% completed' );
+        });
+        
+        $slider.slick({
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          speed: 400,
+          mobileFirst: true,
+          responsive: [
+            {
+                breakpoint: 768,
+                settings: 'unslick'
+            }
+          ]
+        });  
+      });
+
 // section3 아코디언탭 on mobile
     $('.brewery_content .brewery_box .text a').click(function(e) {
         e.preventDefault();

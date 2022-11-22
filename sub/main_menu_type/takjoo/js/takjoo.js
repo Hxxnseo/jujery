@@ -28,13 +28,7 @@ $(function() {
     });
 
 
-// slick slider
-    $('.multiple-items').slick({
-        lazyLoad: 'ondemand',
-        slidesToShow: 3,
-        slidesToScroll: 1
-    });
-
+ // slick slider
     $('.brewery_item').slick({
         row: 1,
         dots: false,
