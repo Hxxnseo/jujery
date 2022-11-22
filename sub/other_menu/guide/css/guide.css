@@ -1,18 +1,18 @@
 @font-face {
   font-family: "SANGJU Gyeongcheon Island";
-  src: url(../../../../font/SANGJU\ Gyeongcheon\ Island.woff);
+  src: url(../../../../../font/SANGJU\ Gyeongcheon\ Island.woff);
 }
 @font-face {
   font-family: "NotoSerifKR-Regular";
-  src: url(../../../../font/NotoSerifKR-Regular.woff);
+  src: url(../../../../../font/NotoSerifKR-Regular.woff);
 }
 @font-face {
   font-family: "SANGJU Gyeongcheon Island";
-  src: url(../../../../font/SANGJU\ Gyeongcheon\ Island.woff);
+  src: url(../../../../../font/SANGJU\ Gyeongcheon\ Island.woff);
 }
 @font-face {
   font-family: "NotoSerifKR-Regular";
-  src: url(../../../../font/NotoSerifKR-Regular.woff);
+  src: url(../../../../../font/NotoSerifKR-Regular.woff);
 }
 * {
   margin: 0;
@@ -71,13 +71,13 @@ p {
   }
 }
 .container {
-  padding: 0 20px;
   width: 100%;
+  padding: 0 20px;
 }
 @media screen and (min-width: 1024px) {
   .container {
-    padding: 0;
     margin: 0 auto;
+    padding: 0;
   }
 }
 
@@ -85,12 +85,12 @@ p {
   position: relative;
   width: 100%;
   height: 100%;
-  background-image: url(../../../../images/background/detail_page_main_background.png);
+  background-image: url(../../../../images/background/main_menu_background.png);
 }
 @media screen and (min-width: 1024px) {
   .wrapper .flexWrapper {
-    height: 100%;
     display: flex;
+    height: 100%;
     flex-direction: row;
   }
 }
@@ -99,8 +99,8 @@ p {
 }
 @media screen and (min-width: 1024px) {
   .wrapper .flexWrapper header {
-    height: auto;
     width: 370px;
+    height: auto;
     background-image: url(../../../../images/background/detail_page_header_background.png);
   }
 }
@@ -197,6 +197,9 @@ p {
 .wrapper .flexWrapper header .header .mobileLogoMenu .mobileMenu span:nth-child(2) {
   margin: 5px 0;
 }
+.wrapper .flexWrapper main {
+  width: 100%;
+}
 @media screen and (min-width: 1024px) {
   .wrapper .flexWrapper main {
     width: 80%;
@@ -222,8 +225,8 @@ p {
   .wrapper .flexWrapper main .main .mainSubMenu ul {
     display: flex;
     position: absolute;
-    right: 100px;
     top: 50px;
+    right: 100px;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -237,68 +240,21 @@ p {
     font-size: 14px;
   }
 }
-.wrapper .flexWrapper main .main section.def_alcohol {
+.wrapper .flexWrapper main .main .guideSect h3 {
   margin-top: 30px;
-  margin-bottom: 100px;
-}
-@media screen and (min-width: 1024px) {
-  .wrapper .flexWrapper main .main section.def_alcohol {
-    margin-top: 130px;
-  }
-}
-.wrapper .flexWrapper main .main section.def_alcohol .presentation {
-  width: 100%;
-}
-.wrapper .flexWrapper main .main section.def_alcohol .presentation video {
-  width: 100%;
-  height: 400px;
-  -o-object-fit: fill;
-     object-fit: fill;
-}
-@media screen and (min-width: 1024px) {
-  .wrapper .flexWrapper main .main section.def_alcohol .presentation video {
-    height: 680px;
-  }
-}
-.wrapper .flexWrapper main .main section.def_alcohol .text_box {
-  margin-top: 50px;
-  margin-bottom: 100px;
-  font-family: "NotoSerifKR-Regular";
-}
-@media screen and (min-width: 1024px) {
-  .wrapper .flexWrapper main .main section.def_alcohol .text_box {
-    margin-top: 100px;
-  }
-}
-.wrapper .flexWrapper main .main section.def_alcohol .text_box .quot_box h3 {
-  font-family: "SANGJU Gyeongcheon Island";
-  font-size: 1.5em;
+  margin-bottom: 50px;
   text-align: center;
 }
 @media screen and (min-width: 1024px) {
-  .wrapper .flexWrapper main .main section.def_alcohol .text_box .quot_box h3 {
+  .wrapper .flexWrapper main .main .guideSect h3 {
+    margin-top: 130px;
     text-align: left;
-    font-size: 2.5em;
   }
 }
-.wrapper .flexWrapper main .main section.def_alcohol .text_box .quot_box p {
-  margin-top: 30px;
-  line-height: 30px;
-}
-.wrapper .flexWrapper main .main section.def_alcohol .def_box {
-  margin-top: 90px;
-}
-.wrapper .flexWrapper main .main section.def_alcohol .def_box h4 {
-  font-size: 1em;
-}
-@media screen and (min-width: 1024px) {
-  .wrapper .flexWrapper main .main section.def_alcohol .def_box h4 {
-    font-size: 1.25em;
-  }
-}
-.wrapper .flexWrapper main .main section.def_alcohol .def_box p {
-  margin-top: 20px;
-  line-height: 30px;
+.wrapper .flexWrapper main .main .guideSect .use {
+  font-family: "NotoSerifKR-Regular";
+  font-size: small;
+  margin-bottom: 100px;
 }
 @media screen and (min-width: 1024px) {
   .wrapper footer .container {
@@ -458,4 +414,4 @@ p {
 .wrapper footer .footer .footBox .footMenu ul li a {
   width: 100%;
   color: white;
-}/*# sourceMappingURL=traditional_alcohol.css.map */
+}/*# sourceMappingURL=agree.css.map */
