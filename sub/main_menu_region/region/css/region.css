@@ -399,53 +399,56 @@ p {
     display: none;
   }
 }
-.wrapper .flexWrapper .sec2 .main .container .p-gap .card-list {
+.wrapper .flexWrapper .sec2 .main .container .p-gap .swiper-container .swiper-wrapper {
   display: flex;
   justify-content: space-between;
+  transition-timing-function: linear;
 }
-.wrapper .flexWrapper .sec2 .main .container .p-gap .card-list div {
+.wrapper .flexWrapper .sec2 .main .container .p-gap .swiper-container .swiper-wrapper .swiper-slide {
+  width: 170px;
   font-family: "NotoSerifKR-Regular";
   margin-right: 20px;
 }
 @media screen and (min-width: 1024px) {
-  .wrapper .flexWrapper .sec2 .main .container .p-gap .card-list div {
+  .wrapper .flexWrapper .sec2 .main .container .p-gap .swiper-container .swiper-wrapper .swiper-slide {
+    width: 280px;
     margin-bottom: 60px;
   }
 }
-.wrapper .flexWrapper .sec2 .main .container .p-gap .card-list div img {
+.wrapper .flexWrapper .sec2 .main .container .p-gap .swiper-container .swiper-wrapper .swiper-slide img {
   width: 166px;
   height: 229px;
 }
 @media screen and (min-width: 1024px) {
-  .wrapper .flexWrapper .sec2 .main .container .p-gap .card-list div img {
+  .wrapper .flexWrapper .sec2 .main .container .p-gap .swiper-container .swiper-wrapper .swiper-slide img {
     width: 270px;
     height: 372px;
   }
 }
-.wrapper .flexWrapper .sec2 .main .container .p-gap .card-list div .box-even {
+.wrapper .flexWrapper .sec2 .main .container .p-gap .swiper-container .swiper-wrapper .swiper-slide .box-even {
   height: 151px;
 }
 @media screen and (min-width: 1024px) {
-  .wrapper .flexWrapper .sec2 .main .container .p-gap .card-list div .box-even {
+  .wrapper .flexWrapper .sec2 .main .container .p-gap .swiper-container .swiper-wrapper .swiper-slide .box-even {
     width: 270px;
     height: 259px;
   }
 }
-.wrapper .flexWrapper .sec2 .main .container .p-gap .card-list div h4 {
+.wrapper .flexWrapper .sec2 .main .container .p-gap .swiper-container .swiper-wrapper .swiper-slide h4 {
   font-size: 14px;
   padding: 20px 0;
 }
 @media screen and (min-width: 1024px) {
-  .wrapper .flexWrapper .sec2 .main .container .p-gap .card-list div h4 {
+  .wrapper .flexWrapper .sec2 .main .container .p-gap .swiper-container .swiper-wrapper .swiper-slide h4 {
     font-size: 24px;
   }
 }
-.wrapper .flexWrapper .sec2 .main .container .p-gap .card-list div p {
+.wrapper .flexWrapper .sec2 .main .container .p-gap .swiper-container .swiper-wrapper .swiper-slide p {
   font-size: 12px;
   line-height: 20px;
 }
 @media screen and (min-width: 1024px) {
-  .wrapper .flexWrapper .sec2 .main .container .p-gap .card-list div p {
+  .wrapper .flexWrapper .sec2 .main .container .p-gap .swiper-container .swiper-wrapper .swiper-slide p {
     font-size: 20px;
   }
 }
