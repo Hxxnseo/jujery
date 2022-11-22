@@ -361,48 +361,55 @@
                 display: none;
               }
             } // line
-            .card-list {
-              display: flex;
-              justify-content: space-between;
-              div {
-                font-family: $font-sub;
-                margin-right: 20px;
-                @include responsive(pc-screens) {
-                  margin-bottom: 60px;
-                }
+            .swiper-container {
+              // height: calc(50vh - 20px);
+              .swiper-wrapper {
+                display: flex;
+                justify-content: space-between;
+                transition-timing-function: linear;
+                .swiper-slide {
+                  width: 170px;
+                  font-family: $font-sub;
+                  margin-right: 20px;
+                  @include responsive(pc-screens) {
+                    width: 280px;
+                    margin-bottom: 60px;
+                  }
 
-                img {
-                  width: 166px;
-                  height: 229px;
-                  @include responsive(pc-screens) {
-                    width: 270px;
-                    height: 372px;
+                  img {
+                    width: 166px;
+                    height: 229px;
+                    @include responsive(pc-screens) {
+                      width: 270px;
+                      height: 372px;
+                    }
                   }
-                }
-                .box-even {
-                  height: 151px;
-                  @include responsive(pc-screens) {
-                    width: 270px;
-                    height: 259px;
+                  .box-even {
+                    height: 151px;
+                    @include responsive(pc-screens) {
+                      width: 270px;
+                      height: 259px;
+                    }
                   }
-                }
 
-                h4 {
-                  font-size: 14px;
-                  padding: 20px 0;
-                  @include responsive(pc-screens) {
-                    font-size: 24px;
+                  h4 {
+                    font-size: 14px;
+                    padding: 20px 0;
+                    @include responsive(pc-screens) {
+                      font-size: 24px;
+                    }
+                  }
+                  p {
+                    font-size: 12px;
+                    line-height: 20px;
+                    @include responsive(pc-screens) {
+                      font-size: 20px;
+                    }
                   }
                 }
-                p {
-                  font-size: 12px;
-                  line-height: 20px;
-                  @include responsive(pc-screens) {
-                    font-size: 20px;
-                  }
-                }
-              }
-            } // slider
+              } // swiper-wrapperr
+            } //swiper-containerr
+
             span {
               display: none;
               @include responsive(pc-screens) {
