@@ -1,7 +1,6 @@
 // 유효성검사
 function validate() {
-    var frm = document.frm;
-    const userId = document.getElementById("user_id");
+    var userId = document.getElementById("user_id");
     var userPw = document.getElementById("user_pw");
     var userPw2 = document.getElementById("user_pw2");
     var phone = document.getElementById("phone");
@@ -55,22 +54,4 @@ function validate() {
     };
     
     document.frm.submit();
-}
-
-function id_check() {
-window.open("", "", "width=600, height=200, left=200, top=100");
-}
-
-function change_email() {
-    var email_add = document.getElementById("email_server1");
-    var email_sel = document.getElementById("email_server2");
-
-    var idx = email_sel.options.selectedIndex;
-    var val = email_sel.options[idx].value;
-
-    email_add.value = val;
-}
-
-function search_address() {
-    window.open("", "b", "width=600, height=300, left=200, top=100");
 }

@@ -273,8 +273,7 @@
               width: 100%;
               display: flex;
               flex-direction: column;
-              margin-bottom: 50px; // 왜 otherjoo에는 안먹었죠?
-              // background-color: yellow;
+              margin-bottom: 50px; 
 
               @include responsive(pc-screens) {
                 flex-direction: row;
@@ -318,7 +317,6 @@
             .even {
               position: relative;
               margin-bottom: 50px;
-              // background-color: pink;
               @include responsive(pc-screens) {
                 height: 630px;
               }

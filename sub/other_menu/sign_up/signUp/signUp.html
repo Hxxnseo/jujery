@@ -8,10 +8,12 @@
     <link rel="shortcut icon" type="image" href="../../../main_menu_type/images/icon/jujerytitlelogo.png">
     <title>주저리</title>
     <script src="./js/signUp.js" defer></script>
-    <script src="./js/address.js" defer></script>
     <script src="../../../main_menu_type/js/jquery.js" defer></script>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js" defer></script>
-    <script src="//d1p7wdleee1q2z.cloudfront.net/post/search.min.js" defer></script>
+    <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js" defer></script>
+    <script src="./js/jquery.js" defer></script>
+    <script src="./js/address.js" defer></script>
+    <script src="./js/id_check.js" defer></script>
+    <script src="./"></script>
   </head>
   <body>
     <div class="wrapper">
@@ -21,7 +23,7 @@
             <div class="logoMenu">
               <div class="logo">
                 <h1>
-                  <a href="#">
+                  <a href="../../../../index.html">
                     <img src="../../../../images/logo/detail_black_logo.png" alt="logo" />
                   </a>
                 </h1>
@@ -29,7 +31,7 @@
 
               <nav class="menu">
                 <ul class="gnb">
-                  <li><a href="../../../other_menu/traditional_alcohol/traditional_alcohol.html">전통주란 </a></li>
+                  <li><a href="../../traditional_alcohol/traditional_alcohol.html">전통주란 </a></li>
                   <li>
                     <a href="../../../main_menu_type/variety.html">종류별</a>
                     <ul class="subMenu">
@@ -117,18 +119,19 @@
                     <span>기본정보</span>
                     <span>*필수입력사항</span>
                   </div>
-                  <form action="#" method="post" name="frm" onsubmit="return validate();">
+                  <form action="#" method="post" name="frm">
                     <div class="id_box">
                       <input type="text" name="user_id" id="user_id" placeholder="계정*(영문소문자/숫자,4~16자" minlength="4" maxlength="16" required>
-                      <button>중복확인</button>
+                      <button type="button" onclick="id_check();">중복확인</button>
                     </div>
                     <input type="password" name="user_pw" id="user_pw" placeholder="비밀번호*(영문소문자/숫자, 8~25자)" minlength="8" maxlength="25" required>
                     <input type="password" name="user_pw2" id="user_pw2" placeholder="비밀번호확인*" minlength="8" maxlength="25" required>
                     <div class="address_box">
-                      <input type="text" name="address1" id="address1" placeholder="주소" maxlength="14">
-                      <button type="button" id="postcodify_search_button">우편번호</button>
+                      <input type="text" name="address1" id="address1" placeholder="우편번호" maxlength="5">
+                      <button type="button" id="find_button" onclick="sample6_execDaumPostcode();">우편번호 검색</button>
                     </div>
-                    <input type="text" name="address2" id="address2" placeholder="나머지주소(선택입력가능)">
+                    <input type="text" name="address2" id="address2" placeholder="주소">
+                    <input type="text" name="address3" id="address3" placeholder="나머지주소(선택입력가능)">
                     <div class="phone_box">
                       <select name="phone" id="phone">
                           <option value="02">02</option>
@@ -179,7 +182,8 @@
                       <input type="text" name="email" id="email" maxlength="16" placeholder="이메일*" required>
                       <span>@</span>
                       <input type="text" name="email_server1" id="email_server1" maxlength="16" required>
-                      <select name="email_server2" id="email_server2">
+                      <select name="email_server2" id="email_server2" onchange="change_email();">
+                          <option value="">선택</option>
                           <option value="naver.com">naver.com</option>
                           <option value="daum.net">daum.net</option>
                           <option value="gmail.com">gmail.com</option>
@@ -188,8 +192,8 @@
                       </select>
                     </div>
                     <div class="signup_btn">
-                      <button type="button">회원가입</button>
-                      <button type="reset">회원가입 취소</button>
+                      <button type="button" onclick="validate();">회원가입</button>
+                      <button type="button" onclick="history.back();">회원가입 취소</button>
                     </div>
                   </form>
               </section>
@@ -214,29 +218,29 @@
               <div class="footSns">
                 <ul class="footSnsCont">
                   <li>
-                    <a href="#"><img src="../../../../images/sns/sns_insta.png" alt="s" /></a>
+                    <a href="#"><img src="../../../images/sns/sns_insta.png" alt="" /></a>
                   </li>
                   <li>
-                    <a href="#"><img src="../../../../images/sns/sns_twitter.png" alt="" /></a>
+                    <a href="#"><img src="../../../images/sns/sns_twitter.png" alt="" /></a>
                   </li>
                   <li>
-                    <a href="#"><img src="../../../../images/sns/sns_facebook.png" alt="" /></a>
+                    <a href="#"><img src="../../../images/sns/sns_facebook.png" alt="" /></a>
                   </li>
                   <li>
-                    <a href="#"><img src="../../../../images/sns/sns_tiktok.png" alt="" /></a>
+                    <a href="#"><img src="../../../images/sns/sns_tiktok.png" alt="" /></a>
                   </li>
                 </ul>
               </div>
               <div class="footMenu">
                 <ul>
-                  <li><a href="#">우리의 이야기</a></li>
-                  <li><a href="#">소통하기</a></li>
-                  <li><a href="#">상징</a></li>
+                  <li><a href="../../about_us/about_us.html">우리의 이야기</a></li>
+                  <li><a href="../../community/community.html">소통하기</a></li>
+                  <li><a href="../../logo/logo.html">상징</a></li>
                 </ul>
                 <ul>
                   <li><a href="#">동의사항</a></li>
-                  <li><a href="#">개인정보</a></li>
-                  <li><a href="#">정책</a></li>
+                  <li><a href="../../privacy_policy/privacy.html">개인정보</a></li>
+                  <li><a href="../../Terms_of_use/TOS.html">정책</a></li>
                 </ul>
               </div>
             </div>

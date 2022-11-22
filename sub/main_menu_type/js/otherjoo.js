@@ -50,7 +50,7 @@ $(function() {
 
 });
 
-// sider bar
+// side bar
 $(function () {
     const logoMenu = $(".footer").offset().top;
 
