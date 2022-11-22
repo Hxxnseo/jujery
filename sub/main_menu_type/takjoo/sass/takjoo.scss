@@ -597,7 +597,7 @@
             background-size: 0 100%;
 
             transition: background-size .4s ease-in-out;
-            
+
             .sr-only {
               position: absolute;
               width: 1px;
@@ -626,6 +626,48 @@
               position: relative;
               margin-top: 40px;
               overflow: hidden;
+
+              svg#icon-swipe {
+                width: 100px;
+                height: 50px;
+                position: absolute;
+                top:0; left:50%;
+                transform: translateX(-50%);
+                z-index: 5000;
+
+                #hand {
+                fill: #f07d00;
+                transform-origin: 50% 100%;
+                animation: hand-swipe 3.5s infinite ease;
+                }
+                #left, #right {
+                  fill: #453d34;
+                  opacity: 0;
+                }
+                #right { animation: arrow-right 3.5s infinite ease; }
+                #left { animation: arrow-left 3.5s infinite ease; }
+              }
+              @keyframes hand-swipe {
+                5% { transform: translateX(3px) rotate(6deg); }
+                25% { transform: translateX(0px) rotate(0deg); }
+                28% { transform: translateX(0px) rotate(0deg); }
+                33% { transform: translateX(-3px) rotate(-6deg); }
+                53% { transform: translateX(0px) rotate(0deg); }
+                100% { transform: translateX(0px) rotate(0deg); }
+              }
+              
+              @keyframes arrow-right {
+                7% { transform: translateX(8px); opacity: 1; }
+                17% { transform: translateX(10px); opacity: 0; }
+                18%, 100% { transform: translateX(0); opacity: 0; }
+              }
+              
+              @keyframes arrow-left {
+                0%, 30% { transform: translateX(0); opacity: 0; }
+                37% { transform: translateX(-8px); opacity: 1; }
+                47% { transform: translateX(-10px); opacity: 0; }
+                48%, 100% { transform: translateX(0); opacity: 0; }
+              }
               
               .brewery_item{
                 width: 1180px;
