@@ -250,6 +250,12 @@
             @include responsive(pc-screens) {
               display: none;
             }
+            div {
+              width: 100%;
+              img {
+                width: 100%;
+              }
+            }
           }
 
           .grid-box {
@@ -369,6 +375,7 @@
                   justify-content: space-around;
                   padding: 20px;
                   border-top: 2px solid #dbdbdb;
+                  cursor: pointer;
 
                   img {
                     position: absolute;
@@ -508,6 +515,7 @@
         width: 100%;
         img {
           vertical-align: top;
+          width: 100%;
         }
       }
     }
