@@ -1,7 +1,8 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
@@ -73,9 +74,14 @@ p {
 }
 @media screen and (min-width: 1024px) {
   .wrapper .flexWrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     height: 100%;
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
 }
 .wrapper .flexWrapper header {
@@ -136,11 +142,14 @@ p {
     height: 0px;
     overflow: hidden;
     padding-top: 40px;
+    -webkit-transition: all 0.5s;
     transition: all 0.5s;
   }
 }
 @media screen and (min-width: 1024px) {
   .wrapper .flexWrapper header .header .logoMenu .menu .gnb li .subMenu li {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     padding-bottom: 0px;
   }
@@ -154,6 +163,8 @@ p {
   }
 }
 .wrapper .flexWrapper header .header .mobileLogoMenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 @media screen and (min-width: 1024px) {
@@ -204,6 +215,8 @@ p {
 }
 @media screen and (min-width: 1024px) {
   .wrapper .flexWrapper main .main .mainSubMenu ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     position: absolute;
     top: 50px;
@@ -275,9 +288,13 @@ p {
 }
 @media screen and (min-width: 1024px) {
   .wrapper footer .footer .footInfo {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 100%;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     font-size: 20px;
     margin-bottom: 30px;
   }
@@ -299,11 +316,20 @@ p {
 }
 @media screen and (min-width: 1024px) {
   .wrapper footer .footer .footBox {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     height: 250px;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     text-align: center;
     border-top: 1px solid #ccc;
     border-bottom: 1px solid #ccc;
@@ -350,8 +376,12 @@ p {
   }
 }
 .wrapper footer .footer .footBox .footSns .footSnsCont {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 @media screen and (min-width: 1024px) {
   .wrapper footer .footer .footBox .footSns .footSnsCont {
@@ -376,6 +406,7 @@ p {
   .wrapper footer .footer .footBox .footSns .footSnsCont li img {
     width: 60px;
     opacity: 0.5;
+    -webkit-transition: all 0.5s;
     transition: all 0.5s;
   }
   .wrapper footer .footer .footBox .footSns .footSnsCont li img:hover {
@@ -395,6 +426,8 @@ p {
   }
 }
 .wrapper footer .footer .footBox .footMenu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 100%;
   padding: 10px;
@@ -410,4 +443,4 @@ p {
 .wrapper footer .footer .footBox .footMenu ul li a {
   width: 100%;
   color: white;
-}/*# sourceMappingURL=privacy.css.map */
+}
