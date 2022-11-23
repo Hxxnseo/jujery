@@ -206,12 +206,14 @@
             position: fixed;
             top: 22px;
             left: 20px;
+            z-index: 1000;
           }
 
           .beforeMenu {
             position: fixed;
             top: 38px;
             right: 20px;
+            z-index: 1000;
             cursor: pointer;
 
             span {
@@ -352,8 +354,16 @@
                 width: 49.5%;
               }
 
-              img,
               iframe {
+                width: 100%;
+                height: 300px;
+
+                @include responsive(pc-screens) {
+                  height: 100%;
+                }
+              }
+
+              img {
                 width: 100%;
                 height: 100%;
 
@@ -651,8 +661,8 @@
 
       .menu1 {
         position: relative;
-        margin-top: 0;
         height: 550px;
+        margin-top: 0;
         @include responsive(pc-screens) {
           position: relative;
           width: 77%;
