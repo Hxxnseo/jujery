@@ -138,6 +138,7 @@
             position: fixed;
             top: 22px;
             left: 20px;
+            z-index: 20000;
           }
 
           .beforeMenu {
@@ -145,6 +146,7 @@
             top: 38px;
             right: 20px;
             cursor: pointer;
+            z-index: 20000;
 
             span {
               display: block;
@@ -732,7 +734,6 @@ footer {
     }
   }
 }
-
 
 .wrapper1 {
   display: none;

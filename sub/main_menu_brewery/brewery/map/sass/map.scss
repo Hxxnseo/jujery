@@ -344,6 +344,7 @@
                     height: 200px;
                     background-image: url(../map_imgs/map_img_background.png);
                     justify-content: center;
+                    flex-direction: row;
                     gap: 20px;
                     align-items: center;
 
@@ -467,8 +468,6 @@
                     .title {
                       width: 10%;
                       height: 100%;
-                      font-size: 24px;
-                      font-weight: 600;
                       writing-mode: vertical-lr;
 
                       @include responsive(pc-screens) {
@@ -772,8 +771,8 @@
 
       .menu1 {
         position: relative;
-        margin-top: 0;
         height: 550px;
+        margin-top: 0;
         @include responsive(pc-screens) {
           position: relative;
           width: 77%;

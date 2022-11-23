@@ -11,6 +11,15 @@ $(function () {
     $(".beforeMenu").show();
   });
 
+  $(".cont .beforeClick").on("click", function (e) {
+    $(this).hide();
+    $(this).next().show();
+  });
+  $(".cont .afterClick").on("click", function (e) {
+    $(this).hide();
+    $(this).prev().show();
+  });
+
   // const windowWidth = window.matchMedia("screen and (min-width: 1024px)");
 
   // console.log(windowWidth.matches);
@@ -53,18 +62,14 @@ $(window).resize(() => {
     console.log("호출됨");
     stateType = false;
 
-    $(".cont .beforeClick").on("click", function (e) {
-      $(this).hide();
-      $(this).next().show();
-    });
+    let www = window.innerWidth;
+    if (www > 1024) {
+    }
   } else if (ww < 1024 && !stateType) {
     console.log("aaaa");
     stateType = true;
 
-    $(".cont .afterClick").on("click", function (e) {
-      $(this).hide();
-      $(this).prev().show();
-    });
+    return;
   }
 });
 // $(window)
