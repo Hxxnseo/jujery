@@ -277,6 +277,15 @@
             margin-bottom: 50px;
           }
 
+          iframe {
+            width: 100%;
+
+            @include responsive(pc-screens) {
+              width: 80%;
+              height: 700px;
+            }
+          }
+
           img {
             width: 100%;
 

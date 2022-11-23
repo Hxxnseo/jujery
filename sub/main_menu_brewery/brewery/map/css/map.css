@@ -283,6 +283,15 @@ p {
   font-size: 30px;
   margin-bottom: 50px;
 }
+.wrapper .flexWrapper main .main .sect1 iframe {
+  width: 100%;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .main .sect1 iframe {
+    width: 80%;
+    height: 700px;
+  }
+}
 .wrapper .flexWrapper main .main .sect1 img {
   width: 100%;
 }
