@@ -57,14 +57,15 @@ $(window).resize(() => {
       $(this).hide();
       $(this).next().show();
     });
-  } else if (ww < 1024 && !stateType) {
-    console.log("aaaa");
-    stateType = true;
-
     $(".cont .afterClick").on("click", function (e) {
       $(this).hide();
       $(this).prev().show();
     });
+  } else if (ww < 1024 && !stateType) {
+    console.log("aaaa");
+    stateType = true;
+
+    return;
   }
 });
 // $(window)
