@@ -503,8 +503,8 @@ p {
   }
 }
 .wrapper .flexWrapper main .main .slider .inner .sec2 .map iframe {
-  width: 360px;
-  height: 160px;
+  width: 100%;
+  height: 300px;
 }
 @media screen and (min-width: 1024px) {
   .wrapper .flexWrapper main .main .slider .inner .sec2 .map iframe {
