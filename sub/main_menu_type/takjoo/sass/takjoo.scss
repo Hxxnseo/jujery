@@ -422,12 +422,14 @@
 
           .gnb {
             display: flex;
-            justify-content: space-around;
+            width: 100%;
+            justify-content: space-between;
             @include responsive(pc-screens) {
               border: 1px solid #000;
             }
 
             li {
+              width: 25%;
               @include responsive(pc-screens) {
                 border-right: 1px solid #000;
 
@@ -436,9 +438,11 @@
                 }
               }
               a {
+                width: 100%;
                 font-family: $font-sub;
+                text-align: center;
                 @include responsive(pc-screens) {
-                  padding: 20px 95px;
+                  padding: 20px 0;
                   &:hover {
                     background-color: #000;
                     color: #fff;
@@ -628,12 +632,16 @@
               overflow: hidden;
 
               svg#icon-swipe {
-                width: 100px;
-                height: 50px;
+                width: 75px;
+                height: 40px;
                 position: absolute;
-                top:0; left:50%;
+                top:190px; left:50%;
                 transform: translateX(-50%);
-                z-index: 5000;
+                z-index: 50000;
+                @include responsive(pc-screens) {
+                  width: 100px; height: 50px;
+                  top:100px; 
+                }
 
                 #hand {
                 fill: #f07d00;

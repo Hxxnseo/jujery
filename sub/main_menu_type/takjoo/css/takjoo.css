@@ -505,12 +505,16 @@ p {
 }
 .wrapper .flexWrapper main .main nav .gnb {
   display: flex;
-  justify-content: space-around;
+  width: 100%;
+  justify-content: space-between;
 }
 @media screen and (min-width: 1024px) {
   .wrapper .flexWrapper main .main nav .gnb {
     border: 1px solid #000;
   }
+}
+.wrapper .flexWrapper main .main nav .gnb li {
+  width: 25%;
 }
 @media screen and (min-width: 1024px) {
   .wrapper .flexWrapper main .main nav .gnb li {
@@ -521,11 +525,13 @@ p {
   }
 }
 .wrapper .flexWrapper main .main nav .gnb li a {
+  width: 100%;
   font-family: "NotoSerifKR-Regular";
+  text-align: center;
 }
 @media screen and (min-width: 1024px) {
   .wrapper .flexWrapper main .main nav .gnb li a {
-    padding: 20px 95px;
+    padding: 20px 0;
   }
   .wrapper .flexWrapper main .main nav .gnb li a:hover {
     background-color: #000;
@@ -710,13 +716,20 @@ p {
   overflow: hidden;
 }
 .wrapper .flexWrapper main section.brewery .category_wrap svg#icon-swipe {
-  width: 100px;
-  height: 50px;
+  width: 75px;
+  height: 40px;
   position: absolute;
-  top: 0;
+  top: 190px;
   left: 50%;
   transform: translateX(-50%);
-  z-index: 5000;
+  z-index: 50000;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main section.brewery .category_wrap svg#icon-swipe {
+    width: 100px;
+    height: 50px;
+    top: 100px;
+  }
 }
 .wrapper .flexWrapper main section.brewery .category_wrap svg#icon-swipe #hand {
   fill: #f07d00;
