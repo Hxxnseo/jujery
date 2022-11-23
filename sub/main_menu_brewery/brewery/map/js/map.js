@@ -10,21 +10,23 @@ $(function () {
     $(".afterMenu").hide();
     $(".beforeMenu").show();
   });
-  const windowWidth = window.matchMedia("screen and (min-width: 1024px)");
 
-  if (windowWidth.matches) {
-    $(".cont .beforeClick").on("click", function (e) {
-      $(this).hide();
-      $(this).next().show();
-    });
+  // const windowWidth = window.matchMedia("screen and (min-width: 1024px)");
 
-    $(".cont .afterClick").on("click", function (e) {
-      $(this).hide();
-      $(this).prev().show();
-    });
-  } else {
-    return;
-  }
+  // console.log(windowWidth.matches);
+  // if (windowWidth.matches) {
+  //   $(".cont .beforeClick").on("click", function (e) {
+  //     $(this).hide();
+  //     $(this).next().show();
+  //   });
+
+  //   $(".cont .afterClick").on("click", function (e) {
+  //     $(this).hide();
+  //     $(this).prev().show();
+  //   });
+  // } else {
+  //   return;
+  // }
 
   const logoMenu = $(".footer").offset().top;
 
@@ -43,6 +45,28 @@ $(function () {
   });
 });
 
+let stateType = true;
+$(window).resize(() => {
+  let ww = window.innerWidth;
+
+  if (ww > 1024 && stateType) {
+    console.log("호출됨");
+    stateType = false;
+
+    $(".cont .beforeClick").on("click", function (e) {
+      $(this).hide();
+      $(this).next().show();
+    });
+  } else if (ww < 1024 && !stateType) {
+    console.log("aaaa");
+    stateType = true;
+
+    $(".cont .afterClick").on("click", function (e) {
+      $(this).hide();
+      $(this).prev().show();
+    });
+  }
+});
 // $(window)
 //   .resize(function () {
 //     console.log(window.innerWidth);
