@@ -70,7 +70,7 @@ $(function () {
     $(window).on("scroll", function (e) {
     	console.log($(document).scrollTop());
 
-    	if ($(document).scrollTop() > 2200) {
+    	if ($(document).scrollTop() > 2140) {
         	$(".menu .gnb li a").css("color", "white");
         	$(".logo h1 img").attr("src", "../../../images/logo/main_white_logo.png");
       	} else {

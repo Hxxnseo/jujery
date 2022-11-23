@@ -505,12 +505,16 @@ p {
 }
 .wrapper .flexWrapper main .main nav .gnb {
   display: flex;
-  justify-content: space-around;
+  width: 100%;
+  justify-content: space-between;
 }
 @media screen and (min-width: 1024px) {
   .wrapper .flexWrapper main .main nav .gnb {
     border: 1px solid #000;
   }
+}
+.wrapper .flexWrapper main .main nav .gnb li {
+  width: 25%;
 }
 @media screen and (min-width: 1024px) {
   .wrapper .flexWrapper main .main nav .gnb li {
@@ -521,11 +525,13 @@ p {
   }
 }
 .wrapper .flexWrapper main .main nav .gnb li a {
+  width: 100%;
   font-family: "NotoSerifKR-Regular";
+  text-align: center;
 }
 @media screen and (min-width: 1024px) {
   .wrapper .flexWrapper main .main nav .gnb li a {
-    padding: 20px 95px;
+    padding: 20px 0;
   }
   .wrapper .flexWrapper main .main nav .gnb li a:hover {
     background-color: #000;
