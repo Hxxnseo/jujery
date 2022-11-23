@@ -561,7 +561,7 @@
   
     .wrap-inner {
       height: 100vh;
-      background-image: url(../../../../images/background/main_menu_background.png);
+      background-image: url(../../../images/background/main_menu_background.png);
       @include responsive(pc-screens) {
         display: none;
       }
