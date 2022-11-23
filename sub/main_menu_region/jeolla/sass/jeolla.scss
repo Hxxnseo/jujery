@@ -140,6 +140,7 @@
             position: fixed;
             top: 22px;
             left: 20px;
+            z-index: 20000;
           }
 
           .beforeMenu {
@@ -147,6 +148,7 @@
             top: 38px;
             right: 20px;
             cursor: pointer;
+            z-index: 20000;
 
             span {
               display: block;
@@ -325,7 +327,7 @@
                 position: absolute;
                 top: 20px;
                 left: 50%;
-                  transform: translate(-50%, 0%);
+                transform: translate(-50%, 0%);
                 width: 250px;
                 height: 300px;
                 z-index: 0;
@@ -334,7 +336,7 @@
                   width: 470px;
                   height: 560px;
                   position: absolute;
-                  left: 350px;
+                  // left: 350px;
                 }
               }
 
