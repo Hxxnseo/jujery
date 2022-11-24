@@ -605,12 +605,6 @@ p {
   left: 400px;
   width: 35px;
 }
-@media screen and (min-width: 1024px) {
-  .wrapper .flexWrapper main .main section.rec-box .recommend .rec-des .rec-item .heart,
-.wrapper .flexWrapper main .main section.rec-box .recommend .rec-des .rec-item .heart_full {
-    left: 400px;
-  }
-}
 .wrapper .flexWrapper main .main section.rec-box .recommend .rec-des .rec-item .heart_full {
   display: none;
 }
