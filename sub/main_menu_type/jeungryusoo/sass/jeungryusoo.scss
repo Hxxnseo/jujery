@@ -515,9 +515,6 @@
                     position: absolute;
                     top: 7px; left:400px;
                     width: 35px;
-                    @include responsive(pc-screens) {
-                      left: 400px;
-                    }
                   }
                   
                   .heart_full {

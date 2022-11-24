@@ -30,21 +30,15 @@ $(function() {
 
  // slick slider
     $('.brewery_item').slick({
-        row: 1,
+        autoplay: true,
+        autoplaySpeed:2000,
         dots: false,
         infinite: false,
-        speed: 300,
-        slidesToShow: 5,
-        slidesToScroll: 1,
-        responsive: [
-            {
-                breakpoint: 480,
-                settings: {
-                    slidesToShow: 2,
-                }
-            }
-        ]
+        slidesToShow: 3.3,
+        slidesToScroll: 4
     });
+    
+
 
 // section3 아코디언탭 on mobile
     $('.brewery_content .brewery_box .text a').click(function(e) {

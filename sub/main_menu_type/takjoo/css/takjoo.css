@@ -584,7 +584,12 @@ p {
   }
 }
 .wrapper .flexWrapper main .main section.rec-box .recommend .rec-des .rec-item {
-  width: 450px;
+  width: 380px;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .main section.rec-box .recommend .rec-des .rec-item {
+    width: 450px;
+  }
 }
 .wrapper .flexWrapper main .main section.rec-box .recommend .rec-des .rec-item p {
   line-height: 30px;
@@ -597,42 +602,62 @@ p {
   height: 35px;
   border-radius: 50%;
   background-color: #000;
+  cursor: pointer;
 }
 .wrapper .flexWrapper main .main section.rec-box .recommend .rec-des .rec-item .heart,
 .wrapper .flexWrapper main .main section.rec-box .recommend .rec-des .rec-item .heart_full {
   position: absolute;
   top: 7px;
-  left: 400px;
+  left: 340px;
   width: 35px;
-}
-@media screen and (min-width: 1024px) {
-  .wrapper .flexWrapper main .main section.rec-box .recommend .rec-des .rec-item .heart,
-.wrapper .flexWrapper main .main section.rec-box .recommend .rec-des .rec-item .heart_full {
-    left: 400px;
-  }
 }
 .wrapper .flexWrapper main .main section.rec-box .recommend .rec-des .rec-item .heart_full {
   display: none;
 }
 .wrapper .flexWrapper main .main section.rec-box .recommend .rec-des .rec-item .rec_drink1 {
-  width: 450px;
+  width: 380px;
   height: 600px;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .main section.rec-box .recommend .rec-des .rec-item .rec_drink1 {
+    width: 450px;
+  }
 }
 .wrapper .flexWrapper main .main section.rec-box .recommend .rec-des .rec-item .rec_drink2 {
-  width: 450px;
+  width: 380px;
   height: 450px;
 }
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .main section.rec-box .recommend .rec-des .rec-item .rec_drink2 {
+    width: 450px;
+  }
+}
 .wrapper .flexWrapper main .main section.rec-box .recommend .rec-des .rec-item .rec_drink3 {
-  width: 450px;
+  width: 380px;
   height: 550px;
 }
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .main section.rec-box .recommend .rec-des .rec-item .rec_drink3 {
+    width: 450px;
+  }
+}
 .wrapper .flexWrapper main .main section.rec-box .recommend .rec-des .rec-item .rec_drink4 {
-  width: 450px;
+  width: 380px;
   height: 500px;
 }
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .main section.rec-box .recommend .rec-des .rec-item .rec_drink4 {
+    width: 450px;
+  }
+}
 .wrapper .flexWrapper main .main section.rec-box .recommend .rec-des .rec-item .rec_drink5 {
-  width: 450px;
+  width: 380px;
   height: 600px;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .main section.rec-box .recommend .rec-des .rec-item .rec_drink5 {
+    width: 450px;
+  }
 }
 .wrapper .flexWrapper main .main section.rec-box .recommend .rec-des .flip-info {
   display: none;
@@ -658,24 +683,49 @@ p {
   color: white;
 }
 .wrapper .flexWrapper main .main section.rec-box .recommend .rec-des .flip-info.f1 {
-  width: 450px;
+  width: 380px;
   height: 600px;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .main section.rec-box .recommend .rec-des .flip-info.f1 {
+    width: 450px;
+  }
 }
 .wrapper .flexWrapper main .main section.rec-box .recommend .rec-des .flip-info.f2 {
-  width: 450px;
+  width: 380px;
   height: 450px;
 }
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .main section.rec-box .recommend .rec-des .flip-info.f2 {
+    width: 450px;
+  }
+}
 .wrapper .flexWrapper main .main section.rec-box .recommend .rec-des .flip-info.f3 {
-  width: 450px;
+  width: 380px;
   height: 550px;
 }
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .main section.rec-box .recommend .rec-des .flip-info.f3 {
+    width: 450px;
+  }
+}
 .wrapper .flexWrapper main .main section.rec-box .recommend .rec-des .flip-info.f4 {
-  width: 450px;
+  width: 380px;
   height: 500px;
 }
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .main section.rec-box .recommend .rec-des .flip-info.f4 {
+    width: 450px;
+  }
+}
 .wrapper .flexWrapper main .main section.rec-box .recommend .rec-des .flip-info.f5 {
-  width: 450px;
+  width: 380px;
   height: 600px;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .main section.rec-box .recommend .rec-des .flip-info.f5 {
+    width: 450px;
+  }
 }
 .wrapper .flexWrapper main .main .swiper_scrollbar {
   margin-top: 65px;
@@ -719,20 +769,21 @@ p {
   width: 75px;
   height: 40px;
   position: absolute;
-  top: 190px;
+  top: 170px;
   left: 50%;
   transform: translateX(-50%);
-  z-index: 50000;
 }
 @media screen and (min-width: 1024px) {
   .wrapper .flexWrapper main section.brewery .category_wrap svg#icon-swipe {
     width: 100px;
     height: 50px;
-    top: 100px;
+    top: 70%;
+    left: 48%;
+    z-index: 50000;
   }
 }
 .wrapper .flexWrapper main section.brewery .category_wrap svg#icon-swipe #hand {
-  fill: #f07d00;
+  fill: #000;
   transform-origin: 50% 100%;
   -webkit-animation: hand-swipe 3.5s infinite ease;
           animation: hand-swipe 3.5s infinite ease;
@@ -854,7 +905,7 @@ p {
   }
 }
 .wrapper .flexWrapper main section.brewery .category_wrap .brewery_item {
-  width: 1180px;
+  width: 100%;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
@@ -871,11 +922,12 @@ p {
 }
 .wrapper .flexWrapper main section.brewery .category_wrap .brewery_item li {
   width: 30%;
-  margin-bottom: 20px;
+  flex-shrink: 0;
+  margin-bottom: 40px;
 }
 @media screen and (min-width: 1024px) {
   .wrapper .flexWrapper main section.brewery .category_wrap .brewery_item li {
-    width: 20%;
+    width: 25%;
     margin: 20px auto;
   }
 }
@@ -884,6 +936,7 @@ p {
   height: 170px;
   border-radius: 50%;
   background-color: #fff;
+  border: 1px solid #ccc;
 }
 @media screen and (min-width: 1024px) {
   .wrapper .flexWrapper main section.brewery .category_wrap .brewery_item li a img {
