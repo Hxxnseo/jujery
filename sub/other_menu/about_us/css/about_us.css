@@ -81,6 +81,7 @@ p {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    background-color: black;
   }
 }
 @media screen and (min-width: 1024px) {
