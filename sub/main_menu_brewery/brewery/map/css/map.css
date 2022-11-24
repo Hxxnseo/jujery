@@ -285,6 +285,7 @@ p {
 }
 .wrapper .flexWrapper main .main .sect1 iframe {
   width: 100%;
+  height: 400px;
 }
 @media screen and (min-width: 1024px) {
   .wrapper .flexWrapper main .main .sect1 iframe {
