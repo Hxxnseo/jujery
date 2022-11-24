@@ -57,6 +57,7 @@ p {
   }
 }
 .container {
+  margin-right: 20px;
   width: 100%;
 }
 @media screen and (min-width: 1024px) {
@@ -198,6 +199,7 @@ p {
   top: 38px;
   right: 20px;
   cursor: pointer;
+  z-index: 20000;
 }
 .wrapper .flexWrapper header .header .mobileLogoMenu .afterMenu:after {
   position: fixed;
@@ -390,7 +392,7 @@ p {
 }
 
 footer .container {
-  margin: 0 20px;
+  padding: 0 20px;
 }
 @media screen and (min-width: 1024px) {
   footer .container {
@@ -656,6 +658,9 @@ footer .footer .footBox .footMenu ul li a {
     font-size: 50px;
   }
 }
+.wrapper1 .wrap-inner .container1 .menu1 .gnb li .gnb-title {
+  color: black;
+}
 @media screen and (min-width: 1024px) {
   .wrapper1 .wrap-inner .container1 .menu1 .gnb li .gnb-title {
     margin: 50px 0 20px 0;
@@ -757,6 +762,7 @@ footer .footer .footBox .footMenu ul li a {
 }
 .wrapper1 .wrap-inner .container1 .menu2 ul li a {
   margin: 0 20px;
+  color: black;
 }
 @media screen and (min-width: 1024px) {
   .wrapper1 .wrap-inner .container1 .menu2 ul li a {

@@ -12,7 +12,7 @@
 
 .container {
   
-  // margin-right: 20px;
+  margin-right: 20px;
   // position: relative;
   width: 100%; // 모바일, 태블릿
   // max-width: 1200px; // pc
@@ -65,7 +65,7 @@
             a {
               @include responsive(pc-screens) {
                 width: 190px;
-                color: $color-sub;
+                color: $color-main;
               }
             }
           }
@@ -167,6 +167,7 @@
             top: 38px;
             right: 20px;
             cursor: pointer;
+            z-index: 20000;
 
             &:after {
               position: fixed;
@@ -175,6 +176,7 @@
               content: "\00d7";
               font-size: 50px;
               color: black;
+              
             }
           }
         }
@@ -346,7 +348,7 @@
 
   footer {
     .container {
-      margin:0 20px;
+      padding: 0 20px;
       @include responsive(pc-screens) {
         margin: 0;
       }
@@ -581,6 +583,7 @@
                 }
               }
               .gnb-title {
+                color: black;
                 @include responsive(pc-screens) {
                   margin: 50px 0 20px 0;
                 }
@@ -653,6 +656,7 @@
               }
               a {
                 margin: 0 20px;
+                color: black;
                 @include responsive(pc-screens) {
                   color: #a3a3a3;
                 }
