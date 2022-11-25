@@ -36,7 +36,7 @@ $(function() {
         dots: false,
         variableWidth : true,
         infinite: false,
-        slidesToShow: 3.3,
+        slidesToShow: 4,
         slidesToScroll: 1,
         mobileFirst: true,
         responsive: [
@@ -50,14 +50,13 @@ $(function() {
             {
                 breakpoint:768,
                 settings: {
-                    slidesToShow: 3.3,
+                    slidesToShow: 4,
                     slidesToScroll: 1
                 }
             }
         ]
     });
     
-
 
 // section3 아코디언탭 on mobile
     $('.brewery_content .brewery_box .text a').click(function(e) {
@@ -72,7 +71,7 @@ $(function() {
     });
 
 // section3 brewery-contents 연결
-    $('.brewery_item li').click(function(e) {
+    $('.brewery_item .b_item').click(function(e) {
         e.preventDefault();
         var index = $(this).index();
         console.log(index);

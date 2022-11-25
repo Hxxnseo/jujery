@@ -800,11 +800,7 @@ p {
 }
 @media screen and (min-width: 1024px) {
   .wrapper .flexWrapper main section.brewery .category_wrap svg#icon-swipe {
-    width: 100px;
-    height: 50px;
-    top: 70%;
-    left: 48%;
-    z-index: 50000;
+    display: none;
   }
 }
 .wrapper .flexWrapper main section.brewery .category_wrap svg#icon-swipe #hand {

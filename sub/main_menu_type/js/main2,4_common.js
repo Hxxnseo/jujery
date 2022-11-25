@@ -35,7 +35,7 @@ $(function() {
         autoplaySpeed:2000,
         dots: false,
         infinite: false,
-        slidesToShow: 3.3,
+        slidesToShow: 4,
         slidesToScroll: 1,
         mobileFirst: true,
         responsive: [
@@ -49,7 +49,7 @@ $(function() {
             {
                 breakpoint:768,
                 settings: {
-                    slidesToShow: 3.3,
+                    slidesToShow: 4,
                     slidesToScroll: 1
                 }
             }
@@ -69,7 +69,7 @@ $(function() {
     });
 
 // section3 brewery-contents 연결
-    $('.brewery_item li').click(function(e) {
+    $('.brewery_item .b_item').click(function(e) {
         e.preventDefault();
         var index = $(this).index();
         console.log(index);

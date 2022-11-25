@@ -649,7 +649,7 @@
   
                 .b_item {
                   width: 160px; 
-                  margin-right: 10px;
+                  margin: 0 auto;
                   margin-bottom: 20px;
                   @include responsive(pc-screens) {
                     width: 280px;
@@ -786,7 +786,7 @@
                   .text {
                     margin-bottom: 100px;
                     @include responsive(pc-screens) {
-                      width: 30%;
+                      width: 30%; height: 100%;
                     }
                     a {
                       font: {

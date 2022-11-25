@@ -748,7 +748,7 @@ p {
 }
 .wrapper .flexWrapper main section.brewery .category_wrap .brewery_item .b_item {
   width: 160px;
-  margin-right: 10px;
+  margin: 0 auto;
   margin-bottom: 20px;
 }
 @media screen and (min-width: 1024px) {
@@ -898,6 +898,7 @@ p {
 @media screen and (min-width: 1024px) {
   .wrapper .flexWrapper main section.brewery .brewery_content .b1 .brewery_box .text {
     width: 30%;
+    height: 100%;
   }
 }
 .wrapper .flexWrapper main section.brewery .brewery_content .b1 .brewery_box .text a {
