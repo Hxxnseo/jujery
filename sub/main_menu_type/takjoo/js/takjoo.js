@@ -29,13 +29,31 @@ $(function() {
 
 
  // slick slider
-    $('.brewery_item').slick({
+    var slider = $('.brewery_item');
+    slider.slick({
         autoplay: true,
         autoplaySpeed:2000,
         dots: false,
         infinite: false,
         slidesToShow: 3.3,
-        slidesToScroll: 4
+        slidesToScroll: 1,
+        mobileFirst: true,
+        responsive: [
+            {
+                breakpoint:390,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                }
+            },
+            {
+                breakpoint:768,
+                settings: {
+                    slidesToShow: 3.3,
+                    slidesToScroll: 1
+                }
+            }
+        ]
     });
     
 

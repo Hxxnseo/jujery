@@ -402,7 +402,7 @@
 
                 img {
                   width: 100%;
-                  height: 400px;
+                  height: 300px;
                   vertical-align: top;
                   margin-bottom: 20px;
 
@@ -486,8 +486,10 @@
 
               .rec-des {
                 position: relative;
+
                 width: 70%;
                 margin-right: 5%;
+
                 &:last-child {
                   margin-right: 0;
                 }
@@ -497,7 +499,10 @@
                 }
 
                 .rec-item {
-                  width: 450px;
+                  width: 380px;
+                  @include responsive(pc-screens) {
+                    width: 450px;
+                  }
                   p {
                     line-height: 30px;
                   }
@@ -508,36 +513,50 @@
                     height: 35px;
                     border-radius: 50%;
                     background-color: #000;
+                    cursor: pointer;
                   }
 
                   .heart,
                   .heart_full {
                     position: absolute;
-                    top: 7px; left:400px;
+                    top: 7px; left: 300px;
                     width: 35px;
                     @include responsive(pc-screens) {
-                      left: 400px;
+                      left: 410px;
                     }
                   }
                   
                   .heart_full {
                     display: none;
                   }
+
                   .rec_drink1 {
-                    width: 450px;
-                    height: 600px;
+                    width: 350px;
+                    height: 350px;
+                    @include responsive(pc-screens) {
+                      width: 450px; height: 600px;
+                    }
                   }
                   .rec_drink2 {
-                    width: 450px;
-                    height: 500px;
+                    width: 350px;
+                    height: 350px;
+                    @include responsive(pc-screens) {
+                      width: 450px; height: 500px;
+                    }
                   }
                   .rec_drink3 {
-                    width: 450px;
-                    height: 550px;
+                    width: 350px;
+                    height: 350px;
+                    @include responsive(pc-screens) {
+                      width: 450px; height:550px;
+                    }
                   }
                   .rec_drink4 {
-                    width: 450px;
-                    height: 500px;
+                    width: 350px;
+                    height: 350px;
+                    @include responsive(pc-screens) {
+                      width: 450px; height:500px;
+                    }
                   }
                 }
 
@@ -550,11 +569,17 @@
                   top: 0;
                   transform: translateY(60px);
                   p {
-                    line-height: 40px;
+                    position:absolute;
+                    top: 20px; left:60px;
+                    line-height: 35px;
+                    @include responsive(pc-screens) {
+                      top:60px;
+                      line-height: 40px;
+                    }
                   }
                   button {
                     position: absolute;
-                    top: 72px; left: 12px;
+                    top: 12px; left: 12px;
                     border: none;
                     width: 35px;
                     height: 35px;
@@ -563,49 +588,60 @@
                     color: white;
                   }
                   &.f1 {
-                    width: 450px; height: 600px;
+                    width: 350px; height: 350px;
+                    @include responsive(pc-screens) {
+                      width: 450px; height: 600px;
+                    }
                     }
                   &.f2 {
-                    width: 450px; height: 500px;
+                    width: 350px; height: 350px;
+                    @include responsive(pc-screens) {
+                      width: 450px; height:500px;
+                    }
                     }
                   &.f3 {
-                    width: 450px; height: 550px;
+                    width: 350px; height: 350px;
+                    @include responsive(pc-screens) {
+                      width: 450px; height:550px;
+                    }
                     }
                   &.f4 {
-                    width: 450px; height: 500px;
+                    width: 350px; height: 350px;
+                    @include responsive(pc-screens) {
+                      width: 450px; height:500px;
+                    }
                     }
                 }
-              }
+              } // rec-des
             }
           }
+          .swiper_scrollbar {
+            margin-top: 65px;
+            display: block;
+            width: 100%;
+            height: 10px;
+            border-radius: 10px;
+            overflow: hidden;
 
-            .swiper_scrollbar {
-              margin-top: 65px;
-              display: block;
-              width: 100%;
-              height: 10px;
-              border-radius: 10px;
+            background-color: #dbdbdb;
+            background-image: linear-gradient(to right, black, black);
+            background-repeat: no-repeat;
+            background-size: 0 100%;
+
+            transition: background-size .4s ease-in-out;
+
+            .sr-only {
+              position: absolute;
+              width: 1px;
+              height: 1px;
+              padding: 0;
+              margin: -1px;
               overflow: hidden;
-
-              background-color: #dbdbdb;
-              background-image: linear-gradient(to right, black, black);
-              background-repeat: no-repeat;
-              background-size: 0 100%;
-
-              transition: background-size .4s ease-in-out;
-
-              .sr-only {
-                position: absolute;
-                width: 1px;
-                height: 1px;
-                padding: 0;
-                margin: -1px;
-                overflow: hidden;
-                clip: rect(0, 0, 0, 0);
-                border: 0;
-              }
+              clip: rect(0, 0, 0, 0);
+              border: 0;
             }
-          } // section.rec-box
+          }
+        } // section.rec-box
 
           section.brewery { 
             h3 {
@@ -622,8 +658,54 @@
               margin-top: 40px;
               overflow: hidden;
 
+              svg#icon-swipe {
+                width: 75px;
+                height: 40px;
+                position: absolute;
+                top:200px; left:50%;
+                transform: translateX(-50%);
+                @include responsive(pc-screens) {
+                  width: 100px; height: 50px;
+                  top:70%; left:48%;
+                  z-index: 50000;
+                }
+
+                #hand {
+                fill: #000;
+                transform-origin: 50% 100%;
+                animation: hand-swipe 3.5s infinite ease;
+                }
+                #left, #right {
+                  fill: #453d34;
+                  opacity: 0;
+                }
+                #right { animation: arrow-right 3.5s infinite ease; }
+                #left { animation: arrow-left 3.5s infinite ease; }
+              }
+              @keyframes hand-swipe {
+                5% { transform: translateX(3px) rotate(6deg); }
+                25% { transform: translateX(0px) rotate(0deg); }
+                28% { transform: translateX(0px) rotate(0deg); }
+                33% { transform: translateX(-3px) rotate(-6deg); }
+                53% { transform: translateX(0px) rotate(0deg); }
+                100% { transform: translateX(0px) rotate(0deg); }
+              }
+              
+              @keyframes arrow-right {
+                7% { transform: translateX(8px); opacity: 1; }
+                17% { transform: translateX(10px); opacity: 0; }
+                18%, 100% { transform: translateX(0); opacity: 0; }
+              }
+              
+              @keyframes arrow-left {
+                0%, 30% { transform: translateX(0); opacity: 0; }
+                37% { transform: translateX(-8px); opacity: 1; }
+                47% { transform: translateX(-10px); opacity: 0; }
+                48%, 100% { transform: translateX(0); opacity: 0; }
+              }
+
               .brewery_item{
-                width: 1180px;
+                width: 100%;
                 margin: 0 auto;
                 display: flex;
                 flex-wrap: wrap;
@@ -632,13 +714,13 @@
                 
                 @include responsive(pc-screens) {
                   margin-bottom: 0;
-                  width: 120%;
+                  width: 100%;
                   overflow: hidden;
                   flex-wrap: nowrap;
                 }
 
                 li {
-                  width: 30%;
+                  width: 20%;
                   margin-bottom: 20px;
                   @include responsive(pc-screens) {
                     width: 20%;

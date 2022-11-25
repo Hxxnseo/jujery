@@ -489,7 +489,6 @@ p {
 }
 .wrapper .flexWrapper main .main aside.slide ul li a img {
   width: 100%;
-  height: 400px;
   vertical-align: top;
   margin-bottom: 20px;
 }
@@ -608,55 +607,66 @@ p {
 .wrapper .flexWrapper main .main section.rec-box .recommend .rec-des .rec-item .heart_full {
   position: absolute;
   top: 7px;
-  left: 340px;
+  left: 300px;
   width: 35px;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .main section.rec-box .recommend .rec-des .rec-item .heart,
+.wrapper .flexWrapper main .main section.rec-box .recommend .rec-des .rec-item .heart_full {
+    left: 410px;
+  }
 }
 .wrapper .flexWrapper main .main section.rec-box .recommend .rec-des .rec-item .heart_full {
   display: none;
 }
 .wrapper .flexWrapper main .main section.rec-box .recommend .rec-des .rec-item .rec_drink1 {
-  width: 380px;
-  height: 600px;
+  width: 350px;
+  height: 350px;
 }
 @media screen and (min-width: 1024px) {
   .wrapper .flexWrapper main .main section.rec-box .recommend .rec-des .rec-item .rec_drink1 {
     width: 450px;
+    height: 600px;
   }
 }
 .wrapper .flexWrapper main .main section.rec-box .recommend .rec-des .rec-item .rec_drink2 {
-  width: 380px;
-  height: 450px;
+  width: 350px;
+  height: 350px;
 }
 @media screen and (min-width: 1024px) {
   .wrapper .flexWrapper main .main section.rec-box .recommend .rec-des .rec-item .rec_drink2 {
     width: 450px;
+    height: 500px;
   }
 }
 .wrapper .flexWrapper main .main section.rec-box .recommend .rec-des .rec-item .rec_drink3 {
-  width: 380px;
-  height: 550px;
+  width: 350px;
+  height: 350px;
 }
 @media screen and (min-width: 1024px) {
   .wrapper .flexWrapper main .main section.rec-box .recommend .rec-des .rec-item .rec_drink3 {
     width: 450px;
+    height: 550px;
   }
 }
 .wrapper .flexWrapper main .main section.rec-box .recommend .rec-des .rec-item .rec_drink4 {
-  width: 380px;
-  height: 500px;
+  width: 350px;
+  height: 350px;
 }
 @media screen and (min-width: 1024px) {
   .wrapper .flexWrapper main .main section.rec-box .recommend .rec-des .rec-item .rec_drink4 {
     width: 450px;
+    height: 500px;
   }
 }
 .wrapper .flexWrapper main .main section.rec-box .recommend .rec-des .rec-item .rec_drink5 {
-  width: 380px;
-  height: 600px;
+  width: 350px;
+  height: 350px;
 }
 @media screen and (min-width: 1024px) {
   .wrapper .flexWrapper main .main section.rec-box .recommend .rec-des .rec-item .rec_drink5 {
     width: 450px;
+    height: 550px;
   }
 }
 .wrapper .flexWrapper main .main section.rec-box .recommend .rec-des .flip-info {
@@ -669,11 +679,20 @@ p {
   transform: translateY(60px);
 }
 .wrapper .flexWrapper main .main section.rec-box .recommend .rec-des .flip-info p {
-  line-height: 40px;
+  position: absolute;
+  top: 20px;
+  left: 60px;
+  line-height: 35px;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .main section.rec-box .recommend .rec-des .flip-info p {
+    top: 60px;
+    line-height: 40px;
+  }
 }
 .wrapper .flexWrapper main .main section.rec-box .recommend .rec-des .flip-info button {
   position: absolute;
-  top: 72px;
+  top: 12px;
   left: 12px;
   border: none;
   width: 35px;
@@ -683,48 +702,53 @@ p {
   color: white;
 }
 .wrapper .flexWrapper main .main section.rec-box .recommend .rec-des .flip-info.f1 {
-  width: 380px;
-  height: 600px;
+  width: 350px;
+  height: 350px;
 }
 @media screen and (min-width: 1024px) {
   .wrapper .flexWrapper main .main section.rec-box .recommend .rec-des .flip-info.f1 {
     width: 450px;
+    height: 600px;
   }
 }
 .wrapper .flexWrapper main .main section.rec-box .recommend .rec-des .flip-info.f2 {
-  width: 380px;
-  height: 450px;
+  width: 350px;
+  height: 350px;
 }
 @media screen and (min-width: 1024px) {
   .wrapper .flexWrapper main .main section.rec-box .recommend .rec-des .flip-info.f2 {
     width: 450px;
+    height: 500px;
   }
 }
 .wrapper .flexWrapper main .main section.rec-box .recommend .rec-des .flip-info.f3 {
-  width: 380px;
-  height: 550px;
+  width: 350px;
+  height: 350px;
 }
 @media screen and (min-width: 1024px) {
   .wrapper .flexWrapper main .main section.rec-box .recommend .rec-des .flip-info.f3 {
     width: 450px;
+    height: 550px;
   }
 }
 .wrapper .flexWrapper main .main section.rec-box .recommend .rec-des .flip-info.f4 {
-  width: 380px;
-  height: 500px;
+  width: 350px;
+  height: 350px;
 }
 @media screen and (min-width: 1024px) {
   .wrapper .flexWrapper main .main section.rec-box .recommend .rec-des .flip-info.f4 {
     width: 450px;
+    height: 500px;
   }
 }
 .wrapper .flexWrapper main .main section.rec-box .recommend .rec-des .flip-info.f5 {
-  width: 380px;
-  height: 600px;
+  width: 350px;
+  height: 350px;
 }
 @media screen and (min-width: 1024px) {
   .wrapper .flexWrapper main .main section.rec-box .recommend .rec-des .flip-info.f5 {
     width: 450px;
+    height: 550px;
   }
 }
 .wrapper .flexWrapper main .main .swiper_scrollbar {
@@ -769,7 +793,7 @@ p {
   width: 75px;
   height: 40px;
   position: absolute;
-  top: 170px;
+  top: 200px;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -915,14 +939,13 @@ p {
 @media screen and (min-width: 1024px) {
   .wrapper .flexWrapper main section.brewery .category_wrap .brewery_item {
     margin-bottom: 0;
-    width: 120%;
+    width: 100%;
     overflow: hidden;
     flex-wrap: nowrap;
   }
 }
 .wrapper .flexWrapper main section.brewery .category_wrap .brewery_item li {
   width: 30%;
-  flex-shrink: 0;
   margin-bottom: 40px;
 }
 @media screen and (min-width: 1024px) {
@@ -1046,7 +1069,7 @@ p {
 .wrapper .flexWrapper main section.brewery .brewery_content .brewery.b1 .brewery_box .brewery_pic, .wrapper .flexWrapper main section.brewery .brewery_content .brewery.b5 .brewery_box .brewery_pic {
   display: flex;
   overflow: hidden;
-  width: 100%;
+  width: 200%;
   margin-bottom: 50px;
 }
 @media screen and (min-width: 1024px) {
@@ -1130,7 +1153,7 @@ p {
 .wrapper .flexWrapper main section.brewery .brewery_content .brewery.b2 .brewery_box .brewery_semi .brewery_pic, .wrapper .flexWrapper main section.brewery .brewery_content .brewery.b4 .brewery_box .brewery_semi .brewery_pic {
   display: flex;
   overflow: hidden;
-  width: 100%;
+  width: 200%;
   margin-bottom: 50px;
 }
 @media screen and (min-width: 1024px) {
@@ -1301,7 +1324,7 @@ p {
 .wrapper .flexWrapper main section.brewery .brewery_content .brewery.b3 .brewery_box .brewery_pic, .wrapper .flexWrapper main section.brewery .brewery_content .brewery.b6 .brewery_box .brewery_pic {
   display: flex;
   overflow: hidden;
-  width: 100%;
+  width: 200%;
   margin-bottom: 50px;
   order: 2;
 }
