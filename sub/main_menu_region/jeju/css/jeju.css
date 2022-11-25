@@ -287,6 +287,7 @@ p {
   grid-template-columns: 165px 165px;
   grid-template-rows: 127px 1fr 1fr;
   margin: 40px 0;
+  width: 100%;
   grid-template-areas: "div1 div2" "div1 div3" "div4 div4";
 }
 @media screen and (min-width: 1024px) {
@@ -296,6 +297,7 @@ p {
 }
 .wrapper .flexWrapper main .main .sec1 .mobile-box .m1 {
   grid-area: div1;
+  width: 50%;
 }
 .wrapper .flexWrapper main .main .sec1 .mobile-box .m2 {
   grid-area: div2;

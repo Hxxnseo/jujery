@@ -469,8 +469,8 @@ p {
 .wrapper .flexWrapper main .main .dis .desc,
 .wrapper .flexWrapper main .main .pro .desc {
   color: #fff;
-  height: 324px;
-  width: 300px;
+  height: 100%;
+  width: 70%;
   padding: 0 15px;
   margin-bottom: 50px;
   background-repeat: no-repeat;
@@ -516,7 +516,7 @@ p {
 }
 .wrapper .flexWrapper main .main .dis .even,
 .wrapper .flexWrapper main .main .pro .even {
-  margin-left: 160px;
+  margin-left: 30%;
   background-image: url(../../img/black_object_2.png);
 }
 @media screen and (min-width: 1024px) {
@@ -537,12 +537,13 @@ p {
   }
 }
 .wrapper .flexWrapper main .main .dis img {
+  width: 24%;
   position: absolute;
   margin-top: -38px;
 }
 .wrapper .flexWrapper main .main .dis img {
   margin-top: 13px;
-  margin-left: 320px;
+  margin-left: 65%;
 }
 .wrapper .flexWrapper main .main .dis img.dae {
   margin-top: 70px;
@@ -555,7 +556,7 @@ p {
 .wrapper .flexWrapper main .main .dis img.back {
   width: 85px;
   margin-top: 20px;
-  margin-left: 40px;
+  margin-left: 5%;
 }
 @media screen and (min-width: 1024px) {
   .wrapper .flexWrapper main .main .dis img.do {
@@ -594,15 +595,15 @@ p {
 }
 .wrapper .flexWrapper main .main .pro img {
   position: absolute;
-  width: 140px;
-  margin-left: 310px;
+  width: 28%;
+  margin-left: 65%;
 }
 .wrapper .flexWrapper main .main .pro img.lee {
   margin-top: 80px;
 }
 .wrapper .flexWrapper main .main .pro img.gam {
   margin-top: 65px;
-  margin-left: 10px;
+  margin-left: 3%;
 }
 .wrapper .flexWrapper main .main .pro img.juck {
   width: 73px;
@@ -610,8 +611,8 @@ p {
 }
 .wrapper .flexWrapper main .main .pro img.sol {
   width: 175px;
-  margin-top: 130px;
-  margin-left: 7px;
+  margin-top: 230px;
+  margin-left: -4%;
 }
 .wrapper .flexWrapper main .main .pro img.moon {
   width: 88px;
