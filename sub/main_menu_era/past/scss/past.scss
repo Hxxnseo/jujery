@@ -443,7 +443,7 @@
           
           .desc {
             color: #fff;
-            height: 324px; width: 300px;
+            height: 100%; width: 70%;
             padding: 0 15px;
             margin-bottom: 50px;
             @include responsive(pc-screens) {
@@ -478,7 +478,7 @@
           }
 
           .even {
-            margin-left: 160px;
+            margin-left: 30%;
             background-image: url(../../img/black_object_2.png);
             @include responsive(pc-screens) {
               background-image: url(../../img/black_pc.png);
@@ -495,13 +495,14 @@
 
         .dis {
           img {
+            width: 24%;
             position: absolute;
             margin-top: -38px;
           }
-          img { margin-top: 13px; margin-left: 320px;}
+          img { margin-top: 13px; margin-left: 65%;}
           img.dae { margin-top: 70px; margin-left: 10px;}
           img.ja { width: 70px; margin-top: 30px; }
-          img.back { width: 85px; margin-top: 20px; margin-left: 40px;}
+          img.back { width: 85px; margin-top: 20px; margin-left: 5%;}
           @include responsive(pc-screens) {
             img.do { margin-top: -380px; margin-left: 120px;}
             img.dae { margin-top: -380px; margin-left: 120px; }
@@ -528,12 +529,12 @@
         .pro {
           img {
             position: absolute;
-            width: 140px; margin-left: 310px;
+            width: 28%; margin-left: 65%;
           }
           img.lee{margin-top: 80px;}
-          img.gam{margin-top: 65px; margin-left: 10px;}
+          img.gam{margin-top: 65px; margin-left: 3%;}
           img.juck{width: 73px;margin-top: -6px;}
-          img.sol{width: 175px; margin-top: 130px; margin-left: 7px;}
+          img.sol{width: 175px; margin-top: 230px; margin-left: -4%;}
           img.moon{width: 88px; margin-top: 10px;}
           @include responsive(pc-screens) {
             img.lee{margin-top: -360px; margin-left: 120px;}
