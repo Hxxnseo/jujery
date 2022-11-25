@@ -297,7 +297,7 @@
             left: 50%;
             transform: translate(-50%, -40%);
             span {
-              margin: 20%;
+              margin: 11%;
             }
             p {
               display: none;
@@ -382,7 +382,7 @@
             position: absolute;
             color: #fff;
             padding: 20px 5% 40px 5%;
-            margin-top: -43%; margin-left: 35%;
+            margin-top: -50%; margin-left: 35%;
             .black{
               color: #000;
             }
@@ -500,8 +500,9 @@
                 top: 0; left: 0;
                 display: none;
                 .modal_content {
+                  position: relative;
                   width: 70%;
-                  height: 320px;
+                  height: 340px;
                   position: absolute;
                   top: 60%; left: 15%;
                   background: rgba(0,0,0,0.7);
@@ -516,10 +517,14 @@
                     }
                   }
                   .click {
+                    position: absolute;
+                    top: 85%;
                     color: #fff;
                     font-size: 0.8em;
                     padding-left: 8%;
                     line-height: 3em;
+                    // background-color: rgba(100,50,100,0.4);
+                    padding-bottom: 20px;
                   }
                 }
               }
