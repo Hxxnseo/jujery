@@ -282,15 +282,12 @@ p {
   position: relative;
   background-position: center;
   background-size: cover;
-  width: 400px;
+  width: 300px;
 }
 @media screen and (min-width: 1024px) {
   .wrapper .flexWrapper main .main .sec1 .swiper .swiper-wrapper .swiper-slide {
     width: 900px;
   }
-}
-.wrapper .flexWrapper main .main .sec1 .swiper .swiper-wrapper .swiper-slide div {
-  width: 100%;
 }
 @media screen and (min-width: 1024px) {
   .wrapper .flexWrapper main .main .sec1 .swiper .swiper-wrapper .swiper-slide div {
@@ -311,8 +308,8 @@ p {
 }
 .wrapper .flexWrapper main .main .sec1 .swiper .swiper-wrapper .swiper-slide div img {
   display: block;
-  width: 195px;
-  height: 237px;
+  width: 150px;
+  height: 200px;
 }
 @media screen and (min-width: 1024px) {
   .wrapper .flexWrapper main .main .sec1 .swiper .swiper-wrapper .swiper-slide div img {
