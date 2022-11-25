@@ -569,8 +569,8 @@
                   transform: translateY(60px);
                   p {
                     position:absolute;
-                    top: 20px; left:60px;
-                    line-height: 35px;
+                    top: 20px; left:50px;
+                    line-height: 30px;
                     @include responsive(pc-screens) {
                       top:60px;
                       line-height: 40px;
@@ -642,110 +642,111 @@
           }
         } // section.rec-box
 
-          section.brewery {
-            h3 {
-              text-align: center;
-              font-size: 1.875em;
+        section.brewery {
+          h3 {
+            text-align: center;
+            font-size: 1.875em;
+
+            @include responsive(pc-screens) {
+              font-size: 2.5em;
+            }
+          }
+
+          .category_wrap {
+            width: 100%;
+            position: relative;
+            margin-top: 40px;
+            overflow: hidden;
+
+            svg#icon-swipe {
+              width: 75px;
+              height: 40px;
+              position: absolute;
+              top:180px; left:50%;
+              transform: translateX(-50%);
+              @include responsive(pc-screens) {
+                width: 100px; height: 50px;
+                top:70%; left:48%;
+                z-index: 50000;
+              }
+
+              #hand {
+              fill: #000;
+              transform-origin: 50% 100%;
+              animation: hand-swipe 3.5s infinite ease;
+              }
+              #left, #right {
+                fill: #453d34;
+                opacity: 0;
+              }
+              #right { animation: arrow-right 3.5s infinite ease; }
+              #left { animation: arrow-left 3.5s infinite ease; }
+            }
+            @keyframes hand-swipe {
+              5% { transform: translateX(3px) rotate(6deg); }
+              25% { transform: translateX(0px) rotate(0deg); }
+              28% { transform: translateX(0px) rotate(0deg); }
+              33% { transform: translateX(-3px) rotate(-6deg); }
+              53% { transform: translateX(0px) rotate(0deg); }
+              100% { transform: translateX(0px) rotate(0deg); }
+            }
+            
+            @keyframes arrow-right {
+              7% { transform: translateX(8px); opacity: 1; }
+              17% { transform: translateX(10px); opacity: 0; }
+              18%, 100% { transform: translateX(0); opacity: 0; }
+            }
+            
+            @keyframes arrow-left {
+              0%, 30% { transform: translateX(0); opacity: 0; }
+              37% { transform: translateX(-8px); opacity: 1; }
+              47% { transform: translateX(-10px); opacity: 0; }
+              48%, 100% { transform: translateX(0); opacity: 0; }
+            }
+            
+            .brewery_item{
+              width: 100%;
+              margin: 0 auto;
+              display: flex;
+              flex-wrap: wrap;
+              justify-content: space-between;
+              margin-bottom: 50px;
 
               @include responsive(pc-screens) {
-                font-size: 2.5em;
-              }
-            }
-
-            .category_wrap {
-              width: 100%;
-              position: relative;
-              margin-top: 40px;
-              overflow: hidden;
-
-              svg#icon-swipe {
-                width: 75px;
-                height: 40px;
-                position: absolute;
-                top:200px; left:50%;
-                transform: translateX(-50%);
-                @include responsive(pc-screens) {
-                  width: 100px; height: 50px;
-                  top:70%; left:48%;
-                  z-index: 50000;
-                }
-
-                #hand {
-                fill: #000;
-                transform-origin: 50% 100%;
-                animation: hand-swipe 3.5s infinite ease;
-                }
-                #left, #right {
-                  fill: #453d34;
-                  opacity: 0;
-                }
-                #right { animation: arrow-right 3.5s infinite ease; }
-                #left { animation: arrow-left 3.5s infinite ease; }
-              }
-              @keyframes hand-swipe {
-                5% { transform: translateX(3px) rotate(6deg); }
-                25% { transform: translateX(0px) rotate(0deg); }
-                28% { transform: translateX(0px) rotate(0deg); }
-                33% { transform: translateX(-3px) rotate(-6deg); }
-                53% { transform: translateX(0px) rotate(0deg); }
-                100% { transform: translateX(0px) rotate(0deg); }
-              }
-              
-              @keyframes arrow-right {
-                7% { transform: translateX(8px); opacity: 1; }
-                17% { transform: translateX(10px); opacity: 0; }
-                18%, 100% { transform: translateX(0); opacity: 0; }
-              }
-              
-              @keyframes arrow-left {
-                0%, 30% { transform: translateX(0); opacity: 0; }
-                37% { transform: translateX(-8px); opacity: 1; }
-                47% { transform: translateX(-10px); opacity: 0; }
-                48%, 100% { transform: translateX(0); opacity: 0; }
-              }
-              
-              .brewery_item{
+                margin-bottom: 0;
                 width: 100%;
-                margin: 0 auto;
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: space-between;
-                margin-bottom: 50px;
+                overflow: hidden;
+                flex-wrap: nowrap;
+              }
 
+              .b_item {
+                width: 160px; 
+                margin-right: 10px;
+                margin-bottom: 20px;
                 @include responsive(pc-screens) {
-                  margin-bottom: 0;
-                  width: 100%;
-                  overflow: hidden;
-                  flex-wrap: nowrap;
+                  width: 280px;
+                  margin: 20px auto;
                 }
 
-                li {
-                  width: 30%;
-                  margin-bottom: 40px;
-                  @include responsive(pc-screens) {
-                    width: 25%;
-                    margin: 20px auto;
-                  }
-
-                  a {
-                    img {
-                      width: 170px; height: 170px;
-                      border-radius: 50%;
-                      background-color: #fff;
-                      border: 1px  solid #ccc;
+                a {
+                  img {
+                    width: 160px; height: 160px;
+                    border-radius: 50%;
+                    background-color: #fff;
+                    border: 1px  solid #ccc;
+                    @include responsive(pc-screens) {
+                      width: 180px; height: 180px;
+                    }
+                    &:hover {
                       @include responsive(pc-screens) {
-                        width: 180px; height: 180px;
-                      }
-                      &:hover {
-                        @include responsive(pc-screens) {
-                          transform: scale(1.2);
-                        }
+                        transform: scale(1.2);
                       }
                     }
                   }
                 }
               }
-            } // category_wrap
+            }
+          } // category_wrap
 
             .brewery_content {
               width: 100%;

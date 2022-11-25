@@ -34,6 +34,7 @@ $(function() {
         autoplay: true,
         autoplaySpeed:2000,
         dots: false,
+        variableWidth : true,
         infinite: false,
         slidesToShow: 3.3,
         slidesToScroll: 1,
