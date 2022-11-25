@@ -266,6 +266,7 @@
             grid-template-columns: 165px 165px;
             grid-template-rows: 127px 1fr 1fr;
             margin: 40px 0;
+            width: 100%;
             grid-template-areas:
               "div1 div2"
               "div1 div3"
@@ -273,9 +274,9 @@
             @include responsive(pc-screens) {
               display: none;
             }
-
             .m1 {
               grid-area: div1;
+              width: 50%;
             }
             .m2 {
               grid-area: div2;
@@ -345,7 +346,6 @@
                     width: 470px;
                     height: 560px;
                     position: absolute;
-                    
                   }
                 }
 
