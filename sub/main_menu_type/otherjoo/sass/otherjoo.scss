@@ -384,7 +384,7 @@
           ul.bxslider {
             list-style: none;
           }
-
+          
           @include responsive(pc-screens) {
             margin-top: 130px;
           }
@@ -402,7 +402,7 @@
 
                 img {
                   width: 100%;
-                  height: 400px;
+                  height: 300px;
                   vertical-align: top;
                   margin-bottom: 20px;
 
@@ -476,14 +476,20 @@
           }
           
           .recommend {
-            width: 150%;
+            width: 375%;
             display: flex;
             margin-top: 40px;
 
+            @include responsive(pc-screens) {
+              width: 150%;
+            }
+
               .rec-des {
                 position: relative;
+
                 width: 70%;
                 margin-right: 5%;
+
                 &:last-child {
                   margin-right: 0;
                 }
@@ -493,7 +499,10 @@
                 }
 
                 .rec-item {
-                  width: 450px;
+                  width: 380px;
+                  @include responsive(pc-screens) {
+                    width: 450px;
+                  }
                   p {
                     line-height: 30px;
                   }
@@ -504,28 +513,36 @@
                     height: 35px;
                     border-radius: 50%;
                     background-color: #000;
+                    cursor: pointer;
                   }
 
                   .heart,
                   .heart_full {
                     position: absolute;
-                    top: 7px; left:400px;
+                    top: 7px; left: 300px;
                     width: 35px;
                     @include responsive(pc-screens) {
-                      left: 400px;
+                      left: 410px;
                     }
                   }
                   
                   .heart_full {
                     display: none;
                   }
+
                   .rec_drink1 {
-                    width: 450px;
-                    height: 600px;
+                    width: 350px;
+                    height: 350px;
+                    @include responsive(pc-screens) {
+                      width: 450px; height: 600px;
+                    }
                   }
                   .rec_drink2 {
-                    width: 450px;
-                    height: 450px;
+                    width: 350px;
+                    height: 350px;
+                    @include responsive(pc-screens) {
+                      width: 450px; height: 500px;
+                    }
                   }
                 }
 
@@ -538,11 +555,17 @@
                   top: 0;
                   transform: translateY(60px);
                   p {
-                    line-height: 40px;
+                    position:absolute;
+                    top: 20px; left:60px;
+                    line-height: 35px;
+                    @include responsive(pc-screens) {
+                      top:60px;
+                      line-height: 40px;
+                    }
                   }
                   button {
                     position: absolute;
-                    top: 72px; left: 12px;
+                    top: 12px; left: 12px;
                     border: none;
                     width: 35px;
                     height: 35px;
@@ -551,43 +574,48 @@
                     color: white;
                   }
                   &.f1 {
-                    width: 450px; height: 600px;
+                    width: 350px; height: 350px;
+                    @include responsive(pc-screens) {
+                      width: 450px; height: 600px;
+                    }
                     }
                   &.f2 {
-                    width: 450px; height: 450px;
+                    width: 350px; height: 350px;
+                    @include responsive(pc-screens) {
+                      width: 450px; height:500px;
+                    }
                     }
                 }
-              }
+              } // rec-des
             }
           }
+          .swiper_scrollbar {
+            margin-top: 65px;
+            display: block;
+            width: 100%;
+            height: 10px;
+            border-radius: 10px;
+            overflow: hidden;
 
-            .swiper_scrollbar {
-              margin-top: 65px;
-              display: block;
-              width: 100%;
-              height: 10px;
-              border-radius: 10px;
+            background-color: #dbdbdb;
+            background-image: linear-gradient(to right, black, black);
+            background-repeat: no-repeat;
+            background-size: 0 100%;
+
+            transition: background-size .4s ease-in-out;
+
+            .sr-only {
+              position: absolute;
+              width: 1px;
+              height: 1px;
+              padding: 0;
+              margin: -1px;
               overflow: hidden;
-
-              background-color: #dbdbdb;
-              background-image: linear-gradient(to right, black, black);
-              background-repeat: no-repeat;
-              background-size: 0 100%;
-
-              transition: background-size .4s ease-in-out;
-
-              .sr-only {
-                position: absolute;
-                width: 1px;
-                height: 1px;
-                padding: 0;
-                margin: -1px;
-                overflow: hidden;
-                clip: rect(0, 0, 0, 0);
-                border: 0;
-              }
+              clip: rect(0, 0, 0, 0);
+              border: 0;
             }
-          } // section.rec-box
+          }
+        } // section.rec-box
 
           section.brewery { 
             h3 {
@@ -613,7 +641,7 @@
 
                 @include responsive(pc-screens) {
                   margin-bottom: 0;
-                  width: 120%;
+                  width: 100%;
                   overflow: hidden;
                   flex-wrap: nowrap;
                 }

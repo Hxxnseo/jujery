@@ -489,7 +489,7 @@ p {
 }
 .wrapper .flexWrapper main .main aside.slide ul li a img {
   width: 100%;
-  height: 400px;
+  height: 300px;
   vertical-align: top;
   margin-bottom: 20px;
 }
@@ -561,9 +561,14 @@ p {
   }
 }
 .wrapper .flexWrapper main .main section.rec-box .recommend {
-  width: 150%;
+  width: 375%;
   display: flex;
   margin-top: 40px;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .main section.rec-box .recommend {
+    width: 150%;
+  }
 }
 .wrapper .flexWrapper main .main section.rec-box .recommend .rec-des {
   position: relative;
@@ -579,7 +584,12 @@ p {
   }
 }
 .wrapper .flexWrapper main .main section.rec-box .recommend .rec-des .rec-item {
-  width: 450px;
+  width: 380px;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .main section.rec-box .recommend .rec-des .rec-item {
+    width: 450px;
+  }
 }
 .wrapper .flexWrapper main .main section.rec-box .recommend .rec-des .rec-item p {
   line-height: 30px;
@@ -592,30 +602,43 @@ p {
   height: 35px;
   border-radius: 50%;
   background-color: #000;
+  cursor: pointer;
 }
 .wrapper .flexWrapper main .main section.rec-box .recommend .rec-des .rec-item .heart,
 .wrapper .flexWrapper main .main section.rec-box .recommend .rec-des .rec-item .heart_full {
   position: absolute;
   top: 7px;
-  left: 400px;
+  left: 300px;
   width: 35px;
 }
 @media screen and (min-width: 1024px) {
   .wrapper .flexWrapper main .main section.rec-box .recommend .rec-des .rec-item .heart,
 .wrapper .flexWrapper main .main section.rec-box .recommend .rec-des .rec-item .heart_full {
-    left: 400px;
+    left: 410px;
   }
 }
 .wrapper .flexWrapper main .main section.rec-box .recommend .rec-des .rec-item .heart_full {
   display: none;
 }
 .wrapper .flexWrapper main .main section.rec-box .recommend .rec-des .rec-item .rec_drink1 {
-  width: 450px;
-  height: 600px;
+  width: 350px;
+  height: 350px;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .main section.rec-box .recommend .rec-des .rec-item .rec_drink1 {
+    width: 450px;
+    height: 600px;
+  }
 }
 .wrapper .flexWrapper main .main section.rec-box .recommend .rec-des .rec-item .rec_drink2 {
-  width: 450px;
-  height: 450px;
+  width: 350px;
+  height: 350px;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .main section.rec-box .recommend .rec-des .rec-item .rec_drink2 {
+    width: 450px;
+    height: 500px;
+  }
 }
 .wrapper .flexWrapper main .main section.rec-box .recommend .rec-des .flip-info {
   display: none;
@@ -627,11 +650,20 @@ p {
   transform: translateY(60px);
 }
 .wrapper .flexWrapper main .main section.rec-box .recommend .rec-des .flip-info p {
-  line-height: 40px;
+  position: absolute;
+  top: 20px;
+  left: 60px;
+  line-height: 35px;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .main section.rec-box .recommend .rec-des .flip-info p {
+    top: 60px;
+    line-height: 40px;
+  }
 }
 .wrapper .flexWrapper main .main section.rec-box .recommend .rec-des .flip-info button {
   position: absolute;
-  top: 72px;
+  top: 12px;
   left: 12px;
   border: none;
   width: 35px;
@@ -641,12 +673,24 @@ p {
   color: white;
 }
 .wrapper .flexWrapper main .main section.rec-box .recommend .rec-des .flip-info.f1 {
-  width: 450px;
-  height: 600px;
+  width: 350px;
+  height: 350px;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .main section.rec-box .recommend .rec-des .flip-info.f1 {
+    width: 450px;
+    height: 600px;
+  }
 }
 .wrapper .flexWrapper main .main section.rec-box .recommend .rec-des .flip-info.f2 {
-  width: 450px;
-  height: 450px;
+  width: 350px;
+  height: 350px;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .main section.rec-box .recommend .rec-des .flip-info.f2 {
+    width: 450px;
+    height: 500px;
+  }
 }
 .wrapper .flexWrapper main .main .swiper_scrollbar {
   margin-top: 65px;
@@ -696,7 +740,7 @@ p {
 @media screen and (min-width: 1024px) {
   .wrapper .flexWrapper main section.brewery .category_wrap .brewery_item {
     margin-bottom: 0;
-    width: 120%;
+    width: 100%;
     overflow: hidden;
     flex-wrap: nowrap;
   }
