@@ -402,7 +402,6 @@
 
                 img {
                   width: 100%;
-                  height: 400px;
                   vertical-align: top;
                   margin-bottom: 20px;
 
@@ -519,8 +518,11 @@
                   .heart,
                   .heart_full {
                     position: absolute;
-                    top: 7px; left:340px;
+                    top: 7px; left: 300px;
                     width: 35px;
+                    @include responsive(pc-screens) {
+                      left: 410px;
+                    }
                   }
                   
                   .heart_full {
@@ -528,38 +530,38 @@
                   }
 
                   .rec_drink1 {
-                    width: 380px;
-                    height: 600px;
+                    width: 350px;
+                    height: 350px;
                     @include responsive(pc-screens) {
-                      width: 450px;
+                      width: 450px; height: 600px;
                     }
                   }
                   .rec_drink2 {
-                    width: 380px;
-                    height: 450px;
+                    width: 350px;
+                    height: 350px;
                     @include responsive(pc-screens) {
-                      width: 450px;
+                      width: 450px; height: 500px;
                     }
                   }
                   .rec_drink3 {
-                    width: 380px;
-                    height: 550px;
+                    width: 350px;
+                    height: 350px;
                     @include responsive(pc-screens) {
-                      width: 450px;
+                      width: 450px; height:550px;
                     }
                   }
                   .rec_drink4 {
-                    width: 380px;
-                    height: 500px;
+                    width: 350px;
+                    height: 350px;
                     @include responsive(pc-screens) {
-                      width: 450px;
+                      width: 450px; height:500px;
                     }
                   }
                   .rec_drink5 {
-                    width: 380px;
-                    height: 600px;
+                    width: 350px;
+                    height: 350px;
                     @include responsive(pc-screens) {
-                      width: 450px;
+                      width: 450px; height: 550px;
                     }
                   }
                 }
@@ -573,11 +575,17 @@
                   top: 0;
                   transform: translateY(60px);
                   p {
-                    line-height: 40px;
+                    position:absolute;
+                    top: 20px; left:60px;
+                    line-height: 35px;
+                    @include responsive(pc-screens) {
+                      top:60px;
+                      line-height: 40px;
+                    }
                   }
                   button {
                     position: absolute;
-                    top: 72px; left: 12px;
+                    top: 12px; left: 12px;
                     border: none;
                     width: 35px;
                     height: 35px;
@@ -586,33 +594,33 @@
                     color: white;
                   }
                   &.f1 {
-                    width: 380px; height: 600px;
+                    width: 350px; height: 350px;
                     @include responsive(pc-screens) {
-                      width: 450px;
+                      width: 450px; height: 600px;
                     }
                     }
                   &.f2 {
-                    width: 380px; height: 450px;
+                    width: 350px; height: 350px;
                     @include responsive(pc-screens) {
-                      width: 450px;
+                      width: 450px; height:500px;
                     }
                     }
                   &.f3 {
-                    width: 380px; height: 550px;
+                    width: 350px; height: 350px;
                     @include responsive(pc-screens) {
-                      width: 450px;
+                      width: 450px; height:550px;
                     }
                     }
                   &.f4 {
-                    width: 380px; height: 500px;
+                    width: 350px; height: 350px;
                     @include responsive(pc-screens) {
-                      width: 450px;
+                      width: 450px; height:500px;
                     }
                     }
                   &.f5 {
-                    width: 380px; height: 600px;
+                    width: 350px; height: 350px;
                     @include responsive(pc-screens) {
-                      width: 450px;
+                      width: 450px; height: 550px;
                     }
                     }
                 }
@@ -667,7 +675,7 @@
                 width: 75px;
                 height: 40px;
                 position: absolute;
-                top:170px; left:50%;
+                top:200px; left:50%;
                 transform: translateX(-50%);
                 @include responsive(pc-screens) {
                   width: 100px; height: 50px;
@@ -719,14 +727,13 @@
 
                 @include responsive(pc-screens) {
                   margin-bottom: 0;
-                  width: 120%;
+                  width: 100%;
                   overflow: hidden;
                   flex-wrap: nowrap;
                 }
 
                 li {
                   width: 30%;
-                  flex-shrink: 0;
                   margin-bottom: 40px;
                   @include responsive(pc-screens) {
                     width: 25%;
@@ -843,7 +850,7 @@
                     .brewery_pic {
                       display: flex;
                       overflow: hidden;
-                      width: 100%;
+                      width: 200%;
                       margin-bottom: 50px;
                       @include responsive(pc-screens) {
                         display: flex;
@@ -916,7 +923,7 @@
                       .brewery_pic {
                         display: flex;
                         overflow: hidden;
-                        width: 100%;
+                        width: 200%;
                         margin-bottom: 50px;
                         @include responsive(pc-screens) {
                           width: 100%; height: 50%;
@@ -1071,7 +1078,7 @@
                     .brewery_pic {
                       display: flex;
                       overflow: hidden;
-                      width: 100%;
+                      width: 200%;
                       margin-bottom: 50px;
                       order:2;
                       @include responsive(pc-screens) {
