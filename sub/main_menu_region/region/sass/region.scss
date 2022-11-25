@@ -525,6 +525,8 @@
               }
             }
             .ricewine-con2 {
+              position: absolute;
+              right: 0;
               text-align: right;
               width: 330px;
               @include responsive(pc-screens) {
