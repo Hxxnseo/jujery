@@ -190,6 +190,7 @@ p {
   top: 38px;
   right: 20px;
   cursor: pointer;
+  z-index: 20000;
 }
 .wrapper .flexWrapper header .header .mobileLogoMenu .afterMenu:after {
   position: fixed;
