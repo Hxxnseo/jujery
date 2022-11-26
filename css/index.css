@@ -456,6 +456,7 @@ footer .footer .footInfo {
 }
 footer .footer .footInfo address {
   font-style: normal;
+  font-family: "NotoSerifKR-Regular";
 }
 footer .footer .footInfo p {
   margin: 20px 0;
