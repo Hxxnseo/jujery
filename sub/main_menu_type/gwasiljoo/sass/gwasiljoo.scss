@@ -402,6 +402,7 @@
 
                 img {
                   width: 100%;
+                  height: 250px;
                   vertical-align: top;
                   margin-bottom: 20px;
 
@@ -708,15 +709,12 @@
               width: 100%;
               margin: 0 auto;
               display: flex;
-              flex-wrap: wrap;
               justify-content: space-between;
               margin-bottom: 50px;
 
               @include responsive(pc-screens) {
                 margin-bottom: 0;
-                width: 100%;
                 overflow: hidden;
-                flex-wrap: nowrap;
               }
 
               .b_item {
@@ -793,6 +791,7 @@
                   }
                 }
                 .brewery_box {
+                  width: 100%;
                   .brewery_pic {
                       display: none;
                       @include responsive(pc-screens) {
@@ -801,6 +800,10 @@
                   }
                   .map {
                     width: 100%;
+                    text-align: center;
+                    iframe {
+                      width: 100%;
+                    }
                     @include responsive(pc-screens) {
                       display: none;
                     }

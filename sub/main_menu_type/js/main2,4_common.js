@@ -34,22 +34,23 @@ $(function() {
         autoplay: true,
         autoplaySpeed:2000,
         dots: false,
+        variableWidth : true,
         infinite: false,
-        slidesToShow: 4,
+        slidesToShow: 2,
         slidesToScroll: 1,
         mobileFirst: true,
         responsive: [
             {
                 breakpoint:390,
                 settings: {
-                    slidesToShow: 2.3,
+                    slidesToShow: 2,
                     slidesToScroll: 1
                 }
             },
             {
                 breakpoint:768,
                 settings: {
-                    slidesToShow: 4,
+                    slidesToShow: 2,
                     slidesToScroll: 1
                 }
             }

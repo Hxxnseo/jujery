@@ -498,7 +498,7 @@ p {
 }
 .wrapper .flexWrapper main .main aside.slide ul li a img {
   width: 100%;
-  height: 300px;
+  height: 250px;
   vertical-align: top;
   margin-bottom: 20px;
 }
@@ -863,16 +863,13 @@ p {
   width: 100%;
   margin: 0 auto;
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   margin-bottom: 50px;
 }
 @media screen and (min-width: 1024px) {
   .wrapper .flexWrapper main section.brewery .category_wrap .brewery_item {
     margin-bottom: 0;
-    width: 100%;
     overflow: hidden;
-    flex-wrap: nowrap;
   }
 }
 .wrapper .flexWrapper main section.brewery .category_wrap .brewery_item .b_item {
@@ -955,6 +952,9 @@ p {
     margin-right: 10px;
   }
 }
+.wrapper .flexWrapper main section.brewery .brewery_content .brewery .brewery_box {
+  width: 100%;
+}
 .wrapper .flexWrapper main section.brewery .brewery_content .brewery .brewery_box .brewery_pic {
   display: none;
 }
@@ -964,6 +964,10 @@ p {
   }
 }
 .wrapper .flexWrapper main section.brewery .brewery_content .brewery .brewery_box .map {
+  width: 100%;
+  text-align: center;
+}
+.wrapper .flexWrapper main section.brewery .brewery_content .brewery .brewery_box .map iframe {
   width: 100%;
 }
 @media screen and (min-width: 1024px) {
