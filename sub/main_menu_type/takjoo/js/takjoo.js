@@ -56,7 +56,6 @@ $(function() {
             }
         ]
     });
-    
 
 // section3 아코디언탭 on mobile
     $('.brewery_content .brewery_box .text a').click(function(e) {

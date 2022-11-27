@@ -402,6 +402,7 @@
 
                 img {
                   width: 100%;
+                  height: 300px;
                   vertical-align: top;
                   margin-bottom: 20px;
 
@@ -679,7 +680,7 @@
                 transform: translateX(-50%);
                 @include responsive(pc-screens) {
                   width: 100px; height: 50px;
-                  top:70%; left:48%;
+                  top:170px; left:500px;
                   z-index: 50000;
                 }
 
@@ -776,11 +777,10 @@
                     justify-content:center;
                   }
                   .location_box {
-                    display: flex;
-                    justify-content: center;
-                    vertical-align: middle;
-                    margin-bottom: 100px;
+                    display: none;
                     @include responsive(pc-screens) {
+                      display: flex;
+                      justify-content: center;
                       align-items: center;
                       margin-right: 20px;
                       margin-bottom: 0;
@@ -804,6 +804,21 @@
                         margin-right: 10px;
                       }
                     }
+                  } // qr_box
+                } // location
+
+                .brewery_box {
+                  .brewery_pic {
+                      display: none;
+                      @include responsive(pc-screens) {
+                        display: block;
+                    }
+                  }
+                  .map {
+                    width: 100%;
+                    @include responsive(pc-screens) {
+                      display: none;
+                    }
                   }
                 }
 
@@ -815,7 +830,6 @@
                     flex-direction: column;
                     @include responsive(pc-screens) {
                       height: 500px;
-                      display: flex;
                       flex-direction: row;
                     }
   
@@ -849,27 +863,19 @@
                     } // alcohol
   
                     .brewery_pic {
-                      display: flex;
-                      overflow: hidden;
-                      width: 200%;
-                      margin-bottom: 50px;
                       @include responsive(pc-screens) {
                         display: flex;
                         flex-direction: column;
-                        justify-content: space-between;
                         width:30%; height: 100%;
                         margin-right: 5%;
                       }
                       .img_box {
-                        width: 100%;
-                        position: relative;
-                        display: flex;
-                        height: 300px;
-                        @include responsive(pc-screens) {
-                          height: 48%;
-                        }
+                        height: 50%;
                         img {
-                          width: 100%;
+                          @include responsive(pc-screens) {
+                            width: 100%;
+                            height: 90%;
+                          }
                         }
                       }
                     }
@@ -909,12 +915,11 @@
                     flex-direction: column;
                     @include responsive(pc-screens) {
                       height: 500px;
-                      display: flex;
                       flex-direction: row;
                       justify-content: space-between;
                     }
                     .brewery_semi {
-                      order: 2;
+                      order: 3;
                       @include responsive(pc-screens) {
                         display: flex;
                         flex-direction: column;
@@ -922,10 +927,7 @@
                         width: 65%; height: 100%;
                       }
                       .brewery_pic {
-                        display: flex;
-                        overflow: hidden;
-                        width: 200%;
-                        margin-bottom: 50px;
+                        display: none;
                         @include responsive(pc-screens) {
                           height: 50%;
                           display: flex;
@@ -975,7 +977,9 @@
                         }
                       }
                     }
-  
+                    .map {
+                      order:2;
+                    }
                     .alcohol {
                       margin-bottom: 50px;
                       width: 100%;
@@ -1014,7 +1018,6 @@
                     flex-direction: column;
                     @include responsive(pc-screens) {
                       height: 500px;
-                      display: flex;
                       flex-direction: row;
                       justify-content: space-between;
                     }
@@ -1077,29 +1080,20 @@
                     }
   
                     .brewery_pic {
-                      display: flex;
-                      overflow: hidden;
-                      width: 200%;
-                      margin-bottom: 50px;
                       order:2;
                       @include responsive(pc-screens) {
-                        width: 30%;
+                        width: 30%; height: 100%;
                         order: 3;
+                        display: flex;
                         flex-direction: column;
-                        justify-content: space-between;
                       }
                       .img_box {
-                        width: 100%;
-                        position: relative;
-                        display: flex;
-                        height: 300px;
-                        @include responsive(pc-screens) {
-                          height: 48%;
-                        }
+                        height: 50%;
                         img {
                           width: 100%;
                           @include responsive(pc-screens) {
-                            height: 100%;
+                            width: 100%;
+                            height: 90%;
                           }
                         }
                       }
