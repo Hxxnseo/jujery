@@ -31,11 +31,12 @@ $(function() {
  // slick slider
     var slider = $('.brewery_item');
     slider.slick({
-        autoplay: true,
+        autoplay: false,
         autoplaySpeed:2000,
         dots: false,
         variableWidth : true,
         draggable: true,
+        pauseOnHover:true,
         infinite: false,
         centerMode: true,
         slidesToShow: 4,
