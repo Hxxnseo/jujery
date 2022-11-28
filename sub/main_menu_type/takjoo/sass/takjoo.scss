@@ -717,6 +717,10 @@
                 47% { transform: translateX(-10px); opacity: 0; }
                 48%, 100% { transform: translateX(0); opacity: 0; }
               }
+
+              .slick-list> div {
+                margin-left:0;
+              }
               
               .brewery_item{
                 width: 100%;

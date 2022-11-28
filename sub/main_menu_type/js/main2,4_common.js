@@ -36,6 +36,7 @@ $(function() {
         dots: false,
         variableWidth : true,
         infinite: false,
+        draggable: true,
         slidesToShow: 4,
         slidesToScroll: 2,
         mobileFirst: true,

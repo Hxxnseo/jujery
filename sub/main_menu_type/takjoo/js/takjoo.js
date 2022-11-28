@@ -35,6 +35,7 @@ $(function() {
         autoplaySpeed:2000,
         dots: false,
         variableWidth : true,
+        draggable: true,
         infinite: false,
         slidesToShow: 4,
         slidesToScroll: 2,
@@ -44,7 +45,7 @@ $(function() {
                 breakpoint:390,
                 settings: {
                     slidesToShow: 2,
-                    slidesToScroll: 2,
+                    slidesToScroll: 1,
                 }
             },
             {
