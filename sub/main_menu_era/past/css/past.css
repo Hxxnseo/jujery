@@ -171,6 +171,8 @@ p {
   }
 }
 .wrapper .flexWrapper header .header .mobileLogoMenu {
+  position: relative;
+  z-index: 5;
   display: flex;
 }
 @media screen and (min-width: 1024px) {
@@ -478,7 +480,7 @@ p {
 .wrapper .flexWrapper main .main .dis .desc .dis-text,
 .wrapper .flexWrapper main .main .pro .desc .dis-text {
   padding-bottom: 20px;
-  padding-top: 20px;
+  padding-top: 10px;
 }
 @media screen and (min-width: 1024px) {
   .wrapper .flexWrapper main .main .dis .desc,
@@ -626,8 +628,8 @@ p {
 }
 .wrapper .flexWrapper main .main .pro img.sol {
   z-index: 0;
-  width: 175px;
-  margin-top: 230px;
+  width: 43%;
+  margin-top: 200px;
   margin-left: -4%;
 }
 .wrapper .flexWrapper main .main .pro img.moon {
@@ -651,6 +653,7 @@ p {
     margin-left: 120px;
   }
   .wrapper .flexWrapper main .main .pro img.sol {
+    width: 175px;
     margin-top: -360px;
     margin-left: 120px;
   }
