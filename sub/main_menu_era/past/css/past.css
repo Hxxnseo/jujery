@@ -514,6 +514,11 @@ p {
     background-image: url(../../img/black_pc.png);
   }
 }
+.wrapper .flexWrapper main .main .dis .solsol,
+.wrapper .flexWrapper main .main .pro .solsol {
+  position: relative;
+  z-index: 2;
+}
 .wrapper .flexWrapper main .main .dis .even,
 .wrapper .flexWrapper main .main .pro .even {
   margin-left: 30%;
@@ -610,6 +615,7 @@ p {
   margin-top: -6px;
 }
 .wrapper .flexWrapper main .main .pro img.sol {
+  z-index: 0;
   width: 175px;
   margin-top: 230px;
   margin-left: -4%;

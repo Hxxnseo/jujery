@@ -180,6 +180,7 @@ p {
 }
 .wrapper .flexWrapper header .header .mobileLogoMenu .mobileLogo {
   position: fixed;
+  z-index: 3;
   top: 22px;
   left: 20px;
 }
@@ -409,6 +410,7 @@ p {
 }
 .wrapper .flexWrapper main .main .recommand {
   position: relative;
+  z-index: 0;
 }
 .wrapper .flexWrapper main .main .recommand .recommand-text {
   position: absolute;

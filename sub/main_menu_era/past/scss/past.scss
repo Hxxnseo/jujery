@@ -476,7 +476,11 @@
               background-image: url(../../img/black_pc.png);
             }
           }
-
+          
+          .solsol {
+            position: relative;
+            z-index: 2;
+          }
           .even {
             margin-left: 30%;
             background-image: url(../../img/black_object_2.png);
@@ -534,7 +538,7 @@
           img.lee{margin-top: 80px;}
           img.gam{margin-top: 65px; margin-left: 3%;}
           img.juck{width: 73px;margin-top: -6px;}
-          img.sol{width: 175px; margin-top: 230px; margin-left: -4%;}
+          img.sol{z-index: 0;width: 175px; margin-top: 230px; margin-left: -4%;}
           img.moon{width: 88px; margin-top: 10px;}
           @include responsive(pc-screens) {
             img.lee{margin-top: -360px; margin-left: 120px;}
