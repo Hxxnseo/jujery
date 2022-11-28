@@ -38,10 +38,10 @@ $(function() {
         draggable: true,
         pauseOnHover:true,
         infinite: false,
+        mobileFirst: true,
         centerMode: true,
         slidesToShow: 4,
         slidesToScroll: 1,
-        mobileFirst: true,
         responsive: [
             {
                 breakpoint:390,
@@ -56,7 +56,7 @@ $(function() {
                     slidesToShow: 4,
                     slidesToScroll: 1,
                 }
-            }
+            },
         ]
     });
 

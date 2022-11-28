@@ -14,9 +14,11 @@
   box-sizing: border-box;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
+  -khtml-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  -ms-touch-action: pan-y;
   touch-action: pan-y;
   -webkit-tap-highlight-color: transparent;
 }
@@ -38,6 +40,10 @@
 
 .slick-slider .slick-track,
 .slick-slider .slick-list {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
 }
 
@@ -352,6 +358,7 @@ p {
   position: relative;
   padding: 0;
   *zoom: 1;
+  -ms-touch-action: pan-y;
   touch-action: pan-y;
 }
 .wrapper .flexWrapper main .main aside.slide .bx-wrapper img {
@@ -379,6 +386,8 @@ p {
   height: 16px;
   margin: 0 7px;
   outline: 0;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
   border-radius: 50%;
 }
 @media screen and (min-width: 1024px) {
