@@ -136,6 +136,7 @@
 
           .mobileLogo {
             position: fixed;
+            z-index: 3;
             top: 22px;
             left: 20px;
           }
@@ -378,6 +379,7 @@
         }
         .recommand {
           position: relative;
+          z-index: 0;
           .recommand-text {
             position: absolute;
             color: #fff;

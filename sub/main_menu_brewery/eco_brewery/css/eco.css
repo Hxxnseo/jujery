@@ -1,4 +1,20 @@
 @charset "UTF-8";
+@font-face {
+  font-family: "SANGJU Gyeongcheon Island";
+  src: url(../../../../font/SANGJU\ Gyeongcheon\ Island.woff);
+}
+@font-face {
+  font-family: "NotoSerifKR-Regular";
+  src: url(../../../../font/NotoSerifKR-Regular.woff);
+}
+@font-face {
+  font-family: "SANGJU Gyeongcheon Island";
+  src: url(../../../../font/SANGJU\ Gyeongcheon\ Island.woff);
+}
+@font-face {
+  font-family: "NotoSerifKR-Regular";
+  src: url(../../../../font/NotoSerifKR-Regular.woff);
+}
 * {
   margin: 0;
   padding: 0;
@@ -75,6 +91,7 @@ p {
 
 #modal1 {
   background-image: url(../../../../images/background/main_page_background.png);
+  background-size: cover;
   color: white;
 }
 #modal1 h3 {
@@ -93,6 +110,7 @@ p {
 
 #modal2 {
   background-image: url(../../../../images/background/main_page_background.png);
+  background-size: cover;
 }
 #modal2 h3 {
   font-size: 36px;
@@ -105,6 +123,7 @@ p {
 
 #modal3 {
   background-image: url(../../../../images/background/main_page_background.png);
+  background-size: cover;
 }
 #modal3 h3 {
   font-size: 36px;

@@ -475,6 +475,11 @@ p {
   margin-bottom: 50px;
   background-repeat: no-repeat;
 }
+.wrapper .flexWrapper main .main .dis .desc .dis-text,
+.wrapper .flexWrapper main .main .pro .desc .dis-text {
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
 @media screen and (min-width: 1024px) {
   .wrapper .flexWrapper main .main .dis .desc,
 .wrapper .flexWrapper main .main .pro .desc {
@@ -514,6 +519,11 @@ p {
     background-image: url(../../img/black_pc.png);
   }
 }
+.wrapper .flexWrapper main .main .dis .solsol,
+.wrapper .flexWrapper main .main .pro .solsol {
+  position: relative;
+  z-index: 2;
+}
 .wrapper .flexWrapper main .main .dis .even,
 .wrapper .flexWrapper main .main .pro .even {
   margin-left: 30%;
@@ -537,7 +547,6 @@ p {
   }
 }
 .wrapper .flexWrapper main .main .dis img {
-  width: 24%;
   position: absolute;
   margin-top: -38px;
 }
@@ -545,9 +554,13 @@ p {
   margin-top: 13px;
   margin-left: 65%;
 }
+.wrapper .flexWrapper main .main .dis img.do {
+  width: 23%;
+  height: 300px;
+}
 .wrapper .flexWrapper main .main .dis img.dae {
   margin-top: 70px;
-  margin-left: 10px;
+  margin-left: -5%;
 }
 .wrapper .flexWrapper main .main .dis img.ja {
   width: 70px;
@@ -560,6 +573,8 @@ p {
 }
 @media screen and (min-width: 1024px) {
   .wrapper .flexWrapper main .main .dis img.do {
+    height: 350px;
+    width: 8%;
     margin-top: -380px;
     margin-left: 120px;
   }
@@ -610,6 +625,7 @@ p {
   margin-top: -6px;
 }
 .wrapper .flexWrapper main .main .pro img.sol {
+  z-index: 0;
   width: 175px;
   margin-top: 230px;
   margin-left: -4%;
@@ -619,6 +635,9 @@ p {
   margin-top: 10px;
 }
 @media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .main .pro img {
+    width: 10%;
+  }
   .wrapper .flexWrapper main .main .pro img.lee {
     margin-top: -360px;
     margin-left: 120px;
@@ -806,7 +825,7 @@ p {
 .wrapper1 {
   display: none;
   position: fixed;
-  z-index: 1;
+  z-index: 4;
   width: 100%;
   height: 100vh;
 }
