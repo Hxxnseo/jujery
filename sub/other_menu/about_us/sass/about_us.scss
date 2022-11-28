@@ -211,6 +211,7 @@
               height: 400px;
               width: 100%;
               vertical-align: top;
+              position: relative;
               @include responsive(pc-screens) {
                 height: 900px;
                 vertical-align: top;
@@ -235,9 +236,9 @@
               position: absolute;
               color: white;
               font-size: 16px;
-              top: 35%;
+              top: 50%;
               left: 50%;
-              transform: translate(-50%, 0);
+              transform: translate(-50%, -50%);
               text-align: center;
               @include responsive(pc-screens) {
                 font-size: 50px;

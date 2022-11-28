@@ -373,12 +373,12 @@ p {
 .wrapper .flexWrapper .sec2 .main .container .p-gap .region_con p {
   font-family: "NotoSerifKR-Regular";
   color: #606060;
-  line-height: 20px;
+  line-height: 25px;
 }
 @media screen and (min-width: 1024px) {
   .wrapper .flexWrapper .sec2 .main .container .p-gap .region_con p {
     font-size: 24px;
-    line-height: 30px;
+    line-height: 35px;
   }
 }
 .wrapper .flexWrapper .sec2 .main .container .p-gap .region_con .pc-line {
@@ -388,20 +388,6 @@ p {
   .wrapper .flexWrapper .sec2 .main .container .p-gap .region_con .pc-line {
     display: block;
   }
-}
-.wrapper .flexWrapper .sec2 .main .container .p-gap .mobile-menu {
-  padding: 5px 5px;
-  display: flex;
-  justify-content: space-between;
-}
-@media screen and (min-width: 1024px) {
-  .wrapper .flexWrapper .sec2 .main .container .p-gap .mobile-menu {
-    display: none;
-  }
-}
-.wrapper .flexWrapper .sec2 .main .container .p-gap .mobile-menu div {
-  font-family: "NotoSerifKR-Regular";
-  font-size: 18px;
 }
 .wrapper .flexWrapper .sec2 .main .container .p-gap .line {
   margin: 10px 0 15px 0;

@@ -573,7 +573,7 @@ p {
 }
 .wrapper1 .wrap-inner {
   height: 100vh;
-  background-image: url(../../../../images/background/main_menu_background.png);
+  background-image: url(./../../../images/background/main_menu_background.png);
 }
 @media screen and (min-width: 1024px) {
   .wrapper1 .wrap-inner {

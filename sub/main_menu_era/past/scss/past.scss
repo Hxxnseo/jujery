@@ -129,6 +129,8 @@
         }
 
         .mobileLogoMenu {
+          position: relative;
+          z-index: 5;
           display: flex;
           @include responsive(pc-screens) {
             display: none;
@@ -442,10 +444,17 @@
           } // title
           
           .desc {
+            // background-color: aqua;
+
             color: #fff;
             height: 100%; width: 70%;
             padding: 0 15px;
             margin-bottom: 50px;
+
+            .dis-text {
+              padding-bottom: 20px;
+              padding-top: 10px;
+            }
             @include responsive(pc-screens) {
               position: relative;
               width: 100%; height: 300px;
@@ -476,7 +485,11 @@
               background-image: url(../../img/black_pc.png);
             }
           }
-
+          
+          .solsol {
+            position: relative;
+            z-index: 2;
+          }
           .even {
             margin-left: 30%;
             background-image: url(../../img/black_object_2.png);
@@ -494,17 +507,21 @@
         } // dis, pro
 
         .dis {
+          // background-color: aqua;
+
           img {
-            width: 24%;
             position: absolute;
             margin-top: -38px;
+            // background-color: aqua;
+            
           }
           img { margin-top: 13px; margin-left: 65%;}
-          img.dae { margin-top: 70px; margin-left: 10px;}
+          img.do {width: 23%; height: 300px;}
+          img.dae { margin-top: 70px; margin-left: -5%;}
           img.ja { width: 70px; margin-top: 30px; }
           img.back { width: 85px; margin-top: 20px; margin-left: 5%;}
           @include responsive(pc-screens) {
-            img.do { margin-top: -380px; margin-left: 120px;}
+            img.do { height:350px;width: 8%;margin-top: -380px; margin-left: 120px;}
             img.dae { margin-top: -380px; margin-left: 120px; }
             img.ja { margin-top: -430px; margin-left: 120px; }
             img.back { margin-top: -470px; margin-left: 150px; }
@@ -534,13 +551,14 @@
           img.lee{margin-top: 80px;}
           img.gam{margin-top: 65px; margin-left: 3%;}
           img.juck{width: 73px;margin-top: -6px;}
-          img.sol{width: 175px; margin-top: 230px; margin-left: -4%;}
+          img.sol{z-index: 0;width: 43%; margin-top: 200px; margin-left: -4%;}
           img.moon{width: 88px; margin-top: 10px;}
           @include responsive(pc-screens) {
+            img{width: 10%;}
             img.lee{margin-top: -360px; margin-left: 120px;}
             img.gam{margin-top: -360px; margin-left: 120px;}
             img.juck{margin-top: -390px; margin-left: 120px;}
-            img.sol{margin-top: -360px; margin-left: 120px;}
+            img.sol{width:175px;margin-top: -360px; margin-left: 120px;}
             img.moon{margin-top: -380px; margin-left: 120px;}
             &:nth-child(1),
             &:nth-child(2) {
@@ -730,7 +748,8 @@
 .wrapper1 {
   display: none;
   position: fixed;
-  z-index: 1;
+  z-index: 4;
+
   width: 100%;
   height: 100vh;
   @include responsive(pc-screens) {
