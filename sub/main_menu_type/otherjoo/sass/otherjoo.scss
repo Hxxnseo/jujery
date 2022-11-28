@@ -757,7 +757,12 @@
                       display: block;
                       margin-top: 20px;
                       margin: 0 auto;
-                      width: 200px;
+                      width: 30%;
+                      @include responsive(pc-screens) {
+                        width: 40%;
+                        height: 60%;
+                        margin-top: 50px;
+                      }
                     }
                     p {
                       text-align: center;

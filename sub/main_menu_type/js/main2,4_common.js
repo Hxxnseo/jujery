@@ -36,22 +36,22 @@ $(function() {
         dots: false,
         variableWidth : true,
         infinite: false,
-        slidesToShow: 2,
-        slidesToScroll: 1,
+        slidesToShow: 4,
+        slidesToScroll: 2,
         mobileFirst: true,
         responsive: [
             {
                 breakpoint:390,
                 settings: {
                     slidesToShow: 2,
-                    slidesToScroll: 1
+                    slidesToScroll: 1,
                 }
             },
             {
                 breakpoint:768,
                 settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 1
+                    slidesToShow: 4,
+                    slidesToScroll: 2,
                 }
             }
         ]
