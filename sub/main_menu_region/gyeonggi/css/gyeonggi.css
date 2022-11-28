@@ -182,12 +182,14 @@ p {
   position: fixed;
   top: 22px;
   left: 20px;
+  z-index: 20000;
 }
 .wrapper .flexWrapper header .header .mobileLogoMenu .beforeMenu {
   position: fixed;
   top: 38px;
   right: 20px;
   cursor: pointer;
+  z-index: 20000;
 }
 .wrapper .flexWrapper header .header .mobileLogoMenu .beforeMenu span {
   display: block;

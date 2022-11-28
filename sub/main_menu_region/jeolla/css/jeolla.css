@@ -1,4 +1,20 @@
 @charset "UTF-8";
+@font-face {
+  font-family: "SANGJU Gyeongcheon Island";
+  src: url(../../../../font/SANGJU\ Gyeongcheon\ Island.woff);
+}
+@font-face {
+  font-family: "NotoSerifKR-Regular";
+  src: url(../../../../font/Noto_Serif_KR/);
+}
+@font-face {
+  font-family: "SANGJU Gyeongcheon Island";
+  src: url(../../../../font/SANGJU\ Gyeongcheon\ Island.woff);
+}
+@font-face {
+  font-family: "NotoSerifKR-Regular";
+  src: url(../../../../font/Noto_Serif_KR/);
+}
 * {
   margin: 0;
   padding: 0;
@@ -498,7 +514,7 @@ p {
 }
 .wrapper .flexWrapper main .main .slider .inner .sec2 .map iframe {
   width: 100%;
-  height: 160px;
+  height: 300px;
 }
 @media screen and (min-width: 1024px) {
   .wrapper .flexWrapper main .main .slider .inner .sec2 .map iframe {

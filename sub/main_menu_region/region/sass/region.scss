@@ -343,10 +343,10 @@
               p {
                 font-family: $font-sub;
                 color: #606060;
-                line-height: 20px;
+                line-height: 25px;
                 @include responsive(pc-screens) {
                   font-size: 24px;
-                  line-height: 30px;
+                  line-height: 35px;
                 }
               }
               .pc-line {
@@ -357,18 +357,18 @@
               }
             } // region_con
 
-            .mobile-menu {
-              padding: 5px 5px;
-              display: flex;
-              justify-content: space-between;
-              @include responsive(pc-screens) {
-                display: none;
-              }
-              div {
-                font-family: $font-sub;
-                font-size: 18px;
-              }
-            } // mobile-menu
+            // .mobile-menu {
+            //   padding: 5px 5px;
+            //   display: flex;
+            //   justify-content: space-between;
+            //   @include responsive(pc-screens) {
+            //     display: none;
+            //   }
+            //   div {
+            //     font-family: $font-sub;
+            //     font-size: 18px;
+            //   }
+            // } // mobile-menu
             .line {
               margin: 10px 0 15px 0;
               display: block;
