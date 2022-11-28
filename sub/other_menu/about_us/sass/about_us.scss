@@ -11,7 +11,6 @@
 }
 
 .container {
-  
   margin-right: 20px;
   // position: relative;
   width: 100%; // 모바일, 태블릿
@@ -131,7 +130,7 @@
 
         .mobileLogoMenu {
           display: flex;
-          
+
           @include responsive(pc-screens) {
             display: none;
           }
@@ -149,13 +148,13 @@
             right: 20px;
             cursor: pointer;
             z-index: 20000;
-            
+
             span {
               display: block;
               width: 30px;
               height: 4px;
-              background-color:white;
-              
+              background-color: white;
+
               &:nth-child(2) {
                 margin: 5px 0;
               }
@@ -176,7 +175,6 @@
               content: "\00d7";
               font-size: 50px;
               color: black;
-              
             }
           }
         }
@@ -191,536 +189,531 @@
         background-color: black;
       }
       .main {
-          @include responsive(pc-screens) {
-            width: 100%;
-          }
-      
-      .slider {
-        // width: 1560px;
-        height: 400px;
-        transition: transform 0.5s;
         @include responsive(pc-screens) {
-          // width: 6573px;
-        }
-        position: relative;
-        .inner {
           width: 100%;
-          float: left;
+        }
+
+        .slider {
+          // width: 1560px;
+          height: 400px;
+          transition: transform 0.5s;
           @include responsive(pc-screens) {
-            width: 1180px;
+            // width: 6573px;
           }
-          img {
-            height: 400px;
+          .inner {
+            position: relative;
             width: 100%;
-            vertical-align: top;
+            float: left;
             @include responsive(pc-screens) {
-              height: 900px;
+              width: 1180px;
+            }
+            img {
+              height: 400px;
+              width: 100%;
               vertical-align: top;
+              @include responsive(pc-screens) {
+                height: 900px;
+                vertical-align: top;
+              }
             }
-          }
-          .main-title {
-            position: absolute;
-            color: white;
-            font-size: 16px;
-            top: 50%;
-            left: 50%;
-            margin: -50px 0 0 -50px;
-            @include responsive(pc-screens) {
-              font-size: 40px;
+            .main-title {
               position: absolute;
-              left: 52%;
-              top: 45%;
-              transform: translate(-50%, -50%);
-              
-            }
-          } //.main-title
-          .main-title1 {
-            position: absolute;
-            color: white;
-            font-size: 16px;
-            top:35%;
-            left:50%;
-            transform: translate(-50%, 0);
-            text-align: center;
-            @include responsive(pc-screens) {
-              font-size: 50px;
-              text-align: center;
-            }
-            h1 {
-              font-size: 40px;
-              
-              @include responsive(pc-screens) {
-              font-size: 70px;
-              }
-            }
-            h4 {
-              margin-top: 10px;
+              color: white;
               font-size: 16px;
-              width: 300px;
-    
-              line-height: 20px;
+              top: 50%;
+              left: 50%;
+              margin: -50px 0 0 -50px;
               @include responsive(pc-screens) {
-                margin-top: 30px;
-                font-size: 26px;
-                width: 1300px;
-                line-height: 50px;
+                font-size: 40px;
+                position: absolute;
+                left: 52%;
+                top: 45%;
+                transform: translate(-50%, -50%);
+              }
+            } //.main-title
+            .main-title1 {
+              position: absolute;
+              color: white;
+              font-size: 16px;
+              top: 35%;
+              left: 50%;
+              transform: translate(-50%, 0);
+              text-align: center;
+              @include responsive(pc-screens) {
+                font-size: 50px;
+                text-align: center;
+              }
+              h1 {
+                font-size: 40px;
+                @include responsive(pc-screens) {
+                  font-size: 70px;
+                }
+              }
+              h4 {
+                margin-top: 10px;
+                font-size: 16px;
+                width: 300px;
+                line-height: 20px;
+                @include responsive(pc-screens) {
+                  margin-top: 30px;
+                  font-size: 26px;
+                  width: 1300px;
+                  line-height: 50px;
+                }
               }
             }
-          }
-        } // inner
-      } // slider
-      .bx-controls-direction {
-        font-size: 0;
-      }
-      .bx-pager {
-        // font-size: 0;
-        position: absolute;
-        bottom: 20px;
-        display: flex;
-        flex-direction: row;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        .bx-pager-item {
-          a {
-            font-size: 0;
-            width: 38px;
-            height: 9px;
-            margin: 0 10px;
-            background: white;
-            border: 2px solid brown;
-          }
+          } // inner
+        } // slider
+        .bx-controls-direction {
+          font-size: 0;
         }
-      }
-
-      .button {
-        position: absolute;
-        top: 370px;
-        left: 130px;
-        @include responsive(pc-screens) {
-          top: 1050px;
-          left: 940px;
-        }
-        .button1 {
-          width: 38px;
-          height: 8px;
-          background-color: white;
-          border: 2px solid brown;
-          @include responsive(pc-screens) {
-            width: 81px;
-            height: 13px;
-          }
-        }
-        .button2,
-        .button3 {
-          width: 38px;
-          height: 8px;
-          background-color: brown;
-          border: 2px solid white;
-          @include responsive(pc-screens) {
-            margin-left: 30px;
-            width: 81px;
-            height: 13px;
-          }
-        }
-      }
-
-      .mainSubMenu {
-        display: none;
-        @include responsive(pc-screens) {
-          display: block;
-          font-family: $font-sub;
-        }
-        ul {
-          display: flex;
+        .bx-pager {
+          // font-size: 0;
           position: absolute;
-          right: 150px;
-          top: 50px;
-          li {
-            padding-left: 25px;
+          bottom: 20px;
+          display: flex;
+          flex-direction: row;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          .bx-pager-item {
+            a {
+              font-size: 0;
+              width: 38px;
+              height: 9px;
+              margin: 0 10px;
+              background: white;
+              border: 2px solid brown;
+            }
           }
         }
-      }
-    } // container
-    } // .main
-    } // main
-  }
-  // flexwrapper
 
-  footer {
-    .container {
-      padding: 0 20px;
+        .button {
+          position: absolute;
+          top: 370px;
+          left: 130px;
+          @include responsive(pc-screens) {
+            top: 1050px;
+            left: 940px;
+          }
+          .button1 {
+            width: 38px;
+            height: 8px;
+            background-color: white;
+            border: 2px solid brown;
+            @include responsive(pc-screens) {
+              width: 81px;
+              height: 13px;
+            }
+          }
+          .button2,
+          .button3 {
+            width: 38px;
+            height: 8px;
+            background-color: brown;
+            border: 2px solid white;
+            @include responsive(pc-screens) {
+              margin-left: 30px;
+              width: 81px;
+              height: 13px;
+            }
+          }
+        }
+
+        .mainSubMenu {
+          display: none;
+          @include responsive(pc-screens) {
+            display: block;
+            font-family: $font-sub;
+          }
+          ul {
+            display: flex;
+            position: absolute;
+            right: 150px;
+            top: 50px;
+            li {
+              padding-left: 25px;
+            }
+          }
+        }
+      } // container
+    } // .main
+  } // main
+}
+// flexwrapper
+
+footer {
+  .container {
+    padding: 0 20px;
+    @include responsive(pc-screens) {
+      margin: 0;
+    }
+  }
+  .footer {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    color: white;
+
+    @include responsive(pc-screens) {
+      width: 100%;
+      padding: 120px 185px 80px 545px;
+    }
+
+    .footInfo {
+      padding-top: 60px;
+      padding-bottom: 30px;
+
       @include responsive(pc-screens) {
-        margin: 0;
+        // padding: 0;
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+
+        font-size: 20px;
+        margin-bottom: 30px;
+      }
+
+      address {
+        font-style: normal;
+        font-family: $font-sub;
+      }
+
+      p {
+        margin: 20px 0;
+
+        @include responsive(pc-screens) {
+          margin: 0;
+        }
       }
     }
-    .footer {
-      width: 100%;
-      height: 100%;
-      background-color: black;
-      color: white;
 
+    .footBox {
+      width: 100%;
       @include responsive(pc-screens) {
-        width: 100%;
-        padding: 120px 185px 80px 545px;
+        display: flex;
+        height: 250px;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        text-align: center;
+
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
       }
 
-      .footInfo {
-        padding-top: 60px;
-        padding-bottom: 30px;
+      .footLogoCopy {
+        padding: 30px;
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        text-align: center;
 
         @include responsive(pc-screens) {
-          // padding: 0;
-          display: flex;
-          width: 100%;
-          justify-content: space-between;
-
-          font-size: 20px;
-          margin-bottom: 30px;
+          width: 30%;
+          padding: 0;
+          border: 0;
         }
 
-        address {
-          font-style: normal;
-          font-family: $font-sub;
+        a {
+          color: white;
+          font-size: 60px;
         }
 
         p {
-          margin: 20px 0;
+          font-size: 10px;
+        }
 
+        .copyright {
           @include responsive(pc-screens) {
-            margin: 0;
+            font-size: 12px;
+            font-family: $font-sub;
           }
         }
       }
 
-      .footBox {
-        width: 100%;
+      .footSns {
+        padding: 30px;
+        border-bottom: 1px solid #ccc;
+
         @include responsive(pc-screens) {
-          display: flex;
+          position: relative;
+          width: 40%;
           height: 250px;
-          flex-direction: row;
-          justify-content: space-between;
-          align-items: center;
-
-          text-align: center;
-
-          border-top: 1px solid #ccc;
-          border-bottom: 1px solid #ccc;
+          border-bottom: 0;
+          border-right: 1px solid #ccc;
+          border-left: 1px solid #ccc;
         }
-
-        .footLogoCopy {
-          padding: 30px;
-          border-top: 1px solid #ccc;
-          border-bottom: 1px solid #ccc;
-          text-align: center;
+        .footSnsCont {
+          display: flex;
+          justify-content: center;
 
           @include responsive(pc-screens) {
-            width: 30%;
-            padding: 0;
-            border: 0;
+            padding: 60px 80px;
           }
 
-          a {
-            color: white;
-            font-size: 60px;
-          }
-
-          p {
-            font-size: 10px;
-          }
-
-          .copyright {
-            @include responsive(pc-screens) {
-              font-size: 12px;
-              font-family: $font-sub;
-            }
-          }
-        }
-
-        .footSns {
-          padding: 30px;
-          border-bottom: 1px solid #ccc;
-
-          @include responsive(pc-screens) {
-            position: relative;
-            width: 40%;
-            height: 250px;
-            border-bottom: 0;
-            border-right: 1px solid #ccc;
-            border-left: 1px solid #ccc;
-          }
-          .footSnsCont {
-            display: flex;
-            justify-content: center;
+          li {
+            padding: 10px;
 
             @include responsive(pc-screens) {
-              padding: 60px 80px;
-            }
+              padding-right: 15px;
 
-            li {
-              padding: 10px;
+              &:last-child {
+                padding-right: 0;
+              }
+            }
+            img {
+              width: 50px;
 
               @include responsive(pc-screens) {
-                padding-right: 15px;
+                width: 60px;
+                opacity: 0.5;
 
-                &:last-child {
-                  padding-right: 0;
-                }
-              }
-              img {
-                width: 50px;
+                transition: all 0.5s;
 
-                @include responsive(pc-screens) {
-                  width: 60px;
-                  opacity: 0.5;
-
-                  transition: all 0.5s;
-
-                  &:hover {
-                    opacity: 1;
-                  }
+                &:hover {
+                  opacity: 1;
                 }
               }
             }
           }
         }
+      }
 
-        .footMenu {
-          padding: 40px 0;
+      .footMenu {
+        padding: 40px 0;
+        font-size: 14px;
+        width: 100%;
+
+        @include responsive(pc-screens) {
+          width: 30%;
+          padding: 0;
           font-size: 14px;
+        }
+        ul {
+          display: flex;
           width: 100%;
+          padding: 10px;
+          // margin-left: 5px;
 
-          @include responsive(pc-screens) {
-            width: 30%;
-            padding: 0;
-            font-size: 14px;
+          &:last-child {
+            text-align: left;
           }
-          ul {
-            display: flex;
-            width: 100%;
-            padding: 10px;
-            // margin-left: 5px;
 
-            &:last-child {
-              text-align: left;
-            }
+          li {
+            width: 33%;
+            padding: 0 5px;
+            text-align: center;
 
-            li {
-              width: 33%;
-              padding: 0 5px;
-              text-align: center;
-
-              a {
-                width: 100%;
-                color: white;
-              }
+            a {
+              width: 100%;
+              color: white;
             }
           }
         }
       }
     }
   }
+}
 
-
-
-  .wrapper1 {
+.wrapper1 {
+  display: none;
+  position: fixed;
+  z-index: 10000;
+  width: 100%;
+  height: 100vh;
+  @include responsive(pc-screens) {
     display: none;
-    position: fixed;
-    z-index: 10000;
-    width: 100%;
+  }
+
+  .wrap-inner {
     height: 100vh;
+    background-image: url(../../../../images/background/main_menu_background.png);
     @include responsive(pc-screens) {
       display: none;
     }
-  
-    .wrap-inner {
-      height: 100vh;
-      background-image: url(../../../../images/background/main_menu_background.png);
+    .container1 {
+      width: 100%; // 모바일, 태블릿
+      padding: 0 20px;
       @include responsive(pc-screens) {
-        display: none;
+        display: flex;
+        padding: 0 130px;
+        flex-wrap: wrap;
       }
-      .container1 {
-        width: 100%; // 모바일, 태블릿
-        padding: 0 20px;
+
+      .menu1 {
+        position: relative;
+        margin-top: 0;
+        height: 550px;
         @include responsive(pc-screens) {
-          display: flex;
-          padding: 0 130px;
-          flex-wrap: wrap;
-        }
-  
-        .menu1 {
           position: relative;
-          margin-top: 0;
-          height: 550px;
-          @include responsive(pc-screens) {
-            position: relative;
-            width: 77%;
-            height: 820px;
-          }
-          .gnb {
-            position: absolute;
-            top: 8%;
-            right: 0;
-            left: 0;
-            @include responsive(pc-screens) {
-              position: absolute;
-              top: 60px;
-            }
-            #extra {
-              margin: 50px 0 70px;
-            }
-            li {
-              display: flex;
-              justify-content: space-between;
-              margin-bottom: 40px;
-              @include responsive(pc-screens) {
-                display: initial;
-              }
-  
-              a {
-                font-size: 34px;
-                @include responsive(pc-screens) {
-                  font-size: 50px;
-                }
-              }
-              .gnb-title {
-                color: black;
-                @include responsive(pc-screens) {
-                  margin: 50px 0 20px 0;
-                }
-              }
-  
-              .sub-gnb {
-                li {
-                  margin-bottom: 0;
-                  @include responsive(pc-screens) {
-                    display: flex;
-                    justify-content: left;
-                  }
-                  a {
-                    color: #a3a3a3;
-                    font-size: 16px;
-                    margin-bottom: 20px;
-                    @include responsive(pc-screens) {
-                      font-size: 30px;
-                      margin-bottom: 10px;
-                    }
-                  }
-                }
-                .sub-gnb-li {
-                  justify-content: end;
-                  @include responsive(pc-screens) {
-                    justify-content: left;
-                  }
-                }
-                .sub-gnb-li2 {
-                  flex-direction: column;
-                  text-align: right;
-                  @include responsive(pc-screens) {
-                    text-align: left;
-                    flex-direction: row;
-                  }
-                }
-              }
-            }
-          }
-        } // menu
-  
-        .menu2 {
-          font-family: $font-sub;
-          font-size: 12px;
-          @include responsive(pc-screens) {
-            width: 23%;
-            margin: 0;
-          }
-          .close-btn-pc {
-            display: none;
-            @include responsive(pc-screens) {
-              display: block;
-              position: absolute;
-              top: 60px;
-              right: 150px;
-            }
-          }
-          ul {
-            display: flex;
-            justify-content: center;
-            padding-top: 25px;
-            @include responsive(pc-screens) {
-              display: initial;
-              font-family: $font-main;
-              font-size: 25px;
-            }
-            li {
-              @include responsive(pc-screens) {
-                margin-top: 130px;
-              }
-              a {
-                margin: 0 20px;
-                color: black;
-                @include responsive(pc-screens) {
-                  color: #a3a3a3;
-                }
-              }
-            }
-          }
-        } //menu2
-  
-        span {
-          display: block;
-          width: 100%;
-          height: 2px;
-          background-color: #a3a3a3;
-          margin-top: 20px;
+          width: 77%;
+          height: 820px;
         }
-        .footer {
+        .gnb {
+          position: absolute;
+          top: 8%;
+          right: 0;
+          left: 0;
           @include responsive(pc-screens) {
-            display: flex;
-            width: 100%;
+            position: absolute;
+            top: 60px;
           }
-  
-          .sns1 {
-            padding: 40px;
-            @include responsive(pc-screens) {
-              width: 65%;
-              padding: 20px 0;
-            }
-            .footSns1 {
-              display: flex;
-              justify-content: center;
-              @include responsive(pc-screens) {
-                justify-content: left;
-              }
-              li {
-                padding: 10px;
-                img {
-                  width: 40px;
-                  @include responsive(pc-screens) {
-                    width: 40px;
-                  }
-                }
-              }
-            }
-          } // sns
-          .footerInfo1 {
+          #extra {
+            margin: 50px 0 70px;
+          }
+          li {
             display: flex;
             justify-content: space-between;
-            font-size: 11.5px;
+            margin-bottom: 40px;
             @include responsive(pc-screens) {
-              width: 35%;
-              padding: 0;
-              font-size: 16px;
-              align-items: center;
-              justify-content: end;
+              display: initial;
             }
-            p {
+
+            a {
+              font-size: 34px;
               @include responsive(pc-screens) {
-                &:last-child {
-                  margin-left: 100px;
+                font-size: 50px;
+              }
+            }
+            .gnb-title {
+              color: black;
+              @include responsive(pc-screens) {
+                margin: 50px 0 20px 0;
+              }
+            }
+
+            .sub-gnb {
+              li {
+                margin-bottom: 0;
+                @include responsive(pc-screens) {
+                  display: flex;
+                  justify-content: left;
+                }
+                a {
+                  color: #a3a3a3;
+                  font-size: 16px;
+                  margin-bottom: 20px;
+                  @include responsive(pc-screens) {
+                    font-size: 30px;
+                    margin-bottom: 10px;
+                  }
+                }
+              }
+              .sub-gnb-li {
+                justify-content: end;
+                @include responsive(pc-screens) {
+                  justify-content: left;
+                }
+              }
+              .sub-gnb-li2 {
+                flex-direction: column;
+                text-align: right;
+                @include responsive(pc-screens) {
+                  text-align: left;
+                  flex-direction: row;
                 }
               }
             }
           }
-        } // footer
-      } // container
-    } // wrap-inner
-  }
+        }
+      } // menu
+
+      .menu2 {
+        font-family: $font-sub;
+        font-size: 12px;
+        @include responsive(pc-screens) {
+          width: 23%;
+          margin: 0;
+        }
+        .close-btn-pc {
+          display: none;
+          @include responsive(pc-screens) {
+            display: block;
+            position: absolute;
+            top: 60px;
+            right: 150px;
+          }
+        }
+        ul {
+          display: flex;
+          justify-content: center;
+          padding-top: 25px;
+          @include responsive(pc-screens) {
+            display: initial;
+            font-family: $font-main;
+            font-size: 25px;
+          }
+          li {
+            @include responsive(pc-screens) {
+              margin-top: 130px;
+            }
+            a {
+              margin: 0 20px;
+              color: black;
+              @include responsive(pc-screens) {
+                color: #a3a3a3;
+              }
+            }
+          }
+        }
+      } //menu2
+
+      span {
+        display: block;
+        width: 100%;
+        height: 2px;
+        background-color: #a3a3a3;
+        margin-top: 20px;
+      }
+      .footer {
+        @include responsive(pc-screens) {
+          display: flex;
+          width: 100%;
+        }
+
+        .sns1 {
+          padding: 40px;
+          @include responsive(pc-screens) {
+            width: 65%;
+            padding: 20px 0;
+          }
+          .footSns1 {
+            display: flex;
+            justify-content: center;
+            @include responsive(pc-screens) {
+              justify-content: left;
+            }
+            li {
+              padding: 10px;
+              img {
+                width: 40px;
+                @include responsive(pc-screens) {
+                  width: 40px;
+                }
+              }
+            }
+          }
+        } // sns
+        .footerInfo1 {
+          display: flex;
+          justify-content: space-between;
+          font-size: 11.5px;
+          @include responsive(pc-screens) {
+            width: 35%;
+            padding: 0;
+            font-size: 16px;
+            align-items: center;
+            justify-content: end;
+          }
+          p {
+            @include responsive(pc-screens) {
+              &:last-child {
+                margin-left: 100px;
+              }
+            }
+          }
+        }
+      } // footer
+    } // container
+  } // wrap-inner
+}

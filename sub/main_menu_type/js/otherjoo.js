@@ -27,6 +27,7 @@ $(function() {
         .css("display","none");
     });
 
+// section2 술소개
     $(document).ready(function() {
         var $slider = $('.multiple-items');
         var $progressBar = $('.swiper_scrollbar');
@@ -69,7 +70,7 @@ $(function() {
     });
 
 // section3 brewery-contents 연결
-    $('.brewery_item li').click(function(e) {
+    $('.brewery_item .b_item').click(function(e) {
         e.preventDefault();
         var index = $(this).index();
         console.log(index);
