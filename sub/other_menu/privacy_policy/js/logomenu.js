@@ -6,7 +6,7 @@ $(function () {
   $(window).on("scroll", function (e) {
     console.log($(document).scrollTop());
 
-    if ($(document).scrollTop() > 2400) {
+    if ($(document).scrollTop() > 2300) {
       $(".menu .gnb li a").css("color", "white");
       $(".logo h1 img").attr(
         "src",
