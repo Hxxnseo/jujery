@@ -663,7 +663,7 @@
               width: 75px;
               height: 40px;
               position: absolute;
-              top:200px; left:50%;
+              top:220px; left:50%;
               transform: translateX(-50%);
               @include responsive(pc-screens) {
                 width: 100px; height: 50px;
@@ -703,6 +703,11 @@
               37% { transform: translateX(-8px); opacity: 1; }
               47% { transform: translateX(-10px); opacity: 0; }
               48%, 100% { transform: translateX(0); opacity: 0; }
+            }
+
+            .slick-track {
+              margin-left: 0;
+              margin-right: 0;
             }
             
             .brewery_item{
@@ -803,6 +808,7 @@
                     text-align: center;
                     iframe {
                       width: 100%;
+                      height: 400px;
                     }
                     @include responsive(pc-screens) {
                       display: none;
@@ -842,8 +848,8 @@
                       margin: 0 auto;
                       width: 25%;
                       @include responsive(pc-screens) {
-                        height: 70%;
-                        // background-color: yellow;
+                        height: 60%;
+                        margin-top: 50px;
                       }
                     }
                     p {
@@ -985,11 +991,13 @@
                       }
                     }
                     img {
+                      width: 25%;
                       display: block;
                       margin-top: 20px;
                       margin: 0 auto;
                       @include responsive(pc-screens) {
-                        height: 90%;
+                        height: 60%;
+                        margin-top: 50px;
                       }
                     }
                     p {
@@ -1029,9 +1037,10 @@
                       display: block;
                       margin-top: 20px;
                       margin: 0 auto;
-                      width: 25%;
+                      width: 20%;
                       @include responsive(pc-screens) {
-                        height: 70%;
+                        height: 60%;
+                        margin-top: 50px;
                       }
                     }
                     p {

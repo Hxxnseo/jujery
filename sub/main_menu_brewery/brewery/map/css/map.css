@@ -1,4 +1,20 @@
 @charset "UTF-8";
+@font-face {
+  font-family: "SANGJU Gyeongcheon Island";
+  src: url(../../../../../font/SANGJU\ Gyeongcheon\ Island.woff);
+}
+@font-face {
+  font-family: "NotoSerifKR-Regular";
+  src: url(../../../../../font/NotoSerifKR-Regular.woff);
+}
+@font-face {
+  font-family: "SANGJU Gyeongcheon Island";
+  src: url(../../../../../font/SANGJU\ Gyeongcheon\ Island.woff);
+}
+@font-face {
+  font-family: "NotoSerifKR-Regular";
+  src: url(../../../../../font/NotoSerifKR-Regular.woff);
+}
 * {
   margin: 0;
   padding: 0;

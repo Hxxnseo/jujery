@@ -662,7 +662,7 @@
                 width: 75px;
                 height: 40px;
                 position: absolute;
-                top:210px; left:50%;
+                top:220px; left:50%;
                 transform: translateX(-50%);
                 @include responsive(pc-screens) {
                   display: none;
@@ -700,6 +700,11 @@
                 37% { transform: translateX(-8px); opacity: 1; }
                 47% { transform: translateX(-10px); opacity: 0; }
                 48%, 100% { transform: translateX(0); opacity: 0; }
+              }
+              
+              .slick-track {
+                margin-left: 0;
+                margin-right: 0;
               }
               
               .brewery_item{
@@ -800,6 +805,7 @@
                     text-align: center;
                     iframe {
                       width: 100%;
+                      height: 400px;
                     }
                     @include responsive(pc-screens) {
                       display: none;
@@ -836,10 +842,10 @@
                       display: block;
                       margin-top: 20px;
                       margin: 0 auto;
-                      height: 400px;
+                      height: 350px;
                       @include responsive(pc-screens) {
-                        height: 90%;
-                        // background-color: yellow;
+                        height: 70%;
+                        margin-top: 50px;
                       }
                     }
                     p {
@@ -984,9 +990,10 @@
                       display: block;
                       margin-top: 20px;
                       margin: 0 auto;
-                      height: 400px;
+                      height: 300px;
                       @include responsive(pc-screens) {
-                        height: 90%;
+                        height: 70%;
+                        margin-top: 50px;
                       }
                     }
                     p {
@@ -1025,9 +1032,10 @@
                       display: block;
                       margin-top: 20px;
                       margin: 0 auto;
-                      height: 450px;
+                      height: 300px;
                       @include responsive(pc-screens) {
-                        height: 90%;
+                        height: 70%;
+                        margin-top: 50px;
                       }
                     }
                     p {

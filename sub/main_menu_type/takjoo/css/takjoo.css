@@ -14,11 +14,9 @@
   box-sizing: border-box;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
-  -khtml-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  -ms-touch-action: pan-y;
   touch-action: pan-y;
   -webkit-tap-highlight-color: transparent;
 }
@@ -40,10 +38,6 @@
 
 .slick-slider .slick-track,
 .slick-slider .slick-list {
-  -webkit-transform: translate3d(0, 0, 0);
-  -moz-transform: translate3d(0, 0, 0);
-  -ms-transform: translate3d(0, 0, 0);
-  -o-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
 }
 
@@ -358,7 +352,6 @@ p {
   position: relative;
   padding: 0;
   *zoom: 1;
-  -ms-touch-action: pan-y;
   touch-action: pan-y;
 }
 .wrapper .flexWrapper main .main aside.slide .bx-wrapper img {
@@ -386,8 +379,6 @@ p {
   height: 16px;
   margin: 0 7px;
   outline: 0;
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
   border-radius: 50%;
 }
 @media screen and (min-width: 1024px) {
@@ -819,17 +810,40 @@ p {
 .wrapper .flexWrapper main section.brewery .category_wrap svg#icon-swipe #hand {
   fill: #000;
   transform-origin: 50% 100%;
-  animation: hand-swipe 3.5s infinite ease;
+  -webkit-animation: hand-swipe 3.5s infinite ease;
+          animation: hand-swipe 3.5s infinite ease;
 }
 .wrapper .flexWrapper main section.brewery .category_wrap svg#icon-swipe #left, .wrapper .flexWrapper main section.brewery .category_wrap svg#icon-swipe #right {
   fill: #453d34;
   opacity: 0;
 }
 .wrapper .flexWrapper main section.brewery .category_wrap svg#icon-swipe #right {
-  animation: arrow-right 3.5s infinite ease;
+  -webkit-animation: arrow-right 3.5s infinite ease;
+          animation: arrow-right 3.5s infinite ease;
 }
 .wrapper .flexWrapper main section.brewery .category_wrap svg#icon-swipe #left {
-  animation: arrow-left 3.5s infinite ease;
+  -webkit-animation: arrow-left 3.5s infinite ease;
+          animation: arrow-left 3.5s infinite ease;
+}
+@-webkit-keyframes hand-swipe {
+  5% {
+    transform: translateX(3px) rotate(6deg);
+  }
+  25% {
+    transform: translateX(0px) rotate(0deg);
+  }
+  28% {
+    transform: translateX(0px) rotate(0deg);
+  }
+  33% {
+    transform: translateX(-3px) rotate(-6deg);
+  }
+  53% {
+    transform: translateX(0px) rotate(0deg);
+  }
+  100% {
+    transform: translateX(0px) rotate(0deg);
+  }
 }
 @keyframes hand-swipe {
   5% {
@@ -851,6 +865,20 @@ p {
     transform: translateX(0px) rotate(0deg);
   }
 }
+@-webkit-keyframes arrow-right {
+  7% {
+    transform: translateX(8px);
+    opacity: 1;
+  }
+  17% {
+    transform: translateX(10px);
+    opacity: 0;
+  }
+  18%, 100% {
+    transform: translateX(0);
+    opacity: 0;
+  }
+}
 @keyframes arrow-right {
   7% {
     transform: translateX(8px);
@@ -861,6 +889,24 @@ p {
     opacity: 0;
   }
   18%, 100% {
+    transform: translateX(0);
+    opacity: 0;
+  }
+}
+@-webkit-keyframes arrow-left {
+  0%, 30% {
+    transform: translateX(0);
+    opacity: 0;
+  }
+  37% {
+    transform: translateX(-8px);
+    opacity: 1;
+  }
+  47% {
+    transform: translateX(-10px);
+    opacity: 0;
+  }
+  48%, 100% {
     transform: translateX(0);
     opacity: 0;
   }
@@ -882,6 +928,10 @@ p {
     transform: translateX(0);
     opacity: 0;
   }
+}
+.wrapper .flexWrapper main section.brewery .category_wrap .slick-track {
+  margin-left: 0;
+  margin-right: 0;
 }
 .wrapper .flexWrapper main section.brewery .category_wrap .brewery_item {
   width: 100%;
@@ -994,55 +1044,57 @@ p {
 }
 .wrapper .flexWrapper main section.brewery .brewery_content .brewery .brewery_box .map iframe {
   width: 100%;
+  height: 400px;
 }
 @media screen and (min-width: 1024px) {
   .wrapper .flexWrapper main section.brewery .brewery_content .brewery .brewery_box .map {
     display: none;
   }
 }
-.wrapper .flexWrapper main section.brewery .brewery_content .brewery.b1 .brewery_box, .wrapper .flexWrapper main section.brewery .brewery_content .brewery.b5 .brewery_box {
+.wrapper .flexWrapper main section.brewery .brewery_content .brewery.b1 .brewery_box {
   width: 100%;
   display: flex;
   flex-direction: column;
 }
 @media screen and (min-width: 1024px) {
-  .wrapper .flexWrapper main section.brewery .brewery_content .brewery.b1 .brewery_box, .wrapper .flexWrapper main section.brewery .brewery_content .brewery.b5 .brewery_box {
+  .wrapper .flexWrapper main section.brewery .brewery_content .brewery.b1 .brewery_box {
     height: 500px;
     flex-direction: row;
   }
 }
-.wrapper .flexWrapper main section.brewery .brewery_content .brewery.b1 .brewery_box .alcohol, .wrapper .flexWrapper main section.brewery .brewery_content .brewery.b5 .brewery_box .alcohol {
+.wrapper .flexWrapper main section.brewery .brewery_content .brewery.b1 .brewery_box .alcohol {
   margin-bottom: 50px;
   width: 100%;
 }
 @media screen and (min-width: 1024px) {
-  .wrapper .flexWrapper main section.brewery .brewery_content .brewery.b1 .brewery_box .alcohol, .wrapper .flexWrapper main section.brewery .brewery_content .brewery.b5 .brewery_box .alcohol {
+  .wrapper .flexWrapper main section.brewery .brewery_content .brewery.b1 .brewery_box .alcohol {
     width: 30%;
     margin-right: 5%;
   }
 }
-.wrapper .flexWrapper main section.brewery .brewery_content .brewery.b1 .brewery_box .alcohol strong, .wrapper .flexWrapper main section.brewery .brewery_content .brewery.b5 .brewery_box .alcohol strong {
+.wrapper .flexWrapper main section.brewery .brewery_content .brewery.b1 .brewery_box .alcohol strong {
   display: block;
   font-weight: normal;
   font-size: 1.5em;
 }
-.wrapper .flexWrapper main section.brewery .brewery_content .brewery.b1 .brewery_box .alcohol img, .wrapper .flexWrapper main section.brewery .brewery_content .brewery.b5 .brewery_box .alcohol img {
+.wrapper .flexWrapper main section.brewery .brewery_content .brewery.b1 .brewery_box .alcohol img {
   display: block;
   margin-top: 20px;
   margin: 0 auto;
   width: 25%;
 }
 @media screen and (min-width: 1024px) {
-  .wrapper .flexWrapper main section.brewery .brewery_content .brewery.b1 .brewery_box .alcohol img, .wrapper .flexWrapper main section.brewery .brewery_content .brewery.b5 .brewery_box .alcohol img {
+  .wrapper .flexWrapper main section.brewery .brewery_content .brewery.b1 .brewery_box .alcohol img {
     width: 35%;
-    height: 90%;
+    height: 80%;
+    margin-top: 50px;
   }
 }
-.wrapper .flexWrapper main section.brewery .brewery_content .brewery.b1 .brewery_box .alcohol p, .wrapper .flexWrapper main section.brewery .brewery_content .brewery.b5 .brewery_box .alcohol p {
+.wrapper .flexWrapper main section.brewery .brewery_content .brewery.b1 .brewery_box .alcohol p {
   text-align: center;
 }
 @media screen and (min-width: 1024px) {
-  .wrapper .flexWrapper main section.brewery .brewery_content .brewery.b1 .brewery_box .brewery_pic, .wrapper .flexWrapper main section.brewery .brewery_content .brewery.b5 .brewery_box .brewery_pic {
+  .wrapper .flexWrapper main section.brewery .brewery_content .brewery.b1 .brewery_box .brewery_pic {
     display: flex;
     flex-direction: column;
     width: 30%;
@@ -1050,24 +1102,24 @@ p {
     margin-right: 5%;
   }
 }
-.wrapper .flexWrapper main section.brewery .brewery_content .brewery.b1 .brewery_box .brewery_pic .img_box, .wrapper .flexWrapper main section.brewery .brewery_content .brewery.b5 .brewery_box .brewery_pic .img_box {
+.wrapper .flexWrapper main section.brewery .brewery_content .brewery.b1 .brewery_box .brewery_pic .img_box {
   height: 50%;
 }
 @media screen and (min-width: 1024px) {
-  .wrapper .flexWrapper main section.brewery .brewery_content .brewery.b1 .brewery_box .brewery_pic .img_box img, .wrapper .flexWrapper main section.brewery .brewery_content .brewery.b5 .brewery_box .brewery_pic .img_box img {
+  .wrapper .flexWrapper main section.brewery .brewery_content .brewery.b1 .brewery_box .brewery_pic .img_box img {
     width: 100%;
     height: 90%;
   }
 }
-.wrapper .flexWrapper main section.brewery .brewery_content .brewery.b1 .brewery_box .text, .wrapper .flexWrapper main section.brewery .brewery_content .brewery.b5 .brewery_box .text {
+.wrapper .flexWrapper main section.brewery .brewery_content .brewery.b1 .brewery_box .text {
   margin-bottom: 100px;
 }
 @media screen and (min-width: 1024px) {
-  .wrapper .flexWrapper main section.brewery .brewery_content .brewery.b1 .brewery_box .text, .wrapper .flexWrapper main section.brewery .brewery_content .brewery.b5 .brewery_box .text {
+  .wrapper .flexWrapper main section.brewery .brewery_content .brewery.b1 .brewery_box .text {
     width: 30%;
   }
 }
-.wrapper .flexWrapper main section.brewery .brewery_content .brewery.b1 .brewery_box .text a, .wrapper .flexWrapper main section.brewery .brewery_content .brewery.b5 .brewery_box .text a {
+.wrapper .flexWrapper main section.brewery .brewery_content .brewery.b1 .brewery_box .text a {
   font-family: "NotoSerifKR-Regular";
   font-size: 1.25em;
   margin: 30px 0;
@@ -1075,36 +1127,36 @@ p {
   text-decoration: underline;
 }
 @media screen and (min-width: 1024px) {
-  .wrapper .flexWrapper main section.brewery .brewery_content .brewery.b1 .brewery_box .text a, .wrapper .flexWrapper main section.brewery .brewery_content .brewery.b5 .brewery_box .text a {
+  .wrapper .flexWrapper main section.brewery .brewery_content .brewery.b1 .brewery_box .text a {
     display: none;
   }
 }
-.wrapper .flexWrapper main section.brewery .brewery_content .brewery.b1 .brewery_box .text p, .wrapper .flexWrapper main section.brewery .brewery_content .brewery.b5 .brewery_box .text p {
+.wrapper .flexWrapper main section.brewery .brewery_content .brewery.b1 .brewery_box .text p {
   line-height: 30px;
   display: none;
 }
 @media screen and (min-width: 1024px) {
-  .wrapper .flexWrapper main section.brewery .brewery_content .brewery.b1 .brewery_box .text p, .wrapper .flexWrapper main section.brewery .brewery_content .brewery.b5 .brewery_box .text p {
+  .wrapper .flexWrapper main section.brewery .brewery_content .brewery.b1 .brewery_box .text p {
     display: block;
   }
 }
-.wrapper .flexWrapper main section.brewery .brewery_content .brewery.b2 .brewery_box, .wrapper .flexWrapper main section.brewery .brewery_content .brewery.b4 .brewery_box {
+.wrapper .flexWrapper main section.brewery .brewery_content .brewery.b2 .brewery_box {
   width: 100%;
   display: flex;
   flex-direction: column;
 }
 @media screen and (min-width: 1024px) {
-  .wrapper .flexWrapper main section.brewery .brewery_content .brewery.b2 .brewery_box, .wrapper .flexWrapper main section.brewery .brewery_content .brewery.b4 .brewery_box {
+  .wrapper .flexWrapper main section.brewery .brewery_content .brewery.b2 .brewery_box {
     height: 500px;
     flex-direction: row;
     justify-content: space-between;
   }
 }
-.wrapper .flexWrapper main section.brewery .brewery_content .brewery.b2 .brewery_box .brewery_semi, .wrapper .flexWrapper main section.brewery .brewery_content .brewery.b4 .brewery_box .brewery_semi {
+.wrapper .flexWrapper main section.brewery .brewery_content .brewery.b2 .brewery_box .brewery_semi {
   order: 3;
 }
 @media screen and (min-width: 1024px) {
-  .wrapper .flexWrapper main section.brewery .brewery_content .brewery.b2 .brewery_box .brewery_semi, .wrapper .flexWrapper main section.brewery .brewery_content .brewery.b4 .brewery_box .brewery_semi {
+  .wrapper .flexWrapper main section.brewery .brewery_content .brewery.b2 .brewery_box .brewery_semi {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -1112,47 +1164,47 @@ p {
     height: 100%;
   }
 }
-.wrapper .flexWrapper main section.brewery .brewery_content .brewery.b2 .brewery_box .brewery_semi .brewery_pic, .wrapper .flexWrapper main section.brewery .brewery_content .brewery.b4 .brewery_box .brewery_semi .brewery_pic {
+.wrapper .flexWrapper main section.brewery .brewery_content .brewery.b2 .brewery_box .brewery_semi .brewery_pic {
   display: none;
 }
 @media screen and (min-width: 1024px) {
-  .wrapper .flexWrapper main section.brewery .brewery_content .brewery.b2 .brewery_box .brewery_semi .brewery_pic, .wrapper .flexWrapper main section.brewery .brewery_content .brewery.b4 .brewery_box .brewery_semi .brewery_pic {
+  .wrapper .flexWrapper main section.brewery .brewery_content .brewery.b2 .brewery_box .brewery_semi .brewery_pic {
     height: 50%;
     display: flex;
     justify-content: space-between;
   }
 }
-.wrapper .flexWrapper main section.brewery .brewery_content .brewery.b2 .brewery_box .brewery_semi .brewery_pic .img_box, .wrapper .flexWrapper main section.brewery .brewery_content .brewery.b4 .brewery_box .brewery_semi .brewery_pic .img_box {
+.wrapper .flexWrapper main section.brewery .brewery_content .brewery.b2 .brewery_box .brewery_semi .brewery_pic .img_box {
   width: 100%;
   position: relative;
   display: flex;
   height: 300px;
 }
 @media screen and (min-width: 1024px) {
-  .wrapper .flexWrapper main section.brewery .brewery_content .brewery.b2 .brewery_box .brewery_semi .brewery_pic .img_box, .wrapper .flexWrapper main section.brewery .brewery_content .brewery.b4 .brewery_box .brewery_semi .brewery_pic .img_box {
+  .wrapper .flexWrapper main section.brewery .brewery_content .brewery.b2 .brewery_box .brewery_semi .brewery_pic .img_box {
     width: 100%;
     width: 48%;
   }
 }
-.wrapper .flexWrapper main section.brewery .brewery_content .brewery.b2 .brewery_box .brewery_semi .brewery_pic .img_box img, .wrapper .flexWrapper main section.brewery .brewery_content .brewery.b4 .brewery_box .brewery_semi .brewery_pic .img_box img {
+.wrapper .flexWrapper main section.brewery .brewery_content .brewery.b2 .brewery_box .brewery_semi .brewery_pic .img_box img {
   width: 100%;
 }
 @media screen and (min-width: 1024px) {
-  .wrapper .flexWrapper main section.brewery .brewery_content .brewery.b2 .brewery_box .brewery_semi .brewery_pic .img_box img, .wrapper .flexWrapper main section.brewery .brewery_content .brewery.b4 .brewery_box .brewery_semi .brewery_pic .img_box img {
+  .wrapper .flexWrapper main section.brewery .brewery_content .brewery.b2 .brewery_box .brewery_semi .brewery_pic .img_box img {
     height: 225px;
   }
 }
-.wrapper .flexWrapper main section.brewery .brewery_content .brewery.b2 .brewery_box .brewery_semi .text, .wrapper .flexWrapper main section.brewery .brewery_content .brewery.b4 .brewery_box .brewery_semi .text {
+.wrapper .flexWrapper main section.brewery .brewery_content .brewery.b2 .brewery_box .brewery_semi .text {
   margin-bottom: 100px;
 }
 @media screen and (min-width: 1024px) {
-  .wrapper .flexWrapper main section.brewery .brewery_content .brewery.b2 .brewery_box .brewery_semi .text, .wrapper .flexWrapper main section.brewery .brewery_content .brewery.b4 .brewery_box .brewery_semi .text {
+  .wrapper .flexWrapper main section.brewery .brewery_content .brewery.b2 .brewery_box .brewery_semi .text {
     width: 100%;
     height: 50%;
     margin: 0;
   }
 }
-.wrapper .flexWrapper main section.brewery .brewery_content .brewery.b2 .brewery_box .brewery_semi .text a, .wrapper .flexWrapper main section.brewery .brewery_content .brewery.b4 .brewery_box .brewery_semi .text a {
+.wrapper .flexWrapper main section.brewery .brewery_content .brewery.b2 .brewery_box .brewery_semi .text a {
   font-family: "NotoSerifKR-Regular";
   font-size: 1.25em;
   margin: 30px 0;
@@ -1160,51 +1212,264 @@ p {
   text-decoration: underline;
 }
 @media screen and (min-width: 1024px) {
-  .wrapper .flexWrapper main section.brewery .brewery_content .brewery.b2 .brewery_box .brewery_semi .text a, .wrapper .flexWrapper main section.brewery .brewery_content .brewery.b4 .brewery_box .brewery_semi .text a {
+  .wrapper .flexWrapper main section.brewery .brewery_content .brewery.b2 .brewery_box .brewery_semi .text a {
     display: none;
   }
 }
-.wrapper .flexWrapper main section.brewery .brewery_content .brewery.b2 .brewery_box .brewery_semi .text p, .wrapper .flexWrapper main section.brewery .brewery_content .brewery.b4 .brewery_box .brewery_semi .text p {
+.wrapper .flexWrapper main section.brewery .brewery_content .brewery.b2 .brewery_box .brewery_semi .text p {
   line-height: 30px;
   display: none;
 }
 @media screen and (min-width: 1024px) {
-  .wrapper .flexWrapper main section.brewery .brewery_content .brewery.b2 .brewery_box .brewery_semi .text p, .wrapper .flexWrapper main section.brewery .brewery_content .brewery.b4 .brewery_box .brewery_semi .text p {
+  .wrapper .flexWrapper main section.brewery .brewery_content .brewery.b2 .brewery_box .brewery_semi .text p {
     display: block;
   }
 }
-.wrapper .flexWrapper main section.brewery .brewery_content .brewery.b2 .brewery_box .map, .wrapper .flexWrapper main section.brewery .brewery_content .brewery.b4 .brewery_box .map {
+.wrapper .flexWrapper main section.brewery .brewery_content .brewery.b2 .brewery_box .map {
   order: 2;
 }
-.wrapper .flexWrapper main section.brewery .brewery_content .brewery.b2 .brewery_box .alcohol, .wrapper .flexWrapper main section.brewery .brewery_content .brewery.b4 .brewery_box .alcohol {
+.wrapper .flexWrapper main section.brewery .brewery_content .brewery.b2 .brewery_box .alcohol {
   margin-bottom: 50px;
   width: 100%;
   order: 1;
 }
 @media screen and (min-width: 1024px) {
-  .wrapper .flexWrapper main section.brewery .brewery_content .brewery.b2 .brewery_box .alcohol, .wrapper .flexWrapper main section.brewery .brewery_content .brewery.b4 .brewery_box .alcohol {
+  .wrapper .flexWrapper main section.brewery .brewery_content .brewery.b2 .brewery_box .alcohol {
     width: 30%;
     height: 100%;
     order: 3;
   }
 }
-.wrapper .flexWrapper main section.brewery .brewery_content .brewery.b2 .brewery_box .alcohol strong, .wrapper .flexWrapper main section.brewery .brewery_content .brewery.b4 .brewery_box .alcohol strong {
+.wrapper .flexWrapper main section.brewery .brewery_content .brewery.b2 .brewery_box .alcohol strong {
   display: block;
   font-weight: normal;
   font-size: 1.5em;
 }
-.wrapper .flexWrapper main section.brewery .brewery_content .brewery.b2 .brewery_box .alcohol img, .wrapper .flexWrapper main section.brewery .brewery_content .brewery.b4 .brewery_box .alcohol img {
+.wrapper .flexWrapper main section.brewery .brewery_content .brewery.b2 .brewery_box .alcohol img {
+  width: 30%;
   display: block;
   margin-top: 20px;
   margin: 0 auto;
 }
 @media screen and (min-width: 1024px) {
-  .wrapper .flexWrapper main section.brewery .brewery_content .brewery.b2 .brewery_box .alcohol img, .wrapper .flexWrapper main section.brewery .brewery_content .brewery.b4 .brewery_box .alcohol img {
+  .wrapper .flexWrapper main section.brewery .brewery_content .brewery.b2 .brewery_box .alcohol img {
+    width: 40%;
+    height: 50%;
+    margin-top: 50px;
+  }
+}
+.wrapper .flexWrapper main section.brewery .brewery_content .brewery.b2 .brewery_box .alcohol p {
+  text-align: center;
+}
+.wrapper .flexWrapper main section.brewery .brewery_content .brewery.b4 .brewery_box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main section.brewery .brewery_content .brewery.b4 .brewery_box {
+    height: 500px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+.wrapper .flexWrapper main section.brewery .brewery_content .brewery.b4 .brewery_box .brewery_semi {
+  order: 3;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main section.brewery .brewery_content .brewery.b4 .brewery_box .brewery_semi {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 65%;
+    height: 100%;
+  }
+}
+.wrapper .flexWrapper main section.brewery .brewery_content .brewery.b4 .brewery_box .brewery_semi .brewery_pic {
+  display: none;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main section.brewery .brewery_content .brewery.b4 .brewery_box .brewery_semi .brewery_pic {
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.wrapper .flexWrapper main section.brewery .brewery_content .brewery.b4 .brewery_box .brewery_semi .brewery_pic .img_box {
+  width: 100%;
+  position: relative;
+  display: flex;
+  height: 300px;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main section.brewery .brewery_content .brewery.b4 .brewery_box .brewery_semi .brewery_pic .img_box {
+    width: 100%;
+    width: 48%;
+  }
+}
+.wrapper .flexWrapper main section.brewery .brewery_content .brewery.b4 .brewery_box .brewery_semi .brewery_pic .img_box img {
+  width: 100%;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main section.brewery .brewery_content .brewery.b4 .brewery_box .brewery_semi .brewery_pic .img_box img {
+    height: 225px;
+  }
+}
+.wrapper .flexWrapper main section.brewery .brewery_content .brewery.b4 .brewery_box .brewery_semi .text {
+  margin-bottom: 100px;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main section.brewery .brewery_content .brewery.b4 .brewery_box .brewery_semi .text {
+    width: 100%;
+    height: 50%;
+    margin: 0;
+  }
+}
+.wrapper .flexWrapper main section.brewery .brewery_content .brewery.b4 .brewery_box .brewery_semi .text a {
+  font-family: "NotoSerifKR-Regular";
+  font-size: 1.25em;
+  margin: 30px 0;
+  text-align: center;
+  text-decoration: underline;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main section.brewery .brewery_content .brewery.b4 .brewery_box .brewery_semi .text a {
+    display: none;
+  }
+}
+.wrapper .flexWrapper main section.brewery .brewery_content .brewery.b4 .brewery_box .brewery_semi .text p {
+  line-height: 30px;
+  display: none;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main section.brewery .brewery_content .brewery.b4 .brewery_box .brewery_semi .text p {
+    display: block;
+  }
+}
+.wrapper .flexWrapper main section.brewery .brewery_content .brewery.b4 .brewery_box .map {
+  order: 2;
+}
+.wrapper .flexWrapper main section.brewery .brewery_content .brewery.b4 .brewery_box .alcohol {
+  margin-bottom: 50px;
+  width: 100%;
+  order: 1;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main section.brewery .brewery_content .brewery.b4 .brewery_box .alcohol {
+    width: 30%;
+    height: 100%;
+    order: 3;
+  }
+}
+.wrapper .flexWrapper main section.brewery .brewery_content .brewery.b4 .brewery_box .alcohol strong {
+  display: block;
+  font-weight: normal;
+  font-size: 1.5em;
+}
+.wrapper .flexWrapper main section.brewery .brewery_content .brewery.b4 .brewery_box .alcohol img {
+  width: 17%;
+  display: block;
+  margin-top: 20px;
+  margin: 0 auto;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main section.brewery .brewery_content .brewery.b4 .brewery_box .alcohol img {
+    width: 30%;
+    height: 70%;
+    margin-top: 50px;
+  }
+}
+.wrapper .flexWrapper main section.brewery .brewery_content .brewery.b4 .brewery_box .alcohol p {
+  text-align: center;
+}
+.wrapper .flexWrapper main section.brewery .brewery_content .brewery.b5 .brewery_box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main section.brewery .brewery_content .brewery.b5 .brewery_box {
+    height: 500px;
+    flex-direction: row;
+  }
+}
+.wrapper .flexWrapper main section.brewery .brewery_content .brewery.b5 .brewery_box .alcohol {
+  margin-bottom: 50px;
+  width: 100%;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main section.brewery .brewery_content .brewery.b5 .brewery_box .alcohol {
+    width: 30%;
+    margin-right: 5%;
+  }
+}
+.wrapper .flexWrapper main section.brewery .brewery_content .brewery.b5 .brewery_box .alcohol strong {
+  display: block;
+  font-weight: normal;
+  font-size: 1.5em;
+}
+.wrapper .flexWrapper main section.brewery .brewery_content .brewery.b5 .brewery_box .alcohol img {
+  display: block;
+  margin-top: 20px;
+  margin: 0 auto;
+  width: 25%;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main section.brewery .brewery_content .brewery.b5 .brewery_box .alcohol img {
+    width: 30%;
+    height: 50%;
+    margin-top: 50px;
+  }
+}
+.wrapper .flexWrapper main section.brewery .brewery_content .brewery.b5 .brewery_box .alcohol p {
+  text-align: center;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main section.brewery .brewery_content .brewery.b5 .brewery_box .brewery_pic {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 100%;
+    margin-right: 5%;
+  }
+}
+.wrapper .flexWrapper main section.brewery .brewery_content .brewery.b5 .brewery_box .brewery_pic .img_box {
+  height: 50%;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main section.brewery .brewery_content .brewery.b5 .brewery_box .brewery_pic .img_box img {
+    width: 100%;
     height: 90%;
   }
 }
-.wrapper .flexWrapper main section.brewery .brewery_content .brewery.b2 .brewery_box .alcohol p, .wrapper .flexWrapper main section.brewery .brewery_content .brewery.b4 .brewery_box .alcohol p {
+.wrapper .flexWrapper main section.brewery .brewery_content .brewery.b5 .brewery_box .text {
+  margin-bottom: 100px;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main section.brewery .brewery_content .brewery.b5 .brewery_box .text {
+    width: 30%;
+  }
+}
+.wrapper .flexWrapper main section.brewery .brewery_content .brewery.b5 .brewery_box .text a {
+  font-family: "NotoSerifKR-Regular";
+  font-size: 1.25em;
+  margin: 30px 0;
   text-align: center;
+  text-decoration: underline;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main section.brewery .brewery_content .brewery.b5 .brewery_box .text a {
+    display: none;
+  }
+}
+.wrapper .flexWrapper main section.brewery .brewery_content .brewery.b5 .brewery_box .text p {
+  line-height: 30px;
+  display: none;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main section.brewery .brewery_content .brewery.b5 .brewery_box .text p {
+    display: block;
+  }
 }
 .wrapper .flexWrapper main section.brewery .brewery_content .brewery.b3 .brewery_box, .wrapper .flexWrapper main section.brewery .brewery_content .brewery.b6 .brewery_box {
   width: 100%;
@@ -1242,8 +1507,9 @@ p {
 }
 @media screen and (min-width: 1024px) {
   .wrapper .flexWrapper main section.brewery .brewery_content .brewery.b3 .brewery_box .alcohol img, .wrapper .flexWrapper main section.brewery .brewery_content .brewery.b6 .brewery_box .alcohol img {
-    width: 40%;
-    height: 80%;
+    width: 30%;
+    height: 50%;
+    margin-top: 50px;
   }
 }
 .wrapper .flexWrapper main section.brewery .brewery_content .brewery.b3 .brewery_box .alcohol p, .wrapper .flexWrapper main section.brewery .brewery_content .brewery.b6 .brewery_box .alcohol p {

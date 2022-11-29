@@ -31,30 +31,69 @@ $(function() {
 // slick slider
     var slider = $('.brewery_item');
     slider.slick({
-        autoplay: true,
+        autoplay: false,
         autoplaySpeed:2000,
         dots: false,
         variableWidth : true,
+        draggable: true,
+        pauseOnHover:true,
         infinite: false,
-        slidesToShow: 2,
-        slidesToScroll: 1,
+        mobileFirst: true,
+        slidesToShow: 4,
+        slidesToScroll: 2,
         mobileFirst: true,
         responsive: [
             {
                 breakpoint:390,
                 settings: {
                     slidesToShow: 2,
-                    slidesToScroll: 1
+                    slidesToScroll: 1,
                 }
             },
             {
                 breakpoint:768,
                 settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 1
+                    slidesToShow: 4,
+                    slidesToScroll: 2,
                 }
             }
         ]
+    });
+
+    $(document).ready(function() {
+        var $slider = $('.multiple-items');
+        var $progressBar = $('.swiper_scrollbar');
+        var $progressBarLabel = $('.slider_label');
+        
+        $slider.on('beforeChange', function(event, slick, currentSlide, nextSlide) {   
+            var calc = ( (nextSlide) / (slick.slideCount-1) ) * 100;
+            
+            $progressBar
+            .css('background-size', calc + '% 100%')
+            .attr('aria-valuenow', calc );
+            
+            $progressBarLabel.text( calc + '% completed' );
+        });
+        
+        $slider.slick({
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            speed: 400,
+            responsive: [
+            {
+                breakpoint:768,
+                settings: {
+                slidesToShow: 3
+                }
+            },
+            {
+                breakpoint:390,
+                settings: {
+                slidesToShow: 1
+                }
+            }
+            ]
+        });
     });
 
 // section3 아코디언탭 on mobile
@@ -78,6 +117,19 @@ $(function() {
         $('.brewery_content > div').eq(index).css("display", "block");
     });
 
+});
+
+// mobile menu_bar
+$(".beforeMenu").on("click", function () {
+    $(".wrapper1").slideDown();
+    $(".beforeMenu").hide();
+    $(".afterMenu").show();
+});
+
+    $(".afterMenu").on("click", function () {
+    $(".wrapper1").slideUp();
+    $(".afterMenu").hide();
+    $(".beforeMenu").show();
 });
 
 // side bar

@@ -11,10 +11,10 @@ $(function() {
         $(".beforeMenu").show();
         });
 
-
+        
     const logoMenu = $(".footer").offset().top;
 
-    console.log(1620);
+    
 
     $(window).on("scroll", function (e) {
     console.log($(document).scrollTop());
@@ -28,6 +28,8 @@ $(function() {
     }
     });
 
+    $('.logoguide').css({'opacity':'0'});
+
     $(window).on("scroll", function() {
         var sc_top = $(this).scrollTop();
         console.log(sc_top);
@@ -39,7 +41,7 @@ $(function() {
         if($(this).scrollTop() > 800){
             $('.button').animate({'opacity':'1'}, 1000);
         }
-        if($(this).scrollTop() > 1200){
+        if($(this).scrollTop() > 1000){
             $('.snsImg').animate({'opacity':'1'}, 1000);
         }
         if($(this).scrollTop() > 1900){
