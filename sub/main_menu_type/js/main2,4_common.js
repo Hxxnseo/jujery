@@ -29,31 +29,48 @@ $(function() {
 
 
 // slick slider
-    var slider = $('.brewery_item');
-    slider.slick({
-        autoplay: false,
-        dots: false,
-        variableWidth : true,
-        draggable: true,
-        pauseOnHover:true,
-        infinite: false,
-        mobileFirst: true,
-        slidesToShow: 4,
-        slidesToScroll: 1,
-        mobileFirst: true,
-        responsive: [
-            {
-                breakpoint:390,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 1,
-                }
+    // var slider = $('.brewery_item');
+    // slider.slick({
+    //     autoplay: false,
+    //     dots: false,
+    //     variableWidth : true,
+    //     draggable: true,
+    //     pauseOnHover:true,
+    //     infinite: false,
+    //     mobileFirst: true,
+    //     slidesToShow: 4,
+    //     slidesToScroll: 1,
+    //     mobileFirst: true,
+    //     responsive: [
+    //         {
+    //             breakpoint:390,
+    //             settings: {
+    //                 slidesToShow: 2,
+    //                 slidesToScroll: 1,
+    //             }
+    //         },
+    //         {
+    //             breakpoint: 768,
+    //             settings: 'unslick'
+    //         }
+    //     ]
+    // });
+
+    $('.owl-carousel').owlCarousel({
+        loop:false,
+        margin:10,
+        nav:false,
+        responsive:{
+            0:{
+                items:2
             },
-            {
-                breakpoint: 768,
-                settings: 'unslick'
+            600:{
+                items:3
+            },
+            1000:{
+                items:5
             }
-        ]
+        }
     });
 
     $(document).ready(function() {
