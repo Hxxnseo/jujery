@@ -41,6 +41,8 @@
     }
     header {
       height: 80px;
+      position: relative;
+      z-index: 20000;
 
       @include responsive(pc-screens) {
         height: auto;
