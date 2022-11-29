@@ -28,7 +28,7 @@ $(function() {
     });
 
 
- // slick slider
+// slick slider
     var slider = $('.brewery_item');
     slider.slick({
         autoplay: false,
@@ -40,7 +40,8 @@ $(function() {
         infinite: false,
         mobileFirst: true,
         slidesToShow: 4,
-        slidesToScroll: 1,
+        slidesToScroll: 2,
+        mobileFirst: true,
         responsive: [
             {
                 breakpoint:390,
@@ -53,9 +54,9 @@ $(function() {
                 breakpoint:768,
                 settings: {
                     slidesToShow: 4,
-                    slidesToScroll: 1,
+                    slidesToScroll: 2,
                 }
-            },
+            }
         ]
     });
 
@@ -118,7 +119,6 @@ $(function() {
 
 });
 
-
 // mobile menu_bar
 $(".beforeMenu").on("click", function () {
     $(".wrapper1").slideDown();
@@ -141,7 +141,7 @@ $(function () {
     $(window).on("scroll", function (e) {
     	console.log($(document).scrollTop());
 
-    	if ($(document).scrollTop() > 2300) {
+    	if ($(document).scrollTop() > 2140) {
         	$(".menu .gnb li a").css("color", "white");
         	$(".logo h1 img").attr("src", "../../../images/logo/main_white_logo.png");
       	} else {
