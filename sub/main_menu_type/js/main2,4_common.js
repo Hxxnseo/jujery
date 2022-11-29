@@ -31,8 +31,7 @@ $(function() {
 // slick slider
     var slider = $('.brewery_item');
     slider.slick({
-        autoplay: true,
-        autoplaySpeed:2000,
+        autoplay: false,
         dots: false,
         variableWidth : true,
         draggable: true,
@@ -51,11 +50,8 @@ $(function() {
                 }
             },
             {
-                breakpoint:768,
-                settings: {
-                    slidesToShow: 4,
-                    slidesToScroll: 1,
-                }
+                breakpoint: 768,
+                settings: 'unslick'
             }
         ]
     });
