@@ -31,7 +31,7 @@ $(function() {
 // slick slider
     var slider = $('.brewery_item');
     slider.slick({
-        autoplay: false,
+        autoplay: true,
         autoplaySpeed:2000,
         dots: false,
         variableWidth : true,
@@ -40,7 +40,7 @@ $(function() {
         infinite: false,
         mobileFirst: true,
         slidesToShow: 4,
-        slidesToScroll: 2,
+        slidesToScroll: 1,
         mobileFirst: true,
         responsive: [
             {
@@ -54,7 +54,7 @@ $(function() {
                 breakpoint:768,
                 settings: {
                     slidesToShow: 4,
-                    slidesToScroll: 2,
+                    slidesToScroll: 1,
                 }
             }
         ]
