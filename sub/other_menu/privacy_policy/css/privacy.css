@@ -98,7 +98,7 @@ p {
 .wrapper .flexWrapper header {
   height: 80px;
   position: relative;
-  z-index: 20000;
+  z-index: 210000;
 }
 @media screen and (min-width: 1024px) {
   .wrapper .flexWrapper header {
