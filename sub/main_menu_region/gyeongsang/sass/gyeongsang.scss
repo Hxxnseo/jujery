@@ -41,6 +41,8 @@
     }
     header {
       height: 80px;
+      position: relative;
+      z-index: 20000;
 
       @include responsive(pc-screens) {
         height: auto;
@@ -321,8 +323,8 @@
                 .sec2-pic {
                   position: absolute;
                   top: 35px;
-                  left: 50%; 
-                  transform: translate(-50%, 0); // 
+                  left: 50%;
+                  transform: translate(-50%, 0); //
                   width: 250px;
                   height: 300px;
                   z-index: 0;
@@ -331,7 +333,6 @@
                     width: 470px;
                     height: 560px;
                     position: absolute;
-                    
                   }
                 }
 
