@@ -56,7 +56,6 @@ $(function () {
       console.log($(this).index());
       $(e.target).show();
       $(".pcSec2").css("background-image", bg[$(this).index()]);
-      // $(".pcSec2").animate({ background: bg[$(this).index()] }, 1000, "linear");
     },
     mouseleave: e => {
       for (let i = 0; i < list.length; i++) {
@@ -65,12 +64,6 @@ $(function () {
       $(".pcSec2").css("background-image", "none");
     },
   });
-
-  // $(".mobileMenu").on({
-  //   click: function () {
-  //     $(".wrapper1").slideDown();
-  //   },
-  // });
 
   $(".beforeMenu").on("click", function () {
     $(".wrapper1").slideDown();

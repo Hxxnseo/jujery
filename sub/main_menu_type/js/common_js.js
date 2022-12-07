@@ -27,38 +27,25 @@ $(function() {
         .css("display","none");
     });
 
-
- // slick slider
-    var slider = $('.brewery_item');
-    slider.slick({
-        autoplay: false,
-        autoplaySpeed:2000,
-        dots: false,
-        variableWidth : true,
-        draggable: true,
-        pauseOnHover:true,
-        infinite: false,
-        mobileFirst: true,
-        slidesToShow: 4,
-        slidesToScroll: 1,
-        responsive: [
-            {
-                breakpoint:390,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 1,
-                }
+// section3 owl-carousel
+    $('.owl-carousel').owlCarousel({
+        loop:false,
+        margin:10,
+        nav:false,
+        responsive:{
+            0:{
+                items:2
             },
-            {
-                breakpoint:768,
-                settings: {
-                    slidesToShow: 4,
-                    slidesToScroll: 1,
-                }
+            600:{
+                items:3
             },
-        ]
+            1000:{
+                items:5
+            }
+        }
     });
 
+// section2 slick slider
     $(document).ready(function() {
         var $slider = $('.multiple-items');
         var $progressBar = $('.swiper_scrollbar');
@@ -110,12 +97,11 @@ $(function() {
 // section3 brewery-contents 연결
     $('.brewery_item .b_item').click(function(e) {
         e.preventDefault();
-        var index = $(this).index();
+        var index = $(".b_item").index(this);
         console.log(index);
         $('.brewery_content > div').css("display", "none");
         $('.brewery_content > div').eq(index).css("display", "block");
     });
-
 });
 
 
