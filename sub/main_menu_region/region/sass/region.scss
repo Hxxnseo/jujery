@@ -15,7 +15,7 @@
   // margin-right: 20px;
   // position: relative;
   width: 100%; // 모바일, 태블릿
-  // max-width: 1200px; // pc
+  // max-width: 1200px; // pcs
 
   @include responsive(pc-screens) {
     padding: 0;
