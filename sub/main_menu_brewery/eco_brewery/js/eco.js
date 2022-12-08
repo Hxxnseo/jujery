@@ -8,10 +8,10 @@ $(function () {
 
     if ($(document).scrollTop() > 700) {
       $(".menu .gnb li a").css("color", "white");
-      $(".logo h1 img").attr("src", "../../../../images/logo/main_white_logo.png");
+      $(".logo h1 img").attr("src", "../../../images/logo/main_white_logo.png");
     } else {
       $(".menu .gnb li a").css("color", "black");
-      $(".logo h1 img").attr("src", "../../../../images/logo/detail_black_logo.png");
+      $(".logo h1 img").attr("src", "../../../images/logo/detail_black_logo.png");
     }
   });
 

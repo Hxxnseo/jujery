@@ -1,7 +1,7 @@
 @charset "UTF-8";
 @font-face {
   font-family: "SANGJU Gyeongcheon Island";
-  src: url(../../../../font/SANGJU\ Gyeongcheon\ Island.woff);
+  src: url(../../../../font/SANGJU\ Gyeongcheon\ Island/);
 }
 @font-face {
   font-family: "NotoSerifKR-Regular";
@@ -9,7 +9,7 @@
 }
 @font-face {
   font-family: "SANGJU Gyeongcheon Island";
-  src: url(../../../../font/SANGJU\ Gyeongcheon\ Island.woff);
+  src: url(../../../../font/SANGJU\ Gyeongcheon\ Island/);
 }
 @font-face {
   font-family: "NotoSerifKR-Regular";
