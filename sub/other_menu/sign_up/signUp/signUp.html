@@ -4,12 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="title" property="og:title" content="회원가입">
-    <meta name="images" property="og:image" content="../../../images/icon/thumnail.png">
-    <meta name="description" property="og:description" content="우리 역사와 문화가 담긴 전통주를 만나보세요.">
-    <meta name="type" property="og:type" content="article">
+    <meta name="title" property="og:title" content="회원가입" />
+    <meta name="images" property="og:image" content="../../../images/icon/thumnail.png" />
+    <meta name="description" property="og:description" content="우리 역사와 문화가 담긴 전통주를 만나보세요." />
+    <meta name="type" property="og:type" content="article" />
     <link rel="stylesheet" href="./css/signUp.css" />
-    <link rel="shortcut icon" type="image" href="../../../main_menu_type/images/icon/jujerytitlelogo.png">
+    <link rel="shortcut icon" type="image" href="../../../main_menu_type/images/icon/jujerytitlelogo.png" />
     <title>회원가입</title>
     <script src="./js/signUp.js" defer></script>
     <script src="../../../main_menu_type/js/jquery.js" defer></script>
@@ -213,95 +213,99 @@
                   <li><a href="../../community/community.html">소통하기</a></li>
                   <li><a href="../../logo/logo.html">상징</a></li>
                 </ul>
-              </div> <!-- mainSubMenu -->
+              </div>
+              <!-- mainSubMenu -->
 
               <section class="signup">
                 <h2>signup</h2>
-                  <h3>회원가입</h3>
-                  <div class="flex_box">
-                    <span>기본정보</span>
-                    <span>*필수입력사항</span>
+                <h3>회원가입</h3>
+                <div class="flex_box">
+                  <span>기본정보</span>
+                  <span>*필수입력사항</span>
+                </div>
+                <form action="#" method="post" name="frm">
+                  <div class="id_box">
+                    <input type="text" name="user_id" id="user_id" placeholder="계정*(영문소문자/숫자,4~16자" minlength="4" maxlength="16" required />
+                    <button type="button" onclick="id_check();">중복확인</button>
                   </div>
-                  <form action="#" method="post" name="frm">
-                    <div class="id_box">
-                      <input type="text" name="user_id" id="user_id" placeholder="계정*(영문소문자/숫자,4~16자" minlength="4" maxlength="16" required>
-                      <button type="button" onclick="id_check();">중복확인</button>
-                    </div>
-                    <input type="password" name="user_pw" id="user_pw" placeholder="비밀번호*(영문소문자/숫자, 8~25자)" minlength="8" maxlength="25" required>
-                    <input type="password" name="user_pw2" id="user_pw2" placeholder="비밀번호확인*" minlength="8" maxlength="25" required>
-                    <div class="address_box">
-                      <input type="text" name="address1" id="address1" placeholder="우편번호" maxlength="5">
-                      <button type="button" id="find_button" onclick="sample6_execDaumPostcode();">우편번호 검색</button>
-                    </div>
-                    <input type="text" name="address2" id="address2" placeholder="주소">
-                    <input type="text" name="address3" id="address3" placeholder="나머지주소(선택입력가능)">
-                    <div class="phone_box">
-                      <select name="phone" id="phone">
-                          <option value="02">02</option>
-                          <option value="031">031</option>
-                          <option value="032">032</option>
-                          <option value="033">033</option>
-                          <option value="041">041</option>
-                          <option value="042">042</option>
-                          <option value="043">043</option>
-                          <option value="044">044</option>
-                          <option value="051">051</option>
-                          <option value="052">052</option>
-                          <option value="053">053</option>
-                          <option value="054">054</option>
-                          <option value="055">055</option>
-                          <option value="061">061</option>
-                          <option value="062">062</option>
-                          <option value="063">063</option>
-                          <option value="064">064</option>
-                          <option value="0502">0502</option>
-                          <option value="0503">0503</option>
-                          <option value="0504">0504</option>
-                          <option value="0506">0506</option>
-                          <option value="0507">0507</option>
-                          <option value="0508">0508</option>
-                          <option value="070">070</option>
-                        </select>
-                        <span>-</span>
-                        <input type="tel" name="phone2" id="phone2" maxlength="4" placeholder="일반전화" required>
-                        <span>-</span>
-                        <input type="tel" name="phone3" id="phone3" maxlength="4" required>
-                    </div> <!-- phone_box -->
-                    <div class="mobile_box">
-                      <select name="mobile" id="mobile">
-                          <option value="010">010</option>
-                          <option value="011">011</option>
-                          <option value="016">016</option>
-                          <option value="017">017</option>
-                          <option value="018">018</option>
-                          <option value="019">019</option>
-                      </select>
-                      <span>-</span>
-                      <input type="tel" name="mobile2" id="mobile2" maxlength="4" placeholder="휴대전화" required>
-                      <span>-</span>
-                      <input type="tel" name="mobile3" id="mobile3" maxlength="4" required>
-                    </div>
-                    <div class="email_box">
-                      <input type="text" name="email" id="email" maxlength="16" placeholder="이메일*" required>
-                      <span>@</span>
-                      <input type="text" name="email_server1" id="email_server1" maxlength="16" required>
-                      <select name="email_server2" id="email_server2" onchange="change_email();">
-                          <option value="">선택</option>
-                          <option value="naver.com">naver.com</option>
-                          <option value="daum.net">daum.net</option>
-                          <option value="gmail.com">gmail.com</option>
-                          <option value="yahoo.com">yahoo.com</option>
-                          <option value="hotmail.net">hotmail.net</option>
-                      </select>
-                    </div>
-                    <div class="signup_btn">
-                      <button type="button" onclick="validate();">회원가입</button>
-                      <button type="button" onclick="history.back();">회원가입 취소</button>
-                    </div>
-                  </form>
+                  <input type="password" name="user_pw" id="user_pw" placeholder="비밀번호*(영문소문자/숫자, 8~25자)" minlength="8" maxlength="25" required />
+                  <input type="password" name="user_pw2" id="user_pw2" placeholder="비밀번호확인*" minlength="8" maxlength="25" required />
+                  <div class="address_box">
+                    <input type="text" name="address1" id="address1" placeholder="우편번호" maxlength="5" />
+                    <button type="button" id="find_button" onclick="sample6_execDaumPostcode();">우편번호 검색</button>
+                  </div>
+                  <input type="text" name="address2" id="address2" placeholder="주소" />
+                  <input type="text" name="address3" id="address3" placeholder="나머지주소(선택입력가능)" />
+                  <div class="phone_box">
+                    <select name="phone" id="phone">
+                      <option value="02">02</option>
+                      <option value="031">031</option>
+                      <option value="032">032</option>
+                      <option value="033">033</option>
+                      <option value="041">041</option>
+                      <option value="042">042</option>
+                      <option value="043">043</option>
+                      <option value="044">044</option>
+                      <option value="051">051</option>
+                      <option value="052">052</option>
+                      <option value="053">053</option>
+                      <option value="054">054</option>
+                      <option value="055">055</option>
+                      <option value="061">061</option>
+                      <option value="062">062</option>
+                      <option value="063">063</option>
+                      <option value="064">064</option>
+                      <option value="0502">0502</option>
+                      <option value="0503">0503</option>
+                      <option value="0504">0504</option>
+                      <option value="0506">0506</option>
+                      <option value="0507">0507</option>
+                      <option value="0508">0508</option>
+                      <option value="070">070</option>
+                    </select>
+                    <span>-</span>
+                    <input type="tel" name="phone2" id="phone2" maxlength="4" placeholder="일반전화" required />
+                    <span>-</span>
+                    <input type="tel" name="phone3" id="phone3" maxlength="4" required />
+                  </div>
+                  <!-- phone_box -->
+                  <div class="mobile_box">
+                    <select name="mobile" id="mobile">
+                      <option value="010">010</option>
+                      <option value="011">011</option>
+                      <option value="016">016</option>
+                      <option value="017">017</option>
+                      <option value="018">018</option>
+                      <option value="019">019</option>
+                    </select>
+                    <span>-</span>
+                    <input type="tel" name="mobile2" id="mobile2" maxlength="4" placeholder="휴대전화" required />
+                    <span>-</span>
+                    <input type="tel" name="mobile3" id="mobile3" maxlength="4" required />
+                  </div>
+                  <div class="email_box">
+                    <input type="text" name="email" id="email" maxlength="16" placeholder="이메일*" required />
+                    <span>@</span>
+                    <input type="text" name="email_server1" id="email_server1" maxlength="16" required />
+                    <select name="email_server2" id="email_server2" onchange="change_email();">
+                      <option value="">선택</option>
+                      <option value="naver.com">naver.com</option>
+                      <option value="daum.net">daum.net</option>
+                      <option value="gmail.com">gmail.com</option>
+                      <option value="yahoo.com">yahoo.com</option>
+                      <option value="hotmail.net">hotmail.net</option>
+                    </select>
+                  </div>
+                  <div class="signup_btn">
+                    <button type="button" onclick="validate();">회원가입</button>
+                    <button type="button" onclick="history.back();">회원가입 취소</button>
+                  </div>
+                </form>
               </section>
-            </div> <!-- main -->
-          </div> <!-- container -->
+            </div>
+            <!-- main -->
+          </div>
+          <!-- container -->
         </main>
       </div>
 
@@ -321,16 +325,16 @@
               <div class="footSns">
                 <ul class="footSnsCont">
                   <li>
-                    <a href="#"><img src="../../../images/sns/sns_insta.png" alt="" /></a>
+                    <a href="#"><img src="../../../../images/sns/sns_insta.png" alt="" /></a>
                   </li>
                   <li>
-                    <a href="#"><img src="../../../images/sns/sns_twitter.png" alt="" /></a>
+                    <a href="#"><img src="../../../../images/sns/sns_twitter.png" alt="" /></a>
                   </li>
                   <li>
-                    <a href="#"><img src="../../../images/sns/sns_facebook.png" alt="" /></a>
+                    <a href="#"><img src="../../../../images/sns/sns_facebook.png" alt="" /></a>
                   </li>
                   <li>
-                    <a href="#"><img src="../../../images/sns/sns_tiktok.png" alt="" /></a>
+                    <a href="#"><img src="../../../../images/sns/sns_tiktok.png" alt="" /></a>
                   </li>
                 </ul>
               </div>

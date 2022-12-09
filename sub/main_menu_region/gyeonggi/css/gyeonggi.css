@@ -530,6 +530,12 @@ p {
 }
 .wrapper .flexWrapper main .main .bx-wrapper .bx-controls-direction {
   font-size: 30px;
+  display: none;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .flexWrapper main .main .bx-wrapper .bx-controls-direction {
+    display: block;
+  }
 }
 .wrapper .flexWrapper main .main .bx-wrapper .bx-controls-direction a {
   position: absolute;
@@ -970,4 +976,4 @@ footer .footer .footBox .footMenu ul li a {
   .wrapper1 .wrap-inner .container1 .footer .footerInfo1 p:last-child {
     margin-left: 100px;
   }
-}/*# sourceMappingURL=gyeonggi.css.map */
+} /*# sourceMappingURL=gyeonggi.css.map */
