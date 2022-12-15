@@ -11,8 +11,8 @@ function loginChk() {
         form.user_pw.focus();
         return;
     }
-    form.action = "login_ok.php";
     form.submit();
+    
 }
 
 onKeyDown="if(event.keyCode == 13){ secretChk('<?=$no?>');return false;}"
