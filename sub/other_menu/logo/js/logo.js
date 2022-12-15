@@ -29,12 +29,12 @@ $(function() {
     });
 
     $('.logoguide').css({'opacity':'0'});
-
+    
+    $('section').css('opacity', '0');
     $(window).on("scroll", function() {
         var sc_top = $(this).scrollTop();
         console.log(sc_top);
         
-        $('section').css('opacity', '0');
         if($(this).scrollTop() > 200){
             $('.logoguide').animate({'opacity':'1'}, 1000);
         }

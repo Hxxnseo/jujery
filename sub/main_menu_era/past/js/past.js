@@ -1,4 +1,5 @@
 $(function() {
+
     $(".beforeMenu").on("click", function () {
         $(".wrapper1").slideDown();
         $(".beforeMenu").hide();
@@ -14,6 +15,7 @@ $(function() {
     const logoMenu = $(".footer").offset().top;
 
     console.log(3450);
+
 
     $(window).on("scroll", function (e) {
         console.log($(document).scrollTop());
@@ -93,6 +95,7 @@ $(function() {
 
 
     $(window).on('resize',function() {
+        $('.slider').bxSlider();
         var WinW = $(window).width();
         if (WinW > 1024) {
             $('.desc').children(".dis-text").css({'display':'none'});
@@ -146,5 +149,3 @@ $(function() {
             $('.pro').children('img').css('margin-top','50px');
         }
     });
-
-    
