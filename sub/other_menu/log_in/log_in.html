@@ -4,13 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="Author" content="왕혜민" />
-    <meta name="description" content="들어가기">
+    <meta name="description" content="들어가기" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" type="image" href="../../../images/logo/jujery_page_shortcut_icon.png">
+    <link rel="shortcut icon" type="image" href="../../../images/logo/jujery_page_shortcut_icon.png" />
     <link rel="stylesheet" href="./css/log_in.css" />
-    <script src="./js/login.js" defer></script>
-    <script src="./js/side_bar.js" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
+    <script src="./js/side_bar.js" defer></script>
+    <script src="./js/login.js" defer></script>
     <title>들어가기</title>
   </head>
   <body>
@@ -207,32 +207,41 @@
                   <li><a href="../community/community.html">소통하기</a></li>
                   <li><a href="../logo/logo.html">상징</a></li>
                 </ul>
-              </div> <!-- mainSubMenu -->
+              </div>
+              <!-- mainSubMenu -->
 
               <section class="login">
                 <h2>login</h2>
-                  <div class="logo">
-                    <img src="../../main_menu_type/images/icon/jujerylogo_wo.png" alt="logo">
+                <div class="logo">
+                  <img src="../../main_menu_type/images/icon/jujerylogo_wo.png" alt="logo" />
+                </div>
+                <h3>들어가기</h3>
+                <form action="#" method="post" name="frm">
+                  <input type="text" name="user_id" id="user_id" placeholder="계정" minlength="4" maxlength="16" required onKeyDown="if(event.keyCode == 13) loginChk()" />
+                  <input type="password" name="user_pw" id="user_pw" placeholder="비밀번호" minlength="8" maxlength="16" required onKeyDown="if(event.keyCode == 13) loginChk()" />
+                  <input type="submit" value="들어가기" class="btnSubmit" onclick="loginChk()" />
+                  <input type="button" value="회원가입" onclick="location.href='../sign_up/signUp/signUp.html'" />
+                  <hr />
+                  <div class="search_box">
+                    <input type="button" value="계정찾기" />
+                    <input type="button" value="비밀번호찾기" />
                   </div>
-                    <h3>들어가기</h3>
-                    <form action="#" method="post" name="frm">
-                      <input type="text" name="user_id" id="user_id" placeholder="계정" minlength="4" maxlength="16" required onKeyDown="if(event.keyCode == 13) loginChk()">
-                      <input type="password" name="user_pw" id="user_pw" placeholder="비밀번호" minlength="8" maxlength="16" required onKeyDown="if(event.keyCode == 13) loginChk()">
-                      <input type="submit" value="들어가기" class="btnSubmit" onclick="loginChk()">
-                      <input type="button" value="회원가입" onclick="location.href='../sign_up/signUp/signUp.html'">
-                      <hr>
-                      <div class="search_box">
-                        <input type="button" value="계정찾기">
-                        <input type="button" value="비밀번호찾기">
-                      </div>
-                      <div class="sns_login">
-                        <button><img src="../../main_menu_type/images/icon/naver.png" alt="naver"><p>네이버 로그인</p></button>
-                        <button><img src="../../main_menu_type/images/icon/kakao.png" alt="kakaotalk"><p>카카오 로그인</p></button>
-                      </div>
-                    </form>
+                  <div class="sns_login">
+                    <button>
+                      <img src="../../main_menu_type/images/icon/naver.png" alt="naver" />
+                      <p>네이버 로그인</p>
+                    </button>
+                    <button>
+                      <img src="../../main_menu_type/images/icon/kakao.png" alt="kakaotalk" />
+                      <p>카카오 로그인</p>
+                    </button>
+                  </div>
+                </form>
               </section>
-            </div> <!-- main -->
-          </div> <!-- container -->
+            </div>
+            <!-- main -->
+          </div>
+          <!-- container -->
         </main>
       </div>
 

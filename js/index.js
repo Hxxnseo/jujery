@@ -44,8 +44,6 @@ $html.animate({ scrollTop: 0 }, 10);
 
 $(function () {
   const list = [$("#gyeonggi"), $("#gangwon"), $("#gyeongsang"), $("#chungcheong"), $("#jeolla"), $("#jeju")];
-  // const bg = ["url(../images/main_section_2/seoulgoong.png)", "url(../images/main_section_2/gangwonsan.png)", "url(../images/main_section_2/gyeongsang.png)", "url(../images/main_section_2/dodam.png)", "url(../images/main_section_2/junjoo.png)", "url(../images/main_section_2/jejunight.png)"];
-  // const bg = ["url(http://seoh1999.dothome.co.kr/jujery/images/main_section_2/seoulgoong.png)", "url(http://seoh1999.dothome.co.kr/jujery/images/main_section_2/gangwonsan.png)", "url(http://seoh1999.dothome.co.kr/jujery/images/main_section_2/gyeongsang.png)", "url(http://seoh1999.dothome.co.kr/jujery/images/main_section_2/dodam.png)", "url(http://seoh1999.dothome.co.kr/jujery/images/main_section_2/junjoo.png)", "url(http://seoh1999.dothome.co.kr/jujery/images/main_section_2/jejunight.png)"];
   const bg = ["url(http://Hxxnseo.github.io/JUJERY/images/main_section_2/seoulgoong.png)", "url(http://Hxxnseo.github.io/JUJERY/images/main_section_2/gangwonsan.png)", "url(http://Hxxnseo.github.io/JUJERY/images/main_section_2/gyeongsang.png)", "url(http://Hxxnseo.github.io/JUJERY/images/main_section_2/dodam.png)", "url(http://Hxxnseo.github.io/JUJERY/images/main_section_2/junjoo.png)", "url(http://Hxxnseo.github.io/JUJERY/images/main_section_2/jejunight.png)"];
 
   $(".section2 li").on({
@@ -56,7 +54,6 @@ $(function () {
       console.log($(this).index());
       $(e.target).show();
       $(".pcSec2").css("background-image", bg[$(this).index()]);
-      // $(".pcSec2").animate({ background: bg[$(this).index()] }, 1000, "linear");
     },
     mouseleave: e => {
       for (let i = 0; i < list.length; i++) {
@@ -65,12 +62,6 @@ $(function () {
       $(".pcSec2").css("background-image", "none");
     },
   });
-
-  // $(".mobileMenu").on({
-  //   click: function () {
-  //     $(".wrapper1").slideDown();
-  //   },
-  // });
 
   $(".beforeMenu").on("click", function () {
     $(".wrapper1").slideDown();
@@ -84,5 +75,3 @@ $(function () {
     $(".beforeMenu").show();
   });
 });
-
-// $(".wrapper1").slideUp();
