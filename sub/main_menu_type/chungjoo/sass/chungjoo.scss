@@ -13,12 +13,7 @@
 
 .container {
   padding: 0 20px;
-  // margin-right: 20px;
-  // position: relative;
-  width: 100%; // 모바일, 태블릿
-  // background-color: #000;
-  // max-width: 1200px; // pc
-
+  width: 100%;
   @include responsive(pc-screens) {
     padding: 0;
     margin: 0 auto;
@@ -30,7 +25,6 @@
   width: 100%;
   height: 100%;
   background-image: url(../../../../images/background/detail_page_main_background.png);
-  // margin: 0 20px;
 
   .flexWrapper {
     @include responsive(pc-screens) {
@@ -43,7 +37,6 @@
 
       @include responsive(pc-screens) {
         height: auto;
-        // background-color: #ccc;
         width: 370px;
         background-image: url(../../../../images/background/detail_page_header_background.png);
       }
@@ -177,17 +170,13 @@
         }
       }
     }
-    // header
 
     main {
-      // width: 100%;
-
       @include responsive(pc-screens) {
         width: 80%;
       }
 
       .main {
-        // position: relative;
         @include responsive(pc-screens) {
           width: 1180px;
           margin: 0 auto;
@@ -224,14 +213,13 @@
               }
             }
           }
-        } // mainSubMenu
+        }
 
         aside.slide {
           width: 100%;
           overflow: hidden;
           margin-top: 30px;
 
-          /* slider */
           .bx-wrapper {
             position: relative;
             padding: 0;
@@ -324,23 +312,11 @@
             }
 
             .bx-prev {
-              left: 10px;
-              background: url('../../images/icon/controls.png') no-repeat 0 -32px;
               display: none;
-              &:hover,
-              &:focus {
-                background-position: 0 0;
-              }
             }
 
             .bx-next {
-              right: 10px;
-              background: url('../../images/icon/controls.png') no-repeat -43px -32px;
               display: none;
-              &:hover,
-              &:focus {
-                background-position: -43px 0;
-              }
             }
 
             .bx-controls-direction {
@@ -374,7 +350,7 @@
                 padding: 10px;
               }
             }
-          } // bx-wrapper
+          }
 
           .bxslider {
             margin: 0;
@@ -414,7 +390,7 @@
               }
             }
           }
-        } // aside.slide
+        }
 
         nav {
           margin-bottom: 100px;
@@ -459,7 +435,7 @@
               }
             }
           }
-        } // nav
+        }
 
         section.rec-box {
           width: 100%;
@@ -506,7 +482,7 @@
                   p {
                     line-height: 30px;
                   }
-                  button { // 정보나오게 하는 btn
+                  button {
                     position: absolute;
                     top: 72px; left: 12px;
                     width: 35px;
@@ -610,9 +586,9 @@
                     @include responsive(pc-screens) {
                       width: 450px; height:500px;
                     }
-                    }
+                  }
                 }
-              } // rec-des
+              }
             }
           }
           .swiper_scrollbar {
@@ -641,7 +617,7 @@
               border: 0;
             }
           }
-        } // section.rec-box
+        }
 
           section.brewery { 
             h3 {
@@ -746,7 +722,7 @@
                   }
                 }
               }
-            } // category_wrap
+            } 
           
             .brewery_content {
               width: 100%;
@@ -812,7 +788,7 @@
                     }
                   }
                 }
-              } // brewery 공통
+              }
 
               .b1 {
                 .brewery_box {
@@ -851,7 +827,7 @@
                     p {
                       text-align: center;
                     }
-                  } // alcohol
+                  }
 
                   .brewery_pic {
                     @include responsive(pc-screens) {
@@ -896,7 +872,7 @@
                     }
                   }
                 }
-              } // b1
+              }
 
               .b2,
               .b4 {
@@ -999,9 +975,9 @@
                     p {
                       text-align: center;
                     }
-                  } // alcohol
+                  } 
                 }
-              } // b2
+              } 
 
               .b3 {
                 .brewery_box {
@@ -1041,7 +1017,7 @@
                     p {
                       text-align: center;
                     }
-                  } // alcohol
+                  }
 
                   .text {
                     order: 3;
@@ -1091,19 +1067,18 @@
                     }
                   }
                 }
-              } // b3
+              }
               
               .b2,
               .b3,
               .b4{
                 display: none;
               }
-            } //brewery_content
-          } // section.brewery
-        } // section.rec-box
+            }
+          }
+        }
       }
-    } // main
-
+    } 
 
     footer {
       .container {
@@ -1127,7 +1102,6 @@
           padding-bottom: 30px;
   
           @include responsive(pc-screens) {
-            // padding: 0;
             display: flex;
             width: 100%;
             justify-content: space-between;
@@ -1256,7 +1230,6 @@
               display: flex;
               width: 100%;
               padding: 10px ;
-              // margin-left: 5px;
   
               &:last-child {
                 text-align: left;
@@ -1295,7 +1268,7 @@
           display: none;
         }
         .container1 {
-          width: 100%; // 모바일, 태블릿
+          width: 100%;
           padding: 0 20px;
           @include responsive(pc-screens) {
             display: flex;
@@ -1378,7 +1351,7 @@
                 }
               }
             }
-          } // menu
+          }
     
           .menu2 {
             font-family: $font-sub;
@@ -1417,7 +1390,7 @@
                 }
               }
             }
-          } //menu2
+          }
     
           span {
             display: block;
@@ -1474,7 +1447,7 @@
                 }
               }
             }
-          } // footer
-        } // container
-      } // wrap-inner
+          } 
+        } 
+      } 
     }
