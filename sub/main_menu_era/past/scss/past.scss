@@ -11,14 +11,8 @@
 }
 
 .container {
-  // margin-right: 20px;
-  // position: relative;
-  width: 100%; // 모바일, 태블릿
+  width: 100%;
   padding: 0 20px;
-  // background-color: #000;
-  // max-width: 1200px; // pc
-
-  // background-color: #000;
   @include responsive(pc-screens) {
     margin: 0 auto;
     padding: 0;
@@ -29,8 +23,7 @@
   position: relative;
   width: 100%;
   height: 100%;
-  background-image: url(../../../../images/background/main_menu_background.png);
-  // margin: 0 20px;
+  background-image: url(../../../../images/background/detail_page_main_background.png);
 
   .flexWrapper {
     @include responsive(pc-screens) {
@@ -42,7 +35,6 @@
       height: 80px;
 
       @include responsive(pc-screens) {
-        // background-color: #ccc;
         width: 370px;
         height: auto;
         background-image: url(../../../../images/background/detail_page_header_background.png);
@@ -177,16 +169,11 @@
         }
       }
     }
-    // header
 
     main {
-      // width: 100%;
-
       @include responsive(pc-screens) {
         width: 80%;
       }
-
-      // position: relative;
       .main {
         @include responsive(pc-screens) {
           width: 1180px;
@@ -224,9 +211,7 @@
               }
             }
           }
-        } // mainSubMenu
-
-        // 여기부터 작성하세요오오
+        }
         .introStart {
           margin-top: 30px;
           text-align: center;
@@ -268,8 +253,6 @@
             }
           }
         }
-        // introStart
-
         .label1,
         .label2,
         .label3 {
@@ -283,8 +266,7 @@
               padding: 24px 15px;
             }
           }
-        } // label1 
-
+        }
         .label1{
           li {
             padding: 24px 15px;
@@ -304,15 +286,13 @@
                 border-bottom: none;
               }
             }
-        } // label2
-
+        }
         .label3 {
               & li:last-child {
                 border: 1px solid #000;
                 border-bottom: none;
               }
-        } // label2
-
+        }
         .story {
           display: none;
           background-image: url(../../img/past_pic.png);
@@ -343,8 +323,7 @@
             }
           }
 
-          
-        } // .story
+        }
         .inner {
           div {
             height: 300px;
@@ -354,7 +333,6 @@
         .mobile-story {
           margin-top: 50px;
           background-image: url(../../img/past_pic.png);
-          // padding: 10% 5%;
           text-align: center;
 
           .bx-pager {
@@ -364,13 +342,11 @@
             float: left;
             margin-top: 20px;
             margin-left: 16px;
-            // background-color: gold;
           }
         
           .bx-prev {
             float: left;
             margin-left: 0px;
-            // background-color: pink;
           }
           .bx-next {
             float: right;
@@ -400,9 +376,9 @@
                 color: #ccc;
               }
             }
-          } // h4
+          }
 
-        } // title
+        }
 
         .everypro,
         .everydis {
@@ -441,11 +417,9 @@
               position: absolute;
               display: block;
             }
-          } // title
+          }
           
           .desc {
-            // background-color: aqua;
-
             color: #fff;
             height: 100%; width: 70%;
             padding: 0 15px;
@@ -504,16 +478,12 @@
               }
             }
           }
-        } // dis, pro
+        }
 
         .dis {
-          // background-color: aqua;
-
           img {
             position: absolute;
             margin-top: -38px;
-            // background-color: aqua;
-            
           }
           img { margin-top: 13px; margin-left: 65%;}
           img.do {width: 23%; height: 300px;}
@@ -566,9 +536,8 @@
             }
           }
         }
-      } //.main
-    } // main
-    // main
+      }
+    }
   }
 
   footer {
@@ -593,7 +562,6 @@
         padding-bottom: 30px;
 
         @include responsive(pc-screens) {
-          // padding: 0;
           display: flex;
           width: 100%;
           justify-content: space-between;
@@ -722,7 +690,6 @@
             display: flex;
             width: 100%;
             padding: 10px ;
-            // margin-left: 5px;
 
             &:last-child {
               text-align: left;
@@ -758,12 +725,12 @@
 
   .wrap-inner {
     height: 100vh;
-    background-image: url(../../../../images/background/main_menu_background.png);
+    background-image: url(../../../../images/background/detail_page_main_background.png);
     @include responsive(pc-screens) {
       display: none;
     }
     .container1 {
-      width: 100%; // 모바일, 태블릿
+      width: 100%;
       padding: 0 20px;
       @include responsive(pc-screens) {
         display: flex;
@@ -846,7 +813,7 @@
             }
           }
         }
-      } // menu
+      }
 
       .menu2 {
         font-family: $font-sub;
@@ -885,7 +852,7 @@
             }
           }
         }
-      } //menu2
+      }
 
       span {
         display: block;
@@ -922,7 +889,7 @@
               }
             }
           }
-        } // sns
+        }
         .footerInfo1 {
           display: flex;
           justify-content: space-between;
@@ -942,7 +909,7 @@
             }
           }
         }
-      } // footer
-    } // container
-  } // wrap-inner
+      }
+    }
+  }
 }
