@@ -326,7 +326,6 @@ p {
     grid-template-columns: 523px 382px;
     grid-template-rows: 186px 186px 186px;
     margin-top: 100px;
-    -moz-column-gap: 15px;
     column-gap: 15px;
   }
   .wrapper .flexWrapper main .main .sec1 .grid-box .div1 {
@@ -982,4 +981,4 @@ footer .footer .footBox .footMenu ul li a {
   .wrapper1 .wrap-inner .container1 .footer .footerInfo1 p:last-child {
     margin-left: 100px;
   }
-} /*# sourceMappingURL=chungcheong.css.map */
+}/*# sourceMappingURL=chungcheong.css.map */

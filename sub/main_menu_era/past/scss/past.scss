@@ -1,0 +1,948 @@
+@import "./style1.scss";
+@import "./common1.scss";
+@import "./mixin1.scss";
+
+@include responsive(pc-screens) {
+  body {
+    width: 100%;
+    height: 100%;
+    max-width: 2560px;
+  }
+}
+
+.container {
+  // margin-right: 20px;
+  // position: relative;
+  width: 100%; // 모바일, 태블릿
+  padding: 0 20px;
+  // background-color: #000;
+  // max-width: 1200px; // pc
+
+  // background-color: #000;
+  @include responsive(pc-screens) {
+    margin: 0 auto;
+    padding: 0;
+  }
+}
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-image: url(../../../../images/background/main_menu_background.png);
+  // margin: 0 20px;
+
+  .flexWrapper {
+    @include responsive(pc-screens) {
+      display: flex;
+      height: 100%;
+      flex-direction: row;
+    }
+    header {
+      height: 80px;
+
+      @include responsive(pc-screens) {
+        // background-color: #ccc;
+        width: 370px;
+        height: auto;
+        background-image: url(../../../../images/background/detail_page_header_background.png);
+      }
+
+      .header {
+        @include responsive(pc-screens) {
+          position: fixed;
+        }
+        .logoMenu {
+          display: none;
+
+          @include responsive(pc-screens) {
+            display: block;
+            padding-top: 70px;
+            padding-left: 100px;
+          }
+
+          .logo {
+            a {
+              @include responsive(pc-screens) {
+                width: 190px;
+              }
+            }
+          }
+
+          .menu {
+            @include responsive(pc-screens) {
+              margin-top: 130px;
+            }
+
+            .gnb {
+              @include responsive(pc-screens) {
+                font-size: 30px;
+              }
+
+              li {
+                @include responsive(pc-screens) {
+                  padding-bottom: 60px;
+
+                  &:hover {
+                    ul {
+                      height: 100px;
+                    }
+                  }
+                }
+
+                &:first-child {
+                  @include responsive(pc-screens) {
+                    padding-bottom: 80px;
+                  }
+                }
+
+                .subMenu {
+                  @include responsive(pc-screens) {
+                    height: 0px;
+                    overflow: hidden;
+                    padding-top: 40px;
+
+                    transition: all 0.5s;
+                  }
+
+                  li {
+                    @include responsive(pc-screens) {
+                      display: flex;
+                      padding-bottom: 0px;
+                    }
+
+                    a {
+                      @include responsive(pc-screens) {
+                        padding-left: 5px;
+                        padding-bottom: 10px;
+                        font : {
+                          size: 18px;
+                          family: $font-sub;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        .mobileLogoMenu {
+          position: relative;
+          z-index: 5;
+          display: flex;
+          @include responsive(pc-screens) {
+            display: none;
+          }
+
+          .mobileLogo {
+            position: fixed;
+            top: 22px;
+            left: 20px;
+          }
+
+          .beforeMenu {
+            position: fixed;
+            top: 38px;
+            right: 20px;
+            cursor: pointer;
+
+            span {
+              display: block;
+              width: 30px;
+              height: 4px;
+              background-color: #000;
+              &:nth-child(2) {
+                margin: 5px 0;
+              }
+            }
+          }
+          .afterMenu {
+            display: none;
+            position: fixed;
+            top: 38px;
+            right: 20px;
+            cursor: pointer;
+
+            &:after {
+              position: fixed;
+              top: 25px;
+              right: 20px;
+              content: "\00d7";
+              font-size: 50px;
+              color: black;
+            }
+          }
+        }
+      }
+    }
+    // header
+
+    main {
+      // width: 100%;
+
+      @include responsive(pc-screens) {
+        width: 80%;
+      }
+
+      // position: relative;
+      .main {
+        @include responsive(pc-screens) {
+          width: 1180px;
+          margin: 0 auto;
+        }
+
+        .mainSubMenu {
+          display: none;
+          @include responsive(pc-screens) {
+            display: block;
+            width: 100%;
+            height: 70px;
+          }
+
+          ul {
+            @include responsive(pc-screens) {
+              display: flex;
+              position: absolute;
+              top: 50px;
+              right: 100px;
+            }
+
+            li {
+              @include responsive(pc-screens) {
+                padding-left: 25px;
+              }
+
+              a {
+                @include responsive(pc-screens) {
+                  font : {
+                    family: $font-sub;
+                    size: 14px;
+                  }
+                }
+              }
+            }
+          }
+        } // mainSubMenu
+
+        // 여기부터 작성하세요오오
+        .introStart {
+          margin-top: 30px;
+          text-align: center;
+
+          @include responsive(pc-screens) {
+            text-align: left;
+            margin-top: 130px;
+          }
+
+          h3 {
+            margin-bottom: 50px;
+            font-size: 40px;
+            font-family: $font-main;
+
+            @include responsive(pc-screens) {
+              font-size: 50px;
+            }
+          }
+
+          .introMenu {
+            ul {
+              display: flex;
+              justify-content: center;
+
+              li {
+                padding: 0 30px;
+
+                @include responsive(pc-screens) {
+                  font-size: 24px;
+                }
+                font: {
+                  family: $font-sub;
+                  size: 18px;
+                }
+                &:first-child {
+                  border-right: 1px solid black;
+                }
+              }
+            }
+          }
+        }
+        // introStart
+
+        .label1,
+        .label2,
+        .label3 {
+          display: none;
+          clear: both;
+          @include responsive(pc-screens) {
+            display: flex;
+            margin-top: 100px;
+            font-size: 32px;
+            li {
+              padding: 24px 15px;
+            }
+          }
+        } // label1 
+
+        .label1{
+          li {
+            padding: 24px 15px;
+            &:first-child {
+              a{
+                color: #fff;
+              }
+              background-color: rgba(0, 0, 0, 0.8);
+            }
+          }
+        } 
+        .label2 {
+            li {
+              padding: 24px 15px;
+              &:nth-child(2) {
+                border: 1px solid #000;
+                border-bottom: none;
+              }
+            }
+        } // label2
+
+        .label3 {
+              & li:last-child {
+                border: 1px solid #000;
+                border-bottom: none;
+              }
+        } // label2
+
+        .story {
+          display: none;
+          background-image: url(../../img/past_pic.png);
+          text-align: center;
+          font-size: 3.125em;
+          height: 234px; width: 100%;
+          padding-top: 20%;
+          @include responsive(pc-screens) {
+            display: block;
+            width: 100%; height: 600px;
+            padding: 5%;
+            background-image: url(../../img/past_pic_pc.png);
+          }
+          span {
+            color: #fff;
+            display: none;
+            @include responsive(pc-screens) {
+              line-height: 2.5em;
+              display: block;
+            }
+          }
+          p {
+            display: none;
+            @include responsive(pc-screens) {
+              display: flex;
+              color: #fff;
+              font-size: 0.7em; font-family: $font-main;
+            }
+          }
+
+          
+        } // .story
+        .inner {
+          div {
+            height: 300px;
+          }
+        }
+        
+        .mobile-story {
+          margin-top: 50px;
+          background-image: url(../../img/past_pic.png);
+          // padding: 10% 5%;
+          text-align: center;
+
+          .bx-pager {
+            margin-left: 40%;
+          }
+          .bx-pager-item {
+            float: left;
+            margin-top: 20px;
+            margin-left: 16px;
+            // background-color: gold;
+          }
+        
+          .bx-prev {
+            float: left;
+            margin-left: 0px;
+            // background-color: pink;
+          }
+          .bx-next {
+            float: right;
+            margin-right: 0px;
+          }
+          @include responsive(pc-screens) {
+            display: none;
+          }
+        }
+
+        .title {
+          margin-top: 100px;
+          margin-bottom: 50px;
+          clear: both;
+          @include responsive(pc-screens) {
+            display: none;
+          }
+          h4 {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            .next {
+              color: #ccc;
+            }
+            div.gray {
+              a{
+                color: #ccc;
+              }
+            }
+          } // h4
+
+        } // title
+
+        .everypro,
+        .everydis {
+          @include responsive(pc-screens) {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            margin-top: 310px; 
+            width: 100%;
+          }
+        }
+        .everypro {
+          margin-bottom: 100px;
+        }
+
+        .dis,
+        .pro {
+          display: flex;
+          margin-bottom: 50px;
+          img {
+            @include responsive(pc-screens) {
+              z-index: 0;
+            }
+          }
+          @include responsive(pc-screens) {
+            display: block;
+            width: 30%;
+            margin-left: 10px;
+            &:first-child {
+              margin-left: 0;
+            }
+          }
+          .title {
+            display: none;
+            @include responsive(pc-screens) {
+              position: absolute;
+              display: block;
+            }
+          } // title
+          
+          .desc {
+            // background-color: aqua;
+
+            color: #fff;
+            height: 100%; width: 70%;
+            padding: 0 15px;
+            margin-bottom: 50px;
+
+            .dis-text {
+              padding-bottom: 20px;
+              padding-top: 10px;
+            }
+            @include responsive(pc-screens) {
+              position: relative;
+              width: 100%; height: 300px;
+              z-index: 3;
+              .title{
+                font-size: 2.5em;
+                margin-top: 40%;
+                margin-left: 25%;
+              }
+              .show {
+                display: none;
+              }
+
+            }
+            background-repeat: no-repeat;
+            h4 {
+              font-family: $font-sub;
+              color: #fff;
+              line-height: 2.6em;
+            }
+            p {
+              line-height: 2.2em;
+            }
+          } // desc
+          .odd {
+            background-image: url(../../img/black_object.png);
+            @include responsive(pc-screens) {
+              background-image: url(../../img/black_pc.png);
+            }
+          }
+          
+          .solsol {
+            position: relative;
+            z-index: 2;
+          }
+          .even {
+            margin-left: 30%;
+            background-image: url(../../img/black_object_2.png);
+            @include responsive(pc-screens) {
+              background-image: url(../../img/black_pc.png);
+              margin: 0;
+            }
+            h4 {
+              text-align: right;
+              @include responsive(pc-screens) {
+                text-align: left;
+              }
+            }
+          }
+        } // dis, pro
+
+        .dis {
+          // background-color: aqua;
+
+          img {
+            position: absolute;
+            margin-top: -38px;
+            // background-color: aqua;
+            
+          }
+          img { margin-top: 13px; margin-left: 65%;}
+          img.do {width: 23%; height: 300px;}
+          img.dae { margin-top: 70px; margin-left: -5%;}
+          img.ja { width: 70px; margin-top: 30px; }
+          img.back { width: 85px; margin-top: 20px; margin-left: 5%;}
+          @include responsive(pc-screens) {
+            img.do { height:350px;width: 8%;margin-top: -380px; margin-left: 120px;}
+            img.dae { margin-top: -380px; margin-left: 120px; }
+            img.ja { margin-top: -430px; margin-left: 120px; }
+            img.back { margin-top: -470px; margin-left: 150px; }
+          }
+          .ja {
+            margin-top: 100px;
+            @include responsive(pc-screens) {
+              margin-top: 0;
+            }
+          }
+          .ba {
+            margin-top: 110px;
+            line-height: 0.8em;
+          }
+          @include responsive(pc-screens) {
+            &:first-child {
+              margin-bottom: 280px;
+            }
+          }
+        }
+
+        .pro {
+          img {
+            position: absolute;
+            width: 28%; margin-left: 65%;
+          }
+          img.lee{margin-top: 80px;}
+          img.gam{margin-top: 65px; margin-left: 3%;}
+          img.juck{width: 73px;margin-top: -6px;}
+          img.sol{z-index: 0;width: 43%; margin-top: 200px; margin-left: -4%;}
+          img.moon{width: 88px; margin-top: 10px;}
+          @include responsive(pc-screens) {
+            img{width: 10%;}
+            img.lee{margin-top: -360px; margin-left: 120px;}
+            img.gam{margin-top: -360px; margin-left: 120px;}
+            img.juck{margin-top: -390px; margin-left: 120px;}
+            img.sol{width:175px;margin-top: -360px; margin-left: 120px;}
+            img.moon{margin-top: -380px; margin-left: 120px;}
+            &:nth-child(1),
+            &:nth-child(2) {
+              margin-bottom: 280px;
+            }
+          }
+        }
+      } //.main
+    } // main
+    // main
+  }
+
+  footer {
+    .container {
+      @include responsive(pc-screens) {
+        margin: 0;
+      }
+    }
+    .footer {
+      width: 100%;
+      height: 100%;
+      background-color: black;
+      color: white;
+
+      @include responsive(pc-screens) {
+        width: 100%;
+        padding: 120px 185px 80px 545px;
+      }
+
+      .footInfo {
+        padding-top: 60px;
+        padding-bottom: 30px;
+
+        @include responsive(pc-screens) {
+          // padding: 0;
+          display: flex;
+          width: 100%;
+          justify-content: space-between;
+
+          font-size: 20px;
+          margin-bottom: 30px;
+        }
+
+        address {
+          font-style: normal;
+          font-family: $font-sub;
+        }
+
+        p {
+          margin: 20px 0;
+
+          @include responsive(pc-screens) {
+            margin: 0;
+          }
+        }
+      }
+
+      .footBox {
+        width: 100%;
+        @include responsive(pc-screens) {
+          display: flex;
+          height: 250px;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+
+          text-align: center;
+
+          border-top: 1px solid #ccc;
+          border-bottom: 1px solid #ccc;
+        }
+
+        .footLogoCopy {
+          padding: 30px;
+          border-top: 1px solid #ccc;
+          border-bottom: 1px solid #ccc;
+          text-align: center;
+
+          @include responsive(pc-screens) {
+            width: 30%;
+            padding: 0;
+            border: 0;
+          }
+
+          a {
+            color: white;
+            font-size: 60px;
+          }
+
+          p {
+            font-size: 10px;
+          }
+
+          .copyright {
+            @include responsive(pc-screens) {
+              font-size: 12px;
+              font-family: $font-sub;
+            }
+          }
+        }
+
+        .footSns {
+          padding: 30px;
+          border-bottom: 1px solid #ccc;
+
+          @include responsive(pc-screens) {
+            position: relative;
+            width: 40%;
+            height: 250px;
+            border-bottom: 0;
+            border-right: 1px solid #ccc;
+            border-left: 1px solid #ccc;
+          }
+          .footSnsCont {
+            display: flex;
+            justify-content: center;
+
+            @include responsive(pc-screens) {
+              padding: 60px 80px;
+            }
+
+            li {
+              padding: 10px;
+
+              @include responsive(pc-screens) {
+                padding-right: 15px;
+
+                &:last-child {
+                  padding-right: 0;
+                }
+              }
+              img {
+                width: 50px;
+
+                @include responsive(pc-screens) {
+                  width: 60px;
+                  opacity: 0.5;
+
+                  transition: all 0.5s;
+
+                  &:hover {
+                    opacity: 1;
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        .footMenu {
+          padding: 40px 0;
+          font-size: 14px;
+          width: 100%;
+
+          @include responsive(pc-screens) {
+            width: 30%;
+            padding: 0;
+            font-size: 14px;
+          }
+          ul {
+            display: flex;
+            width: 100%;
+            padding: 10px ;
+            // margin-left: 5px;
+
+            &:last-child {
+              text-align: left;
+            }
+
+            li {
+              width: 33%;
+              padding: 0 5px;
+              text-align: center;
+
+              a {
+                width: 100%;
+                color: white;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.wrapper1 {
+  display: none;
+  position: fixed;
+  z-index: 4;
+
+  width: 100%;
+  height: 100vh;
+  @include responsive(pc-screens) {
+    display: none;
+  }
+
+  .wrap-inner {
+    height: 100vh;
+    background-image: url(../../../../images/background/main_menu_background.png);
+    @include responsive(pc-screens) {
+      display: none;
+    }
+    .container1 {
+      width: 100%; // 모바일, 태블릿
+      padding: 0 20px;
+      @include responsive(pc-screens) {
+        display: flex;
+        padding: 0 130px;
+        flex-wrap: wrap;
+      }
+
+      .menu1 {
+        position: relative;
+        margin-top: 0;
+        height: 550px;
+        @include responsive(pc-screens) {
+          position: relative;
+          width: 77%;
+          height: 820px;
+        }
+        .gnb {
+          position: absolute;
+          top: 8%;
+          right: 0;
+          left: 0;
+          @include responsive(pc-screens) {
+            position: absolute;
+            top: 60px;
+          }
+          #extra {
+            margin: 50px 0 70px;
+          }
+          li {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 40px;
+            @include responsive(pc-screens) {
+              display: initial;
+            }
+
+            a {
+              font-size: 34px;
+              @include responsive(pc-screens) {
+                font-size: 50px;
+              }
+            }
+            .gnb-title {
+              @include responsive(pc-screens) {
+                margin: 50px 0 20px 0;
+              }
+            }
+
+            .sub-gnb {
+              li {
+                margin-bottom: 0;
+                @include responsive(pc-screens) {
+                  display: flex;
+                  justify-content: left;
+                }
+                a {
+                  color: #a3a3a3;
+                  font-size: 16px;
+                  margin-bottom: 20px;
+                  @include responsive(pc-screens) {
+                    font-size: 30px;
+                    margin-bottom: 10px;
+                  }
+                }
+              }
+              .sub-gnb-li {
+                justify-content: end;
+                @include responsive(pc-screens) {
+                  justify-content: left;
+                }
+              }
+              .sub-gnb-li2 {
+                flex-direction: column;
+                text-align: right;
+                @include responsive(pc-screens) {
+                  text-align: left;
+                  flex-direction: row;
+                }
+              }
+            }
+          }
+        }
+      } // menu
+
+      .menu2 {
+        font-family: $font-sub;
+        font-size: 12px;
+        @include responsive(pc-screens) {
+          width: 23%;
+          margin: 0;
+        }
+        .close-btn-pc {
+          display: none;
+          @include responsive(pc-screens) {
+            display: block;
+            position: absolute;
+            top: 60px;
+            right: 150px;
+          }
+        }
+        ul {
+          display: flex;
+          justify-content: center;
+          padding-top: 25px;
+          @include responsive(pc-screens) {
+            display: initial;
+            font-family: $font-main;
+            font-size: 25px;
+          }
+          li {
+            @include responsive(pc-screens) {
+              margin-top: 130px;
+            }
+            a {
+              margin: 0 20px;
+              @include responsive(pc-screens) {
+                color: #a3a3a3;
+              }
+            }
+          }
+        }
+      } //menu2
+
+      span {
+        display: block;
+        width: 100%;
+        height: 2px;
+        background-color: #a3a3a3;
+        margin-top: 20px;
+      }
+      .footer {
+        @include responsive(pc-screens) {
+          display: flex;
+          width: 100%;
+        }
+
+        .sns1 {
+          padding: 40px;
+          @include responsive(pc-screens) {
+            width: 65%;
+            padding: 20px 0;
+          }
+          .footSns1 {
+            display: flex;
+            justify-content: center;
+            @include responsive(pc-screens) {
+              justify-content: left;
+            }
+            li {
+              padding: 10px;
+              img {
+                width: 40px;
+                @include responsive(pc-screens) {
+                  width: 40px;
+                }
+              }
+            }
+          }
+        } // sns
+        .footerInfo1 {
+          display: flex;
+          justify-content: space-between;
+          font-size: 11.5px;
+          @include responsive(pc-screens) {
+            width: 35%;
+            padding: 0;
+            font-size: 16px;
+            align-items: center;
+            justify-content: end;
+          }
+          p {
+            @include responsive(pc-screens) {
+              &:last-child {
+                margin-left: 100px;
+              }
+            }
+          }
+        }
+      } // footer
+    } // container
+  } // wrap-inner
+}

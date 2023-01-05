@@ -1,0 +1,302 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  font-family: "SANGJU Gyeongcheon Island";
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 3.125em;
+}
+
+h2 {
+  font-size: 0;
+}
+
+h3 {
+  color: black;
+  font-size: 3.125em;
+}
+
+h4 {
+  color: black;
+  font-size: 1.5em;
+  font-weight: 600;
+}
+
+p {
+  font-size: 1em;
+  font-family: "NotoSerifKR-Regular";
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    width: 100%;
+    height: 100%;
+    max-width: 2560px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .wrapper {
+    width: 100%;
+    height: 940px;
+    position: relative;
+    background-image: url(../../../images/background/main_page_background.png);
+    z-index: 1;
+  }
+}
+.wrapper .wrap-inner {
+  height: 100vh;
+  background-image: url(../../../images/background/main_menu_background.png);
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .wrap-inner {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 70%;
+    height: 935px;
+    z-index: 2;
+  }
+}
+.wrapper .wrap-inner header .mobileLogoMenu {
+  display: flex;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .wrap-inner header .mobileLogoMenu {
+    display: none;
+  }
+}
+.wrapper .wrap-inner header .mobileLogoMenu .mobileLogo {
+  position: fixed;
+  top: 22px;
+  left: 20px;
+}
+.wrapper .wrap-inner header .mobileLogoMenu .close {
+  position: fixed;
+  right: 20px;
+  top: 30px;
+}
+.wrapper .wrap-inner header .mobileLogoMenu .close img {
+  width: 26px;
+  height: 26px;
+}
+.wrapper .wrap-inner .container {
+  padding: 0 20px;
+  width: 100%;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .wrap-inner .container {
+    padding: 0 130px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+.wrapper .wrap-inner .container .menu {
+  position: relative;
+  height: 550px;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .wrap-inner .container .menu {
+    position: relative;
+    width: 77%;
+    height: 820px;
+  }
+}
+.wrapper .wrap-inner .container .menu .gnb {
+  position: absolute;
+  top: 100px;
+  right: 0;
+  left: 0;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .wrap-inner .container .menu .gnb {
+    position: absolute;
+    top: 60px;
+  }
+}
+.wrapper .wrap-inner .container .menu .gnb li {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .wrap-inner .container .menu .gnb li {
+    display: initial;
+  }
+}
+.wrapper .wrap-inner .container .menu .gnb li a {
+  font-size: 34px;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .wrap-inner .container .menu .gnb li a {
+    font-size: 50px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .wrap-inner .container .menu .gnb li .gnb-title {
+    margin: 50px 0 20px 0;
+  }
+}
+.wrapper .wrap-inner .container .menu .gnb li .sub-gnb li {
+  margin-bottom: 0;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .wrap-inner .container .menu .gnb li .sub-gnb li {
+    display: flex;
+    justify-content: left;
+  }
+}
+.wrapper .wrap-inner .container .menu .gnb li .sub-gnb li a {
+  color: #a3a3a3;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .wrap-inner .container .menu .gnb li .sub-gnb li a {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+}
+.wrapper .wrap-inner .container .menu .gnb li .sub-gnb .sub-gnb-li {
+  justify-content: end;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .wrap-inner .container .menu .gnb li .sub-gnb .sub-gnb-li {
+    justify-content: left;
+  }
+}
+.wrapper .wrap-inner .container .menu .gnb li .sub-gnb .sub-gnb-li2 {
+  flex-direction: column;
+  text-align: right;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .wrap-inner .container .menu .gnb li .sub-gnb .sub-gnb-li2 {
+    text-align: left;
+    flex-direction: row;
+  }
+}
+.wrapper .wrap-inner .container .menu2 {
+  font-family: "NotoSerifKR-Regular";
+  font-size: 12px;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .wrap-inner .container .menu2 {
+    width: 23%;
+  }
+}
+.wrapper .wrap-inner .container .menu2 .close-btn-pc {
+  display: none;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .wrap-inner .container .menu2 .close-btn-pc {
+    display: block;
+    position: absolute;
+    top: 60px;
+    right: 150px;
+  }
+}
+.wrapper .wrap-inner .container .menu2 ul {
+  display: flex;
+  justify-content: center;
+  padding-top: 25px;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .wrap-inner .container .menu2 ul {
+    display: initial;
+    font-family: "SANGJU Gyeongcheon Island";
+    font-size: 25px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .wrap-inner .container .menu2 ul li {
+    margin-top: 130px;
+  }
+}
+.wrapper .wrap-inner .container .menu2 ul li a {
+  margin: 0 20px;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .wrap-inner .container .menu2 ul li a {
+    color: #a3a3a3;
+  }
+}
+.wrapper .wrap-inner .container span {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #a3a3a3;
+  margin-top: 20px;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .wrap-inner .container footer {
+    display: flex;
+    width: 100%;
+  }
+}
+.wrapper .wrap-inner .container footer .sns {
+  padding: 40px;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .wrap-inner .container footer .sns {
+    padding: 20px 0;
+    width: 65%;
+  }
+}
+.wrapper .wrap-inner .container footer .sns .footSns {
+  display: flex;
+  justify-content: center;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .wrap-inner .container footer .sns .footSns {
+    justify-content: left;
+  }
+}
+.wrapper .wrap-inner .container footer .sns .footSns li {
+  padding: 10px;
+}
+.wrapper .wrap-inner .container footer .sns .footSns li img {
+  width: 40px;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .wrap-inner .container footer .sns .footSns li img {
+    width: 40px;
+  }
+}
+.wrapper .wrap-inner .container footer .footerInfo {
+  display: flex;
+  justify-content: space-between;
+  font-size: 11.5px;
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .wrap-inner .container footer .footerInfo {
+    padding: 0;
+    font-size: 16px;
+    width: 35%;
+    align-items: center;
+    justify-content: end;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .wrapper .wrap-inner .container footer .footerInfo p:last-child {
+    margin-left: 100px;
+  }
+}/*# sourceMappingURL=menu.css.map */

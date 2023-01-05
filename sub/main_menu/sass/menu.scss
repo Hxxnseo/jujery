@@ -1,0 +1,239 @@
+@import "./style1.scss";
+@import "./common1.scss";
+@import "./mixin1.scss";
+
+@include responsive(pc-screens) {
+  body {
+    width: 100%;
+    height: 100%;
+    max-width: 2560px;
+  }
+}
+
+.wrapper {
+  @include responsive(pc-screens) {
+    width: 100%;
+    height: 940px;
+    position: relative;
+    background-image: url(../../../images/background/main_page_background.png);
+    z-index: 1;
+  }
+  .wrap-inner {
+    height: 100vh;
+    background-image: url(../../../images/background/main_menu_background.png);
+    @include responsive(pc-screens) {
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 70%;
+      height: 935px;
+      z-index: 2;
+    }
+
+    header {
+      .mobileLogoMenu {
+        display: flex;
+        @include responsive(pc-screens) {
+          display: none;
+        }
+
+        .mobileLogo {
+          position: fixed;
+          top: 22px;
+          left: 20px;
+        }
+        .close {
+          position: fixed;
+          right: 20px;
+          top: 30px;
+          img {
+            width: 26px;
+            height: 26px;
+          }
+        }
+      } // mobileLogoMenu
+    } // header
+    .container {
+      padding: 0 20px;
+      width: 100%; // 모바일, 태블릿
+      @include responsive(pc-screens) {
+        padding: 0 130px;
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .menu {
+        position: relative;
+        height: 550px;
+        @include responsive(pc-screens) {
+          position: relative;
+          width: 77%;
+          height: 820px;
+        }
+        .gnb {
+          position: absolute;
+          top: 100px;
+          right: 0;
+          left: 0;
+          @include responsive(pc-screens) {
+            position: absolute;
+            top: 60px;
+          }
+
+          li {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 40px;
+            @include responsive(pc-screens) {
+              display: initial;
+            }
+
+            a {
+              font-size: 34px;
+              @include responsive(pc-screens) {
+                font-size: 50px;
+              }
+            }
+            .gnb-title {
+              @include responsive(pc-screens) {
+                margin: 50px 0 20px 0;
+              }
+            }
+            .sub-gnb {
+              li {
+                margin-bottom: 0;
+                @include responsive(pc-screens) {
+                  display: flex;
+                  justify-content: left;
+                }
+                a {
+                  color: #a3a3a3;
+                  font-size: 16px;
+                  margin-bottom: 20px;
+                  @include responsive(pc-screens) {
+                    font-size: 30px;
+                    margin-bottom: 10px;
+                  }
+                }
+              }
+              .sub-gnb-li {
+                justify-content: end;
+                @include responsive(pc-screens) {
+                  justify-content: left;
+                }
+              }
+              .sub-gnb-li2 {
+                flex-direction: column;
+                text-align: right;
+                @include responsive(pc-screens) {
+                  text-align: left;
+                  flex-direction: row;
+                }
+              }
+            }
+          }
+        }
+      } // menu
+
+      .menu2 {
+        font-family: $font-sub;
+        font-size: 12px;
+        @include responsive(pc-screens) {
+          width: 23%;
+        }
+        .close-btn-pc {
+          display: none;
+          @include responsive(pc-screens) {
+            display: block;
+            position: absolute;
+            top: 60px;
+            right: 150px;
+          }
+        }
+        ul {
+          display: flex;
+          justify-content: center;
+          padding-top: 25px;
+          @include responsive(pc-screens) {
+            display: initial;
+            font-family: $font-main;
+            font-size: 25px;
+          }
+          li {
+            @include responsive(pc-screens) {
+              margin-top: 130px;
+            }
+            a {
+              margin: 0 20px;
+              @include responsive(pc-screens) {
+                color: #a3a3a3;
+              }
+            }
+          }
+        }
+      } //menu2
+
+      span {
+        display: block;
+        width: 100%;
+        height: 2px;
+        background-color: #a3a3a3;
+        margin-top: 20px;
+      }
+      footer {
+        @include responsive(pc-screens) {
+          display: flex;
+          width: 100%;
+        }
+
+        .sns {
+          padding: 40px;
+          @include responsive(pc-screens) {
+            padding: 20px 0;
+            width: 65%;
+          }
+          .footSns {
+            display: flex;
+            justify-content: center;
+            @include responsive(pc-screens) {
+              justify-content: left;
+            }
+            li {
+              padding: 10px;
+              img {
+                width: 40px;
+                @include responsive(pc-screens) {
+                  width: 40px;
+                  // opacity: 0.5;
+                  // transition: all 0.5s;
+                  // &:hover {
+                  //   opacity: 1;
+                  // }
+                }
+              }
+            }
+          }
+        } // sns
+        .footerInfo {
+          display: flex;
+          justify-content: space-between;
+          font-size: 11.5px;
+          @include responsive(pc-screens) {
+            padding: 0;
+            font-size: 16px;
+            width: 35%;
+            align-items: center;
+            justify-content: end;
+          }
+          p {
+            @include responsive(pc-screens) {
+              &:last-child {
+                margin-left: 100px;
+              }
+            }
+          }
+        }
+      } // footer
+    } // container
+  } // wrap-inner
+} // wrapper

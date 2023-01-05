@@ -1,0 +1,918 @@
+@import "./style1.scss";
+@import "./common1.scss";
+@import "./mixin1.scss";
+
+@include responsive(pc-screens) {
+  body {
+    width: 100%;
+    height: 100%;
+    max-width: 2560px;
+  }
+}
+
+.container {
+  padding: 0 20px;
+  // margin-right: 20px;
+  // position: relative;
+  width: 100%; // 모바일, 태블릿
+  // background-color: #000;
+  // max-width: 1200px; // pc
+
+  // background-color: yellow;
+  @include responsive(pc-screens) {
+    padding: 0;
+    margin: 0 auto;
+    // background-color: antiquewhite;
+  }
+}
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-image: url(../../../../images/background/detail_page_main_background.png);
+  // margin: 0 20px;
+
+  .flexWrapper {
+    @include responsive(pc-screens) {
+      height: 100%;
+      display: flex;
+      flex-direction: row;
+    }
+    header {
+      height: 80px;
+      position: relative;
+      z-index: 20000;
+
+      @include responsive(pc-screens) {
+        height: auto;
+        // background-color: #ccc;
+        width: 370px;
+        background-image: url(../../../../images/background/detail_page_header_background.png);
+      }
+
+      .header {
+        @include responsive(pc-screens) {
+          position: fixed;
+        }
+        .logoMenu {
+          display: none;
+
+          @include responsive(pc-screens) {
+            display: block;
+            padding-top: 70px;
+            padding-left: 100px;
+          }
+
+          .logo {
+            a {
+              @include responsive(pc-screens) {
+                width: 190px;
+              }
+            }
+          }
+
+          .menu {
+            @include responsive(pc-screens) {
+              margin-top: 130px;
+            }
+
+            .gnb {
+              @include responsive(pc-screens) {
+                font-size: 30px;
+              }
+
+              li {
+                @include responsive(pc-screens) {
+                  padding-bottom: 60px;
+
+                  &:hover {
+                    ul {
+                      height: 100px;
+                    }
+                  }
+                }
+
+                &:first-child {
+                  @include responsive(pc-screens) {
+                    padding-bottom: 80px;
+                  }
+                }
+
+                .subMenu {
+                  @include responsive(pc-screens) {
+                    height: 0px;
+                    overflow: hidden;
+                    padding-top: 40px;
+
+                    transition: all 0.5s;
+                  }
+
+                  li {
+                    @include responsive(pc-screens) {
+                      display: flex;
+                      padding-bottom: 0px;
+                    }
+
+                    a {
+                      @include responsive(pc-screens) {
+                        padding-left: 5px;
+                        padding-bottom: 10px;
+                        font : {
+                          size: 18px;
+                          family: $font-sub;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        .mobileLogoMenu {
+          display: flex;
+          @include responsive(pc-screens) {
+            display: none;
+          }
+
+          .mobileLogo {
+            position: fixed;
+            top: 22px;
+            left: 20px;
+            z-index: 20000;
+          }
+
+          .beforeMenu {
+            position: fixed;
+            top: 38px;
+            right: 20px;
+            cursor: pointer;
+            z-index: 20000;
+
+            span {
+              display: block;
+              width: 30px;
+              height: 4px;
+              background-color: #000;
+              &:nth-child(2) {
+                margin: 5px 0;
+              }
+            }
+          }
+          .afterMenu {
+            display: none;
+            position: fixed;
+            top: 38px;
+            right: 20px;
+            cursor: pointer;
+
+            &:after {
+              position: fixed;
+              top: 25px;
+              right: 20px;
+              content: "\00d7";
+              font-size: 50px;
+              color: black;
+            }
+          }
+        }
+      }
+    }
+    // header
+
+    main {
+      // width: 100%;
+
+      @include responsive(pc-screens) {
+        width: 80%;
+      }
+
+      .main {
+        // position: relative;
+        @include responsive(pc-screens) {
+          width: 1180px;
+          margin: 0 auto;
+        }
+
+        .mainSubMenu {
+          display: none;
+          @include responsive(pc-screens) {
+            display: block;
+            width: 100%;
+            height: 70px;
+          }
+
+          ul {
+            @include responsive(pc-screens) {
+              display: flex;
+              position: absolute;
+              right: 100px;
+              top: 50px;
+            }
+
+            li {
+              @include responsive(pc-screens) {
+                padding-left: 25px;
+              }
+
+              a {
+                @include responsive(pc-screens) {
+                  font : {
+                    family: $font-sub;
+                    size: 14px;
+                  }
+                }
+              }
+            }
+          }
+        } // mainSubMenu
+
+        .sec1 {
+          position: relative;
+          margin-top: 30px;
+          @include responsive(pc-screens) {
+            padding: 150px 120px;
+          }
+          h1 {
+            position: absolute;
+            font-size: 40px;
+            left: 190px;
+            top: 10px;
+            @include responsive(pc-screens) {
+              top: 160px;
+              left: 320px;
+              font-size: 90px;
+            }
+          }
+          h4 {
+            font-size: 30px;
+            color: #dbdbdb;
+            @include responsive(pc-screens) {
+              text-align: left;
+            }
+          }
+          span {
+            display: block;
+            height: 5px;
+            width: 180px;
+            margin: 10px 0;
+            background-color: #dbdbdb;
+            @include responsive(pc-screens) {
+              margin: 20px 0;
+            }
+          }
+          .mobile-box {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 40px 0;
+            @include responsive(pc-screens) {
+              display: none;
+            }
+            div {
+              width: 100%;
+
+              img {
+                width: 100%;
+              }
+            }
+          }
+
+          .grid-box {
+            display: none;
+            @include responsive(pc-screens) {
+              display: grid;
+              margin-top: 100px;
+              row-gap: 15px;
+              .div1 {
+                grid-area: div1;
+              }
+              .div2 {
+                grid-area: div2;
+              }
+              .div3 {
+                grid-area: div3;
+              }
+              grid-template-areas:
+                "div1 div2"
+                "div3 div3";
+            }
+            .item {
+              margin: 10px 0;
+              img {
+                width: 100%;
+                height: 100%;
+              }
+            }
+          }
+        } // sec1
+
+        .slider {
+          .inner {
+            .sec2 {
+              @include responsive(pc-screens) {
+                position: relative;
+                height: 2200px;
+              }
+              .sec2-main {
+                position: relative;
+                margin: 70px 0;
+                height: 300px;
+
+                .sec2-pic {
+                  position: absolute;
+                  top: 35px;
+                  left: 50%;
+                  transform: translate(-50%, 0); //
+                  width: 250px;
+                  height: 300px;
+                  z-index: 0;
+                  @include responsive(pc-screens) {
+                    margin-top: 10px;
+                    width: 470px;
+                    height: 560px;
+                    position: absolute;
+                  }
+                }
+
+                h1 {
+                  position: absolute;
+                  font-size: 40px;
+                  z-index: 1;
+                  @include responsive(pc-screens) {
+                    font-size: 50px;
+                    position: absolute;
+                    left: 250px;
+                  }
+                }
+                h4 {
+                  position: absolute;
+                  top: 55px;
+                  font-size: 34px;
+                  color: #dbdbdb;
+                  z-index: 2;
+                  @include responsive(pc-screens) {
+                    top: 70px;
+                    font-size: 40px;
+                    position: absolute;
+                    left: 250px;
+                  }
+                }
+                h5 {
+                  position: absolute;
+                  top: 0;
+                  right: 50px;
+                  @include responsive(pc-screens) {
+                    font-size: 30px;
+                    position: absolute;
+                    left: 880px;
+                    top: 50px;
+                  }
+                  span {
+                    font-size: 16px;
+                    color: gray;
+                  }
+                }
+              } // sec2-main
+              .sec2-con-mo {
+                @include responsive(pc-screens) {
+                  display: none;
+                }
+                .acordian-menu {
+                  li {
+                    font-family: $font-sub;
+
+                    a {
+                      display: block;
+                      font-size: 18px;
+                      justify-content: space-around;
+                      padding: 20px;
+                      border-top: 2px solid #dbdbdb;
+
+                      img {
+                        position: absolute;
+                        right: 40px;
+                      }
+                    }
+
+                    .contents {
+                      display: none;
+                      border-top: 2px solid #dbdbdb;
+                      font-size: 14px;
+                      padding: 20px;
+                    }
+                    .last-p {
+                      display: none;
+                      border-top: 2px solid #dbdbdb;
+                      font-size: 14px;
+                      padding: 20px;
+                      border-bottom: 2px solid #dbdbdb;
+                    }
+                  }
+                }
+              } // sec2-con-mo
+              .sec2-con-pc {
+                display: none;
+                @include responsive(pc-screens) {
+                  display: block;
+                  position: absolute;
+                  top: 780px;
+                  display: flex;
+                  width: 100%;
+                  flex-flow: wrap;
+                  padding: 0 30px;
+                  font-family: $font-sub;
+                }
+                div {
+                  @include responsive(pc-screens) {
+                    width: 50%;
+                    padding: 25px;
+                    border-top: 2px solid #dbdbdb;
+                  }
+
+                  img {
+                    float: left;
+                    margin-right: 15px;
+                  }
+                  h6 {
+                    font-size: 18px;
+                    padding: 25px 0;
+                  }
+                  p {
+                    font-size: 14px;
+                  }
+                }
+              }
+
+              .map {
+                padding: 100px 0;
+                font-family: $font-sub;
+                text-align: center;
+                @include responsive(pc-screens) {
+                  position: relative;
+                  top: 970px;
+                  text-align: center;
+                  padding: 80px 0;
+                  border-top: 2px solid #dbdbdb;
+                }
+                h3 {
+                  font-size: 34px;
+                  @include responsive(pc-screens) {
+                    font-size: 36px;
+                  }
+                }
+                p {
+                  font-size: 24px;
+                  padding: 40px 10px;
+                  color: #929292;
+                  @include responsive(pc-screens) {
+                    font-size: 30px;
+                    padding: 30px 0 80px 0;
+                  }
+                }
+                iframe {
+                  width: 100%;
+                  height: 300px;
+                  @include responsive(pc-screens) {
+                    width: 1110px;
+                    height: 500px;
+                  }
+                }
+              }
+            } // .sec2
+          } // inner
+        } // slider
+        .bx-wrapper {
+          position: relative;
+          .bx-controls-direction {
+            font-size: 30px;
+            display: none;
+            @include responsive(pc-screens) {
+              display: block;
+            }
+            a {
+              position: absolute;
+              top: 230px;
+              display: block;
+              width: 30px;
+              overflow: hidden;
+              @include responsive(pc-screens) {
+                top: 380px;
+              }
+            }
+            .bx-prev {
+              left: 0;
+              @include responsive(pc-screens) {
+                left: 100px;
+              }
+              &:before {
+                content: "\e93d";
+                font-family: "xeicon";
+              }
+            }
+            .bx-next {
+              right: 0;
+              @include responsive(pc-screens) {
+                right: 100px;
+              }
+              &:before {
+                content: "\e940";
+                font-family: "xeicon";
+              }
+            }
+          }
+          .bx-pager {
+            font-size: 0;
+          }
+        } //bx-wrapper
+      }
+    }
+    .footer-geonggi {
+      display: none;
+      @include responsive(pc-screens) {
+        display: block;
+        width: 100%;
+        img {
+          vertical-align: top;
+          width: 100%;
+        }
+      }
+    }
+  }
+  // main
+}
+
+footer {
+  .container {
+    @include responsive(pc-screens) {
+      margin: 0;
+    }
+  }
+  .footer {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    color: white;
+
+    @include responsive(pc-screens) {
+      width: 100%;
+      padding: 120px 185px 80px 545px;
+    }
+
+    .footInfo {
+      padding-top: 60px;
+      padding-bottom: 30px;
+
+      @include responsive(pc-screens) {
+        // padding: 0;
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+
+        font-size: 20px;
+        margin-bottom: 30px;
+      }
+
+      address {
+        font-style: normal;
+        font-family: $font-sub;
+      }
+
+      p {
+        margin: 20px 0;
+
+        @include responsive(pc-screens) {
+          margin: 0;
+        }
+      }
+    }
+
+    .footBox {
+      width: 100%;
+      @include responsive(pc-screens) {
+        display: flex;
+        height: 250px;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        text-align: center;
+
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+      }
+
+      .footLogoCopy {
+        padding: 30px;
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        text-align: center;
+
+        @include responsive(pc-screens) {
+          width: 30%;
+          padding: 0;
+          border: 0;
+        }
+
+        a {
+          color: white;
+          font-size: 60px;
+        }
+
+        p {
+          font-size: 10px;
+        }
+
+        .copyright {
+          @include responsive(pc-screens) {
+            font-size: 12px;
+            font-family: $font-sub;
+          }
+        }
+      }
+
+      .footSns {
+        padding: 30px;
+        border-bottom: 1px solid #ccc;
+
+        @include responsive(pc-screens) {
+          position: relative;
+          width: 40%;
+          height: 250px;
+          border-bottom: 0;
+          border-right: 1px solid #ccc;
+          border-left: 1px solid #ccc;
+        }
+        .footSnsCont {
+          display: flex;
+          justify-content: center;
+
+          @include responsive(pc-screens) {
+            padding: 60px 80px;
+          }
+
+          li {
+            padding: 10px;
+
+            @include responsive(pc-screens) {
+              padding-right: 15px;
+
+              &:last-child {
+                padding-right: 0;
+              }
+            }
+            img {
+              width: 50px;
+
+              @include responsive(pc-screens) {
+                width: 60px;
+                opacity: 0.5;
+
+                transition: all 0.5s;
+
+                &:hover {
+                  opacity: 1;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .footMenu {
+        padding: 40px 0;
+        font-size: 14px;
+        width: 100%;
+
+        @include responsive(pc-screens) {
+          width: 30%;
+          padding: 0;
+          font-size: 14px;
+        }
+        ul {
+          display: flex;
+          width: 100%;
+          padding: 10px;
+          // margin-left: 5px;
+
+          &:last-child {
+            text-align: left;
+          }
+
+          li {
+            width: 33%;
+            padding: 0 5px;
+            text-align: center;
+
+            a {
+              width: 100%;
+              color: white;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.wrapper1 {
+  display: none;
+  position: fixed;
+  z-index: 10000;
+  width: 100%;
+  height: 100vh;
+  @include responsive(pc-screens) {
+    display: none;
+  }
+
+  .wrap-inner {
+    height: 100vh;
+    background-image: url(../../../../images/background/main_menu_background.png);
+    @include responsive(pc-screens) {
+      display: none;
+    }
+    .container1 {
+      width: 100%; // 모바일, 태블릿
+      padding: 0 20px;
+      @include responsive(pc-screens) {
+        display: flex;
+        padding: 0 130px;
+        flex-wrap: wrap;
+      }
+
+      .menu1 {
+        position: relative;
+        margin-top: 0;
+        height: 550px;
+        @include responsive(pc-screens) {
+          position: relative;
+          width: 77%;
+          height: 820px;
+        }
+        .gnb {
+          position: absolute;
+          top: 8%;
+          right: 0;
+          left: 0;
+          @include responsive(pc-screens) {
+            position: absolute;
+            top: 60px;
+          }
+          #extra {
+            margin: 50px 0 70px;
+          }
+          li {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 40px;
+            @include responsive(pc-screens) {
+              display: initial;
+            }
+
+            a {
+              font-size: 34px;
+              @include responsive(pc-screens) {
+                font-size: 50px;
+              }
+            }
+            .gnb-title {
+              @include responsive(pc-screens) {
+                margin: 50px 0 20px 0;
+              }
+            }
+
+            .sub-gnb {
+              li {
+                margin-bottom: 0;
+                @include responsive(pc-screens) {
+                  display: flex;
+                  justify-content: left;
+                }
+                a {
+                  color: #a3a3a3;
+                  font-size: 16px;
+                  margin-bottom: 20px;
+                  @include responsive(pc-screens) {
+                    font-size: 30px;
+                    margin-bottom: 10px;
+                  }
+                }
+              }
+              .sub-gnb-li {
+                justify-content: end;
+                @include responsive(pc-screens) {
+                  justify-content: left;
+                }
+              }
+              .sub-gnb-li2 {
+                flex-direction: column;
+                text-align: right;
+                @include responsive(pc-screens) {
+                  text-align: left;
+                  flex-direction: row;
+                }
+              }
+            }
+          }
+        }
+      } // menu
+
+      .menu2 {
+        font-family: $font-sub;
+        font-size: 12px;
+        @include responsive(pc-screens) {
+          width: 23%;
+          margin: 0;
+        }
+        .close-btn-pc {
+          display: none;
+          @include responsive(pc-screens) {
+            display: block;
+            position: absolute;
+            top: 60px;
+            right: 150px;
+          }
+        }
+        ul {
+          display: flex;
+          justify-content: center;
+          padding-top: 25px;
+          @include responsive(pc-screens) {
+            display: initial;
+            font-family: $font-main;
+            font-size: 25px;
+          }
+          li {
+            @include responsive(pc-screens) {
+              margin-top: 130px;
+            }
+            a {
+              margin: 0 20px;
+              @include responsive(pc-screens) {
+                color: #a3a3a3;
+              }
+            }
+          }
+        }
+      } //menu2
+
+      span {
+        display: block;
+        width: 100%;
+        height: 2px;
+        background-color: #a3a3a3;
+        margin-top: 20px;
+      }
+      .footer {
+        @include responsive(pc-screens) {
+          display: flex;
+          width: 100%;
+        }
+
+        .sns1 {
+          padding: 40px;
+          @include responsive(pc-screens) {
+            width: 65%;
+            padding: 20px 0;
+          }
+          .footSns1 {
+            display: flex;
+            justify-content: center;
+            @include responsive(pc-screens) {
+              justify-content: left;
+            }
+            li {
+              padding: 10px;
+              img {
+                width: 40px;
+                @include responsive(pc-screens) {
+                  width: 40px;
+                }
+              }
+            }
+          }
+        } // sns
+        .footerInfo1 {
+          display: flex;
+          justify-content: space-between;
+          font-size: 11.5px;
+          @include responsive(pc-screens) {
+            width: 35%;
+            padding: 0;
+            font-size: 16px;
+            align-items: center;
+            justify-content: end;
+          }
+          p {
+            @include responsive(pc-screens) {
+              &:last-child {
+                margin-left: 100px;
+              }
+            }
+          }
+        }
+      } // footer
+    } // container
+  } // wrap-inner
+}
