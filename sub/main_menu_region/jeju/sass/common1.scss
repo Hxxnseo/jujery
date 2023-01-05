@@ -11,24 +11,9 @@ body {
     size: 16px;
     family: $font-main;
   }
-  // background-image: url(../이미지/메인페이지\ 배경.png);
+
 }
 
-// .container {
-//   position: relative;
-//   width: 100%; // 모바일, 태블릿
-//   max-width: 1200px; // pc
-
-// @include responsive(pc-screens) {
-//  margin: 0 225px 0 125px;
-// }
-
-// @media screen {
-// margin: 0 225px 0 125px;
-// }
-
-// background-color: antiquewhite;
-// }
 
 ul,
 ol {
@@ -64,7 +49,7 @@ h4 {
 }
 
 p {
-  // line-height: 20px;
+
   font-size: 1em;
   font-family: $font-sub;
 }

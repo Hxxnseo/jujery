@@ -34,11 +34,8 @@
       background-color: black;
     }
     header {
-      // height: 80px;
-      // background-color: black;
       @include responsive(pc-screens) {
         height: auto;
-        // background-color: #ccc;
         width: 370px;
         background-color: black;
       }
@@ -176,7 +173,7 @@
         }
       }
     }
-    // header
+
 
     main {
       position: relative;
@@ -190,11 +187,9 @@
         }
 
         .slider {
-          // width: 1560px;
           height: 400px;
           transition: transform 0.5s;
           @include responsive(pc-screens) {
-            // width: 6573px;
           }
           .inner {
             position: relative;
@@ -227,7 +222,7 @@
                 top: 45%;
                 transform: translate(-50%, -50%);
               }
-            } //.main-title
+            } 
             .main-title1 {
               position: absolute;
               color: white;
@@ -259,13 +254,12 @@
                 }
               }
             }
-          } // inner
-        } // slider
+          } 
+        } 
         .bx-controls-direction {
           font-size: 0;
         }
         .bx-pager {
-          // font-size: 0;
           position: absolute;
           bottom: 20px;
           display: flex;
@@ -333,11 +327,11 @@
             }
           }
         }
-      } // container
-    } // .main
-  } // main
+      } 
+    } 
+  } 
 }
-// flexwrapper
+
 
 footer {
   .container {
@@ -362,7 +356,6 @@ footer {
       padding-bottom: 30px;
 
       @include responsive(pc-screens) {
-        // padding: 0;
         display: flex;
         width: 100%;
         justify-content: space-between;
@@ -491,7 +484,6 @@ footer {
           display: flex;
           width: 100%;
           padding: 10px;
-          // margin-left: 5px;
 
           &:last-child {
             text-align: left;
@@ -530,7 +522,7 @@ footer {
       display: none;
     }
     .container1 {
-      width: 100%; // 모바일, 태블릿
+      width: 100%; 
       padding: 0 20px;
       @include responsive(pc-screens) {
         display: flex;
@@ -614,7 +606,7 @@ footer {
             }
           }
         }
-      } // menu
+      } 
 
       .menu2 {
         font-family: $font-sub;
@@ -655,7 +647,7 @@ footer {
             }
           }
         }
-      } //menu2
+      } 
 
       span {
         display: block;
@@ -692,7 +684,7 @@ footer {
               }
             }
           }
-        } // sns
+        } 
         .footerInfo1 {
           display: flex;
           justify-content: space-between;
@@ -712,7 +704,7 @@ footer {
             }
           }
         }
-      } // footer
-    } // container
-  } // wrap-inner
+      } 
+    } 
+  } 
 }
