@@ -11,14 +11,8 @@
 }
 
 .container {
-  // margin-right: 20px;
-  // position: relative;
-  width: 100%; // 모바일, 태블릿
+  width: 100%;
   padding: 0 20px;
-  // background-color: #000;
-  // max-width: 1200px; // pc
-
-  // background-color: #000;
   @include responsive(pc-screens) {
     margin: 0 auto;
     padding: 0;
@@ -29,7 +23,7 @@
   position: relative;
   width: 100%;
   height: 100%;
-  background-image: url(../../../../images/background/main_menu_background.png);
+  background-image: url(../../../../images/background/detail_page_main_background.png);
   // margin: 0 20px;
 
   .flexWrapper {
@@ -44,7 +38,6 @@
       z-index: 210000;
 
       @include responsive(pc-screens) {
-        // background-color: #ccc;
         width: 370px;
         height: auto;
         background-image: url(../../../../images/background/detail_page_header_background.png);
@@ -179,16 +172,11 @@
         }
       }
     }
-    // header
 
     main {
-      // width: 100%;
-
       @include responsive(pc-screens) {
         width: 80%;
       }
-
-      // position: relative;
       .main {
         @include responsive(pc-screens) {
           width: 1180px;
@@ -226,9 +214,7 @@
               }
             }
           }
-        } // mainSubMenu
-
-        // 여기부터 작성하세요오오
+        }
         .privacy {
           h3 {
             margin-top: 30px;
@@ -245,9 +231,9 @@
             font-size: small;
             margin-bottom: 100px;
           }
-        } //.privacy
-      } // .mains
-    } // main
+        }
+      }
+    }
   }
 
   footer {
@@ -272,7 +258,6 @@
         padding-bottom: 30px;
 
         @include responsive(pc-screens) {
-          // padding: 0;
           display: flex;
           width: 100%;
           justify-content: space-between;
@@ -401,8 +386,6 @@
             display: flex;
             width: 100%;
             padding: 10px;
-            // margin-left: 5px;
-
             &:last-child {
               text-align: left;
             }
@@ -436,12 +419,12 @@
 
   .wrap-inner {
     height: 100vh;
-    background-image: url(../../../../images/background/main_menu_background.png);
+    background-image: url(../../../../images/background/detail_page_main_background.png);
     @include responsive(pc-screens) {
       display: none;
     }
     .container1 {
-      width: 100%; // 모바일, 태블릿
+      width: 100%;
       padding: 0 20px;
       @include responsive(pc-screens) {
         display: flex;
@@ -524,7 +507,7 @@
             }
           }
         }
-      } // menu
+      }
 
       .menu2 {
         font-family: $font-sub;
@@ -563,7 +546,7 @@
             }
           }
         }
-      } //menu2
+      }
 
       span {
         display: block;
@@ -600,7 +583,7 @@
               }
             }
           }
-        } // sns
+        }
         .footerInfo1 {
           display: flex;
           justify-content: space-between;
@@ -620,7 +603,7 @@
             }
           }
         }
-      } // footer
-    } // container
-  } // wrap-inner
+      }
+    }
+  }
 }

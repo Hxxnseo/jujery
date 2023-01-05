@@ -86,7 +86,7 @@ p {
   position: relative;
   width: 100%;
   height: 100%;
-  background-image: url(../../../../images/background/main_menu_background.png);
+  background-image: url(../../../../images/background/detail_page_main_background.png);
 }
 @media screen and (min-width: 1024px) {
   .wrapper .flexWrapper {
@@ -446,7 +446,7 @@ p {
 }
 .wrapper1 .wrap-inner {
   height: 100vh;
-  background-image: url(../../../../images/background/main_menu_background.png);
+  background-image: url(../../../../images/background/detail_page_main_background.png);
 }
 @media screen and (min-width: 1024px) {
   .wrapper1 .wrap-inner {

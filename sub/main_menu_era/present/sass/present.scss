@@ -11,14 +11,9 @@
 }
 
 .container {
-  // margin-right: 20px;
-  // position: relative;
-  width: 100%; // 모바일, 태블릿
+  width: 100%;
   padding: 0 20px;
-  // background-color: #000;
-  // max-width: 1200px; // pc
 
-  // background-color: #000;
   @include responsive(pc-screens) {
     margin: 0 auto;
     padding: 0;
@@ -29,8 +24,7 @@
   position: relative;
   width: 100%;
   height: 100%;
-  background-image: url(../../../../images/background/main_menu_background.png);
-  // margin: 0 20px;
+  background-image: url(../../../../images/background/detail_page_main_background.png);
 
   .flexWrapper {
     @include responsive(pc-screens) {
@@ -42,7 +36,6 @@
       height: 80px;
 
       @include responsive(pc-screens) {
-        // background-color: #ccc;
         width: 370px;
         height: auto;
         background-image: url(../../../../images/background/detail_page_header_background.png);
@@ -177,21 +170,17 @@
         }
       }
     }
-    // header
 
     main {
-      // width: 100%;
 
       @include responsive(pc-screens) {
         width: 80%;
       }
 
-      // position: relative;
       .main {
         @include responsive(pc-screens) {
           width: 1180px;
           margin: 0 auto;
-          margin-top: -20px; // 추가함
         }
 
         .mainSubMenu {
@@ -225,9 +214,7 @@
               }
             }
           }
-        } // mainSubMenu
-
-        // 여기부터 작성하세요오오
+        }
         .introStart {
           margin-top: 30px;
           text-align: center;
@@ -269,7 +256,6 @@
             }
           }
         }
-        // introStart
 
         .pageintro{
           position: relative;
@@ -316,12 +302,11 @@
               top: 90%; left: 20%;
             }
           }
-        } // .pageintro
+        } 
 
         div{
           margin-bottom: 10px;
           font-family: $font-sub;
-          line-height: 30px;
           @include responsive(pc-screens) {
             display: inline-block;
             text-align: center;
@@ -359,18 +344,13 @@
               display: block;
               width: 96%;
               margin-top: 25px;
-              // &:hover {
-              //   filter: brightness(40%);
-              // }
             }
           }
-        } // div
+        }
 
 
         .titlenew {
-          // margin-top: -50px;
           @include responsive(pc-screens) {
-            // margin-top: 50px;
             display: flex;
           }
         }
@@ -396,15 +376,14 @@
               top: 0%; left: -23%;
               span,
               span.black {
-                // display: none;
                 color: #fff;
               }
               p {
                 line-height: 200px;
-              } // p
-            } // pc버전
+              } 
+            }
           }
-        } // recommand
+        }
 
         .sort {
           margin-top: 100px;
@@ -459,7 +438,6 @@
                   padding: 20px 60px;
                   .arrow-white {
                     position: absolute;
-                    // z-index: 2;
                     top: 50%; left: 3%;
                     cursor: pointer;
                     width: 50px; height: 50px;
@@ -528,16 +506,15 @@
                     font-size: 0.8em;
                     padding-left: 8%;
                     line-height: 3em;
-                    // background-color: rgba(100,50,100,0.4);
                     padding-bottom: 20px;
                   }
                 }
               }
-            } // .mobile
-          } // containerjj
-        } // .sort
-      } // .main
-    } // main
+            } 
+          }
+        } 
+      } 
+    }
   }
 
   footer {
@@ -562,7 +539,6 @@
         padding-bottom: 30px;
 
         @include responsive(pc-screens) {
-          // padding: 0;
           display: flex;
           width: 100%;
           justify-content: space-between;
@@ -691,7 +667,6 @@
             display: flex;
             width: 100%;
             padding: 10px ;
-            // margin-left: 5px;
 
             &:last-child {
               text-align: left;
@@ -726,12 +701,12 @@
 
   .wrap-inner {
     height: 100vh;
-    background-image: url(../../../../images/background/main_menu_background.png);
+    background-image: url(../../../../images/background/detail_page_main_background.png);
     @include responsive(pc-screens) {
       display: none;
     }
     .container1 {
-      width: 100%; // 모바일, 태블릿
+      width: 100%;
       padding: 0 20px;
       @include responsive(pc-screens) {
         display: flex;
@@ -814,7 +789,7 @@
             }
           }
         }
-      } // menu
+      }
 
       .menu2 {
         font-family: $font-sub;
@@ -853,7 +828,7 @@
             }
           }
         }
-      } //menu2
+      }
 
       span {
         display: block;
@@ -890,7 +865,7 @@
               }
             }
           }
-        } // sns
+        }
         .footerInfo1 {
           display: flex;
           justify-content: space-between;
@@ -910,7 +885,7 @@
             }
           }
         }
-      } // footer
-    } // container
-  } // wrap-inner
+      }
+    }
+  }
 }
