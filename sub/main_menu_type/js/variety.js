@@ -15,7 +15,6 @@ $(function () {
     }
   });
 
-  // mobile menu_bar
   $(".beforeMenu").on("click", function () {
     $(".wrapper1").slideDown();
     $(".beforeMenu").hide();

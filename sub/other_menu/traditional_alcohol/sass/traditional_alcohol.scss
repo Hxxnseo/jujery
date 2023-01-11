@@ -169,7 +169,6 @@
         }
       }
     }
-    // header
 
     main {
       @include responsive(pc-screens) {
@@ -213,7 +212,7 @@
               }
             }
           }
-        } // mainSubMenu
+        }
 
         section.def_alcohol {
           margin-top: 30px;
@@ -282,7 +281,7 @@
           }
         } 
       }
-    } // main
+    }
   }
 
   footer {
