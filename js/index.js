@@ -11,7 +11,6 @@ var page = 1;
 var lastPage = $("#box").length;
 
 $(window).on("wheel", function (e) {
-  // $(function () {
   if ($html.is(":animated")) return;
 
   if (e.originalEvent.deltaY > 0) {
@@ -37,7 +36,6 @@ $(window).on("wheel", function (e) {
     $(".cont6").show(4000);
     $(".cont7").delay(2000).show(5000);
   }
-  // });
 });
 
 $html.animate({ scrollTop: 0 }, 10);

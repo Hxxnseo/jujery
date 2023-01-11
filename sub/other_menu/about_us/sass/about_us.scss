@@ -12,14 +12,11 @@
 
 .container {
   margin-right: 20px;
-  // position: relative;
-  width: 100%; // 모바일, 태블릿
-  // max-width: 1200px; // pc
+  width: 100%; 
 
   @include responsive(pc-screens) {
     padding: 0;
     margin: 0 auto;
-    // background-color: antiquewhite;
   }
 }
 
@@ -28,7 +25,6 @@
   width: 100%;
   height: 100%;
 
-  // margin: 0 20px;
 
   .flexWrapper {
     @include responsive(pc-screens) {
@@ -38,11 +34,8 @@
       background-color: black;
     }
     header {
-      // height: 80px;
-      // background-color: black;
       @include responsive(pc-screens) {
         height: auto;
-        // background-color: #ccc;
         width: 370px;
         background-color: black;
       }
@@ -180,7 +173,7 @@
         }
       }
     }
-    // header
+
 
     main {
       position: relative;
@@ -194,11 +187,9 @@
         }
 
         .slider {
-          // width: 1560px;
           height: 400px;
           transition: transform 0.5s;
           @include responsive(pc-screens) {
-            // width: 6573px;
           }
           .inner {
             position: relative;
@@ -231,7 +222,7 @@
                 top: 45%;
                 transform: translate(-50%, -50%);
               }
-            } //.main-title
+            } 
             .main-title1 {
               position: absolute;
               color: white;
@@ -263,13 +254,12 @@
                 }
               }
             }
-          } // inner
-        } // slider
+          } 
+        } 
         .bx-controls-direction {
           font-size: 0;
         }
         .bx-pager {
-          // font-size: 0;
           position: absolute;
           bottom: 20px;
           display: flex;
@@ -329,18 +319,19 @@
           ul {
             display: flex;
             position: absolute;
-            right: 150px;
+            right: 100px;
             top: 50px;
             li {
               padding-left: 25px;
+              font-size: 14px;
             }
           }
         }
-      } // container
-    } // .main
-  } // main
+      } 
+    } 
+  } 
 }
-// flexwrapper
+
 
 footer {
   .container {
@@ -365,7 +356,6 @@ footer {
       padding-bottom: 30px;
 
       @include responsive(pc-screens) {
-        // padding: 0;
         display: flex;
         width: 100%;
         justify-content: space-between;
@@ -494,7 +484,6 @@ footer {
           display: flex;
           width: 100%;
           padding: 10px;
-          // margin-left: 5px;
 
           &:last-child {
             text-align: left;
@@ -533,7 +522,7 @@ footer {
       display: none;
     }
     .container1 {
-      width: 100%; // 모바일, 태블릿
+      width: 100%; 
       padding: 0 20px;
       @include responsive(pc-screens) {
         display: flex;
@@ -617,7 +606,7 @@ footer {
             }
           }
         }
-      } // menu
+      } 
 
       .menu2 {
         font-family: $font-sub;
@@ -632,7 +621,7 @@ footer {
             display: block;
             position: absolute;
             top: 60px;
-            right: 150px;
+            right: 100px;
           }
         }
         ul {
@@ -653,11 +642,12 @@ footer {
               color: black;
               @include responsive(pc-screens) {
                 color: #a3a3a3;
+                font-size: 14px;
               }
             }
           }
         }
-      } //menu2
+      } 
 
       span {
         display: block;
@@ -694,7 +684,7 @@ footer {
               }
             }
           }
-        } // sns
+        } 
         .footerInfo1 {
           display: flex;
           justify-content: space-between;
@@ -714,7 +704,7 @@ footer {
             }
           }
         }
-      } // footer
-    } // container
-  } // wrap-inner
+      } 
+    } 
+  } 
 }
