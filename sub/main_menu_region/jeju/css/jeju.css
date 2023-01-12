@@ -348,7 +348,7 @@ p {
   .wrapper .flexWrapper main .main .sec1 .grid-box {
     display: grid;
     margin-top: 100px;
-    gap: 20px;
+    gap: 10px;
     grid-template-areas: "div1 div2 div2" "div1 div3 div4";
   }
   .wrapper .flexWrapper main .main .sec1 .grid-box .div1 {
@@ -361,10 +361,7 @@ p {
     grid-area: div3;
   }
 }
-.wrapper .flexWrapper main .main .sec1 .grid-box .item {
-  margin: 10px 0;
-}
-.wrapper .flexWrapper main .main .sec1 .grid-box .item img {
+.wrapper .flexWrapper main .main .sec1 .grid-box img {
   width: 100%;
   height: 100%;
 }
