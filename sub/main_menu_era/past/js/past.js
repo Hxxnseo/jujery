@@ -32,7 +32,7 @@ $(function () {
     $(".desc")
       .mouseover(function () {
         $(this).children(".dis-text").stop().css({ display: "block" });
-        $(this).children(".title").toggleClass("show");
+        $(this).children(".title").css({ display: 'none'});
         $(this).next().stop().animate(
           {
             position: "absolute",
@@ -44,7 +44,7 @@ $(function () {
       })
       .mouseout(function () {
         $(this).children(".dis-text").css({ display: "none" });
-        $(this).children(".title").toggleClass("show");
+        $(this).children(".title").css({ display: 'block'});
         $(this).next().stop().animate(
           {
             position: "absolute",
@@ -100,7 +100,7 @@ $(window).on("resize", function () {
     $(".desc")
       .mouseover(function () {
         $(this).children(".dis-text").stop().css({ display: "block" });
-        $(this).children(".title").toggleClass("show");
+        $(this).children(".title").css({ display: "none"})
         $(this).next().stop().animate(
           {
             position: "absolute",
@@ -112,7 +112,7 @@ $(window).on("resize", function () {
       })
       .mouseout(function () {
         $(this).children(".dis-text").css({ display: "none" });
-        $(this).children(".title").toggleClass("show");
+        $(this).children(".title").css({ display: 'block'})
         $(this).next().stop().animate(
           {
             position: "absolute",
