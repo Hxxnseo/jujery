@@ -422,10 +422,20 @@ p {
   background-position: -86px -33px;
 }
 .wrapper .flexWrapper main .main aside.slide .bx-wrapper .bx-prev {
+  left: 10px;
+  background: url("../../images/icon/controls.png") no-repeat 0 -32px;
   display: none;
 }
+.wrapper .flexWrapper main .main aside.slide .bx-wrapper .bx-prev:hover, .wrapper .flexWrapper main .main aside.slide .bx-wrapper .bx-prev:focus {
+  background-position: 0 0;
+}
 .wrapper .flexWrapper main .main aside.slide .bx-wrapper .bx-next {
+  right: 10px;
+  background: url("../../images/icon/controls.png") no-repeat -43px -32px;
   display: none;
+}
+.wrapper .flexWrapper main .main aside.slide .bx-wrapper .bx-next:hover, .wrapper .flexWrapper main .main aside.slide .bx-wrapper .bx-next:focus {
+  background-position: -43px 0;
 }
 .wrapper .flexWrapper main .main aside.slide .bx-wrapper .bx-controls-direction a.disabled {
   display: none;
@@ -558,6 +568,9 @@ p {
   .wrapper .flexWrapper main .main section.rec-box .recommend {
     width: 150%;
   }
+}
+.wrapper .flexWrapper main .main section.rec-box .recommend .slick-list {
+  margin-right: 100px;
 }
 .wrapper .flexWrapper main .main section.rec-box .recommend .rec-des {
   position: relative;
@@ -766,12 +779,13 @@ p {
   top: 150px;
   left: 50%;
   transform: translateX(-50%);
+  z-index: 5;
 }
 @media screen and (min-width: 1024px) {
   .wrapper .flexWrapper main section.brewery .category_wrap svg#icon-swipe {
     width: 100px;
-    height: 50px;
-    left: 500px;
+    height: 45px;
+    top: 170px;
     z-index: 5;
   }
 }
@@ -916,13 +930,12 @@ p {
 }
 .wrapper .flexWrapper main section.brewery .category_wrap .brewery_item .b_item {
   width: 160px;
-  margin-right: 10px;
-  margin-bottom: 20px;
+  margin: 0 auto;
 }
 @media screen and (min-width: 1024px) {
   .wrapper .flexWrapper main section.brewery .category_wrap .brewery_item .b_item {
     width: 280px;
-    margin: 20px auto;
+    margin: 20px 10px;
   }
 }
 .wrapper .flexWrapper main section.brewery .category_wrap .brewery_item .b_item a img {
@@ -940,12 +953,11 @@ p {
 }
 @media screen and (min-width: 1024px) {
   .wrapper .flexWrapper main section.brewery .category_wrap .brewery_item .b_item a img:hover {
-    transform: scale(1.2);
+    transform: scale(1.1, 1.1);
   }
 }
 .wrapper .flexWrapper main section.brewery .brewery_content {
   width: 100%;
-  margin-top: 50px;
   margin-bottom: 100px;
 }
 .wrapper .flexWrapper main section.brewery .brewery_content .brewery {
@@ -957,7 +969,7 @@ p {
 @media screen and (min-width: 1024px) {
   .wrapper .flexWrapper main section.brewery .brewery_content .brewery .location {
     height: 50px;
-    margin-bottom: 50px;
+    margin: 50px 0;
     display: flex;
     justify-content: center;
   }
@@ -968,10 +980,8 @@ p {
 @media screen and (min-width: 1024px) {
   .wrapper .flexWrapper main section.brewery .brewery_content .brewery .location .location_box {
     display: flex;
-    justify-content: center;
     align-items: center;
     margin-right: 20px;
-    margin-bottom: 0;
   }
 }
 .wrapper .flexWrapper main section.brewery .brewery_content .brewery .location .location_box img {
@@ -982,9 +992,7 @@ p {
 }
 @media screen and (min-width: 1024px) {
   .wrapper .flexWrapper main section.brewery .brewery_content .brewery .location .qr_box {
-    width: 50%;
     align-items: center;
-    display: block;
     display: flex;
   }
 }
