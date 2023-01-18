@@ -14,4 +14,11 @@ $(function () {
     $(".afterMenu").hide();
     $(".beforeMenu").show();
   });
+
+
+  
+$(document).ready(function () {
+  $(".slider").bxSlider();
+  $(".bx-controls-direction").children().empty();
+});
 });

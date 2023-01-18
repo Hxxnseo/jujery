@@ -64,7 +64,6 @@ p {
   font-family: "NotoSerifKR-Regular";
 }
 
-/* input 기본 스타일 초기화 */
 input {
   -webkit-appearance: none;
   -moz-appearance: none;

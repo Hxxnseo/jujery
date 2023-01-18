@@ -12,17 +12,10 @@
 
 .container {
   padding: 0 20px;
-  // margin-right: 20px;
-  // position: relative;
-  width: 100%; // 모바일, 태블릿
-  // background-color: #000;
-  // max-width: 1200px; // pc
-
-  // background-color: yellow;
+  width: 100%; 
   @include responsive(pc-screens) {
     padding: 0;
     margin: 0 auto;
-    // background-color: antiquewhite;
   }
 }
 
@@ -31,7 +24,6 @@
   width: 100%;
   height: 100%;
   background-image: url(../../../../images/background/detail_page_main_background.png);
-  // margin: 0 20px;
 
   .flexWrapper {
     @include responsive(pc-screens) {
@@ -46,7 +38,6 @@
 
       @include responsive(pc-screens) {
         height: auto;
-        // background-color: #ccc;
         width: 370px;
         background-image: url(../../../../images/background/detail_page_header_background.png);
       }
@@ -180,17 +171,14 @@
         }
       }
     }
-    // header
+
 
     main {
-      // width: 100%;
-
       @include responsive(pc-screens) {
         width: 80%;
       }
 
       .main {
-        // position: relative;
         @include responsive(pc-screens) {
           width: 1180px;
           margin: 0 auto;
@@ -227,7 +215,7 @@
               }
             }
           }
-        } // mainSubMenu
+        } 
 
         .sec1 {
           position: relative;
@@ -285,30 +273,30 @@
             @include responsive(pc-screens) {
               display: grid;
               margin-top: 100px;
+              gap:10px;
               .div1 {
                 grid-area: div1;
               }
               .div2 {
                 grid-area: div2;
-                margin-left: 10px;
+                
               }
               .div3 {
                 grid-area: div3;
-                margin-left: 10px;
+                
               }
               grid-template-areas:
                 "div1 div2"
                 "div1 div3";
             }
-            .item {
-              margin: 10px 0;
+            
               img {
                 width: 100%;
                 height: 100%;
               }
-            }
+            
           }
-        } // sec1
+        } 
 
         .slider {
           .inner {
@@ -325,8 +313,8 @@
                 .sec2-pic {
                   position: absolute;
                   top: 20px;
-                  left: 50%; // 고치기
-                  transform: translate(-50%, 0); // 고치기
+                  left: 50%;
+                  transform: translate(-50%, 0); 
                   width: 250px;
                   height: 300px;
                   z-index: 0;
@@ -335,7 +323,6 @@
                     width: 470px;
                     height: 560px;
                     position: absolute;
-                    // left: 350px; 지우기
                   }
                 }
 
@@ -365,7 +352,7 @@
                 h5 {
                   position: absolute;
                   top: 0;
-                  right: 50px; // 고치기
+                  right: 50px; 
                   @include responsive(pc-screens) {
                     font-size: 30px;
                     position: absolute;
@@ -377,7 +364,7 @@
                     color: gray;
                   }
                 }
-              } // sec2-main
+              } 
               .sec2-con-mo {
                 @include responsive(pc-screens) {
                   display: none;
@@ -414,7 +401,7 @@
                     }
                   }
                 }
-              } // sec2-con-mo
+              } 
               .sec2-con-pc {
                 display: none;
                 @include responsive(pc-screens) {
@@ -483,9 +470,9 @@
                   }
                 }
               }
-            } // .sec2
-          } // inner
-        } // slider
+            } 
+          } 
+        } 
         .bx-wrapper {
           position: relative;
           .bx-controls-direction {
@@ -528,7 +515,7 @@
           .bx-pager {
             font-size: 0;
           }
-        } //bx-wrapper
+        } 
       }
     }
     .footer-geonggi {
@@ -543,7 +530,6 @@
       }
     }
   }
-  // main
 }
 
 footer {
@@ -568,7 +554,6 @@ footer {
       padding-bottom: 30px;
 
       @include responsive(pc-screens) {
-        // padding: 0;
         display: flex;
         width: 100%;
         justify-content: space-between;
@@ -697,7 +682,6 @@ footer {
           display: flex;
           width: 100%;
           padding: 10px;
-          // margin-left: 5px;
 
           &:last-child {
             text-align: left;
@@ -736,7 +720,7 @@ footer {
       display: none;
     }
     .container1 {
-      width: 100%; // 모바일, 태블릿
+      width: 100%; 
       padding: 0 20px;
       @include responsive(pc-screens) {
         display: flex;
@@ -819,7 +803,7 @@ footer {
             }
           }
         }
-      } // menu
+      } 
 
       .menu2 {
         font-family: $font-sub;
@@ -858,7 +842,7 @@ footer {
             }
           }
         }
-      } //menu2
+      } 
 
       span {
         display: block;
@@ -895,7 +879,7 @@ footer {
               }
             }
           }
-        } // sns
+        } 
         .footerInfo1 {
           display: flex;
           justify-content: space-between;
@@ -915,7 +899,7 @@ footer {
             }
           }
         }
-      } // footer
-    } // container
-  } // wrap-inner
+      } 
+    } 
+  } 
 }

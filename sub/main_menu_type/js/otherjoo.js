@@ -1,9 +1,7 @@
-// aside - slider
 $(document).ready(function() {
     $('.slider').bxSlider();
 });
 
-// section2
 $(function() {
     $('.rec-item button').on("click", function() {
         $(this).parent()
@@ -16,8 +14,6 @@ $(function() {
         .css("display","none");
     });
 
-
-// 좋아요 버튼
     $('.heart').on("click", function() {
         $(this).next()
         .css("display","block");
@@ -27,7 +23,6 @@ $(function() {
         .css("display","none");
     });
 
-// section2 술소개
     $(document).ready(function() {
         var $slider = $('.multiple-items');
         var $progressBar = $('.swiper_scrollbar');
@@ -57,7 +52,6 @@ $(function() {
         });  
     });
 
-// section3 아코디언탭 on mobile
     $('.brewery_content .brewery_box .text a').click(function(e) {
         e.preventDefault();
         $(this).next().slideUp(300);
@@ -69,7 +63,6 @@ $(function() {
         }
     });
 
-// section3 brewery-contents 연결
     $('.brewery_item .b_item').click(function(e) {
         e.preventDefault();
         var index = $(this).index();
@@ -80,8 +73,6 @@ $(function() {
 
 });
 
-
-// mobile menu_bar
 $(".beforeMenu").on("click", function () {
     $(".wrapper1").slideDown();
     $(".beforeMenu").hide();
@@ -94,7 +85,6 @@ $(".beforeMenu").on("click", function () {
     $(".beforeMenu").show();
 });
 
-// side bar
 $(function () {
     const logoMenu = $(".footer").offset().top;
 
