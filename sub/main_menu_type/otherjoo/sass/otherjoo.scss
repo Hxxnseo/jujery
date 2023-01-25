@@ -643,7 +643,7 @@
                       }
                       &:hover {
                         @include responsive(pc-screens) {
-                          transform: scale(1.2);
+                          transform: scale(1.1, 1.1);
                         }
                       }
                     }
@@ -654,7 +654,6 @@
           
             .brewery_content {
               width: 100%;
-              margin-top: 50px;
               margin-bottom: 100px;
               .brewery {
                 width: 100%;
@@ -662,7 +661,7 @@
                   width: 100%;
                   @include responsive(pc-screens) {
                     height: 50px;
-                    margin-bottom: 50px;
+                    margin: 50px 0;
                     display: flex;
                     justify-content:center;
                   }
@@ -670,10 +669,8 @@
                     display: none;
                     @include responsive(pc-screens) {
                       display: flex;
-                      justify-content: center;
                       align-items: center;
                       margin-right: 20px;
-                      margin-bottom: 0;
                     }
 
                     img {
@@ -683,9 +680,7 @@
                   .qr_box {
                     display: none;
                     @include responsive(pc-screens) {
-                      width: 50%;
                       align-items: center;
-                      display: block;
                       display: flex;
                     }
                     img {
