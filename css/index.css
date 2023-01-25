@@ -227,6 +227,72 @@ main .pcSec1 .para h3 {
 main .pcSec1 .para h4 {
   font-size: 40px;
 }
+main .pcSec1 .scroll-down {
+  display: none;
+}
+@media screen and (min-width: 1024px) {
+  main .pcSec1 .scroll-down {
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 5%;
+    left: 0;
+    width: 34px;
+    height: 55px;
+    margin: 0 auto;
+  }
+}
+main .pcSec1 .scroll-down .mousey {
+  width: 3px;
+  height: 35px;
+  padding: 7px 12px;
+  border-radius: 25px;
+  border: 2px solid #fff;
+  box-sizing: content-box;
+}
+main .pcSec1 .scroll-down .mousey .scroller {
+  width: 3px;
+  height: 8px;
+  border-radius: 25%;
+  background-color: #fff;
+  animation-name: scroll;
+  animation-duration: 2.2s;
+  animation-timing-function: cubic-bezier(0.15, 0.41, 0.69, 0.94);
+  animation-iteration-count: infinite;
+}
+@keyframes scroll {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(15px);
+    opacity: 0;
+  }
+}
+@keyframes downup {
+  0% {
+    opacity: 0;
+    transform: translateY(0, 100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0, 0);
+  }
+}
+@keyframes bounce {
+  from, to {
+    margin-bottom: 0;
+    animation-timing-function: ease-out;
+  }
+  50% {
+    margin-bottom: 8px;
+    animation-timing-function: ease-out;
+  }
+}
 main .mobileSec {
   text-align: center;
 }

@@ -456,6 +456,10 @@
             display: flex;
             margin-top: 40px;
 
+            .slick-list {
+              margin-right: 100px;
+            }
+
             @include responsive(pc-screens) {
               width: 150%;
             }
@@ -652,12 +656,12 @@
                 width: 75px;
                 height: 40px;
                 position: absolute;
-                top:180px; left:50%;
+                top:150px; left:50%;
                 transform: translateX(-50%);
+                z-index: 5;
                 @include responsive(pc-screens) {
-                  width: 100px; height: 50px;
-                  top:170px; left:500px;
-                  z-index: 5;
+                  width: 100px; height: 45px;
+                  top:170px;
                 }
 
                 #hand {
@@ -714,11 +718,10 @@
 
                 .b_item {
                   width: 160px; 
-                  margin-right: 10px;
-                  margin-bottom: 20px;
+                  margin: 0 auto;
                   @include responsive(pc-screens) {
                     width: 280px;
-                    margin: 20px auto;
+                    margin: 20px 10px;
                   }
 
                   a {
@@ -732,7 +735,7 @@
                       }
                       &:hover {
                         @include responsive(pc-screens) {
-                          transform: scale(1.2);
+                          transform: scale(1.1, 1.1);
                         }
                       }
                     }
@@ -743,7 +746,6 @@
 
             .brewery_content {
               width: 100%;
-              margin-top: 50px;
               margin-bottom: 100px;
               .brewery {
                 width: 100%;
@@ -751,7 +753,7 @@
                   width: 100%;
                   @include responsive(pc-screens) {
                     height: 50px;
-                    margin-bottom: 50px;
+                    margin: 50px 0;
                     display: flex;
                     justify-content:center;
                   }
@@ -759,10 +761,8 @@
                     display: none;
                     @include responsive(pc-screens) {
                       display: flex;
-                      justify-content: center;
                       align-items: center;
                       margin-right: 20px;
-                      margin-bottom: 0;
                     }
                     img {
                       width: 35px;
@@ -771,9 +771,7 @@
                   .qr_box {
                     display: none;
                     @include responsive(pc-screens) {
-                      width: 50%;
                       align-items: center;
-                      display: block;
                       display: flex;
                     }
                     img {

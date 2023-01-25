@@ -6,6 +6,10 @@ window.addEventListener(
   { passive: false }
 );
 
+setTimeout(() => {
+  scrollTo(0, 0);
+}, 100);
+
 var $html = $("html");
 var page = 1;
 var lastPage = $("#box").length;
@@ -42,7 +46,8 @@ $html.animate({ scrollTop: 0 }, 10);
 
 $(function () {
   const list = [$("#gyeonggi"), $("#gangwon"), $("#gyeongsang"), $("#chungcheong"), $("#jeolla"), $("#jeju")];
-  const bg = ["url(http://Hxxnseo.github.io/JUJERY/images/main_section_2/seoulgoong.png)", "url(http://Hxxnseo.github.io/JUJERY/images/main_section_2/gangwonsan.png)", "url(http://Hxxnseo.github.io/JUJERY/images/main_section_2/gyeongsang.png)", "url(http://Hxxnseo.github.io/JUJERY/images/main_section_2/dodam.png)", "url(http://Hxxnseo.github.io/JUJERY/images/main_section_2/junjoo.png)", "url(http://Hxxnseo.github.io/JUJERY/images/main_section_2/jejunight.png)"];
+  // const bg = ["url(http://Hxxnseo.github.io/JUJERY/images/main_section_2/seoulgoong.png)", "url(http://Hxxnseo.github.io/JUJERY/images/main_section_2/gangwonsan.png)", "url(http://Hxxnseo.github.io/JUJERY/images/main_section_2/gyeongsang.png)", "url(http://Hxxnseo.github.io/JUJERY/images/main_section_2/dodam.png)", "url(http://Hxxnseo.github.io/JUJERY/images/main_section_2/junjoo.png)", "url(http://Hxxnseo.github.io/JUJERY/images/main_section_2/jejunight.png)"];
+  const bg = ["url(http://seoh1999.cafe24.com/jujery/images/main_section_2/seoulgoong.png)", "url(http://seoh1999.cafe24.com/jujery/images/main_section_2/gangwonsan.png)", "url(http://seoh1999.cafe24.com/jujery/images/main_section_2/gyeongsang.png)", "url(http://seoh1999.cafe24.com/jujery/images/main_section_2/dodam.png)", "url(http://seoh1999.cafe24.com/jujery/images/main_section_2/junjoo.png)", "url(http://seoh1999.cafe24.com/jujery/images/main_section_2/jejunight.png)"];
 
   $(".section2 li").on({
     mouseenter: function (e) {

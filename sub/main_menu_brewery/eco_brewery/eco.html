@@ -226,6 +226,7 @@
                 <div class="flexCont1">
                   <div class="youtube">
                     <iframe src="https://www.youtube.com/embed/uvSUHNawKzE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <!-- <img class="image" onmouseover="darken(this)" onmouseout="lighten(this)" src="./eco_imgs/geumpoong/main.jpg" alt="main" /> -->
                   </div>
                   <div>
                     <div id="modal1" class="modal">
@@ -247,8 +248,8 @@
                       <a href="#" rel="modal:close">닫기</a>
                     </div>
 
-                    <p>
-                      <a href="#modal1" rel="modal:open"><img src="./eco_imgs/geumpoong/main.jpg" alt="" /></a>
+                    <p class="wraaappp">
+                      <a href="#modal1" rel="modal:open"><img class="image" onmouseover="darken(this)" onmouseout="lighten(this)" src="./eco_imgs/geumpoong/main.jpg" alt="main" /></a>
                     </p>
                   </div>
                 </div>
@@ -265,7 +266,7 @@
                     </div>
 
                     <p>
-                      <a href="#modal2" rel="modal:open"><img src="./eco_imgs/geumpoong/eco_1.png" alt="" /></a>
+                      <a href="#modal2" rel="modal:open"><img class="image" onmouseover="darken(this)" onmouseout="lighten(this)" src="./eco_imgs/geumpoong/eco_1.png" alt="eco_1" /></a>
                     </p>
                   </div>
                   <div>
@@ -280,13 +281,13 @@
                     </div>
 
                     <p>
-                      <a href="#modal3" rel="modal:open"><img src="./eco_imgs/geumpoong/eco_4.jpg" alt="" /></a>
+                      <a href="#modal3" rel="modal:open"><img class="image" onmouseover="darken(this)" onmouseout="lighten(this)" src="./eco_imgs/geumpoong/eco_4.jpg" alt="eco_4" /></a>
                     </p>
                   </div>
                   <div class="img1">
-                    <a href="https://smartstore.naver.com/gold1931">
+                    <a target="_blank" href="https://smartstore.naver.com/gold1931">
                       <h3>사러가기</h3>
-                      <img src="./eco_imgs/geumpoong/sool.jpg" alt="" />
+                      <img src="./eco_imgs/geumpoong/sool.jpg" alt="sool" />
                     </a>
                   </div>
                 </div>
@@ -320,16 +321,16 @@
               <div class="footSns">
                 <ul class="footSnsCont">
                   <li>
-                    <a href="#"><img src="../../../images/sns/sns_insta.png" alt="s" /></a>
+                    <a href="#"><img src="../../../images/sns/sns_insta.png" alt="sns_insta" /></a>
                   </li>
                   <li>
-                    <a href="#"><img src="../../../images/sns/sns_twitter.png" alt="" /></a>
+                    <a href="#"><img src="../../../images/sns/sns_twitter.png" alt="sns_twitter" /></a>
                   </li>
                   <li>
-                    <a href="#"><img src="../../../images/sns/sns_facebook.png" alt="" /></a>
+                    <a href="#"><img src="../../../images/sns/sns_facebook.png" alt="sns_facebook" /></a>
                   </li>
                   <li>
-                    <a href="#"><img src="../../../images/sns/sns_tiktok.png" alt="" /></a>
+                    <a href="#"><img src="../../../images/sns/sns_tiktok.png" alt="sns_tiktok" /></a>
                   </li>
                 </ul>
               </div>
@@ -351,4 +352,14 @@
       </footer>
     </div>
   </body>
+  <script>
+    console.log(1);
+    function darken(image) {
+      image.style.filter = "brightness(70%)";
+    }
+
+    function lighten(image) {
+      image.style.filter = "brightness(100%)";
+    }
+  </script>
 </html>
