@@ -362,7 +362,6 @@ p {
 @media screen and (min-width: 1024px) {
   .wrapper .flexWrapper main .main .sect1 .flexCont1 {
     display: flex;
-    justify-content: space-between;
     margin-bottom: 10px;
   }
 }
@@ -381,12 +380,25 @@ p {
 @media screen and (min-width: 1024px) {
   .wrapper .flexWrapper main .main .sect1 .flexCont1 div iframe {
     height: 100%;
+    object-fit: cover;
   }
 }
-.wrapper .flexWrapper main .main .sect1 .flexCont1 div img {
+.wrapper .flexWrapper main .main .sect1 .flexCont1 div .wraaappp {
   width: 100%;
   height: 100%;
+}
+.wrapper .flexWrapper main .main .sect1 .flexCont1 div .wraaappp a {
+  width: 100%;
+  height: 100%;
+}
+.wrapper .flexWrapper main .main .sect1 .flexCont1 div .wraaappp a img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   cursor: pointer;
+}
+.wrapper .flexWrapper main .main .sect1 .flexCont1 .youtube {
+  margin-right: 10px;
 }
 .wrapper .flexWrapper main .main .sect1 .flexCont2 {
   display: flex;
@@ -405,7 +417,7 @@ p {
 }
 @media screen and (min-width: 1024px) {
   .wrapper .flexWrapper main .main .sect1 .flexCont2 div {
-    width: 33%;
+    width: 32.9%;
     object-fit: cover;
   }
 }
@@ -844,4 +856,8 @@ p {
   .wrapper1 .wrap-inner .container1 .footer .footerInfo1 p:last-child {
     margin-left: 100px;
   }
+}
+
+.image {
+  filter: brightness(100%);
 }/*# sourceMappingURL=eco.css.map */
