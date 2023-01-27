@@ -60,7 +60,9 @@ https://user-images.githubusercontent.com/97536033/214997838-f862bbbb-3cc1-4583-
 '주저리'에 맞는 더 좋은 디자인을 찾고, 수업을 통해 배웠던 부분을 상기시켜가며 작업을 진행하면서 더 큰 성장을 할 수 있었던 것 같아 좋았고, 이 프로젝트를 계기로 더욱 더 성장하겠습니다!<br>
 
 ## 참고자료
-링크 : http://seoh1999.cafe24.com/jujery/
+링크 : http://seoh1999.cafe24.com/jujery/ <br>
+기획서 : [주저리.pdf](https://github.com/Hxxnseo/jujery/files/10515859/default.pdf)
+
 
 
 ![jujery-version](https://user-images.githubusercontent.com/97536033/214997868-27a7c435-a6cc-44f3-9c87-81ae123d280a.png)
