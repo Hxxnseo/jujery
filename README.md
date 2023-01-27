@@ -12,20 +12,20 @@ https://user-images.githubusercontent.com/97536033/214997838-f862bbbb-3cc1-4583-
 | 메인 페이지 / 빚는 곳 / 찾아가는 양조장 - 소개 / 찾아가는 양조장 - 지도 / 친환경 양조장 / 이용안내 | 로고 제작 / 시대별 - 과거 / 시대별 - 현재 / 소통하기 / 상징 / 정책 | 지역별 페이지 / 지역별 - 경기 / 지역별 - 강원 / 지역별 - 경상 / 지역별 - 충청 / 지역별 - 전라 / 지역별 - 제주 / 우리의 이야기 / 개인정보 | 종류별 페이지 / 종류별 - 탁주 / 종류별 - 청주 / 종류별 - 과실주 / 종류별 - 증류주 / 종류별 - 기타주류 / 전통주란 / 들어가기 / 회원가입 |
 ## 작업기간
 
-> 2022.10.13 ~ 2022.11.17 (40일)
+ 2022.10.13 ~ 2022.11.17 (40일)
 
 ## 내용
 
 
-> 코로나바이러스 감염증(코로나19) 장기화에 홀로 즐기는 '혼술'이나 집에서 마시는 '홈술' 문화, MZ세대의 과시형 소비 '플랙스' 문화가 뜨는 가운데 프리미엄 전통주가 '힙한 술'로 각인되면서 전통주의 수요가 급등했다. <br> 전통주에 대한 궁금증 해소와 흥미를 높이기 위해 우리나라 전통주의 역사, 현재를 공유하는 페이지를 디자인했다.
+ 코로나바이러스 감염증(코로나19) 장기화에 홀로 즐기는 '혼술'이나 집에서 마시는 '홈술' 문화, MZ세대의 과시형 소비 '플랙스' 문화가 뜨는 가운데 프리미엄 전통주가 '힙한 술'로 각인되면서 전통주의 수요가 급등했다. <br> 전통주에 대한 궁금증 해소와 흥미를 높이기 위해 우리나라 전통주의 역사, 현재를 공유하는 페이지를 디자인했다.
 
 ## 설계/프로세스
 
-> - <img src="https://img.shields.io/badge/Photoshop-001834?style=for-the-badge&logo=Adobe Photoshop&logoColor=#00A9FF"> : 디자인, 레이아웃
-> - <img src="https://img.shields.io/badge/Illustrator-FF9A00?style=for-the-badge&logo=Adobe Illustrator&logoColor=black"> : 로고 제작
-> - <img src="https://img.shields.io/badge/Visual Studio Code-58A6FF?style=for-the-badge&logo=Visual Studio Code&logoColor=#00A9FF"> : 개발 환경
-> - <img src="https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=white"> <img src="https://img.shields.io/badge/css-1572B6?style=for-the-badge&logo=css3&logoColor=white"> <img src="https://img.shields.io/badge/sass-CC6699?style=for-the-badge&logo=sass&logoColor=white"> <img src="https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black">  <img src="https://img.shields.io/badge/jquery-0769AD?style=for-the-badge&logo=jquery&logoColor=white">  : 코드 구현
-> - <img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white"> : 프로젝트 버전 관리
+- <img src="https://img.shields.io/badge/Photoshop-001834?style=for-the-badge&logo=Adobe Photoshop&logoColor=#00A9FF"> : 디자인, 레이아웃
+- <img src="https://img.shields.io/badge/Illustrator-FF9A00?style=for-the-badge&logo=Adobe Illustrator&logoColor=black"> : 로고 제작
+- <img src="https://img.shields.io/badge/Visual Studio Code-58A6FF?style=for-the-badge&logo=Visual Studio Code&logoColor=#00A9FF"> : 개발 환경
+- <img src="https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=white"> <img src="https://img.shields.io/badge/css-1572B6?style=for-the-badge&logo=css3&logoColor=white"> <img src="https://img.shields.io/badge/sass-CC6699?style=for-the-badge&logo=sass&logoColor=white"> <img src="https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black">  <img src="https://img.shields.io/badge/jquery-0769AD?style=for-the-badge&logo=jquery&logoColor=white">  : 코드 구현
+- <img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white"> : 프로젝트 버전 관리
 
 ## 느낀 점
 > 서현
@@ -60,7 +60,7 @@ https://user-images.githubusercontent.com/97536033/214997838-f862bbbb-3cc1-4583-
 '주저리'에 맞는 더 좋은 디자인을 찾고, 수업을 통해 배웠던 부분을 상기시켜가며 작업을 진행하면서 더 큰 성장을 할 수 있었던 것 같아 좋았고, 이 프로젝트를 계기로 더욱 더 성장하겠습니다!<br>
 
 ## 참고자료
-> 링크 : http://seoh1999.cafe24.com/jujery/
+링크 : http://seoh1999.cafe24.com/jujery/
 
 
 ![jujery-version](https://user-images.githubusercontent.com/97536033/214997868-27a7c435-a6cc-44f3-9c87-81ae123d280a.png)
