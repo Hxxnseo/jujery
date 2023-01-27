@@ -284,7 +284,8 @@ main .pcSec1 .scroll-down .mousey .scroller {
   }
 }
 @keyframes bounce {
-  from, to {
+  from,
+  to {
     margin-bottom: 0;
     animation-timing-function: ease-out;
   }
@@ -396,6 +397,7 @@ main .pcSec3 .category ul li a {
     color: transparent;
     -webkit-text-stroke: 1px rgba(255, 255, 255, 0.5);
     -moz-background-clip: text;
+    background-clip: text;
     -webkit-background-clip: text;
   }
   main .pcSec3 .category ul li a:hover {
@@ -876,4 +878,4 @@ footer .footer .footBox .footMenu ul li a {
   .wrapper1 .wrap-inner .container1 .footer .footerInfo1 p:last-child {
     margin-left: 100px;
   }
-}/*# sourceMappingURL=index.css.map */
+} /*# sourceMappingURL=index.css.map */
